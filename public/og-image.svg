@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="TakealotBack.com — South African consumer rights, dismantled.">
+  <defs>
+    <style>
+      .paper { fill: #F3F1EC; }
+      .ink { fill: #121311; }
+      .soft { fill: #2A2B28; }
+      .muted { fill: #6B6B64; }
+      .faint { fill: #A6A49A; }
+      .rule { fill: #C9C4B6; }
+      .accent { fill: #C4683C; }
+      .display {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: -6px;
+      }
+      .meta {
+        font-family: "JetBrains Mono", "Menlo", monospace;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+      }
+      .body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+      }
+    </style>
+  </defs>
+
+  <!-- paper background -->
+  <rect width="1200" height="630" class="paper"/>
+
+  <!-- plus-marker top rule -->
+  <line x1="64" y1="64" x2="1136" y2="64" stroke="#C9C4B6" stroke-width="1"/>
+  <g class="faint" font-family="JetBrains Mono, Menlo, monospace" font-size="20" text-anchor="middle">
+    <text x="64" y="70">+</text>
+    <text x="278" y="70">+</text>
+    <text x="492" y="70">+</text>
+    <text x="706" y="70">+</text>
+    <text x="920" y="70">+</text>
+    <text x="1136" y="70">+</text>
+  </g>
+
+  <!-- top-left eyebrow -->
+  <text x="64" y="118" class="meta muted" font-size="16">/ MISSION · ZA CONSUMER RIGHTS · v0.1 · 2026.04</text>
+
+  <!-- headline: TAKE / A LOT / BACK. -->
+  <g class="display ink">
+    <text x="64" y="278" font-size="180" textLength="460" lengthAdjust="spacingAndGlyphs">TAKE</text>
+    <text x="64" y="428" font-size="180" textLength="420" lengthAdjust="spacingAndGlyphs">A LOT</text>
+    <text x="64" y="578" font-size="180">
+      <tspan>BACK</tspan>
+      <tspan class="accent">.</tspan>
+    </text>
+  </g>
+
+  <!-- right column -->
+  <g>
+    <!-- divider rule -->
+    <line x1="780" y1="150" x2="780" y2="580" stroke="#C9C4B6" stroke-width="1"/>
+
+    <text x="820" y="178" class="meta muted" font-size="16">/ BRIEF</text>
+
+    <!-- wrapped intro -->
+    <text x="820" y="220" class="body soft" font-size="22">
+      <tspan x="820" dy="0">When Takealot's policy tries to</tspan>
+      <tspan x="820" dy="32">sidestep the Consumer Protection</tspan>
+      <tspan x="820" dy="32">Act, the ECT Act, or POPIA — we</tspan>
+      <tspan x="820" dy="32">help you put it back in its place.</tspan>
+    </text>
+
+    <!-- metadata block -->
+    <text x="820" y="400" class="meta muted" font-size="14">/ CONTENTS</text>
+    <g class="meta ink" font-size="14">
+      <text x="820" y="428">18 CLAUSES DISMANTLED</text>
+      <text x="820" y="452">14 READY-TO-SEND TEMPLATES</text>
+      <text x="820" y="476">10-TIER ESCALATION LADDER</text>
+      <text x="820" y="500">CC BY 4.0 · NO ADS · NO TRACKING</text>
+    </g>
+  </g>
+
+  <!-- bottom rule + url -->
+  <line x1="64" y1="598" x2="1136" y2="598" stroke="#C9C4B6" stroke-width="1"/>
+  <text x="64" y="622" class="meta muted" font-size="14">TAKEALOTBACK.COM</text>
+  <text x="1136" y="622" class="meta muted" font-size="14" text-anchor="end">BUILT BY MILK MOON STUDIO</text>
+</svg>

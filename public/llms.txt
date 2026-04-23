@@ -32,6 +32,7 @@ Content was verified against published South African statutes, regulations, and 
 - [Content licence (CC BY 4.0)](https://github.com/J8kesVanEeden/takealotback/blob/main/CONTENT-LICENSE.md)
 - [Code licence (MIT)](https://github.com/J8kesVanEeden/takealotback/blob/main/LICENSE)
 - [Full content as plain markdown](https://takealotback.com/llms-full.txt)
+- [RSS feed (deep-dive pages)](https://takealotback.com/rss.xml)
 
 ## What the site is NOT
 

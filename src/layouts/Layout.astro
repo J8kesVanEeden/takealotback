@@ -80,6 +80,7 @@ if (faqSchema) {
     <meta name="last-reviewed" content={LAST_REVIEWED} />
 
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" href={`${siteUrl}/rss.xml`} title="TakealotBack.com — deep dives" />
     <link rel="alternate" type="application/xml" href={`${siteUrl}/sitemap-index.xml`} title="Sitemap" />
     <link rel="alternate" type="text/plain" href={`${siteUrl}/llms.txt`} title="LLM summary" />
 
@@ -89,9 +90,17 @@ if (faqSchema) {
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="TakealotBack.com" />
     <meta property="og:locale" content="en_ZA" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:secure_url" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="TakealotBack.com — TAKE A LOT BACK. South African consumer rights, dismantled." />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    <meta name="twitter:image:alt" content="TakealotBack.com — TAKE A LOT BACK. South African consumer rights, dismantled." />
 
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#F3F1EC" media="(prefers-color-scheme: light)" />
