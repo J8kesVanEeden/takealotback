@@ -2,6 +2,8 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
+import JsonLd from '../components/JsonLd.astro';
+import { GITHUB_REPO_URL, LAST_REVIEWED } from '../data/content';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -20,9 +22,61 @@ const { Content } = await page.render();
 
 const title = page.data.metaTitle ?? `${page.data.title} · TakealotBack.com`;
 const canonicalPath = `/${page.slug}`;
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
+const canonical = `${siteUrl}${canonicalPath}`;
+
+// JSON-LD: Article (educational commentary) + BreadcrumbList.
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${canonical}#article`,
+  headline: page.data.title,
+  description: page.data.description,
+  url: canonical,
+  mainEntityOfPage: canonical,
+  inLanguage: 'en-ZA',
+  isAccessibleForFree: true,
+  isPartOf: { '@id': `${siteUrl}/#website` },
+  publisher: { '@id': 'https://www.milkmoonstudio.com/#organization' },
+  author: { '@id': 'https://www.milkmoonstudio.com/#organization' },
+  license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
+  // Use the site's published review date as a best-available dateModified.
+  // LAST_REVIEWED is in "YYYY.MM.DD" form; convert to ISO date for schema.
+  dateModified: LAST_REVIEWED.replace(/\./g, '-'),
+  datePublished: '2026-04-23',
+  keywords: [
+    'Consumer Protection Act',
+    'CPA',
+    'Takealot',
+    'South African consumer rights',
+    'online retail returns',
+    'ECT Act',
+    'POPIA',
+  ].join(', '),
+};
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: page.data.title, item: canonical },
+  ],
+};
 ---
 <Layout title={title} description={page.data.description} canonicalPath={canonicalPath}>
+  <Fragment slot="head">
+    <JsonLd data={article} />
+    <JsonLd data={breadcrumb} />
+  </Fragment>
+
   <Section id="deep-dive" label="Deep dive" tag="article">
+    <nav class="tb-sub__crumbs" aria-label="Breadcrumb">
+      <ol class="tb-sub__crumblist">
+        <li><a href="/" class="mono tb-sub__crumb">Home</a></li>
+        <li aria-current="page"><span class="mono tb-sub__crumb tb-sub__crumb--current">{page.data.title}</span></li>
+      </ol>
+    </nav>
     <div class="tb-sub">
       <h1 class="display h2 tb-sub__title">{page.data.title}</h1>
       <p class="lede tb-sub__lede">{page.data.description}</p>
@@ -51,4 +105,26 @@ const canonicalPath = `/${page.slug}`;
   /* Hide the markdown's own H1 since we render it above in the shell */
   .tb-sub__prose :global(h1) { display: none; }
   .tb-sub__foot { margin-top: 56px; }
+  .tb-sub__crumbs { margin-bottom: 24px; }
+  .tb-sub__crumblist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .tb-sub__crumblist li { display: inline-flex; align-items: center; }
+  .tb-sub__crumblist li + li::before {
+    content: '/';
+    color: var(--ink-faint);
+    margin-right: 12px;
+  }
+  .tb-sub__crumb {
+    color: var(--ink-muted);
+    text-decoration: none;
+  }
+  .tb-sub__crumb--current { color: var(--ink); }
+  a.tb-sub__crumb:hover { color: var(--accent); }
 </style>

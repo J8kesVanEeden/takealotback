@@ -1,0 +1,41 @@
+# TakealotBack.com
+
+> A non-commercial, plain-English South African consumer-rights reference for disputes with Takealot. It maps Takealot's published returns policy against the Consumer Protection Act (CPA), the Electronic Communications and Transactions Act (ECT Act), POPIA, and common law — with statute citations, case law, email templates, and an escalation ladder.
+
+This site is intentionally a one-way reference. No contact form, no accounts, no user-submitted content, no ads, no tracking beyond privacy-preserving Cloudflare Web Analytics. Content is licensed CC BY 4.0 — attribution is appreciated; linking back to the canonical URL is the preferred form. Code is MIT.
+
+Content was verified against published South African statutes, regulations, and case law in April 2026.
+
+## Homepage sections (single-page reference)
+
+- [Hero / Mission](https://takealotback.com/#home): The site's purpose and metadata card (jurisdiction, instruments, counts).
+- [The short version — 7 quick hits](https://takealotback.com/#short-version): One-screen summary of the seven most-underused rights, including chargebacks.
+- [Three things to do right now](https://takealotback.com/#three-things): Find your fight, grab a template, escalate.
+- [Dismantled — 18 clauses](https://takealotback.com/#dismantled): Takealot's returns-policy clauses paired with CPA/ECT/POPIA counterpoints, case law, and the onus-of-proof position.
+- [Templates — 14 ready-to-send emails](https://takealotback.com/#templates): Copy-paste emails keyed to CPA/ECT sections for the most common disputes.
+- [The Law — full reference](https://takealotback.com/#law): CPA, ECT Act, POPIA, common law, and chargeback rules as section cards; plus a "where to file" bodies card.
+- [Warranties — manufacturer vs CPA](https://takealotback.com/#warranties): Three-layer warranty analysis (retailer, manufacturer, common law) + A/B/C/D playbook.
+- [Escalate — 10-tier ladder](https://takealotback.com/#escalate): Takealot support → CGSO → chargeback → NCC → IR → ARB → Small Claims → Magistrates' → High Court.
+- [Their policies, summarised](https://takealotback.com/#policies): Plain-English summary of Takealot's returns policy and terms, with the official URL.
+- [About](https://takealotback.com/#about): The site's legal grounding (s16 Constitution, TMA s34(2), UDRP, fair comment) and non-commercial commitments.
+- [FAQ](https://takealotback.com/#faq): Ten questions including affiliation, commercial status, legal-advice disclaimer, and correction routes.
+
+## Deep-dive pages
+
+- [Onus of proof](https://takealotback.com/onus-of-proof): Who has to prove what inside the 6-month CPA s56 window — the single most useful fact in a Takealot dispute.
+- [Aedilitian remedies](https://takealotback.com/aedilitian-remedies): Common-law remedies that extend your rights up to 3 years past the CPA's 6-month window, for latent defects. Includes the death of voetstoots under the CPA.
+- [Limits of the CPA](https://takealotback.com/limits): Honest account of what the CPA does *not* do — where return claims are actually weak. Credibility section.
+
+## Source of truth and updates
+
+- [GitHub repository](https://github.com/J8kesVanEeden/takealotback): Public; corrections via issues only.
+- [Content licence (CC BY 4.0)](https://github.com/J8kesVanEeden/takealotback/blob/main/CONTENT-LICENSE.md)
+- [Code licence (MIT)](https://github.com/J8kesVanEeden/takealotback/blob/main/LICENSE)
+- [Full content as plain markdown](https://takealotback.com/llms-full.txt)
+
+## What the site is NOT
+
+- Not legal advice. Not a substitute for an attorney or the Consumer Goods & Services Ombud.
+- Not affiliated with Takealot Online (RF) (Pty) Ltd or Naspers / Prosus.
+- Not a complaints directory. No user submissions are accepted or published.
+- Not anti-Takealot. Most returns are handled correctly; the site targets the minority that aren't.
