@@ -1,0 +1,37 @@
+---
+import PlusRow from './PlusRow.astro';
+
+interface Props {
+  id: string;
+  label?: string;
+  pad?: boolean;
+  tag?: 'section' | 'div' | 'article';
+}
+
+const { id, label, pad = true, tag = 'section' } = Astro.props;
+const Tag = tag;
+---
+<Tag
+  id={id}
+  data-screen-label={label ?? id}
+  class:list={['tb-section', { 'tb-section--pad': pad }]}
+>
+  <PlusRow />
+  <div class="page">
+    {label && (
+      <div class="tb-section__label">
+        <span class="mono slash-label">{label}</span>
+      </div>
+    )}
+    <slot />
+  </div>
+</Tag>
+
+<style>
+  .tb-section {
+    position: relative;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-section--pad { padding: clamp(72px, 8vw, 140px) 0; }
+  .tb-section__label { margin-bottom: 32px; }
+</style>

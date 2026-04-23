@@ -1,0 +1,34 @@
+---
+// Decorative row of "+" markers that sits on the top border of a Section.
+---
+<div aria-hidden="true" class="tb-plus-row">
+  <div class="page tb-plus-row__inner">
+    {[0, 20, 40, 60, 80, 100].map((left) => (
+      <span class="tb-plus-row__mark" style={`left: ${left}%;`}>+</span>
+    ))}
+  </div>
+</div>
+
+<style>
+  .tb-plus-row {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    pointer-events: none;
+  }
+  .tb-plus-row__inner {
+    position: relative;
+    height: 12px;
+  }
+  .tb-plus-row__mark {
+    position: absolute;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--ink-faint);
+    line-height: 12px;
+    user-select: none;
+  }
+</style>

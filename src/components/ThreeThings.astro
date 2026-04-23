@@ -1,0 +1,57 @@
+---
+import Section from './Section.astro';
+
+const items = [
+  { n: '01', head: 'Find your fight', body: "Browse the clause-by-clause dismantling to see exactly how the law applies to whatever Takealot is telling you.", cta: 'See all 18 clauses', href: '#dismantled' },
+  { n: '02', head: 'Grab a template', body: '14 ready-to-send emails, each grounded in a specific CPA or ECT Act section. Copy, paste, send.', cta: 'Browse templates', href: '#templates' },
+  { n: '03', head: 'Know your escalation path', body: "Takealot → CGSO → NCC → chargeback → court. The ladder is shorter than you think.", cta: 'See the ladder', href: '#escalate' },
+];
+---
+<Section id="three-things" label="Three things to do right now">
+  <h2 class="display h2 tb-three__head">Three things to do right now.</h2>
+  <div class="tb-three__grid three-grid">
+    {items.map((it, i) => (
+      <article class:list={['tb-three__cell three-col', { 'tb-three__cell--last': i === 2 }]}>
+        <div class="display tb-three__num">{it.n}</div>
+        <h3 class="display h3 tb-three__cellhead">{it.head}</h3>
+        <p class="tb-three__body">{it.body}</p>
+        <a href={it.href} class="btn ghost tb-three__cta">{it.cta} &rarr;</a>
+      </article>
+    ))}
+  </div>
+</Section>
+
+<style>
+  .tb-three__head { max-width: 16ch; margin-bottom: 48px; }
+  .tb-three__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-three__cell {
+    padding: 32px 24px 36px;
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 240px;
+  }
+  .tb-three__cell--last { border-right: 0; }
+  .tb-three__num {
+    font-size: clamp(56px, 6vw, 96px);
+    line-height: 0.9;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .tb-three__cellhead { margin: 0; max-width: 16ch; }
+  .tb-three__body {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.6;
+    flex: 1;
+  }
+  .tb-three__cta { align-self: flex-start; }
+</style>

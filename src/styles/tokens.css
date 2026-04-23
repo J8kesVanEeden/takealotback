@@ -1,0 +1,74 @@
+/* TakealotBack — design tokens */
+:root {
+  /* paper / ink */
+  --paper: #F3F1EC;
+  --paper-alt: #EDEAE2;
+  --paper-tint: #E7E3D8;
+  --ink: #121311;
+  --ink-soft: #2A2B28;
+  --ink-muted: #6B6B64;
+  --ink-faint: #A6A49A;
+  --rule: #C9C4B6;
+  --rule-soft: #DCD8CC;
+
+  /* accents */
+  --accent: oklch(0.55 0.14 40);       /* burnt sienna */
+  --accent-hover: oklch(0.48 0.15 38);
+  --law: oklch(0.48 0.08 145);         /* muted forest — "the law says" */
+  --warn: oklch(0.60 0.12 75);         /* muted ochre — "takealot says" */
+
+  /* type */
+  --font-display: "Geist", "Söhne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body:    "Geist", "Söhne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono:    "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* spacing */
+  --gutter: 24px;
+  --page-max: 1440px;
+  --prose-max: 72ch;
+
+  /* misc */
+  --radius: 2px;
+  --grid-unit: 8px;
+}
+
+/* palette variants driven by tweaks */
+[data-palette="stark"] {
+  --paper: #FFFFFF;
+  --paper-alt: #F6F6F4;
+  --paper-tint: #EEEEEA;
+  --ink: #0A0A0A;
+  --rule: #D4D4CC;
+  --rule-soft: #E8E7E0;
+}
+[data-palette="newsprint"] {
+  --paper: #E9E4D6;
+  --paper-alt: #DCD6C3;
+  --paper-tint: #CFC8B2;
+  --ink: #1C1A12;
+  --ink-soft: #34311F;
+  --rule: #B8B19A;
+  --rule-soft: #C9C3AD;
+  --accent: oklch(0.50 0.14 35);
+}
+[data-palette="carbon"] {
+  --paper: #141412;
+  --paper-alt: #1B1B18;
+  --paper-tint: #22221F;
+  --ink: #ECE7D9;
+  --ink-soft: #CFC9B9;
+  --ink-muted: #8E897C;
+  --ink-faint: #5A5650;
+  --rule: #2E2E29;
+  --rule-soft: #242420;
+  --accent: oklch(0.72 0.14 55);
+}
+
+/* density */
+[data-density="dense"]  { --grid-unit: 6px; }
+[data-density="airy"]   { --grid-unit: 10px; }
+
+/* display face swap */
+[data-display="serif"]  { --font-display: "Fraunces", "Source Serif 4", Georgia, serif; }
+[data-display="mono"]   { --font-display: "JetBrains Mono", ui-monospace, monospace; }
+[data-display="geist"]  { --font-display: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif; }

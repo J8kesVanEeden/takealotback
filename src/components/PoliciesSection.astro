@@ -1,0 +1,99 @@
+---
+import Section from './Section.astro';
+import { POLICY_SUMMARY } from '../data/content';
+
+function pad(n: number) {
+  return String(n).padStart(2, '0');
+}
+---
+<Section id="policies" label="Their policies, summarised">
+  <div class="tb-policies__grid two-col">
+    <div>
+      <h2 class="display h2 tb-policies__head">What Takealot's rulebook actually says.</h2>
+      <p class="tb-policies__lede">
+        We do not reproduce Takealot's policies verbatim — that's their copyrighted material. What follows is a plain-English summary, in our own words, for consumer education and commentary. Official versions at <a href="https://terms-and-policies.takealot.com" class="link-u" target="_blank" rel="noopener noreferrer">terms-and-policies.takealot.com</a>.
+      </p>
+      <div class="tb-policies__entity">
+        <div class="mono tb-policies__entitylabel">/ Registered entity</div>
+        <p class="tb-policies__entitybody">
+          Takealot Online (RF) (Pty) Ltd, reg 2010/020248/07. Owned ~96% by Naspers / Prosus.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="mono slash-label tb-policies__listlabel">Returns policy — the key clauses</div>
+      <div class="tb-policies__list">
+        {POLICY_SUMMARY.returns.map((item, i) => (
+          <div class="tb-policies__row">
+            <span class="mono tb-policies__rowcode">R.{pad(i + 1)}</span>
+            <span class="tb-policies__rowbody">{item}</span>
+            <span class="mono tb-policies__rowtype">Summary</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="tb-policies__spacer" />
+
+      <div class="mono slash-label tb-policies__listlabel">Terms &amp; conditions — the key clauses</div>
+      <div class="tb-policies__list">
+        {POLICY_SUMMARY.terms.map((item, i) => (
+          <div class="tb-policies__row">
+            <span class="mono tb-policies__rowcode">T.{pad(i + 1)}</span>
+            <span class="tb-policies__rowbody">{item}</span>
+            <span class="mono tb-policies__rowtype">Summary</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .tb-policies__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: clamp(32px, 5vw, 72px);
+  }
+  .tb-policies__head { max-width: 16ch; }
+  .tb-policies__lede {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.65;
+    margin-top: 24px;
+    max-width: 44ch;
+  }
+  .tb-policies__entity {
+    margin-top: 24px;
+    padding: 14px 16px;
+    border: 1px dashed var(--rule);
+    border-radius: 2px;
+  }
+  .tb-policies__entitylabel { color: var(--ink-muted); margin-bottom: 4px; }
+  .tb-policies__entitybody {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .tb-policies__listlabel { color: var(--ink); margin-bottom: 10px; }
+  .tb-policies__list { border-top: 1px solid var(--rule); }
+  .tb-policies__row {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    align-items: baseline;
+  }
+  .tb-policies__rowcode { color: var(--ink-faint); }
+  .tb-policies__rowbody {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  .tb-policies__rowtype {
+    color: var(--ink-muted);
+    white-space: nowrap;
+  }
+  .tb-policies__spacer { height: 40px; }
+</style>

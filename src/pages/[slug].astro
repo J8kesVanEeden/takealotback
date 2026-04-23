@@ -1,0 +1,54 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+interface Props {
+  page: CollectionEntry<'pages'>;
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+
+const title = page.data.metaTitle ?? `${page.data.title} · TakealotBack.com`;
+const canonicalPath = `/${page.slug}`;
+---
+<Layout title={title} description={page.data.description} canonicalPath={canonicalPath}>
+  <Section id="deep-dive" label="Deep dive" tag="article">
+    <div class="tb-sub">
+      <h1 class="display h2 tb-sub__title">{page.data.title}</h1>
+      <p class="lede tb-sub__lede">{page.data.description}</p>
+      <hr class="tb-sub__rule" />
+      <div class="prose tb-sub__prose">
+        <Content />
+      </div>
+      <div class="tb-sub__foot">
+        <a href="/" class="btn ghost">&larr; Back to the single page</a>
+      </div>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .tb-sub { max-width: 72ch; }
+  .tb-sub__title { margin: 0 0 20px; max-width: 24ch; }
+  .tb-sub__lede { margin: 0 0 32px; }
+  .tb-sub__rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: 0 0 32px;
+  }
+  .tb-sub__prose { max-width: none; }
+  /* Hide the markdown's own H1 since we render it above in the shell */
+  .tb-sub__prose :global(h1) { display: none; }
+  .tb-sub__foot { margin-top: 56px; }
+</style>

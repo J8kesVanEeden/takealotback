@@ -1,0 +1,231 @@
+---
+import Section from './Section.astro';
+import { TEMPLATES } from '../data/content';
+---
+<Section id="templates" label="Templates · 14 ready-to-send emails">
+  <div class="tb-tpl__intro">
+    <h2 class="display h2 tb-tpl__head">
+      Copy. Paste. <em class="tb-tpl__italic">Send.</em>
+    </h2>
+    <p class="tb-tpl__lede">
+      14 emails covering the most common Takealot disputes. Each one grounded in a specific CPA or ECT Act section. Replace <code class="tb-tpl__code">[BRACKETED]</code> fields with your specifics.
+    </p>
+  </div>
+
+  <div class="tb-tpl__theader tpl-header">
+    <span class="mono">Code</span>
+    <span class="mono">Title</span>
+    <span class="mono">Scenario</span>
+    <span class="mono tb-tpl__theader-right">Action</span>
+  </div>
+
+  {TEMPLATES.map((t) => (
+    <div class="tb-tpl__row-wrap" id={`template-${t.code}`}>
+      <button type="button" class="tb-tpl__row tpl-row" data-tpl-toggle aria-expanded="false" aria-controls={`tpl-body-${t.code}`}>
+        <span class="mono tb-tpl__code">{t.code}</span>
+        <span class="tb-tpl__title">{t.title}</span>
+        <span class="tb-tpl__scenario">{t.scenario}</span>
+        <span class="mono tb-tpl__action" data-tpl-action-label>Open ↘</span>
+      </button>
+
+      <div class="tb-tpl__body-wrap" id={`tpl-body-${t.code}`} hidden>
+        <div class="tb-tpl__card">
+          <div class="tb-tpl__card-top">
+            <div>
+              <div class="mono tb-tpl__sublabel">/ Subject</div>
+              <div class="tb-tpl__subject" data-subject>{t.subject}</div>
+            </div>
+            <button type="button" class="btn tb-tpl__copy" data-copy data-subject-text={t.subject}>
+              Copy email
+            </button>
+          </div>
+          <hr class="tb-tpl__divider" />
+          <div class="mono tb-tpl__sublabel">/ Body</div>
+          <pre class="tb-tpl__pre" data-body>{t.body}</pre>
+        </div>
+        <div class="mono tb-tpl__foot">
+          Replace [BRACKETED] fields with your specifics. Keep a copy for your records.
+        </div>
+      </div>
+    </div>
+  ))}
+</Section>
+
+<style>
+  .tb-tpl__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .tb-tpl__head { max-width: 18ch; margin: 0; }
+  .tb-tpl__italic { font-weight: 400; font-style: italic; }
+  .tb-tpl__lede {
+    max-width: 44ch;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .tb-tpl__code { font-family: var(--font-mono); }
+
+  .tb-tpl__theader {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1.2fr) minmax(0, 2.2fr) 120px;
+    gap: 16px;
+    padding: 10px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .tb-tpl__theader .mono { color: var(--ink-muted); }
+  .tb-tpl__theader-right { text-align: right; }
+
+  .tb-tpl__row-wrap { border-bottom: 1px solid var(--rule-soft); }
+  .tb-tpl__row {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1.2fr) minmax(0, 2.2fr) 120px;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 0;
+    text-align: left;
+    align-items: center;
+    color: var(--ink);
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+  }
+  .tb-tpl__code { color: var(--accent); }
+  .tb-tpl__title {
+    font-family: var(--font-display);
+    font-size: clamp(16px, 1.3vw, 19px);
+    letter-spacing: -0.01em;
+    font-weight: 500;
+  }
+  .tb-tpl__scenario {
+    color: var(--ink-muted);
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+  .tb-tpl__action { color: var(--ink-soft); text-align: right; }
+
+  .tb-tpl__body-wrap { padding: 0 0 28px; }
+  .tb-tpl__body-wrap[hidden] { display: none; }
+  .tb-tpl__card {
+    border: 1px solid var(--rule);
+    background: var(--paper-alt);
+    padding: 16px 18px;
+    border-radius: 2px;
+    position: relative;
+  }
+  .tb-tpl__card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .tb-tpl__sublabel { color: var(--ink-muted); margin-bottom: 4px; }
+  .tb-tpl__subject {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .tb-tpl__copy {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+    cursor: pointer;
+    flex: 0 0 auto;
+  }
+  .tb-tpl__copy[data-copied='true'] {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .tb-tpl__divider {
+    height: 1px;
+    border: 0;
+    background: var(--rule);
+    margin: 8px -18px 12px;
+  }
+  .tb-tpl__pre {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  .tb-tpl__foot { color: var(--ink-muted); margin-top: 8px; }
+</style>
+
+<script is:inline>
+  (function () {
+    // Toggle
+    document.querySelectorAll('[data-tpl-toggle]').forEach(function (btn) {
+      var id = btn.getAttribute('aria-controls');
+      var body = id ? document.getElementById(id) : null;
+      if (!body) return;
+      btn.addEventListener('click', function () {
+        var isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+        body.hidden = isOpen;
+        var label = btn.querySelector('[data-tpl-action-label]');
+        if (label) label.textContent = isOpen ? 'Open ↘' : 'Close ×';
+      });
+    });
+
+    // Copy-to-clipboard
+    document.querySelectorAll('[data-copy]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.tb-tpl__card');
+        if (!card) return;
+        var subject = btn.getAttribute('data-subject-text') || '';
+        var bodyEl = card.querySelector('[data-body]');
+        var bodyText = bodyEl ? bodyEl.textContent || '' : '';
+        var full = 'Subject: ' + subject + '\n\n' + bodyText;
+
+        function fallback() {
+          var ta = document.createElement('textarea');
+          ta.value = full;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.top = '-1000px';
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); } catch (e) { /* ignore */ }
+          document.body.removeChild(ta);
+        }
+
+        function done() {
+          btn.setAttribute('data-copied', 'true');
+          btn.textContent = 'Copied ✓';
+          setTimeout(function () {
+            btn.removeAttribute('data-copied');
+            btn.textContent = 'Copy email';
+          }, 1800);
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(full).then(done).catch(function () { fallback(); done(); });
+        } else {
+          fallback();
+          done();
+        }
+      });
+    });
+
+    // Honour #template-Tnn hash on first load.
+    if (location.hash && location.hash.indexOf('#template-') === 0) {
+      var el = document.getElementById(location.hash.slice(1));
+      if (el) {
+        var tb = el.querySelector('[data-tpl-toggle]');
+        if (tb && tb.getAttribute('aria-expanded') !== 'true') tb.click();
+      }
+    }
+  })();
+</script>

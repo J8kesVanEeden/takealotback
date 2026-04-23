@@ -1,0 +1,86 @@
+---
+import Section from './Section.astro';
+import { FAQ } from '../data/content';
+
+function pad(n: number) {
+  return String(n).padStart(2, '0');
+}
+---
+<Section id="faq" label="FAQ">
+  <h2 class="display h2 tb-faq__head">Frequently asked questions.</h2>
+  <div class="tb-faq__list">
+    {FAQ.map((f, i) => (
+      <details class="tb-faq__item">
+        <summary class="tb-faq__summary">
+          <span class="mono tb-faq__n">{pad(i + 1)}</span>
+          <span class="tb-faq__q">{f.q}</span>
+          <span class="mono tb-faq__toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="tb-faq__a">
+          <div />
+          <p class="tb-faq__body">{f.a}</p>
+        </div>
+      </details>
+    ))}
+  </div>
+
+  <p class="tb-faq__note">
+    Need a more detailed answer on <a href="/onus-of-proof" class="link-u">who has to prove what</a>, <a href="/aedilitian-remedies" class="link-u">what happens when the CPA runs out</a>, or <a href="/limits" class="link-u">where your rights actually stop</a>? The deep-dive pages cover the edges.
+  </p>
+</Section>
+
+<style>
+  .tb-faq__head { max-width: 18ch; margin-bottom: 32px; }
+  .tb-faq__list { border-top: 1px solid var(--rule); }
+  .tb-faq__item {
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .tb-faq__summary {
+    display: grid;
+    grid-template-columns: 48px 1fr 40px;
+    gap: 16px;
+    width: 100%;
+    text-align: left;
+    padding: 18px 0;
+    align-items: baseline;
+    color: var(--ink);
+    cursor: pointer;
+    list-style: none;
+  }
+  .tb-faq__summary::-webkit-details-marker { display: none; }
+  .tb-faq__n { color: var(--ink-faint); }
+  .tb-faq__q {
+    font-family: var(--font-display);
+    font-size: clamp(17px, 1.5vw, 22px);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+  .tb-faq__toggle { color: var(--ink-soft); text-align: right; }
+  .tb-faq__item[open] .tb-faq__toggle::before { content: '−'; }
+  .tb-faq__item:not([open]) .tb-faq__toggle::before { content: '+'; }
+  .tb-faq__item[open] .tb-faq__toggle, .tb-faq__item:not([open]) .tb-faq__toggle { visibility: hidden; }
+  .tb-faq__item[open] .tb-faq__toggle::before,
+  .tb-faq__item:not([open]) .tb-faq__toggle::before { visibility: visible; }
+
+  .tb-faq__a {
+    display: grid;
+    grid-template-columns: 48px 1fr 40px;
+    gap: 16px;
+    padding-bottom: 24px;
+  }
+  .tb-faq__body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 64ch;
+  }
+  .tb-faq__note {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 72ch;
+  }
+</style>

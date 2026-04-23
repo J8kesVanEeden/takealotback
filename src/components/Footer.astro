@@ -1,0 +1,182 @@
+---
+import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
+---
+<footer id="about-footer" class="tb-footer">
+  <div class="page tb-footer__top">
+    <div class="tb-footer__cols">
+      <div class="tb-footer__col">
+        <div class="mono tb-footer__coltitle">/ Site</div>
+        <div class="tb-footer__links">
+          <a class="tb-footer__link" href="/#home">Home</a>
+          <a class="tb-footer__link" href="/#about">About</a>
+          <a class="tb-footer__link" href="/#policies">Their Policies</a>
+          <a class="tb-footer__link" href="/#dismantled">Dismantled</a>
+          <a class="tb-footer__link" href="/#templates">Templates</a>
+          <a class="tb-footer__link" href="/#law">The Law</a>
+          <a class="tb-footer__link" href="/#escalate">Escalate</a>
+          <a class="tb-footer__link" href="/#faq">FAQ</a>
+        </div>
+      </div>
+
+      <div class="tb-footer__col">
+        <div class="mono tb-footer__coltitle">/ Deep dives</div>
+        <div class="tb-footer__links">
+          <a class="tb-footer__link" href="/onus-of-proof">Onus of proof</a>
+          <a class="tb-footer__link" href="/aedilitian-remedies">Aedilitian remedies</a>
+          <a class="tb-footer__link" href="/limits">What the CPA doesn't do</a>
+        </div>
+      </div>
+
+      <div class="tb-footer__col">
+        <div class="mono tb-footer__coltitle">/ External</div>
+        <div class="tb-footer__links">
+          <a class="tb-footer__link" href="https://takealot.com" target="_blank" rel="noopener noreferrer">takealot.com</a>
+          <a class="tb-footer__link" href="https://terms-and-policies.takealot.com" target="_blank" rel="noopener noreferrer">Takealot's returns policy</a>
+          <a class="tb-footer__link" href="https://cgso.org.za" target="_blank" rel="noopener noreferrer">CGSO</a>
+          <a class="tb-footer__link" href="https://thencc.org.za" target="_blank" rel="noopener noreferrer">NCC</a>
+          <a class="tb-footer__link" href="https://inforegulator.org.za" target="_blank" rel="noopener noreferrer">Information Regulator</a>
+        </div>
+      </div>
+
+      <div class="tb-footer__col">
+        <div class="mono tb-footer__coltitle">/ About the site</div>
+        <div class="tb-footer__links">
+          <a class="tb-footer__link" href={GITHUB_REPO_URL} target="_blank" rel="noopener noreferrer">GitHub repository</a>
+          <a class="tb-footer__link" href={`${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`} target="_blank" rel="noopener noreferrer">Content: CC BY 4.0</a>
+          <a class="tb-footer__link" href={`${GITHUB_REPO_URL}/blob/main/LICENSE`} target="_blank" rel="noopener noreferrer">Code: MIT</a>
+          <div class="mono tb-footer__meta-label">Last Takealot policy review</div>
+          <div class="mono tb-footer__meta-value">{LAST_REVIEWED}</div>
+        </div>
+      </div>
+
+      <div class="tb-footer__col">
+        <div class="mono tb-footer__coltitle">/ The short form</div>
+        <p class="tb-footer__blurb">
+          When Takealot's policy tries to sidestep the law, we help you put it back in its place.
+        </p>
+      </div>
+    </div>
+
+    <hr class="tb-footer__rule" />
+
+    <div class="tb-footer__legal">
+      <div>
+        <div class="mono tb-footer__coltitle">/ Disclaimer</div>
+        <p class="tb-footer__legalbody">
+          <strong>TakealotBack.com is an independent consumer advocacy and education resource.</strong> We are not affiliated with, endorsed by, sponsored by, or connected in any way to Takealot Online (RF) (Pty) Ltd or its parent company Naspers / Prosus. Takealot's official website is takealot.com. Nothing on this site constitutes legal advice. For free consumer dispute resolution, contact the Consumer Goods &amp; Services Ombud at <a href="https://cgso.org.za" target="_blank" rel="noopener noreferrer" class="tb-footer__inline-link">cgso.org.za</a>.
+        </p>
+      </div>
+      <div>
+        <div class="mono tb-footer__coltitle">/ Copyright</div>
+        <p class="tb-footer__legalbody">
+          &copy; 2026 TakealotBack.com. Original content licensed under Creative Commons BY 4.0. Source code licensed under MIT. Summaries and excerpts of Takealot's published policies are used under section 16 of the Constitution for consumer education, commentary, and criticism.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page tb-footer__bottom">
+    <div class="mono tb-footer__bottom-left">
+      This is not Takealot. Their site is takealot.com.
+    </div>
+    <div class="mono tb-footer__bottom-right">
+      Built by <a href="https://www.milkmoonstudio.com/" target="_blank" rel="noopener noreferrer" class="tb-footer__mms-link">Milk Moon Studio</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .tb-footer {
+    background: var(--ink);
+    color: var(--paper);
+    border-top: 1px solid var(--ink);
+    margin-top: 0;
+  }
+  .tb-footer__top { padding: 72px 24px 48px; }
+  .tb-footer__cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  .tb-footer__col { }
+  .tb-footer__coltitle {
+    color: color-mix(in oklab, var(--paper) 50%, transparent);
+    margin-bottom: 12px;
+  }
+  .tb-footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tb-footer__link {
+    color: var(--paper);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border: 1px solid color-mix(in oklab, var(--paper) 25%, transparent);
+    border-radius: 2px;
+    align-self: flex-start;
+  }
+  .tb-footer__link:hover {
+    border-color: var(--paper);
+    color: var(--paper);
+  }
+  .tb-footer__meta-label {
+    color: color-mix(in oklab, var(--paper) 50%, transparent);
+    margin-top: 6px;
+  }
+  .tb-footer__meta-value { color: var(--paper); }
+  .tb-footer__blurb {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.55;
+    color: color-mix(in oklab, var(--paper) 80%, transparent);
+  }
+
+  .tb-footer__rule {
+    height: 1px;
+    border: 0;
+    background: color-mix(in oklab, var(--paper) 20%, transparent);
+    margin: 0 0 32px;
+  }
+
+  .tb-footer__legal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .tb-footer__legalbody {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    color: color-mix(in oklab, var(--paper) 78%, transparent);
+  }
+  .tb-footer__legalbody strong { color: var(--paper); font-weight: 600; }
+  .tb-footer__inline-link {
+    color: var(--paper);
+    text-decoration: underline;
+  }
+
+  .tb-footer__bottom {
+    padding: 24px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid color-mix(in oklab, var(--paper) 20%, transparent);
+  }
+  .tb-footer__bottom-left,
+  .tb-footer__bottom-right {
+    color: color-mix(in oklab, var(--paper) 60%, transparent);
+  }
+  .tb-footer__mms-link {
+    color: inherit;
+    text-decoration: underline;
+  }
+  .tb-footer__mms-link:hover { color: var(--paper); }
+</style>

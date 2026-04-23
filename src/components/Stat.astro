@@ -1,0 +1,21 @@
+---
+// Inline statute chip — the small monospace pill used throughout the site.
+---
+<span class="tb-stat"><slot /></span>
+
+<style>
+  .tb-stat {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--paper-tint);
+    border: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+</style>

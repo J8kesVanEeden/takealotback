@@ -1,0 +1,57 @@
+---
+import Section from './Section.astro';
+import { GITHUB_REPO_URL } from '../data/content';
+---
+<Section id="about" label="This isn't an attack on Takealot">
+  <div class="tb-about__grid two-col">
+    <div>
+      <h2 class="display h2 tb-about__head">
+        About this site, <em class="tb-about__italic">honestly and upfront.</em>
+      </h2>
+      <div class="row tb-about__chips">
+        <span class="chip accent">Non-commercial</span>
+        <span class="chip">Independent</span>
+        <span class="chip">CC BY 4.0</span>
+      </div>
+    </div>
+    <div class="prose tb-about__prose">
+      <p><strong>Most of the time, Takealot gets it right.</strong> Most returns go smoothly. Most refunds process quickly. This site exists for the minority of cases where things don't — and specifically for the clauses in their returns policy that, in our view, stray beyond what the Consumer Protection Act actually permits.</p>
+      <p>We read the law. We read their policy. Where the two disagree, we explain why, in plain English, with the statute numbers you can cite back to them.</p>
+
+      <h4>The short version</h4>
+      <p>TakealotBack.com is an independent, non-commercial consumer education site. We explain South African consumer law as it applies to online retail disputes, and we specifically publish commentary and criticism on Takealot's published returns policy because Takealot is the largest online retailer in South Africa and their policy directly affects millions of consumers.</p>
+      <p>Our use of the Takealot name is for identification, criticism, and commentary — all of which are protected under section 16 of the Constitution.</p>
+
+      <h4>What we are not</h4>
+      <ul>
+        <li>We are not Takealot's customer support. If you need to log a return, that happens at <a href="https://takealot.com" target="_blank" rel="noopener noreferrer">takealot.com</a>.</li>
+        <li>We are not attorneys. Nothing on this site is legal advice. <a href="/limits">Here's where the CPA's protection stops</a>.</li>
+        <li>We are not a complaints directory. We do not publish user submissions.</li>
+        <li>We are not anti-Takealot.</li>
+      </ul>
+
+      <h4>Legal grounding</h4>
+      <ul>
+        <li>Section 16 of the Constitution — freedom of expression.</li>
+        <li>Section 34(1)(c) of the Trade Marks Act 194 of 1993 — non-commercial use for criticism/commentary.</li>
+        <li>Common law fair comment.</li>
+        <li>UDRP paragraph 4(c)(iii) — legitimate non-commercial fair use.</li>
+      </ul>
+
+      <h4>Information only — no correspondence</h4>
+      <p>This site has no contact email, no contact form, no comments. That is intentional. The site is a one-way reference resource. If you find something factually wrong, <a href={GITHUB_REPO_URL} target="_blank" rel="noopener noreferrer">the site's GitHub repository is public — open an issue</a>.</p>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .tb-about__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: clamp(32px, 5vw, 80px);
+  }
+  .tb-about__head { max-width: 14ch; }
+  .tb-about__italic { font-weight: 400; font-style: italic; }
+  .tb-about__chips { margin-top: 24px; }
+  .tb-about__prose { max-width: 64ch; }
+</style>

@@ -1,0 +1,142 @@
+---
+import PlusRow from './PlusRow.astro';
+---
+<section id="home" data-screen-label="Home" class="tb-hero">
+  <PlusRow />
+
+  {/* Default hero (statement + metadata + brief) */}
+  <div class="page tb-hero__default">
+    <div class="tb-hero__topmeta">
+      <div class="mono slash-label">Mission</div>
+      <div class="mono tb-hero__jurisdiction">ZA / Consumer rights / v0.1 · 2026.04</div>
+    </div>
+
+    <h1 class="display tb-hero__headline">
+      When Takealot's policy tries to sidestep the law, we help you <em class="tb-hero__italic">put it back</em> in its place.
+    </h1>
+
+    <div class="tb-hero__grid hero-grid">
+      <div>
+        <div class="tb-hero__rule" />
+        <div class="mono slash-label tb-hero__blocklabel">Metadata</div>
+        <dl class="meta-grid tb-hero__dl">
+          <dt>Resource</dt><dd>Consumer advocacy</dd>
+          <dt>Jurisdiction</dt><dd>South Africa</dd>
+          <dt>Instruments</dt><dd>CPA · ECT · POPIA · Common law</dd>
+          <dt>Clauses</dt><dd>18 dismantled</dd>
+          <dt>Templates</dt><dd>14 ready-to-send</dd>
+          <dt>Escalation</dt><dd>10-tier ladder</dd>
+          <dt>Cost</dt><dd>Zero · Forever</dd>
+          <dt>Ads</dt><dd>None</dd>
+          <dt>Reading time</dt><dd>~14 min full read</dd>
+        </dl>
+        <div class="tb-hero__rule tb-hero__rule--tight" />
+      </div>
+      <div>
+        <div class="tb-hero__rule" />
+        <div class="mono slash-label tb-hero__blocklabel">Brief</div>
+        <p class="tb-hero__brief">
+          TakealotBack.com exists for one reason: to protect South African consumers when Takealot's returns policy is used — deliberately or by default — to sidestep rights that already exist in law.
+        </p>
+        <p class="tb-hero__brief">
+          The Consumer Protection Act, the Electronic Communications and Transactions Act, the Protection of Personal Information Act, and decades of common law all give you protections that no returns policy can override. When Takealot's policy runs up against those laws, the law wins. But only if you know it, name it, and use it.
+        </p>
+        <p class="tb-hero__brief">
+          We don't sell anything. We don't run ads. We don't take donations. Everything on this site is free, forever, and exists solely to make sure the Consumer Protection Act is worth more than the paper it's printed on.
+        </p>
+      </div>
+    </div>
+
+    <div class="tb-hero__ctas">
+      <a href="#dismantled" class="btn primary">Full dismantling &rarr;</a>
+      <a href="#templates" class="btn">Email templates &rarr;</a>
+      <a href="#law" class="btn">Your legal rights &rarr;</a>
+      <a href="#escalate" class="btn">How to escalate &rarr;</a>
+    </div>
+  </div>
+
+  {/* Giant hero variant — toggled via data-hero on <html> */}
+  <div class="page tb-hero__giant">
+    <div class="mono slash-label tb-hero__giantlabel">Mission / giant</div>
+    <div class="display tb-hero__giantdisplay">
+      TAKE<br />A LOT<br /><em class="tb-hero__giantitalic">BACK.</em>
+    </div>
+    <p class="lede tb-hero__giantlede">
+      When Takealot's policy tries to sidestep the Consumer Protection Act, the ECT Act, or POPIA — we help you put it back in its place. 18 clauses dismantled. 14 ready-to-send templates. One ladder to escalate.
+    </p>
+    <div class="tb-hero__ctas">
+      <a href="#dismantled" class="btn primary">Full dismantling &rarr;</a>
+      <a href="#templates" class="btn">Email templates &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tb-hero {
+    position: relative;
+    padding: clamp(56px, 8vw, 120px) 0 clamp(48px, 6vw, 80px);
+  }
+
+  /* Hero variant switch driven by [data-hero] on <html>. */
+  :root[data-hero='giant'] .tb-hero__default { display: none; }
+  :root:not([data-hero='giant']) .tb-hero__giant { display: none; }
+
+  .tb-hero__topmeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .tb-hero__jurisdiction { color: var(--ink-muted); }
+
+  .tb-hero__headline {
+    font-size: clamp(42px, 7.4vw, 124px);
+    line-height: 0.93;
+    letter-spacing: -0.035em;
+    margin: 0 0 clamp(28px, 3vw, 40px);
+    max-width: 22ch;
+    font-weight: 500;
+  }
+  .tb-hero__italic { font-style: italic; font-weight: 400; }
+
+  .tb-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: clamp(24px, 5vw, 80px);
+    align-items: start;
+  }
+
+  .tb-hero__rule { height: 1px; background: var(--rule); margin-bottom: 16px; }
+  .tb-hero__rule--tight { margin-top: 16px; margin-bottom: 0; }
+  .tb-hero__blocklabel { margin-bottom: 14px; }
+  .tb-hero__dl { margin: 0; }
+
+  .tb-hero__brief {
+    font-size: clamp(15px, 1.3vw, 17px);
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .tb-hero__brief + .tb-hero__brief { margin-top: 1em; }
+
+  .tb-hero__ctas {
+    margin-top: clamp(36px, 4vw, 56px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Giant variant */
+  .tb-hero__giantlabel { margin-bottom: 20px; }
+  .tb-hero__giantdisplay {
+    font-size: clamp(56px, 13vw, 220px);
+    line-height: 0.86;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    margin: 0;
+  }
+  .tb-hero__giantitalic { font-weight: 400; font-style: italic; }
+  .tb-hero__giantlede { margin-top: 40px; }
+</style>
