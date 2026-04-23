@@ -1,0 +1,320 @@
+---
+// "Find your fight" — decision-tree modal that routes a dispute to a clause + template.
+---
+<dialog class="tb-triage" data-triage aria-label="Find your fight">
+  <div class="tb-triage__panel">
+    <div class="tb-triage__header">
+      <div class="mono slash-label">Find your fight</div>
+      <button type="button" class="kbd tb-triage__close" data-triage-close aria-label="Close (Escape)">ESC</button>
+    </div>
+    <div class="tb-triage__body" data-triage-body>
+      <!-- Populated client-side -->
+    </div>
+  </div>
+</dialog>
+
+<style>
+  .tb-triage {
+    /* Base <dialog> reset; keep native modal semantics but restyle */
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    max-width: none;
+    max-height: none;
+  }
+  .tb-triage::backdrop {
+    background: color-mix(in oklab, var(--ink) 70%, transparent);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+  .tb-triage__panel {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    width: min(640px, calc(100vw - 40px));
+    max-height: calc(100vh - 40px);
+    overflow: auto;
+    padding: 28px 28px 32px;
+    border-radius: 2px;
+    margin: 20px auto;
+  }
+  .tb-triage__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .tb-triage__close {
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  .tb-triage__q {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    font-size: clamp(22px, 2.4vw, 30px);
+    margin: 0 0 24px;
+    max-width: 22ch;
+  }
+  .tb-triage__opts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tb-triage__opt {
+    text-align: left;
+    padding: 14px 16px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--paper);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background 120ms ease, border-color 120ms ease;
+  }
+  .tb-triage__opt:hover {
+    background: var(--paper-alt);
+    border-color: var(--ink);
+  }
+  .tb-triage__opt-arrow {
+    font-family: var(--font-mono);
+    color: var(--ink-muted);
+  }
+  .tb-triage__back {
+    margin-top: 18px;
+    color: var(--ink-muted);
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 4px 0;
+  }
+  .tb-triage__result-label {
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .tb-triage__result-head {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.4vw, 30px);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0 0 12px;
+  }
+  .tb-triage__result-body {
+    margin: 0 0 20px;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .tb-triage__result-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var TREE = {
+      start: {
+        q: "What's the heart of your dispute?",
+        opts: [
+          { label: "Defective item", go: "defective" },
+          { label: "Wrong / damaged / missing", go: "wrong" },
+          { label: "Refund / credit dispute", go: "refund" },
+          { label: "Order cancelled by Takealot", go: "cancel" },
+          { label: "Return refused on a technicality", go: "refused" },
+          { label: "Something else", go: "other" },
+        ],
+      },
+      defective: {
+        q: "When did it fail?",
+        opts: [
+          { label: "Within 6 months", result: { clause: "01", tpl: "T01", note: "Pure CPA s56. You elect repair / replace / refund. Retailer liable regardless of manufacturer." } },
+          { label: "Between 6 and 24 months", result: { clause: "07", tpl: "T13", note: "CPA s55(2)(c) durability + s41 if warranty advertised. Pursue both retailer and manufacturer." } },
+          { label: "It's a data-storage device", result: { clause: "04", tpl: "T04", note: "Factory-reset. Refuse live credentials. POPIA is on your side." } },
+          { label: "It's part of a bundle", result: { clause: "05", tpl: "T05", note: "Bandera v Kia. You return only the defective component." } },
+        ],
+      },
+      wrong: {
+        q: "Which one?",
+        opts: [
+          { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "CPA s19 / s20. Log within 30 days but assert s56 if latent." } },
+          { label: "Missing part of a set", result: { clause: "05", tpl: "T05", note: "Non-conforming delivery. Partial replacement is the lawful remedy." } },
+        ],
+      },
+      refund: {
+        q: "What's the issue?",
+        opts: [
+          { label: "Forced store credit", result: { clause: "06", tpl: "T06", note: "CPA s56(2). You elect cash refund." } },
+          { label: "Refund not processed", result: { clause: "06", tpl: "T14", note: "Final notice + chargeback in parallel." } },
+        ],
+      },
+      cancel: {
+        q: "Why did they say they cancelled?",
+        opts: [
+          { label: "Pricing error", result: { clause: "14", tpl: "T10", note: "CPA s23 binds displayed price. Claim difference if you re-bought." } },
+          { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "CPA s47 over-selling. Up to double-damages compensation." } },
+          { label: "Other reason", result: { clause: "14", tpl: "T10", note: "Contract was formed on confirmation. Seek refund + difference." } },
+        ],
+      },
+      refused: {
+        q: "On what basis?",
+        opts: [
+          { label: "No original packaging", result: { clause: "02", tpl: "T02", note: "s56 doesn't require packaging. s51 voids policy waivers." } },
+          { label: "“Consumer damage” / surge / misuse", result: { clause: "03", tpl: "T03", note: "Onus is on Takealot. Demand the technical report." } },
+          { label: "Deflected to manufacturer", result: { clause: "07", tpl: "T07", note: "s56(1) retailer liability is concurrent and non-delegable." } },
+          { label: "Marketplace seller's fault", result: { clause: "15", tpl: "T11", note: "Platform has concurrent obligations. CGSO has jurisdiction." } },
+        ],
+      },
+      other: {
+        q: "What category?",
+        opts: [
+          { label: "Digital item doesn't work", result: { clause: "16", tpl: "T12", note: "Defective digital is still defective goods. s56 applies." } },
+          { label: "Policy changed after my order", result: { clause: "12", tpl: "T09", note: "Applicable version = version at order time." } },
+          { label: "Disposal threat", result: { clause: "09", tpl: "T08", note: "Dispute in writing. File CGSO immediately." } },
+          { label: "High Court clause", result: { clause: "13", tpl: "T14", note: "Statutory hierarchy overrides. You keep your SCC option." } },
+        ],
+      },
+    };
+
+    var CLAUSE_SLUGS = {
+      "01": "time-limits", "02": "original-packaging", "03": "damage-exclusions",
+      "04": "unlock-codes", "05": "bundle-return", "06": "credit-vs-refund",
+      "07": "manufacturer-deflection", "08": "defective-exclusions", "09": "rejected-disposal",
+      "10": "non-returnable", "11": "coupons-vouchers", "12": "unilateral-changes",
+      "13": "high-court-jurisdiction", "14": "order-cancellation", "15": "marketplace-sellers",
+      "16": "digital-items", "17": "resale-prohibition", "18": "mis-returned-items",
+    };
+
+    var dialog = document.querySelector('[data-triage]');
+    if (!dialog) return;
+    var body = dialog.querySelector('[data-triage-body]');
+    var state = { node: 'start', result: null };
+
+    function esc(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+      });
+    }
+
+    function render() {
+      if (state.result) {
+        body.innerHTML =
+          '<div class="mono tb-triage__result-label">/ Result</div>' +
+          '<div class="tb-triage__result-head">Clause ' + esc(state.result.clause) + ' · Template ' + esc(state.result.tpl) + '</div>' +
+          '<p class="tb-triage__result-body">' + esc(state.result.note) + '</p>' +
+          '<div class="tb-triage__result-actions">' +
+            '<button type="button" class="btn primary" data-triage-openclause="' + esc(state.result.clause) + '">Open clause &rarr;</button>' +
+            '<button type="button" class="btn" data-triage-opentpl="' + esc(state.result.tpl) + '">Open template &rarr;</button>' +
+            '<button type="button" class="btn ghost" data-triage-restart>Start over</button>' +
+          '</div>';
+        return;
+      }
+      var cur = TREE[state.node] || TREE.start;
+      var html =
+        '<div class="tb-triage__q">' + esc(cur.q) + '</div>' +
+        '<div class="tb-triage__opts">' +
+          cur.opts.map(function (o, i) {
+            var meta = o.result
+              ? (' data-triage-result="' + i + '"')
+              : (' data-triage-go="' + esc(o.go) + '"');
+            return '<button type="button" class="tb-triage__opt"' + meta + '>' +
+                   '<span>' + esc(o.label) + '</span>' +
+                   '<span class="tb-triage__opt-arrow">&rarr;</span>' +
+                   '</button>';
+          }).join('') +
+        '</div>';
+      if (state.node !== 'start') {
+        html += '<button type="button" class="mono tb-triage__back" data-triage-restart>&larr; Start over</button>';
+      }
+      body.innerHTML = html;
+
+      // Store the current node's opts so we can resolve result indices on click.
+      body.__tbOpts = cur.opts;
+    }
+
+    function open() {
+      state = { node: 'start', result: null };
+      render();
+      if (typeof dialog.showModal === 'function') {
+        if (!dialog.open) dialog.showModal();
+      } else {
+        dialog.setAttribute('open', '');
+      }
+    }
+    function close() {
+      if (typeof dialog.close === 'function' && dialog.open) dialog.close();
+      else dialog.removeAttribute('open');
+    }
+    function toggle() { dialog.open ? close() : open(); }
+
+    // External triggers
+    window.addEventListener('tb:triage-toggle', toggle);
+    window.addEventListener('tb:triage-close', close);
+
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!(t instanceof Element)) return;
+      if (t.closest('[data-triage-open]')) { open(); return; }
+    });
+
+    // Backdrop click closes.
+    dialog.addEventListener('click', function (e) {
+      if (e.target === dialog) close();
+    });
+
+    // Body delegated click handlers (go / result / restart / open clause / open tpl).
+    body.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!(t instanceof Element)) return;
+      var btn = t.closest('button');
+      if (!btn) return;
+
+      if (btn.hasAttribute('data-triage-restart')) {
+        state = { node: 'start', result: null };
+        render();
+        return;
+      }
+      var go = btn.getAttribute('data-triage-go');
+      if (go) { state.node = go; render(); return; }
+      var resultIdx = btn.getAttribute('data-triage-result');
+      if (resultIdx !== null) {
+        var opt = body.__tbOpts && body.__tbOpts[parseInt(resultIdx, 10)];
+        if (opt && opt.result) { state.result = opt.result; render(); }
+        return;
+      }
+      var openClause = btn.getAttribute('data-triage-openclause');
+      if (openClause) {
+        var slug = CLAUSE_SLUGS[openClause];
+        close();
+        if (slug && location.pathname === '/') {
+          var el = document.getElementById('clause-' + slug);
+          if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' });
+        } else if (slug) {
+          location.href = '/#clause-' + slug;
+        }
+        return;
+      }
+      var openTpl = btn.getAttribute('data-triage-opentpl');
+      if (openTpl) {
+        close();
+        if (location.pathname === '/') {
+          var te = document.getElementById('template-' + openTpl);
+          if (te) window.scrollTo({ top: te.offsetTop - 40, behavior: 'smooth' });
+        } else {
+          location.href = '/#template-' + openTpl;
+        }
+      }
+    });
+
+    // The native <dialog> handles Escape itself; also listen for the global close event.
+    dialog.addEventListener('cancel', function () { /* default: close */ });
+  })();
+</script>

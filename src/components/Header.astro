@@ -1,0 +1,153 @@
+---
+// Sticky site header — nav with key hints, Takealot-vs-us nudge, and the "C" triage trigger.
+const nav = [
+  { k: 'H', label: 'Home', href: '/#home' },
+  { k: 'D', label: 'Dismantled', href: '/#dismantled' },
+  { k: 'T', label: 'Templates', href: '/#templates' },
+  { k: 'L', label: 'The Law', href: '/#law' },
+  { k: 'W', label: 'Warranties', href: '/#warranties' },
+  { k: 'E', label: 'Escalate', href: '/#escalate' },
+  { k: 'F', label: 'FAQ', href: '/#faq' },
+];
+---
+<header class="tb-header" data-site-header data-scrolled="false">
+  <div class="page tb-header__inner">
+    <nav class="tb-header__nav" aria-label="Primary">
+      {nav.map((n) => (
+        <a href={n.href} class="tb-navlink" data-jump={n.href.startsWith('/#') ? n.href.slice(2) : ''}>
+          <span class="tb-navlink__key">{n.k}</span>
+          <span>{n.label}</span>
+        </a>
+      ))}
+    </nav>
+    <div class="tb-header__right">
+      <a href="https://takealot.com" target="_blank" rel="noopener noreferrer" class="tb-takealot-nudge">
+        <span class="tb-takealot-nudge__slash">/</span> Looking for Takealot? takealot.com &rarr;
+      </a>
+      <button type="button" class="tb-triage-btn" data-triage-open>
+        <span class="tb-triage-btn__key">C</span>
+        Find your fight
+      </button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .tb-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in oklab, var(--paper) 95%, transparent);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-bottom: 1px solid transparent;
+    transition: border-color 150ms ease;
+  }
+  .tb-header[data-scrolled='true'] { border-bottom-color: var(--rule); }
+  .tb-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 24px;
+    gap: 16px;
+  }
+  .tb-header__nav {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+  .tb-header__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tb-navlink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 6px 8px;
+    border-radius: 2px;
+    transition: color 120ms ease;
+  }
+  .tb-navlink:hover { color: var(--accent); }
+  .tb-navlink__key {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    border: 1px solid var(--rule);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+
+  .tb-takealot-nudge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+  }
+  .tb-takealot-nudge__slash { color: var(--ink-faint); }
+
+  .tb-triage-btn {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 7px 10px;
+    border-radius: 2px;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+  }
+  .tb-triage-btn__key {
+    border: 1px solid color-mix(in oklab, var(--paper) 30%, transparent);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+
+  @media (max-width: 720px) {
+    .tb-takealot-nudge { display: none; }
+    .tb-header__nav { gap: 0; }
+    .tb-navlink span:last-child { display: none; }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    // Smooth-scroll for same-page jumps with the sticky-header offset.
+    document.querySelectorAll('[data-jump]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        var target = el.getAttribute('data-jump');
+        if (!target) return;
+        // Only intercept if we are already on the home page.
+        if (location.pathname === '/' || location.pathname === '/index.html') {
+          var node = document.getElementById(target);
+          if (node) {
+            e.preventDefault();
+            window.scrollTo({ top: node.offsetTop - 48, behavior: 'smooth' });
+            history.replaceState(null, '', '/#' + target);
+          }
+        }
+      });
+    });
+  })();
+</script>

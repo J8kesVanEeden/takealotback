@@ -1,0 +1,121 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TriageModal from '../components/TriageModal.astro';
+import TweaksPanel from '../components/TweaksPanel.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+}
+
+const { title, description, canonicalPath = '/' } = Astro.props;
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
+const canonical = `${siteUrl}${canonicalPath}`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="TakealotBack.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#F3F1EC" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+    {/* Tweaks: apply persisted data attributes before first paint to avoid flash */}
+    <script is:inline>
+      (function () {
+        try {
+          var raw = localStorage.getItem('tb_tweaks');
+          var t = raw ? JSON.parse(raw) : null;
+          if (!t || typeof t !== 'object') {
+            t = { palette: 'paper', display: 'geist', density: 'normal', hero: 'default' };
+          }
+          var r = document.documentElement;
+          r.setAttribute('data-palette', t.palette || 'paper');
+          r.setAttribute('data-display', t.display || 'geist');
+          r.setAttribute('data-density', t.density || 'normal');
+          r.setAttribute('data-hero', t.hero || 'default');
+        } catch (e) {
+          /* ignore — default rendering applies */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="sr-only">Skip to main content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <TriageModal />
+    <TweaksPanel />
+
+    {/* Global keyboard shortcuts + sticky-header scroll border + triage/tweaks toggles */}
+    <script is:inline>
+      (function () {
+        var header = document.querySelector('[data-site-header]');
+        if (header) {
+          var update = function () {
+            header.setAttribute('data-scrolled', window.scrollY > 20 ? 'true' : 'false');
+          };
+          update();
+          window.addEventListener('scroll', update, { passive: true });
+        }
+
+        function jump(id) {
+          var el = document.getElementById(id);
+          if (el) window.scrollTo({ top: el.offsetTop - 48, behavior: 'smooth' });
+        }
+
+        window.addEventListener('keydown', function (e) {
+          var target = e.target;
+          if (target && target.matches && target.matches('input, textarea, select, [contenteditable]')) return;
+          if (e.metaKey || e.ctrlKey || e.altKey) return;
+          var k = (e.key || '').toLowerCase();
+          if (k === 'h') { jump('home'); return; }
+          if (k === 'd') { jump('dismantled'); return; }
+          if (k === 't') { jump('templates'); return; }
+          if (k === 'l') { jump('law'); return; }
+          if (k === 'w') { jump('warranties'); return; }
+          if (k === 'e') { jump('escalate'); return; }
+          if (k === 'f') { jump('faq'); return; }
+          if (k === 'c') {
+            e.preventDefault();
+            window.dispatchEvent(new CustomEvent('tb:triage-toggle'));
+            return;
+          }
+          if (e.key === '?' || (e.shiftKey && k === '/')) {
+            e.preventDefault();
+            window.dispatchEvent(new CustomEvent('tb:tweaks-toggle'));
+            return;
+          }
+          if (k === 'escape') {
+            window.dispatchEvent(new CustomEvent('tb:triage-close'));
+            window.dispatchEvent(new CustomEvent('tb:tweaks-close'));
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

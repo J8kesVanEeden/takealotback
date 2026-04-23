@@ -1,0 +1,156 @@
+---
+import Section from './Section.astro';
+import Stat from './Stat.astro';
+import { LAW_SECTIONS } from '../data/content';
+
+const bodies = [
+  { n: 'CGSO', who: 'Consumer Goods & Services Ombud', meta: 'cgso.org.za · 0860 000 272 · Free, binding on Takealot' },
+  { n: 'NCC', who: 'National Consumer Commission', meta: 'thencc.gov.za · 012 428 7000' },
+  { n: 'POPIA', who: 'Information Regulator', meta: 'inforegulator.org.za' },
+  { n: 'ARB', who: 'Advertising Regulatory Board', meta: 'arb.org.za · Misleading advertising' },
+  { n: 'SCC', who: 'Small Claims Court', meta: '< R20,000 · No attorneys · ~R100 filing fee' },
+  { n: 'MC', who: "Magistrate's Court", meta: '< R400,000 · Attorney recommended' },
+];
+
+function pad(n: number) {
+  return String(n).padStart(2, '0');
+}
+---
+<Section id="law" label="The Law · full reference">
+  <div class="tb-law__intro two-col">
+    <h2 class="display h2 tb-law__head">
+      South African consumer protection law — <em class="tb-law__italic">the full map.</em>
+    </h2>
+    <p class="tb-law__lede">
+      Everything that protects you, in one place. Each section links back to the clauses and templates where it's used.
+    </p>
+  </div>
+
+  {LAW_SECTIONS.map((group) => (
+    <div class="tb-law__group">
+      <div class="tb-law__grouphead">
+        <span class="display tb-law__groupname">{group.group}</span>
+        <div class="tb-law__ruleline" />
+      </div>
+      <div class="tb-law__cells">
+        {group.items.map((it, i) => (
+          <div class="tb-law__cell law-cell">
+            <div class="tb-law__cellhead">
+              <Stat>{group.group} {it.id}</Stat>
+              <span class="mono tb-law__cellnum">{pad(i + 1)}</span>
+            </div>
+            <div class="tb-law__celltitle">{it.title}</div>
+            <div class="tb-law__cellblurb">{it.blurb}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+
+  <div class="tb-law__bodies two-col">
+    <div>
+      <div class="mono slash-label">Bodies</div>
+      <h3 class="display h3 tb-law__bodieshead">Where to file</h3>
+    </div>
+    <div class="tb-law__bodiesgrid">
+      {bodies.map((b) => (
+        <div class="tb-law__body">
+          <div class="mono tb-law__body-n">{b.n}</div>
+          <div class="tb-law__body-who">{b.who}</div>
+          <div class="mono tb-law__body-meta">{b.meta}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Section>
+
+<style>
+  .tb-law__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: clamp(32px, 5vw, 72px);
+    margin-bottom: 48px;
+  }
+  .tb-law__head { max-width: 18ch; margin: 0; }
+  .tb-law__italic { font-weight: 400; font-style: italic; }
+  .tb-law__lede {
+    max-width: 46ch;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .tb-law__group { margin-bottom: 36px; }
+  .tb-law__grouphead {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+  .tb-law__groupname {
+    font-size: clamp(22px, 2vw, 28px);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .tb-law__ruleline { flex: 1; height: 1px; background: var(--rule); }
+  .tb-law__cells {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0;
+    border-top: 1px solid var(--rule-soft);
+  }
+  .tb-law__cell {
+    padding: 18px 20px 20px;
+    border-bottom: 1px solid var(--rule-soft);
+    border-right: 1px solid var(--rule-soft);
+    border-left: 1px solid var(--rule-soft);
+    min-height: 110px;
+  }
+  .tb-law__cellhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .tb-law__cellnum { color: var(--ink-faint); }
+  .tb-law__celltitle {
+    font-family: var(--font-display);
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .tb-law__cellblurb {
+    color: var(--ink-soft);
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+
+  .tb-law__bodies {
+    margin-top: 32px;
+    padding: 20px 22px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--paper-alt);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 24px;
+    align-items: start;
+  }
+  .tb-law__bodieshead { margin: 6px 0 0; font-weight: 500; }
+  .tb-law__bodiesgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .tb-law__body { border-top: 1px solid var(--rule); padding-top: 10px; }
+  .tb-law__body-n { color: var(--ink-faint); }
+  .tb-law__body-who {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 2px 0;
+  }
+  .tb-law__body-meta { color: var(--ink-muted); }
+</style>

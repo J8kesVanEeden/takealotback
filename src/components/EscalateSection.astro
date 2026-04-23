@@ -1,0 +1,79 @@
+---
+import Section from './Section.astro';
+import Stat from './Stat.astro';
+import { ESCALATION } from '../data/content';
+
+function pad(n: number) {
+  return String(n).padStart(2, '0');
+}
+---
+<Section id="escalate" label="Escalate · 10-tier ladder">
+  <div class="tb-esc__intro two-col">
+    <h2 class="display h2 tb-esc__head">
+      The ladder is <em class="tb-esc__italic">shorter</em> than you think.
+    </h2>
+    <p class="tb-esc__lede">
+      If Takealot won't resolve, there's a clear, free, effective path. No attorney needed for tiers 1&ndash;8. Most of this can be done in a weekend.
+    </p>
+  </div>
+
+  <div class="tb-esc__ladder">
+    {ESCALATION.map((t) => (
+      <div class="tb-esc__tier tier-row">
+        <div class="display tb-esc__tierno">T{pad(t.tier)}</div>
+        <div class="tb-esc__tiertitle">{t.title}</div>
+        <div class="tb-esc__tierbody">{t.body}</div>
+        <div class="mono tb-esc__tiercontact">{t.contact}</div>
+        <div class="tb-esc__tierwindow"><Stat>{t.window}</Stat></div>
+      </div>
+    ))}
+  </div>
+</Section>
+
+<style>
+  .tb-esc__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: clamp(32px, 5vw, 72px);
+    margin-bottom: 48px;
+  }
+  .tb-esc__head { max-width: 18ch; margin: 0; }
+  .tb-esc__italic { font-weight: 400; font-style: italic; }
+  .tb-esc__lede {
+    max-width: 48ch;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .tb-esc__ladder { border-top: 1px solid var(--rule); }
+  .tb-esc__tier {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) minmax(0, 2fr) minmax(180px, 1.4fr) 110px;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    align-items: baseline;
+  }
+  .tb-esc__tierno {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .tb-esc__tiertitle {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .tb-esc__tierbody {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .tb-esc__tiercontact { color: var(--ink-muted); }
+  .tb-esc__tierwindow { text-align: right; }
+</style>

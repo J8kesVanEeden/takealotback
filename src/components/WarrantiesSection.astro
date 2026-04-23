@@ -1,0 +1,129 @@
+---
+import Section from './Section.astro';
+import { WARRANTY_ANGLES, PLAYBOOK } from '../data/content';
+
+function pad(n: number) {
+  return String(n).padStart(2, '0');
+}
+---
+<Section id="warranties" label="Warranties · manufacturer vs CPA">
+  <div class="tb-war__intro two-col">
+    <h2 class="display h2 tb-war__head">
+      Manufacturer warranties, Takealot, and the <em class="tb-war__italic">CPA</em>.
+    </h2>
+    <p class="tb-war__lede">
+      The product page says <span class="mono">1 year</span>. The manufacturer says <span class="mono">2 years</span>. The manufacturer won't honour. Takealot shrugs. Here's what actually applies — three layers, all running in parallel.
+    </p>
+  </div>
+
+  <div class="tb-war__angles">
+    {WARRANTY_ANGLES.map((a) => (
+      <div class="tb-war__angle">
+        <div class="mono tb-war__angle-n">Angle {pad(a.n)}</div>
+        <div class="display tb-war__angle-title">{a.title}</div>
+        <div class="tb-war__angle-body">{a.body}</div>
+      </div>
+    ))}
+  </div>
+
+  <div class="tb-war__playbookwrap">
+    <div class="mono slash-label tb-war__playbooklabel">Practical playbook</div>
+    <div class="tb-war__playbook">
+      {PLAYBOOK.map((p) => (
+        <div class="tb-war__play">
+          <div class="display tb-war__letter">{p.letter}</div>
+          <div class="tb-war__when">{p.when}</div>
+          <div class="tb-war__play-text">{p.play}</div>
+        </div>
+      ))}
+    </div>
+
+    <p class="tb-war__linknote">
+      When the manufacturer's refused and you're past month 6, the common-law <a href="/aedilitian-remedies" class="link-u">aedilitian remedies</a> give you another 3 years for latent defects.
+    </p>
+  </div>
+</Section>
+
+<style>
+  .tb-war__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: clamp(32px, 5vw, 72px);
+    margin-bottom: 48px;
+  }
+  .tb-war__head { max-width: 18ch; margin: 0; }
+  .tb-war__italic { font-weight: 400; font-style: italic; }
+  .tb-war__lede {
+    max-width: 48ch;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .tb-war__angles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-war__angle {
+    padding: 20px 20px 24px;
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
+    min-height: 160px;
+  }
+  .tb-war__angle-n { color: var(--ink-faint); margin-bottom: 10px; }
+  .tb-war__angle-title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+  .tb-war__angle-body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .tb-war__playbookwrap { margin-top: 48px; }
+  .tb-war__playbooklabel { margin-bottom: 12px; }
+  .tb-war__playbook {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-war__play {
+    padding: 20px 22px 24px;
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
+  }
+  .tb-war__letter {
+    font-size: 44px;
+    font-weight: 500;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .tb-war__when {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 10px 0 6px;
+    font-weight: 500;
+  }
+  .tb-war__play-text {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .tb-war__linknote {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 64ch;
+  }
+</style>

@@ -1,0 +1,340 @@
+---
+import Section from './Section.astro';
+import Stat from './Stat.astro';
+import { CLAUSES, LAST_REVIEWED, TAKEALOT_POLICY_REVIEWED_AGAINST } from '../data/content';
+
+const filters = [
+  { id: 'all', label: 'All 18' },
+  { id: 's56', label: 'CPA s56' },
+  { id: 'popia', label: 'POPIA' },
+  { id: 'contract', label: 'Contract' },
+  { id: 'process', label: 'Process' },
+];
+
+// Precompute the "hay" string on the server so filtering is trivial in the browser.
+function hay(c: typeof CLAUSES[number]) {
+  return (c.angles.map((a) => a.stat).join(' ') + ' ' + c.title + ' ' + c.why).toLowerCase();
+}
+---
+<Section id="dismantled" label="Dismantled · 18 clauses">
+  <div class="tb-dm__intro">
+    <h2 class="display h2 tb-dm__head">
+      All 18 clauses, <em class="tb-dm__italic">dismantled.</em>
+    </h2>
+    <p class="tb-dm__lede">
+      Each clause pairs what Takealot's policy says with the statute, case law, or common-law principle that limits or overrides it. Click any row to expand.
+    </p>
+  </div>
+
+  <div class="tb-dm__filters" role="toolbar" aria-label="Filter clauses">
+    {filters.map((f, i) => (
+      <button type="button" class="chip tb-dm__filter" data-filter={f.id} aria-pressed={i === 0 ? 'true' : 'false'}>
+        {f.label}
+      </button>
+    ))}
+  </div>
+
+  <div class="tb-dm__theader clause-header">
+    <span class="mono">No.</span>
+    <span class="mono">Clause</span>
+    <span class="mono">Legal angles</span>
+    <span class="mono">Template</span>
+    <span class="mono tb-dm__theader-right">Read</span>
+  </div>
+
+  {CLAUSES.map((c) => (
+    <div class="tb-dm__row-wrap" data-clause data-hay={hay(c)} id={`clause-${c.slug}`}>
+      <button type="button" class="tb-dm__row clause-row" data-toggle aria-expanded="false" aria-controls={`clause-detail-${c.slug}`}>
+        <span class="mono tb-dm__n">{c.n}</span>
+        <span class="tb-dm__title">{c.title}</span>
+        <span class="tb-dm__angles">
+          {c.angles.slice(0, 3).map((a) => <Stat>{a.stat}</Stat>)}
+          {c.angles.length > 3 && (
+            <span class="mono tb-dm__more">+{c.angles.length - 3} more</span>
+          )}
+        </span>
+        <span class:list={["mono tb-dm__tpl", c.template ? 'tb-dm__tpl--has' : 'tb-dm__tpl--none']}>
+          {c.template ?? '—'}
+        </span>
+        <span class="mono tb-dm__action" data-action-label>Expand ↘</span>
+      </button>
+
+      <div class="tb-dm__detail two-col" id={`clause-detail-${c.slug}`} hidden>
+        <div>
+          <div class="tb-dm__takealot">
+            <div class="mono tb-dm__takealot-label">/ Takealot says</div>
+            <p class="tb-dm__takealot-body">{c.takealot}</p>
+          </div>
+          <div class="tb-dm__why">
+            <div class="mono tb-dm__why-label">/ Why it matters</div>
+            <p class="tb-dm__why-body">{c.why}</p>
+          </div>
+          <div class="tb-dm__actions">
+            {c.template && (
+              <button type="button" class="btn primary" data-jump-tpl={c.template}>
+                Use template {c.template} &rarr;
+              </button>
+            )}
+            <a href="#escalate" class="btn ghost">Escalation path &rarr;</a>
+            {(c.slug === 'damage-exclusions' || c.slug === 'defective-exclusions') && (
+              <a href="/onus-of-proof" class="btn ghost">Who proves what &rarr;</a>
+            )}
+          </div>
+          <div class="mono tb-dm__escalate">
+            <span class="tb-dm__escalate-label">/ Escalate </span>
+            <span class="tb-dm__escalate-body">{c.escalate}</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="mono slash-label tb-dm__angles-label">The legal angles</div>
+          <ol class="tb-dm__anglelist">
+            {c.angles.map((a, i) => (
+              <li class="tb-dm__anglerow angle-row">
+                <span class="mono tb-dm__anglenum">{String(i + 1).padStart(2, '0')}</span>
+                <Stat>{a.stat}</Stat>
+                <span class="tb-dm__anglebody">{a.body}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </div>
+  ))}
+
+  <div class="tb-dm__foot">
+    <span class="mono tb-dm__foot-text">
+      / 18 clauses · Last reviewed {LAST_REVIEWED} · Reviewed against Takealot policy {TAKEALOT_POLICY_REVIEWED_AGAINST}
+    </span>
+  </div>
+</Section>
+
+<style>
+  .tb-dm__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .tb-dm__head { max-width: 18ch; margin: 0; }
+  .tb-dm__italic { font-weight: 400; font-style: italic; }
+  .tb-dm__lede {
+    max-width: 42ch;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .tb-dm__filters {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .tb-dm__filter { cursor: pointer; }
+  .tb-dm__filter[aria-pressed='true'] {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: var(--paper-tint);
+  }
+
+  .tb-dm__theader {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1.6fr) minmax(0, 2.4fr) minmax(120px, 0.6fr) 140px;
+    gap: 16px;
+    padding: 10px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+  }
+  .tb-dm__theader .mono { color: var(--ink-muted); }
+  .tb-dm__theader-right { text-align: right; }
+
+  .tb-dm__row-wrap {
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .tb-dm__row-wrap[hidden] { display: none; }
+
+  .tb-dm__row {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1.6fr) minmax(0, 2.4fr) minmax(120px, 0.6fr) 140px;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 0;
+    text-align: left;
+    align-items: center;
+    color: var(--ink);
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+  }
+  .tb-dm__n { color: var(--ink-faint); }
+  .tb-dm__title {
+    font-family: var(--font-display);
+    font-size: clamp(16px, 1.4vw, 20px);
+    letter-spacing: -0.01em;
+    font-weight: 500;
+  }
+  .tb-dm__angles {
+    color: var(--ink-muted);
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+  }
+  .tb-dm__more { color: var(--ink-faint); }
+  .tb-dm__tpl--has { color: var(--accent); }
+  .tb-dm__tpl--none { color: var(--ink-faint); }
+  .tb-dm__action { color: var(--ink-soft); text-align: right; }
+
+  .tb-dm__detail {
+    padding: 12px 0 36px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    gap: clamp(24px, 4vw, 56px);
+    border-top: 1px dashed var(--rule);
+    margin-top: 4px;
+  }
+  .tb-dm__detail[hidden] { display: none; }
+
+  .tb-dm__takealot {
+    border-left: 3px solid var(--warn);
+    padding-left: 14px;
+    margin-top: 16px;
+  }
+  .tb-dm__takealot-label { color: var(--warn); margin-bottom: 6px; }
+  .tb-dm__takealot-body, .tb-dm__why-body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .tb-dm__why {
+    border-left: 3px solid var(--accent);
+    padding-left: 14px;
+    margin-top: 20px;
+  }
+  .tb-dm__why-label { color: var(--accent); margin-bottom: 6px; }
+
+  .tb-dm__actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .tb-dm__escalate { margin-top: 20px; }
+  .tb-dm__escalate-label { color: var(--ink-muted); }
+  .tb-dm__escalate-body { color: var(--ink-soft); }
+
+  .tb-dm__angles-label { margin-bottom: 12px; color: var(--ink); }
+  .tb-dm__anglelist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-dm__anglerow {
+    display: grid;
+    grid-template-columns: 40px 180px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    align-items: baseline;
+  }
+  .tb-dm__anglenum { color: var(--ink-faint); }
+  .tb-dm__anglebody {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .tb-dm__foot { padding-top: 20px; }
+  .tb-dm__foot-text { color: var(--ink-muted); }
+</style>
+
+<script is:inline>
+  (function () {
+    var filterButtons = document.querySelectorAll('.tb-dm__filter');
+    var rows = document.querySelectorAll('[data-clause]');
+
+    function setFilter(id) {
+      filterButtons.forEach(function (btn) {
+        btn.setAttribute('aria-pressed', btn.getAttribute('data-filter') === id ? 'true' : 'false');
+      });
+      rows.forEach(function (row) {
+        var hay = (row.getAttribute('data-hay') || '').toLowerCase();
+        var match = true;
+        if (id === 's56') match = hay.indexOf('s56') !== -1;
+        else if (id === 'popia') match = hay.indexOf('popia') !== -1;
+        else if (id === 'contract') match = /common law|contract|bailment|delict/.test(hay);
+        else if (id === 'process') match = /onus|cgso|escalat/.test(hay);
+        row.hidden = !match;
+        if (!match) {
+          var det = row.querySelector('[data-toggle]');
+          if (det && det.getAttribute('aria-expanded') === 'true') {
+            det.setAttribute('aria-expanded', 'false');
+            var detailId = det.getAttribute('aria-controls');
+            if (detailId) {
+              var p = document.getElementById(detailId);
+              if (p) p.hidden = true;
+            }
+            var label = det.querySelector('[data-action-label]');
+            if (label) label.textContent = 'Expand ↘';
+          }
+        }
+      });
+    }
+
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setFilter(btn.getAttribute('data-filter') || 'all');
+      });
+    });
+
+    // Accordion toggles
+    rows.forEach(function (row) {
+      var btn = row.querySelector('[data-toggle]');
+      var detailId = btn && btn.getAttribute('aria-controls');
+      var detail = detailId ? document.getElementById(detailId) : null;
+      if (!btn || !detail) return;
+      btn.addEventListener('click', function () {
+        var isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+        detail.hidden = isOpen;
+        var label = btn.querySelector('[data-action-label]');
+        if (label) label.textContent = isOpen ? 'Expand ↘' : 'Close ×';
+      });
+    });
+
+    // "Use template Tnn" buttons inside detail views — scroll to the template row.
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!(t instanceof Element)) return;
+      var btn = t.closest('[data-jump-tpl]');
+      if (!btn) return;
+      var code = btn.getAttribute('data-jump-tpl');
+      if (!code) return;
+      var target = document.getElementById('template-' + code);
+      if (target) {
+        window.scrollTo({ top: target.offsetTop - 40, behavior: 'smooth' });
+        // Open the target template, if closed
+        var tbtn = target.querySelector('[data-tpl-toggle]');
+        if (tbtn && tbtn.getAttribute('aria-expanded') !== 'true') tbtn.click();
+      }
+    });
+
+    // On first load, honour the hash if it targets a clause id.
+    if (location.hash && location.hash.indexOf('#clause-') === 0) {
+      var el = document.getElementById(location.hash.slice(1));
+      if (el) {
+        var tb = el.querySelector('[data-toggle]');
+        if (tb && tb.getAttribute('aria-expanded') !== 'true') tb.click();
+      }
+    }
+  })();
+</script>

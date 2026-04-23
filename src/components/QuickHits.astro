@@ -1,0 +1,100 @@
+---
+import Section from './Section.astro';
+import { QUICK_HITS } from '../data/content';
+---
+<Section id="short-version" label="The short version">
+  <div class="tb-qh__intro two-col">
+    <h2 class="display h2 tb-qh__head">
+      Seven things most consumers don't know, and Takealot would prefer you didn't either.
+    </h2>
+    <p class="tb-qh__lede">
+      The entire site in summary. If you only read one screen, read this one — then take the statute with you into whatever dispute you're in the middle of.
+    </p>
+  </div>
+
+  <div class="tb-qh__grid qh-grid">
+    {QUICK_HITS.map((q) => (
+      <article
+        class:list={[q.featured ? 'tb-qh__cell tb-qh__cell--featured qh-featured' : 'tb-qh__cell qh-col']}
+        style={`grid-column: span ${q.featured ? 12 : 4};`}
+      >
+        <div class="tb-qh__head-row">
+          <span class="mono tb-qh__ref">QH.{q.n}</span>
+          <span class="chip">{q.ref}</span>
+        </div>
+        <h3 class:list={["display tb-qh__title", q.featured && "tb-qh__title--featured"]}>
+          {q.head}
+        </h3>
+        <p class="tb-qh__body">{q.body}</p>
+        {q.featured && (
+          <div class="mono tb-qh__feat">Featured · Most underused remedy</div>
+        )}
+      </article>
+    ))}
+  </div>
+</Section>
+
+<style>
+  .tb-qh__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: end;
+    margin-bottom: 48px;
+  }
+  .tb-qh__head { max-width: 18ch; }
+  .tb-qh__lede {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 44ch;
+  }
+  .tb-qh__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-qh__cell {
+    padding: 28px 24px 32px;
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 220px;
+  }
+  .tb-qh__cell--featured {
+    min-height: 180px;
+    background: var(--paper-alt);
+  }
+  .tb-qh__head-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .tb-qh__ref { color: var(--ink-faint); }
+  .tb-qh__title {
+    font-size: clamp(19px, 1.5vw, 22px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0;
+    font-weight: 500;
+    max-width: 20ch;
+  }
+  .tb-qh__title--featured {
+    font-size: clamp(26px, 3vw, 40px);
+    max-width: 22ch;
+  }
+  .tb-qh__body {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 36ch;
+  }
+  .tb-qh__cell--featured .tb-qh__body { max-width: 60ch; }
+  .tb-qh__feat { color: var(--accent); margin-top: 8px; }
+</style>

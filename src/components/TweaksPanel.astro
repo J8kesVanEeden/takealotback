@@ -1,0 +1,231 @@
+---
+// Tweaks panel — live palette / display-face / density / hero-variant toggles.
+// Persisted in localStorage under 'tb_tweaks'. The pre-apply script in Layout.astro
+// reads this value before first paint to avoid FOUC.
+
+const groups = [
+  {
+    key: 'palette',
+    label: 'Palette',
+    opts: [
+      { v: 'paper', l: 'Paper (default)' },
+      { v: 'stark', l: 'Stark white' },
+      { v: 'newsprint', l: 'Newsprint' },
+      { v: 'carbon', l: 'Carbon (dark)' },
+    ],
+  },
+  {
+    key: 'display',
+    label: 'Display face',
+    opts: [
+      { v: 'geist', l: 'Geist / grotesk' },
+      { v: 'serif', l: 'Editorial serif' },
+      { v: 'mono', l: 'Monospace' },
+    ],
+  },
+  {
+    key: 'density',
+    label: 'Density',
+    opts: [
+      { v: 'normal', l: 'Normal' },
+      { v: 'dense', l: 'Dense' },
+      { v: 'airy', l: 'Airy' },
+    ],
+  },
+  {
+    key: 'hero',
+    label: 'Hero',
+    opts: [
+      { v: 'default', l: 'Statement + meta' },
+      { v: 'giant', l: 'Giant type only' },
+    ],
+  },
+];
+---
+<button type="button" class="tb-tweaks-fab" data-tweaks-fab aria-label="Open tweaks">
+  <span class="tb-tweaks-fab__key">?</span>
+  Tweaks
+</button>
+
+<aside class="tb-tweaks" data-tweaks hidden>
+  <div class="tb-tweaks__header">
+    <div class="mono slash-label">Tweaks</div>
+    <button type="button" class="kbd tb-tweaks__close" data-tweaks-close aria-label="Close">×</button>
+  </div>
+  {groups.map((g) => (
+    <div class="tb-tweaks__group" data-tweaks-group={g.key}>
+      <div class="mono tb-tweaks__grouplabel">{g.label}</div>
+      <div class="tb-tweaks__chips">
+        {g.opts.map((o) => (
+          <button type="button" class="chip tb-tweaks__chip" data-tweak-key={g.key} data-tweak-val={o.v}>{o.l}</button>
+        ))}
+      </div>
+    </div>
+  ))}
+  <hr class="tb-tweaks__rule" />
+  <div class="mono tb-tweaks__hint">
+    Keys: H · D · T · L · W · E · F jump sections. C opens triage. ? toggles this panel.
+  </div>
+</aside>
+
+<style>
+  .tb-tweaks-fab {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 40;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 2px;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .tb-tweaks-fab[hidden] { display: none; }
+  .tb-tweaks-fab__key {
+    border: 1px solid color-mix(in oklab, var(--paper) 30%, transparent);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+
+  .tb-tweaks {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 90;
+    width: 300px;
+    max-height: calc(100vh - 32px);
+    overflow: auto;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    padding: 18px;
+    font-family: var(--font-body);
+    box-shadow: 0 10px 30px color-mix(in oklab, var(--ink) 14%, transparent);
+  }
+  .tb-tweaks[hidden] { display: none; }
+
+  .tb-tweaks__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .tb-tweaks__close { cursor: pointer; }
+  .tb-tweaks__group { margin-bottom: 12px; }
+  .tb-tweaks__grouplabel {
+    color: var(--ink-muted);
+    margin-bottom: 6px;
+  }
+  .tb-tweaks__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tb-tweaks__chip {
+    cursor: pointer;
+    transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+  }
+  .tb-tweaks__chip[aria-pressed='true'] {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: var(--paper-tint);
+  }
+  .tb-tweaks__rule {
+    height: 1px;
+    border: 0;
+    background: var(--rule);
+    margin: 12px 0;
+  }
+  .tb-tweaks__hint {
+    color: var(--ink-muted);
+    font-size: 10px;
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var KEY = 'tb_tweaks';
+    var DEFAULTS = { palette: 'paper', display: 'geist', density: 'normal', hero: 'default' };
+
+    function load() {
+      try {
+        var raw = localStorage.getItem(KEY);
+        if (!raw) return Object.assign({}, DEFAULTS);
+        var parsed = JSON.parse(raw);
+        return Object.assign({}, DEFAULTS, parsed && typeof parsed === 'object' ? parsed : {});
+      } catch (e) {
+        return Object.assign({}, DEFAULTS);
+      }
+    }
+    function save(t) {
+      try { localStorage.setItem(KEY, JSON.stringify(t)); } catch (e) { /* ignore */ }
+    }
+
+    function apply(t) {
+      var r = document.documentElement;
+      r.setAttribute('data-palette', t.palette);
+      r.setAttribute('data-display', t.display);
+      r.setAttribute('data-density', t.density);
+      r.setAttribute('data-hero', t.hero);
+    }
+
+    function reflect(t) {
+      document.querySelectorAll('[data-tweak-key]').forEach(function (btn) {
+        var k = btn.getAttribute('data-tweak-key');
+        var v = btn.getAttribute('data-tweak-val');
+        btn.setAttribute('aria-pressed', t[k] === v ? 'true' : 'false');
+      });
+    }
+
+    var panel = document.querySelector('[data-tweaks]');
+    var fab = document.querySelector('[data-tweaks-fab]');
+    if (!panel || !fab) return;
+
+    var t = load();
+    apply(t);
+    reflect(t);
+
+    function open() {
+      panel.hidden = false;
+      fab.hidden = true;
+    }
+    function close() {
+      panel.hidden = true;
+      fab.hidden = false;
+    }
+    function toggle() { panel.hidden ? open() : close(); }
+
+    fab.addEventListener('click', open);
+    panel.addEventListener('click', function (e) {
+      var target = e.target;
+      if (!(target instanceof Element)) return;
+
+      if (target.closest('[data-tweaks-close]')) { close(); return; }
+
+      var chip = target.closest('[data-tweak-key]');
+      if (chip) {
+        var k = chip.getAttribute('data-tweak-key');
+        var v = chip.getAttribute('data-tweak-val');
+        if (k && v) {
+          t[k] = v;
+          save(t);
+          apply(t);
+          reflect(t);
+          // Re-render any elements that key off the hero variant; simplest is a DOM signal.
+          window.dispatchEvent(new CustomEvent('tb:tweaks-change', { detail: { key: k, value: v } }));
+        }
+      }
+    });
+
+    window.addEventListener('tb:tweaks-toggle', toggle);
+    window.addEventListener('tb:tweaks-close', close);
+  })();
+</script>

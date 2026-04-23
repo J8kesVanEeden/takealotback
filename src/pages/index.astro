@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import QuickHits from '../components/QuickHits.astro';
+import ThreeThings from '../components/ThreeThings.astro';
+import DismantledSection from '../components/DismantledSection.astro';
+import TemplatesSection from '../components/TemplatesSection.astro';
+import LawSection from '../components/LawSection.astro';
+import WarrantiesSection from '../components/WarrantiesSection.astro';
+import EscalateSection from '../components/EscalateSection.astro';
+import PoliciesSection from '../components/PoliciesSection.astro';
+import AboutSection from '../components/AboutSection.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "TakealotBack — Your South African consumer rights, dismantled clause by clause";
+const description = "A non-commercial reference for SA consumers when Takealot's returns policy oversteps the CPA, ECT Act, or POPIA. 18 clauses dismantled, 14 email templates, a 10-tier escalation ladder.";
+---
+<Layout title={title} description={description} canonicalPath="/">
+  <Hero />
+  <QuickHits />
+  <ThreeThings />
+  <DismantledSection />
+  <TemplatesSection />
+  <LawSection />
+  <WarrantiesSection />
+  <EscalateSection />
+  <PoliciesSection />
+  <AboutSection />
+  <FAQSection />
+</Layout>
