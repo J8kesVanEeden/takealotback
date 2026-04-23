@@ -43,9 +43,15 @@ npm run dev       # localhost:4321
 npm run build     # static output to ./dist
 npm run preview   # serve ./dist locally
 npm run check     # astro check (type-check)
+npm run build:og  # re-render public/og-image.png from public/og-image.svg (only needed when the OG image changes)
 ```
 
 Requires Node 20+.
+
+The OG image source-of-truth is `public/og-image.svg`. The PNG is rendered once
+locally with `npm run build:og` (uses `sharp`, a dev-only dependency) and the
+resulting `public/og-image.png` is committed so Cloudflare Pages serves it
+without needing sharp in the build environment.
 
 ## Content updates
 
