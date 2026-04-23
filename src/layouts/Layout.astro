@@ -5,41 +5,110 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import TriageModal from '../components/TriageModal.astro';
 import TweaksPanel from '../components/TweaksPanel.astro';
+import JsonLd from '../components/JsonLd.astro';
+import { GITHUB_REPO_URL, LAST_REVIEWED } from '../data/content';
 
 interface Props {
   title: string;
   description: string;
   canonicalPath?: string;
+  /** When true, render FAQPage JSON-LD from the site's FAQ dataset. */
+  faqSchema?: boolean;
 }
 
-const { title, description, canonicalPath = '/' } = Astro.props;
+const { title, description, canonicalPath = '/', faqSchema = false } = Astro.props;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}${canonicalPath}`;
+
+// --- JSON-LD: Organization (publisher) + WebSite ---
+const organization = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://www.milkmoonstudio.com/#organization',
+  name: 'Milk Moon Studio',
+  url: 'https://www.milkmoonstudio.com/',
+  email: 'mailto:jakes@milkmoonstudio.com',
+};
+
+const website = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${siteUrl}/#website`,
+  url: `${siteUrl}/`,
+  name: 'TakealotBack.com',
+  alternateName: 'TakealotBack',
+  description: "A non-commercial, plain-English South African consumer-rights reference for disputes with Takealot. Maps their returns policy against the CPA, ECT Act, POPIA, and common law.",
+  inLanguage: 'en-ZA',
+  publisher: { '@id': 'https://www.milkmoonstudio.com/#organization' },
+  license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
+  copyrightYear: 2026,
+  isAccessibleForFree: true,
+  creativeWorkStatus: 'Published',
+};
+
+// --- Optional FAQPage JSON-LD for the homepage ---
+let faqPage: Record<string, unknown> | null = null;
+if (faqSchema) {
+  const { FAQ } = await import('../data/content');
+  faqPage = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${siteUrl}/#faq`,
+    mainEntity: FAQ.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.a,
+      },
+    })),
+  };
+}
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en-ZA">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="author" content="Milk Moon Studio" />
+    <meta name="publisher" content="Milk Moon Studio" />
+    <meta name="content-language" content="en-ZA" />
+    <meta name="geo.region" content="ZA" />
+    <meta name="geo.placename" content="South Africa" />
+    <meta name="last-reviewed" content={LAST_REVIEWED} />
+
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/xml" href={`${siteUrl}/sitemap-index.xml`} title="Sitemap" />
+    <link rel="alternate" type="text/plain" href={`${siteUrl}/llms.txt`} title="LLM summary" />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="TakealotBack.com" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#F3F1EC" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+    {/* Baseline JSON-LD on every page */}
+    <JsonLd data={organization} />
+    <JsonLd data={website} />
+    {faqPage && <JsonLd data={faqPage} />}
+    <slot name="head" />
 
     {/* Tweaks: apply persisted data attributes before first paint to avoid flash */}
     <script is:inline>

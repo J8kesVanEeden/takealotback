@@ -1,0 +1,18 @@
+---
+// Emits a <script type="application/ld+json"> block.
+// Keep it as a dedicated component so consumers don't need to remember the
+// `is:raw` / JSON.stringify wrapping dance.
+
+interface Props {
+  data: Record<string, unknown> | Array<Record<string, unknown>>;
+}
+
+const { data } = Astro.props;
+
+// Escape the two characters that can break out of a <script> tag.
+const json = JSON.stringify(data)
+  .replace(/</g, '\\u003c')
+  .replace(/>/g, '\\u003e')
+  .replace(/&/g, '\\u0026');
+---
+<script type="application/ld+json" is:inline set:html={json} />
