@@ -73,6 +73,20 @@ in the GitHub web UI and commit — Cloudflare Pages redeploys in about a minute
 - **Code:** MIT. See [`LICENSE`](./LICENSE).
 - **Content:** CC BY 4.0 (`src/content/` and `src/data/`). See [`CONTENT-LICENSE.md`](./CONTENT-LICENSE.md).
 
+## Citations archive
+
+Every factual, legal, or policy claim on the live site traces to a source in
+[`citations/`](./citations/). Primary-source snapshots of statutes, case law,
+regulator contact details, and Takealot's own policies — dated and versioned
+so content changes are always defensible and change-detectable. Start at
+[`citations/INDEX.md`](./citations/INDEX.md) for the mini-sitemap.
+
+## Operations
+
+Before making factual content changes, read [`OPERATIONS.md`](./OPERATIONS.md)
+— the SOP for keeping the site current (citation-check flow, refresh cadence,
+quality gates, Takealot-policy-change protocol, non-negotiables).
+
 ## Corrections
 
 This site has no contact form and no email address. That's intentional — it's a

@@ -45,9 +45,20 @@ respective owners:
   under section 16 of the Constitution of the Republic of South Africa and
   section 34(1)(c) of the Trade Marks Act 194 of 1993.
 - Quoted excerpts from statutes, case law, and regulatory advisories, which are
-  in the public domain or used under fair dealing.
+  in the public domain under section 12(8)(a) of the Copyright Act 98 of 1978
+  ("official texts of a legislative, administrative or legal nature").
 - Summaries and excerpts of Takealot's published returns policy and terms, used under
-  section 16 of the Constitution for consumer education, commentary, and criticism.
+  section 16 of the Constitution for consumer education, commentary, and criticism,
+  and retained as dated snapshots in [`citations/policies/`](./citations/policies/)
+  under fair dealing for research and criticism (s 12(1)(a) Copyright Act 98 of 1978).
+- Third-party legal commentary and news articles referenced in
+  [`citations/commentary/`](./citations/commentary/) — link + short excerpt only,
+  never full reproduction. Fair dealing for citation purposes.
+
+Our own compilation, organisation, and annotation of these materials in
+[`citations/`](./citations/) is licensed CC BY 4.0. The underlying third-party
+material is under its respective copyright / public-domain status as set out
+in [`citations/README.md`](./citations/README.md) § Copyright policy.
 
 ## Fact-check date
 
