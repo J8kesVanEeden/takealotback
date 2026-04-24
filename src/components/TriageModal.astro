@@ -171,6 +171,8 @@
           { label: "“Consumer damage” / surge / misuse", result: { clause: "03", tpl: "T03", note: "Onus is on Takealot. Demand the technical report." } },
           { label: "Deflected to manufacturer", result: { clause: "07", tpl: "T07", note: "s56(1) retailer liability is concurrent and non-delegable." } },
           { label: "Marketplace seller's fault", result: { clause: "15", tpl: "T11", note: "Platform has concurrent obligations. CGSO has jurisdiction." } },
+          { label: "Charged a collection or re-delivery fee", result: { clause: "19", tpl: "T15", note: "CPA s56(2) puts defective returns at the supplier's risk and expense. Don't pay; challenge the fee." } },
+          { label: "Inspection is dragging with no deadline", result: { clause: "20", tpl: "T16", note: "Policy has no SLA on inspection. Set your own written deadline (7 business days) and treat silence as acceptance of the s56 election." } },
         ],
       },
       other: {
@@ -180,10 +182,14 @@
           { label: "Policy changed after my order", result: { clause: "12", tpl: "T09", note: "Applicable version = version at order time." } },
           { label: "Disposal threat", result: { clause: "09", tpl: "T08", note: "Dispute in writing. File CGSO immediately." } },
           { label: "High Court clause", result: { clause: "13", tpl: "T14", note: "Statutory hierarchy overrides. You keep your SCC option." } },
+          { label: "Inspection / assessment delay", result: { clause: "20", tpl: "T16", note: "Demand a written outcome within 7 business days. Silence past the deadline = acceptance of your s56 election." } },
         ],
       },
     };
 
+    // Keep this map in sync with CLAUSES[] in src/data/content.ts.
+    // The matching map in scripts/check-anchors.mjs must also be updated
+    // when a new clause is added.
     var CLAUSE_SLUGS = {
       "01": "time-limits", "02": "original-packaging", "03": "damage-exclusions",
       "04": "unlock-codes", "05": "bundle-return", "06": "credit-vs-refund",
@@ -191,6 +197,7 @@
       "10": "non-returnable", "11": "coupons-vouchers", "12": "unilateral-changes",
       "13": "high-court-jurisdiction", "14": "order-cancellation", "15": "marketplace-sellers",
       "16": "digital-items", "17": "resale-prohibition", "18": "mis-returned-items",
+      "19": "restocking-redelivery-fees", "20": "inspection-assessment-delay",
     };
 
     var dialog = document.querySelector('[data-triage]');
