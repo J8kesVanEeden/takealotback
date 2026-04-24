@@ -23,6 +23,8 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(fileURLToPath(import.meta.url), '..', '..');
 const distDir = path.join(root, 'dist');
 
+// Keep this map in sync with CLAUSES[] in src/data/content.ts, and with the
+// matching map in src/components/TriageModal.astro.
 const CLAUSE_SLUGS = {
   '01': 'time-limits', '02': 'original-packaging', '03': 'damage-exclusions',
   '04': 'unlock-codes', '05': 'bundle-return', '06': 'credit-vs-refund',
@@ -30,6 +32,7 @@ const CLAUSE_SLUGS = {
   '10': 'non-returnable', '11': 'coupons-vouchers', '12': 'unilateral-changes',
   '13': 'high-court-jurisdiction', '14': 'order-cancellation', '15': 'marketplace-sellers',
   '16': 'digital-items', '17': 'resale-prohibition', '18': 'mis-returned-items',
+  '19': 'restocking-redelivery-fees', '20': 'inspection-assessment-delay',
 };
 
 async function walk(dir) {
