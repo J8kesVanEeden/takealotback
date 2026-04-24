@@ -143,7 +143,7 @@ const nav = [
           var node = document.getElementById(target);
           if (node) {
             e.preventDefault();
-            window.scrollTo({ top: node.offsetTop - 48, behavior: 'smooth' });
+            node.scrollIntoView({ behavior: 'smooth', block: 'start' });
             history.replaceState(null, '', '/#' + target);
           }
         }

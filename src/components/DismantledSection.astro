@@ -321,10 +321,12 @@ function hay(c: typeof CLAUSES[number]) {
       if (!code) return;
       var target = document.getElementById('template-' + code);
       if (target) {
-        window.scrollTo({ top: target.offsetTop - 40, behavior: 'smooth' });
-        // Open the target template, if closed
+        // Open the target template first (if closed) so the expanded body is
+        // visible when we scroll to it — otherwise the row would be the only
+        // thing in view.
         var tbtn = target.querySelector('[data-tpl-toggle]');
         if (tbtn && tbtn.getAttribute('aria-expanded') !== 'true') tbtn.click();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
 
@@ -334,6 +336,12 @@ function hay(c: typeof CLAUSES[number]) {
       if (el) {
         var tb = el.querySelector('[data-toggle]');
         if (tb && tb.getAttribute('aria-expanded') !== 'true') tb.click();
+        // Re-scroll after expansion so the now-taller row is correctly framed
+        // under the sticky header (the browser's initial hash-scroll happened
+        // before our click).
+        requestAnimationFrame(function () {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
       }
     }
   })();

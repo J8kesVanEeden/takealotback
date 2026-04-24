@@ -11,6 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
+    "check:anchors": "npm run build --silent && node scripts/check-anchors.mjs",
+    "check:all": "npm run check && npm run check:anchors",
     "build:og": "node scripts/build-og.mjs"
   },
   "dependencies": {

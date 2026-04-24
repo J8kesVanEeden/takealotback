@@ -225,6 +225,9 @@ import { TEMPLATES } from '../data/content';
       if (el) {
         var tb = el.querySelector('[data-tpl-toggle]');
         if (tb && tb.getAttribute('aria-expanded') !== 'true') tb.click();
+        requestAnimationFrame(function () {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
       }
     }
   })();

@@ -42,8 +42,10 @@ npm install
 npm run dev       # localhost:4321
 npm run build     # static output to ./dist
 npm run preview   # serve ./dist locally
-npm run check     # astro check (type-check)
-npm run build:og  # re-render public/og-image.png from public/og-image.svg (only needed when the OG image changes)
+npm run check          # astro check (type-check)
+npm run check:anchors  # build, then scan dist/ for broken in-page anchors, data-jump-* targets, and template/clause jumps
+npm run check:all      # both of the above
+npm run build:og       # re-render public/og-image.png from public/og-image.svg (only needed when the OG image changes)
 ```
 
 Requires Node 20+.

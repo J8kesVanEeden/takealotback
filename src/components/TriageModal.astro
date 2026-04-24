@@ -296,7 +296,11 @@
         close();
         if (slug && location.pathname === '/') {
           var el = document.getElementById('clause-' + slug);
-          if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' });
+          if (el) {
+            var ctoggle = el.querySelector('[data-toggle]');
+            if (ctoggle && ctoggle.getAttribute('aria-expanded') !== 'true') ctoggle.click();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
         } else if (slug) {
           location.href = '/#clause-' + slug;
         }
@@ -307,7 +311,11 @@
         close();
         if (location.pathname === '/') {
           var te = document.getElementById('template-' + openTpl);
-          if (te) window.scrollTo({ top: te.offsetTop - 40, behavior: 'smooth' });
+          if (te) {
+            var ttoggle = te.querySelector('[data-tpl-toggle]');
+            if (ttoggle && ttoggle.getAttribute('aria-expanded') !== 'true') ttoggle.click();
+            te.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
         } else {
           location.href = '/#template-' + openTpl;
         }

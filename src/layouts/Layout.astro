@@ -163,7 +163,7 @@ if (faqSchema) {
 
         function jump(id) {
           var el = document.getElementById(id);
-          if (el) window.scrollTo({ top: el.offsetTop - 48, behavior: 'smooth' });
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         window.addEventListener('keydown', function (e) {
