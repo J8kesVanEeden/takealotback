@@ -1,10 +1,15 @@
 ---
 // Decorative row of "+" markers that sits on the top border of a Section.
+// We use six fixed stops (0%, 20%, 40%, 60%, 80%, 100%) so the positions
+// can be expressed as CSS classes rather than inline styles — keeps the
+// HTML Content-Security-Policy clean of per-element style attributes.
+
+const STOPS = [0, 20, 40, 60, 80, 100] as const;
 ---
 <div aria-hidden="true" class="tb-plus-row">
   <div class="page tb-plus-row__inner">
-    {[0, 20, 40, 60, 80, 100].map((left) => (
-      <span class="tb-plus-row__mark" style={`left: ${left}%;`}>+</span>
+    {STOPS.map((left) => (
+      <span class:list={['tb-plus-row__mark', `tb-plus-row__mark--${left}`]}>+</span>
     ))}
   </div>
 </div>
@@ -31,4 +36,10 @@
     line-height: 12px;
     user-select: none;
   }
+  .tb-plus-row__mark--0   { left: 0%;   }
+  .tb-plus-row__mark--20  { left: 20%;  }
+  .tb-plus-row__mark--40  { left: 40%;  }
+  .tb-plus-row__mark--60  { left: 60%;  }
+  .tb-plus-row__mark--80  { left: 80%;  }
+  .tb-plus-row__mark--100 { left: 100%; }
 </style>
