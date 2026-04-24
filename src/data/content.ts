@@ -158,7 +158,7 @@ export const CLAUSES: Clause[] = [
       { stat: "CPA s56(2)", body: "Consumer elects the remedy — repair, replace, or refund. Credit is not a statutory option unless the consumer agrees to it." },
       { stat: "CPA s20(6)", body: "On a s20 return, refund rules apply — cash to the original payment method unless the consumer agrees to credit." },
       { stat: "CGSO Advisory", body: "Retailers cannot force store credit on a consumer entitled to cash refund." },
-      { stat: "CPA Reg 44 + s48", body: "Regulation 44(3)(x) flags as presumptively unfair any term that causes the consumer to forfeit money paid to the supplier. Combined with s48's substantive-unfairness review, a 3-year drop-dead on refund credit that originated as money you paid for goods the supplier failed to supply is a defensible target — especially where the supplier loaded credit without an express s56(2) election from the consumer." },
+      { stat: "CPA Reg 44 + s48", body: "Regulation 44(3)(q) treats as presumptively unfair any term that lets the supplier retain a consumer's payment without a reciprocal consumer right to compensation if the supplier fails to perform. Combined with s48's substantive-unfairness review, a 3-year drop-dead on refund credit that originated as money you paid for goods the supplier failed to supply sits squarely inside (q)'s concern — especially where the supplier loaded the credit without an express s56(2) election from the consumer." },
       { stat: "ECT s44(3)", body: "On cooling-off cancellation, full refund is due within 30 days." },
       { stat: "Chargeback", body: "If Takealot insists on credit, a card chargeback is a live alternative — scheme rules trump internal policy." },
     ],
@@ -341,7 +341,7 @@ export const CLAUSES: Clause[] = [
       { stat: "CPA s56(2)", body: "A defective-goods return under s56 is at the supplier's risk and expense. A collection fee or re-delivery fee on a defective return shifts the statute's cost allocation back onto the consumer — which is exactly what s56(2) does not allow." },
       { stat: "CPA s51(3)", body: "Any term that waives, defeats or avoids a right conferred by the Act is void. A packaging-condition fee that recovers s56(2) costs from the consumer is a waiver of the \"supplier's risk and expense\" right." },
       { stat: "CPA s48", body: "Unfair, unreasonable, unjust terms. A fee levied against a consumer who is exercising a statutory remedy is presumptively unfair, especially where Takealot chose the outbound courier and the outbound packaging." },
-      { stat: "CPA Reg 44", body: "Regulation 44(3)(b) treats terms that limit the supplier's liability for its own failure to perform as presumptively unfair; 44(3)(o) catches terms that require the consumer to bear costs the law says the supplier must bear." },
+      { stat: "CPA Reg 44", body: "Regulation 44(3)(b) treats as presumptively unfair any term that excludes or restricts the consumer's legal rights or remedies against the supplier in the event of breach. Regulation 44(3)(g) catches any term that modifies the normal rules of risk-distribution to the consumer's detriment — exactly what a packaging-condition fee does when it shifts s56(2)'s \"supplier's risk and expense\" allocation back onto the consumer." },
       { stat: "CPA s20(6)", body: "s20(6) permits a reasonable restoration charge only in narrow circumstances on a non-defective return — and not where the consumer had to open the packaging to determine conformity or fitness. It does not license a generalised restocking fee and doesn't reach defective-goods returns." },
       { stat: "s53(1)(a) framing", body: "If the goods are materially imperfect the return sits under s56, not s20. The packaging-condition check cannot be used to re-characterise a defective return as a change-of-mind return and import a restoration charge." },
     ],
@@ -549,7 +549,7 @@ Takealot has indicated that a [collection fee / re-delivery fee / restocking fee
 
 1. Under s56(2), the return of defective goods takes place at the supplier's risk and expense. Collection and re-delivery costs fall on Takealot, not on me.
 2. s51(3) voids any contractual term that purports to waive a right conferred by the Act. A packaging-condition fee that recovers s56(2) costs from me is a waiver.
-3. s48 prohibits unfair, unreasonable, unjust terms. Regulation 44(3)(b) and 44(3)(o) list as presumptively unfair any term that limits the supplier's own statutory liability or passes supplier-borne costs to the consumer.
+3. s48 prohibits unfair, unreasonable, unjust terms. Regulation 44(3)(b) lists as presumptively unfair any term that excludes or restricts the consumer's remedies against the supplier in the event of breach; Regulation 44(3)(g) catches any term that modifies the normal rules of risk-distribution to the consumer's detriment.
 4. s20(6) permits a reasonable restoration charge only on a non-defective return in narrow circumstances, and not where the consumer had to open the packaging to determine conformity or fitness. It does not extend to a defective-goods return.
 
 Please confirm in writing, within 7 business days, that:
