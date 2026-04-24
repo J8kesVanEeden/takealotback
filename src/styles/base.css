@@ -1,7 +1,13 @@
 /* Reset-ish */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* Keeps the sticky header from covering targets when jumping via
+     hash-nav or scrollIntoView(). Header is ~52px; 72px gives a little breathing room. */
+  scroll-padding-top: 72px;
+}
 body {
   background: var(--paper);
   color: var(--ink);
