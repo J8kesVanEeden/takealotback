@@ -8,7 +8,8 @@ const groups = [
     key: 'palette',
     label: 'Palette',
     opts: [
-      { v: 'paper', l: 'Paper (default)' },
+      { v: 'auto', l: 'Auto (match OS)' },
+      { v: 'paper', l: 'Paper' },
       { v: 'stark', l: 'Stark white' },
       { v: 'newsprint', l: 'Newsprint' },
       { v: 'carbon', l: 'Carbon (dark)' },
@@ -42,15 +43,15 @@ const groups = [
   },
 ];
 ---
-<button type="button" class="tb-tweaks-fab" data-tweaks-fab aria-label="Open tweaks">
-  <span class="tb-tweaks-fab__key">?</span>
+<button type="button" class="tb-tweaks-fab" data-tweaks-fab aria-label="Open tweaks panel" aria-controls="tb-tweaks-panel" aria-expanded="false">
+  <span class="tb-tweaks-fab__key" aria-hidden="true">?</span>
   Tweaks
 </button>
 
-<aside class="tb-tweaks" data-tweaks hidden>
+<aside id="tb-tweaks-panel" class="tb-tweaks" data-tweaks hidden aria-label="Display tweaks">
   <div class="tb-tweaks__header">
     <div class="mono slash-label">Tweaks</div>
-    <button type="button" class="kbd tb-tweaks__close" data-tweaks-close aria-label="Close">×</button>
+    <button type="button" class="kbd tb-tweaks__close" data-tweaks-close aria-label="Close tweaks panel">×</button>
   </div>
   {groups.map((g) => (
     <div class="tb-tweaks__group" data-tweaks-group={g.key}>
@@ -153,7 +154,7 @@ const groups = [
 <script is:inline>
   (function () {
     var KEY = 'tb_tweaks';
-    var DEFAULTS = { palette: 'paper', display: 'geist', density: 'normal', hero: 'default' };
+    var DEFAULTS = { palette: 'auto', display: 'geist', density: 'normal', hero: 'default' };
 
     function load() {
       try {
@@ -171,7 +172,15 @@ const groups = [
 
     function apply(t) {
       var r = document.documentElement;
-      r.setAttribute('data-palette', t.palette);
+      if (t.palette === 'auto') {
+        var prefersDark = false;
+        try { prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches; } catch (e) {}
+        r.setAttribute('data-palette', prefersDark ? 'carbon' : 'paper');
+        r.setAttribute('data-palette-source', 'system');
+      } else {
+        r.setAttribute('data-palette', t.palette);
+        r.setAttribute('data-palette-source', 'user');
+      }
       r.setAttribute('data-display', t.display);
       r.setAttribute('data-density', t.density);
       r.setAttribute('data-hero', t.hero);
@@ -196,10 +205,15 @@ const groups = [
     function open() {
       panel.hidden = false;
       fab.hidden = true;
+      fab.setAttribute('aria-expanded', 'true');
+      // Move focus into the panel so keyboard users can interact with it.
+      var firstInteractive = panel.querySelector('button');
+      if (firstInteractive) firstInteractive.focus();
     }
     function close() {
       panel.hidden = true;
       fab.hidden = false;
+      fab.setAttribute('aria-expanded', 'false');
     }
     function toggle() { panel.hidden ? open() : close(); }
 

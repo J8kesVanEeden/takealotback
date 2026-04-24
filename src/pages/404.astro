@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+
+const title = '404 — Not on this site';
+const description = "The page you asked for isn't on TakealotBack.com. Either it moved, you mistyped, or it was never here. Either way — the law didn't go anywhere.";
+---
+<Layout title={title} description={description} canonicalPath="/404">
+  <Section id="notfound" label="404 / not found" tag="section">
+    <div class="tb-404">
+      <div class="tb-404__giant display">
+        4<em class="tb-404__italic">0</em>4<span class="tb-404__dot">.</span>
+      </div>
+
+      <p class="tb-404__lede">
+        You asked for a page that isn't on this site. <em>Your rights still are.</em>
+      </p>
+
+      <div class="tb-404__grid">
+        <div>
+          <div class="mono slash-label tb-404__blocklabel">Where to next</div>
+          <ul class="tb-404__links">
+            <li><a href="/#home" class="link-u">Back to the homepage</a> &mdash; mission, 7 quick hits, how to use the site.</li>
+            <li><a href="/#dismantled" class="link-u">All 18 clauses dismantled</a> &mdash; Takealot's policy vs the CPA, clause by clause.</li>
+            <li><a href="/#templates" class="link-u">14 ready-to-send email templates</a> &mdash; copy, paste, send.</li>
+            <li><a href="/#escalate" class="link-u">The 10-tier escalation ladder</a> &mdash; CGSO, chargeback, NCC, Small Claims, and up.</li>
+            <li><a href="/#faq" class="link-u">FAQ</a> &mdash; the questions we hear most.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="mono slash-label tb-404__blocklabel">Deep dives</div>
+          <ul class="tb-404__links">
+            <li><a href="/onus-of-proof" class="link-u">Who has to prove what</a> &mdash; the CPA s56 onus, in one page.</li>
+            <li><a href="/aedilitian-remedies" class="link-u">Your claim doesn't die at 6 months</a> &mdash; common-law latent-defect remedies.</li>
+            <li><a href="/limits" class="link-u">Where your rights stop</a> &mdash; the honest limits of the CPA.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tb-404__foot">
+        <a href="/" class="btn primary">&larr; Back to the single page</a>
+        <a href="/sitemap-index.xml" class="btn ghost">View the sitemap</a>
+      </div>
+
+      <p class="tb-404__hint mono">
+        Looking for Takealot itself? That's at <a href="https://takealot.com" class="link-u">takealot.com</a> &mdash; this site is not affiliated.
+      </p>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .tb-404 { max-width: 72ch; }
+  .tb-404__giant {
+    font-size: clamp(96px, 22vw, 280px);
+    font-weight: 500;
+    line-height: 0.86;
+    letter-spacing: -0.06em;
+    margin: 0 0 clamp(20px, 3vw, 32px);
+    color: var(--ink);
+  }
+  .tb-404__italic { font-weight: 400; font-style: italic; color: var(--ink-muted); }
+  .tb-404__dot { color: var(--accent); }
+  .tb-404__lede {
+    font-family: var(--font-body);
+    font-size: clamp(17px, 1.6vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    max-width: 56ch;
+    margin: 0 0 40px;
+  }
+  .tb-404__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(24px, 4vw, 56px);
+    margin-bottom: 48px;
+  }
+  .tb-404__blocklabel { margin-bottom: 12px; color: var(--ink); }
+  .tb-404__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-404__links li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .tb-404__foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+  .tb-404__hint { color: var(--ink-muted); }
+  @media (max-width: 720px) {
+    .tb-404__grid { grid-template-columns: 1fr; }
+  }
+</style>

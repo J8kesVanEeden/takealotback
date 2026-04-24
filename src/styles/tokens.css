@@ -17,10 +17,11 @@
   --law: oklch(0.48 0.08 145);         /* muted forest — "the law says" */
   --warn: oklch(0.60 0.12 75);         /* muted ochre — "takealot says" */
 
-  /* type */
-  --font-display: "Geist", "Söhne", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body:    "Geist", "Söhne", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono:    "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* type — "Variable" variants are what our self-hosted fontsource fonts register
+     as. System-font fallbacks follow so a render is never blocked. */
+  --font-display: "Geist Variable", "Geist", "Söhne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body:    "Geist Variable", "Geist", "Söhne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono:    "JetBrains Mono Variable", "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* spacing */
   --gutter: 24px;
@@ -64,11 +65,36 @@
   --accent: oklch(0.72 0.14 55);
 }
 
+/* System-level dark-mode default. Kicks in only when:
+   - the user has not manually picked a palette via the tweaks panel
+     (data-palette-source="system" — set by the pre-apply script in
+     Layout.astro), AND
+   - the OS is in dark mode.
+   Manual palette picks always win — they set a concrete [data-palette]
+   which overrides these declarations via higher specificity (attribute
+   selectors tie, but the carbon block below uses the same pattern and
+   the active [data-palette="..."] is applied last in the cascade for
+   explicit picks). We also guard here with :not([data-palette-source...]). */
+@media (prefers-color-scheme: dark) {
+  :root[data-palette-source="system"] {
+    --paper: #141412;
+    --paper-alt: #1B1B18;
+    --paper-tint: #22221F;
+    --ink: #ECE7D9;
+    --ink-soft: #CFC9B9;
+    --ink-muted: #8E897C;
+    --ink-faint: #5A5650;
+    --rule: #2E2E29;
+    --rule-soft: #242420;
+    --accent: oklch(0.72 0.14 55);
+  }
+}
+
 /* density */
 [data-density="dense"]  { --grid-unit: 6px; }
 [data-density="airy"]   { --grid-unit: 10px; }
 
-/* display face swap */
-[data-display="serif"]  { --font-display: "Fraunces", "Source Serif 4", Georgia, serif; }
-[data-display="mono"]   { --font-display: "JetBrains Mono", ui-monospace, monospace; }
-[data-display="geist"]  { --font-display: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+/* display face swap — wired to the tweaks panel */
+[data-display="serif"]  { --font-display: "Fraunces Variable", "Fraunces", Georgia, serif; }
+[data-display="mono"]   { --font-display: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, monospace; }
+[data-display="geist"]  { --font-display: "Geist Variable", "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif; }

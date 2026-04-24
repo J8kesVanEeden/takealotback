@@ -16,7 +16,6 @@ import { QUICK_HITS } from '../data/content';
     {QUICK_HITS.map((q) => (
       <article
         class:list={[q.featured ? 'tb-qh__cell tb-qh__cell--featured qh-featured' : 'tb-qh__cell qh-col']}
-        style={`grid-column: span ${q.featured ? 12 : 4};`}
       >
         <div class="tb-qh__head-row">
           <span class="mono tb-qh__ref">QH.{q.n}</span>
@@ -57,6 +56,7 @@ import { QUICK_HITS } from '../data/content';
     border-top: 1px solid var(--rule);
   }
   .tb-qh__cell {
+    grid-column: span 4;
     padding: 28px 24px 32px;
     border-bottom: 1px solid var(--rule);
     border-right: 1px solid var(--rule);
@@ -67,6 +67,7 @@ import { QUICK_HITS } from '../data/content';
     min-height: 220px;
   }
   .tb-qh__cell--featured {
+    grid-column: span 12;
     min-height: 180px;
     background: var(--paper-alt);
   }

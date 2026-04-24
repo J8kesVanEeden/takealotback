@@ -240,6 +240,30 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
 
+/* Skip-to-main link — stays off-screen until focused by keyboard, then
+   reveals itself as a prominent affordance at the top-left. */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  padding: 8px 12px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transform: translateY(-150%);
+  transition: transform 120ms ease;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
 /* Prose */
 .prose { max-width: var(--prose-max); }
 .prose p { font-size: 16px; line-height: 1.65; color: var(--ink-soft); }

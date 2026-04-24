@@ -1,0 +1,20 @@
+/* Self-hosted variable fonts, served from our own origin via Vite's asset
+   pipeline. Removes the third-party IP leak that Google Fonts introduces.
+
+   Each import pulls in the font's @font-face block (with unicode-range
+   latin + latin-ext) plus the WOFF2 files. Files land in /_astro/ with
+   content hashes and long-cache headers. All declarations use
+   `font-display: swap` — the body text is never blocked waiting for
+   a font to load.
+
+   Coverage:
+   - Geist (Variable)            — default display + body
+   - Fraunces (Variable opsz)    — editorial serif option in tweaks panel
+   - JetBrains Mono (Variable)   — monospace everywhere + mono display option
+
+   System-font fallbacks (Helvetica Neue, Arial, Georgia, Menlo) live in
+   tokens.css so we never depend on a font actually loading. */
+
+@import '@fontsource-variable/geist/index.css';
+@import '@fontsource-variable/fraunces/index.css';
+@import '@fontsource-variable/jetbrains-mono/index.css';

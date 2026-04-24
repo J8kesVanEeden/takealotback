@@ -1,4 +1,5 @@
 ---
+import '../styles/fonts.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import Header from '../components/Header.astro';
@@ -14,9 +15,15 @@ interface Props {
   canonicalPath?: string;
   /** When true, render FAQPage JSON-LD from the site's FAQ dataset. */
   faqSchema?: boolean;
+  /** When true, emit a CollectionPage JSON-LD that describes the homepage
+   *  as an index of the site's content. `dateModified` is pulled from
+   *  LAST_REVIEWED in src/data/content.ts — bumping that constant on a
+   *  content update also bumps the schema, which is the single point
+   *  of truth we want. */
+  collectionSchema?: boolean;
 }
 
-const { title, description, canonicalPath = '/', faqSchema = false } = Astro.props;
+const { title, description, canonicalPath = '/', faqSchema = false, collectionSchema = false } = Astro.props;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}${canonicalPath}`;
 
@@ -64,6 +71,54 @@ if (faqSchema) {
     })),
   };
 }
+
+// --- Optional CollectionPage JSON-LD for the homepage ---
+// Describes the single-page reference as an index of named sections (the 7
+// quick hits, 18 clauses, 14 templates, 10-tier ladder, etc.). `dateModified`
+// piggybacks on LAST_REVIEWED — always correct, never drifts from the site
+// content, update by editing src/data/content.ts.
+let collectionPage: Record<string, unknown> | null = null;
+if (collectionSchema) {
+  const { CLAUSES, TEMPLATES } = await import('../data/content');
+  const isoReviewed = LAST_REVIEWED.replace(/\./g, '-');
+  collectionPage = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${siteUrl}/#collection`,
+    url: `${siteUrl}/`,
+    name: 'TakealotBack.com',
+    description: "A single-page reference to South African consumer rights when Takealot's returns policy oversteps the CPA, ECT Act, or POPIA.",
+    inLanguage: 'en-ZA',
+    isPartOf: { '@id': `${siteUrl}/#website` },
+    dateModified: isoReviewed,
+    datePublished: '2026-04-23',
+    license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
+    isAccessibleForFree: true,
+    about: [
+      'Consumer Protection Act 68 of 2008',
+      'Electronic Communications and Transactions Act 25 of 2002',
+      'Protection of Personal Information Act 4 of 2013',
+    ],
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: CLAUSES.length + TEMPLATES.length,
+      itemListElement: [
+        ...CLAUSES.map((c, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: `${siteUrl}/#clause-${c.slug}`,
+          name: `Clause ${c.n} — ${c.title}`,
+        })),
+        ...TEMPLATES.map((t, i) => ({
+          '@type': 'ListItem',
+          position: CLAUSES.length + i + 1,
+          url: `${siteUrl}/#template-${t.code}`,
+          name: `Template ${t.code} — ${t.title}`,
+        })),
+      ],
+    },
+  };
+}
 ---
 <!doctype html>
 <html lang="en-ZA">
@@ -109,38 +164,64 @@ if (faqSchema) {
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+    {/* Fonts are self-hosted — see src/styles/fonts.css and the @fontsource-variable
+        imports. No third-party origin (Google Fonts) in the critical path. */}
 
     {/* Baseline JSON-LD on every page */}
     <JsonLd data={organization} />
     <JsonLd data={website} />
     {faqPage && <JsonLd data={faqPage} />}
+    {collectionPage && <JsonLd data={collectionPage} />}
     <slot name="head" />
 
-    {/* Tweaks: apply persisted data attributes before first paint to avoid flash */}
+    {/* Tweaks: apply persisted data attributes before first paint to avoid flash.
+        Palette 'auto' means "follow the OS prefers-color-scheme" — we set
+        data-palette-source="system" so the dark-mode media query in tokens.css
+        can take effect, and we also set an explicit data-palette to one of the
+        concrete palettes so the cascade picks up the right colours even
+        without the media query. */}
     <script is:inline>
       (function () {
+        var DEFAULT = { palette: 'auto', display: 'geist', density: 'normal', hero: 'default' };
+        var t;
         try {
           var raw = localStorage.getItem('tb_tweaks');
-          var t = raw ? JSON.parse(raw) : null;
-          if (!t || typeof t !== 'object') {
-            t = { palette: 'paper', display: 'geist', density: 'normal', hero: 'default' };
-          }
-          var r = document.documentElement;
-          r.setAttribute('data-palette', t.palette || 'paper');
-          r.setAttribute('data-display', t.display || 'geist');
-          r.setAttribute('data-density', t.density || 'normal');
-          r.setAttribute('data-hero', t.hero || 'default');
-        } catch (e) {
-          /* ignore — default rendering applies */
+          t = raw ? JSON.parse(raw) : null;
+          if (!t || typeof t !== 'object') t = null;
+        } catch (e) { t = null; }
+        if (!t) t = Object.assign({}, DEFAULT);
+        for (var k in DEFAULT) if (!(k in t)) t[k] = DEFAULT[k];
+
+        var r = document.documentElement;
+        var paletteIsAuto = (t.palette === 'auto' || !t.palette);
+        if (paletteIsAuto) {
+          var prefersDark = false;
+          try { prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches; } catch (e) {}
+          r.setAttribute('data-palette', prefersDark ? 'carbon' : 'paper');
+          r.setAttribute('data-palette-source', 'system');
+        } else {
+          r.setAttribute('data-palette', t.palette);
+          r.setAttribute('data-palette-source', 'user');
         }
+        r.setAttribute('data-display', t.display || 'geist');
+        r.setAttribute('data-density', t.density || 'normal');
+        r.setAttribute('data-hero', t.hero || 'default');
+
+        // Live-react to OS theme changes when the user hasn't overridden.
+        try {
+          var mm = window.matchMedia('(prefers-color-scheme: dark)');
+          var onChange = function (ev) {
+            if (r.getAttribute('data-palette-source') !== 'system') return;
+            r.setAttribute('data-palette', ev.matches ? 'carbon' : 'paper');
+          };
+          if (mm.addEventListener) mm.addEventListener('change', onChange);
+          else if (mm.addListener) mm.addListener(onChange);
+        } catch (e) { /* ignore */ }
       })();
     </script>
   </head>
   <body>
-    <a href="#main" class="sr-only">Skip to main content</a>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <Header />
     <main id="main">
       <slot />

@@ -1,0 +1,8 @@
+# Cloudflare Pages — URL rewrites/redirects.
+# Docs: https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Canonicalise trailing slashes to no-trailing-slash (matches
+# astro.config.mjs `trailingSlash: 'never'`).
+/onus-of-proof/          /onus-of-proof          301
+/aedilitian-remedies/    /aedilitian-remedies    301
+/limits/                 /limits                 301
