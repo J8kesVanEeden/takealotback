@@ -125,7 +125,7 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "04", slug: "unlock-codes", title: "Unlock Codes for Data Devices",
-    takealot: "For items that store data (phones, laptops, tablets, security cameras, NAS), you must provide unlock codes or passwords. Refusal means refused return.",
+    takealot: "For items that store data (phones, laptops, tablets, security cameras, NAS), Takealot asks for unlock codes or passwords. Refusal may result in the return being refused — Takealot's policy frames this as discretionary (\"can refuse\") rather than automatic.",
     angles: [
       { stat: "POPIA s10", body: "Minimality. \"Personal information may only be processed if… adequate, relevant and not excessive.\" Live credentials exceed what's needed for a technical assessment." },
       { stat: "POPIA s19", body: "Security safeguards. Responsible parties must take \"appropriate, reasonable technical and organisational measures.\" Live credential handover is itself a security risk." },
@@ -153,7 +153,7 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "06", slug: "credit-vs-refund", title: "Credit vs Refund",
-    takealot: "If replacement stock is unavailable, Takealot defaults to loading refund credit to your account. Takealot's published Returns Policy expires that credit after 3 years: \"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit.\" Gift vouchers have their own separate 3-year validity.",
+    takealot: "For wrong-item / damaged / missing / change-of-mind returns where replacement stock is unavailable, Takealot defaults to loading refund credit to your account. (On defective returns the policy itself concedes the election — you choose repair, replacement, account credit, or refund.) That refund credit then expires after 3 years: \"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit.\" Gift vouchers have their own separate 3-year validity.",
     angles: [
       { stat: "CPA s56(2)", body: "Consumer elects the remedy — repair, replace, or refund. Credit is not a statutory option unless the consumer agrees to it." },
       { stat: "CPA s20(6)", body: "On a s20 return, refund rules apply — cash to the original payment method unless the consumer agrees to credit." },
@@ -167,14 +167,15 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "07", slug: "manufacturer-deflection", title: "Manufacturer Deflection",
-    takealot: "Direct manufacturer warranty: consumer deals with manufacturer. Extended warranty via supplier; if supplier repair/replacement exceeds 21 days Takealot refunds or credits.",
+    takealot: "Direct manufacturer warranty: consumer deals with manufacturer. Extended warranty via supplier; if supplier repair/replacement exceeds 21 days from the date the item is received at the supplier's returns evaluation facility, Takealot refunds or credits. The supplier may also charge you an evaluation fee.",
     angles: [
       { stat: "CPA s56(1)", body: "Three-tier warranty — producer/importer, distributor, AND retailer each warrant compliance with s55. You can proceed against any link." },
       { stat: "CPA s56(4)", body: "The section 56 warranty is in addition to, not in substitution for, any manufacturer or common-law warranty." },
       { stat: "CPA s55(2)(c)", body: "Reasonable durability. If Takealot advertised a 2-year manufacturer warranty, that shapes the durability benchmark — and the retailer is on the hook for it." },
       { stat: "CPA s41", body: "False, misleading, or deceptive representation. If Takealot advertised a warranty the manufacturer now won't honour, that's a s41 claim against Takealot for the damages flowing from the misrepresentation." },
       { stat: "ECT s43", body: "Online sellers must provide accurate information including on warranties. Misrepresentation is separately actionable." },
-      { stat: "21-day trigger", body: "Takealot's own policy triggers direct refund/credit if extended-warranty repair exceeds 21 days — hold them to their own trigger." },
+      { stat: "21-day trigger", body: "Takealot's own policy triggers direct refund/credit if extended-warranty repair exceeds 21 days from receipt at the supplier's evaluation facility — hold them to their own trigger, and demand written confirmation of the receipt date so the clock can't slide." },
+      { stat: "Evaluation fee", body: "Takealot's policy reserves the supplier's right to charge an evaluation fee. Within the 6-month s56 window, that fee sits with the supplier under s56(2) (\"at the supplier's risk and expense\") — not the consumer. Beyond 6 months, where Takealot advertised the warranty, the fee is arguably a s55(2)(c) / s41 cost against Takealot, because the warranty representation induced the sale. Push back on any evaluation fee billed to you during an active s56 claim." },
     ],
     why: "The manufacturer is one of your routes, not your only route. Within 6 months Takealot is primarily on the hook. Beyond 6 months s55(2)(c) + s41 still run against Takealot where they advertised the warranty.",
     template: "T07", escalate: "CGSO · ARB (for the advertising claim)",
@@ -251,10 +252,10 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "13", slug: "high-court-jurisdiction", title: "High Court Jurisdiction",
-    takealot: "Disputes are heard by the High Court (Western Cape Division, Cape Town), \"even if the disputed amount would typically be heard by a lower court.\"",
+    takealot: "The T&Cs name the High Court (Western Cape Division, Cape Town) as the forum for any legal matters between Takealot and you. Earlier versions of the T&Cs went further and said this applied even where the disputed amount would normally sit with a lower court; the current version drops that qualifier but the practical effect of the forum-selection clause is the same.",
     angles: [
       { stat: "CPA s69", body: "Sets out the consumer's enforcement routes — Tribunal (where permitted), applicable ombud, CGSO under s82(6), provincial consumer court, accredited ADR under s70, NCC under s71, or a court with jurisdiction. A contract can't close off statutory routes." },
-      { stat: "Motus v Wentzel", body: "The SCA in Motus Corporation v Wentzel [2021] ZASCA 40 read s69 as permissive, not hierarchical (para 27). Counsel abandoned the point in argument so the reasoning is technically obiter, but High Court divisions have since applied it — see Steynberg v Tammy Taylor Nails Franchising No 45 (GP, 21 June 2022) and Takealot Online (RF) (Pty) Ltd v Driveconsortium Hatfield [2021] ZAWCHC 280. A forum-selection clause that tries to push you past a cheaper lower court is attacked under s48 read with Regulation 44 and s51(3) — not Motus directly." },
+      { stat: "Motus v Wentzel", body: "The SCA in Motus Corporation v Wentzel [2021] ZASCA 40 read s69(d) as pointing to remedies in national legislation generally, not as a compulsory internal-hierarchy rule — so a consumer can approach a court directly (paras 26–28). The reasoning has been followed in subsequent High Court CPA matters, including Steynberg v Tammy Taylor Nails Franchising No 45 (Pty) Ltd [2023] ZAGPPHC 537 (3 July 2023) on the question of High Court jurisdiction over a CPA claim. A forum-selection clause that tries to push you past a cheaper lower court is still attacked primarily under s48 read with Regulation 44 and s51(3) — Motus removes the 'exhaust ombud first' defence, it doesn't by itself strike the clause." },
       { stat: "CGSO (compulsory scheme)", body: "Takealot is a mandatory participant in the CGSO under the Consumer Goods and Services Industry Code of Conduct gazetted under CPA s82 (March 2015). Compulsory participation was upheld in CGSO NPC v Voltex [2021] ZAGPPHC 309 (26 March 2021); non-participation contravenes CPA s82(8). Takealot names CGSO as escalation point in its own T&Cs. Use it." },
       { stat: "Small Claims Court", body: "Up to R20,000. No attorneys. No court filing fee — only sheriff's service costs." },
       { stat: "Magistrates' Court", body: "District up to R200,000. Regional R200,000 to R400,000. High Court R400,000+ with concurrent jurisdiction above R200,000." },
@@ -279,7 +280,7 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "15", slug: "marketplace-sellers", title: "Marketplace Sellers",
-    takealot: "Other sellers on the platform are responsible for the items they sell.",
+    takealot: "Sellers are responsible for the items they sell on our platform.",
     angles: [
       { stat: "CPA s56(1)", body: "Three-tier warranty runs against producer/importer, distributor, AND retailer. \"Retailer\" on a platform transaction can include the platform operator — depending on the facts." },
       { stat: "CPA s61(3)", body: "Product-liability is joint and several across the supply chain. Proceed against any link." },
@@ -346,6 +347,20 @@ export const CLAUSES: Clause[] = [
     ],
     why: "Packaging-condition fees are fine on change-of-mind returns. They're not fine on defective returns — the statute says defective returns happen at the supplier's risk and expense. Don't pay; challenge the fee.",
     template: "T15", escalate: "CGSO · chargeback on the fee itself if already debited · NCC for pattern evidence",
+  },
+  {
+    n: "20", slug: "inspection-assessment-delay", title: "Open-Ended Inspection & Assessment",
+    takealot: "On a defective-goods return Takealot says \"when we receive the item, we'll inspect it.\" The policy doesn't give a deadline for the inspection, doesn't name the technical standard applied, and doesn't spell out how you contest a rejection. Extended-warranty items go through a supplier evaluation that is only bounded by the 21-day refund trigger.",
+    angles: [
+      { stat: "CPA s56(2)", body: "The consumer elects the remedy — repair, replace, or refund — the moment the goods fail to comply with s55. s56(2) doesn't gate that election on a supplier-determined inspection outcome. An inspection process that holds the election hostage indefinitely is a de-facto waiver of the statutory right." },
+      { stat: "CPA s19", body: "Until you've accepted the goods, they are at the supplier's risk. By extension, the cost and delay of a supplier inspection of rejected goods falls on the supplier, not on the consumer waiting for a remedy." },
+      { stat: "CPA s48", body: "A term or process that is excessively one-sided or so adverse as to be inequitable is unfair. An open-ended inspection clock with no SLA and no defined standard sits comfortably inside that definition — especially where the consumer has cash tied up in a failed purchase." },
+      { stat: "CPA s51(3)", body: "Any contractual mechanism that operates as a waiver of s56 rights is void. A policy process that practically defeats the s56(2) election by indefinite delay is vulnerable under s51(3), even if the policy wording itself doesn't use the word \"waiver.\"" },
+      { stat: "CGSO 60-day benchmark", body: "CGSO's published resolution target is 60 business days, and supplier response is 15 business days. Those numbers are a useful comparator: an internal inspection that takes longer than a full CGSO complaint is prima facie unreasonable." },
+      { stat: "Paper trail", body: "Put the inspection demand in writing with a hard deadline (7–14 business days is defensible). State that silence past the deadline is treated as acceptance of the s56 election. File with CGSO on the day the deadline lapses." },
+    ],
+    why: "Takealot's inspection step has no SLA in the policy. That's the lever — in practice it's where s56 claims go to die. Give it a deadline yourself, in writing, and hold them to it.",
+    template: "T16", escalate: "CGSO · NCC if the delay is a pattern across multiple consumers",
   },
 ];
 
@@ -550,6 +565,27 @@ Regards,
 [Name]
 [Contact]
 [Order number]` },
+  { code: "T16", title: "Inspection Deadline", scenario: "Takealot (or its extended-warranty supplier) has received a defective item for inspection and the inspection is dragging with no communicated deadline or outcome.",
+    subject: "Inspection deadline on defective-goods return — Order #[ORDER]",
+    body: `Hi,
+
+Order #[ORDER]. The [item] was returned on [date] for inspection following a section 56 election of [repair / replacement / refund]. As of today, [N] business days have passed without a completed inspection outcome.
+
+The Consumer Protection Act does not make the section 56(2) election conditional on a supplier-determined inspection. Under section 56(2) the goods are returned at the supplier's risk and expense; under section 19 the supplier bears the cost and delay of its own assessment processes; and under section 48 read with section 51(3), a process that defers the statutory remedy indefinitely is vulnerable as unfair and as a practical waiver of section 56 rights.
+
+I would like to resolve this directly. I accordingly set the following deadline:
+
+  (a) Takealot (or the supplier acting on Takealot's behalf) will provide a written inspection outcome within 7 business days of this email — by [DATE].
+  (b) If the outcome is a rejection of the section 56 claim, it must identify the specific exclusion relied on and the evidence supporting it (see T03 for the underlying position on technical evidence).
+  (c) If I do not receive a written outcome by [DATE], I will treat my section 56 election as accepted and will expect the elected remedy — [repair / replacement / refund] — within a further 7 business days.
+  (d) Silence past those deadlines will be treated as Takealot's refusal to give effect to the section 56 election, and I will file a complaint with the Consumer Goods and Services Ombud on that basis.
+
+For reference, CGSO's published service standards give suppliers 15 business days to respond to a complaint and target 60 business days for resolution. An internal inspection that takes longer than a full CGSO complaint is not a reasonable assessment window.
+
+Regards,
+[Name]
+[Contact]
+[Order number]` },
 ];
 
 export const QUICK_HITS: QuickHit[] = [
@@ -590,7 +626,7 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s56", title: "Implied warranty of quality", blurb: "The big one. 6 months. Three-tier warranty (producer/distributor/retailer). Consumer elects repair/replace/refund. Cannot be contracted out of." },
     { id: "s57", title: "Warranty on repairs and parts", blurb: "Minimum 3-month warranty on any new/reconditioned part fitted during repair, plus the labour." },
     { id: "s61", title: "Product liability", blurb: "Strict liability for harm caused by unsafe goods. Joint and several across the supply chain." },
-    { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 read s69(d) as permissive rather than a compulsory hierarchy (obiter, counsel abandoned the point). High Court divisions have since followed that reading — Steynberg (GP, 2022), Driveconsortium Hatfield (WCHC, 2021)." },
+    { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 read s69(d) as pointing to remedies in national legislation generally, not as a compulsory internal-hierarchy rule — consumers may approach a court directly. Followed in Steynberg v Tammy Taylor Nails Franchising No 45 [2023] ZAGPPHC 537." },
     { id: "s2(10)", title: "Saving of common-law rights", blurb: "No provision of the Act may be interpreted to preclude common-law rights — preserves the aedilitian remedies." },
   ]},
   { group: "ECT Act", items: [
@@ -625,7 +661,7 @@ export const ESCALATION: EscalationTier[] = [
     body: "Cite the specific CPA / ECT section. State your elected remedy explicitly. Reference Order # in subject.", contact: "legal@takealot.com · 12th Floor, 10 Rua Vasco Da Gama Plain, Foreshore, Cape Town, 8001" },
   { tier: 3, title: "CGSO", window: "15 biz days / 60 biz days",
     body: "Free, online. The Consumer Goods and Services Industry Code of Conduct (gazetted under CPA s82 in March 2015) makes CGSO participation mandatory for qualifying suppliers, including Takealot — confirmed by the Gauteng High Court in CGSO NPC v Voltex [2021] ZAGPPHC 309. Supplier response in 15 business days; CGSO target resolution 60 business days.",
-    contact: "cgso.org.za · 0860 000 272 · WhatsApp +27 (0)81 335 3005 · complaints@cgso.org.za" },
+    contact: "cgso.org.za · 0860 000 272 · WhatsApp +27 (0)81 335 3005 · info@cgso.org.za" },
   { tier: 4, title: "Credit card chargeback", window: "~120 days",
     body: "File with your bank's disputes team. Can run in parallel with CGSO. Visa/Mastercard scheme rules — card only, EFT/RTC/PayShap not covered.",
     contact: "Your card issuer's disputes team" },
@@ -709,7 +745,7 @@ export const POLICY_SUMMARY: PolicySummary = {
     "Extended warranty via supplier (21-day refund trigger); direct manufacturer warranty direct with manufacturer",
     "Pre-packed bundles returnable whole only — Bundle Deals (assembled) returnable in parts",
     "Digital items returnable only if defective",
-    "Data devices: unlock codes required",
+    "Data devices: unlock codes requested; return may be refused if withheld",
     "Wrongly-returned items disposed; no compensation",
     "Rejected returns disposed after 30 days if not accepted back",
     "Takealot collects OR pickup-point drop-off within 7 days (large items & alcohol: collection only)",
@@ -724,7 +760,7 @@ export const POLICY_SUMMARY: PolicySummary = {
     "Other sellers responsible for the items they sell",
     "Takealot may cancel for stock / payment / listing error / account-abuse / criminal investigation",
     "Resale prohibition",
-    "Dispute resolution: SA law, High Court Western Cape (even below threshold)",
+    "Dispute resolution: SA law, High Court (Western Cape Division, Cape Town) named as forum",
     "Legal notices to legal@takealot.com",
     "CGSO named as escalation point",
     "Takealot may change any provision at any time without notice",
