@@ -11,8 +11,8 @@ Content was verified against published South African statutes, regulations, and 
 - [Hero / Mission](https://takealotback.com/#home): The site's purpose and metadata card (jurisdiction, instruments, counts).
 - [The short version — 7 quick hits](https://takealotback.com/#short-version): One-screen summary of the seven most-underused rights, including chargebacks.
 - [Three things to do right now](https://takealotback.com/#three-things): Find your fight, grab a template, escalate.
-- [Dismantled — 18 clauses](https://takealotback.com/#dismantled): Takealot's returns-policy clauses paired with CPA/ECT/POPIA counterpoints, case law, and the onus-of-proof position.
-- [Templates — 14 ready-to-send emails](https://takealotback.com/#templates): Copy-paste emails keyed to CPA/ECT sections for the most common disputes.
+- [Dismantled — 19 clauses](https://takealotback.com/#dismantled): Takealot's returns-policy clauses paired with CPA/ECT/POPIA counterpoints, case law, and the onus-of-proof position.
+- [Templates — 15 ready-to-send emails](https://takealotback.com/#templates): Copy-paste emails keyed to CPA/ECT sections for the most common disputes.
 - [The Law — full reference](https://takealotback.com/#law): CPA, ECT Act, POPIA, common law, and chargeback rules as section cards; plus a "where to file" bodies card.
 - [Warranties — manufacturer vs CPA](https://takealotback.com/#warranties): Three-layer warranty analysis (retailer, manufacturer, common law) + A/B/C/D playbook.
 - [Escalate — 10-tier ladder](https://takealotback.com/#escalate): Takealot support → CGSO → chargeback → NCC → IR → ARB → Small Claims → Magistrates' → High Court.
@@ -37,6 +37,6 @@ Content was verified against published South African statutes, regulations, and 
 ## What the site is NOT
 
 - Not legal advice. Not a substitute for an attorney or the Consumer Goods & Services Ombud.
-- Not affiliated with Takealot Online (RF) (Pty) Ltd or Naspers / Prosus.
+- Not affiliated with Takealot Online (RF) (Pty) Ltd or Naspers.
 - Not a complaints directory. No user submissions are accepted or published.
 - Not anti-Takealot. Most returns are handled correctly; the site targets the minority that aren't.
