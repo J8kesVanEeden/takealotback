@@ -77,7 +77,7 @@ export interface PolicySummary {
   terms: string[];
 }
 
-export const LAST_REVIEWED = "2026.04.18";
+export const LAST_REVIEWED = "2026.04.24";
 export const TAKEALOT_POLICY_REVIEWED_AGAINST = "v2026.03";
 export const GITHUB_REPO_URL = "https://github.com/J8kesVanEeden/takealotback";
 
@@ -132,9 +132,9 @@ export const CLAUSES: Clause[] = [
       { stat: "CPA s56", body: "Does not require credential handover. A factory-reset device is the assessable state." },
       { stat: "CPA s51", body: "Conditioning a s56 remedy on credential surrender is a prohibited waiver." },
       { stat: "CPA s48", body: "Unfair term — there is no legitimate technical purpose for live credentials post-reset." },
-      { stat: "Info Regulator", body: "inforegulator.org.za — POPIAComplaints@inforegulator.org.za. Free complaints, binding remedies." },
+      { stat: "Info Regulator", body: "Lodge through the eServices Portal at eservices.inforegulator.org.za — the Regulator's primary channel for POPIA complaints since 2024. POPIAComplaints@inforegulator.org.za still reaches them but is no longer the advertised route. Free to lodge, binding remedies." },
     ],
-    why: "Factory-reset before handover. Refuse live credentials. Report to the Information Regulator if they insist.",
+    why: "Factory-reset before return. Refuse live credentials. Report to the Information Regulator if they insist.",
     template: "T04", escalate: "CGSO + Information Regulator",
   },
   {
@@ -143,7 +143,7 @@ export const CLAUSES: Clause[] = [
     angles: [
       { stat: "CPA s53(1)(a)", body: "\"Defect\" is a material imperfection in the goods. A defect in one independently-replaceable component is not a defect in the working components." },
       { stat: "CPA s55 + s56", body: "The warranty attaches to the failed goods. Working parts aren't \"defective goods\" under s56." },
-      { stat: "Bandera v Kia", body: "Bandera Trading v Kia Motors (NCT/17829/2014) — the Tribunal applied the material-imperfection test to a multi-component product. Persuasive reasoning, not binding, but useful." },
+      { stat: "s53(1)(a) applies to the goods in issue", body: "The CPA defines a defect as a material imperfection in \"the goods\" — which, in a bundled sale, is the bundle you were sold. If one component's failure means the bundle no longer does what the bundle was sold to do, the s56 remedy runs against the supply. If the failed component is independently replaceable and the rest of the bundle works as sold, only the failed component is \"defective goods\" under s56. The question is functional, not semantic." },
       { stat: "CPA s51", body: "Requiring return of non-defective goods as a condition of a s56 remedy operates as a waiver — void under s51(3)." },
       { stat: "CPA s48", body: "Forcing return of installed, configured, data-holding equipment is a candidate for unfair-term challenge." },
       { stat: "POPIA overlay", body: "For data-storage devices, compelled full-bundle return creates unnecessary data exposure — strengthens the s48 unfairness case." },
@@ -153,12 +153,12 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "06", slug: "credit-vs-refund", title: "Credit vs Refund",
-    takealot: "If replacement stock is unavailable, Takealot credits your account. Credit expires after 3 years.",
+    takealot: "If replacement stock is unavailable, Takealot defaults to loading refund credit to your account. Takealot's published Returns Policy expires that credit after 3 years: \"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit.\" Gift vouchers have their own separate 3-year validity.",
     angles: [
       { stat: "CPA s56(2)", body: "Consumer elects the remedy — repair, replace, or refund. Credit is not a statutory option unless the consumer agrees to it." },
       { stat: "CPA s20(6)", body: "On a s20 return, refund rules apply — cash to the original payment method unless the consumer agrees to credit." },
       { stat: "CGSO Advisory", body: "Retailers cannot force store credit on a consumer entitled to cash refund." },
-      { stat: "CPA s48", body: "Long credit expiry (3 years) combined with no-cash-option defaults is vulnerable to unfair-term challenge on repeat transactions." },
+      { stat: "CPA Reg 44 + s48", body: "Regulation 44(3)(x) flags as presumptively unfair any term that causes the consumer to forfeit money paid to the supplier. Combined with s48's substantive-unfairness review, a 3-year drop-dead on refund credit that originated as money you paid for goods the supplier failed to supply is a defensible target — especially where the supplier loaded credit without an express s56(2) election from the consumer." },
       { stat: "ECT s44(3)", body: "On cooling-off cancellation, full refund is due within 30 days." },
       { stat: "Chargeback", body: "If Takealot insists on credit, a card chargeback is a live alternative — scheme rules trump internal policy." },
     ],
@@ -254,8 +254,8 @@ export const CLAUSES: Clause[] = [
     takealot: "Disputes are heard by the High Court (Western Cape Division, Cape Town), \"even if the disputed amount would typically be heard by a lower court.\"",
     angles: [
       { stat: "CPA s69", body: "Sets out the consumer's enforcement routes — Tribunal (where permitted), applicable ombud, CGSO under s82(6), provincial consumer court, accredited ADR under s70, NCC under s71, or a court with jurisdiction. A contract can't close off statutory routes." },
-      { stat: "Motus v Wentzel", body: "Motus Corporation v Wentzel [2021] ZASCA 40 — s69(d) is permissive. Consumers may approach a court directly; s69 is not a compulsory hierarchy. A forum-selection clause cannot force you past a lower court." },
-      { stat: "CGSO", body: "Takealot engages with the CGSO under the Consumer Goods and Services Industry Code — and names it as escalation point in its own T&Cs. Use it." },
+      { stat: "Motus v Wentzel", body: "The SCA in Motus Corporation v Wentzel [2021] ZASCA 40 read s69 as permissive, not hierarchical (para 27). Counsel abandoned the point in argument so the reasoning is technically obiter, but High Court divisions have since applied it — see Steynberg v Tammy Taylor Nails Franchising No 45 (GP, 21 June 2022) and Takealot Online (RF) (Pty) Ltd v Driveconsortium Hatfield [2021] ZAWCHC 280. A forum-selection clause that tries to push you past a cheaper lower court is attacked under s48 read with Regulation 44 and s51(3) — not Motus directly." },
+      { stat: "CGSO (compulsory scheme)", body: "Takealot is a mandatory participant in the CGSO under the Consumer Goods and Services Industry Code of Conduct gazetted under CPA s82 (March 2015). Compulsory participation was upheld in CGSO NPC v Voltex [2021] ZAGPPHC 309 (26 March 2021); non-participation contravenes CPA s82(8). Takealot names CGSO as escalation point in its own T&Cs. Use it." },
       { stat: "Small Claims Court", body: "Up to R20,000. No attorneys. No court filing fee — only sheriff's service costs." },
       { stat: "Magistrates' Court", body: "District up to R200,000. Regional R200,000 to R400,000. High Court R400,000+ with concurrent jurisdiction above R200,000." },
       { stat: "CPA s48 / s51", body: "A forum-selection clause pushing consumers to the most expensive forum is a candidate for unfair-term and statutory-waiver challenge." },
@@ -333,6 +333,20 @@ export const CLAUSES: Clause[] = [
     why: "Double-check every return before handing over. Photograph what you're returning. Note serial numbers. If you realise you've sent the wrong item, notify Takealot immediately and in writing.",
     template: "T08", escalate: "CGSO · Small Claims Court or Magistrates' Court for damages",
   },
+  {
+    n: "19", slug: "restocking-redelivery-fees", title: "Restocking and Re-Delivery Fees",
+    takealot: "If a return fails Takealot's packaging, seal or completeness check, Takealot refuses the return and sends the item back. If you re-log the return, Takealot reserves the right to charge a fee for collection and a fee for re-delivering the same or a replacement item to you.",
+    angles: [
+      { stat: "CPA s56(2)", body: "A defective-goods return under s56 is at the supplier's risk and expense. A collection fee or re-delivery fee on a defective return shifts the statute's cost allocation back onto the consumer — which is exactly what s56(2) does not allow." },
+      { stat: "CPA s51(3)", body: "Any term that waives, defeats or avoids a right conferred by the Act is void. A packaging-condition fee that recovers s56(2) costs from the consumer is a waiver of the \"supplier's risk and expense\" right." },
+      { stat: "CPA s48", body: "Unfair, unreasonable, unjust terms. A fee levied against a consumer who is exercising a statutory remedy is presumptively unfair, especially where Takealot chose the outbound courier and the outbound packaging." },
+      { stat: "CPA Reg 44", body: "Regulation 44(3)(b) treats terms that limit the supplier's liability for its own failure to perform as presumptively unfair; 44(3)(o) catches terms that require the consumer to bear costs the law says the supplier must bear." },
+      { stat: "CPA s20(6)", body: "s20(6) permits a reasonable restoration charge only in narrow circumstances on a non-defective return — and not where the consumer had to open the packaging to determine conformity or fitness. It does not license a generalised restocking fee and doesn't reach defective-goods returns." },
+      { stat: "s53(1)(a) framing", body: "If the goods are materially imperfect the return sits under s56, not s20. The packaging-condition check cannot be used to re-characterise a defective return as a change-of-mind return and import a restoration charge." },
+    ],
+    why: "Packaging-condition fees are fine on change-of-mind returns. They're not fine on defective returns — the statute says defective returns happen at the supplier's risk and expense. Don't pay; challenge the fee.",
+    template: "T15", escalate: "CGSO · chargeback on the fee itself if already debited · NCC for pattern evidence",
+  },
 ];
 
 export const TEMPLATES: Template[] = [
@@ -394,7 +408,7 @@ I do not accept that return of the complete bundle is required for the replaceme
 2. The "defect" as defined in section 53(1)(a) of the CPA is a material imperfection assessed against the goods in question. A defect in one component does not render working components defective.
 3. Section 56(2) of the CPA gives the consumer — not the supplier — the election of repair, replacement, or refund in respect of the failed goods.
 4. Section 51 of the CPA prohibits contract terms that waive consumer rights conferred by the Act; section 51(3) renders such terms void to the extent of the contravention. A policy condition that requires return of non-defective goods to obtain a section 56 remedy on the defective one operates as a waiver and is vulnerable.
-5. Supporting Tribunal reasoning: in Bandera Trading and Projects CC v Kia Motors South Africa (Pty) Ltd t/a The Glen (NCT/17829/2014/75(1)(b)) [2017] ZANCT 50, the National Consumer Tribunal applied the same material-imperfection approach to a multi-component product.
+5. The CPA assesses "the goods in issue" as they were sold to me. A bundle sold as one purchase is assessed as one purchase, but a defect in one independently-replaceable component does not convert working components into defective goods. The s56 remedy runs against the failed component; the rest of the bundle is not "defective goods" under s56 and is not part of what I have elected to return.
 6. [If data-storage devices: Compelled return of functional data-storage devices engages the Protection of Personal Information Act and amplifies the unreasonableness of the condition under section 48 of the CPA.]
 
 I will return the single defective [item]. Please confirm within 7 business days.
@@ -510,6 +524,32 @@ I reserve the right to escalate further to the National Consumer Commission and,
 
 Regards,
 [Name]` },
+  { code: "T15", title: "Re-Delivery Fee Pushback", scenario: "Takealot is threatening — or has already applied — a collection or re-delivery fee on a defective-goods return.",
+    subject: "Re-delivery fee on defective return — Order #[ORDER]",
+    body: `Hi,
+
+Order #[ORDER]. The item is defective within the meaning of s53(1)(a) of the Consumer Protection Act, and I am exercising my s56 election of remedy.
+
+Takealot has indicated that a [collection fee / re-delivery fee / restocking fee] may be applied to the return. I do not accept that.
+
+1. Under s56(2), the return of defective goods takes place at the supplier's risk and expense. Collection and re-delivery costs fall on Takealot, not on me.
+2. s51(3) voids any contractual term that purports to waive a right conferred by the Act. A packaging-condition fee that recovers s56(2) costs from me is a waiver.
+3. s48 prohibits unfair, unreasonable, unjust terms. Regulation 44(3)(b) and 44(3)(o) list as presumptively unfair any term that limits the supplier's own statutory liability or passes supplier-borne costs to the consumer.
+4. s20(6) permits a reasonable restoration charge only on a non-defective return in narrow circumstances, and not where the consumer had to open the packaging to determine conformity or fitness. It does not extend to a defective-goods return.
+
+Please confirm in writing, within 7 business days, that:
+
+  (a) no collection fee will be charged for this return;
+  (b) no re-delivery fee will be charged on the same item or a replacement;
+  (c) my s56 election — [repair / replace / refund] — will be given effect; and
+  (d) if a fee has already been debited, it will be reversed in full.
+
+Failing that I will escalate to the Consumer Goods and Services Ombud as a compulsory-participant matter under the Industry Code, and I will contest any debited fee with my card issuer under the applicable chargeback rules.
+
+Regards,
+[Name]
+[Contact]
+[Order number]` },
 ];
 
 export const QUICK_HITS: QuickHit[] = [
@@ -523,8 +563,8 @@ export const QUICK_HITS: QuickHit[] = [
     body: "ECT Act section 44 gives every online buyer a 7-day no-fault return right. Takealot's 30-day window sits on top of that floor.", ref: "ECT Act s44" },
   { n: "05", head: "Manufacturer warranty + CPA warranty run in parallel",
     body: "Takealot can't punt you to the manufacturer to escape section 56. Their liability is separate and concurrent.", ref: "CPA s56(1)" },
-  { n: "06", head: "CGSO is free. Takealot engages with it.",
-    body: "The Consumer Goods and Services Ombud handles retail disputes at zero cost. 15 business days to respond, 60 to resolve.", ref: "cgso.org.za" },
+  { n: "06", head: "CGSO is compulsory for Takealot, free for you.",
+    body: "The Consumer Goods and Services Ombud is the industry's mandatory Ombud scheme under the Code gazetted under CPA s82. Takealot is required to engage — it's not a goodwill gesture. 15 business days to respond, 60 to resolve. Filing costs nothing.", ref: "cgso.org.za" },
   { n: "07", head: "Credit card chargeback", featured: true,
     body: "Your bank can reverse the transaction if Takealot doesn't deliver, doesn't refund, or ships defective goods. Most South African consumers don't know this exists.", ref: "Visa / Mastercard scheme rules" },
 ];
@@ -550,7 +590,7 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s56", title: "Implied warranty of quality", blurb: "The big one. 6 months. Three-tier warranty (producer/distributor/retailer). Consumer elects repair/replace/refund. Cannot be contracted out of." },
     { id: "s57", title: "Warranty on repairs and parts", blurb: "Minimum 3-month warranty on any new/reconditioned part fitted during repair, plus the labour." },
     { id: "s61", title: "Product liability", blurb: "Strict liability for harm caused by unsafe goods. Joint and several across the supply chain." },
-    { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. Motus v Wentzel [2021] ZASCA 40 — s69(d) is permissive, not a compulsory hierarchy." },
+    { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 read s69(d) as permissive rather than a compulsory hierarchy (obiter, counsel abandoned the point). High Court divisions have since followed that reading — Steynberg (GP, 2022), Driveconsortium Hatfield (WCHC, 2021)." },
     { id: "s2(10)", title: "Saving of common-law rights", blurb: "No provision of the Act may be interpreted to preclude common-law rights — preserves the aedilitian remedies." },
   ]},
   { group: "ECT Act", items: [
@@ -562,7 +602,7 @@ export const LAW_SECTIONS: LawGroup[] = [
   { group: "POPIA", items: [
     { id: "s10", title: "Minimality (Condition 2)", blurb: "Processing must be adequate, relevant and not excessive for the purpose. Live credentials exceed what's needed for a technical assessment." },
     { id: "s19", title: "Security safeguards (Condition 7)", blurb: "Appropriate, reasonable technical and organisational measures required. Live credential handover is itself a security risk." },
-    { id: "reg", title: "Information Regulator", blurb: "inforegulator.org.za — POPIAComplaints@inforegulator.org.za. Free, binding remedies." },
+    { id: "reg", title: "Information Regulator", blurb: "Primary channel: eServices Portal at eservices.inforegulator.org.za (since 2024). Fallback email: POPIAComplaints@inforegulator.org.za. General: enquiries@inforegulator.org.za, 010 023 5200. Free to lodge; binding remedies." },
   ]},
   { group: "Common law", items: [
     { id: "breach", title: "Breach of contract", blurb: "Non-conforming delivery is a breach with remedies alongside the statutory ones." },
@@ -584,7 +624,7 @@ export const ESCALATION: EscalationTier[] = [
   { tier: 2, title: "Formal written notice", window: "7 biz days",
     body: "Cite the specific CPA / ECT section. State your elected remedy explicitly. Reference Order # in subject.", contact: "legal@takealot.com · 12th Floor, 10 Rua Vasco Da Gama Plain, Foreshore, Cape Town, 8001" },
   { tier: 3, title: "CGSO", window: "15 biz days / 60 biz days",
-    body: "Free, online. Takealot engages with the CGSO under the Consumer Goods and Services Industry Code and names it as escalation point. Supplier response in 15 business days; CGSO target resolution 60 business days.",
+    body: "Free, online. The Consumer Goods and Services Industry Code of Conduct (gazetted under CPA s82 in March 2015) makes CGSO participation mandatory for qualifying suppliers, including Takealot — confirmed by the Gauteng High Court in CGSO NPC v Voltex [2021] ZAGPPHC 309. Supplier response in 15 business days; CGSO target resolution 60 business days.",
     contact: "cgso.org.za · 0860 000 272 · WhatsApp +27 (0)81 335 3005 · complaints@cgso.org.za" },
   { tier: 4, title: "Credit card chargeback", window: "~120 days",
     body: "File with your bank's disputes team. Can run in parallel with CGSO. Visa/Mastercard scheme rules — card only, EFT/RTC/PayShap not covered.",
@@ -594,7 +634,7 @@ export const ESCALATION: EscalationTier[] = [
     contact: "thencc.org.za · 012 065 1940 · enquiries@thencc.org.za · eservice.thencc.org.za" },
   { tier: 6, title: "Information Regulator", window: "Variable",
     body: "POPIA issues — credential demand, unlawful data retention, excessive information requests.",
-    contact: "inforegulator.org.za · POPIAComplaints@inforegulator.org.za" },
+    contact: "eservices.inforegulator.org.za (primary) · POPIAComplaints@inforegulator.org.za (fallback) · enquiries@inforegulator.org.za · 010 023 5200" },
   { tier: 7, title: "Advertising Regulatory Board (ARB)", window: "~30 days",
     body: "Misleading advertising complaints (e.g. misrepresented warranty on a product page). Succeeded the ASA in October 2018. Rulings bind ARB members; non-members can still be the subject of a published ruling.",
     contact: "arb.org.za · complaint@arb.org.za" },
@@ -613,13 +653,13 @@ export const FAQ: FaqItem[] = [
   { q: "Is using the name \"Takealot\" in the domain legal?",
     a: "Yes. Section 16 of the Constitution protects expressive commentary; Trade Marks Act s34(2) covers permitted acts; and the UDRP protects legitimate non-commercial fair use of a domain name for criticism. In Laugh It Off v SAB [2005] ZACC 7 the Constitutional Court held that a trade mark proprietor must prove likely substantial economic detriment — mere offence isn't enough — and expressive use is balanced against freedom of expression." },
   { q: "Are you affiliated with Takealot?",
-    a: "No. Their site is takealot.com. We are completely independent and have no relationship with Takealot, Naspers, or Prosus." },
+    a: "No. Their site is takealot.com. We are completely independent and have no relationship with Takealot or Naspers." },
   { q: "Do you make money from this site?",
     a: "No. Non-commercial, permanently. No ads, no affiliate links, no donations, no subscriptions." },
   { q: "Is this legal advice?",
     a: "No. Consumer education based on published legislation, reported case law, and Takealot's own public policies. For advice on your specific situation, consult a qualified South African attorney or the Consumer Goods and Services Ombud." },
   { q: "Why do your templates mention case names and NCT references?",
-    a: "Because case law, not just statute, shapes how the CPA is applied. Naming Bandera v Kia Motors, citing CGSO advisory notes, or flagging SCA decisions like Motus v Wentzel shows Takealot's team you've done the reading." },
+    a: "Because case law, not just statute, shapes how the CPA is applied. Citing CGSO advisory notes, or flagging SCA decisions like Motus v Wentzel, shows Takealot's team you've done the reading — not just parroted the Act. We only name a case where it materially supports the statutory argument; if the statute does the work on its own, we leave the case law out." },
   { q: "Can I submit my own Takealot horror story?",
     a: "No. We don't accept submissions of any kind. Unverified user content creates defamation risk without benefit. File with the CGSO instead." },
   { q: "What if my situation isn't covered by one of the clauses?",
@@ -675,7 +715,7 @@ export const POLICY_SUMMARY: PolicySummary = {
     "Takealot collects OR pickup-point drop-off within 7 days (large items & alcohol: collection only)",
     "Non-returnable (change-of-mind): intimate, underwear, swimwear, jewellery, foodstuffs, unsealed AV/software, books, personalised",
     "Exchanges: size/colour on clothing, sportswear, shoes",
-    "Credit (3-year expiry) default if no stock for replacement",
+    "Credit loaded to Takealot account forfeits after 3 years of non-use; gift vouchers separately valid 3 years from issue",
     "Re-delivery fee if return fails packaging/condition check",
     "Donations at checkout deducted from refunds",
   ],

@@ -47,7 +47,7 @@ export const GET: APIRoute = async () => {
   }
 
   // Clauses
-  lines.push('## Dismantled — 18 clauses of the Takealot returns policy');
+  lines.push(`## Dismantled — ${CLAUSES.length} clauses of the Takealot returns policy`);
   lines.push('');
   for (const c of CLAUSES) {
     lines.push(`### Clause ${c.n} — ${c.title}`);
@@ -69,7 +69,7 @@ export const GET: APIRoute = async () => {
   }
 
   // Templates
-  lines.push('## Email templates — 14 ready-to-send');
+  lines.push(`## Email templates — ${TEMPLATES.length} ready-to-send`);
   lines.push('');
   for (const t of TEMPLATES) {
     lines.push(`### ${t.code} — ${t.title}`);
