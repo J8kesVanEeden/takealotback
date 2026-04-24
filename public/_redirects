@@ -6,3 +6,10 @@
 /onus-of-proof/          /onus-of-proof          301
 /aedilitian-remedies/    /aedilitian-remedies    301
 /limits/                 /limits                 301
+
+# SEO/tooling convenience: the de-facto convention is /sitemap.xml at the
+# root, even though the sitemap protocol allows any filename. robots.txt
+# points crawlers at the real canonical URL (/sitemap-index.xml), but tools
+# like Screaming Frog probe /sitemap.xml first. 200 = edge rewrite, no
+# redirect hop — the same XML is served under both paths.
+/sitemap.xml             /sitemap-index.xml       200
