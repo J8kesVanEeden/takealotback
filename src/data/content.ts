@@ -162,7 +162,7 @@ export const CLAUSES: Clause[] = [
       { stat: "ECT s44(3)", body: "On cooling-off cancellation, full refund is due within 30 days." },
       { stat: "Chargeback", body: "If Takealot insists on credit, a card chargeback is a live alternative — scheme rules trump internal policy." },
     ],
-    why: "Credit is a default, not a right. You elect the remedy. Say \"refund to original payment method\" in writing and cite s56(2).",
+    why: "Credit is a default, not a right. You elect the remedy. Say \"refund to original payment method\" in writing and cite s56(2). Expect Takealot to fall back on \"not all defects can be repaired, and we may not always have replacement stock available\" — that's their soft-landing for collapsing the election back to credit. The statutory election isn't contingent on their inventory position. Push back: no stock means replacement isn't available; it doesn't mean you lose the option to elect a cash refund.",
     template: "T06", escalate: "CGSO · chargeback in parallel",
   },
   {
@@ -196,7 +196,7 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "09", slug: "rejected-disposal", title: "Disposal of Rejected Returns",
-    takealot: "If Takealot rejects a return and can't re-deliver within 30 days, they consider the item abandoned and may dispose of it.",
+    takealot: "If Takealot rejects a return and the consumer is unavailable for, or refuses, re-delivery for 30 days, Takealot treats the item as abandoned and may dispose of it.",
     angles: [
       { stat: "Bailment", body: "While the goods are in Takealot's possession for assessment they hold them as bailee. Duty of care is not wholly excluded by a returns policy." },
       { stat: "Delict", body: "Wrongful destruction of property gives a damages claim independent of the sales contract." },
@@ -255,7 +255,7 @@ export const CLAUSES: Clause[] = [
     takealot: "The T&Cs name the High Court (Western Cape Division, Cape Town) as the forum for any legal matters between Takealot and you. Earlier versions of the T&Cs went further and said this applied even where the disputed amount would normally sit with a lower court; the current version drops that qualifier but the practical effect of the forum-selection clause is the same.",
     angles: [
       { stat: "CPA s69", body: "Sets out the consumer's enforcement routes — Tribunal (where permitted), applicable ombud, CGSO under s82(6), provincial consumer court, accredited ADR under s70, NCC under s71, or a court with jurisdiction. A contract can't close off statutory routes." },
-      { stat: "Motus v Wentzel", body: "The SCA in Motus Corporation v Wentzel [2021] ZASCA 40 read s69(d) as pointing to remedies in national legislation generally, not as a compulsory internal-hierarchy rule — so a consumer can approach a court directly (paras 26–28). The reasoning has been followed in subsequent High Court CPA matters, including Steynberg v Tammy Taylor Nails Franchising No 45 (Pty) Ltd [2023] ZAGPPHC 537 (3 July 2023) on the question of High Court jurisdiction over a CPA claim. A forum-selection clause that tries to push you past a cheaper lower court is still attacked primarily under s48 read with Regulation 44 and s51(3) — Motus removes the 'exhaust ombud first' defence, it doesn't by itself strike the clause." },
+      { stat: "Motus v Wentzel", body: "The SCA in Motus Corporation v Wentzel [2021] ZASCA 40 offered obiter guidance (at para 26) that s 69(d) should not lightly be read as excluding consumers' right to approach the courts under s 34 of the Constitution — signalling that the section points to remedies in national legislation generally, rather than a compulsory internal-hierarchy rule. Counsel for the appellants expressly declined to pursue the point, so the court \"did not hear full argument on the matter\" and recorded that the issues \"will need to be resolved on another occasion.\" It is direction, not holding — but it's SCA direction, and the reasoning has been picked up by commentary across ENSafrica, Cliffe Dekker Hofmeyr, and Financial Institutions Legal Snapshot. A forum-selection clause that tries to push you past a cheaper lower court is still attacked primarily under s48 read with Regulation 44 and s51(3); Motus removes the \"exhaust the ombud first\" defence, it doesn't by itself strike the clause." },
       { stat: "CGSO (compulsory scheme)", body: "Takealot is a mandatory participant in the CGSO under the Consumer Goods and Services Industry Code of Conduct gazetted under CPA s82 (March 2015). Compulsory participation was upheld in CGSO NPC v Voltex [2021] ZAGPPHC 309 (26 March 2021); non-participation contravenes CPA s82(8). Takealot names CGSO as escalation point in its own T&Cs. Use it." },
       { stat: "Small Claims Court", body: "Up to R20,000. No attorneys. No court filing fee — only sheriff's service costs." },
       { stat: "Magistrates' Court", body: "District up to R200,000. Regional R200,000 to R400,000. High Court R400,000+ with concurrent jurisdiction above R200,000." },
@@ -599,7 +599,7 @@ export const QUICK_HITS: QuickHit[] = [
     body: "ECT Act section 44 gives every online buyer a 7-day no-fault return right. Takealot's 30-day window sits on top of that floor.", ref: "ECT Act s44" },
   { n: "05", head: "Manufacturer warranty + CPA warranty run in parallel",
     body: "Takealot can't punt you to the manufacturer to escape section 56. Their liability is separate and concurrent.", ref: "CPA s56(1)" },
-  { n: "06", head: "CGSO is compulsory for Takealot, free for you.",
+  { n: "06", head: "CGSO is compulsory for Takealot, free for you",
     body: "The Consumer Goods and Services Ombud is the industry's mandatory Ombud scheme under the Code gazetted under CPA s82. Takealot is required to engage — it's not a goodwill gesture. 15 business days to respond, 60 to resolve. Filing costs nothing.", ref: "cgso.org.za" },
   { n: "07", head: "Credit card chargeback", featured: true,
     body: "Your bank can reverse the transaction if Takealot doesn't deliver, doesn't refund, or ships defective goods. Most South African consumers don't know this exists.", ref: "Visa / Mastercard scheme rules" },
@@ -626,7 +626,7 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s56", title: "Implied warranty of quality", blurb: "The big one. 6 months. Three-tier warranty (producer/distributor/retailer). Consumer elects repair/replace/refund. Cannot be contracted out of." },
     { id: "s57", title: "Warranty on repairs and parts", blurb: "Minimum 3-month warranty on any new/reconditioned part fitted during repair, plus the labour." },
     { id: "s61", title: "Product liability", blurb: "Strict liability for harm caused by unsafe goods. Joint and several across the supply chain." },
-    { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 read s69(d) as pointing to remedies in national legislation generally, not as a compulsory internal-hierarchy rule — consumers may approach a court directly. Followed in Steynberg v Tammy Taylor Nails Franchising No 45 [2023] ZAGPPHC 537." },
+    { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 gave obiter guidance (para 26) that s 69(d) points to remedies in national legislation generally rather than a compulsory internal hierarchy — consumers may approach a court directly. The court expressly declined to decide the scope of s 69(d); the issue remains technically open." },
     { id: "s2(10)", title: "Saving of common-law rights", blurb: "No provision of the Act may be interpreted to preclude common-law rights — preserves the aedilitian remedies." },
   ]},
   { group: "ECT Act", items: [

@@ -23,7 +23,7 @@ Under the Prescription Act 68 of 1969, ordinary debts and contractual claims pre
 
 ## What "latent defect" actually means
 
-The test, from *Phame (Pty) Ltd v Paizes* and the line of cases applying the aedilitian rules, is three-part. The defect must be:
+The test, worked out across the line of cases applying the aedilitian rules (see *Dibley v Furter* 1951 (4) SA 73 (C) and *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) for the canonical restatements; *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the family to *dicta et promissa*), is three-part. The defect must be:
 
 1. **Hidden** — not discoverable on reasonable inspection by an ordinary non-expert buyer.
 2. **Present at sale** — existing at the time of sale, at least in embryonic form, even if it only manifested later.
@@ -44,6 +44,6 @@ In practice, the better first-line route for defective goods is CPA s55/s56 — 
 
 ## Voetstoots is dead against consumers
 
-Any attempt by a retailer to sell "as-is" to a consumer under the CPA is void. Section 51 read with section 56 prohibits waiver of the quality warranty, and the CGSO has confirmed this in Advisory Note 11 ("Supply of Voetstoots Goods", [2021] ZACGSO 11). The SA National Consumer Tribunal has reached the same conclusion — see *Vonk v Willow Crest Motors* [2019] ZANCT 63 ("the concept of a 'voetstoots' sale… is therefore not applicable to any transactions falling under the CPA") and *Fourie v Agenbag Motor Group* [2018] ZACONAF 3.
+Any attempt by a retailer to sell "as-is" to a consumer under the CPA is void. Section 51 read with section 56 prohibits waiver of the quality warranty, and the CGSO has confirmed this in Advisory Note 11 ("Supply of Voetstoots Goods", [2021] ZACGSO 11). The National Consumer Tribunal has reached the same conclusion — see *Vonk v Willow Crest Motors* [2019] ZANCT 63 ("the concept of a 'voetstoots' sale… is therefore not applicable to any transactions falling under the CPA"). The North West Consumer Affairs Court applied the same reasoning in *Fourie v Agenbag Motor Group* [2018] ZACONAF 3, ordering a full refund against a dealer who had relied on a voetstoots clause.
 
 Voetstoots survives only in (a) auction sales (CPA s45), (b) goods altered after they left the retailer's control, (c) the s55(6) scenario where a specific condition was expressly disclosed and expressly accepted, and (d) transactions outside CPA scope (e.g. juristic-person consumers above the s5(2) asset/turnover threshold, private once-off sales).
