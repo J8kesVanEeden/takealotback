@@ -200,6 +200,8 @@ import { scanForCitations } from '../lib/citation-links';
           ta.style.top = '-1000px';
           document.body.appendChild(ta);
           ta.select();
+          // Legacy fallback for non-HTTPS contexts where navigator.clipboard
+          // is unavailable; deprecation hint is expected.
           try { document.execCommand('copy'); } catch (e) { /* ignore */ }
           document.body.removeChild(ta);
         }

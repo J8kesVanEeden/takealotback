@@ -13,11 +13,8 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props {
-  entry: CollectionEntry<'citations'>;
-}
-
-const { entry } = Astro.props;
+type Props = { entry: CollectionEntry<'citations'> };
+const { entry } = Astro.props as Props;
 const { Content } = await entry.render();
 
 const data: Record<string, unknown> = entry.data as Record<string, unknown>;

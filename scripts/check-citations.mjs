@@ -14,14 +14,6 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(fileURLToPath(import.meta.url), '..', '..');
 
-// Cases the site is allowed to reference without a dedicated citation file.
-// Most of these are common-knowledge SA case names that appear in passing in
-// templates or context strings, not as primary anchors. Tighten this list
-// over time as files are added.
-const ALLOWED_WITHOUT_FILE = new Set([
-  // None right now — all cited cases have files.
-]);
-
 // Map case-name fragments (as they appear in content) to the citation file's
 // expected basename in citations/cases/. Multiple aliases for the same case
 // resolve to the same file.
