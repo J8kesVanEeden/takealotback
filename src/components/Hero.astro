@@ -1,5 +1,10 @@
 ---
 import PlusRow from './PlusRow.astro';
+import { CLAUSES, TEMPLATES, ESCALATION, LAST_REVIEWED } from '../data/content';
+
+// Convert "2026.04.25" to "2026.04" for the jurisdiction strapline so
+// monthly verification rolls automatically when LAST_REVIEWED bumps.
+const reviewedMonth = LAST_REVIEWED.slice(0, 7);
 ---
 <section id="home" data-screen-label="Home" class="tb-hero">
   <PlusRow />
@@ -8,7 +13,7 @@ import PlusRow from './PlusRow.astro';
   <div class="page tb-hero__default">
     <div class="tb-hero__topmeta">
       <div class="mono slash-label">Mission</div>
-      <div class="mono tb-hero__jurisdiction">ZA / Consumer rights / v0.1 · 2026.04</div>
+      <div class="mono tb-hero__jurisdiction">ZA / Consumer rights / v0.1 · {reviewedMonth}</div>
     </div>
 
     <h1 class="display tb-hero__headline">
@@ -23,9 +28,9 @@ import PlusRow from './PlusRow.astro';
           <dt>Resource</dt><dd>Consumer advocacy</dd>
           <dt>Jurisdiction</dt><dd>South Africa</dd>
           <dt>Instruments</dt><dd>CPA · ECT · POPIA · Common law</dd>
-          <dt>Clauses</dt><dd>20 dismantled</dd>
-          <dt>Templates</dt><dd>16 ready-to-send</dd>
-          <dt>Escalation</dt><dd>10-tier ladder</dd>
+          <dt>Clauses</dt><dd>{CLAUSES.length} dismantled</dd>
+          <dt>Templates</dt><dd>{TEMPLATES.length} ready-to-send</dd>
+          <dt>Escalation</dt><dd>{ESCALATION.length}-tier ladder</dd>
           <dt>Cost</dt><dd>Zero · Forever</dd>
           <dt>Ads</dt><dd>None</dd>
           <dt>Reading time</dt><dd>~14 min full read</dd>
@@ -62,7 +67,7 @@ import PlusRow from './PlusRow.astro';
       TAKE<br />A LOT<br /><em class="tb-hero__giantitalic">BACK.</em>
     </div>
     <p class="lede tb-hero__giantlede">
-      When Takealot's policy tries to sidestep the Consumer Protection Act, the ECT Act, or POPIA — we help you put it back in its place. 20 clauses dismantled. 16 ready-to-send templates. One ladder to escalate.
+      When Takealot's policy tries to sidestep the Consumer Protection Act, the ECT Act, or POPIA — we help you put it back in its place. {CLAUSES.length} clauses dismantled. {TEMPLATES.length} ready-to-send templates. One ladder to escalate.
     </p>
     <div class="tb-hero__ctas">
       <a href="#dismantled" class="btn primary">Full dismantling &rarr;</a>
