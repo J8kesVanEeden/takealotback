@@ -17,7 +17,8 @@
     "check:links": "node scripts/check-links.mjs",
     "check:all": "npm run check && npm run check:anchors && npm run check:citations && npm run check:html && npm run check:links",
     "build:og": "node scripts/build-og.mjs",
-    "archive": "node scripts/archive-wayback.mjs"
+    "archive": "node scripts/archive-wayback.mjs",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "html-validate": "^10.13.1",
+    "husky": "^9.1.7",
     "linkinator": "^7.6.1",
     "sharp": "^0.34.5",
     "typescript": "^5.7.0"

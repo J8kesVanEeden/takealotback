@@ -1,0 +1,40 @@
+# Quality gate — runs on every push to main and every PR targeting main.
+#
+# Encodes the audit loop we ran by hand: TypeScript check, anchor refs,
+# citation completeness, html-validate, internal-link crawl. If any step
+# fails, the workflow fails and (for PRs) blocks merge.
+#
+# Why now: the test loop caught 8 real bugs across one session. Without
+# this, the only thing catching regressions is whoever remembers to run
+# `npm run check:all` before pushing.
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          # Match the engines.node floor in package.json — Astro 5
+          # supports 18+, but linkinator wants 20+ for native fetch.
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run all checks
+        # `check:all` runs astro check, check:anchors, check:citations,
+        # check:html, and check:links. Any failure exits non-zero and
+        # fails the job.
+        run: npm run check:all

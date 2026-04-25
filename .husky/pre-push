@@ -1,0 +1,11 @@
+# Pre-push gate — refuses to push code that doesn't pass `check:all`.
+#
+# Runs the same suite as the GitHub Actions workflow (.github/workflows/check.yml),
+# so a local fail = no push, no CI round-trip.
+#
+# To bypass in a true emergency: `git push --no-verify`.
+# Don't make a habit of it; the hook exists because the test loop kept
+# catching real bugs that "looked fine in the editor".
+
+echo "→ pre-push: running npm run check:all"
+npm run check:all
