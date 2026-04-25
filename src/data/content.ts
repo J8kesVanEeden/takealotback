@@ -673,7 +673,7 @@ export const ESCALATION: EscalationTier[] = [
     contact: "eservices.inforegulator.org.za (primary) · POPIAComplaints@inforegulator.org.za (fallback) · enquiries@inforegulator.org.za · 010 023 5200" },
   { tier: 7, title: "Advertising Regulatory Board (ARB)", window: "~30 days",
     body: "Misleading advertising complaints (e.g. misrepresented warranty on a product page). Succeeded the ASA in October 2018. Rulings bind ARB members; non-members can still be the subject of a published ruling.",
-    contact: "arb.org.za · complaint@arb.org.za" },
+    contact: "arb.org.za · info@arb.org.za · 011 593 3104" },
   { tier: 8, title: "Small Claims Court", window: "~60 days",
     body: "Up to R20,000 (check justice.gov.za/scc for the current figure — consultations on R50,000 were underway in late 2025). No attorneys. No court filing fee — only sheriff's service costs.",
     contact: "justice.gov.za/scc/scc.htm" },
