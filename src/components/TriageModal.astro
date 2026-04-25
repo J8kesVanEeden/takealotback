@@ -270,6 +270,7 @@
       var t = e.target;
       if (!(t instanceof Element)) return;
       if (t.closest('[data-triage-open]')) { open(); return; }
+      if (t.closest('[data-triage-close]')) { close(); return; }
     });
 
     // Backdrop click closes.
