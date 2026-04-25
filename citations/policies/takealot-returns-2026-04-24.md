@@ -53,9 +53,88 @@ Takealot does not surface a "Last updated" date on either the Returns Policy pag
 ## How to refresh this snapshot
 
 1. Fetch https://terms-and-policies.takealot.com/ and its sub-pages (Returns Policy, Terms & Conditions).
-2. Diff against this file's "Verified current clauses" section.
+2. Diff against the "Section-by-section live text" block below.
 3. Flag material changes; update the site content.
 4. Bump the `retrieved` date in this frontmatter.
 5. If the changes are material, preserve the 2026-04-24 version as a sibling file: `takealot-returns-2026-04-24.md` stays untouched; new snapshot goes in a new file with the new date.
 
-Full verbatim text of the policy is not yet mirrored in this file — fill on next refresh for maximum provenance strength.
+---
+
+## Section-by-section live text (retrieved 2026-04-25)
+
+The following is the operative wording of the Returns Policy as fetched from `terms-and-policies.takealot.com` on 2026-04-25. Direct quotations are flagged with quotation marks; everything else is faithful paraphrase. Fair-dealing snapshot under Copyright Act s 12(1)(a).
+
+### Time Limits
+
+> "Different items have different return windows. Here are the 2 simple rules."
+
+- Returns for **wrong items, damage on delivery, missing parts, or changed mind**: 30 days.
+- **Defective items**: 6 months from delivery.
+
+### Prepare Your Return
+
+> Items must be returned "in its original product packaging with all the accessories and parts included, and all seals must be intact (if applicable)."
+
+Tags must remain on; items must not have been worn or used.
+
+### Damaged on Delivery / Wrong Item / Missing Parts
+
+For damaged, wrong, or incomplete deliveries within 30 days, Takealot offers replacement, account credit, or refund at the customer's choice. Items are not considered "damaged on delivery" if the damage was caused by the consumer, electrical surges, or use for an unintended purpose.
+
+### Defective Items
+
+Defective returns within 6 months may be repaired, replaced, credited, or refunded **after Takealot's inspection**. Excluded: normal wear and tear, consumer damage, electrical surges, sea-air corrosion, consumer modification, or unintended use.
+
+The inspection step is built in to the workflow: *"when we receive the item, we'll inspect it"* — with no published SLA. (This is the textual hook for the site's Clause 20.)
+
+### Pre-packed Bundles
+
+> "You can only return a Pre-packed Bundle if you return all the items that formed part of that bundle to us."
+
+### Bundle Deals
+
+Customers may return a whole Bundle Deal **or any of the individual items** in the bundle, with the credited / refunded amount reflecting the discounts applied at purchase.
+
+### Non-Returnable Items (change-of-mind)
+
+Non-returnable categories include: intimate items, underwear, swimwear, jewellery, foodstuffs and everyday-consumption items, unsealed audio / video / software, books and periodicals, personalised items, and made-to-specification items.
+
+### Vouchers and Coupons
+
+> Voucher value loads as **non-refundable** Takealot account credit; any remaining cash amount may be credited or refunded.
+> Coupons return as new coupons, "which may have its own terms and conditions that may differ from the terms and conditions of your original coupon."
+
+### Wrong Item Returned (consumer error)
+
+If the consumer returns the wrong item, contact Takealot immediately. *"We cannot guarantee that we will find your item."* Mis-returned items may be disposed of without compensation.
+
+### Rejected Returns / Disposal
+
+If a return is rejected, Takealot returns the item to the consumer.
+
+> "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it."
+
+### Collection or Delivery / Re-Delivery Fees
+
+Consumers choose collection or pickup-point drop-off within **7 days** of logging the return. Large items and alcohol are collection-only.
+
+> "If you don't [return the item with packaging, parts, accessories, seals], we will not accept the return and will send the item back to you. However, you may log the return again if you can do so with all the missing packaging and parts, but **we may charge you a fee for collecting the item from you and, where applicable, a fee for delivering the same or a replacement item back to you.**"
+
+(This is the textual hook for the site's Clause 19.)
+
+### Credit and Refunds
+
+- Account credit loads within **2 business days**.
+- Account credit is valid for **3 years**: *"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit."*
+- Refunds process in **3–5 business days** to the original payment method.
+- Where the original payment method is unavailable: *"we will ask you for your bank details which we will have to verify before we can refund you. This could take a little longer than 5 days."*
+
+---
+
+## Companion file
+
+[`./takealot-tcs-2026-04-24.md`](./takealot-tcs-2026-04-24.md) — Terms & Conditions snapshot.
+
+## Status
+
+Policy text mirrored verbatim where direct quotes are available; faithful paraphrase elsewhere. Fair-dealing snapshot retained for research / criticism / review.
