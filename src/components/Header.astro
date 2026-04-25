@@ -15,7 +15,7 @@ const nav = [
   <div class="page tb-header__inner">
     <nav class="tb-header__nav" aria-label="Primary">
       {nav.map((n) => (
-        <a href={n.href} class="tb-navlink" data-jump={n.href.startsWith('/#') ? n.href.slice(2) : ''} aria-label={`${n.label} (shortcut: ${n.k})`}>
+        <a href={n.href} class="tb-navlink" data-jump={n.href.startsWith('/#') ? n.href.slice(2) : undefined} aria-label={`${n.label} (shortcut: ${n.k})`}>
           <span class="tb-navlink__key" aria-hidden="true">{n.k}</span>
           <span>{n.label}</span>
         </a>
