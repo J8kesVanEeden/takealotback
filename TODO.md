@@ -96,10 +96,22 @@ Outstanding work, in priority order. Tick items as they land.
 
 These aren't "fix one thing" — they're guardrails that make future regressions harder. After perfecting the current state, invest here so we stop relearning the same lessons.
 
-- [ ] **CI on PRs**: GitHub Actions workflow that runs `npm run check:all` on every push and PR. Fails the merge if any check breaks. Without this, the only thing catching regressions is me running checks locally — easy to forget.
-- [ ] **Visual-regression snapshots**: Playwright + percy/argos (or a self-hosted equivalent) screenshotting key pages on every deploy. Catches "the layout broke" before users see it.
-- [ ] **Lighthouse CI**: `@lhci/cli` running on every deploy with budget assertions (perf ≥ 95, a11y = 100, SEO = 100, best-practices ≥ 95). Fails the deploy if any score drops. Currently flagged as TODO under "Open — nice to have"; promote.
-- [ ] **Auto cache-purge on deploy** (PRIORITY — Jakes, do from desktop):
+### Tier 1 — landed (April 2026)
+
+- [x] **CI on PRs**: `.github/workflows/check.yml` runs `npm run check:all` on every push to main + every PR. Blocks merge on failure.
+- [x] **Pre-push git hook**: `.husky/pre-push` runs `npm run check:all` before every push. Local fail = no push. Bypass with `--no-verify` for emergencies only.
+- [x] **Content-only PR template**: `.github/pull_request_template.md` forces a checklist on every PR (counts derived from constants, citation file added, OG regenerated, cache purge planned).
+- [x] **`scripts/check-counts.mjs`**: catches hardcoded counts drifting from `CLAUSES.length` etc. First fire caught a stale comment in Layout.astro.
+- [x] **`scripts/check-used-in.mjs`**: every citation `used_in:` line must resolve via the shared resolver in `src/lib/used-in-link.mjs`. Single source of truth — page + check share the regex table.
+- [x] **`scripts/check-source-chip-coverage.mjs`**: every clause + template renders ≥1 source chip in dist/index.html. Catches phrase-pattern drift.
+- [x] **`scripts/check-heading-hierarchy.mjs`**: exactly one h1 per page, no level skips. Catches the AboutSection h2→h4 class of issue.
+- [x] **`scripts/check-frontmatter.mjs`**: every citation has title + retrieved (YYYY-MM-DD) + used_in; post-1995 citations need at least one URL field.
+- [x] **`scripts/check-live.mjs`** (`npm run check:live`): post-deploy smoke test against takealotback.com. Asserts 17 surfaces 200, API counts match source, RSS ≥ 35 items, redirects 301. Run after every deploy.
+- [x] **`OPERATIONS.md` content-update runbook**: explicit "When you change CLAUSES" + "When you add a citation" sections. Steps in order so CI doesn't fail on something you forgot.
+
+### Tier 2 — needs Jakes setup from desktop
+
+- [ ] **Auto cache-purge on deploy** (PRIORITY):
   1. dash.cloudflare.com → My Profile → API Tokens → Create Custom Token
      - Permissions: Zone → Cache Purge → Purge
      - Zone Resources: Include → Specific zone → takealotback.com
@@ -107,15 +119,18 @@ These aren't "fix one thing" — they're guardrails that make future regressions
   3. github.com/J8kesVanEeden/takealotback → Settings → Secrets and variables → Actions → New repository secret → Name: `CF_API_TOKEN`, Value: paste token
   4. Same page → New repository secret → Name: `CF_ZONE_ID`, Value: zone ID from CF dashboard (right sidebar of zone overview, "API" section)
   5. Tell Claude — Claude will add `.github/workflows/cf-cache-purge.yml` that runs after every push to main and purges the edge cache. Until then, manual purge required after each push (Cloudflare dashboard → Caching → Configuration → Purge Everything).
-- [ ] **Pre-push git hook**: `.husky/pre-push` that runs `npm run check:all` locally before every push. Local fail → no push. Belt + braces with the CI workflow.
-- [ ] **Content-only PR template**: When updating clauses / templates / FAQ / law sections, force the author through a short checklist (counts updated everywhere? citations exist for new case names? llms.txt + 404 + index meta-description still accurate?). Without this, count drift like the "18 clauses" thing recurs every time we add content.
-- [ ] **`scripts/check-counts.mjs`**: a guard that greps every page for hard-coded clause/template/escalation counts that should be derived from constants. Adds to `npm run check:all`. Caught manually this session — encode it.
-- [ ] **`scripts/check-frontmatter.mjs`**: validates every citation file has the required minimal frontmatter (title, retrieved, primary_url OR alternate_url, used_in). Catches "missing primary_url so the page renders no Sources panel" silently shipping.
-- [ ] **Audit-bot**: scheduled CronCreate or GHA on the 1st of each month that runs the three audit agents (design / SEO / cross-linking) automatically and opens a GitHub issue with their punch lists. The audits I ran this session caught real issues — make them recur, not be a one-off heroic effort.
-- [ ] **Accessibility test gate**: pa11y or axe-core run inside `check:all` (or a separate `check:a11y`) so a11y regressions block deploy. html-validate caught the easy wins; we need a real a11y pass.
-- [ ] **Live-site smoke test on every deploy**: a small `scripts/check-live.mjs` that hits 10–15 critical URLs after deploy and asserts status, key strings, and one JSON-LD `@type` per page. Run from the GHA workflow after the cache purge. Fails if the live site doesn't match what the build produced.
-- [ ] **Operations runbook for content updates**: `OPERATIONS.md` already covers archival; add a "When you change CLAUSES / TEMPLATES" runbook that lists every file to grep, the OG image regenerate command, and the cache-purge step.
-- [ ] **Memory file: Claude's "always do this when shipping" checklist**: I already track Cloudflare cache + non-negotiables in memory. Add a "post-deploy verification" entry so the loop runs the same way every time, even months apart.
+- [ ] **CF Web Analytics actually enable** (PRIORITY — same setup window):
+  - **Automatic**: dash.cloudflare.com → Web Analytics → Add Site → takealotback.com → toggle "Automatic Setup". CF injects the beacon at the edge — no code change.
+  - **Manual**: dash.cloudflare.com → Web Analytics → Manage Site → copy the `data-cf-beacon` token. Tell Claude — Claude will add the script to Layout.astro's `<head>`.
+  Until then, no traffic data is being recorded.
+
+### Tier 3 — defer until Tiers 1+2 stabilise
+
+- [ ] **Visual-regression snapshots**: Playwright + percy/argos screenshotting key pages on every deploy. Needs a Percy account (paid above small free tier).
+- [ ] **Lighthouse CI**: `@lhci/cli` with budget assertions (perf ≥ 95, a11y = 100, SEO = 100, best-practices ≥ 95). Adds ~2 min per page; needs Lighthouse CI server token.
+- [ ] **Audit-bot**: scheduled monthly GHA running the three audit agents (design / SEO / cross-linking) automatically and opening a GitHub issue with their punch lists. Defer until we know whether Tier 1 + 2 guards make this redundant.
+- [ ] **Accessibility test gate**: pa11y or axe-core inside `check:all`. Drop-in via `@axe-core/cli`; would catch the round-71 class of issue automatically. Adds ~30s; tunable.
+- [ ] **Memory file: Claude's "always do this when shipping" checklist**: post-deploy verification entry so the loop runs the same way across sessions.
 
 ## Open — content strategy / future
 

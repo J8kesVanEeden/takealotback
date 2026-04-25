@@ -50,18 +50,50 @@ cf. citations/policies/takealot-returns-2026-04-24.md (para "Credit vs refund")
 
 ## Quality gates before push
 
-Every content commit must pass:
+`npm run check:all` runs the full local guard suite (TypeScript, count drift, used_in resolver coverage, citation frontmatter, anchor refs, source-chip coverage, heading hierarchy, citation completeness, html-validate, internal links). It also runs automatically:
+
+- On every `git push` via `.husky/pre-push` — local fail = no push.
+- On every push to `main` and every PR via `.github/workflows/check.yml` — fail blocks merge.
 
 ```bash
-npm run check:all     # astro check + anchor check
-npx html-validate 'dist/**/*.html'
+npm run check:all
 ```
 
-Nice-to-haves on a major content pass:
+After deploy, smoke-test the live site:
 
-- Grep the built `dist/` for any removed terms or replaced case citations — confirms nothing survived from the old copy.
-- Spot-check JSON-LD: `grep -o '"@type":"[A-Z][a-zA-Z]*"' dist/index.html | sort | uniq -c` — types should match expectations.
-- Check the live site's security headers and sitemap `lastmod` after CF Pages redeploys.
+```bash
+npm run check:live    # hits 17 surfaces, asserts API counts match source, RSS ≥ 35 items, 301s on legacy URLs
+```
+
+Skip the live test only when you know no content / structure changed (e.g. comment-only commit).
+
+---
+
+## Content-update runbook — *when you change CLAUSES, TEMPLATES, ESCALATION, FAQ, or any data array in `src/data/content.ts`*
+
+These are the steps the test loop found get forgotten. The CI / pre-push guards catch most of them, but doing them in this order saves a fail-and-fix round-trip:
+
+1. **Edit `src/data/content.ts` only** — never duplicate the source-of-truth into a component.
+2. **Run `npm run check:counts`** — flags any literal "20 clauses", "16 templates" etc. that drifted from the constant. Fix by reading from `CLAUSES.length` etc.
+3. **Run `npm run check:used-in`** — every citation `used_in:` line must resolve. If you renamed a CLAUSES slug, the citation files referencing `CLAUSES[N] (old-slug)` need updating.
+4. **Run `npm run build:og`** — regenerates `public/og-image.png` so social-card preview reflects the new counts.
+5. **Bump `LAST_REVIEWED`** in `content.ts` if the change is substantive.
+6. **Run `npm run check:all`** — the full suite. This is what CI will run; pass locally first.
+7. **Commit + push.** Pre-push hook re-runs `check:all`.
+8. **After deploy lands**: purge the Cloudflare cache (Caching → Purge Everything), then run `npm run check:live` to confirm the edge serves the new build.
+
+If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/TriageModal.astro` and any anchored deep-link in `src/components/AboutSection.astro`. `check:anchors` catches broken `#clause-X` references.
+
+---
+
+## Content-update runbook — *when you add a citation*
+
+1. **Create the file** at `src/content/citations/<group>/<slug>.md` using the frontmatter shape in `citations/README.md`. Required: `title`, `retrieved` (YYYY-MM-DD), `used_in` array, plus at least one URL field for any post-1995 source. Pre-1995 cases (no online source) are URL-less by design.
+2. **If the source has an online URL**, archive it: `npm run archive -- <primary_url>`.
+3. **Wire `src/lib/citation-links.ts`** — add a regex to PATTERNS that matches the citation as it appears in clause `stat` strings or template bodies. Without this, the chip won't render.
+4. **Wire `src/lib/used-in-link.mjs`** — if your citation file references a target that doesn't fit existing patterns (CLAUSES[N], TEMPLATES, component names, deep-dive `.md`), add a regex.
+5. **Add the citation file path** to `scripts/check-citations.mjs` `CASE_NAME_TO_FILE` if it's a case (statutes already auto-detect).
+6. **Build + check + commit** following the standard runbook.
 
 ---
 
