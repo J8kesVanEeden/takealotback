@@ -37,8 +37,8 @@ Outstanding work, in priority order. Tick items as they land.
   - [x] `citations/cases/Vonk-Willow-Crest-ZANCT-63-2019.md` — facts + holding
   - [x] `citations/advisories/CGSO-Advisory-Note-01.md` — operative effect + onus position
   - [x] `citations/advisories/CGSO-Advisory-Note-11.md` — operative effect + voetstoots survival list
-  - [ ] `citations/policies/takealot-returns-2026-04-24.md` — full verbatim Returns Policy snapshot (still on the list)
-  - [ ] `citations/policies/takealot-tcs-2026-04-24.md` — full verbatim T&Cs snapshot
+  - [x] `citations/policies/takealot-returns-2026-04-24.md` — section-by-section live text with verbatim quotations
+  - [x] `citations/policies/takealot-tcs-2026-04-24.md` — verbatim for all 5 cited clauses (entity, unilateral-change, forum-selection, marketplace, resale)
 
 ## Open — medium priority
 
