@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
 import JsonLd from '../components/JsonLd.astro';
+import SourceChips from '../components/SourceChips.astro';
 import { GITHUB_REPO_URL, LAST_REVIEWED } from '../data/content';
 import { scanForCitations } from '../lib/citation-links';
 
@@ -48,8 +49,8 @@ const article = {
   license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
   // Use the site's published review date as a best-available dateModified.
   // LAST_REVIEWED is in "YYYY.MM.DD" form; convert to ISO date for schema.
-  dateModified: LAST_REVIEWED.replace(/\./g, '-'),
-  datePublished: '2026-04-23',
+  dateModified: page.data.dateModified ?? LAST_REVIEWED.replace(/\./g, '-'),
+  datePublished: page.data.datePublished ?? '2026-04-23',
   keywords: [
     'Consumer Protection Act',
     'CPA',
@@ -87,20 +88,12 @@ const breadcrumb = {
       <h1 class="display h2 tb-sub__title">{page.data.title}</h1>
       <p class="lede tb-sub__lede">{page.data.description}</p>
       <hr class="tb-sub__rule" />
-      <div class="prose tb-sub__prose">
-        <Content />
-      </div>
+      <div class="prose tb-sub__prose"><Content /></div>
 
-      {sources.length > 0 && (
-        <div class="tb-sub__sources">
-          <div class="mono slash-label tb-sub__sources-label">Sources cited on this page</div>
-          <ul class="tb-sub__sources-list" aria-label="Source citations">
-            {sources.map((s) => (
-              <li><a href={s.url} class="tb-sub__source-link">{s.label}</a></li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <SourceChips
+        label="Sources cited on this page"
+        sources={sources}
+      />
 
       <div class="tb-sub__foot">
         <a href="/" class="btn ghost">&larr; Back to the single page</a>
@@ -130,44 +123,6 @@ const breadcrumb = {
     gap: 10px;
   }
 
-  .tb-sub__sources {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px dashed var(--rule);
-  }
-  .tb-sub__sources-label {
-    color: var(--ink);
-    margin-bottom: 12px;
-  }
-  .tb-sub__sources-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .tb-sub__source-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 10px;
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    background: var(--paper-alt);
-    text-decoration: none;
-    transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
-  }
-  .tb-sub__source-link:hover,
-  .tb-sub__source-link:focus-visible {
-    border-color: var(--ink);
-    color: var(--ink);
-    background: var(--paper-tint);
-  }
   .tb-sub__crumbs { margin-bottom: 24px; }
   .tb-sub__crumblist {
     list-style: none;

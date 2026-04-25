@@ -1,6 +1,8 @@
 ---
 import Section from './Section.astro';
+import SourceChips from './SourceChips.astro';
 import { FAQ } from '../data/content';
+import { scanForCitations } from '../lib/citation-links';
 
 function pad(n: number) {
   return String(n).padStart(2, '0');
@@ -9,19 +11,23 @@ function pad(n: number) {
 <Section id="faq" label="FAQ">
   <h2 class="display h2 tb-faq__head">Frequently asked questions.</h2>
   <div class="tb-faq__list">
-    {FAQ.map((f, i) => (
-      <details class="tb-faq__item">
-        <summary class="tb-faq__summary">
-          <span class="mono tb-faq__n">{pad(i + 1)}</span>
-          <span class="tb-faq__q">{f.q}</span>
-          <span class="mono tb-faq__toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="tb-faq__a">
-          <div />
-          <p class="tb-faq__body">{f.a}</p>
-        </div>
-      </details>
-    ))}
+    {FAQ.map((f, i) => {
+      const sources = scanForCitations(`${f.q}\n${f.a}`);
+      return (
+        <details class="tb-faq__item">
+          <summary class="tb-faq__summary">
+            <span class="mono tb-faq__n">{pad(i + 1)}</span>
+            <span class="tb-faq__q">{f.q}</span>
+            <span class="mono tb-faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="tb-faq__a">
+            <div />
+            <p class="tb-faq__body">{f.a}</p>
+            <SourceChips label="Sources for this answer" sources={sources} />
+          </div>
+        </details>
+      );
+    })}
   </div>
 
   <p class="tb-faq__note">
@@ -41,13 +47,19 @@ function pad(n: number) {
     gap: 16px;
     width: 100%;
     text-align: left;
-    padding: 18px 0;
+    padding: 18px 8px;
     align-items: baseline;
     color: var(--ink);
     cursor: pointer;
     list-style: none;
   }
   .tb-faq__summary::-webkit-details-marker { display: none; }
+  .tb-faq__summary:focus { outline: 0; }
+  .tb-faq__summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+    border-radius: 2px;
+  }
   .tb-faq__n { color: var(--ink-faint); }
   .tb-faq__q {
     font-family: var(--font-display);
@@ -66,6 +78,7 @@ function pad(n: number) {
     gap: 16px;
     padding-bottom: 24px;
   }
+  .tb-faq__a > * { grid-column: 2; }
   .tb-faq__body {
     margin: 0;
     font-size: 15px;

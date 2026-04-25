@@ -1,0 +1,82 @@
+---
+// SourceChips — single source of truth for the "Sources for this {clause,
+// template, page, answer}" footer. Replaces three near-identical
+// implementations across DismantledSection / TemplatesSection /
+// [slug].astro / FAQSection that had drifted on padding, border, and
+// hover treatment.
+//
+// Pass an array of {url, label} pairs. Renders nothing when the array is
+// empty so consumers don't have to guard.
+
+interface Source {
+  url: string;
+  label: string;
+}
+
+interface Props {
+  /** Heading shown above the chip row. */
+  label?: string;
+  /** Sources to render. */
+  sources: Source[];
+  /** Visual variant. `boxed` (default) sits inside an enclosed card with
+   *  its own dashed border + padding; `inline` is a borderless variant
+   *  for citation-page contexts where the surrounding panel already has
+   *  a frame. */
+  variant?: 'boxed' | 'inline';
+}
+
+const { label = 'Sources', sources, variant = 'boxed' } = Astro.props;
+---
+{sources.length > 0 && (
+  <div class:list={['tb-srcchips', `tb-srcchips--${variant}`]}>
+    <div class="mono slash-label tb-srcchips__label">{label}</div>
+    <ul class="tb-srcchips__list">
+      {sources.map((s) => (
+        <li><a href={s.url} class="tb-srcchips__link">{s.label}</a></li>
+      ))}
+    </ul>
+  </div>
+)}
+
+<style>
+  .tb-srcchips {
+    margin-top: var(--space-5);
+  }
+  .tb-srcchips--boxed {
+    padding-top: var(--space-4);
+    border-top: 1px dashed var(--rule);
+  }
+  .tb-srcchips__label {
+    color: var(--ink);
+    margin-bottom: var(--space-2);
+  }
+  .tb-srcchips__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tb-srcchips__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--paper-alt);
+    text-decoration: none;
+    transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+  }
+  .tb-srcchips__link:hover,
+  .tb-srcchips__link:focus-visible {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: var(--paper-tint);
+  }
+</style>
