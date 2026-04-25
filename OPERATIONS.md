@@ -8,9 +8,9 @@ Day-to-day rules for keeping the site factually current and defensible. Short do
 
 **Before changing any factual claim** in `src/data/content.ts`, `src/content/pages/*.md`, or any component with a citation:
 
-1. **Open [`citations/INDEX.md`](./citations/INDEX.md)** and locate the source that supports the claim you're changing.
+1. **Open the live citations index at https://takealotback.com/citations** (or the in-repo file at `src/content/citations/<subfolder>/<file>.md`) and locate the source that supports the claim you're changing.
 2. **Check the `retrieved:` date in the file's frontmatter.** If older than 6 months, refresh the snapshot from the original URL before relying on it.
-3. **If no snapshot exists** for a source you want to cite, create one in the appropriate [`citations/`](./citations/) subfolder *before* you ship the content change. Use the frontmatter template in [`citations/README.md`](./citations/README.md).
+3. **If no snapshot exists** for a source you want to cite, create one in `src/content/citations/<subfolder>/` *before* you ship the content change. Use the frontmatter template in `citations/README.md`. The new citation will auto-publish to `/citations/<subfolder>/<slug>` on the next deploy — content collection rebuilds the index page on every build.
 4. **Trigger a Wayback Machine snapshot** of the source URL when adding or refreshing a citation:
    ```bash
    curl -L "https://web.archive.org/save/<primary_url>"

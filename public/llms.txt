@@ -33,6 +33,7 @@ Content was verified against published South African statutes, regulations, and 
 - [Code licence (MIT)](https://github.com/J8kesVanEeden/takealotback/blob/main/LICENSE)
 - [Full content as plain markdown](https://takealotback.com/llms-full.txt)
 - [RSS feed (deep-dive pages)](https://takealotback.com/rss.xml)
+- [Citations & sources index](https://takealotback.com/citations): every primary source the site relies on — statutes, case law, CGSO advisory notes, Takealot policy snapshots, regulator details, third-party commentary — dated, attributed, with primary URLs and Wayback Machine archival links.
 
 ## What the site is NOT
 

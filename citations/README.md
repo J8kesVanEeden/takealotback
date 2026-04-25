@@ -1,6 +1,8 @@
 # TakealotBack — Citations archive
 
-This folder is the evidence vault for TakealotBack.com. Every factual, legal, or policy claim on the live site traces to a source; this is where those sources live as of the date we relied on them.
+This folder explains the evidence vault for TakealotBack.com. The actual citation files live in [`src/content/citations/`](../src/content/citations/) so they can be served as live, crawlable pages at https://takealotback.com/citations. This README and the [INDEX.md](./INDEX.md) sit at repo root as the GitHub-side meta-docs; the source markdown is in `src/content/citations/`.
+
+Every factual, legal, or policy claim on the live site traces to a source; the matching markdown file in `src/content/citations/` is what we relied on as of the date we relied on it.
 
 **Why it exists:**
 
@@ -9,22 +11,28 @@ This folder is the evidence vault for TakealotBack.com. Every factual, legal, or
 - **Change detection** — diffing our snapshot against a fresh fetch is the fastest way to notice a Takealot policy edit.
 - **Audit speed** — the next content review starts from "what's changed since this snapshot?" instead of "what does every source say today?"
 
-**Not on the live site.** `/citations/` lives in the GitHub repo, not under any URL on `takealotback.com`. It's a research archive for maintainers — not part of the public reference product. It is, however, public on GitHub so anyone auditing us can see our working.
+**Live on the site.** As of 2026-04-25, every citation is also published at `https://takealotback.com/citations/<subfolder>/<slug>` so it's crawlable, indexable, and linkable from anywhere — clauses, deep-dives, search engines, LLM crawlers. The Astro content collection at `src/content/citations/` is the single source of truth; GitHub renders the same markdown files for source-of-truth audits, and `https://takealotback.com/citations` auto-generates the index from the same files at build time.
 
 ---
 
 ## Folder layout
 
 ```
-citations/
-├── README.md                 (this file — purpose, copyright policy, SOP)
-├── INDEX.md                  (mini-sitemap: every source grouped by type, with retrieved dates)
-├── statutes/                 (Acts, regulations, Constitution)
-├── cases/                    (judgments from SCA, High Court, NCT, CAC, ZACC)
-├── advisories/               (CGSO Advisory Notes)
-├── policies/                 (Takealot's own published policies — snapshots)
-├── regulators/               (CGSO / NCC / IR / ARB / SCC contact + threshold snapshots)
-└── commentary/               (third-party legal commentary — metadata + short excerpt only)
+citations/                                (this folder — meta-docs only)
+├── README.md                             (this file — purpose, copyright policy, SOP)
+└── INDEX.md                              (mini-sitemap pointing to live URLs)
+
+src/content/citations/                    (single source of truth — Astro content collection)
+├── statutes/                             (Acts, regulations, Constitution)
+├── cases/                                (judgments from SCA, High Court, NCT, CAC, ZACC)
+├── advisories/                           (CGSO Advisory Notes)
+├── policies/                             (Takealot's own published policies — snapshots)
+├── regulators/                           (CGSO / NCC / IR / ARB / SCC contact + threshold snapshots)
+└── commentary/                           (third-party legal commentary — metadata + short excerpt only)
+
+src/pages/citations/                      (Astro pages that render the collection)
+├── index.astro                           (auto-generated index — visit /citations)
+└── [...slug].astro                       (renders any citation at /citations/<subfolder>/<slug>)
 ```
 
 ---
