@@ -37,7 +37,7 @@ import { scanForCitations } from '../lib/citation-links';
               <div class="mono tb-tpl__sublabel">/ Subject</div>
               <div class="tb-tpl__subject" data-subject>{t.subject}</div>
             </div>
-            <button type="button" class="btn tb-tpl__copy" data-copy data-subject-text={t.subject}>
+            <button type="button" class="btn primary tb-tpl__copy" data-copy data-subject-text={t.subject}>
               Copy email
             </button>
           </div>
@@ -64,11 +64,11 @@ import { scanForCitations } from '../lib/citation-links';
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    gap: 24px;
-    margin-bottom: 32px;
+    gap: var(--space-5);
+    margin-bottom: var(--space-7);
   }
   .tb-tpl__head { max-width: 18ch; margin: 0; }
-  .tb-tpl__italic { font-weight: 400; font-style: italic; }
+  /* italic emphasis: see global `.display em` rule in base.css */
   .tb-tpl__lede {
     max-width: 44ch;
     margin: 0;
@@ -142,13 +142,9 @@ import { scanForCitations } from '../lib/citation-links';
     color: var(--ink);
     line-height: 1.5;
   }
-  .tb-tpl__copy {
-    background: var(--ink);
-    color: var(--paper);
-    border-color: var(--ink);
-    cursor: pointer;
-    flex: 0 0 auto;
-  }
+  /* Inherits .btn.primary; only the layout flex + the copied-state
+   * accent flash are local. */
+  .tb-tpl__copy { flex: 0 0 auto; }
   .tb-tpl__copy[data-copied='true'] {
     background: var(--accent);
     border-color: var(--accent);

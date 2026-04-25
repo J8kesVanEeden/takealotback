@@ -163,10 +163,11 @@ const breadcrumb = {
     align-items: baseline;
     transition: background 120ms ease;
   }
-  .tb-cite-idx__link:hover {
-    background: var(--paper-alt);
-    color: var(--accent);
-  }
+  /* Hover changes the title color only — the citation and retrieved
+   * stamps stay muted so the row doesn't read "all orange". The
+   * background tint signals the row's whole hover region. */
+  .tb-cite-idx__link:hover { background: var(--paper-alt); }
+  .tb-cite-idx__link:hover .tb-cite-idx__entry-title { color: var(--accent); }
   .tb-cite-idx__entry-title {
     font-family: var(--font-display);
     font-size: 16px;
