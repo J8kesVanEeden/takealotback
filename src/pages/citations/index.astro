@@ -1,0 +1,167 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/Section.astro';
+import { GITHUB_REPO_URL, LAST_REVIEWED } from '../../data/content';
+
+const all = await getCollection('citations');
+
+// Group by top-level subfolder (statutes / cases / advisories / policies / regulators / commentary)
+type Group = { name: string; label: string; entries: CollectionEntry<'citations'>[] };
+const groups: Group[] = [
+  { name: 'statutes', label: 'Statutes & regulations', entries: [] },
+  { name: 'cases', label: 'Case law', entries: [] },
+  { name: 'advisories', label: 'CGSO advisory notes', entries: [] },
+  { name: 'policies', label: 'Takealot policy snapshots', entries: [] },
+  { name: 'regulators', label: 'Regulators & courts', entries: [] },
+  { name: 'commentary', label: 'Commentary (link + short excerpt)', entries: [] },
+];
+
+for (const entry of all) {
+  const top = entry.slug.split('/')[0];
+  const group = groups.find((g) => g.name === top);
+  if (group) group.entries.push(entry);
+}
+
+// Sort each group by title
+for (const g of groups) {
+  g.entries.sort((a, b) => (a.data.title || '').localeCompare(b.data.title || ''));
+}
+
+const total = all.length;
+const title = `Citations & sources · TakealotBack.com`;
+const description = `Every statute, judgment, regulator detail, advisory note, Takealot policy clause, and third-party commentary the site relies on — dated, attributed, and indexed. ${total} sources, last refresh ${LAST_REVIEWED}.`;
+---
+<Layout title={title} description={description} canonicalPath="/citations">
+  <Section id="citations-index" label="Citations · evidence vault" tag="article">
+    <div class="tb-cite-idx">
+      <h1 class="display h2 tb-cite-idx__title">
+        Citations &amp; sources
+      </h1>
+      <p class="lede tb-cite-idx__lede">
+        Every claim on this site traces to a source. {total} sources mirrored here, dated and attributed, so you can verify everything. Last refresh: <strong>{LAST_REVIEWED}</strong>.
+      </p>
+      <p class="tb-cite-idx__meta mono">
+        / Live mirror of the citations folder on <a href={`${GITHUB_REPO_URL}/tree/main/src/content/citations`} class="link-u" target="_blank" rel="noopener noreferrer">GitHub</a> · CC BY 4.0 for our compilation · Underlying material under its own copyright (see notes per file)
+      </p>
+
+      {groups.map((g) => g.entries.length > 0 && (
+        <div class="tb-cite-idx__group">
+          <div class="tb-cite-idx__grouphead">
+            <span class="display tb-cite-idx__groupname">{g.label}</span>
+            <span class="mono tb-cite-idx__groupcount">{g.entries.length} {g.entries.length === 1 ? 'source' : 'sources'}</span>
+            <div class="tb-cite-idx__ruleline" />
+          </div>
+          <ul class="tb-cite-idx__list">
+            {g.entries.map((e) => (
+              <li class="tb-cite-idx__item">
+                <a href={`/citations/${e.slug}`} class="tb-cite-idx__link">
+                  <span class="tb-cite-idx__entry-title">{e.data.title}</span>
+                  {e.data.citation && (
+                    <span class="mono tb-cite-idx__entry-cite">{e.data.citation}</span>
+                  )}
+                  {e.data.retrieved && (
+                    <span class="mono tb-cite-idx__entry-retr">Retrieved {e.data.retrieved}</span>
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+
+      <div class="tb-cite-idx__foot">
+        <p class="tb-cite-idx__footnote">
+          Source-of-truth flow: every factual or legal claim on the site links to a citation file here, which links to a primary URL and (where saved) a Wayback Machine snapshot. The maintenance protocol is in <a href={`${GITHUB_REPO_URL}/blob/main/OPERATIONS.md`} class="link-u" target="_blank" rel="noopener noreferrer">OPERATIONS.md</a>.
+        </p>
+      </div>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .tb-cite-idx { max-width: 80ch; }
+  .tb-cite-idx__title { margin: 0 0 20px; max-width: 24ch; }
+  .tb-cite-idx__lede { margin: 0 0 16px; }
+  .tb-cite-idx__meta { color: var(--ink-muted); margin: 0 0 48px; line-height: 1.6; }
+
+  .tb-cite-idx__group { margin-bottom: 48px; }
+  .tb-cite-idx__grouphead {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .tb-cite-idx__groupname {
+    font-size: clamp(20px, 2vw, 26px);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .tb-cite-idx__groupcount {
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+  .tb-cite-idx__ruleline {
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .tb-cite-idx__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--rule-soft);
+  }
+  .tb-cite-idx__item {
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .tb-cite-idx__link {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr) auto;
+    gap: 16px;
+    padding: 14px 4px;
+    text-decoration: none;
+    color: var(--ink);
+    align-items: baseline;
+    transition: background 120ms ease;
+  }
+  .tb-cite-idx__link:hover {
+    background: var(--paper-alt);
+    color: var(--accent);
+  }
+  .tb-cite-idx__entry-title {
+    font-family: var(--font-display);
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+  }
+  .tb-cite-idx__entry-cite {
+    color: var(--ink-soft);
+    font-size: 11px;
+  }
+  .tb-cite-idx__entry-retr {
+    color: var(--ink-muted);
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .tb-cite-idx__foot {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  .tb-cite-idx__footnote {
+    color: var(--ink-muted);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 64ch;
+  }
+
+  @media (max-width: 720px) {
+    .tb-cite-idx__link {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+</style>

@@ -1,0 +1,249 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/Section.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import { GITHUB_REPO_URL, LAST_REVIEWED } from '../../data/content';
+
+export async function getStaticPaths() {
+  const all = await getCollection('citations');
+  return all.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'citations'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const data: Record<string, unknown> = entry.data as Record<string, unknown>;
+const top = entry.slug.split('/')[0];
+const groupLabel: Record<string, string> = {
+  statutes: 'Statute / regulation',
+  cases: 'Case law',
+  advisories: 'CGSO advisory note',
+  policies: 'Takealot policy snapshot',
+  regulators: 'Regulator / court',
+  commentary: 'Commentary',
+};
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
+const canonicalPath = `/citations/${entry.slug}`;
+const canonical = `${siteUrl}${canonicalPath}`;
+
+const title = `${data.title} · TakealotBack citations`;
+const description =
+  (data.citation ? `${data.citation}. ` : '') +
+  `${groupLabel[top] ?? 'Source'} mirrored from primary source on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`;
+
+// JSON-LD: Article + (where applicable) Legislation / LegalCaseDocument hint
+const article = {
+  '@context': 'https://schema.org',
+  '@type': top === 'cases' ? 'Article' : 'Article',
+  '@id': `${canonical}#article`,
+  headline: data.title,
+  description: description.slice(0, 280),
+  url: canonical,
+  mainEntityOfPage: canonical,
+  inLanguage: 'en-ZA',
+  isAccessibleForFree: true,
+  isPartOf: { '@id': `${siteUrl}/#website` },
+  publisher: { '@id': 'https://www.milkmoonstudio.com/#organization' },
+  author: { '@id': 'https://www.milkmoonstudio.com/#organization' },
+  dateModified: (data.retrieved as string)?.replace(/\./g, '-') ?? LAST_REVIEWED.replace(/\./g, '-'),
+  datePublished: (data.date as string)?.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '2026-04-25',
+  about: data.citation ?? data.title,
+};
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: 'Citations', item: `${siteUrl}/citations` },
+    { '@type': 'ListItem', position: 3, name: data.title, item: canonical },
+  ],
+};
+
+// Quick helper to display arbitrary frontmatter URL fields
+const urlFields = ['primary_url', 'wayback_url', 'wayback_url_dated', 'saflii_url', 'lawlibrary_url', 'wipo_lex', 'cgso_pdf', 'nct_pdf', 'pdf_url', 'alternate_url', 'commentary_url', 'collections_concourt'];
+const urls = urlFields
+  .map((k) => ({ k, v: data[k] }))
+  .filter((x): x is { k: string; v: string } => typeof x.v === 'string' && x.v.length > 0);
+
+const usedIn = (data.used_in as string[] | undefined) ?? [];
+---
+<Layout title={title} description={description} canonicalPath={canonicalPath}>
+  <Fragment slot="head">
+    <JsonLd data={article} />
+    <JsonLd data={breadcrumb} />
+  </Fragment>
+
+  <Section id="citation" label={groupLabel[top] ?? 'Source'} tag="article">
+    <nav class="tb-cite__crumbs" aria-label="Breadcrumb">
+      <ol class="tb-cite__crumblist">
+        <li><a href="/" class="mono tb-cite__crumb">Home</a></li>
+        <li><a href="/citations" class="mono tb-cite__crumb">Citations</a></li>
+        <li aria-current="page"><span class="mono tb-cite__crumb tb-cite__crumb--current">{data.title}</span></li>
+      </ol>
+    </nav>
+
+    <div class="tb-cite">
+      <h1 class="display h2 tb-cite__title">{data.title}</h1>
+      {data.citation && (
+        <p class="mono tb-cite__citation">{data.citation}</p>
+      )}
+
+      <dl class="tb-cite__meta">
+        {data.court_or_publisher && (<><dt>Body</dt><dd>{data.court_or_publisher}</dd></>)}
+        {data.date && (<><dt>Date</dt><dd>{data.date}</dd></>)}
+        {(data as any).judge && (<><dt>Judge</dt><dd>{(data as any).judge}</dd></>)}
+        {(data as any).case_number && (<><dt>Case no.</dt><dd>{(data as any).case_number}</dd></>)}
+        {data.retrieved && (<><dt>Retrieved</dt><dd>{data.retrieved}</dd></>)}
+      </dl>
+
+      {urls.length > 0 && (
+        <div class="tb-cite__urls">
+          <div class="mono slash-label tb-cite__urls-label">Sources</div>
+          <ul class="tb-cite__urls-list">
+            {urls.map((u) => (
+              <li>
+                <span class="mono tb-cite__urls-key">{u.k.replace(/_/g, ' ')}</span>
+                <a href={u.v} class="link-u" target="_blank" rel="noopener noreferrer">{u.v}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {usedIn.length > 0 && (
+        <div class="tb-cite__usedin">
+          <div class="mono slash-label tb-cite__usedin-label">Used on the site</div>
+          <ul class="tb-cite__usedin-list">
+            {usedIn.map((u) => <li class="mono">{u}</li>)}
+          </ul>
+        </div>
+      )}
+
+      <hr class="tb-cite__rule" />
+
+      <div class="prose tb-cite__prose">
+        <Content />
+      </div>
+
+      <div class="tb-cite__foot">
+        <a href="/citations" class="btn ghost">&larr; All citations</a>
+        <a href="/" class="btn ghost">Back to the homepage</a>
+      </div>
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .tb-cite { max-width: 80ch; }
+  .tb-cite__crumbs { margin-bottom: 24px; }
+  .tb-cite__crumblist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .tb-cite__crumblist li { display: inline-flex; align-items: center; }
+  .tb-cite__crumblist li + li::before {
+    content: '/';
+    color: var(--ink-faint);
+    margin-right: 12px;
+  }
+  .tb-cite__crumb {
+    color: var(--ink-muted);
+    text-decoration: none;
+  }
+  .tb-cite__crumb--current { color: var(--ink); }
+  a.tb-cite__crumb:hover { color: var(--accent); }
+
+  .tb-cite__title { margin: 0 0 12px; max-width: 36ch; }
+  .tb-cite__citation { color: var(--ink-soft); margin: 0 0 24px; }
+
+  .tb-cite__meta {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 6px 16px;
+    margin: 0 0 24px;
+  }
+  .tb-cite__meta dt {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    padding-top: 2px;
+  }
+  .tb-cite__meta dd {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink);
+  }
+
+  .tb-cite__urls,
+  .tb-cite__usedin {
+    margin: 24px 0;
+    padding: 14px 16px;
+    border: 1px dashed var(--rule);
+    border-radius: 2px;
+  }
+  .tb-cite__urls-label,
+  .tb-cite__usedin-label {
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .tb-cite__urls-list,
+  .tb-cite__usedin-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .tb-cite__urls-list li,
+  .tb-cite__usedin-list li {
+    margin: 4px 0;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 12px;
+    align-items: baseline;
+  }
+  .tb-cite__urls-key {
+    color: var(--ink-muted);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+  }
+  .tb-cite__urls-list a {
+    word-break: break-all;
+    font-size: 13px;
+  }
+
+  .tb-cite__rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: 32px 0;
+  }
+  .tb-cite__prose { max-width: none; }
+  .tb-cite__foot {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media (max-width: 720px) {
+    .tb-cite__meta { grid-template-columns: 1fr; }
+    .tb-cite__urls-list li,
+    .tb-cite__usedin-list li { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>

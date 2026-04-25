@@ -67,7 +67,7 @@ async function main() {
     ),
   );
 
-  const citationsDir = path.join(root, 'citations', 'cases');
+  const citationsDir = path.join(root, 'src', 'content', 'citations', 'cases');
   const citationFiles = new Set(await readdir(citationsDir));
 
   const problems = [];
@@ -89,7 +89,7 @@ async function main() {
 
       if (!citationFiles.has(expectedFile)) {
         problems.push(
-          `[${path.relative(root, f.path)}] references "${needle}" but citations/cases/${expectedFile} is missing.`,
+          `[${path.relative(root, f.path)}] references "${needle}" but src/content/citations/cases/${expectedFile} is missing.`,
         );
       }
     }

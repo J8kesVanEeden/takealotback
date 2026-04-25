@@ -13,4 +13,26 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { pages };
+// Citations collection — every source the site relies on, mirrored to
+// /citations/<subfolder>/<slug> on the live site so it's crawlable and
+// indexable. Source of truth is src/content/citations/; the same files are
+// the GitHub-browsable evidence vault.
+const citations = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    citation: z.string().optional(),
+    court_or_publisher: z.string().optional(),
+    date: z.string().optional(),
+    primary_url: z.string().url().optional(),
+    wayback_url: z.string().url().optional(),
+    wayback_url_dated: z.string().url().optional(),
+    retrieved: z.string().optional(),
+    used_in: z.array(z.string()).optional(),
+    copyright: z.string().optional(),
+    // Allow other fields without breaking — every citation has slightly
+    // different metadata (case_number, judge, alternate citations, etc.)
+  }).passthrough(),
+});
+
+export const collections = { pages, citations };
