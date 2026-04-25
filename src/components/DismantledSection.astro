@@ -1,6 +1,7 @@
 ---
 import Section from './Section.astro';
 import Stat from './Stat.astro';
+import SourceChips from './SourceChips.astro';
 import { CLAUSES, LAST_REVIEWED, TAKEALOT_POLICY_REVIEWED_AGAINST } from '../data/content';
 import { resolveUniqueCitations } from '../lib/citation-links';
 
@@ -17,10 +18,10 @@ function hay(c: typeof CLAUSES[number]) {
   return (c.angles.map((a) => a.stat).join(' ') + ' ' + c.title + ' ' + c.why).toLowerCase();
 }
 ---
-<Section id="dismantled" label="Dismantled · 18 clauses">
+<Section id="dismantled" label={`Dismantled · ${CLAUSES.length} clauses`}>
   <div class="tb-dm__intro">
     <h2 class="display h2 tb-dm__head">
-      All 18 clauses, <em class="tb-dm__italic">dismantled.</em>
+      All {CLAUSES.length} clauses, <em class="tb-dm__italic">dismantled.</em>
     </h2>
     <p class="tb-dm__lede">
       Each clause pairs what Takealot's policy says with the statute, case law, or common-law principle that limits or overrides it. Click any row to expand.
@@ -80,6 +81,9 @@ function hay(c: typeof CLAUSES[number]) {
             {(c.slug === 'damage-exclusions' || c.slug === 'defective-exclusions') && (
               <a href="/onus-of-proof" class="btn ghost">Who proves what &rarr;</a>
             )}
+            <button type="button" class="btn ghost" data-share-clause={`clause-${c.slug}`} aria-label={`Copy a shareable link to clause ${c.n}`}>
+              Share &rarr;
+            </button>
           </div>
           <div class="mono tb-dm__escalate">
             <span class="tb-dm__escalate-label">/ Escalate </span>
@@ -99,21 +103,10 @@ function hay(c: typeof CLAUSES[number]) {
             ))}
           </ol>
 
-          {(() => {
-            const sources = resolveUniqueCitations(c.angles.map((a) => a.stat));
-            return sources.length > 0 ? (
-              <div class="tb-dm__sources">
-                <div class="mono slash-label tb-dm__sources-label">Sources for this clause</div>
-                <ul class="tb-dm__sources-list" aria-label={`Source citations for clause ${c.n}`}>
-                  {sources.map((s) => (
-                    <li>
-                      <a href={s.url} class="tb-dm__source-link">{s.label}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null;
-          })()}
+          <SourceChips
+            label="Sources for this clause"
+            sources={resolveUniqueCitations(c.angles.map((a) => a.stat))}
+          />
         </div>
       </div>
     </div>
@@ -154,8 +147,8 @@ function hay(c: typeof CLAUSES[number]) {
   .tb-dm__filter { cursor: pointer; }
   .tb-dm__filter[aria-pressed='true'] {
     border-color: var(--ink);
-    color: var(--ink);
-    background: var(--paper-tint);
+    color: var(--paper);
+    background: var(--ink);
   }
 
   .tb-dm__theader {
@@ -272,45 +265,6 @@ function hay(c: typeof CLAUSES[number]) {
   }
   .tb-dm__foot { padding-top: 20px; }
   .tb-dm__foot-text { color: var(--ink-muted); }
-
-  .tb-dm__sources {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px dashed var(--rule);
-  }
-  .tb-dm__sources-label {
-    color: var(--ink);
-    margin-bottom: 10px;
-  }
-  .tb-dm__sources-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .tb-dm__source-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 10px;
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    background: var(--paper-alt);
-    text-decoration: none;
-    transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
-  }
-  .tb-dm__source-link:hover,
-  .tb-dm__source-link:focus-visible {
-    border-color: var(--ink);
-    color: var(--ink);
-    background: var(--paper-tint);
-  }
 </style>
 
 <script is:inline>
@@ -383,6 +337,52 @@ function hay(c: typeof CLAUSES[number]) {
         var tbtn = target.querySelector('[data-tpl-toggle]');
         if (tbtn && tbtn.getAttribute('aria-expanded') !== 'true') tbtn.click();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    // "Share" button per clause — copy the canonical clause URL to clipboard
+    // so a reader can send a colleague a direct link to the specific clause.
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!(t instanceof Element)) return;
+      var sb = t.closest('[data-share-clause]');
+      if (!sb) return;
+      e.preventDefault();
+      var slug = sb.getAttribute('data-share-clause');
+      if (!slug) return;
+      var url = location.origin + '/#' + slug;
+
+      function done() {
+        var prev = sb.textContent;
+        sb.setAttribute('data-shared', 'true');
+        sb.textContent = 'Copied ✓';
+        setTimeout(function () {
+          sb.removeAttribute('data-shared');
+          sb.textContent = prev || 'Share →';
+        }, 1800);
+      }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.top = '-1000px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) { /* ignore */ }
+        document.body.removeChild(ta);
+      }
+      // Prefer the Web Share API on mobile if available — natural UX
+      if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
+        navigator.share({ url: url, title: 'TakealotBack — clause' }).then(done).catch(function () {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(done).catch(function () { fallback(); done(); });
+          } else { fallback(); done(); }
+        });
+      } else if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(function () { fallback(); done(); });
+      } else {
+        fallback(); done();
       }
     });
 
