@@ -2,10 +2,24 @@
 # Docs: https://developers.cloudflare.com/pages/configuration/redirects/
 
 # Canonicalise trailing slashes to no-trailing-slash (matches
-# astro.config.mjs `trailingSlash: 'never'`).
+# astro.config.mjs `trailingSlash: 'never'`). Cloudflare Pages does NOT
+# strip trailing slashes by default, so without these every URL with a
+# trailing slash returns 404.
 /onus-of-proof/          /onus-of-proof          301
 /aedilitian-remedies/    /aedilitian-remedies    301
 /limits/                 /limits                 301
+/citations/              /citations              301
+/citations/*/            /citations/:splat       301
+
+# Strip the .html suffix Astro emits with `build.format: 'file'`. The
+# canonical URL on every page is bare; rewriting the .html variant
+# guarantees we never serve duplicate content.
+/onus-of-proof.html      /onus-of-proof          301
+/aedilitian-remedies.html /aedilitian-remedies   301
+/limits.html             /limits                 301
+/citations.html          /citations              301
+/404.html                /404                    301
+/citations/*.html        /citations/:splat       301
 
 # SEO/tooling convenience: the de-facto convention is /sitemap.xml at the
 # root, even though the sitemap protocol allows any filename. robots.txt

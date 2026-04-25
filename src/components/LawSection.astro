@@ -22,7 +22,7 @@ function pad(n: number) {
       South African consumer protection law — <em class="tb-law__italic">the full map.</em>
     </h2>
     <p class="tb-law__lede">
-      Everything that protects you, in one place. Each section links back to the clauses and templates where it's used.
+      Everything that protects you, in one place — the statutes, regulations, common-law actions, and chargeback rules a Takealot dispute can lean on.
     </p>
   </div>
 
@@ -99,12 +99,15 @@ function pad(n: number) {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 0;
     border-top: 1px solid var(--rule-soft);
+    border-left: 1px solid var(--rule-soft);
   }
+  /* Each cell draws its own bottom + right border. The wrapper supplies
+   * the top + left borders. This avoids the doubled-up 2px vertical that
+   * a per-cell `border-left + border-right` produces between neighbours. */
   .tb-law__cell {
     padding: 18px 20px 20px;
     border-bottom: 1px solid var(--rule-soft);
     border-right: 1px solid var(--rule-soft);
-    border-left: 1px solid var(--rule-soft);
     min-height: 110px;
   }
   .tb-law__cellhead {
@@ -123,7 +126,7 @@ function pad(n: number) {
   }
   .tb-law__cellblurb {
     color: var(--ink-soft);
-    font-size: 13.5px;
+    font-size: var(--text-sm);
     line-height: 1.55;
   }
 

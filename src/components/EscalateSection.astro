@@ -6,6 +6,29 @@ import { ESCALATION } from '../data/content';
 function pad(n: number) {
   return String(n).padStart(2, '0');
 }
+
+// Turn the free-form `contact` string in content.ts into clickable
+// chunks: emails become mailto:, phone numbers become tel:, bare hosts
+// become https:. Anything else stays as plain text. Splitting on the
+// project's "·" separator preserves the intentional layout.
+function linkifyContact(contact: string) {
+  const parts = contact.split('·').map((p) => p.trim()).filter(Boolean);
+  return parts.map((p) => {
+    const emailMatch = p.match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i);
+    if (emailMatch) {
+      return { kind: 'email' as const, raw: p, email: emailMatch[0] };
+    }
+    const phoneMatch = p.match(/(?:\+?\d[\d\s()-]{6,}\d)/);
+    if (phoneMatch) {
+      return { kind: 'phone' as const, raw: p, phone: phoneMatch[0].replace(/[\s()-]/g, '') };
+    }
+    const urlMatch = p.match(/^([a-z0-9-]+\.)+[a-z]{2,}(\/[^\s]*)?$/i);
+    if (urlMatch) {
+      return { kind: 'url' as const, raw: p, url: 'https://' + p };
+    }
+    return { kind: 'text' as const, raw: p };
+  });
+}
 ---
 <Section id="escalate" label="Escalate · 10-tier ladder">
   <div class="tb-esc__intro two-col">
@@ -23,7 +46,17 @@ function pad(n: number) {
         <div class="display tb-esc__tierno">T{pad(t.tier)}</div>
         <div class="tb-esc__tiertitle">{t.title}</div>
         <div class="tb-esc__tierbody">{t.body}</div>
-        <div class="mono tb-esc__tiercontact">{t.contact}</div>
+        <div class="mono tb-esc__tiercontact">
+          {linkifyContact(t.contact).map((part, i, arr) => (
+            <>
+              {part.kind === 'email' && <a href={`mailto:${part.email}`} class="tb-esc__contact-link">{part.raw}</a>}
+              {part.kind === 'phone' && <a href={`tel:${part.phone}`} class="tb-esc__contact-link" set:html={part.raw.replace(/ /g, '&nbsp;')} />}
+              {part.kind === 'url' && <a href={part.url} class="tb-esc__contact-link" target="_blank" rel="noopener noreferrer">{part.raw}</a>}
+              {part.kind === 'text' && <span>{part.raw}</span>}
+              {i < arr.length - 1 && <span class="tb-esc__contact-sep"> · </span>}
+            </>
+          ))}
+        </div>
         <div class="tb-esc__tierwindow"><Stat>{t.window}</Stat></div>
       </div>
     ))}
@@ -75,5 +108,16 @@ function pad(n: number) {
     color: var(--ink-soft);
   }
   .tb-esc__tiercontact { color: var(--ink-muted); }
+  .tb-esc__tiercontact .tb-esc__contact-link {
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 2px;
+  }
+  .tb-esc__tiercontact .tb-esc__contact-link:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+  .tb-esc__contact-sep { color: var(--ink-faint); }
   .tb-esc__tierwindow { text-align: right; }
 </style>

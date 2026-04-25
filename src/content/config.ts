@@ -10,6 +10,11 @@ const pages = defineCollection({
     title: z.string(),
     description: z.string(),
     metaTitle: z.string().optional(),
+    /** ISO-8601 publication date (YYYY-MM-DD). Falls through to JSON-LD
+     *  `datePublished`. */
+    datePublished: z.string().optional(),
+    /** Optional last-modified ISO-8601 date. Used for `dateModified`. */
+    dateModified: z.string().optional(),
   }),
 });
 

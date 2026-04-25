@@ -22,7 +22,7 @@ interface CitationLink {
 const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   // Cases (specific names — match before statute prefixes to avoid collision)
   { test: /Motus|Wentzel/i, link: { url: '/citations/cases/motus-wentzel-zasca-40-2021', label: 'Motus v Wentzel' } },
-  { test: /Voltex|CGSO NPC/i, link: { url: '/citations/cases/cgso-voltex-zagpphc-309-2021', label: 'CGSO v Voltex' } },
+  { test: /Voltex|CGSO NPC|CGSO\s*\(compulsory/i, link: { url: '/citations/cases/cgso-voltex-zagpphc-309-2021', label: 'CGSO v Voltex' } },
   { test: /Vonk|Willow Crest/i, link: { url: '/citations/cases/vonk-willow-crest-zanct-63-2019', label: 'Vonk v Willow Crest Motors' } },
   { test: /Fourie|Agenbag/i, link: { url: '/citations/cases/fourie-agenbag-zaconaf-3-2018', label: 'Fourie v Agenbag Motor Group' } },
   { test: /Laugh It Off/i, link: { url: '/citations/cases/laugh-it-off-zacc-7-2005', label: 'Laugh It Off v SAB' } },

@@ -3,6 +3,7 @@ title: "Your claim doesn't die at 6 months"
 slug: aedilitian-remedies
 description: "Your rights don't end at the 6-month CPA window. South African common law gives you actio redhibitoria and actio quanti minoris for latent defects, with a 3-year prescription period."
 metaTitle: "When the CPA runs out: common-law aedilitian remedies"
+datePublished: "2026-04-23"
 ---
 
 # Your claim doesn't die at 6 months

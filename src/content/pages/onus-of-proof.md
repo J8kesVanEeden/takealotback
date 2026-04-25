@@ -3,6 +3,7 @@ title: "Who has to prove what"
 slug: onus-of-proof
 description: "Within the first 6 months of a CPA s56 claim the burden sits with the supplier, not the consumer. This is the single most useful fact in a Takealot dispute."
 metaTitle: "Who has to prove what — the CPA onus explained"
+datePublished: "2026-04-23"
 ---
 
 # Who has to prove what

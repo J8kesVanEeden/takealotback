@@ -11,9 +11,10 @@ import EscalateSection from '../components/EscalateSection.astro';
 import PoliciesSection from '../components/PoliciesSection.astro';
 import AboutSection from '../components/AboutSection.astro';
 import FAQSection from '../components/FAQSection.astro';
+import { CLAUSES, TEMPLATES, ESCALATION } from '../data/content';
 
 const title = "TakealotBack — SA consumer rights, dismantled";
-const description = "A non-commercial reference for SA consumers when Takealot's returns policy oversteps the CPA, ECT Act, or POPIA. 20 clauses dismantled, 16 email templates, a 10-tier escalation ladder.";
+const description = `A non-commercial reference for SA consumers when Takealot's returns policy oversteps the CPA, ECT Act, or POPIA. ${CLAUSES.length} clauses dismantled, ${TEMPLATES.length} email templates, a ${ESCALATION.length}-tier escalation ladder.`;
 ---
 <Layout title={title} description={description} canonicalPath="/" faqSchema collectionSchema>
   <Hero />
