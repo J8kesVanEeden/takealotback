@@ -73,10 +73,11 @@ if (faqSchema) {
 }
 
 // --- Optional CollectionPage JSON-LD for the homepage ---
-// Describes the single-page reference as an index of named sections (the 7
-// quick hits, 18 clauses, 14 templates, 10-tier ladder, etc.). `dateModified`
-// piggybacks on LAST_REVIEWED — always correct, never drifts from the site
-// content, update by editing src/data/content.ts.
+// Describes the single-page reference as an index of named sections (quick
+// hits, clauses, templates, escalation tiers, etc.). Counts derive from
+// content.ts at build time. `dateModified` piggybacks on LAST_REVIEWED —
+// always correct, never drifts from the site content, update by editing
+// src/data/content.ts.
 let collectionPage: Record<string, unknown> | null = null;
 if (collectionSchema) {
   const { CLAUSES, TEMPLATES } = await import('../data/content');
