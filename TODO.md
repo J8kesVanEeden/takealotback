@@ -50,7 +50,10 @@ Outstanding work, in priority order. Tick items as they land.
 - [x] Live-site test sweep (April 2026): 200 on every key URL, 301s on every trailing-slash + .html legacy URL, JSON-LD types correct per page, hreflang + canonical present, sitemap 37 URLs, citation index 32 entries, S-key shortcut to /citations, JSON API headers fixed via `_headers` `/api/*` rule (CF Pages strips response headers from static-SSG endpoints).
 - [x] April 2026 audit pass 1 (Bandera, Motus, CGSO, Prosus, Clause 19)
 - [x] April 2026 audit pass 2 (Clause 20, Reg 44 subsection corrections, copy-check fixes)
-- [x] Cloudflare Web Analytics — `[Jakes — please confirm "enabled"]`
+- [ ] **Cloudflare Web Analytics — actually enable** (Round 55 of test loop found CSP allows `cloudflareinsights.com` but no beacon script is in any page's HTML, so no analytics are being collected). Two ways to enable:
+  - **Automatic**: dash.cloudflare.com → Web Analytics → Add Site → takealotback.com → toggle "Automatic Setup". CF injects the beacon at the edge — no code change.
+  - **Manual**: dash.cloudflare.com → Web Analytics → Manage Site → copy the `data-cf-beacon` token. Tell Claude — Claude will add the script to Layout.astro's `<head>`.
+  Until then, no traffic data is being recorded.
 - [x] Search Console / Bing Webmaster sitemap submission — `[Jakes]`
 - [x] `citations/` evidence vault + `OPERATIONS.md` SOP + footer link
 
