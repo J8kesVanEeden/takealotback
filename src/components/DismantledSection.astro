@@ -2,9 +2,10 @@
 import Section from './Section.astro';
 import Stat from './Stat.astro';
 import { CLAUSES, LAST_REVIEWED, TAKEALOT_POLICY_REVIEWED_AGAINST } from '../data/content';
+import { resolveUniqueCitations } from '../lib/citation-links';
 
 const filters = [
-  { id: 'all', label: 'All 18' },
+  { id: 'all', label: `All ${CLAUSES.length}` },
   { id: 's56', label: 'CPA s56' },
   { id: 'popia', label: 'POPIA' },
   { id: 'contract', label: 'Contract' },
@@ -97,6 +98,22 @@ function hay(c: typeof CLAUSES[number]) {
               </li>
             ))}
           </ol>
+
+          {(() => {
+            const sources = resolveUniqueCitations(c.angles.map((a) => a.stat));
+            return sources.length > 0 ? (
+              <div class="tb-dm__sources">
+                <div class="mono slash-label tb-dm__sources-label">Sources for this clause</div>
+                <ul class="tb-dm__sources-list" aria-label={`Source citations for clause ${c.n}`}>
+                  {sources.map((s) => (
+                    <li>
+                      <a href={s.url} class="tb-dm__source-link">{s.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null;
+          })()}
         </div>
       </div>
     </div>
@@ -104,7 +121,7 @@ function hay(c: typeof CLAUSES[number]) {
 
   <div class="tb-dm__foot">
     <span class="mono tb-dm__foot-text">
-      / 18 clauses · Last reviewed {LAST_REVIEWED} · Reviewed against Takealot policy {TAKEALOT_POLICY_REVIEWED_AGAINST}
+      / {CLAUSES.length} clauses · Last reviewed {LAST_REVIEWED} · Reviewed against Takealot policy {TAKEALOT_POLICY_REVIEWED_AGAINST}
     </span>
   </div>
 </Section>
@@ -255,6 +272,45 @@ function hay(c: typeof CLAUSES[number]) {
   }
   .tb-dm__foot { padding-top: 20px; }
   .tb-dm__foot-text { color: var(--ink-muted); }
+
+  .tb-dm__sources {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--rule);
+  }
+  .tb-dm__sources-label {
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .tb-dm__sources-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tb-dm__source-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--paper-alt);
+    text-decoration: none;
+    transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+  }
+  .tb-dm__source-link:hover,
+  .tb-dm__source-link:focus-visible {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: var(--paper-tint);
+  }
 </style>
 
 <script is:inline>
