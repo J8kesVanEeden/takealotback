@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { remarkCitationMdLinks } from './src/lib/remark-citation-md-links.mjs';
+import { rehypeCitationFixes } from './src/lib/rehype-citation-fixes.mjs';
 
 export default defineConfig({
   site: 'https://takealotback.com',
@@ -12,19 +13,14 @@ export default defineConfig({
     enabled: false,
   },
   markdown: {
-    remarkPlugins: [remarkCitationMdLinks],
+    remarkPlugins: [[remarkCitationMdLinks, {}]],
+    rehypePlugins: [[rehypeCitationFixes, {}]],
   },
   integrations: [
     sitemap({
       changefreq: 'monthly',
       priority: 0.7,
       lastmod: new Date(),
-      customPages: [
-        'https://takealotback.com/',
-        'https://takealotback.com/onus-of-proof',
-        'https://takealotback.com/aedilitian-remedies',
-        'https://takealotback.com/limits',
-      ],
     }),
   ],
 });
