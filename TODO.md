@@ -42,11 +42,11 @@ Outstanding work, in priority order. Tick items as they land.
 
 ## Open — medium priority
 
-- [ ] Fill remaining case stubs (Holmdene, Phame, Dibley v Furter, Glaston House, TRC/Sony, Frank & Hirsch). Most are pre-digital — physical SALR reports only. May not be available digitally; flag where they're not retrievable.
-- [ ] ARB stub: re-fetch `arb.org.za` content to confirm contact email, succession date, members-binding rule.
-- [ ] NFO stub: confirm OBSSA amalgamation date and full scope (was OLTI / OSTI / Credit Ombud also amalgamated?).
-- [ ] Add a build-time check that every case named in `src/data/content.ts` (in any `angles[*].body`) has a matching file in `citations/cases/`. Catch drift as new clauses cite new cases.
-- [ ] Same DRY check for statutes — every `s X` reference in `content.ts` should match a `citations/statutes/` file.
+- [x] Fill remaining case stubs (Holmdene, Phame, Dibley v Furter, Glaston House, TRC/Sony, Frank & Hirsch) — all upgraded to structured operative summaries with secondary-source corroboration.
+- [x] ARB stub: re-fetched `arb.org.za` 2026-04-25, confirmed `info@arb.org.za` + `(011) 593 3104` + NPC reg `2018/5288775/08`. Site copy still uses `complaint@arb.org.za` — flagged for next site update.
+- [ ] NFO stub: confirm OBSSA amalgamation date and full scope (was OLTI / OSTI / Credit Ombud also amalgamated?). NFO homepage doesn't surface this; needs separate primary-source confirmation.
+- [x] Build-time check that every case named in `src/data/content.ts` has a matching file in `citations/cases/` — `scripts/check-citations.mjs`, wired into `npm run check:all`.
+- [ ] Same DRY check for statutes — every `s X` reference in `content.ts` should match a `citations/statutes/` file. Lower priority since the statute set is small and stable.
 
 ## Open — nice to have
 
