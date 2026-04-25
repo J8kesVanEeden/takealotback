@@ -3,6 +3,7 @@ title: "ENSafrica — Straight shot to the courts for consumers litigating under
 publication: "ENSafrica"
 date: "undated"
 primary_url: "https://www.ensafrica.com/news/detail/5942/straight-shot-to-the-courts-for-consumers-lit"
+wayback_url: "https://web.archive.org/web/*/https://www.ensafrica.com/news/detail/5942/straight-shot-to-the-courts-for-consumers-lit"
 alternate_url: "https://www.mondaq.com/southafrica/dodd-frank-consumer-protection-act/1211308/straight-shot-to-the-courts-for-consumers-litigating-under-the-cpa"
 retrieved: "2026-04-24"
 used_in:

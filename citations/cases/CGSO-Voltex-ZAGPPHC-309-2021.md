@@ -6,6 +6,7 @@ date: "2021-03-26"
 case_number: "18096/2017"
 judge: "Strijdom AJ"
 primary_url: "https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html"
+wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html"
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory)"

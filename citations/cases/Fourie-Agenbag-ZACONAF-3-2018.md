@@ -9,6 +9,7 @@ parties:
   plaintiff: "Hendrik Jacobus Fourie"
   defendant: "Agenbag Motor Group CC"
 primary_url: "https://www.saflii.org/za/cases/ZACONAF/2018/3.html"
+wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACONAF/2018/3.html"
 pdf_url: "https://www.saflii.org/za/cases/ZACONAF/2018/3.pdf"
 retrieved: "2026-04-24"
 used_in:

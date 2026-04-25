@@ -4,6 +4,7 @@ citation: "thencc.org.za"
 court_or_publisher: "National Consumer Commission of South Africa"
 date: "2026-04-24"
 primary_url: "https://thencc.org.za/"
+wayback_url: "https://web.archive.org/web/*/https://thencc.org.za/"
 retrieved: "2026-04-24"
 retrieved_by: "Direct WebFetch of the NCC homepage, 2026-04-24"
 used_in:

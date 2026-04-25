@@ -4,6 +4,7 @@ citation: "Constitution of the Republic of South Africa, 1996"
 court_or_publisher: "Parliament of the Republic of South Africa"
 date: "1996-12-18"
 primary_url: "https://www.gov.za/documents/constitution-republic-south-africa-1996"
+wayback_url: "https://web.archive.org/web/*/https://www.gov.za/documents/constitution-republic-south-africa-1996"
 retrieved: "2026-04-24"
 used_in:
   - "src/components/AboutSection.astro — legal grounding block"

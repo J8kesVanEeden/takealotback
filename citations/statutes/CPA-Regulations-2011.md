@@ -4,6 +4,7 @@ citation: "GN R293, Government Gazette 34180 (1 April 2011)"
 court_or_publisher: "Minister of Trade and Industry (now Trade, Industry and Competition), Republic of South Africa"
 date: "2011-04-01"
 primary_url: "https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
+wayback_url: "https://web.archive.org/web/*/https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) Reg 44(3)(q) angle"

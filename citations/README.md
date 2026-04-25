@@ -93,3 +93,36 @@ Stub = file exists with frontmatter + source URL + `used_in` pointers. Anyone ca
 ## Questions / disputes
 
 If you're reading this as a Takealot lawyer or as anyone else who thinks we've mis-characterised a source: the file in `/citations/` is exactly what we relied on. If you think we're wrong, open a GitHub issue pointing to the file and the sentence on the site, and we'll re-verify.
+
+---
+
+## Wayback Machine archival — third-party provenance
+
+Each citation file's frontmatter records the `primary_url` of the source. Adding a `wayback_url` field gives readers (and us) a third-party archival snapshot to anchor against — useful when:
+
+- the original URL changes (SAFLII has reshuffled before; will again);
+- the original page is taken down or paywalled;
+- a Takealot policy edit needs to be diffed against the version we relied on.
+
+**Format used in frontmatter:**
+
+```yaml
+primary_url: "https://terms-and-policies.takealot.com/"
+wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/"
+```
+
+The `web/*/` form is a Wayback wildcard that resolves to the nearest snapshot at click-time. For specific dated snapshots we have triggered, we record the timestamp directly:
+
+```yaml
+wayback_url_dated: "https://web.archive.org/web/20260425103610/https://terms-and-policies.takealot.com/"
+```
+
+**To trigger a fresh snapshot when refreshing a citation:**
+
+```bash
+curl -L "https://web.archive.org/save/<primary_url>"
+```
+
+Wayback queues the save and serves it under a `web/<timestamp>/<url>` path. Capture that timestamp and add to the file as `wayback_url_dated`. Don't remove existing dated entries — they document what we relied on at a specific date.
+
+Wayback's "Save Page Now" can be slow (5–30 seconds) and may rate-limit on bulk saves. Trigger as part of the refresh flow, not as a build-time step.
