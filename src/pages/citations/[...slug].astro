@@ -32,17 +32,28 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotba
 const canonicalPath = `/citations/${entry.slug}`;
 const canonical = `${siteUrl}${canonicalPath}`;
 
-// Citation-page titles can already be long (e.g. full case names).
-// Keep brand-suffix-free and truncate at 70 chars to stay under SERP
-// truncation and the HTML validator's 70-char title soft-limit. Truncate
-// at the nearest word boundary where possible.
+// Citation-page titles vary widely in length — some case names are long,
+// some are short. Two-part rule:
+//
+//   - Long (> 65 chars) → truncate at nearest word boundary, ellipsis.
+//   - Short (< 30 chars) → append the formal `citation` string when
+//     present, so SEO snippets carry the full disambiguation
+//     ("Dibley v Furter — 1951 (4) SA 73 (C)") instead of the bare
+//     short name. Stays under 70 chars.
 function truncateTitle(s: string, max = 65): string {
   if (s.length <= max) return s;
   const slice = s.slice(0, max);
   const lastSpace = slice.lastIndexOf(' ');
   return (lastSpace > 40 ? slice.slice(0, lastSpace) : slice) + '…';
 }
-const title = truncateTitle(String(data.title));
+function buildTitle(rawTitle: string, citation: string | undefined): string {
+  const t = String(rawTitle);
+  if (t.length >= 30) return truncateTitle(t);
+  if (!citation) return t;
+  const suffixed = `${t} — ${citation}`;
+  return truncateTitle(suffixed);
+}
+const title = buildTitle(data.title as string, data.citation as string | undefined);
 const description =
   (data.citation ? `${data.citation}. ` : '') +
   `${groupLabel[top] ?? 'Source'} mirrored from primary source on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`;
