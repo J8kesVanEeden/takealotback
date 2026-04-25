@@ -11,12 +11,24 @@ Day-to-day rules for keeping the site factually current and defensible. Short do
 1. **Open the live citations index at https://takealotback.com/citations** (or the in-repo file at `src/content/citations/<subfolder>/<file>.md`) and locate the source that supports the claim you're changing.
 2. **Check the `retrieved:` date in the file's frontmatter.** If older than 6 months, refresh the snapshot from the original URL before relying on it.
 3. **If no snapshot exists** for a source you want to cite, create one in `src/content/citations/<subfolder>/` *before* you ship the content change. Use the frontmatter template in `citations/README.md`. The new citation will auto-publish to `/citations/<subfolder>/<slug>` on the next deploy — content collection rebuilds the index page on every build.
-4. **Trigger a Wayback Machine snapshot** of the source URL when adding or refreshing a citation:
+4. **Trigger a Wayback Machine snapshot** of the source URL when adding or refreshing a citation. Use the bundled archive script — handles pacing and timestamp capture:
    ```bash
-   curl -L "https://web.archive.org/save/<primary_url>"
+   npm run archive -- <primary_url>             # one URL
+   npm run archive                              # default key-pages list
+   npm run archive -- --all                     # every URL in sitemap-0.xml + Takealot live policies
    ```
-   Capture the resulting `web/<timestamp>/<url>` path and add to the citation file's frontmatter as `wayback_url_dated`. Don't remove existing dated entries — they document what we relied on at a specific date. Wayback may be slow (5–30 s) and rate-limit on bulk saves.
-5. **In your commit message**, reference the citation file path so the reviewer can trace the source without leaving the repo. Example:
+   Capture the resulting `web/<timestamp>/<url>` path from the script's output and add to the citation file's frontmatter as `wayback_url_dated`. Don't remove existing dated entries — they document what we relied on at a specific date. Wayback may be slow (5–30 s) and rate-limit on bulk saves; the script paces requests at 6 s.
+5. **In your commit message**, reference the citation file path so the reviewer can trace the source without leaving the repo.
+
+## Post-deploy archival
+
+After every substantive content change is live on `takealotback.com`:
+
+1. Run `npm run archive` — pushes the default key-page list to the Wayback Machine (home, deep-dives, citations index, top citation pages, plus Takealot's live policy URLs). Takes ~90 s.
+2. For a full-site backup (all 37 indexable pages), run `npm run archive -- --all`. Takes ~4–5 min plus retries for any that SPN throttles.
+3. Update any citation file whose primary source you re-archived: paste the new `web/<timestamp>/<url>` into `wayback_url_dated` (or rename the previous one to `wayback_url_earlier` to keep both). Commit.
+
+The Wayback Machine is genuine third-party version-insurance — independent of GitHub, Cloudflare, our own infrastructure. If the live site disappears for any reason, content remains recoverable from web.archive.org under the snapshots we forced. Example:
 
 ```
 Update Clause 06 to mention inventory soft-landing

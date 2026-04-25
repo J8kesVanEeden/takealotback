@@ -14,7 +14,8 @@
     "check:anchors": "npm run build --silent && node scripts/check-anchors.mjs",
     "check:citations": "node scripts/check-citations.mjs",
     "check:all": "npm run check && npm run check:anchors && npm run check:citations",
-    "build:og": "node scripts/build-og.mjs"
+    "build:og": "node scripts/build-og.mjs",
+    "archive": "node scripts/archive-wayback.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
