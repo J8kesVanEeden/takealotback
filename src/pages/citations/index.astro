@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Section from '../../components/Section.astro';
+import JsonLd from '../../components/JsonLd.astro';
 import { GITHUB_REPO_URL, LAST_REVIEWED } from '../../data/content';
 
 const all = await getCollection('citations');
@@ -31,8 +32,44 @@ for (const g of groups) {
 const total = all.length;
 const title = `Citations & sources · TakealotBack.com`;
 const description = `Every statute, judgment, regulator detail, advisory note, Takealot policy clause, and third-party commentary the site relies on — dated, attributed, and indexed. ${total} sources, last refresh ${LAST_REVIEWED}.`;
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
+const canonical = `${siteUrl}/citations`;
+
+const collectionPage = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${canonical}#page`,
+  url: canonical,
+  name: 'Citations & sources — TakealotBack.com evidence vault',
+  description,
+  isPartOf: { '@id': `${siteUrl}/#website` },
+  inLanguage: 'en-ZA',
+  about: 'South African consumer-rights primary sources',
+  hasPart: groups.flatMap((g) =>
+    g.entries.map((e) => ({
+      '@type': 'CreativeWork',
+      name: e.data.title,
+      url: `${siteUrl}/citations/${e.slug}`,
+      genre: g.label,
+    }))
+  ),
+};
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: 'Citations', item: canonical },
+  ],
+};
 ---
 <Layout title={title} description={description} canonicalPath="/citations">
+  <Fragment slot="head">
+    <JsonLd data={collectionPage} />
+    <JsonLd data={breadcrumb} />
+  </Fragment>
   <Section id="citations-index" label="Citations · evidence vault" tag="article">
     <div class="tb-cite-idx">
       <h1 class="display h2 tb-cite-idx__title">

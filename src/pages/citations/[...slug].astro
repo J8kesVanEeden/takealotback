@@ -3,7 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Section from '../../components/Section.astro';
 import JsonLd from '../../components/JsonLd.astro';
-import { GITHUB_REPO_URL, LAST_REVIEWED } from '../../data/content';
+import { LAST_REVIEWED } from '../../data/content';
 
 export async function getStaticPaths() {
   const all = await getCollection('citations');
@@ -35,15 +35,36 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotba
 const canonicalPath = `/citations/${entry.slug}`;
 const canonical = `${siteUrl}${canonicalPath}`;
 
-const title = `${data.title} · TakealotBack citations`;
+// Citation-page titles can already be long (e.g. full case names).
+// Keep brand-suffix-free and truncate at 70 chars to stay under SERP
+// truncation and the HTML validator's 70-char title soft-limit. Truncate
+// at the nearest word boundary where possible.
+function truncateTitle(s: string, max = 65): string {
+  if (s.length <= max) return s;
+  const slice = s.slice(0, max);
+  const lastSpace = slice.lastIndexOf(' ');
+  return (lastSpace > 40 ? slice.slice(0, lastSpace) : slice) + '…';
+}
+const title = truncateTitle(String(data.title));
 const description =
   (data.citation ? `${data.citation}. ` : '') +
   `${groupLabel[top] ?? 'Source'} mirrored from primary source on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`;
 
-// JSON-LD: Article + (where applicable) Legislation / LegalCaseDocument hint
+// Pick a JSON-LD @type that matches the citation type. schema.org has
+// Legislation, LegalCaseDocument, and CreativeWork — using the right
+// one nudges Google's KG and AEO toolchains toward the correct surface.
+const articleType = ({
+  cases: 'LegalCaseDocument',
+  statutes: 'Legislation',
+  policies: 'CreativeWork',
+  regulators: 'GovernmentService',
+  advisories: 'Article',
+  commentary: 'Article',
+} as Record<string, string>)[top] ?? 'Article';
+
 const article = {
   '@context': 'https://schema.org',
-  '@type': top === 'cases' ? 'Article' : 'Article',
+  '@type': articleType,
   '@id': `${canonical}#article`,
   headline: data.title,
   description: description.slice(0, 280),
@@ -55,9 +76,24 @@ const article = {
   publisher: { '@id': 'https://www.milkmoonstudio.com/#organization' },
   author: { '@id': 'https://www.milkmoonstudio.com/#organization' },
   dateModified: (data.retrieved as string)?.replace(/\./g, '-') ?? LAST_REVIEWED.replace(/\./g, '-'),
-  datePublished: (data.date as string)?.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '2026-04-25',
   about: data.citation ?? data.title,
 };
+
+// Resolve a defensible JSON-LD `datePublished` from the frontmatter
+// `date:` field. Three cases:
+//   1. Full ISO (`YYYY-MM-DD`) — use as-is.
+//   2. Year only (`YYYY`) — older judgments where the exact date isn't
+//      on SAFLII or the lawreports. Synthesise `YYYY-01-01` so the
+//      schema is parseable and doesn't claim "published today".
+//   3. "undated" or anything else — drop `datePublished` from the
+//      schema entirely. Better to omit than to lie.
+{
+  const raw = (data.date as string | undefined) ?? '';
+  const full = raw.match(/\d{4}-\d{2}-\d{2}/)?.[0];
+  const yearOnly = raw.match(/^\d{4}$/)?.[0];
+  if (full) (article as Record<string, unknown>).datePublished = full;
+  else if (yearOnly) (article as Record<string, unknown>).datePublished = `${yearOnly}-01-01`;
+}
 
 const breadcrumb = {
   '@context': 'https://schema.org',
@@ -69,13 +105,63 @@ const breadcrumb = {
   ],
 };
 
-// Quick helper to display arbitrary frontmatter URL fields
-const urlFields = ['primary_url', 'wayback_url', 'wayback_url_dated', 'saflii_url', 'lawlibrary_url', 'wipo_lex', 'cgso_pdf', 'nct_pdf', 'pdf_url', 'alternate_url', 'commentary_url', 'collections_concourt'];
+// Quick helper to display arbitrary frontmatter URL fields. Keep this in
+// sync with the URL-shaped fields actually used across
+// src/content/citations/**/*.md — anything missing silently disappears
+// from the rendered Sources panel.
+const urlFields = [
+  'primary_url',
+  'secondary_url',
+  'wayback_url',
+  'wayback_url_dated',
+  'wayback_url_earlier',
+  'saflii_url',
+  'saflii_pdf',
+  'lawlibrary_url',
+  'lawlibrary_s34',
+  'wipo_lex',
+  'cgso_pdf',
+  'cgso_index',
+  'nct_pdf',
+  'pdf_url',
+  'alternate_url',
+  'commentary_url',
+  'collections_concourt',
+  'wikipedia_url',
+  'popia_co_za',
+  'portal_url',
+  'press_release',
+  'itu_url',
+  'dtic_url',
+];
 const urls = urlFields
   .map((k) => ({ k, v: data[k] }))
   .filter((x): x is { k: string; v: string } => typeof x.v === 'string' && x.v.length > 0);
 
 const usedIn = (data.used_in as string[] | undefined) ?? [];
+
+// Map a `used_in:` frontmatter line to the homepage anchor (or deep-dive
+// page) that surfaces the reference. Returns null when the location
+// isn't a section a reader can navigate to from here.
+function usedInLink(s: string): { href: string; label: string } | null {
+  // CLAUSES[N] (slug) → anchor on the homepage's Dismantled section.
+  // Each clause renders as a <details> with id="clause-<slug>".
+  const clauseMatch = s.match(/CLAUSES\[\d+\]\s*\(([a-z0-9-]+)\)/i);
+  if (clauseMatch) return { href: `/#clause-${clauseMatch[1]}`, label: 'See on homepage →' };
+  if (/TEMPLATES/.test(s)) return { href: '/#templates', label: 'See on homepage →' };
+  if (/LAW_SECTIONS/.test(s)) return { href: '/#law', label: 'See on homepage →' };
+  if (/ESCALATION/.test(s)) return { href: '/#escalate', label: 'See on homepage →' };
+  if (/WARRANTY_ANGLES|PLAYBOOK/.test(s)) return { href: '/#warranties', label: 'See on homepage →' };
+  if (/POLICY_SUMMARY/.test(s)) return { href: '/#policies', label: 'See on homepage →' };
+  if (/QUICK_HITS/.test(s)) return { href: '/#short-version', label: 'See on homepage →' };
+  if (/FAQ/.test(s)) return { href: '/#faq', label: 'See on homepage →' };
+  if (/AboutSection/.test(s)) return { href: '/#about', label: 'See on homepage →' };
+  if (/LawSection/.test(s)) return { href: '/#law', label: 'See on homepage →' };
+  if (/onus-of-proof\.md/.test(s)) return { href: '/onus-of-proof', label: 'Onus of proof →' };
+  if (/aedilitian-remedies\.md/.test(s)) return { href: '/aedilitian-remedies', label: 'Aedilitian remedies →' };
+  if (/limits\.md/.test(s)) return { href: '/limits', label: 'Limits →' };
+  return null;
+}
 ---
 <Layout title={title} description={description} canonicalPath={canonicalPath}>
   <Fragment slot="head">
@@ -124,16 +210,24 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
         <div class="tb-cite__usedin">
           <div class="mono slash-label tb-cite__usedin-label">Used on the site</div>
           <ul class="tb-cite__usedin-list">
-            {usedIn.map((u) => <li class="mono">{u}</li>)}
+            {usedIn.map((u) => {
+              const link = usedInLink(u);
+              return (
+                <li class="mono">
+                  <span class="tb-cite__usedin-line">{u}</span>
+                  {link && (
+                    <a href={link.href} class="tb-cite__usedin-jump">{link.label}</a>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
 
       <hr class="tb-cite__rule" />
 
-      <div class="prose tb-cite__prose">
-        <Content />
-      </div>
+      <div class="prose tb-cite__prose"><Content /></div>
 
       <div class="tb-cite__foot">
         <a href="/citations" class="btn ghost">&larr; All citations</a>
@@ -202,6 +296,24 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
   .tb-cite__usedin-label {
     color: var(--ink);
     margin-bottom: 8px;
+  }
+  .tb-cite__usedin-list li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    align-items: baseline;
+  }
+  .tb-cite__usedin-line { color: var(--ink-soft); }
+  .tb-cite__usedin-jump {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 3px;
+    font-size: 10px;
+  }
+  .tb-cite__usedin-jump:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
   }
   .tb-cite__urls-list,
   .tb-cite__usedin-list {

@@ -135,6 +135,8 @@ if (collectionSchema) {
     <meta name="last-reviewed" content={LAST_REVIEWED} />
 
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en-ZA" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
     <link rel="alternate" type="application/rss+xml" href={`${siteUrl}/rss.xml`} title="TakealotBack.com — deep dives" />
     <link rel="alternate" type="application/xml" href={`${siteUrl}/sitemap-index.xml`} title="Sitemap" />
     <link rel="alternate" type="text/plain" href={`${siteUrl}/llms.txt`} title="LLM summary" />
@@ -259,6 +261,7 @@ if (collectionSchema) {
           if (k === 'w') { jump('warranties'); return; }
           if (k === 'e') { jump('escalate'); return; }
           if (k === 'f') { jump('faq'); return; }
+          if (k === 's') { window.location.href = '/citations'; return; }
           if (k === 'c') {
             e.preventDefault();
             window.dispatchEvent(new CustomEvent('tb:triage-toggle'));

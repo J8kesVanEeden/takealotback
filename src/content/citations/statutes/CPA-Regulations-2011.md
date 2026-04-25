@@ -11,8 +11,8 @@ used_in:
   - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) Reg 44 reference"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) Reg 44 reference"
   - "src/data/content.ts — CLAUSES[17] (mis-returned-items) Reg 44 reference"
-  - "src/data/content.ts — CLAUSES[19] (restocking-redelivery-fees) Reg 44(3)(b) + 44(3)(g) angle"
-  - "src/data/content.ts — CLAUSES[20] (inspection-assessment-delay) Reg 44 reference"
+  - "src/data/content.ts — CLAUSES[18] (restocking-redelivery-fees) Reg 44(3)(b) + 44(3)(g) angle"
+  - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) Reg 44 reference"
   - "src/data/content.ts — TEMPLATES (T09, T15) Reg 44 references"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---

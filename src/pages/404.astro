@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
+import { CLAUSES, TEMPLATES } from '../data/content';
 
 const title = '404 — Not on this site';
 const description = "The page you asked for isn't on TakealotBack.com. Either it moved, you mistyped, or it was never here. Either way — the law didn't go anywhere.";
@@ -8,9 +9,9 @@ const description = "The page you asked for isn't on TakealotBack.com. Either it
 <Layout title={title} description={description} canonicalPath="/404">
   <Section id="notfound" label="404 / not found" tag="section">
     <div class="tb-404">
-      <div class="tb-404__giant display">
+      <h1 class="tb-404__giant display">
         4<em class="tb-404__italic">0</em>4<span class="tb-404__dot">.</span>
-      </div>
+      </h1>
 
       <p class="tb-404__lede">
         You asked for a page that isn't on this site. <em>Your rights still are.</em>
@@ -21,8 +22,8 @@ const description = "The page you asked for isn't on TakealotBack.com. Either it
           <div class="mono slash-label tb-404__blocklabel">Where to next</div>
           <ul class="tb-404__links">
             <li><a href="/#home" class="link-u">Back to the homepage</a> &mdash; mission, 7 quick hits, how to use the site.</li>
-            <li><a href="/#dismantled" class="link-u">All 18 clauses dismantled</a> &mdash; Takealot's policy vs the CPA, clause by clause.</li>
-            <li><a href="/#templates" class="link-u">14 ready-to-send email templates</a> &mdash; copy, paste, send.</li>
+            <li><a href="/#dismantled" class="link-u">All {CLAUSES.length} clauses dismantled</a> &mdash; Takealot's policy vs the CPA, clause by clause.</li>
+            <li><a href="/#templates" class="link-u">{TEMPLATES.length} ready-to-send email templates</a> &mdash; copy, paste, send.</li>
             <li><a href="/#escalate" class="link-u">The 10-tier escalation ladder</a> &mdash; CGSO, chargeback, NCC, Small Claims, and up.</li>
             <li><a href="/#faq" class="link-u">FAQ</a> &mdash; the questions we hear most.</li>
           </ul>
@@ -51,7 +52,7 @@ const description = "The page you asked for isn't on TakealotBack.com. Either it
 
 <style>
   .tb-404 { max-width: 72ch; }
-  .tb-404__giant {
+  h1.tb-404__giant {
     font-size: clamp(96px, 22vw, 280px);
     font-weight: 500;
     line-height: 0.86;
@@ -85,7 +86,7 @@ const description = "The page you asked for isn't on TakealotBack.com. Either it
   .tb-404__links li {
     padding: 14px 0;
     border-bottom: 1px solid var(--rule-soft);
-    font-size: 14.5px;
+    font-size: var(--text-md);
     line-height: 1.6;
     color: var(--ink-soft);
   }

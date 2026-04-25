@@ -1,9 +1,10 @@
 ---
 import Section from './Section.astro';
+import { CLAUSES, TEMPLATES } from '../data/content';
 
 const items = [
-  { n: '01', head: 'Find your fight', body: "Browse the clause-by-clause dismantling to see exactly how the law applies to whatever Takealot is telling you.", cta: 'See all 18 clauses', href: '#dismantled' },
-  { n: '02', head: 'Grab a template', body: '14 ready-to-send emails, each grounded in a specific CPA or ECT Act section. Copy, paste, send.', cta: 'Browse templates', href: '#templates' },
+  { n: '01', head: 'Find your fight', body: "Browse the clause-by-clause dismantling to see exactly how the law applies to whatever Takealot is telling you.", cta: `See all ${CLAUSES.length} clauses`, href: '#dismantled' },
+  { n: '02', head: 'Grab a template', body: `${TEMPLATES.length} ready-to-send emails, each grounded in a specific CPA or ECT Act section. Copy, paste, send.`, cta: 'Browse templates', href: '#templates' },
   { n: '03', head: 'Know your escalation path', body: "Takealot → CGSO → NCC → chargeback → court. The ladder is shorter than you think.", cta: 'See the ladder', href: '#escalate' },
 ];
 ---
