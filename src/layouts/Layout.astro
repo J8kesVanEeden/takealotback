@@ -246,7 +246,16 @@ if (collectionSchema) {
           window.addEventListener('scroll', update, { passive: true });
         }
 
+        // Jump to a homepage anchor. If the user is currently on a deep-dive
+        // or citation page, navigate to /#id; otherwise smooth-scroll in place.
+        // Without this, all section shortcuts silently no-op'd off-home —
+        // surprising for keyboard users coming back from a citation page.
         function jump(id) {
+          var onHome = location.pathname === '/' || location.pathname === '/index.html';
+          if (!onHome) {
+            location.href = '/#' + id;
+            return;
+          }
           var el = document.getElementById(id);
           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
