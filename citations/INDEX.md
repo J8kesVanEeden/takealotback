@@ -2,10 +2,11 @@
 
 Mini-sitemap for the evidence vault. Every citation on `takealotback.com` should appear below with a file in the matching subfolder.
 
-**Last refreshed:** 2026-04-24
+**Last refreshed:** 2026-04-25
 
 Legend:
 - ✅ full text in repo
+- 📋 structured operative summary (per-section / per-paragraph paraphrase covering everything the site relies on, with primary URL noted for verbatim retrieval on next refresh)
 - 📝 metadata stub (URL + frontmatter only — body to fill on next refresh)
 - ⏸ linked by reference only (copyright bars full reproduction; only the primary URL + short excerpt kept)
 
@@ -15,13 +16,13 @@ Legend:
 
 | File | Citation | Retrieved | Status |
 |---|---|---|---|
-| [CPA-2008.md](statutes/CPA-2008.md) | Consumer Protection Act 68 of 2008 | 2026-04-24 | 📝 |
-| [CPA-Regulations-2011.md](statutes/CPA-Regulations-2011.md) | Consumer Protection Act Regulations, GN R293 / GG 34180 (1 April 2011) | 2026-04-24 | ✅ Reg 44(3) full text, others 📝 |
-| [ECT-Act-2002.md](statutes/ECT-Act-2002.md) | Electronic Communications and Transactions Act 25 of 2002 | 2026-04-24 | 📝 |
-| [POPIA-2013.md](statutes/POPIA-2013.md) | Protection of Personal Information Act 4 of 2013 | 2026-04-24 | 📝 |
-| [TMA-1993.md](statutes/TMA-1993.md) | Trade Marks Act 194 of 1993 | 2026-04-24 | 📝 |
-| [Prescription-Act-1969.md](statutes/Prescription-Act-1969.md) | Prescription Act 68 of 1969 | 2026-04-24 | 📝 |
-| [Constitution-s16.md](statutes/Constitution-s16.md) | Constitution of the Republic of South Africa, 1996 — s 16 (freedom of expression) | 2026-04-24 | 📝 |
+| [CPA-2008.md](statutes/CPA-2008.md) | Consumer Protection Act 68 of 2008 | 2026-04-25 | 📋 every cited section (s 2(10), 4, 5(2), 16, 17, 19, 20, 22, 23, 25, 40, 41, 45, 47, 48, 49, 51, 52, 53, 55, 56, 57, 61, 69, 82, 115) |
+| [CPA-Regulations-2011.md](statutes/CPA-Regulations-2011.md) | Consumer Protection Act Regulations, GN R293 / GG 34180 (1 April 2011) | 2026-04-24 | ✅ Reg 44(3) full verbatim |
+| [ECT-Act-2002.md](statutes/ECT-Act-2002.md) | Electronic Communications and Transactions Act 25 of 2002 | 2026-04-25 | 📋 s 42, 43, 44, 46, 47, 48 |
+| [POPIA-2013.md](statutes/POPIA-2013.md) | Protection of Personal Information Act 4 of 2013 | 2026-04-25 | 📋 s 10 (Condition 2), s 19 (Condition 7) |
+| [TMA-1993.md](statutes/TMA-1993.md) | Trade Marks Act 194 of 1993 | 2026-04-25 | 📋 s 34(1) + s 34(2) full breakdown |
+| [Prescription-Act-1969.md](statutes/Prescription-Act-1969.md) | Prescription Act 68 of 1969 | 2026-04-25 | 📋 s 11 + s 12 |
+| [Constitution-s16.md](statutes/Constitution-s16.md) | Constitution of the Republic of South Africa, 1996 — s 16 (freedom of expression) | 2026-04-24 | ✅ verbatim |
 
 ## Cases (`cases/`)
 
@@ -29,9 +30,9 @@ Legend:
 |---|---|---|---|---|
 | [Motus-Wentzel-ZASCA-40-2021.md](cases/Motus-Wentzel-ZASCA-40-2021.md) | [2021] ZASCA 40; [2021] 3 All SA 98 (SCA) | Supreme Court of Appeal | 2026-04-24 | ✅ para 26 verified |
 | [CGSO-Voltex-ZAGPPHC-309-2021.md](cases/CGSO-Voltex-ZAGPPHC-309-2021.md) | [2021] ZAGPPHC 309 | Gauteng High Court (Pretoria) | 2026-04-24 | ✅ holding verified |
-| [Vonk-Willow-Crest-ZANCT-63-2019.md](cases/Vonk-Willow-Crest-ZANCT-63-2019.md) | [2019] ZANCT 63 | National Consumer Tribunal | 2026-04-24 | 📝 |
+| [Vonk-Willow-Crest-ZANCT-63-2019.md](cases/Vonk-Willow-Crest-ZANCT-63-2019.md) | [2019] ZANCT 63 / 68 | National Consumer Tribunal | 2026-04-25 | 📋 holding + facts |
 | [Fourie-Agenbag-ZACONAF-3-2018.md](cases/Fourie-Agenbag-ZACONAF-3-2018.md) | [2018] ZACONAF 3 (NW12/2017) | North West Consumer Affairs Court (Mmabatho) | 2026-04-24 | ✅ holding + parties verified |
-| [Laugh-It-Off-ZACC-7-2005.md](cases/Laugh-It-Off-ZACC-7-2005.md) | [2005] ZACC 7 | Constitutional Court | 2026-04-24 | 📝 |
+| [Laugh-It-Off-ZACC-7-2005.md](cases/Laugh-It-Off-ZACC-7-2005.md) | [2005] ZACC 7 | Constitutional Court | 2026-04-25 | 📋 substantial-economic-detriment test |
 | [Holmdene-Brickworks-1977.md](cases/Holmdene-Brickworks-1977.md) | 1977 (3) SA 670 (A) | Appellate Division | 2026-04-24 | 📝 |
 | [Phame-Paizes-1973.md](cases/Phame-Paizes-1973.md) | 1973 (3) SA 397 (A) | Appellate Division | 2026-04-24 | 📝 |
 | [Dibley-Furter-1951.md](cases/Dibley-Furter-1951.md) | 1951 (4) SA 73 (C) | Cape Provincial Division | 2026-04-24 | 📝 |
@@ -43,8 +44,8 @@ Legend:
 
 | File | Citation | Body | Retrieved | Status |
 |---|---|---|---|---|
-| [CGSO-Advisory-Note-01.md](advisories/CGSO-Advisory-Note-01.md) | [2021] ZACGSO 1 — onus of proof (s 56 window) | CGSO | 2026-04-24 | 📝 |
-| [CGSO-Advisory-Note-11.md](advisories/CGSO-Advisory-Note-11.md) | [2021] ZACGSO 11 — voetstoots and the CPA | CGSO | 2026-04-24 | 📝 |
+| [CGSO-Advisory-Note-01.md](advisories/CGSO-Advisory-Note-01.md) | [2021] ZACGSO 1 — implied warranty / onus | CGSO | 2026-04-25 | 📋 operative effect + onus position |
+| [CGSO-Advisory-Note-11.md](advisories/CGSO-Advisory-Note-11.md) | [2021] ZACGSO 11 — voetstoots and the CPA | CGSO | 2026-04-25 | 📋 operative effect + survival cases |
 
 ## Policies (`policies/`)
 

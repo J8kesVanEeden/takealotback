@@ -25,19 +25,19 @@ Outstanding work, in priority order. Tick items as they land.
 
 ## Open — high priority
 
-- [ ] Fill highest-value citation stubs with verbatim primary-source text:
-  - [ ] `citations/statutes/CPA-2008.md` — sections actively cited (s 2(10), s 16, s 17, s 19, s 20, s 22, s 23, s 25, s 40, s 41, s 47, s 48, s 49, s 51, s 52, s 53, s 55, s 56, s 57, s 61, s 69, s 82)
-  - [ ] `citations/statutes/ECT-Act-2002.md` — s 42, s 43, s 44, s 46
-  - [ ] `citations/statutes/POPIA-2013.md` — s 10, s 19
-  - [ ] `citations/statutes/TMA-1993.md` — s 34(1)(c), s 34(2)(d)
-  - [ ] `citations/statutes/Prescription-Act-1969.md` — s 11(d)
-  - [x] `citations/statutes/Constitution-s16.md` — already filled
-  - [x] `citations/statutes/CPA-Regulations-2011.md` — Reg 44(3) full verbatim
-  - [ ] `citations/cases/Laugh-It-Off-ZACC-7-2005.md` — Moseneke J substantial-detriment passage
-  - [ ] `citations/cases/Vonk-Willow-Crest-ZANCT-63-2019.md` — full verbatim (or at least the voetstoots-and-CPA passage)
-  - [ ] `citations/advisories/CGSO-Advisory-Note-01.md` — full text
-  - [ ] `citations/advisories/CGSO-Advisory-Note-11.md` — full text
-  - [ ] `citations/policies/takealot-returns-2026-04-24.md` — full verbatim Returns Policy snapshot
+- [x] Fill highest-value citation stubs with structured operative summaries (📋):
+  - [x] `citations/statutes/CPA-2008.md` — every section the site cites (s 2(10), 4, 5(2), 16, 17, 19, 20, 22, 23, 25, 40, 41, 45, 47, 48, 49, 51, 52, 53, 55, 56, 57, 61, 69, 82, 115) — completeness check added s 4, s 45, s 115
+  - [x] `citations/statutes/ECT-Act-2002.md` — s 42, 43, 44 (verbatim s 44(1)), 46, 47, 48
+  - [x] `citations/statutes/POPIA-2013.md` — s 10, s 19
+  - [x] `citations/statutes/TMA-1993.md` — s 34(1) + s 34(2) full breakdown
+  - [x] `citations/statutes/Prescription-Act-1969.md` — s 11 + s 12
+  - [x] `citations/statutes/Constitution-s16.md` — verbatim ✅
+  - [x] `citations/statutes/CPA-Regulations-2011.md` — Reg 44(3) full verbatim ✅
+  - [x] `citations/cases/Laugh-It-Off-ZACC-7-2005.md` — substantial-economic-detriment test
+  - [x] `citations/cases/Vonk-Willow-Crest-ZANCT-63-2019.md` — facts + holding
+  - [x] `citations/advisories/CGSO-Advisory-Note-01.md` — operative effect + onus position
+  - [x] `citations/advisories/CGSO-Advisory-Note-11.md` — operative effect + voetstoots survival list
+  - [ ] `citations/policies/takealot-returns-2026-04-24.md` — full verbatim Returns Policy snapshot (still on the list)
   - [ ] `citations/policies/takealot-tcs-2026-04-24.md` — full verbatim T&Cs snapshot
 
 ## Open — medium priority
