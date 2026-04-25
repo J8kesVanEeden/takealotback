@@ -36,6 +36,18 @@ Outstanding work, in priority order. Tick items as they land.
 - [x] CPA Regulations 2011 `used_in:` clause indices fixed (19→18, 20→19)
 - [x] Voltex citation pattern matches `"CGSO (compulsory scheme)"` so Clause 13's chip resolves
 - [x] `40x` validator pass on every page in `dist/` — zero `valid-id`, `aria-label-misuse`, `no-trailing-whitespace`, or `tel-non-breaking` errors
+- [x] LOW-priority design polish round (April 2026):
+  - Italic emphasis consolidated into one global `.display em` rule (was 8 component-local declarations)
+  - Section header → intro margin-bottom unified to `var(--space-7)` site-wide
+  - `tb-tpl__copy` re-uses `.btn.primary` instead of inline override
+  - Citation page meta column 110→120px to match base meta-grid
+  - Citations index hover: title goes accent only (was painting all three children orange)
+  - Mobile breakpoints unified to 720px (phone) + 900px (tablet two-col collapse), documented
+  - Dead code removed: `.mono-tag`, `.mono-sm`, `.crosshair`, legacy `.plus-row`/`.plus-rule`, empty `.tb-footer__col {}`
+  - TweaksPanel/Dismantled filter chips: active state inverted (was paper-tint on paper, indistinguishable)
+  - Hero counts pulled from `CLAUSES.length`/`TEMPLATES.length`/`ESCALATION.length`; jurisdiction strapline now reads from `LAST_REVIEWED`
+  - RSS feed expanded from 3 → 35 items (deep-dives + 32 citations); category labels per item
+- [x] Live-site test sweep (April 2026): 200 on every key URL, 301s on every trailing-slash + .html legacy URL, JSON-LD types correct per page, hreflang + canonical present, sitemap 37 URLs, citation index 32 entries, S-key shortcut to /citations, JSON API headers fixed via `_headers` `/api/*` rule (CF Pages strips response headers from static-SSG endpoints).
 - [x] April 2026 audit pass 1 (Bandera, Motus, CGSO, Prosus, Clause 19)
 - [x] April 2026 audit pass 2 (Clause 20, Reg 44 subsection corrections, copy-check fixes)
 - [x] Cloudflare Web Analytics — `[Jakes — please confirm "enabled"]`
