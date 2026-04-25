@@ -1,0 +1,51 @@
+name: Wayback archive
+
+# Auto-pushes the site's key pages to the Internet Archive's Wayback Machine
+# after every push to main that affects content. Independent third-party
+# version-insurance — if the live site disappears, the snapshots remain
+# under web.archive.org.
+#
+# Pace and budget:
+# - The script paces requests at 6s apart (~12 req/min ceiling on SPN).
+# - Default list = 17 URLs (home, deep-dives, citations index, top citations,
+#   plus Takealot's live policy URLs). Run takes ~100s.
+# - We wait 90s before archiving to give Cloudflare Pages time to redeploy
+#   so Wayback captures the new content, not the previous build.
+# - Failures (timeouts, 429s) are best-effort; partial archival is fine.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'astro.config.mjs'
+  workflow_dispatch: # allow manual trigger from the Actions tab
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Wait for Cloudflare Pages to redeploy
+        run: |
+          echo "Waiting 90s for Cloudflare Pages to ship the new build..."
+          sleep 90
+
+      - name: Push key pages to the Wayback Machine
+        run: node scripts/archive-wayback.mjs
+
+      - name: Note
+        if: always()
+        run: |
+          echo "Archival run complete. SPN occasionally rate-limits or"
+          echo "times out — partial archival is normal. Re-run manually"
+          echo "via Actions → Wayback archive → Run workflow if needed."
