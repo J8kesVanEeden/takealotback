@@ -32,6 +32,9 @@ const Tag = tag;
     position: relative;
     border-top: 1px solid var(--rule);
   }
+  /* The very first section on a page (typically Hero, which has its own
+   * spacing) shouldn't draw a top hairline above it. */
+  .tb-section:first-of-type { border-top: 0; }
   .tb-section--pad { padding: clamp(72px, 8vw, 140px) 0; }
   .tb-section__label { margin-bottom: 32px; }
 </style>

@@ -66,12 +66,12 @@ function pad(n: number) {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 0;
     border-top: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
   }
   .tb-war__angle {
     padding: 20px 20px 24px;
     border-bottom: 1px solid var(--rule);
     border-right: 1px solid var(--rule);
-    border-left: 1px solid var(--rule);
     min-height: 160px;
   }
   .tb-war__angle-n { color: var(--ink-faint); margin-bottom: 10px; }
@@ -94,12 +94,12 @@ function pad(n: number) {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 0;
     border-top: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
   }
   .tb-war__play {
     padding: 20px 22px 24px;
     border-bottom: 1px solid var(--rule);
     border-right: 1px solid var(--rule);
-    border-left: 1px solid var(--rule);
   }
   .tb-war__letter {
     font-size: 44px;
@@ -115,7 +115,7 @@ function pad(n: number) {
     font-weight: 500;
   }
   .tb-war__play-text {
-    font-size: 13.5px;
+    font-size: var(--text-sm);
     line-height: 1.55;
     color: var(--ink-soft);
   }
