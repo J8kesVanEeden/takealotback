@@ -90,3 +90,21 @@ export function resolveUniqueCitations(stats: string[]): CitationLink[] {
   }
   return out;
 }
+
+/**
+ * Scan a free-form text blob (markdown body, template body, FAQ answer)
+ * for any of the citation patterns and return the unique, ordered set of
+ * matches. Used to power the "Sources" footer on deep-dive pages and
+ * email templates.
+ */
+export function scanForCitations(text: string): CitationLink[] {
+  const seen = new Set<string>();
+  const out: CitationLink[] = [];
+  for (const { test, link } of PATTERNS) {
+    if (test.test(text) && !seen.has(link.url)) {
+      seen.add(link.url);
+      out.push(link);
+    }
+  }
+  return out;
+}

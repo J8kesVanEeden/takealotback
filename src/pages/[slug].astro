@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { GITHUB_REPO_URL, LAST_REVIEWED } from '../data/content';
+import { scanForCitations } from '../lib/citation-links';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -19,6 +20,11 @@ interface Props {
 
 const { page } = Astro.props;
 const { Content } = await page.render();
+
+// Scan the markdown body for any cited statutes / cases / advisories /
+// regulators we have a /citations/ page for; render as chips at the
+// bottom of the page.
+const sources = scanForCitations(page.body);
 
 const title = page.data.metaTitle ?? `${page.data.title} · TakealotBack.com`;
 const canonicalPath = `/${page.slug}`;
@@ -84,8 +90,21 @@ const breadcrumb = {
       <div class="prose tb-sub__prose">
         <Content />
       </div>
+
+      {sources.length > 0 && (
+        <div class="tb-sub__sources">
+          <div class="mono slash-label tb-sub__sources-label">Sources cited on this page</div>
+          <ul class="tb-sub__sources-list" aria-label="Source citations">
+            {sources.map((s) => (
+              <li><a href={s.url} class="tb-sub__source-link">{s.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <div class="tb-sub__foot">
         <a href="/" class="btn ghost">&larr; Back to the single page</a>
+        <a href="/citations" class="btn ghost">All citations &rarr;</a>
       </div>
     </div>
   </Section>
@@ -104,7 +123,51 @@ const breadcrumb = {
   .tb-sub__prose { max-width: none; }
   /* Hide the markdown's own H1 since we render it above in the shell */
   .tb-sub__prose :global(h1) { display: none; }
-  .tb-sub__foot { margin-top: 56px; }
+  .tb-sub__foot {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tb-sub__sources {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px dashed var(--rule);
+  }
+  .tb-sub__sources-label {
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .tb-sub__sources-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tb-sub__source-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--paper-alt);
+    text-decoration: none;
+    transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+  }
+  .tb-sub__source-link:hover,
+  .tb-sub__source-link:focus-visible {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: var(--paper-tint);
+  }
   .tb-sub__crumbs { margin-bottom: 24px; }
   .tb-sub__crumblist {
     list-style: none;
