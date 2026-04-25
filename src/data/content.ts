@@ -77,7 +77,7 @@ export interface PolicySummary {
   terms: string[];
 }
 
-export const LAST_REVIEWED = "2026.04.24";
+export const LAST_REVIEWED = "2026.04.25";
 export const TAKEALOT_POLICY_REVIEWED_AGAINST = "v2026.03";
 export const GITHUB_REPO_URL = "https://github.com/J8kesVanEeden/takealotback";
 
