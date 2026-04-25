@@ -14,9 +14,10 @@
     "check:anchors": "npm run build --silent && node scripts/check-anchors.mjs",
     "check:citations": "node scripts/check-citations.mjs",
     "check:counts": "node scripts/check-counts.mjs",
+    "check:used-in": "node scripts/check-used-in.mjs",
     "check:html": "html-validate 'dist/**/*.html'",
     "check:links": "node scripts/check-links.mjs",
-    "check:all": "npm run check && npm run check:counts && npm run check:anchors && npm run check:citations && npm run check:html && npm run check:links",
+    "check:all": "npm run check && npm run check:counts && npm run check:used-in && npm run check:anchors && npm run check:citations && npm run check:html && npm run check:links",
     "build:og": "node scripts/build-og.mjs",
     "archive": "node scripts/archive-wayback.mjs",
     "prepare": "husky"
