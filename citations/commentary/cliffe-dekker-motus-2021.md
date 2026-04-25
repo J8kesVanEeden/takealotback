@@ -3,6 +3,7 @@ title: "Cliffe Dekker Hofmeyr — Motus v Wentzel commentary"
 publication: "Cliffe Dekker Hofmeyr (Corporate & Commercial Alert)"
 date: "2021-06-23"
 primary_url: "https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
+wayback_url: "https://web.archive.org/web/*/https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
 retrieved: "2026-04-24"
 used_in:
   - "Provenance — supports the obiter characterisation of Motus s 69(d) reading on the site"

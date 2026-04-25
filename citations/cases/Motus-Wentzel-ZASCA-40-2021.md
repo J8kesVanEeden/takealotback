@@ -5,6 +5,7 @@ court_or_publisher: "Supreme Court of Appeal of South Africa"
 date: "2021-04-13"
 case_number: "1272/2019"
 primary_url: "https://www.saflii.org/za/cases/ZASCA/2021/40.html"
+wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZASCA/2021/40.html"
 alternate_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/2021/40"
 retrieved: "2026-04-24"
 used_in:

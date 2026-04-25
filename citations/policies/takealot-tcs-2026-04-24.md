@@ -4,6 +4,7 @@ citation: "terms-and-policies.takealot.com/terms-conditions"
 court_or_publisher: "Takealot Online (RF) (Pty) Ltd"
 date: "2026-04-24"
 primary_url: "https://terms-and-policies.takealot.com/terms-conditions/"
+wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/terms-conditions/"
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes)"

@@ -4,6 +4,7 @@ citation: "[2021] ZACGSO 11"
 court_or_publisher: "Consumer Goods and Services Ombud"
 date: "2021"
 primary_url: "https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
+wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
 retrieved: "2026-04-25"
 used_in:

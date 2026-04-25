@@ -4,6 +4,7 @@ citation: "Act 68 of 1969"
 court_or_publisher: "Parliament of the Republic of South Africa"
 date: "1969-06-27"
 primary_url: "https://www.gov.za/documents/prescription-act"
+wayback_url: "https://web.archive.org/web/*/https://www.gov.za/documents/prescription-act"
 saflii_url: "https://www.saflii.org/za/legis/consol_act/pa1969156/"
 retrieved: "2026-04-25"
 used_in:

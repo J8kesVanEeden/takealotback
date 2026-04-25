@@ -4,6 +4,7 @@ citation: "nfosa.co.za"
 court_or_publisher: "National Financial Ombud Scheme"
 date: "2026-04-24"
 primary_url: "https://nfosa.co.za/"
+wayback_url: "https://web.archive.org/web/*/https://nfosa.co.za/"
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — LAW_SECTIONS[4].items.nfo (NFO entry under Chargebacks)"

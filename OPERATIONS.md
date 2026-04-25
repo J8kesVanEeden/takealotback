@@ -11,7 +11,12 @@ Day-to-day rules for keeping the site factually current and defensible. Short do
 1. **Open [`citations/INDEX.md`](./citations/INDEX.md)** and locate the source that supports the claim you're changing.
 2. **Check the `retrieved:` date in the file's frontmatter.** If older than 6 months, refresh the snapshot from the original URL before relying on it.
 3. **If no snapshot exists** for a source you want to cite, create one in the appropriate [`citations/`](./citations/) subfolder *before* you ship the content change. Use the frontmatter template in [`citations/README.md`](./citations/README.md).
-4. **In your commit message**, reference the citation file path so the reviewer can trace the source without leaving the repo. Example:
+4. **Trigger a Wayback Machine snapshot** of the source URL when adding or refreshing a citation:
+   ```bash
+   curl -L "https://web.archive.org/save/<primary_url>"
+   ```
+   Capture the resulting `web/<timestamp>/<url>` path and add to the citation file's frontmatter as `wayback_url_dated`. Don't remove existing dated entries — they document what we relied on at a specific date. Wayback may be slow (5–30 s) and rate-limit on bulk saves.
+5. **In your commit message**, reference the citation file path so the reviewer can trace the source without leaving the repo. Example:
 
 ```
 Update Clause 06 to mention inventory soft-landing

@@ -4,6 +4,8 @@ citation: "terms-and-policies.takealot.com (Returns Policy)"
 court_or_publisher: "Takealot Online (RF) (Pty) Ltd"
 date: "2026-04-24"
 primary_url: "https://terms-and-policies.takealot.com/"
+wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/"
+wayback_url_dated: "https://web.archive.org/web/20260425103610/https://terms-and-policies.takealot.com/"
 retrieved: "2026-04-24"
 retrieved_by: "Takealot policy audit agent, 2026-04-24 — see commit 6f29a2e and ce0357f"
 used_in:

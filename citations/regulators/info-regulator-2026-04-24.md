@@ -4,6 +4,7 @@ citation: "inforegulator.org.za"
 court_or_publisher: "Information Regulator (South Africa)"
 date: "2026-04-24"
 primary_url: "https://inforegulator.org.za/"
+wayback_url: "https://web.archive.org/web/*/https://inforegulator.org.za/"
 portal_url: "https://eservices.inforegulator.org.za/"
 retrieved: "2026-04-24"
 used_in:
