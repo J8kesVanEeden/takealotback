@@ -650,7 +650,7 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "when", title: "When chargeback is available", blurb: "Goods not received, defective or not-as-described, credit not processed, cancelled recurring, fraud, duplicate." },
     { id: "window", title: "Window", blurb: "Typically 120 days from transaction (or expected delivery) under Visa/Mastercard rules. Card-only. EFT, RTC, PayShap are irrevocable." },
     { id: "how", title: "How", blurb: "Contact your bank's disputes team in writing. Attach order, correspondence, evidence. Can run in parallel with CGSO." },
-    { id: "nfo", title: "If the bank gets it wrong", blurb: "National Financial Ombud Scheme (NFO) — banking division. 0860 800 900 · nfosa.co.za. (OBSSA amalgamated into NFO on 1 March 2024.)" },
+    { id: "nfo", title: "If the bank gets it wrong", blurb: "National Financial Ombud Scheme (NFO) — one-stop scheme for banking, credit, long- and short-term insurance complaints. 0860 800 900 · nfosa.co.za. OBSSA, Credit Ombud, OLTI and OSTI amalgamated into NFO on 1 March 2024; FAIS Ombud remains separate." },
   ]},
 ];
 

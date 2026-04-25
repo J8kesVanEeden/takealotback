@@ -1,8 +1,9 @@
 ---
 import Section from './Section.astro';
 import { TEMPLATES } from '../data/content';
+import { scanForCitations } from '../lib/citation-links';
 ---
-<Section id="templates" label="Templates · 14 ready-to-send emails">
+<Section id="templates" label={`Templates · ${TEMPLATES.length} ready-to-send emails`}>
   <div class="tb-tpl__intro">
     <h2 class="display h2 tb-tpl__head">
       Copy. Paste. <em class="tb-tpl__italic">Send.</em>
@@ -46,6 +47,20 @@ import { TEMPLATES } from '../data/content';
         <div class="mono tb-tpl__foot">
           Replace [BRACKETED] fields with your specifics. Keep a copy for your records.
         </div>
+
+        {(() => {
+          const sources = scanForCitations(`${t.scenario}\n${t.body}`);
+          return sources.length > 0 ? (
+            <div class="tb-tpl__sources">
+              <div class="mono slash-label tb-tpl__sources-label">Sources used in this template</div>
+              <ul class="tb-tpl__sources-list" aria-label={`Source citations for template ${t.code}`}>
+                {sources.map((s) => (
+                  <li><a href={s.url} class="tb-tpl__source-link">{s.label}</a></li>
+                ))}
+              </ul>
+            </div>
+          ) : null;
+        })()}
       </div>
     </div>
   ))}
@@ -161,6 +176,45 @@ import { TEMPLATES } from '../data/content';
     white-space: pre-wrap;
   }
   .tb-tpl__foot { color: var(--ink-muted); margin-top: 8px; }
+
+  .tb-tpl__sources {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--rule-soft);
+  }
+  .tb-tpl__sources-label {
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .tb-tpl__sources-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tb-tpl__source-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--paper-alt);
+    text-decoration: none;
+    transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+  }
+  .tb-tpl__source-link:hover,
+  .tb-tpl__source-link:focus-visible {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: var(--paper-tint);
+  }
 </style>
 
 <script is:inline>
