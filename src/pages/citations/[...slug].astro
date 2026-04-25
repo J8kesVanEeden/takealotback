@@ -137,26 +137,56 @@ const urls = urlFields
 
 const usedIn = (data.used_in as string[] | undefined) ?? [];
 
-// Map a `used_in:` frontmatter line to the homepage anchor (or deep-dive
-// page) that surfaces the reference. Returns null when the location
-// isn't a section a reader can navigate to from here.
+// Map a `used_in:` frontmatter line to the on-site location it references,
+// returning a URL + button label. Falls through patterns most-specific
+// first; `null` only when nothing matches (which means the entry is a
+// pure provenance note with no on-site landing).
 function usedInLink(s: string): { href: string; label: string } | null {
-  // CLAUSES[N] (slug) → anchor on the homepage's Dismantled section.
-  // Each clause renders as a <details> with id="clause-<slug>".
-  const clauseMatch = s.match(/CLAUSES\[\d+\]\s*\(([a-z0-9-]+)\)/i);
-  if (clauseMatch) return { href: `/#clause-${clauseMatch[1]}`, label: 'See on homepage →' };
-  if (/TEMPLATES/.test(s)) return { href: '/#templates', label: 'See on homepage →' };
+  // 1. CLAUSES[N] (slug) → anchored deep-link to the specific clause row.
+  const clauseSlug = s.match(/CLAUSES\[\d+\]\s*\(([a-z0-9-]+)\)/i);
+  if (clauseSlug) return { href: `/#clause-${clauseSlug[1]}`, label: 'See on homepage →' };
+
+  // 2. CLAUSES with no slug — `CLAUSES[N]`, `CLAUSES[*]`, or bare `CLAUSES`.
+  if (/\bCLAUSES\b/.test(s)) return { href: '/#dismantled', label: 'See on homepage →' };
+
+  // 3. Cross-reference to another citation file. Supports `../cases/X.md`
+  //    AND `citations/cases/X.md` (path style), since both occur in
+  //    different files' frontmatter.
+  const xref = s.match(/(?:\.\.\/|citations\/)(cases|statutes|advisories|policies|regulators|commentary)\/([A-Za-z0-9-]+)\.md/);
+  if (xref) return {
+    href: `/citations/${xref[1]}/${xref[2].toLowerCase()}`,
+    label: `See ${xref[2].replace(/-/g, ' ')} →`,
+  };
+
+  // 4. Top-level data arrays. TEMPLATE / TEMPLATES both accepted.
+  if (/\bTEMPLATES?\b/.test(s)) return { href: '/#templates', label: 'See on homepage →' };
   if (/LAW_SECTIONS/.test(s)) return { href: '/#law', label: 'See on homepage →' };
   if (/ESCALATION/.test(s)) return { href: '/#escalate', label: 'See on homepage →' };
   if (/WARRANTY_ANGLES|PLAYBOOK/.test(s)) return { href: '/#warranties', label: 'See on homepage →' };
   if (/POLICY_SUMMARY/.test(s)) return { href: '/#policies', label: 'See on homepage →' };
   if (/QUICK_HITS/.test(s)) return { href: '/#short-version', label: 'See on homepage →' };
-  if (/FAQ/.test(s)) return { href: '/#faq', label: 'See on homepage →' };
+  if (/FAQ\b/.test(s)) return { href: '/#faq', label: 'See on homepage →' };
+
+  // 5. Component file names — map to the section they render.
   if (/AboutSection/.test(s)) return { href: '/#about', label: 'See on homepage →' };
   if (/LawSection/.test(s)) return { href: '/#law', label: 'See on homepage →' };
+  if (/PoliciesSection/.test(s)) return { href: '/#policies', label: 'See on homepage →' };
+  if (/EscalateSection/.test(s)) return { href: '/#escalate', label: 'See on homepage →' };
+  if (/WarrantiesSection/.test(s)) return { href: '/#warranties', label: 'See on homepage →' };
+  if (/DismantledSection/.test(s)) return { href: '/#dismantled', label: 'See on homepage →' };
+  if (/TemplatesSection/.test(s)) return { href: '/#templates', label: 'See on homepage →' };
+  if (/QuickHits/.test(s)) return { href: '/#short-version', label: 'See on homepage →' };
+  if (/ThreeThings/.test(s)) return { href: '/#three-things', label: 'See on homepage →' };
+  if (/FAQSection/.test(s)) return { href: '/#faq', label: 'See on homepage →' };
+  if (/Hero/.test(s)) return { href: '/#home', label: 'See on homepage →' };
+  // Footer copyright/credits row — no anchor; jump to about which is closest.
+  if (/Footer/.test(s)) return { href: '/#about', label: 'See on homepage →' };
+
+  // 6. Deep-dive page references.
   if (/onus-of-proof\.md/.test(s)) return { href: '/onus-of-proof', label: 'Onus of proof →' };
   if (/aedilitian-remedies\.md/.test(s)) return { href: '/aedilitian-remedies', label: 'Aedilitian remedies →' };
   if (/limits\.md/.test(s)) return { href: '/limits', label: 'Limits →' };
+
   return null;
 }
 ---

@@ -6,7 +6,7 @@ primary_url: "https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corpora
 wayback_url: "https://web.archive.org/web/*/https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
 retrieved: "2026-04-24"
 used_in:
-  - "Provenance — supports the obiter characterisation of Motus s 69(d) reading on the site"
+  - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus angle — supports the obiter characterisation of s 69(d) reading"
 copyright: "Cliffe Dekker Hofmeyr. Short excerpt / summary only — fair dealing under s 12(1)(a) Copyright Act."
 ---
 
