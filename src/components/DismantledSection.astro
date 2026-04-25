@@ -125,11 +125,11 @@ function hay(c: typeof CLAUSES[number]) {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    gap: 24px;
-    margin-bottom: 32px;
+    gap: var(--space-5);
+    margin-bottom: var(--space-7);
   }
   .tb-dm__head { max-width: 18ch; margin: 0; }
-  .tb-dm__italic { font-weight: 400; font-style: italic; }
+  /* italic emphasis: see global `.display em` rule in base.css */
   .tb-dm__lede {
     max-width: 42ch;
     margin: 0;

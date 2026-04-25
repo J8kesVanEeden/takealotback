@@ -69,10 +69,10 @@ function pad(n: number) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
     gap: clamp(32px, 5vw, 72px);
-    margin-bottom: 48px;
+    margin-bottom: var(--space-7);
   }
   .tb-law__head { max-width: 18ch; margin: 0; }
-  .tb-law__italic { font-weight: 400; font-style: italic; }
+  /* italic emphasis: see global `.display em` rule in base.css */
   .tb-law__lede {
     max-width: 46ch;
     margin: 0;

@@ -60,7 +60,10 @@ const description = "The page you asked for isn't on TakealotBack.com. Either it
     margin: 0 0 clamp(20px, 3vw, 32px);
     color: var(--ink);
   }
-  .tb-404__italic { font-weight: 400; font-style: italic; color: var(--ink-muted); }
+  /* italic emphasis: see global `.display em` rule in base.css.
+   * 404 keeps a muted color for the "0" — it's the only italic accent
+   * on the page that's intentionally softer than headline ink. */
+  .tb-404__italic { color: var(--ink-muted); }
   .tb-404__dot { color: var(--accent); }
   .tb-404__lede {
     font-family: var(--font-body);
