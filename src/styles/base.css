@@ -5,8 +5,10 @@ html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   /* Keeps the sticky header from covering targets when jumping via
-     hash-nav or scrollIntoView(). Header is ~52px; 72px gives a little breathing room. */
-  scroll-padding-top: 72px;
+   * hash-nav or scrollIntoView(). The header (Header.astro) is ~36px
+   * tall (10px padding + ~11px font + 5px top); 56px lands the target
+   * a little below the header without leaving a gulf. */
+  scroll-padding-top: 56px;
 }
 body {
   background: var(--paper);
@@ -190,14 +192,15 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .btn.ghost { border-color: var(--rule); color: var(--ink-soft); }
 .btn.ghost:hover { border-color: var(--ink); color: var(--ink); background: transparent; }
 
-/* Section wrappers */
+/* Section wrappers — see also Section.astro for the actual rendered
+ * `.tb-section--pad` rules. The `.section` selector here is a legacy
+ * baseline kept only for raw <section> markup outside Section.astro. */
 .section {
   padding: clamp(64px, 7vw, 120px) 0;
   position: relative;
   border-top: 1px solid var(--rule);
 }
 .section:first-of-type { border-top: 0; }
-.section.tight { padding: clamp(48px, 5vw, 80px) 0; }
 
 /* '+' markers distributed along the top rule */
 .plus-rule {
@@ -338,4 +341,114 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Print: when a user prints from the homepage, the goal is the templates
+   section — they're sending or filing email correspondence to Takealot.
+   Hide everything else (header, hero, dismantled, law, escalate, FAQ,
+   tweaks, modal, footer); show every template body in a clean black-on-
+   white layout that prints page-per-template. */
+@media print {
+  /* Hide site chrome and non-template sections */
+  header[data-site-header],
+  footer.tb-footer,
+  dialog.tb-triage,
+  aside.tb-tweaks,
+  button.tb-tweaks-fab,
+  .tb-hero,
+  #short-version,
+  #three-things,
+  #dismantled,
+  #law,
+  #warranties,
+  #escalate,
+  #policies,
+  #about,
+  #faq,
+  .skip-link,
+  .tb-section .tb-plus-row,
+  .tb-section__label {
+    display: none !important;
+  }
+
+  /* Strip section padding so templates start at the top of page 1 */
+  .tb-section.tb-section--pad { padding: 0 !important; border-top: 0 !important; }
+  body { background: white !important; color: black !important; }
+  .page { padding: 0 !important; max-width: none !important; }
+
+  /* Force every template body open (the accordion JS is gone in print) */
+  .tb-tpl__body-wrap[hidden],
+  .tb-tpl__body-wrap {
+    display: block !important;
+  }
+  /* Hide the action chip + collapsed-row arrow */
+  .tb-tpl__row .tb-tpl__action,
+  .tb-tpl__copy,
+  .tb-tpl__theader,
+  .tb-tpl__sources {
+    display: none !important;
+  }
+
+  /* Each template starts on its own page, with a clean header */
+  .tb-tpl__row-wrap {
+    page-break-before: always;
+    page-break-inside: avoid;
+    border: 0 !important;
+    padding: 16mm 0 !important;
+  }
+  .tb-tpl__row-wrap:first-of-type { page-break-before: auto; }
+
+  .tb-tpl__row {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 8mm !important;
+    border-bottom: 1px solid #999 !important;
+    background: transparent !important;
+    color: black !important;
+  }
+  .tb-tpl__code { color: black !important; font-weight: 700; }
+  .tb-tpl__title { font-size: 16pt !important; color: black !important; }
+  .tb-tpl__scenario { font-size: 10pt !important; color: #444 !important; }
+
+  .tb-tpl__card {
+    border: 0 !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+  .tb-tpl__divider, .tb-tpl__sublabel { display: none !important; }
+
+  .tb-tpl__subject {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: black !important;
+    margin: 6mm 0 4mm;
+    font-size: 11pt;
+  }
+  .tb-tpl__subject::before {
+    content: "Subject: ";
+    font-weight: 400;
+    color: #555;
+  }
+
+  .tb-tpl__pre {
+    font-family: var(--font-mono);
+    font-size: 10pt !important;
+    color: black !important;
+    white-space: pre-wrap !important;
+    line-height: 1.5;
+  }
+
+  .tb-tpl__foot { margin-top: 8mm; color: #666 !important; font-size: 9pt; }
+
+  /* On deep-dive sub-pages and citation pages, just print the prose
+     body without the navigation chrome. */
+  .tb-sub__crumbs, .tb-cite__crumbs, .tb-sub__foot, .tb-cite__foot,
+  .tb-sub__sources, .tb-cite__urls, .tb-cite__usedin {
+    display: none !important;
+  }
+
+  /* No links underlined in print bodies — easier to read */
+  a { color: black !important; text-decoration: none !important; }
+
+  /* Page margins and base print typography */
+  @page { margin: 18mm 16mm; }
 }

@@ -126,6 +126,14 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
     border-color: var(--paper);
     color: var(--paper);
   }
+  /* The site-wide focus ring uses --accent against a light paper
+   * background; on the dark footer the orange accent has too little
+   * contrast against the ink backdrop. Override to a paper-coloured
+   * outline so keyboard users can see where focus lands. */
+  .tb-footer__link:focus-visible {
+    outline: 2px solid var(--paper);
+    outline-offset: 2px;
+  }
   .tb-footer__meta-label {
     color: color-mix(in oklab, var(--paper) 50%, transparent);
     margin-top: 6px;
