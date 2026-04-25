@@ -9,6 +9,25 @@
 /aedilitian-remedies/    /aedilitian-remedies    301
 /limits/                 /limits                 301
 /citations/              /citations              301
+
+# /citations/<group>/ — group folder URLs (cases, statutes, etc.) aren't
+# real pages; route them to the citations index. These rules MUST sit
+# above the generic wildcard so they win the first-match.
+/citations/cases/        /citations              301
+/citations/statutes/     /citations              301
+/citations/advisories/   /citations              301
+/citations/policies/     /citations              301
+/citations/regulators/   /citations              301
+/citations/commentary/   /citations              301
+# Same group folders without trailing slash, also 404 by default.
+/citations/cases         /citations              301
+/citations/statutes      /citations              301
+/citations/advisories    /citations              301
+/citations/policies      /citations              301
+/citations/regulators    /citations              301
+/citations/commentary    /citations              301
+
+# Trailing slash on actual citation pages (.../<group>/<slug>/) → no slash.
 /citations/*/            /citations/:splat       301
 
 # Strip the .html suffix Astro emits with `build.format: 'file'`. The
