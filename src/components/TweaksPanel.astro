@@ -58,7 +58,7 @@ const groups = [
       <div class="mono tb-tweaks__grouplabel">{g.label}</div>
       <div class="tb-tweaks__chips">
         {g.opts.map((o) => (
-          <button type="button" class="chip tb-tweaks__chip" data-tweak-key={g.key} data-tweak-val={o.v}>{o.l}</button>
+          <button type="button" class="chip tb-tweaks__chip" data-tweak-key={g.key} data-tweak-val={o.v} aria-pressed="false">{o.l}</button>
         ))}
       </div>
     </div>
