@@ -39,23 +39,36 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
 
   // Regulators and bodies
   { test: /Info Regulator|Information Regulator/i, link: { url: '/citations/regulators/info-regulator-2026-04-24', label: 'Information Regulator' } },
+  // CGSO contact details — matches full name in template prose. Specific
+  // patterns above (Voltex, Advisory Note) win when present because PATTERNS
+  // are evaluated in order.
+  { test: /Consumer Goods (?:and|&) Services Ombud|cgso\.org\.za/i, link: { url: '/citations/regulators/cgso-contacts-2026-04-24', label: 'CGSO contact details' } },
+  { test: /National Consumer Commission|\bNCC\b|thencc\.org\.za/i, link: { url: '/citations/regulators/ncc-contacts-2026-04-24', label: 'NCC contact details' } },
+  { test: /Advertising Regulatory Board|\bARB\b|arb\.org\.za/i, link: { url: '/citations/regulators/arb-2026-04-24', label: 'ARB contact details' } },
+  { test: /Small Claims Court|\bSCC\b|R\s?20[, ]?000/i, link: { url: '/citations/regulators/scc-threshold-2026-04-24', label: 'Small Claims Court' } },
+  { test: /National Financial Ombud|\bNFO\b|nfosa/i, link: { url: '/citations/regulators/nfo-amalgamation-2026-04-24', label: 'NFO scope' } },
 
   // Statutes — Reg 44 (CPA Regulations) before "CPA" so it doesn't collide
   { test: /\bReg\s*44|Regulation\s*44|CPA\s*Reg/i, link: { url: '/citations/statutes/cpa-regulations-2011', label: 'CPA Regulations (Reg 44 grey list)' } },
 
-  // CPA generic (matches "CPA s56", "CPA s56(2)", "CPA s55(2)(c)", "s53(1)(a) framing", etc.)
-  { test: /\bCPA\s|CPA$/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
-  // Bare s53(1)(a) framing — without "CPA" prefix — also CPA
-  { test: /^s\s*5[0-9]/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
+  // CPA — accept the abbreviation OR the full name, OR a bare section
+  // reference like "section 56" / "s 56" (most bare section refs on this
+  // site are CPA — when they aren't, the more specific ECT / POPIA / TMA
+  // patterns below catch the prose context first).
+  { test: /\bCPA\s|CPA$|Consumer Protection Act/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
+  { test: /^s\s*5[0-9]|\bsection\s+5[0-9]/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
 
   // ECT Act
-  { test: /\bECT\b/i, link: { url: '/citations/statutes/ect-act-2002', label: 'Electronic Communications and Transactions Act' } },
+  { test: /\bECT\b|Electronic Communications and Transactions/i, link: { url: '/citations/statutes/ect-act-2002', label: 'Electronic Communications and Transactions Act' } },
 
   // POPIA
-  { test: /\bPOPIA\b/i, link: { url: '/citations/statutes/popia-2013', label: 'Protection of Personal Information Act' } },
+  { test: /\bPOPIA\b|Protection of Personal Information/i, link: { url: '/citations/statutes/popia-2013', label: 'Protection of Personal Information Act' } },
 
   // TMA / Trade Marks
   { test: /\bTMA\b|Trade Marks/i, link: { url: '/citations/statutes/tma-1993', label: 'Trade Marks Act' } },
+
+  // Prescription Act
+  { test: /Prescription Act/i, link: { url: '/citations/statutes/prescription-act-1969', label: 'Prescription Act' } },
 
   // Constitution
   { test: /Constitution/i, link: { url: '/citations/statutes/constitution-s16', label: 'Constitution s 16' } },
