@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { remarkCitationMdLinks } from './src/lib/remark-citation-md-links.mjs';
 
 export default defineConfig({
   site: 'https://takealotback.com',
@@ -9,6 +10,9 @@ export default defineConfig({
   },
   devToolbar: {
     enabled: false,
+  },
+  markdown: {
+    remarkPlugins: [remarkCitationMdLinks],
   },
   integrations: [
     sitemap({
