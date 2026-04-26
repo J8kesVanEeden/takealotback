@@ -439,14 +439,9 @@ Subfolders:
 `;
 }
 
-function citationSlug(filename) {
-  return filename.replace(/\.md$/, '').toLowerCase();
-}
-
 function genCitationsIndex(byCategory) {
   const blocks = Object.entries(byCategory).map(([cat, files]) => {
     const rows = files.map(f => {
-      const slug = citationSlug(basename(f));
       const fm = readFrontmatter(f);
       const title = fm.title || basename(f, '.md');
       return `- [[${cat}/${basename(f, '.md')}\\|${title}]] — ${fm.metaDescription || fm.short || ''}`;
@@ -487,7 +482,6 @@ function readFrontmatter(file) {
 
 function genCitationFile(srcFile, category) {
   const content = readFileSync(srcFile, 'utf-8');
-  const fm = readFrontmatter(srcFile);
   const slug = basename(srcFile, '.md').toLowerCase();
   const liveUrl = `https://takealotback.com/citations/${category}/${slug}`;
   // Re-emit the file with a header pointing to the live URL.
