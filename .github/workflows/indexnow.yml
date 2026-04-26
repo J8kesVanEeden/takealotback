@@ -1,0 +1,73 @@
+# IndexNow — push every URL in the sitemap to Bing/Yandex/Seznam after
+# every deploy. Google does NOT support IndexNow (Google Search Console
+# is the only path for Google; sitemap is already submitted there).
+#
+# Sequence:
+#   push to main → CF Pages redeploys → cf-cache-purge fires → this
+#   workflow fires (workflow_run chained) → fetches the live sitemap →
+#   POSTs every URL to api.indexnow.org → Bing/Yandex crawl within minutes.
+#
+# Key proof of ownership: public/30f29a0d9eb1b51aa8ce75c6b754637d.txt
+# contains the same key as a string. Hosting it at the root of the
+# domain is how IndexNow validates we own takealotback.com.
+#
+# No GitHub secrets needed — IndexNow is keyless from the workflow's
+# perspective; the key is public, the proof is "you own the domain that
+# hosts it".
+name: IndexNow submit
+
+on:
+  workflow_run:
+    workflows: ["Cloudflare cache purge"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  submit:
+    # Only run if the cache-purge workflow that triggered us actually
+    # succeeded. No point submitting URLs if the cache is still serving
+    # stale HTML.
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch sitemap and POST to IndexNow
+        run: |
+          set -euo pipefail
+          SITEMAP="https://takealotback.com/sitemap-0.xml"
+          KEY="30f29a0d9eb1b51aa8ce75c6b754637d"
+          KEY_LOCATION="https://takealotback.com/${KEY}.txt"
+
+          # Pull every <loc> from the sitemap, build a JSON array.
+          urls_json=$(
+            curl -fsSL "$SITEMAP" \
+              | grep -oE '<loc>[^<]+</loc>' \
+              | sed -E 's@<loc>(.*)</loc>@\1@' \
+              | jq -R . | jq -s .
+          )
+
+          count=$(echo "$urls_json" | jq 'length')
+          echo "submitting $count URLs to IndexNow"
+
+          payload=$(jq -n \
+            --arg host "takealotback.com" \
+            --arg key "$KEY" \
+            --arg keyLocation "$KEY_LOCATION" \
+            --argjson urlList "$urls_json" \
+            '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}')
+
+          # IndexNow returns 200 on success, 202 on accepted (queued).
+          # 4xx codes mean a config problem we want to see.
+          response=$(curl -fsSL -w "\n%{http_code}" -X POST \
+            "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data "$payload")
+
+          status=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+          echo "HTTP $status"
+          [ -n "$body" ] && echo "$body"
+          case "$status" in
+            200|202) echo "✓ IndexNow accepted $count URLs" ;;
+            *) echo "::error::IndexNow returned $status"; exit 1 ;;
+          esac
