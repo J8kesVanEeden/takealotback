@@ -111,14 +111,7 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 
 ### Tier 2 — needs Jakes setup from desktop
 
-- [ ] **Auto cache-purge on deploy** (PRIORITY):
-  1. dash.cloudflare.com → My Profile → API Tokens → Create Custom Token
-     - Permissions: Zone → Cache Purge → Purge
-     - Zone Resources: Include → Specific zone → takealotback.com
-  2. Copy the generated token
-  3. github.com/J8kesVanEeden/takealotback → Settings → Secrets and variables → Actions → New repository secret → Name: `CF_API_TOKEN`, Value: paste token
-  4. Same page → New repository secret → Name: `CF_ZONE_ID`, Value: zone ID from CF dashboard (right sidebar of zone overview, "API" section)
-  5. Tell Claude — Claude will add `.github/workflows/cf-cache-purge.yml` that runs after every push to main and purges the edge cache. Until then, manual purge required after each push (Cloudflare dashboard → Caching → Configuration → Purge Everything).
+- [x] **Auto cache-purge on deploy** — `.github/workflows/cf-cache-purge.yml` runs after every push to main, sleeps 90s for CF Pages redeploy, then calls Cloudflare's API to purge the zone. Required secrets `CF_API_TOKEN` and `CF_ZONE_ID` set in repo settings.
 - [ ] **CF Web Analytics actually enable** (PRIORITY — same setup window):
   - **Automatic**: dash.cloudflare.com → Web Analytics → Add Site → takealotback.com → toggle "Automatic Setup". CF injects the beacon at the edge — no code change.
   - **Manual**: dash.cloudflare.com → Web Analytics → Manage Site → copy the `data-cf-beacon` token. Tell Claude — Claude will add the script to Layout.astro's `<head>`.

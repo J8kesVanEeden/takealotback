@@ -1,0 +1,52 @@
+# Auto-purge the Cloudflare edge cache after every push to main.
+#
+# Cloudflare Pages doesn't purge its own cache on redeploy by default —
+# the new build sits at the origin while the edge keeps serving the old
+# HTML for the configured Cache-Control window. We were re-purging
+# manually after every deploy. This workflow eliminates that step.
+#
+# Sequence:
+#   push to main → CF Pages starts rebuilding (~60 s typical)
+#                → this workflow starts in parallel
+#                → workflow sleeps 90 s (gives Pages time to finish)
+#                → curls Cloudflare's API to purge_everything for the zone
+#                → next request from any reader fetches fresh HTML
+#
+# Required secrets (Settings → Secrets and variables → Actions):
+#   CF_API_TOKEN — token scoped to Zone · Cache Purge · Purge for takealotback.com
+#   CF_ZONE_ID   — 32-char hex zone identifier from CF dashboard Overview → API panel
+#
+# Manual run available via the Actions tab (workflow_dispatch).
+name: Cloudflare cache purge
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Cloudflare Pages to finish redeploying
+        # 90 s is comfortably longer than Pages' usual rebuild for this
+        # site (currently ~30–45 s). Cheap insurance against purging
+        # the cache before the new build is at origin.
+        run: sleep 90
+
+      - name: Purge entire zone cache
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+        run: |
+          if [ -z "$CF_API_TOKEN" ] || [ -z "$CF_ZONE_ID" ]; then
+            echo "::error::CF_API_TOKEN or CF_ZONE_ID not set in repo secrets."
+            exit 1
+          fi
+          curl -fsSL -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+            -H "Authorization: Bearer ${CF_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
+          echo ""
+          echo "✓ cache purged"
