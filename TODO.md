@@ -134,6 +134,7 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 - [ ] Annual case-law refresh (next: ~April 2027) — re-verify SCA / Concourt decisions; check for any new judgments interpreting CPA s 56 / s 69
 - [ ] Annual regulator-details refresh
 - [ ] Watch for: Small Claims Court threshold raise from R20,000 → R50,000 (consultations underway as of late 2025; adjust ESCALATION + Bodies card if it lands)
+- [ ] **Magistrates' Court thresholds** — currently quoted as District R200,000 / Regional R400,000 (last set by GG 2014). Verify at next quarterly refresh; commentary suggests possible raise to R400k district / R600k regional under review. Affects Clause 13 + ESCALATION T9 + LawSection Bodies card if updated.
 
 ### Citation expansion candidates — collaborative work needed
 
