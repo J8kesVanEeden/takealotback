@@ -7,7 +7,16 @@ import Footer from '../components/Footer.astro';
 import TriageModal from '../components/TriageModal.astro';
 import TweaksPanel from '../components/TweaksPanel.astro';
 import JsonLd from '../components/JsonLd.astro';
-import { GITHUB_REPO_URL, LAST_REVIEWED } from '../data/content';
+import { LAST_REVIEWED } from '../data/content';
+import {
+  buildOrganization,
+  buildWebSite,
+  buildLogo,
+  buildOgImage,
+  buildFaqPage,
+  buildHomeCollectionPage,
+  buildTemplatesHowToList,
+} from '../lib/schema';
 
 interface Props {
   title: string;
@@ -21,105 +30,37 @@ interface Props {
    *  content update also bumps the schema, which is the single point
    *  of truth we want. */
   collectionSchema?: boolean;
+  /** When true, emit a HowTo ItemList describing every email template.
+   *  Should only be true on the homepage where templates render. */
+  templatesSchema?: boolean;
 }
 
-const { title, description, canonicalPath = '/', faqSchema = false, collectionSchema = false } = Astro.props;
+const { title, description, canonicalPath = '/', faqSchema = false, collectionSchema = false, templatesSchema = false } = Astro.props;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}${canonicalPath}`;
 
-// --- JSON-LD: Organization (publisher) + WebSite ---
-const organization = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  '@id': 'https://www.milkmoonstudio.com/#organization',
-  name: 'Milk Moon Studio',
-  url: 'https://www.milkmoonstudio.com/',
-  email: 'mailto:jakes@milkmoonstudio.com',
-};
+// JSON-LD — every page emits Organization + WebSite + Logo + ImageObject.
+// Page-specific schema (FAQPage, CollectionPage, HowTo list) is opt-in
+// via Props so non-home pages don't carry irrelevant blocks.
+const organization = buildOrganization();
+const website = buildWebSite();
+const logo = buildLogo();
+const ogImage = buildOgImage();
 
-const website = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  '@id': `${siteUrl}/#website`,
-  url: `${siteUrl}/`,
-  name: 'TakealotBack.com',
-  alternateName: 'TakealotBack',
-  description: "A non-commercial, plain-English South African consumer-rights reference for disputes with Takealot. Maps their returns policy against the CPA, ECT Act, POPIA, and common law.",
-  inLanguage: 'en-ZA',
-  publisher: { '@id': 'https://www.milkmoonstudio.com/#organization' },
-  license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
-  copyrightYear: 2026,
-  isAccessibleForFree: true,
-  creativeWorkStatus: 'Published',
-};
+const faqPage = faqSchema
+  ? buildFaqPage((await import('../data/content')).FAQ)
+  : null;
 
-// --- Optional FAQPage JSON-LD for the homepage ---
-let faqPage: Record<string, unknown> | null = null;
-if (faqSchema) {
-  const { FAQ } = await import('../data/content');
-  faqPage = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    '@id': `${siteUrl}/#faq`,
-    mainEntity: FAQ.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: f.a,
-      },
-    })),
-  };
-}
+const collectionPage = collectionSchema
+  ? buildHomeCollectionPage({
+      clauses: (await import('../data/content')).CLAUSES,
+      templates: (await import('../data/content')).TEMPLATES,
+    })
+  : null;
 
-// --- Optional CollectionPage JSON-LD for the homepage ---
-// Describes the single-page reference as an index of named sections (quick
-// hits, clauses, templates, escalation tiers, etc.). Counts derive from
-// content.ts at build time. `dateModified` piggybacks on LAST_REVIEWED —
-// always correct, never drifts from the site content, update by editing
-// src/data/content.ts.
-let collectionPage: Record<string, unknown> | null = null;
-if (collectionSchema) {
-  const { CLAUSES, TEMPLATES } = await import('../data/content');
-  const isoReviewed = LAST_REVIEWED.replace(/\./g, '-');
-  collectionPage = {
-    '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
-    '@id': `${siteUrl}/#collection`,
-    url: `${siteUrl}/`,
-    name: 'TakealotBack.com',
-    description: "A single-page reference to South African consumer rights when Takealot's returns policy oversteps the CPA, ECT Act, or POPIA.",
-    inLanguage: 'en-ZA',
-    isPartOf: { '@id': `${siteUrl}/#website` },
-    dateModified: isoReviewed,
-    datePublished: '2026-04-23',
-    license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
-    isAccessibleForFree: true,
-    about: [
-      'Consumer Protection Act 68 of 2008',
-      'Electronic Communications and Transactions Act 25 of 2002',
-      'Protection of Personal Information Act 4 of 2013',
-    ],
-    mainEntity: {
-      '@type': 'ItemList',
-      numberOfItems: CLAUSES.length + TEMPLATES.length,
-      itemListElement: [
-        ...CLAUSES.map((c, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          url: `${siteUrl}/#clause-${c.slug}`,
-          name: `Clause ${c.n} — ${c.title}`,
-        })),
-        ...TEMPLATES.map((t, i) => ({
-          '@type': 'ListItem',
-          position: CLAUSES.length + i + 1,
-          url: `${siteUrl}/#template-${t.code}`,
-          name: `Template ${t.code} — ${t.title}`,
-        })),
-      ],
-    },
-  };
-}
+const templatesHowTo = templatesSchema
+  ? buildTemplatesHowToList((await import('../data/content')).TEMPLATES)
+  : null;
 ---
 <!doctype html>
 <html lang="en-ZA">
@@ -173,8 +114,11 @@ if (collectionSchema) {
     {/* Baseline JSON-LD on every page */}
     <JsonLd data={organization} />
     <JsonLd data={website} />
+    <JsonLd data={logo} />
+    <JsonLd data={ogImage} />
     {faqPage && <JsonLd data={faqPage} />}
     {collectionPage && <JsonLd data={collectionPage} />}
+    {templatesHowTo && <JsonLd data={templatesHowTo} />}
     <slot name="head" />
 
     {/* Tweaks: apply persisted data attributes before first paint to avoid flash.

@@ -3,7 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Section from '../../components/Section.astro';
 import JsonLd from '../../components/JsonLd.astro';
-import { LAST_REVIEWED } from '../../data/content';
+import { buildCitationArticle, buildBreadcrumb } from '../../lib/schema';
 // Resolver lives in src/lib/used-in-link.mjs so scripts/check-used-in.mjs
 // can import the exact same logic at build time and assert that every
 // used_in line resolves to a non-null destination. Single source of truth.
@@ -62,60 +62,21 @@ const description =
   (data.citation ? `${data.citation}. ` : '') +
   `${groupLabel[top] ?? 'Source'} mirrored from primary source on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`;
 
-// Pick a JSON-LD @type that matches the citation type. schema.org has
-// Legislation, LegalCaseDocument, and CreativeWork — using the right
-// one nudges Google's KG and AEO toolchains toward the correct surface.
-const articleType = ({
-  cases: 'LegalCaseDocument',
-  statutes: 'Legislation',
-  policies: 'CreativeWork',
-  regulators: 'GovernmentService',
-  advisories: 'Article',
-  commentary: 'Article',
-} as Record<string, string>)[top] ?? 'Article';
+// JSON-LD: type-aware Article (LegalCaseDocument / Legislation / etc.)
+// + BreadcrumbList. Type and per-group `about` topics resolve in
+// src/lib/schema.ts.
+const article = buildCitationArticle({
+  group: top,
+  canonical,
+  data,
+  description,
+});
 
-const article = {
-  '@context': 'https://schema.org',
-  '@type': articleType,
-  '@id': `${canonical}#article`,
-  headline: data.title,
-  description: description.slice(0, 280),
-  url: canonical,
-  mainEntityOfPage: canonical,
-  inLanguage: 'en-ZA',
-  isAccessibleForFree: true,
-  isPartOf: { '@id': `${siteUrl}/#website` },
-  publisher: { '@id': 'https://www.milkmoonstudio.com/#organization' },
-  author: { '@id': 'https://www.milkmoonstudio.com/#organization' },
-  dateModified: (data.retrieved as string)?.replace(/\./g, '-') ?? LAST_REVIEWED.replace(/\./g, '-'),
-  about: data.citation ?? data.title,
-};
-
-// Resolve a defensible JSON-LD `datePublished` from the frontmatter
-// `date:` field. Three cases:
-//   1. Full ISO (`YYYY-MM-DD`) — use as-is.
-//   2. Year only (`YYYY`) — older judgments where the exact date isn't
-//      on SAFLII or the lawreports. Synthesise `YYYY-01-01` so the
-//      schema is parseable and doesn't claim "published today".
-//   3. "undated" or anything else — drop `datePublished` from the
-//      schema entirely. Better to omit than to lie.
-{
-  const raw = (data.date as string | undefined) ?? '';
-  const full = raw.match(/\d{4}-\d{2}-\d{2}/)?.[0];
-  const yearOnly = raw.match(/^\d{4}$/)?.[0];
-  if (full) (article as Record<string, unknown>).datePublished = full;
-  else if (yearOnly) (article as Record<string, unknown>).datePublished = `${yearOnly}-01-01`;
-}
-
-const breadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
-    { '@type': 'ListItem', position: 2, name: 'Citations', item: `${siteUrl}/citations` },
-    { '@type': 'ListItem', position: 3, name: data.title, item: canonical },
-  ],
-};
+const breadcrumb = buildBreadcrumb([
+  { name: 'Home', url: `${siteUrl}/` },
+  { name: 'Citations', url: `${siteUrl}/citations` },
+  { name: data.title as string, url: canonical },
+]);
 
 // Quick helper to display arbitrary frontmatter URL fields. Keep this in
 // sync with the URL-shaped fields actually used across

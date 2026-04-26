@@ -63,7 +63,7 @@ function* walk(dir) {
   }
 }
 
-function check(md, file) {
+function check(md) {
   const fm = md.match(/^---\n([\s\S]*?)\n---/);
   if (!fm) return ['no frontmatter'];
   const text = fm[1];
@@ -106,7 +106,7 @@ function main() {
   for (const file of walk(CITATIONS)) {
     total++;
     const md = readFileSync(file, 'utf-8');
-    const issues = check(md, file);
+    const issues = check(md);
     for (const i of issues) findings.push({ file: relative(ROOT, file), issue: i });
   }
 

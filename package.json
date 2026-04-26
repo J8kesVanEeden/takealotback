@@ -23,6 +23,7 @@
     "check:live": "node scripts/check-live.mjs",
     "check:all": "npm run check && npm run check:counts && npm run check:used-in && npm run check:frontmatter && npm run check:anchors && npm run check:chips && npm run check:headings && npm run check:citations && npm run check:html && npm run check:links",
     "build:og": "node scripts/build-og.mjs",
+    "build:logo": "node scripts/build-logo.mjs",
     "archive": "node scripts/archive-wayback.mjs",
     "prepare": "husky"
   },
