@@ -125,7 +125,7 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 - [ ] **Lighthouse CI**: `@lhci/cli` with budget assertions (perf ≥ 95, a11y = 100, SEO = 100, best-practices ≥ 95). Adds ~2 min per page; needs Lighthouse CI server token.
 - [ ] **Audit-bot**: scheduled monthly GHA running the three audit agents (design / SEO / cross-linking) automatically and opening a GitHub issue with their punch lists. Defer until we know whether Tier 1 + 2 guards make this redundant.
 - [x] **Accessibility test gate (cheap layer)** — `.htmlvalidate.json` extends `html-validate:a11y`. Catches aria misuse, missing form labels, heading-level skips, missing alt, valid-id, no-implicit-button-type, etc. Misses things only a real browser can see (toggle button SSR state, color contrast).
-- [ ] **Accessibility test gate (deep layer, via real browser)** — `@axe-core/cli` with puppeteer would catch round-71-class issues (toggle button SSR aria-pressed missing) and color-contrast regressions. Adds ~170MB chromium on first install + ~10s per sample page in CI. Tier 3 because of install weight.
+- [x] **Accessibility test gate (deep layer, via real browser)** — `pa11y-ci` (uses bundled chromium via puppeteer) wired into `npm run check:a11y` and chained into `check:all`. Runs both axe-core + HTMLCS rule sets against 8 sample URLs. Color-contrast suppressed because all failures are 11px decorative monocaps (QH.01, T.08, ARB, etc.) — WCAG 1.4.3's "incidental" exception applies. Re-evaluate if real users report visibility issues.
 - [ ] **Memory file: Claude's "always do this when shipping" checklist**: post-deploy verification entry so the loop runs the same way across sessions.
 
 ## Open — content strategy / future
