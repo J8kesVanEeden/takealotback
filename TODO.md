@@ -135,6 +135,36 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 - [ ] Annual regulator-details refresh
 - [ ] Watch for: Small Claims Court threshold raise from R20,000 → R50,000 (consultations underway as of late 2025; adjust ESCALATION + Bodies card if it lands)
 
+### Citation expansion candidates — collaborative work needed
+
+Each entry below would strengthen the citations vault but **needs primary-source verification with Jakes present**. Adding a citation speculatively from training-data recall is how we shipped Bandera last cycle. Don't go solo.
+
+**Cases worth adding (highest value first):**
+- [ ] **CGSO v Voltex follow-up** — there are subsequent NCT/High Court decisions interpreting the CGSO Code as compulsory. Identify and snapshot. Strengthens Clause 13 + Voltex backbone.
+- [ ] **Recent CPA s 55 / s 56 SCA decisions (2022–2026)** — there have been further appellate-level interpretations of the s 56 quality warranty post-Motus. Worth a SAFLII sweep before next quarterly review.
+- [ ] **NCT decisions on online retail specifically** — Vonk is good but old-school motor dealer. Worth identifying NCT cases involving online platforms (Takealot itself, or a comparable e-tailer) — would strengthen the digital-only-defects + marketplace-seller clauses.
+- [ ] **Glaston House complementary cases** — modern AD decisions reinforcing the three-part aedilitian test (post-1995). Currently relying on 1977 + 1951 — modern reaffirmations would strengthen the latent-defect frame for digital electronics.
+
+**Statutes worth adding:**
+- [ ] **National Credit Act (NCA)** — relevant where Takealot's Mobicred / TalUp / instalment offerings are involved. Currently absent; clause set assumes outright purchase. Would let us add a credit-purchase angle to several clauses.
+- [ ] **Magistrates' Courts Act + Rules** — referenced by ESCALATION T9 ("Magistrate's Court") but no citation file. Would let us stop hand-waving the threshold and procedure.
+- [ ] **Companies Act 71 of 2008** — Naspers / Takealot Online (RF) (Pty) Ltd entity references currently rely on commentary. Adding the Act would give the entity references a primary-source backstop.
+
+**Advisories worth adding:**
+- [ ] **CGSO Advisory Notes 2–10, 12+** — currently only have Notes 1 and 11. Note 2 (cooling-off) and Note 5 (refund mechanics) would directly support clauses we already make.
+- [ ] **NCC compliance notices** — when the NCC issues a public notice against a major retailer, snapshot it. None on file yet.
+
+**Regulator-info pages worth adding:**
+- [ ] **National Consumer Tribunal (NCT) page** — currently no dedicated regulator file for the NCT itself, only individual NCT decisions in /cases/. Would help readers navigate "where do I file an NCT complaint" if that ever becomes the right route for Takealot disputes.
+- [ ] **DTIC consumer-protection page** — Department of Trade, Industry and Competition oversees the CPA. Nothing on file.
+
+**Commentary worth adding:**
+- [ ] **Norton Rose / Webber Wentzel / Bowmans CPA explainers** — diversifies the commentary set beyond Cliffe Dekker and ENS.
+- [ ] **Daily Maverick / Moneyweb on POPIA enforcement** — POPIA-side commentary is thin; one or two more sources would strengthen Clause 04 (data-storage devices).
+
+**Body expansion on existing citation files:**
+- [ ] **Add "How this applies to a Takealot dispute" sections** to the four pre-1995 cases (Dibley, Phame, Glaston, TRC) — currently they explain the legal proposition but don't bridge to a Takealot scenario. Would lift the practical-use value of these cases for a reader on the citation page.
+
 ## Non-negotiables (don't drift)
 
 These five rules are load-bearing — see [`OPERATIONS.md`](./OPERATIONS.md):

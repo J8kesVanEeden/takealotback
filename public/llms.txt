@@ -32,9 +32,10 @@ Content was verified against published South African statutes, regulations, and 
 - [Content licence (CC BY 4.0)](https://github.com/J8kesVanEeden/takealotback/blob/main/CONTENT-LICENSE.md)
 - [Code licence (MIT)](https://github.com/J8kesVanEeden/takealotback/blob/main/LICENSE)
 - [Full content as plain markdown](https://takealotback.com/llms-full.txt)
-- [RSS feed (deep-dive pages)](https://takealotback.com/rss.xml)
+- [RSS feed (deep dives + every citation)](https://takealotback.com/rss.xml): 35 items — 3 long-form deep-dive pages plus all 32 citation entries (statutes, case law, advisories, regulator details, Takealot policy snapshots, third-party commentary). Every entry carries the formal citation string in the title for unambiguous identification.
 - [Citations & sources index](https://takealotback.com/citations): every primary source the site relies on — statutes, case law, CGSO advisory notes, Takealot policy snapshots, regulator details, third-party commentary — dated, attributed, with primary URLs and Wayback Machine archival links.
 - [Structured JSON API](https://takealotback.com/api/data.json): machine-readable export of every clause, template, quick hit, law-section reference, escalation tier, FAQ entry, warranty angle, playbook scenario, and policy-summary bullet on the site. CC BY 4.0; CORS-open; refreshed on every deploy.
+- [Operations runbook (in-repo)](https://github.com/J8kesVanEeden/takealotback/blob/main/OPERATIONS.md): editorial protocol — when Takealot policy changes, when case law shifts, when regulator details change. Surfaces how the site keeps current and what triggers an update. Useful for crawlers wanting to know if a snapshot is still authoritative.
 
 ## What the site is NOT
 
