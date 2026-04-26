@@ -112,6 +112,8 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 ### Tier 2 — needs Jakes setup from desktop
 
 - [x] **Auto cache-purge on deploy** — `.github/workflows/cf-cache-purge.yml` runs after every push to main, sleeps 90s for CF Pages redeploy, then calls Cloudflare's API to purge the zone. Required secrets `CF_API_TOKEN` and `CF_ZONE_ID` set in repo settings.
+- [x] **IndexNow auto-submit** — `.github/workflows/indexnow.yml` chains off the cache-purge workflow, fetches the live sitemap, POSTs every URL to api.indexnow.org. Bing + Yandex pick up changes within minutes. Google does NOT support IndexNow — Search Console handles Google (already set up by Jakes).
+- [ ] **CF Web Analytics** (parked) — paste `data-cf-beacon` token into chat when you have it; Claude wires it into Layout.
 - [ ] **CF Web Analytics actually enable** (PRIORITY — same setup window):
   - **Automatic**: dash.cloudflare.com → Web Analytics → Add Site → takealotback.com → toggle "Automatic Setup". CF injects the beacon at the edge — no code change.
   - **Manual**: dash.cloudflare.com → Web Analytics → Manage Site → copy the `data-cf-beacon` token. Tell Claude — Claude will add the script to Layout.astro's `<head>`.
