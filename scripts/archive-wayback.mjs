@@ -69,16 +69,34 @@ async function urlsToArchive() {
 }
 
 async function loadAllSiteUrls() {
-  // Read dist/sitemap-0.xml after a build; fall back to DEFAULT_URLS if not present.
+  // Prefer the live sitemap. After a deploy, takealotback.com/sitemap-0.xml
+  // reflects exactly what's been shipped — and in CI this is the only
+  // option (no `dist/` exists in the wayback workflow's checkout).
+  // Fall back to a local dist build, then DEFAULT_URLS, in that order.
+  const liveXml = await fetchLiveSitemap();
+  const xml = liveXml ?? (await readLocalSitemap());
+  if (!xml) return DEFAULT_URLS;
+  const matches = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  if (matches.length === 0) return DEFAULT_URLS;
+  // Plus the Takealot live URLs we always want fresh snapshots of.
+  return [...matches, 'https://terms-and-policies.takealot.com/', 'https://terms-and-policies.takealot.com/terms-conditions/'];
+}
+
+async function fetchLiveSitemap() {
   try {
-    const xml = await readFile(path.join(root, 'dist', 'sitemap-0.xml'), 'utf8');
-    const matches = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-    if (matches.length === 0) return DEFAULT_URLS;
-    // Plus the Takealot live URLs
-    return [...matches, 'https://terms-and-policies.takealot.com/', 'https://terms-and-policies.takealot.com/terms-conditions/'];
-  } catch {
-    return DEFAULT_URLS;
-  }
+    const r = await fetch('https://takealotback.com/sitemap-0.xml', {
+      headers: { 'User-Agent': 'TakealotBack-archive-bot/1.0' },
+      signal: AbortSignal.timeout(15_000),
+    });
+    if (!r.ok) return null;
+    return await r.text();
+  } catch { return null; }
+}
+
+async function readLocalSitemap() {
+  try {
+    return await readFile(path.join(root, 'dist', 'sitemap-0.xml'), 'utf8');
+  } catch { return null; }
 }
 
 async function archive(url) {
