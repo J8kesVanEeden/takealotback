@@ -8,6 +8,7 @@ wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACG
 saflii_pdf: "https://www.saflii.org/za/cases/ZACGSO/2021/1.pdf"
 cgso_pdf: "https://cgso.org.za/dl/cgso%20advisory%20note%20returns.pdf"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
+metaDescription: "CGSO Advisory Note 1: confirms the onus is on the supplier (not the consumer) within 6 months of delivery to disprove a defect under CPA s 56."
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — CLAUSES[2] (damage-exclusions) 'onus on supplier' angle"

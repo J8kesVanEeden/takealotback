@@ -7,6 +7,7 @@ case_number: "18096/2017"
 judge: "Strijdom AJ"
 primary_url: "https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html"
+metaDescription: "Gauteng High Court 2021: CGSO participation is compulsory for suppliers under CPA s 82's Code of Conduct. Authority for forcing retailer engagement."
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory)"

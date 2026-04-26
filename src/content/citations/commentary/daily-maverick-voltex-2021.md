@@ -4,6 +4,7 @@ publication: "Daily Maverick"
 date: "2021-04-07"
 primary_url: "https://www.dailymaverick.co.za/article/2021-04-07-legal-victory-consumer-goods-and-services-ombudsman-wins-membership-fee-battle/"
 wayback_url: "https://web.archive.org/web/*/https://www.dailymaverick.co.za/article/2021-04-07-legal-victory-consumer-goods-and-services-ombudsman-wins-membership-fee-battle/"
+metaDescription: "Daily Maverick explainer on CGSO v Voltex (2021): plain-English corroboration that participation in the CGSO is compulsory under CPA s 82."
 retrieved: "2026-04-24"
 used_in:
   - "Corroborating source for CGSO v Voltex compulsory-participation holding — see ../cases/CGSO-Voltex-ZAGPPHC-309-2021.md"

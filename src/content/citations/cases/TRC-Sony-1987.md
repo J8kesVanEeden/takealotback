@@ -4,6 +4,7 @@ citation: "1987 (2) SA 994 (A)"
 court_or_publisher: "Appellate Division of the Supreme Court of South Africa"
 date: "1987"
 secondary_url: "https://www.lexology.com/commentary/intellectual-property/south-africa/kisch-ip/is-parallel-importation-lawful"
+metaDescription: "Appellate Division 1987: material-alteration carve-out from TMA s 34(2)(d) — altered genuine goods are no longer covered by statutory exhaustion."
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) Sony v TRC angle"

@@ -8,6 +8,7 @@ saflii_url: "https://www.saflii.org/za/cases/ZASCA/1993/90.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZASCA/1993/90.html"
 lawlibrary_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/1993/90"
 commentary_url: "https://blogs.sun.ac.za/iplaw/files/2012/08/Case-Comment-South-Africa-Copyright-parallel-importation-of-artistic-works-Frank-Hirsch-v-Roopanand-a-Brothers.pdf"
+metaDescription: "Appellate Division 1993: separate SA copyright in packaging can block parallel imports even where TMA s 34(2)(d) would otherwise allow them."
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) Frank & Hirsch angle"

@@ -7,6 +7,7 @@ judge: "Moseneke J (Sachs J concurring; unanimous court)"
 primary_url: "https://www.saflii.org/za/cases/ZACC/2005/7.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACC/2005/7.html"
 collections_concourt: "https://collections.concourt.org.za/handle/20.500.12144/2330"
+metaDescription: "ConCourt 2005: trade-mark anti-dilution under TMA s 34(1)(c) requires proof of substantial economic detriment; protects non-commercial expressive use."
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — FAQ[0] ('Is using the name Takealot in the domain legal?')"

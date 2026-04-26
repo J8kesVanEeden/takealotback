@@ -35,6 +35,9 @@ const citations = defineCollection({
     retrieved: z.string().optional(),
     used_in: z.array(z.string()).optional(),
     copyright: z.string().optional(),
+    /** Bespoke 130-160 char description used as the page's <meta name="description">
+     *  and og:description. Falls back to a formulaic string when absent. */
+    metaDescription: z.string().optional(),
     // Allow other fields without breaking — every citation has slightly
     // different metadata (case_number, judge, alternate citations, etc.)
   }).passthrough(),

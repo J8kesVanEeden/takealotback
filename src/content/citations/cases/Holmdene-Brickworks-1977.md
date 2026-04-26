@@ -7,6 +7,7 @@ case_number: "173/75"
 lawlibrary_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/1977/61/eng@1977-05-27"
 wayback_url: "https://web.archive.org/web/*/https://lawlibrary.org.za/akn/za/judgment/zasca/1977/61/eng@1977-05-27"
 wikipedia_url: "https://en.wikipedia.org/wiki/Holmdene_Brickworks_v_Roberts_Construction"
+metaDescription: "Appellate Division 1977: leading authority on the merchant-seller test for consequential damages under the actio empti in defective sale-of-goods."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — actio empti consequential-damages test"

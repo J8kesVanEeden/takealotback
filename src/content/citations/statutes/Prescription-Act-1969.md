@@ -6,6 +6,7 @@ date: "1969-06-27"
 primary_url: "https://www.gov.za/documents/prescription-act"
 wayback_url: "https://web.archive.org/web/*/https://www.gov.za/documents/prescription-act"
 saflii_url: "https://www.saflii.org/za/legis/consol_act/pa1969156/"
+metaDescription: "Prescription Act 68 of 1969: 3-year prescription window for contractual and aedilitian claims — anchors common-law remedies that outlast CPA s 56."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — 3-year ordinary prescription window for aedilitian claims"

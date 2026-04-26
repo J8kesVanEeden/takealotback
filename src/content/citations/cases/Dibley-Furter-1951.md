@@ -4,6 +4,7 @@ citation: "1951 (4) SA 73 (C)"
 court_or_publisher: "Cape Provincial Division of the Supreme Court of South Africa"
 date: "1951"
 judge: "Van Zyl J"
+metaDescription: "Cape Provincial Division 1951: canonical SA restatement of the seller's duty to disclose latent defects, foundation of the three-part aedilitian test."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — canonical three-part latent-defect test"

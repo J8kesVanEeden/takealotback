@@ -11,6 +11,7 @@ parties:
 primary_url: "https://www.saflii.org/za/cases/ZACONAF/2018/3.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACONAF/2018/3.html"
 pdf_url: "https://www.saflii.org/za/cases/ZACONAF/2018/3.pdf"
+metaDescription: "North West Consumer Affairs Court 2018: voetstoots clauses inoperative against CPA consumers; defendant ordered to refund R35,000 in full."
 retrieved: "2026-04-24"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section (attributed to NW Consumer Affairs Court, not NCT)"

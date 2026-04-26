@@ -7,6 +7,7 @@ primary_url: "https://terms-and-policies.takealot.com/"
 wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/"
 wayback_url_dated: "https://web.archive.org/web/20260425123950/https://terms-and-policies.takealot.com/"
 wayback_url_earlier: "https://web.archive.org/web/20260425103610/https://terms-and-policies.takealot.com/"
+metaDescription: "Verbatim snapshot of Takealot's returns policy (April 2026). Source-of-truth for every clause-by-clause comparison the site makes."
 retrieved: "2026-04-24"
 retrieved_by: "Takealot policy audit agent, 2026-04-24 — see commit 6f29a2e and ce0357f"
 used_in:
