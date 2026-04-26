@@ -37,10 +37,25 @@ jobs:
           SITEMAP="https://takealotback.com/sitemap-0.xml"
           KEY="30f29a0d9eb1b51aa8ce75c6b754637d"
           KEY_LOCATION="https://takealotback.com/${KEY}.txt"
+          # Cloudflare's bot-mitigation occasionally 403s the default
+          # curl UA on GitHub runners. Identify ourselves clearly so
+          # we get past + so traffic logs are useful.
+          UA="TakealotBackIndexNow/1.0 (+https://takealotback.com)"
 
           # Pull every <loc> from the sitemap, build a JSON array.
+          # Retry once if Cloudflare returns 403 — usually a transient
+          # bot-block during edge cache repopulation.
+          fetch_sitemap() {
+            curl -fsSL -A "$UA" "$SITEMAP"
+          }
+          if ! sitemap_xml=$(fetch_sitemap); then
+            echo "first fetch failed, sleeping 30s and retrying"
+            sleep 30
+            sitemap_xml=$(fetch_sitemap)
+          fi
+
           urls_json=$(
-            curl -fsSL "$SITEMAP" \
+            echo "$sitemap_xml" \
               | grep -oE '<loc>[^<]+</loc>' \
               | sed -E 's@<loc>(.*)</loc>@\1@' \
               | jq -R . | jq -s .

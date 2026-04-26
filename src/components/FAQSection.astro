@@ -60,7 +60,8 @@ function pad(n: number) {
     outline-offset: -2px;
     border-radius: 2px;
   }
-  .tb-faq__n { color: var(--ink-faint); }
+  /* --ink-faint failed WCAG AA contrast; bumped to --ink-muted for ≥4.5:1. */
+  .tb-faq__n { color: var(--ink-muted); }
   .tb-faq__q {
     font-family: var(--font-display);
     font-size: clamp(17px, 1.5vw, 22px);

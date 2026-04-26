@@ -113,7 +113,9 @@ const breadcrumb = buildBreadcrumb([
     letter-spacing: -0.02em;
   }
   .tb-cite-idx__groupcount {
-    color: var(--ink-faint);
+    /* --ink-faint failed WCAG AA contrast (2.22:1 against paper); bumped
+     * to --ink-muted for 4.5:1 minimum. Caught by pa11y-ci a11y gate. */
+    color: var(--ink-muted);
     white-space: nowrap;
   }
   .tb-cite-idx__ruleline {
