@@ -7,8 +7,10 @@ name: Wayback archive
 #
 # Pace and budget:
 # - The script paces requests at 6s apart (~12 req/min ceiling on SPN).
-# - Default list = 17 URLs (home, deep-dives, citations index, top citations,
-#   plus Takealot's live policy URLs). Run takes ~100s.
+# - We pass --all so the script fetches the live sitemap and archives
+#   every URL it lists (currently ~37 site pages + 2 Takealot live URLs).
+#   Run takes ~4 minutes. Worth it: the previous default-only behaviour
+#   (17 URLs) silently skipped most citation pages on every push.
 # - We wait 90s before archiving to give Cloudflare Pages time to redeploy
 #   so Wayback captures the new content, not the previous build.
 # - Failures (timeouts, 429s) are best-effort; partial archival is fine.
@@ -25,7 +27,7 @@ on:
 jobs:
   archive:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: read
     steps:
@@ -40,8 +42,8 @@ jobs:
           echo "Waiting 90s for Cloudflare Pages to ship the new build..."
           sleep 90
 
-      - name: Push key pages to the Wayback Machine
-        run: node scripts/archive-wayback.mjs
+      - name: Push every sitemap URL to the Wayback Machine
+        run: node scripts/archive-wayback.mjs --all
 
       - name: Note
         if: always()
