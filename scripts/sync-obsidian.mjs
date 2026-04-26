@@ -39,7 +39,16 @@ import { homedir } from 'node:os';
 import { execSync } from 'node:child_process';
 
 const ROOT = join(fileURLToPath(import.meta.url), '..', '..');
-const VAULT = join(homedir(), 'Documents', 'Obsidian', 'Milk Moon Studio', 'Side Projects', 'TakealotBack.com');
+// The vault lives in Obsidian's iOS iCloud sandbox container so the
+// iPhone Obsidian app can read it. The literal ~ characters in
+// "iCloud~md~obsidian" are part of the folder name (Apple's container
+// ID convention), NOT shell expansion.
+const VAULT = join(
+  homedir(),
+  'Library', 'Mobile Documents',
+  'iCloud~md~obsidian', 'Documents',
+  'Milk Moon Studio', 'Side Projects', 'TakealotBack.com'
+);
 const DATA_JSON = join(ROOT, 'dist', 'api', 'data.json');
 const CITATIONS_SRC = join(ROOT, 'src', 'content', 'citations');
 const PAGES_SRC = join(ROOT, 'src', 'content', 'pages');

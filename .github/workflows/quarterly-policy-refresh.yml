@@ -15,7 +15,7 @@
 #      dates if not.
 #   3. Refresh the Wayback archive for both Takealot URLs.
 #   4. Sync the Obsidian vault at:
-#      ~/Documents/Obsidian/Milk Moon Studio/Side Projects/TakealotBack.com/
+#      ~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Milk Moon Studio/Side Projects/TakealotBack.com/
 #      following the established _Archive vN/ pattern.
 #   5. Run npm run check:all and open a PR.
 name: Quarterly policy refresh reminder
@@ -66,7 +66,7 @@ jobs:
 
           ## 3. Sync the Obsidian vault
 
-          - [ ] Open `~/Documents/Obsidian/Milk Moon Studio/Side Projects/TakealotBack.com/`
+          - [ ] Open `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Milk Moon Studio/Side Projects/TakealotBack.com/`
           - [ ] If counts/wording have drifted, follow the `_Archive vN/` pattern: archive current → produce v(N+1) reflecting the live site → update `_agent.md` per folder
 
           ## 4. Verify and ship

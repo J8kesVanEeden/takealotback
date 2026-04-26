@@ -80,7 +80,7 @@ These are the steps the test loop found get forgotten. The CI / pre-push guards 
 5. **Bump `LAST_REVIEWED`** in `content.ts` if the change is substantive.
 6. **Run `npm run check:all`** — the full suite. This is what CI will run; pass locally first.
 7. **Commit + push.** Pre-push hook re-runs `check:all` — including `check:obsidian`, which fails if the Obsidian vault has drifted from the codebase.
-8. **Run `npm run sync:obsidian`** to refresh the Obsidian vault at `~/Documents/Obsidian/Milk Moon Studio/Side Projects/TakealotBack.com/`. The script archives the prior live state into `_Archive vN/` and regenerates Clauses/, Email Templates/, Citations/, Site Copy/, Sections/ from the codebase. Personal notes in `Background/` and `Legal Research/` are left alone.
+8. **Run `npm run sync:obsidian`** to refresh the Obsidian vault at `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Milk Moon Studio/Side Projects/TakealotBack.com/` (the Obsidian iOS iCloud container — the `~` characters in `iCloud~md~obsidian` are part of the folder name). The script archives the prior live state into `_Archive vN/` and regenerates Clauses/, Email Templates/, Citations/, Site Copy/, Sections/ from the codebase. Personal notes in `Background/` and `Legal Research/` are left alone.
 9. **After deploy lands**: cache-purge runs automatically via GHA. Run `npm run check:live` to confirm the edge serves the new build.
 
 If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/TriageModal.astro` and any anchored deep-link in `src/components/AboutSection.astro`. `check:anchors` catches broken `#clause-X` references.
