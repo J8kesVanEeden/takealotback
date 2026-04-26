@@ -8,6 +8,7 @@ primary_url: "https://www.gov.za/sites/default/files/gcis_document/201409/370672
 wayback_url: "https://web.archive.org/web/*/https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf"
 saflii_url: "https://www.saflii.org/za/legis/consol_act/popoa2013376/"
 popia_co_za: "https://popia.co.za/section-19-security-measures-on-integrity-and-confidentiality-of-personal-information/"
+metaDescription: "Protection of Personal Information Act 4 of 2013: SA's data-protection statute. Required for handling consumer data, including device IDs and proof of identity."
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — CLAUSES[3] (unlock-codes) POPIA s 10 + s 19 angles"

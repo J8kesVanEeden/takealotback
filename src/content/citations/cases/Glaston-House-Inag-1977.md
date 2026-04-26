@@ -3,6 +3,7 @@ title: "Glaston House (Pty) Ltd v Inag (Pty) Ltd"
 citation: "1977 (2) SA 846 (A)"
 court_or_publisher: "Appellate Division of the Supreme Court of South Africa"
 date: "1977"
+metaDescription: "Appellate Division 1977: extends the three-part aedilitian latent-defect test to non-physical defects (undisclosed servitudes, monument status)."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — canonical three-part latent-defect test"

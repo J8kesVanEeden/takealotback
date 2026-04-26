@@ -5,6 +5,7 @@ court_or_publisher: "Appellate Division of the Supreme Court of South Africa"
 date: "1973"
 note_on_url: "Pre-digital judgment — not on SAFLII or LawLibrary. The verbatim text is in the SALR physical reports (1973 (3) SA 397 (A))."
 secondary_url: "https://www.studocu.com/row/document/university-of-botswana/business-law/phame-pty-ltd-v-paizes/76856902"
+metaDescription: "Appellate Division 1973: leading SA authority on dicta et promissa — extends aedilitian relief to seller statements that turn out to be unfounded."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — aedilitian family reference, dicta et promissa"

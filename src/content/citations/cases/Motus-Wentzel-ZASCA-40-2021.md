@@ -7,6 +7,7 @@ case_number: "1272/2019"
 primary_url: "https://www.saflii.org/za/cases/ZASCA/2021/40.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZASCA/2021/40.html"
 alternate_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/2021/40"
+metaDescription: "SCA 2021: obiter guidance that CPA s 69(d) doesn't force consumers to exhaust the ombud before going to court. Removes the 'exhaust first' defence."
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus v Wentzel angle"

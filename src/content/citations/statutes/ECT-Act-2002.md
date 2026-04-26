@@ -8,6 +8,7 @@ primary_url: "https://www.gov.za/documents/electronic-communications-and-transac
 wayback_url: "https://web.archive.org/web/*/https://www.gov.za/documents/electronic-communications-and-transactions-act"
 saflii_url: "https://www.saflii.org/za/legis/consol_act/ecata2002427/"
 itu_url: "https://www.itu.int/ITU-D/projects/ITU_EC_ACP/hipssa/Activities/SA/docs/SA-1_Legislations/South%20Africa/ElecComm.PDF"
+metaDescription: "Electronic Communications and Transactions Act 25 of 2002: 7-day cooling-off, electronic signatures, and consumer protections for online transactions."
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — CLAUSES citing ECT sxx (s 42, s 43, s 44, s 46)"

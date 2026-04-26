@@ -5,6 +5,7 @@ court_or_publisher: "Parliament of the Republic of South Africa"
 date: "1996-12-18"
 primary_url: "https://www.gov.za/documents/constitution-republic-south-africa-1996"
 wayback_url: "https://web.archive.org/web/*/https://www.gov.za/documents/constitution-republic-south-africa-1996"
+metaDescription: "Section 16 of the SA Constitution — guarantees freedom of expression including non-commercial criticism, opinion, and commentary."
 retrieved: "2026-04-24"
 used_in:
   - "src/components/AboutSection.astro — legal grounding block"

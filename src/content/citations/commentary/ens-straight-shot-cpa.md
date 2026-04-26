@@ -5,6 +5,7 @@ date: "undated"
 primary_url: "https://www.ensafrica.com/news/detail/5942/straight-shot-to-the-courts-for-consumers-lit"
 wayback_url: "https://web.archive.org/web/*/https://www.ensafrica.com/news/detail/5942/straight-shot-to-the-courts-for-consumers-lit"
 alternate_url: "https://www.mondaq.com/southafrica/dodd-frank-consumer-protection-act/1211308/straight-shot-to-the-courts-for-consumers-litigating-under-the-cpa"
+metaDescription: "ENSafrica commentary on post-Motus CPA s 69 litigation. Useful secondary source for the post-Motus trajectory of consumer-court access."
 retrieved: "2026-04-24"
 used_in:
   - "Provenance — supports post-Motus s 69 commentary picked up in CLAUSES[12] angle"

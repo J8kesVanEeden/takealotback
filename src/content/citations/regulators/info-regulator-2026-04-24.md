@@ -6,6 +6,7 @@ date: "2026-04-24"
 primary_url: "https://inforegulator.org.za/"
 wayback_url: "https://web.archive.org/web/*/https://inforegulator.org.za/"
 portal_url: "https://eservices.inforegulator.org.za/"
+metaDescription: "Information Regulator (POPIA): SA's data-protection authority. Channels for filing complaints when a retailer mishandles consumer data."
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — CLAUSES[3] (unlock-codes) angles → Info Regulator entry"

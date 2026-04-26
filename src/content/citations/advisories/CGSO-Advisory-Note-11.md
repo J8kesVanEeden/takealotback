@@ -6,6 +6,7 @@ date: "2021"
 primary_url: "https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
+metaDescription: "CGSO Advisory Note 11: voetstoots ('as-is') clauses do not survive the CPA — suppliers cannot contract out of the s 55/56 quality warranty."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"

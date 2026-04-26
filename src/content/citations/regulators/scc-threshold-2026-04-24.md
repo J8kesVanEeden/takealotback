@@ -5,6 +5,7 @@ court_or_publisher: "Department of Justice and Constitutional Development, RSA"
 date: "2026-04-24"
 primary_url: "https://www.justice.gov.za/scc/scc.htm"
 wayback_url: "https://web.archive.org/web/*/https://www.justice.gov.za/scc/scc.htm"
+metaDescription: "Small Claims Court (SA): R20,000 monetary jurisdiction, no attorneys, ~R100 filing fee. Fastest path for consumer disputes against Takealot."
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — ESCALATION[7] (Small Claims Court tier)"

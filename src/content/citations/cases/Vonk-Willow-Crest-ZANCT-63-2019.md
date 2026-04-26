@@ -8,6 +8,7 @@ primary_url: "https://www.saflii.org/za/cases/ZANCT/2019/68.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZANCT/2019/68.html"
 alternate_url: "https://www.saflii.org/za/cases/ZANCT/2019/63.html"
 nct_pdf: "https://www.thenct.org.za/wp-content/uploads/2019/05/Theodorus-Vonk-v-Willow-Crest-Motors-CC-NCT-115078-2018-751-b.pdf"
+metaDescription: "National Consumer Tribunal 2019: voetstoots ('as-is') clauses do not apply to transactions falling under the Consumer Protection Act."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"

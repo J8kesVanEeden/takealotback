@@ -58,9 +58,13 @@ function buildTitle(rawTitle: string, citation: string | undefined): string {
   return truncateTitle(suffixed);
 }
 const title = buildTitle(data.title as string, data.citation as string | undefined);
+// Prefer a per-citation `metaDescription:` from frontmatter when present
+// (more useful for SERP / social-card snippets); fall back to the
+// formulaic string used everywhere before bespoke summaries existed.
 const description =
-  (data.citation ? `${data.citation}. ` : '') +
-  `${groupLabel[top] ?? 'Source'} mirrored from primary source on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`;
+  (data.metaDescription as string | undefined) ??
+  ((data.citation ? `${data.citation}. ` : '') +
+    `${groupLabel[top] ?? 'Source'} mirrored from primary source on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`);
 
 // JSON-LD: type-aware Article (LegalCaseDocument / Legislation / etc.)
 // + BreadcrumbList. Type and per-group `about` topics resolve in

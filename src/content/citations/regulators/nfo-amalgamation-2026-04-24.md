@@ -6,6 +6,7 @@ date: "2024-03-01"
 primary_url: "https://nfosa.co.za/"
 wayback_url: "https://web.archive.org/web/*/https://nfosa.co.za/"
 press_release: "https://nfosa.co.za/consumers-come-out-tops-with-formation-of-new-one-stop-ombud-scheme/"
+metaDescription: "National Financial Ombud (NFO, 2024): one-stop ombud combining banking, credit, long-term insurance, and short-term insurance schemes."
 retrieved: "2026-04-25"
 used_in:
   - "src/data/content.ts — LAW_SECTIONS[4].items.nfo (NFO entry under Chargebacks)"

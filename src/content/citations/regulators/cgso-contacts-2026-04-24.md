@@ -5,6 +5,7 @@ court_or_publisher: "Consumer Goods and Services Ombud NPC"
 date: "2026-04-24"
 primary_url: "https://www.cgso.org.za/"
 wayback_url: "https://web.archive.org/web/*/https://www.cgso.org.za/"
+metaDescription: "Consumer Goods & Services Ombud (CGSO): mandatory ombud for retail-goods disputes under CPA s 82. Contact details, complaint flow, and scope."
 retrieved: "2026-04-24"
 retrieved_by: "Direct WebFetch of the CGSO homepage, 2026-04-24"
 used_in:

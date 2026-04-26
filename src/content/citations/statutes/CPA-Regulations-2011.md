@@ -5,6 +5,7 @@ court_or_publisher: "Minister of Trade and Industry (now Trade, Industry and Com
 date: "2011-04-01"
 primary_url: "https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
 wayback_url: "https://web.archive.org/web/*/https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
+metaDescription: "CPA Regulations 2011 (GN R293): contains Reg 44 — the grey list of presumptively unfair contract terms that bind every retailer including Takealot."
 retrieved: "2026-04-24"
 used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) Reg 44(3)(q) angle"
