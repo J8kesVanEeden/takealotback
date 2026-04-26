@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import Section from '../../components/Section.astro';
 import JsonLd from '../../components/JsonLd.astro';
 import { GITHUB_REPO_URL, LAST_REVIEWED } from '../../data/content';
+import { buildCitationsCollectionPage, buildBreadcrumb } from '../../lib/schema';
 
 const all = await getCollection('citations');
 
@@ -36,34 +37,11 @@ const description = `Every statute, judgment, regulator detail, advisory note, T
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}/citations`;
 
-const collectionPage = {
-  '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  '@id': `${canonical}#page`,
-  url: canonical,
-  name: 'Citations & sources — TakealotBack.com evidence vault',
-  description,
-  isPartOf: { '@id': `${siteUrl}/#website` },
-  inLanguage: 'en-ZA',
-  about: 'South African consumer-rights primary sources',
-  hasPart: groups.flatMap((g) =>
-    g.entries.map((e) => ({
-      '@type': 'CreativeWork',
-      name: e.data.title,
-      url: `${siteUrl}/citations/${e.slug}`,
-      genre: g.label,
-    }))
-  ),
-};
-
-const breadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
-    { '@type': 'ListItem', position: 2, name: 'Citations', item: canonical },
-  ],
-};
+const collectionPage = buildCitationsCollectionPage({ description, groups });
+const breadcrumb = buildBreadcrumb([
+  { name: 'Home', url: `${siteUrl}/` },
+  { name: 'Citations', url: canonical },
+]);
 ---
 <Layout title={title} description={description} canonicalPath="/citations">
   <Fragment slot="head">

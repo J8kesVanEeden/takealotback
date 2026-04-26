@@ -4,8 +4,9 @@ import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
 import JsonLd from '../components/JsonLd.astro';
 import SourceChips from '../components/SourceChips.astro';
-import { GITHUB_REPO_URL, LAST_REVIEWED } from '../data/content';
+import { LAST_REVIEWED } from '../data/content';
 import { scanForCitations } from '../lib/citation-links';
+import { buildDeepDiveArticle, buildBreadcrumb } from '../lib/schema';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -32,44 +33,21 @@ const canonicalPath = `/${page.slug}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}${canonicalPath}`;
 
-// JSON-LD: Article (educational commentary) + BreadcrumbList.
-const article = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  '@id': `${canonical}#article`,
-  headline: page.data.title,
+// JSON-LD: Article (educational commentary) + BreadcrumbList. Schema
+// shapes live in src/lib/schema.ts so any change to Article fields
+// applies consistently across deep-dives + citation pages.
+const article = buildDeepDiveArticle({
+  canonical,
+  title: page.data.title,
   description: page.data.description,
-  url: canonical,
-  mainEntityOfPage: canonical,
-  inLanguage: 'en-ZA',
-  isAccessibleForFree: true,
-  isPartOf: { '@id': `${siteUrl}/#website` },
-  publisher: { '@id': 'https://www.milkmoonstudio.com/#organization' },
-  author: { '@id': 'https://www.milkmoonstudio.com/#organization' },
-  license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
-  // Use the site's published review date as a best-available dateModified.
-  // LAST_REVIEWED is in "YYYY.MM.DD" form; convert to ISO date for schema.
-  dateModified: page.data.dateModified ?? LAST_REVIEWED.replace(/\./g, '-'),
   datePublished: page.data.datePublished ?? '2026-04-23',
-  keywords: [
-    'Consumer Protection Act',
-    'CPA',
-    'Takealot',
-    'South African consumer rights',
-    'online retail returns',
-    'ECT Act',
-    'POPIA',
-  ].join(', '),
-};
+  dateModified: page.data.dateModified ?? LAST_REVIEWED.replace(/\./g, '-'),
+});
 
-const breadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
-    { '@type': 'ListItem', position: 2, name: page.data.title, item: canonical },
-  ],
-};
+const breadcrumb = buildBreadcrumb([
+  { name: 'Home', url: `${siteUrl}/` },
+  { name: page.data.title, url: canonical },
+]);
 ---
 <Layout title={title} description={page.data.description} canonicalPath={canonicalPath}>
   <Fragment slot="head">
