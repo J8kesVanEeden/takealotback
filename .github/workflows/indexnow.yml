@@ -4,8 +4,13 @@
 #
 # Sequence:
 #   push to main → CF Pages redeploys → cf-cache-purge fires → this
-#   workflow fires (workflow_run chained) → fetches the live sitemap →
-#   POSTs every URL to api.indexnow.org → Bing/Yandex crawl within minutes.
+#   workflow fires (workflow_run chained) → builds the site locally
+#   to read sitemap-0.xml → POSTs every URL to api.indexnow.org →
+#   Bing/Yandex crawl within minutes.
+#
+# Why build locally instead of fetching the live sitemap:
+#   Cloudflare's bot-mitigation 403s curl from GitHub runner IPs even
+#   with a custom UA. Building locally is ~30s and fully deterministic.
 #
 # Key proof of ownership: public/30f29a0d9eb1b51aa8ce75c6b754637d.txt
 # contains the same key as a string. Hosting it at the root of the
@@ -30,33 +35,32 @@ jobs:
     # stale HTML.
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
     steps:
-      - name: Fetch sitemap and POST to IndexNow
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install
+        run: npm ci
+
+      - name: Build (to get sitemap-0.xml)
+        run: npm run build
+
+      - name: POST sitemap URLs to IndexNow
         run: |
           set -euo pipefail
-          SITEMAP="https://takealotback.com/sitemap-0.xml"
           KEY="30f29a0d9eb1b51aa8ce75c6b754637d"
           KEY_LOCATION="https://takealotback.com/${KEY}.txt"
-          # Cloudflare's bot-mitigation occasionally 403s the default
-          # curl UA on GitHub runners. Identify ourselves clearly so
-          # we get past + so traffic logs are useful.
-          UA="TakealotBackIndexNow/1.0 (+https://takealotback.com)"
 
-          # Pull every <loc> from the sitemap, build a JSON array.
-          # Retry once if Cloudflare returns 403 — usually a transient
-          # bot-block during edge cache repopulation.
-          fetch_sitemap() {
-            curl -fsSL -A "$UA" "$SITEMAP"
-          }
-          if ! sitemap_xml=$(fetch_sitemap); then
-            echo "first fetch failed, sleeping 30s and retrying"
-            sleep 30
-            sitemap_xml=$(fetch_sitemap)
-          fi
-
+          # Read every <loc> from the freshly-built sitemap.
           urls_json=$(
-            echo "$sitemap_xml" \
-              | grep -oE '<loc>[^<]+</loc>' \
+            grep -oE '<loc>[^<]+</loc>' dist/sitemap-0.xml \
               | sed -E 's@<loc>(.*)</loc>@\1@' \
               | jq -R . | jq -s .
           )
