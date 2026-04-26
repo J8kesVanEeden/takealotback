@@ -79,8 +79,9 @@ These are the steps the test loop found get forgotten. The CI / pre-push guards 
 4. **Run `npm run build:og`** — regenerates `public/og-image.png` so social-card preview reflects the new counts.
 5. **Bump `LAST_REVIEWED`** in `content.ts` if the change is substantive.
 6. **Run `npm run check:all`** — the full suite. This is what CI will run; pass locally first.
-7. **Commit + push.** Pre-push hook re-runs `check:all`.
-8. **After deploy lands**: purge the Cloudflare cache (Caching → Purge Everything), then run `npm run check:live` to confirm the edge serves the new build.
+7. **Commit + push.** Pre-push hook re-runs `check:all` — including `check:obsidian`, which fails if the Obsidian vault has drifted from the codebase.
+8. **Run `npm run sync:obsidian`** to refresh the Obsidian vault at `~/Documents/Obsidian/Milk Moon Studio/Side Projects/TakealotBack.com/`. The script archives the prior live state into `_Archive vN/` and regenerates Clauses/, Email Templates/, Citations/, Site Copy/, Sections/ from the codebase. Personal notes in `Background/` and `Legal Research/` are left alone.
+9. **After deploy lands**: cache-purge runs automatically via GHA. Run `npm run check:live` to confirm the edge serves the new build.
 
 If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/TriageModal.astro` and any anchored deep-link in `src/components/AboutSection.astro`. `check:anchors` catches broken `#clause-X` references.
 
@@ -94,6 +95,7 @@ If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/Tria
 4. **Wire `src/lib/used-in-link.mjs`** — if your citation file references a target that doesn't fit existing patterns (CLAUSES[N], TEMPLATES, component names, deep-dive `.md`), add a regex.
 5. **Add the citation file path** to `scripts/check-citations.mjs` `CASE_NAME_TO_FILE` if it's a case (statutes already auto-detect).
 6. **Build + check + commit** following the standard runbook.
+7. **Run `npm run sync:obsidian`** so the new citation appears in the vault under `Citations/<group>/`.
 
 ---
 

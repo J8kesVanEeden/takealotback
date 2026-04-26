@@ -22,10 +22,12 @@
     "check:a11y": "node scripts/check-a11y.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:live": "node scripts/check-live.mjs",
-    "check:all": "npm run check && npm run check:counts && npm run check:used-in && npm run check:frontmatter && npm run check:anchors && npm run check:chips && npm run check:headings && npm run check:citations && npm run check:html && npm run check:a11y && npm run check:links",
+    "check:obsidian": "node scripts/sync-obsidian.mjs --check",
+    "check:all": "npm run check && npm run check:counts && npm run check:used-in && npm run check:frontmatter && npm run check:anchors && npm run check:chips && npm run check:headings && npm run check:citations && npm run check:html && npm run check:a11y && npm run check:links && npm run check:obsidian",
     "build:og": "node scripts/build-og.mjs",
     "build:logo": "node scripts/build-logo.mjs",
     "archive": "node scripts/archive-wayback.mjs",
+    "sync:obsidian": "node scripts/sync-obsidian.mjs",
     "prepare": "husky"
   },
   "dependencies": {
