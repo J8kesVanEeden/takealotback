@@ -80,7 +80,7 @@ These are the steps the checks found get forgotten. The CI / pre-push guards cat
 5. **Bump `LAST_REVIEWED`** in `content.ts` if the change is substantive.
 6. **Run `npm run check:all`** — the full suite. This is what CI will run; pass locally first.
 7. **Commit + push.** Pre-push hook re-runs `check:all` — including `check:notes`, which fails if the Notes vault has drifted from the codebase.
-8. **Run `npm run sync:notes`** to refresh the Notes vault at `~/Documents/Notes/Milk Moon Studio/Side Projects/TakealotBack.com/`. The script archives the prior live state into `_Archive vN/` and regenerates Clauses/, Email Templates/, Citations/, Site Copy/, Sections/ from the codebase. Personal notes in `Background/` and `Legal Research/` are left alone.
+8. **Run `npm run sync:notes`** to refresh the Notes vault at `the maintainer's notes folder` (the Notes iOS iCloud container — the `~` characters in `notes` are part of the folder name). The script archives the prior live state into `_Archive vN/` and regenerates Clauses/, Email Templates/, Citations/, Site Copy/, Sections/ from the codebase. Personal notes in `Background/` and `Legal Research/` are left alone.
 9. **After deploy lands**: cache-purge runs automatically via GHA. Run `npm run check:live` to confirm the edge serves the new build.
 
 If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/TriageModal.astro` and any anchored deep-link in `src/components/AboutSection.astro`. `check:anchors` catches broken `#clause-X` references.
