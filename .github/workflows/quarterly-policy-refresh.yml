@@ -1,0 +1,89 @@
+# Quarterly Takealot policy refresh reminder.
+#
+# Opens a GitHub issue every quarter with the full refresh checklist
+# baked in. Runs in the cloud, fires reliably, doesn't depend on a
+# Claude Code session being open.
+#
+# Cadence: 1st of Jan / Apr / Jul / Oct at 09:07 UTC. Slightly off the
+# hour because every workflow on the planet that picks "0 9" lands on
+# the API at the same instant.
+#
+# What the issue covers:
+#   1. Diff Takealot's two live policy pages against the current
+#      citation snapshots in src/content/citations/policies/
+#   2. Capture fresh snapshots if material changes; bump retrieved:
+#      dates if not.
+#   3. Refresh the Wayback archive for both Takealot URLs.
+#   4. Sync the Obsidian vault at:
+#      ~/Documents/Obsidian/Milk Moon Studio/Side Projects/TakealotBack.com/
+#      following the established _Archive vN/ pattern.
+#   5. Run npm run check:all and open a PR.
+name: Quarterly policy refresh reminder
+
+on:
+  schedule:
+    # 09:07 UTC on the 1st of Jan / Apr / Jul / Oct
+    - cron: '7 9 1 1,4,7,10 *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  open-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open quarterly refresh issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          quarter=$(date -u +"%Y-Q%-m" | sed -E 's/Q([0-9]+)/echo Q$((((\1-1)\/3)+1))/e')
+          today=$(date -u +"%Y-%m-%d")
+          title="Quarterly Takealot policy refresh — ${today}"
+
+          body=$(cat <<'EOF'
+          Quarterly checkpoint to keep Takealot's live policy and our citation snapshots in sync. The Wayback archive runs automatically on every push, so the historical record is always preserved — this issue is about confirming the **current** snapshot reflects today's live wording.
+
+          ## 1. Diff the live policy pages
+
+          - [ ] Fetch https://terms-and-policies.takealot.com/ and diff against `src/content/citations/policies/takealot-tcs-2026-04-24.md` (or the most recent dated successor)
+          - [ ] Fetch https://terms-and-policies.takealot.com/terms-conditions/ and diff against `src/content/citations/policies/takealot-returns-2026-04-24.md` (or successor)
+
+          ## 2. Apply changes
+
+          **If MATERIAL changes (clause additions/removals, changed terms — not just typos):**
+          - [ ] Create new dated citation files (e.g., `takealot-returns-YYYY-MM-DD.md`) — copy frontmatter shape, paste new policy text into body
+          - [ ] Run `npm run archive -- <new urls>` and update `wayback_url_dated` in frontmatter
+          - [ ] Update `CLAUSES` in `src/data/content.ts` only if a specific clause's source quote no longer matches Takealot's live wording
+          - [ ] Update any `used_in:` lines pointing at the old citation slug
+          - [ ] Bump `LAST_REVIEWED` in `src/data/content.ts` to today
+
+          **If NO material changes:**
+          - [ ] Bump the `retrieved:` date in both existing citation files to today
+          - [ ] Run `npm run archive` for the two Takealot URLs to refresh Wayback, update `wayback_url_dated`
+
+          ## 3. Sync the Obsidian vault
+
+          - [ ] Open `~/Documents/Obsidian/Milk Moon Studio/Side Projects/TakealotBack.com/`
+          - [ ] If counts/wording have drifted, follow the `_Archive vN/` pattern: archive current → produce v(N+1) reflecting the live site → update `_agent.md` per folder
+
+          ## 4. Verify and ship
+
+          - [ ] `npm run check:all` passes locally
+          - [ ] Open a PR titled `Quarterly Takealot policy refresh — YYYY-MM` with a short body listing the diffs found
+          - [ ] After merge, confirm `cf-cache-purge`, `indexnow`, and `wayback-archive` workflows all succeeded
+
+          ## Reference
+
+          - `OPERATIONS.md` → "When you change CLAUSES" + "When you add a citation" runbooks
+          - Memory: never push directly to main — open a PR
+          EOF
+          )
+
+          gh issue create \
+            --title "$title" \
+            --body "$body" \
+            --label "quarterly-refresh" \
+            || gh issue create --title "$title" --body "$body"
