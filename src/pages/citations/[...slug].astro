@@ -251,12 +251,6 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
     color: var(--ink);
     margin-bottom: 8px;
   }
-  .tb-cite__usedin-list li {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 16px;
-    align-items: baseline;
-  }
   .tb-cite__usedin-line { color: var(--ink-soft); }
   .tb-cite__usedin-jump {
     color: var(--ink);
@@ -264,6 +258,7 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
     text-decoration-color: var(--rule);
     text-underline-offset: 3px;
     font-size: 10px;
+    white-space: nowrap;
   }
   .tb-cite__usedin-jump:hover {
     color: var(--accent);
@@ -275,12 +270,22 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
     padding: 0;
     margin: 0;
   }
-  .tb-cite__urls-list li,
-  .tb-cite__usedin-list li {
+  /* `tb-cite__urls-list` uses a fixed-key grid because the keys are short
+   * mono labels ("FULL TEXT", "PUBLISHER URL"). `tb-cite__usedin-list`
+   * uses flex-wrap because the "key" is a long file path that overflowed
+   * a 130px column and visually collided with the right-column link. */
+  .tb-cite__urls-list li {
     margin: 4px 0;
     display: grid;
     grid-template-columns: 130px 1fr;
     gap: 12px;
+    align-items: baseline;
+  }
+  .tb-cite__usedin-list li {
+    margin: 4px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
     align-items: baseline;
   }
   .tb-cite__urls-key {
@@ -309,7 +314,6 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
 
   @media (max-width: 720px) {
     .tb-cite__meta { grid-template-columns: 1fr; }
-    .tb-cite__urls-list li,
-    .tb-cite__usedin-list li { grid-template-columns: 1fr; gap: 2px; }
+    .tb-cite__urls-list li { grid-template-columns: 1fr; gap: 2px; }
   }
 </style>
