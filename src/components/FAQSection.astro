@@ -79,7 +79,11 @@ function pad(n: number) {
     gap: 16px;
     padding-bottom: 24px;
   }
-  .tb-faq__a > * { grid-column: 2; }
+  /* `:global(*)` is required: child components like <SourceChips> render
+   * with their own Astro scope id, so a plain `> *` only matches children
+   * authored inside this file. Without :global, SourceChips falls into
+   * grid auto-placement and lands in the 40px toggle column on the right. */
+  .tb-faq__a > :global(*) { grid-column: 2; }
   .tb-faq__body {
     margin: 0;
     font-size: 15px;
