@@ -8,6 +8,8 @@ wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.
 wayback_url_dated: "https://web.archive.org/web/20260425124023/https://terms-and-policies.takealot.com/terms-conditions/"
 metaDescription: "Verbatim snapshot of Takealot's terms & conditions (April 2026). Entity, unilateral-change, forum-selection, marketplace, and resale clauses."
 retrieved: "2026-04-25"
+corrected_on: "2026-05-07"
+correction_note: "2026-04-24 audit misread the forum-selection qualifier ('even if the disputed amount would typically be heard by a lower court') as absent from live T&Cs; re-verification confirms it has been continuously present. Clause 13 in src/data/content.ts and POLICY_SUMMARY.terms reverted; original misread commit + correction commit both retained in git history."
 used_in:
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes)"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction)"
@@ -42,9 +44,9 @@ The site's Clause 11 dismantles the "without giving you notice" reservation agai
 
 ### High Court Western Cape forum-selection (verbatim)
 
-> "You and we agree that the High Court of South Africa (Western Cape Division, Cape Town) will have jurisdiction to hear any legal matters between us."
+> "You and we agree that the High Court of South Africa (Western Cape Division, Cape Town) will have jurisdiction to hear any legal matters between us. This applies even if the disputed amount would typically be heard by a lower court. This is to help ensure consistency in how cases are handled."
 
-**Important update:** the older Takealot T&Cs included an additional sentence — *"even if the disputed amount would typically be heard by a lower court"* — that no longer appears in the current live text. The site's Clause 12 was updated on 2026-04-24 to reflect this; the current dismantling treats the qualifier as a historical-version note rather than a present-tense quotation.
+**Correction (2026-05-07):** the 2026-04-24 audit pass originally claimed the "even if the disputed amount would typically be heard by a lower court" qualifier was no longer in the live text, and Clause 13 (`high-court-jurisdiction`) was edited to treat it as a historical-version note. That was wrong. Re-verification on 2026-05-07 — direct curl of the live page + four Wayback Machine snapshots spanning 2026-02-08 to 2026-04-25, plus Yoast `dateModified` of 2026-02-05 confirming no republication — shows the qualifier has been continuously present. Clause 13 was reverted on 2026-05-07 to treat the qualifier as present-tense operative wording. POLICY_SUMMARY.terms was also corrected in the same pass ("Other sellers" → "Sellers", matching the Clause 14 correction that originally landed on 2026-04-24 but missed the summary array). Original misread commit and the correction commit both remain in `git log` — no history rewriting.
 
 ### Order cancellation grounds (paraphrased)
 
