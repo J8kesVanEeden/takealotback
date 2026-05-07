@@ -1,0 +1,17 @@
+// Cloudflare Workers Builds config.
+//
+// Cloudflare migrated Pages projects under Workers Builds in late 2025.
+// Without a wrangler config in the repo, the post-migration build pipeline
+// can't determine where the static-site assets live and fails before code
+// even runs (0-second build duration).
+//
+// `directory: "./dist"` is Astro's static-output target (`npm run build`).
+// `compatibility_date` pins the Workers runtime semantics to today's date —
+// safe for a static-asset-only deployment with no Workers code.
+{
+  "name": "takealotback",
+  "compatibility_date": "2026-05-07",
+  "assets": {
+    "directory": "./dist"
+  }
+}
