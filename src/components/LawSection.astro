@@ -68,7 +68,7 @@ function pad(n: number) {
   .tb-law__intro {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
-    gap: clamp(32px, 5vw, 72px);
+    gap: clamp(var(--space-6), 5vw, 72px);
     margin-bottom: var(--space-7);
   }
   .tb-law__head { max-width: 18ch; margin: 0; }
@@ -85,7 +85,7 @@ function pad(n: number) {
   .tb-law__grouphead {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: var(--space-4);
     margin-bottom: 10px;
   }
   .tb-law__groupname {
@@ -105,7 +105,7 @@ function pad(n: number) {
    * the top + left borders. This avoids the doubled-up 2px vertical that
    * a per-cell `border-left + border-right` produces between neighbours. */
   .tb-law__cell {
-    padding: 18px 20px 20px;
+    padding: 1var(--space-2) 20px 20px;
     border-bottom: 1px solid var(--rule-soft);
     border-right: 1px solid var(--rule-soft);
     min-height: 110px;
@@ -122,7 +122,7 @@ function pad(n: number) {
     font-size: 17px;
     letter-spacing: -0.01em;
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: var(--space-1);
   }
   .tb-law__cellblurb {
     color: var(--ink-soft);
@@ -131,21 +131,21 @@ function pad(n: number) {
   }
 
   .tb-law__bodies {
-    margin-top: 32px;
+    margin-top: var(--space-6);
     padding: 20px 22px;
     border: 1px solid var(--rule);
     border-radius: 2px;
     background: var(--paper-alt);
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    gap: 24px;
+    gap: 2var(--space-1);
     align-items: start;
   }
   .tb-law__bodieshead { margin: 6px 0 0; font-weight: 500; }
   .tb-law__bodiesgrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
+    gap: var(--space-4);
   }
   .tb-law__body { border-top: 1px solid var(--rule); padding-top: 10px; }
   .tb-law__body-n { color: var(--ink-faint); }

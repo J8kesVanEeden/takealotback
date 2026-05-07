@@ -147,7 +147,7 @@ function hay(c: typeof CLAUSES[number]) {
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: var(--space-4);
   }
   .tb-dm__filter { cursor: pointer; }
   .tb-dm__filter[aria-pressed='true'] {
@@ -159,7 +159,7 @@ function hay(c: typeof CLAUSES[number]) {
   .tb-dm__theader {
     display: grid;
     grid-template-columns: var(--clause-cols);
-    gap: 16px;
+    gap: var(--space-4);
     padding: 10px 0;
     border-top: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
@@ -176,9 +176,9 @@ function hay(c: typeof CLAUSES[number]) {
   .tb-dm__row {
     display: grid;
     grid-template-columns: var(--clause-cols);
-    gap: 16px;
+    gap: var(--space-4);
     width: 100%;
-    padding: 16px 0;
+    padding: var(--space-4) 0;
     text-align: left;
     align-items: center;
     color: var(--ink);
@@ -200,7 +200,7 @@ function hay(c: typeof CLAUSES[number]) {
     line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: var(--space-1);
     align-items: center;
   }
   .tb-dm__more { color: var(--ink-faint); }
@@ -209,19 +209,19 @@ function hay(c: typeof CLAUSES[number]) {
   .tb-dm__action { color: var(--ink-soft); text-align: right; }
 
   .tb-dm__detail {
-    padding: 12px 0 36px;
+    padding: var(--space-3) 0 36px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-    gap: clamp(24px, 4vw, 56px);
+    gap: clamp(2var(--space-1), 4vw, 56px);
     border-top: 1px dashed var(--rule);
-    margin-top: 4px;
+    margin-top: var(--space-1);
   }
   .tb-dm__detail[hidden] { display: none; }
 
   .tb-dm__takealot {
     border-left: 3px solid var(--warn);
-    padding-left: 14px;
-    margin-top: 16px;
+    padding-left: 1var(--space-1);
+    margin-top: var(--space-4);
   }
   .tb-dm__takealot-label { color: var(--warn); margin-bottom: 6px; }
   .tb-dm__takealot-body, .tb-dm__why-body {
@@ -232,7 +232,7 @@ function hay(c: typeof CLAUSES[number]) {
   }
   .tb-dm__why {
     border-left: 3px solid var(--accent);
-    padding-left: 14px;
+    padding-left: 1var(--space-1);
     margin-top: 20px;
   }
   .tb-dm__why-label { color: var(--accent); margin-bottom: 6px; }
@@ -240,14 +240,14 @@ function hay(c: typeof CLAUSES[number]) {
   .tb-dm__actions {
     margin-top: 20px;
     display: flex;
-    gap: 8px;
+    gap: var(--space-2);
     flex-wrap: wrap;
   }
   .tb-dm__escalate { margin-top: 20px; }
   .tb-dm__escalate-label { color: var(--ink-muted); }
   .tb-dm__escalate-body { color: var(--ink-soft); }
 
-  .tb-dm__angles-label { margin-bottom: 12px; color: var(--ink); }
+  .tb-dm__angles-label { margin-bottom: var(--space-3); color: var(--ink); }
   .tb-dm__anglelist {
     list-style: none;
     padding: 0;
@@ -257,8 +257,8 @@ function hay(c: typeof CLAUSES[number]) {
   .tb-dm__anglerow {
     display: grid;
     grid-template-columns: 40px 180px 1fr;
-    gap: 16px;
-    padding: 14px 0;
+    gap: var(--space-4);
+    padding: 1var(--space-1) 0;
     border-bottom: 1px solid var(--rule-soft);
     align-items: baseline;
   }

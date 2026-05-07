@@ -93,21 +93,21 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
     border-top: 1px solid var(--ink);
     margin-top: 0;
   }
-  .tb-footer__top { padding: 72px 24px 48px; }
+  .tb-footer__top { padding: 72px 2var(--space-1) 4var(--space-2); }
   .tb-footer__cols {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 32px;
-    margin-bottom: 48px;
+    gap: var(--space-6);
+    margin-bottom: 4var(--space-2);
   }
   .tb-footer__coltitle {
     color: color-mix(in oklab, var(--paper) 50%, transparent);
-    margin-bottom: 12px;
+    margin-bottom: var(--space-3);
   }
   .tb-footer__links {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--space-2);
   }
   .tb-footer__link {
     color: var(--paper);
@@ -116,7 +116,7 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
     font-size: 11px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 3px 8px;
+    padding: 3px var(--space-2);
     border: 1px solid color-mix(in oklab, var(--paper) 25%, transparent);
     border-radius: 2px;
     align-self: flex-start;
@@ -149,13 +149,13 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
     height: 1px;
     border: 0;
     background: color-mix(in oklab, var(--paper) 20%, transparent);
-    margin: 0 0 32px;
+    margin: 0 0 var(--space-6);
   }
 
   .tb-footer__legal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+    gap: 2var(--space-1);
     margin-bottom: 40px;
   }
   .tb-footer__legalbody {
@@ -171,11 +171,11 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
   }
 
   .tb-footer__bottom {
-    padding: 24px 24px;
+    padding: 2var(--space-1) 2var(--space-1);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 12px;
+    gap: var(--space-3);
     border-top: 1px solid color-mix(in oklab, var(--paper) 20%, transparent);
   }
   .tb-footer__bottom-left,
