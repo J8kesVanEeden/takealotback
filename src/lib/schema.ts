@@ -327,6 +327,7 @@ export const CITATION_TYPES: Record<string, string> = {
   regulators: 'GovernmentService',
   advisories: 'Article',
   commentary: 'Article',
+  press: 'NewsArticle',
 };
 
 // Per-group `about` topic — narrower than ALL_TOPICS, lets Google know
@@ -338,6 +339,7 @@ const GROUP_TOPIC: Record<string, Array<typeof TOPICS[keyof typeof TOPICS]>> = {
   regulators: [TOPICS.cpa],
   advisories: [TOPICS.cpa],
   commentary: [TOPICS.cpa],
+  press: [TOPICS.cpa],
 };
 
 export function buildCitationArticle(args: {

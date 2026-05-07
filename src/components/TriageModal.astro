@@ -266,7 +266,9 @@
       body.__tbOpts = cur.opts;
     }
 
+    var lastFocused = null;
     function open() {
+      lastFocused = document.activeElement;
       state = { node: 'start', result: null };
       render();
       if (typeof dialog.showModal === 'function') {
@@ -274,10 +276,19 @@
       } else {
         dialog.setAttribute('open', '');
       }
+      // Native <dialog> autofocus picks the first focusable child only when
+      // showModal() runs after content exists — render() did, but be explicit
+      // so keyboard users land on the first option, not nothing.
+      var firstOpt = body.querySelector('.tb-triage__opt');
+      if (firstOpt && typeof firstOpt.focus === 'function') firstOpt.focus();
     }
     function close() {
       if (typeof dialog.close === 'function' && dialog.open) dialog.close();
       else dialog.removeAttribute('open');
+      // Return focus to whatever triggered the modal (typically a Header CTA).
+      if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
+      }
     }
     function toggle() { dialog.open ? close() : open(); }
 
