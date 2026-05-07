@@ -757,7 +757,7 @@ export const POLICY_SUMMARY: PolicySummary = {
   ],
   terms: [
     "Account & shopping — 18+, contracting capacity required",
-    "Sellers are responsible for the items they sell on the platform",
+    "Sellers are responsible for the items they sell on our platform",
     "Takealot may cancel for stock / payment / listing error / account-abuse / criminal investigation",
     "Resale prohibition",
     "Dispute resolution: SA law, High Court (Western Cape Division, Cape Town) named as forum",
