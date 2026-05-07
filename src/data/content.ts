@@ -252,7 +252,7 @@ export const CLAUSES: Clause[] = [
   },
   {
     n: "13", slug: "high-court-jurisdiction", title: "High Court Jurisdiction",
-    takealot: "The T&Cs name the High Court (Western Cape Division, Cape Town) as the forum for any legal matters between Takealot and you. Earlier versions of the T&Cs went further and said this applied even where the disputed amount would normally sit with a lower court; the current version drops that qualifier but the practical effect of the forum-selection clause is the same.",
+    takealot: "The T&Cs name the High Court (Western Cape Division, Cape Town) as the forum for any legal matters between Takealot and you, and add — verbatim — that this applies \"even if the disputed amount would typically be heard by a lower court.\" That qualifier is the operative one: it tries to push small-value disputes past the cheaper Magistrates' or Small Claims forums.",
     angles: [
       { stat: "CPA s69", body: "Sets out the consumer's enforcement routes — Tribunal (where permitted), applicable ombud, CGSO under s82(6), provincial consumer court, accredited ADR under s70, NCC under s71, or a court with jurisdiction. A contract can't close off statutory routes." },
       { stat: "Motus v Wentzel", body: "The SCA in Motus Corporation v Wentzel [2021] ZASCA 40 offered obiter guidance (at para 26) that s 69(d) should not lightly be read as excluding consumers' right to approach the courts under s 34 of the Constitution — signalling that the section points to remedies in national legislation generally, rather than a compulsory internal-hierarchy rule. Counsel for the appellants expressly declined to pursue the point, so the court \"did not hear full argument on the matter\" and recorded that the issues \"will need to be resolved on another occasion.\" It is direction, not holding — but it's SCA direction, and the reasoning has been picked up by commentary across ENSafrica, Cliffe Dekker Hofmeyr, and Financial Institutions Legal Snapshot. A forum-selection clause that tries to push you past a cheaper lower court is still attacked primarily under s48 read with Regulation 44 and s51(3); Motus removes the \"exhaust the ombud first\" defence, it doesn't by itself strike the clause." },
@@ -757,7 +757,7 @@ export const POLICY_SUMMARY: PolicySummary = {
   ],
   terms: [
     "Account & shopping — 18+, contracting capacity required",
-    "Other sellers responsible for the items they sell",
+    "Sellers are responsible for the items they sell on our platform",
     "Takealot may cancel for stock / payment / listing error / account-abuse / criminal investigation",
     "Resale prohibition",
     "Dispute resolution: SA law, High Court (Western Cape Division, Cape Town) named as forum",
