@@ -24,9 +24,21 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Lock to read-only — the only outbound network call is to api.cloudflare.com
+# using a token from repo secrets; no GITHUB_TOKEN write scope needed.
+permissions:
+  contents: read
+
+# Serialize purges — rapid successive pushes shouldn't fire overlapping
+# zone-wide purges; keep the running job, drop redundant queued runs.
+concurrency:
+  group: cf-cache-purge
+  cancel-in-progress: false
+
 jobs:
   purge:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Wait for Cloudflare Pages to finish redeploying
         # 90 s is comfortably longer than Pages' usual rebuild for this

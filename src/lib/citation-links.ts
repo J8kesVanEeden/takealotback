@@ -56,7 +56,11 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   // site are CPA — when they aren't, the more specific ECT / POPIA / TMA
   // patterns below catch the prose context first).
   { test: /\bCPA\s|CPA$|Consumer Protection Act/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
-  { test: /^s\s*5[0-9]|\bsection\s+5[0-9]/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
+  // Bare CPA section references — covers ss 1–119 of the Act so a stat
+  // tagged "s 19" / "section 56" / "s 82(8)" routes correctly even
+  // without an explicit "CPA" prefix. Range chosen to avoid false-
+  // positives on year strings (e.g. 2008) and case numbers.
+  { test: /(?:^|\s)s\s*(?:[1-9]|[1-9][0-9]|1[0-1][0-9])\b|\bsection\s+(?:[1-9]|[1-9][0-9]|1[0-1][0-9])\b/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
 
   // ECT Act
   { test: /\bECT\b|Electronic Communications and Transactions/i, link: { url: '/citations/statutes/ect-act-2002', label: 'Electronic Communications and Transactions Act' } },
@@ -70,8 +74,10 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   // Prescription Act
   { test: /Prescription Act/i, link: { url: '/citations/statutes/prescription-act-1969', label: 'Prescription Act' } },
 
-  // Constitution
-  { test: /Constitution/i, link: { url: '/citations/statutes/constitution-s16', label: 'Constitution s 16' } },
+  // Constitution — only s 16 (free-expression) is currently anchored on
+  // the site. Narrowed regex prevents future references to other sections
+  // (e.g. s 9, s 34) silently routing to the s 16 page.
+  { test: /Constitution[^.]{0,40}\bs(?:ection)?\s*16\b|\bs(?:ection)?\s*16[^.]{0,40}Constitution/i, link: { url: '/citations/statutes/constitution-s16', label: 'Constitution s 16' } },
 ];
 
 /**

@@ -29,12 +29,22 @@ on:
       - 'astro.config.mjs'
   workflow_dispatch: # allow manual trigger from the Actions tab
 
+# Serialize wayback runs — back-to-back content pushes shouldn't run two
+# 25-min archive jobs in parallel; both would pace at 6s and SPN would
+# throttle each. Don't cancel-in-progress: let the running job finish so
+# at least one push gets fully archived.
+concurrency:
+  group: wayback-archive
+  cancel-in-progress: false
+
+# Workflow only reads the repo and posts to web.archive.org.
+permissions:
+  contents: read
+
 jobs:
   archive:
     runs-on: ubuntu-latest
     timeout-minutes: 25
-    permissions:
-      contents: read
     steps:
       - uses: actions/checkout@v4
 

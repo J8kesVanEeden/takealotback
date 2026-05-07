@@ -81,10 +81,14 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   font-weight: 400;
 }
 
-.h1 { font-size: clamp(48px, 7.8vw, 120px); }
-.h2 { font-size: clamp(32px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.03em; }
-.h3 { font-size: clamp(22px, 2.4vw, 32px); line-height: 1.1; letter-spacing: -0.02em; }
-.h4 { font-size: clamp(18px, 1.6vw, 22px); line-height: 1.2; letter-spacing: -0.01em; }
+/* Heading scale — clamp ranges scale with --grid-unit so the density
+ * toggle (TweaksPanel) actually moves typography too, not just the
+ * spacing scale. At grid-unit=8px the values match the original scale;
+ * at 6px (dense) they shrink ~25%, at 10px (airy) they grow ~25%. */
+.h1 { font-size: clamp(calc(var(--grid-unit) * 6),   7.8vw, calc(var(--grid-unit) * 15)); }
+.h2 { font-size: clamp(calc(var(--grid-unit) * 4),   4.6vw, calc(var(--grid-unit) * 8));  line-height: 1.02; letter-spacing: -0.03em; }
+.h3 { font-size: clamp(calc(var(--grid-unit) * 2.75),2.4vw, calc(var(--grid-unit) * 4));  line-height: 1.1;  letter-spacing: -0.02em; }
+.h4 { font-size: clamp(calc(var(--grid-unit) * 2.25),1.6vw, calc(var(--grid-unit) * 2.75));line-height: 1.2;  letter-spacing: -0.01em; }
 
 .lede {
   font-family: var(--font-body);
