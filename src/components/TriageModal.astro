@@ -1,5 +1,10 @@
 ---
 // "Find your fight" — decision-tree modal that routes a dispute to a clause + template.
+//
+// CLAUSE_SLUGS is built server-side from CLAUSES so it can never drift
+// from the data. Embedded as JSON below for the inline client script.
+import { CLAUSES } from '../data/content';
+const slugMap = Object.fromEntries(CLAUSES.map((c) => [c.n, c.slug]));
 ---
 <dialog class="tb-triage" data-triage aria-label="Find your fight">
   <div class="tb-triage__panel">
@@ -12,6 +17,7 @@
     </div>
   </div>
 </dialog>
+<script type="application/json" id="tb-clause-slugs" set:html={JSON.stringify(slugMap)} />
 
 <style>
   .tb-triage {
@@ -205,19 +211,10 @@
       },
     };
 
-    // Keep this map in sync with CLAUSES[] in src/data/content.ts.
-    // The matching map in scripts/check-anchors.mjs must also be updated
-    // when a new clause is added.
-    var CLAUSE_SLUGS = {
-      "01": "time-limits", "02": "original-packaging", "03": "damage-exclusions",
-      "04": "unlock-codes", "05": "bundle-return", "06": "credit-vs-refund",
-      "07": "manufacturer-deflection", "08": "defective-exclusions", "09": "rejected-disposal",
-      "10": "non-returnable", "11": "coupons-vouchers", "12": "unilateral-changes",
-      "13": "high-court-jurisdiction", "14": "order-cancellation", "15": "marketplace-sellers",
-      "16": "digital-items", "17": "resale-prohibition", "18": "mis-returned-items",
-      "19": "restocking-redelivery-fees", "20": "inspection-assessment-delay",
-      "21": "item-substitution", "22": "recall-noncompliance",
-    };
+    // Slug map is sourced from CLAUSES[] at server-render time and embedded
+    // as JSON above (#tb-clause-slugs) — no hand-maintained duplicate.
+    var slugEl = document.getElementById('tb-clause-slugs');
+    var CLAUSE_SLUGS = slugEl ? JSON.parse(slugEl.textContent || '{}') : {};
 
     var dialog = document.querySelector('[data-triage]');
     if (!dialog) return;
