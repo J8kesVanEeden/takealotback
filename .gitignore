@@ -38,3 +38,4 @@ _handoff/
 # Original zip
 takealotback-handoff.zip
 /.claude/
+.playwright-mcp/
