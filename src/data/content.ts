@@ -386,14 +386,18 @@ export const CLAUSES: Clause[] = [
     n: "22", slug: "recall-noncompliance", title: "Recall Non-Compliance",
     takealot: "Takealot's published procedure (per Wendy Knowler, News24, 17 April 2026) is to engage \"all affected customers as per our standard recall procedures, offering a refund in the form of the original payment method.\" In practice, the documented response on the ESR HaloLock power-bank recall (NCC, April 2026) was to refuse refunds to consumers on the basis that the manufacturer's 12-month warranty had expired. On the Citro-Soda Regular recall (SAHPRA), one consumer was issued a 2-business-day-validity coupon as the recall \"refund\" — which expired in his spam folder before he saw it.",
     angles: [
-      { stat: "CPA s 60", body: "Every supplier must take reasonable measures to inform consumers of unusual or unforeseen risks of harm. Where the NCC under s 60(2) directs a recall, the supplier's reasonable-measures duty includes ceasing supply and providing affected consumers with a refund or other appropriate remedy. This is a *substantive* duty independent of any private warranty. \"The 12-month warranty has expired\" is not a defence to s 60 — the recall instruction is the operative legal event, not the warranty calendar." },
+      { stat: "Headline argument", body: "A recall direction by the National Consumer Commission means the goods have been authoritatively determined to fail s 55 (right to safe, good-quality goods). A supplier refusing the refund is refusing the s 55 / s 56 remedy on goods the regulator has flagged as unsafe. \"The manufacturer's 12-month warranty has expired\" is not a defence — the CPA right runs from delivery, not from the warranty calendar." },
+      { stat: "CPA s 60", body: "s 60 is the recall *power*: the NCC may, after investigation, direct safety-monitoring and recall measures where goods present an unreasonable risk of harm. Non-compliance with a recall direction is a contravention. The s 60 instruction is the operative regulatory event; the consumer's refund right runs through the substantive sections (s 19 + s 55 + s 56) read with the recall." },
+      { stat: "CPA s 55 + s 56", body: "Goods authoritatively determined unsafe under a s 60 direction fail the s 55 quality standard. The s 56 implied warranty applies — six months from delivery, irrespective of any private warranty timetable, with the consumer's election of repair / replacement / refund. A recalled product fits the framework cleanly." },
+      { stat: "CPA s 19", body: "Right to refuse non-conforming delivery. Where a recall is issued for goods already delivered, the consumer's right to inspect / refuse acceptance is reactivated by the regulator's risk determination." },
+      { stat: "CPA s 58", body: "Supplier-warning duty in plain and understandable language. Where a recall has been published and a supplier still represents the product as safe (e.g. on the listing page), the s 58 duty has been breached and the consumer's reliance on the listing is compoundable as a s 41 misrepresentation." },
       { stat: "CPA s 61", body: "Strict product liability for harm caused by unsafe goods, joint and several across the supply chain. A recalled product is by definition one the regulator has determined to pose unreasonable risk; if it causes harm, s 61 runs against producer, importer, distributor, AND retailer. Takealot is a retailer. \"We are merely the platform\" is not a defence on s 61." },
       { stat: "NCC enforcement", body: "Recalls fall within the NCC's powers under Chapter 3 of the CPA. Non-compliance with a recall instruction is a contravention. In the ESR power-bank case Knowler reported the supplier's recall responses to the NCC; the NCC has compliance-notice and administrative-fine powers under s 73 read with s 110. A consumer denied a recall remedy can lodge directly with the NCC." },
-      { stat: "Refund must be substantively equivalent", body: "A recall-mandated refund is a refund of the price paid in money or money-equivalent. A 2-business-day-validity coupon is not substantively equivalent. Where Takealot has substituted a coupon for a refund, demand the refund in money to the original payment method, citing s 60(3) and the recall instruction. In Knowler's reporting on the Citro-Soda case, Takealot eventually credited the consumer the full coupon value as \"goodwill\" — which is the right outcome, late." },
-      { stat: "ECT s 44 / s 46 — does not apply", body: "Recalls are not cooling-off cancellations. Don't let Takealot frame a recall return as a s 44 cooling-off (which would invite the 7-day-from-delivery argument) or a change-of-mind return. The instruction is the regulator's, not yours; the relevant section is CPA s 60, not the cooling-off framework." },
+      { stat: "Refund must be substantively equivalent", body: "A recall-mandated refund is a refund of the price paid in money or money-equivalent. A 2-business-day-validity coupon is not substantively equivalent. Where Takealot has substituted a coupon for a refund, demand the refund in money to the original payment method, citing s 56(2) and the recall instruction. In Knowler's reporting on the Citro-Soda case, Takealot eventually credited the consumer the full coupon value as \"goodwill\" — which is the right outcome, late." },
+      { stat: "ECT s 44 / s 46 — does not apply", body: "Recalls are not cooling-off cancellations. Don't let Takealot frame a recall return as a s 44 cooling-off (which would invite the 7-day-from-delivery argument) or a change-of-mind return. The instruction is the regulator's, not yours; the relevant frame is CPA s 60 + s 55/s 56, not the cooling-off framework." },
       { stat: "Coupon-funded purchases", body: "Where the original purchase was paid using a Takealot coupon (Naidoo's case), Takealot's first response was to reissue the coupon with the original (short) validity. That is not a refund. Demand a money-equivalent credit valid for at least the standard 3-year period (Takealot's own credit-validity standard for non-coupon-funded refunds); cite s 48 (unfair-term) on the differential. Knowler's reporting confirms Takealot eventually conceded the full coupon value." },
     ],
-    why: "When a product you bought is recalled, you are entitled to a refund — regardless of warranty status. The recall instruction by NCC under CPA s 60(2) is the operative legal event, not the manufacturer's warranty calendar. \"12-month warranty has expired\" is not a defence; \"return for refund\" is the recall's standard remedy. If Takealot refuses, escalate fast — to the manufacturer (which Hart did successfully), to the NCC, and to the CGSO in parallel.",
+    why: "When a product you bought is recalled, you are entitled to a refund — regardless of warranty status. The recall direction by NCC under s 60 is the regulatory hook; the substantive refund right runs through s 19, s 55 and s 56. \"12-month warranty has expired\" is not a defence; \"return for refund\" is the recall's standard remedy. If Takealot refuses, escalate fast — to the manufacturer (which Hart did successfully), to the NCC, and to the CGSO in parallel.",
     template: "T18", escalate: "Manufacturer (often the fastest route) · NCC · CGSO · ARB if Takealot's listing still represents the product as safe",
   },
 ];
@@ -634,7 +638,7 @@ The legal position:
 4. Section 19 of the Consumer Protection Act gives me the right to inspect on delivery. Goods I do not accept are at the supplier's risk.
 5. Takealot's own public statement (per its response to News24, 12 April 2026) acknowledges that "on the occasion that customers don't receive what they've ordered, we take full accountability and work swiftly to resolve them by collecting the incorrect item and delivering the right product as quickly as possible."
 
-I am not a change-of-mind return. The "missing accessories" objection does not apply: the accessories of [item received] are irrelevant — I did not buy [item received].
+This is not a change-of-mind return. The "missing accessories" objection does not apply: the accessories of [item received] are irrelevant — I did not buy [item received].
 
 Please confirm within 7 business days that Takealot will (a) collect [item received], and (b) refund R[amount] in full to my original payment method, OR deliver [item ordered] as originally paid for. If neither is forthcoming I will lodge with the Consumer Goods and Services Ombud and, in parallel, file a section 41 complaint with the National Consumer Commission.
 
@@ -643,27 +647,28 @@ Regards,
 [Contact]
 [Order number]` },
   { code: "T18", title: "Recall Refund Demand", scenario: "An item bought through Takealot has been recalled (manufacturer recall, NCC recall, or SAHPRA recall) and Takealot is refusing the recall refund — typically on the basis that the manufacturer warranty has expired, or by issuing a short-validity coupon as the \"refund.\"",
-    subject: "Recall refund — section 60 CPA — Order #[ORDER]",
+    subject: "Recall refund — sections 55, 56, 60 CPA — Order #[ORDER]",
     body: `Hi,
 
 Order #[ORDER]. On [date] I bought a [item] for R[amount]. The product has since been recalled by [manufacturer / NCC / SAHPRA] on [recall date], reference [recall ID if known].
 
-Takealot's response so far has been to [refuse the refund / issue a coupon valid for N days / refer me to the manufacturer]. That is not consistent with the company's obligations under the recall.
+Takealot's response so far has been to [refuse the refund / issue a coupon valid for N days / refer me to the manufacturer]. That is not consistent with the company's obligations.
 
 The legal position:
 
-1. Section 60 of the Consumer Protection Act requires every supplier to take reasonable measures to inform consumers of unusual or unforeseen risks of harm. Where the National Consumer Commission directs a recall under section 60(2), the supplier's reasonable-measures duty includes ceasing supply and providing affected consumers with a refund or other appropriate remedy. This is a substantive duty independent of any private warranty.
-2. The recall instruction is the operative legal event. "The manufacturer's 12-month warranty has expired" is not a defence on the section 60 duty.
-3. Section 61 of the Consumer Protection Act imposes joint and several strict product liability across the supply chain, including the retailer. Takealot is a retailer.
-4. A recall-mandated refund must be substantively equivalent to the price paid. A coupon valid for [N] business days is not. Where the original payment was via coupon, the substituted refund must be a money-equivalent credit valid for the standard credit-validity period.
+1. The recall direction by [the National Consumer Commission under section 60 / SAHPRA / the manufacturer] is an authoritative regulatory determination that the goods present an unreasonable risk of harm. The goods are therefore not "safe, good-quality goods" for the purposes of section 55 of the Consumer Protection Act, and they fail the implied warranty of quality under section 56.
+2. The substantive refund right runs through sections 19 (right to refuse non-conforming delivery), 55 (quality) and 56 (implied warranty), read with the recall instruction. Section 56 gives the consumer the election of repair, replacement, or refund — within six months of delivery, irrespective of any private warranty calendar.
+3. "The manufacturer's 12-month warranty has expired" is not a defence to a section 56 election. The CPA right runs from delivery, not from warranty expiry.
+4. Section 61 of the Consumer Protection Act imposes joint and several strict product liability across the supply chain, including the retailer. Takealot is a retailer.
+5. A refund must be substantively equivalent to the price paid. A coupon valid for [N] business days is not. Where the original payment was via coupon, the substituted refund must be a money-equivalent credit valid for the standard credit-validity period.
 
 Please confirm within 7 business days that Takealot will collect the recalled product and refund R[amount] in money to the original payment method (or, where the original payment was a coupon, a money-equivalent credit valid for the standard 3-year credit period).
 
 If the refund is not provided I will:
-  (a) lodge with the National Consumer Commission for the section 60 contravention;
+  (a) lodge with the National Consumer Commission citing section 60 read with sections 55 and 56;
   (b) lodge with the Consumer Goods and Services Ombud in parallel;
   (c) approach the manufacturer directly (recalls are a manufacturer obligation as much as a retailer one);
-  (d) where the listing still represents the product as safe, lodge with the Advertising Regulatory Board.
+  (d) where the listing still represents the product as safe, lodge with the Advertising Regulatory Board for the section 41 / section 58 misrepresentation.
 
 Regards,
 [Name]
@@ -711,7 +716,8 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s55", title: "Right to safe, good-quality goods", blurb: "Reasonably suitable, good quality, durable, free of defects, compliant with formal standards. s55(6): disapplies (a)(b) where specific condition expressly disclosed and accepted." },
     { id: "s56", title: "Implied warranty of quality", blurb: "The big one. 6 months. Three-tier warranty (producer/distributor/retailer). Consumer elects repair/replace/refund. Cannot be contracted out of." },
     { id: "s57", title: "Warranty on repairs and parts", blurb: "Minimum 3-month warranty on any new/reconditioned part fitted during repair, plus the labour." },
-    { id: "s60", title: "Warning concerning fact and nature of risks", blurb: "Supplier duty to inform consumers of unusual risks. On a recall instruction by the NCC under s 60(2), the supplier must cease supply and provide affected consumers with a refund or appropriate remedy. \"Warranty has expired\" is not a defence on the s 60 duty." },
+    { id: "s58", title: "Warning concerning fact and nature of risks", blurb: "Supplier duty to alert consumers in plain and understandable language to the nature, potential risks, and safe-handling procedures of any goods or activity that could result in harm. Closely connected to s 60 (recall) and s 61 (strict product liability)." },
+    { id: "s60", title: "Safety monitoring and recall", blurb: "NCC power to direct safety-monitoring and recall procedures where goods present an unreasonable risk of harm. The recall direction is the regulatory hook; the consumer's substantive refund right runs through s 19 + s 55 + s 56 read with the recall. \"Warranty expired\" is not a defence to a CPA right that runs from delivery." },
     { id: "s61", title: "Product liability", blurb: "Strict liability for harm caused by unsafe goods. Joint and several across the supply chain." },
     { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 gave obiter guidance (para 26) that s 69(d) points to remedies in national legislation generally rather than a compulsory internal hierarchy — consumers may approach a court directly. The court expressly declined to decide the scope of s 69(d); the issue remains technically open." },
     { id: "s2(10)", title: "Saving of common-law rights", blurb: "No provision of the Act may be interpreted to preclude common-law rights — preserves the aedilitian remedies." },

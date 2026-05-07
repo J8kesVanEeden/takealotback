@@ -1,0 +1,769 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Home" [ref=e8]
+      - listitem [ref=e9]:
+        - link "Watch" [ref=e10] [cursor=pointer]:
+          - /url: multimedia/video
+          - img "Watch" [ref=e11]
+      - listitem [ref=e12]:
+        - link "Listen" [ref=e13] [cursor=pointer]:
+          - /url: multimedia/podcasts
+          - img "Listen" [ref=e14]
+      - listitem [ref=e15]:
+        - link "Play" [ref=e16] [cursor=pointer]:
+          - /url: news24/games
+          - img "Play" [ref=e17]
+      - listitem [ref=e18]:
+        - generic [ref=e19]:
+          - img "Publications" [ref=e20]
+          - text: Publications
+      - listitem [ref=e21]:
+        - generic [ref=e22]:
+          - img "Partners" [ref=e23]
+          - text: Partners
+      - listitem [ref=e24]:
+        - link "Public Notices Public Notices" [ref=e25] [cursor=pointer]:
+          - /url: https://www.news24.com/notices
+          - img "Public Notices" [ref=e26]
+          - generic [ref=e27]: Public Notices
+      - listitem [ref=e28]:
+        - link "Jobs Jobs" [ref=e29] [cursor=pointer]:
+          - /url: https://www.news24.com/jobs
+          - img "Jobs" [ref=e30]
+          - generic [ref=e31]: Jobs
+    - list [ref=e33]:
+      - listitem [ref=e34]:
+        - link "Subscribe" [ref=e35] [cursor=pointer]:
+          - /url: /subscription?returnurl=https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+      - listitem [ref=e36]:
+        - link "Sign in" [ref=e37] [cursor=pointer]:
+          - /url: /auth/signin?returnurl=https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+  - main [ref=e40]:
+    - banner [ref=e41]:
+      - generic [ref=e42]:
+        - link "Site Logo" [ref=e43] [cursor=pointer]:
+          - /url: /business
+          - img "Site Logo" [ref=e44]
+        - generic [ref=e45]:
+          - search [ref=e46]:
+            - textbox "Search" [ref=e47]
+            - button "Search button" [ref=e48] [cursor=pointer]
+          - list [ref=e51]:
+            - listitem [ref=e52]:
+              - link "TikTok Social Share" [ref=e53] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@news24
+                - img "TikTok" [ref=e54]
+            - listitem [ref=e55]:
+              - link "Twitter Social Share" [ref=e56] [cursor=pointer]:
+                - /url: https://twitter.com/News24_Business
+                - img "Twitter" [ref=e57]
+          - link "Thursday, 07 May Add location" [ref=e58] [cursor=pointer]:
+            - /url: /profile/weather
+            - generic [ref=e61]:
+              - paragraph [ref=e62]: Thursday, 07 May
+              - text: Add location
+      - navigation [ref=e63]:
+        - list [ref=e64]:
+          - listitem [ref=e65]:
+            - link "News24" [ref=e66] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e67]:
+            - link "Companies" [ref=e68] [cursor=pointer]:
+              - /url: /business/companies/
+          - listitem [ref=e69]:
+            - link "Economy" [ref=e70] [cursor=pointer]:
+              - /url: /business/economy/
+          - listitem [ref=e71]:
+            - link "Opinion" [ref=e72] [cursor=pointer]:
+              - /url: /business/opinion/
+          - listitem [ref=e73]:
+            - link "Markets" [ref=e74] [cursor=pointer]:
+              - /url: /business/markets/
+          - listitem [ref=e75]:
+            - link "Investing" [ref=e76] [cursor=pointer]:
+              - /url: /business/investing/
+          - listitem [ref=e77]:
+            - link "Consumer Lookout" [ref=e78] [cursor=pointer]:
+              - /url: /business/consumer-lookout/
+          - listitem [ref=e79]:
+            - link "Personal Finance" [ref=e80] [cursor=pointer]:
+              - /url: /business/money/
+          - listitem [ref=e81]:
+            - link "Climate Future" [ref=e82] [cursor=pointer]:
+              - /url: /business/climate-future/
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - paragraph [ref=e88]: 12 Apr
+          - generic [ref=e89]:
+            - generic [ref=e90]: Share
+            - list [ref=e93]:
+              - listitem [ref=e94]:
+                - link "Whatsapp social share" [ref=e95] [cursor=pointer]:
+                  - /url: whatsapp://send?text=Wendy%E2%80%99s%20Win%20of%20the%20Week%20%7C%20The%20battle%20to%20prove%20a%20calculator%20isn%E2%80%99t%20an%20iPhone%0Ahttps%3A%2F%2Fwww.news24.com%2Fbusiness%2Fconsumer-lookout%2Fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539%0A
+                  - img "Whatsapp" [ref=e96]
+              - listitem [ref=e97]:
+                - link "Facebook social share" [ref=e98] [cursor=pointer]:
+                  - /url: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.news24.com%2Fbusiness%2Fconsumer-lookout%2Fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+                  - img "Facebook" [ref=e99]
+              - listitem [ref=e100]:
+                - link "Twitter social share" [ref=e101] [cursor=pointer]:
+                  - /url: https://twitter.com/intent/tweet?via=News24_Business&text=Wendy%E2%80%99s%20Win%20of%20the%20Week%20%7C%20The%20battle%20to%20prove%20a%20calculator%20isn%E2%80%99t%20an%20iPhone&url=https%3A%2F%2Fwww.news24.com%2Fbusiness%2Fconsumer-lookout%2Fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+                  - img "Twitter" [ref=e102]
+              - listitem [ref=e103]:
+                - link "Email social share" [ref=e104] [cursor=pointer]:
+                  - /url: mailto:?subject=Wendy%E2%80%99s%20Win%20of%20the%20Week%20%7C%20The%20battle%20to%20prove%20a%20calculator%20isn%E2%80%99t%20an%20iPhone&body=Wendy%E2%80%99s%20Win%20of%20the%20Week%20%7C%20The%20battle%20to%20prove%20a%20calculator%20isn%E2%80%99t%20an%20iPhone%0A%0Ahttps%3A%2F%2Fwww.news24.com%2Fbusiness%2Fconsumer-lookout%2Fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539%0A%0A
+                  - img "Email" [ref=e105]
+        - heading "Wendy’s Win of the Week | The battle to prove a calculator isn’t an iPhone" [level=1] [ref=e106]
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - link "accreditation" [ref=e110] [cursor=pointer]:
+              - /url: https://www.news24.com
+              - img "accreditation" [ref=e111]
+            - generic [ref=e112]: Wendy Knowler
+          - generic [ref=e113]:
+            - generic [ref=e114] [cursor=pointer]:
+              - img "Comments" [ref=e115]
+              - generic [ref=e116]: Comments
+            - link "add bookmark Bookmark" [ref=e118] [cursor=pointer]:
+              - /url: /profile/bookmarks?returnurl=https%3a%2f%2fwww.news24.com%2fbusiness%2fconsumer-lookout%2fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+              - img "add bookmark" [ref=e119]
+              - generic [ref=e120]: Bookmark
+        - generic [ref=e121]:
+          - link "Add as a preferred source on Google" [ref=e122] [cursor=pointer]:
+            - /url: https://www.google.com/preferences/source?q=news24.com
+          - link "Follow on Google News" [ref=e123] [cursor=pointer]:
+            - /url: https://news.google.com/search?q=news24.com
+        - generic [ref=e124]:
+          - link "Listen to this article 0:00 play article Subscribers can listen to this article" [ref=e125] [cursor=pointer]:
+            - /url: /auth/cta/audioarticle/true?returnurl=https%3a%2f%2fwww.news24.com%2fbusiness%2fconsumer-lookout%2fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e130]: Listen to this article
+                - generic [ref=e131]: 0:00
+              - generic [ref=e132]:
+                - img "play article" [ref=e133]
+                - generic [ref=e134]: Subscribers can listen to this article
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - img "Wendy Knowler" [ref=e137]
+              - generic [ref=e138]: Wendy Knowler
+              - generic [ref=e140]: "Graphic: Sharlene Rood"
+            - generic [ref=e141]:
+              - paragraph [ref=e142]:
+                - generic [ref=e143]: A Takealot client ordered and paid R14 000 for an iPhone 15, but received a calculator which sells for less than R400. Such mistakes are arguably inevitable given the order volumes South Africa’s biggest online retailer deals with. But they should be swiftly corrected. Weeks after reporting the issue, Takelot continued to refuse to accept the client’s return of the calculator. That’s when she approached Wendy Knowler for help.
+              - list [ref=e144]:
+                - listitem [ref=e145]:
+                  - generic [ref=e146]:
+                    - text: For more financial news, visit
+                    - link "News24 Business" [ref=e147] [cursor=pointer]:
+                      - /url: https://www.news24.com/business
+                    - text: .
+              - separator [ref=e148]
+              - paragraph [ref=e149]: Product substitutions or mix-ups are not uncommon in online shopping.
+              - paragraph [ref=e150]: Of course, some are more bizarre than others.
+              - paragraph [ref=e151]: A standout case was that of Birgit Westermann-Winter of Cape Town, who in late 2024 ordered and paid for an office chair from Makro but received a box of biscuits instead.
+              - paragraph [ref=e153]:
+                - text: More recently, there were some interesting Takealot substitutions.
+                - link "On social media" [ref=e154] [cursor=pointer]:
+                  - /url: https://vt.tiktok.com/ZSaMefXjQ/
+                - text: ", Precious* says she paid R14 000 for a PS5 and a controller, but was sent metal sock hangers instead."
+              - paragraph [ref=e155]: And closer to home, my partner ordered a tech gadget – a wireless Bluetooth transmitter/receiver – and was sent a pack of teeth whitening strips.
+              - paragraph [ref=e156]: Both cases were rectified.
+              - paragraph [ref=e157]: "Asked about the crazy mix-ups, Takealot told me at the time:"
+              - paragraph [ref=e159]: “On the occasion that customers don’t receive what they’ve ordered, we take full accountability and work swiftly to resolve them by collecting the incorrect item and delivering the right product as quickly as possible.
+              - paragraph [ref=e160]: “Customers can report these issues through our customer help centre or by logging a ‘Not What I Ordered’ return on their Takealot profile.
+              - paragraph [ref=e161]: “Our ecosystem operates with thousands of suppliers and sellers, multiple fulfilment centres, and complex logistics networks.
+              - paragraph [ref=e162]: “This means there can be various contributing factors – from supplier or seller labelling inconsistencies and warehouse picking errors to delivery mix-ups.
+              - paragraph [ref=e163]: “We continuously invest in enhancing our systems, processes, and quality controls to minimise these disruptions and maintain the trust our customers place in us every day.”
+              - paragraph [ref=e164]: But for some reason, that robust system failed Thandi Bila.
+              - paragraph [ref=e165]: She emailed me recently to say that she bought a R14 000 iPhone 15 on the Takealot site on 7 March but received a Casio calculator instead, a model which is currently being sold by several retailers for less than R400.
+              - paragraph [ref=e166]: “I never opened or used the calculator because it wasn’t what I ordered,” she told me. She returned it to Takealot.
+              - paragraph [ref=e167]: “But I received an email from Takealot saying that because I had used the calculator, they will return it.
+              - paragraph [ref=e168]: “And they won’t refund my money.
+              - paragraph [ref=e169]: “I’ve spent weeks sending emails all over, and they keep giving me the same response.”
+              - paragraph [ref=e170]: "One of them reads: “Unfortunately, we cannot accept your return request as the return item is missing its accessories."
+              - paragraph [ref=e171]: “Our returns policy states that a return can only be accepted if you return all the parts of the item you received.”
+              - paragraph [ref=e172]: Not a word about the fact that she had actually ordered and paid R14 000 for an iPhone, not a calculator.
+              - paragraph [ref=e173]: Last week, Bila told me that a Takealot driver had tried to return the calculator to her for the fourth time. “We just didn’t open the gate, so he left with it,” she said.
+              - paragraph [ref=e175]: Responding to my query about the case, Takealot conceded that Bila “did not receive the correct item”.
+              - paragraph [ref=e176]: “We have been attempting to reach her directly to resolve this issue and, based on her previous communication requesting a credit, we will be honouring that request.”
+              - paragraph [ref=e177]: Takealot has credited Bila the R14 000.
+              - generic [ref=e178]:
+                - generic [ref=e179]: "The advice:"
+                - paragraph [ref=e181]: If you order something online, especially an expensive item, if practically possible, open the box in front of the delivery person, and, if what you ordered is not inside it, photograph it in the hands of the delivery person. Such evidence will be invaluable in the event of a dispute.
+              - paragraph
+              - paragraph [ref=e182]: "*Details witheld for privacy."
+              - generic [ref=e183]:
+                - generic [ref=e184]: "CONTACT WENDY:"
+                - generic [ref=e185]:
+                  - paragraph [ref=e186]:
+                    - text: "Email:"
+                    - link "consumer@news24.com" [ref=e187] [cursor=pointer]:
+                      - /url: mailto:consumer@news24.com
+                  - paragraph [ref=e188]:
+                    - text: "Twitter:"
+                    - link "@wendyknowler" [ref=e189] [cursor=pointer]:
+                      - /url: https://x.com/wendyknowler
+                  - paragraph
+                  - paragraph [ref=e190]: Due to the volume of emails Wendy receives, she cannot undertake to take up every case or respond to every email. Please include dates, reference numbers, receipts, and other relevant details in your emails.
+              - generic [ref=e192]:
+                - generic [ref=e193]: Newsletter
+                - generic [ref=e195]: Daily
+                - generic [ref=e196]: SA Money Daily
+                - generic [ref=e197]: The biggest business, economic and market news of the day.
+                - link "Sign up" [ref=e198] [cursor=pointer]:
+                  - /url: /individualnewsletter/signup/3989?returnurl=https%3a%2f%2fwww.news24.com%2findividualnewsletter%2fsignup%2f3989%3freturnurl%3dhttps%253a%252f%252fwww.news24.com%252fbusiness%252fconsumer-lookout%252fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+            - generic "Related articles" [ref=e200]:
+              - paragraph [ref=e203]: Discover More
+              - main [ref=e204]:
+                - generic:
+                  - button "Previous Slide" [ref=e205] [cursor=pointer]:
+                    - img "Right chevron" [ref=e206]
+                  - button "Next Slide" [ref=e208] [cursor=pointer]:
+                    - img "Right chevron" [ref=e209]
+                - generic [ref=e212]:
+                  - generic [ref=e213]:
+                    - link "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e214] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/popular-diet-drinks-low-cal-claim-doesnt-hold-water-regulator-says-20260429-1084?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e215]:
+                        - img "Find more about Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e216]
+                      - generic:
+                        - generic:
+                          - img "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim"
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e218]: Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim
+                    - link "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e220] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/popular-diet-drinks-low-cal-claim-doesnt-hold-water-regulator-says-20260429-1084?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - img "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e221]
+                      - generic [ref=e222]: News 24
+                      - generic [ref=e224]: 1w ago
+                  - generic [ref=e226]:
+                    - link "1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e227] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/17m-cars-in-sa-still-fitted-with-deadly-airbags-as-recall-stalls-20260430-1101?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e228]:
+                        - img "Find more about 1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e229]
+                      - generic:
+                        - generic:
+                          - img "1.7m cars in SA still fitted with deadly airbags as recall stalls"
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e231]: 1.7m cars in SA still fitted with deadly airbags as recall stalls
+                    - link "1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e233] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/17m-cars-in-sa-still-fitted-with-deadly-airbags-as-recall-stalls-20260430-1101?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - img "1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e234]
+                      - generic [ref=e235]: News 24
+                      - generic [ref=e237]: 6d ago
+                  - generic [ref=e240]:
+                    - 'link "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e241] [cursor=pointer]':
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-cereal-offenders-pepsico-apologises-for-pronutro-fail-20260424-1108?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e242]:
+                        - 'img "Find more about Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e243]'
+                      - generic:
+                        - generic:
+                          - 'img "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail"'
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e245]: "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail"
+                    - 'link "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e247] [cursor=pointer]':
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-cereal-offenders-pepsico-apologises-for-pronutro-fail-20260424-1108?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - 'img "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e248]'
+                      - generic [ref=e249]: News 24
+                      - generic [ref=e251]: 1w ago
+                  - generic [ref=e253]:
+                    - link "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e254] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-billed-for-service-she-didnt-get-client-hits-mwebs-brick-wall-20260426-0531?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e255]:
+                        - img "Find more about Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e256]
+                      - generic:
+                        - generic:
+                          - img "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall"
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e258]: Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall
+                    - link "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e260] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-billed-for-service-she-didnt-get-client-hits-mwebs-brick-wall-20260426-0531?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - img "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e261]
+                      - generic [ref=e262]: News 24
+                      - generic [ref=e264]: 1w ago
+                  - generic [ref=e267]: Media24 Advertisement
+                  - generic [ref=e269]:
+                    - link "Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot" [ref=e270] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-power-banks-risky-antacids-and-a-shrug-from-takealot-20260417-1044?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e271]:
+                        - img "Find more about Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot" [ref=e272]
+                      - generic:
+                        - generic:
+                          - img "Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot"
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e274]: Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot
+                    - link "Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot" [ref=e276] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-power-banks-risky-antacids-and-a-shrug-from-takealot-20260417-1044?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - img "Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot" [ref=e277]
+                      - generic [ref=e278]: News 24
+                      - generic [ref=e280]: 2w ago
+                  - generic [ref=e282]:
+                    - link "Wendy Knowler | Why Cartrack is paying millions to 167 unhappy clients" [ref=e283] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-why-cartrack-is-paying-millions-to-167-unhappy-clients-20260410-1093?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e284]:
+                        - img "Find more about Wendy Knowler | Why Cartrack is paying millions to 167 unhappy clients" [ref=e285]
+                      - generic:
+                        - generic:
+                          - img "Wendy Knowler | Why Cartrack is paying millions to 167 unhappy clients"
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e287]: Wendy Knowler | Why Cartrack is paying millions to 167 unhappy clients
+                    - link "Wendy Knowler | Why Cartrack is paying millions to 167 unhappy clients" [ref=e289] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-why-cartrack-is-paying-millions-to-167-unhappy-clients-20260410-1093?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - img "Wendy Knowler | Why Cartrack is paying millions to 167 unhappy clients" [ref=e290]
+                      - generic [ref=e291]: News 24
+                      - generic [ref=e293]: 3w ago
+                  - generic [ref=e295]:
+                    - 'link "Wendy Knowler | ‘It tastes weird’: New generation ProNutro is not going down well" [ref=e296] [cursor=pointer]':
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-it-tastes-weird-new-generation-pronutro-is-not-going-down-well-20260418-0584?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e297]:
+                        - 'img "Find more about Wendy Knowler | ‘It tastes weird’: New generation ProNutro is not going down well" [ref=e298]'
+                      - generic:
+                        - generic:
+                          - 'img "Wendy Knowler | ‘It tastes weird’: New generation ProNutro is not going down well"'
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e300]: "Wendy Knowler | ‘It tastes weird’: New generation ProNutro is not going down well"
+                    - 'link "Wendy Knowler | ‘It tastes weird’: New generation ProNutro is not going down well" [ref=e302] [cursor=pointer]':
+                      - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-it-tastes-weird-new-generation-pronutro-is-not-going-down-well-20260418-0584?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - 'img "Wendy Knowler | ‘It tastes weird’: New generation ProNutro is not going down well" [ref=e303]'
+                      - generic [ref=e304]: News 24
+                      - generic [ref=e306]: 2w ago
+                  - generic [ref=e308]:
+                    - link "SA’s car recalls double in a year; consumer watchdog finalising investigation into vehicle safety" [ref=e309] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/sas-car-recalls-double-in-a-year-consumer-watchdog-finalising-investigation-into-vehicle-safety-20260419-0551?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e310]:
+                        - img "Find more about SA’s car recalls double in a year; consumer watchdog finalising investigation into vehicle safety" [ref=e311]
+                      - generic:
+                        - generic:
+                          - img "SA’s car recalls double in a year; consumer watchdog finalising investigation into vehicle safety"
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e313]: SA’s car recalls double in a year; consumer watchdog finalising investigation into vehicle safety
+                    - link "SA’s car recalls double in a year; consumer watchdog finalising investigation into vehicle safety" [ref=e315] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/sas-car-recalls-double-in-a-year-consumer-watchdog-finalising-investigation-into-vehicle-safety-20260419-0551?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - img "SA’s car recalls double in a year; consumer watchdog finalising investigation into vehicle safety" [ref=e316]
+                      - generic [ref=e317]: News 24
+                      - generic [ref=e319]: 2w ago
+                  - generic [ref=e322]: Media24 Advertisement
+                  - generic [ref=e324]:
+                    - link [ref=e325] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/popular-diet-drinks-low-cal-claim-doesnt-hold-water-regulator-says-20260429-1084?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - figure [ref=e326]:
+                        - img [ref=e327]
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: News 24
+                        - generic: article
+                      - paragraph [ref=e329]: Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim
+                    - link [ref=e331] [cursor=pointer]:
+                      - /url: https://www.news24.com/business/consumer-lookout/popular-diet-drinks-low-cal-claim-doesnt-hold-water-regulator-says-20260429-1084?utm_source=mantis_carousel&utm_medium=web&utm_campaign=discover_more
+                      - img [ref=e332]
+                      - generic [ref=e333]: News 24
+                      - generic [ref=e335]: 1w ago
+            - generic [ref=e337]:
+              - generic [ref=e338]: Discover the Truth
+              - generic [ref=e339]: Step into a world where the truth shines bright, and every headline is worth your time. With News24, you're not just reading the news; you are part of a community that values knowledge and insight. Immerse yourself in compelling stories, sharp analyses, and content that keeps you ahead of the curve.
+              - link "Subscribe to News24 now" [ref=e341] [cursor=pointer]:
+                - /url: /subscription
+            - generic [ref=e342]:
+              - generic [ref=e343]: Related Articles
+              - generic [ref=e344]:
+                - link "Lloyd Burnard | Club crowds, ditching a final for a flight... cricket deserves more" [ref=e346] [cursor=pointer]:
+                  - /url: https://www.news24.com/sport/columnists/lloydburnard/lloyd-burnard-amateur-production-ditching-a-final-for-a-flight-cricket-deserves-more-20260330-1281
+                  - generic [ref=e347]: Lloyd Burnard | Club crowds, ditching a final for a flight... cricket deserves more
+                - link "Garth Theunissen | The folly of a first-world inflation target in a third-world economy" [ref=e349] [cursor=pointer]:
+                  - /url: https://www.news24.com/business/opinion/garth-theunissen-the-folly-of-a-first-world-inflation-target-in-a-third-world-economy-20260329-0542
+                  - generic [ref=e350]: Garth Theunissen | The folly of a first-world inflation target in a third-world economy
+                - link "How a one-table office created the most recognisable blue machine in SA" [ref=e352] [cursor=pointer]:
+                  - /url: https://www.news24.com/southafrica/good-news/how-a-one-table-office-created-the-most-recognisable-blue-machine-in-sa-20260315-1159
+                  - generic [ref=e353]: How a one-table office created the most recognisable blue machine in SA
+          - generic [ref=e354]:
+            - generic [ref=e355]: "Read more on:"
+            - link "consumer protection" [ref=e356] [cursor=pointer]:
+              - /url: news24/Tags/consumer%20protection
+            - link "*LEARN" [ref=e357] [cursor=pointer]:
+              - /url: news24/Tags/%2ALEARN
+            - link "wendy's win of the week" [ref=e358] [cursor=pointer]:
+              - /url: news24/Tags/wendy%27s%20win%20of%20the%20week
+            - link "takealot" [ref=e359] [cursor=pointer]:
+              - /url: news24/Tags/takealot
+          - link:
+            - /url: /auth/cta/comment/true?returnurl=https%3a%2f%2fwww.news24.com%2fbusiness%2fconsumer-lookout%2fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+          - link "Show Comments (16)" [ref=e360] [cursor=pointer]:
+            - /url: /auth/cta/comment/true?returnurl=https%3a%2f%2fwww.news24.com%2fbusiness%2fconsumer-lookout%2fwendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539
+            - text: Show Comments (
+            - generic [ref=e361]: "16"
+            - text: )
+          - generic "Related articles" [ref=e364]:
+            - paragraph [ref=e367]: Read More
+            - main [ref=e368]:
+              - generic [ref=e370]:
+                - generic [ref=e371]:
+                  - link "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e372] [cursor=pointer]:
+                    - /url: https://www.news24.com/business/consumer-lookout/popular-diet-drinks-low-cal-claim-doesnt-hold-water-regulator-says-20260429-1084?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - figure [ref=e373]:
+                      - img "Find more about Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e374]
+                    - generic:
+                      - generic:
+                        - img "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim"
+                        - generic: News 24
+                      - generic: article
+                    - paragraph [ref=e376]: Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim
+                  - link "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e378] [cursor=pointer]:
+                    - /url: https://www.news24.com/business/consumer-lookout/popular-diet-drinks-low-cal-claim-doesnt-hold-water-regulator-says-20260429-1084?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - img "Popular spirit cooler forced to withdraw ‘unsubstantiated’ low-cal claim" [ref=e379]
+                    - generic [ref=e380]: News 24
+                    - generic [ref=e382]: 1w ago
+                - generic [ref=e383]:
+                  - link "1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e384] [cursor=pointer]:
+                    - /url: https://www.news24.com/business/consumer-lookout/17m-cars-in-sa-still-fitted-with-deadly-airbags-as-recall-stalls-20260430-1101?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - figure [ref=e385]:
+                      - img "Find more about 1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e386]
+                    - generic:
+                      - generic:
+                        - img "1.7m cars in SA still fitted with deadly airbags as recall stalls"
+                        - generic: News 24
+                      - generic: article
+                    - paragraph [ref=e388]: 1.7m cars in SA still fitted with deadly airbags as recall stalls
+                  - link "1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e390] [cursor=pointer]:
+                    - /url: https://www.news24.com/business/consumer-lookout/17m-cars-in-sa-still-fitted-with-deadly-airbags-as-recall-stalls-20260430-1101?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - img "1.7m cars in SA still fitted with deadly airbags as recall stalls" [ref=e391]
+                    - generic [ref=e392]: News 24
+                    - generic [ref=e394]: 6d ago
+                - generic [ref=e396]: Media24 Advertisement
+                - generic [ref=e398]: Media24 Advertisement
+                - generic [ref=e399]:
+                  - 'link "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e400] [cursor=pointer]':
+                    - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-cereal-offenders-pepsico-apologises-for-pronutro-fail-20260424-1108?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - figure [ref=e401]:
+                      - 'img "Find more about Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e402]'
+                    - generic:
+                      - generic:
+                        - 'img "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail"'
+                        - generic: News 24
+                      - generic: article
+                    - paragraph [ref=e404]: "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail"
+                  - 'link "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e406] [cursor=pointer]':
+                    - /url: https://www.news24.com/business/consumer-lookout/wendy-knowler-cereal-offenders-pepsico-apologises-for-pronutro-fail-20260424-1108?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - 'img "Wendy Knowler | Cereal offenders: PepsiCo apologises for ProNutro fail" [ref=e407]'
+                    - generic [ref=e408]: News 24
+                    - generic [ref=e410]: 1w ago
+                - generic [ref=e411]:
+                  - link "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e412] [cursor=pointer]:
+                    - /url: https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-billed-for-service-she-didnt-get-client-hits-mwebs-brick-wall-20260426-0531?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - figure [ref=e413]:
+                      - img "Find more about Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e414]
+                    - generic:
+                      - generic:
+                        - img "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall"
+                        - generic: News 24
+                      - generic: article
+                    - paragraph [ref=e416]: Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall
+                  - link "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e418] [cursor=pointer]:
+                    - /url: https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-billed-for-service-she-didnt-get-client-hits-mwebs-brick-wall-20260426-0531?utm_source=mantis_feed&utm_medium=web&utm_campaign=read_more
+                    - img "Wendy’s Win of the Week | Billed for service she didn’t get, client hits Mweb’s brick wall" [ref=e419]
+                    - generic [ref=e420]: News 24
+                    - generic [ref=e422]: 1w ago
+                - generic [ref=e424]: Media24 Advertisement
+                - generic [ref=e426]: Media24 Advertisement
+      - generic [ref=e428]:
+        - generic [ref=e429]:
+          - generic [ref=e430]:
+            - generic [ref=e431] [cursor=pointer]: Most Read
+            - list [ref=e433]:
+              - listitem [ref=e434]:
+                - text: "1"
+                - link "Woolies claps back at Beyers as Sweetie Pies run out" [ref=e435] [cursor=pointer]:
+                  - /url: /business/companies/woolies-claps-back-at-beyers-as-sweetie-pie-shortage-looms-20260506-1123
+              - listitem [ref=e436]:
+                - text: "2"
+                - link "SA Army Foundation top brass debarred, fined R44m after ‘exhaustive’ probe" [ref=e437] [cursor=pointer]:
+                  - /url: /business/companies/sa-army-foundation-top-brass-debarred-fined-r44m-after-exhaustive-probe-20260506-0856
+              - listitem [ref=e438]:
+                - text: "3"
+                - link "Rand and JSE surge, oil slides on Iran peace deal report" [ref=e439] [cursor=pointer]:
+                  - /url: /business/markets/currencies/rand-and-jse-surge-oil-slides-on-iran-peace-deal-report-20260506-0660
+              - listitem [ref=e440]:
+                - text: "4"
+                - link "State invokes Boer War, apartheid past to defend B-BBEE legal sector codes" [ref=e441] [cursor=pointer]:
+                  - /url: /business/companies/state-invokes-boer-war-apartheid-past-to-defend-b-bbee-legal-sector-codes-20260506-1108
+              - listitem [ref=e442]:
+                - text: "5"
+                - link "Another day, another warning for those with debt" [ref=e443] [cursor=pointer]:
+                  - /url: /business/economy/another-day-another-warning-for-those-with-debt-20260506-0791
+          - generic [ref=e446]:
+            - generic [ref=e447] [cursor=pointer]: Currencies
+            - generic [ref=e448] [cursor=pointer]: Commodities
+            - generic [ref=e449] [cursor=pointer]: Jse Indexes
+            - generic [ref=e450]:
+              - generic [ref=e451]:
+                - generic [ref=e452]: Rand - Dollar
+                - generic [ref=e453]: "16.31"
+                - generic [ref=e454]: +0.5%
+              - generic [ref=e455]:
+                - generic [ref=e456]: Rand - Pound
+                - generic [ref=e457]: "22.21"
+                - generic [ref=e458]: +0.3%
+              - generic [ref=e459]:
+                - generic [ref=e460]: Rand - Euro
+                - generic [ref=e461]: "19.20"
+                - generic [ref=e462]: +0.3%
+              - generic [ref=e463]:
+                - generic [ref=e464]: Rand - Aus dollar
+                - generic [ref=e465]: "11.83"
+                - generic [ref=e466]: +0.3%
+              - generic [ref=e467]:
+                - generic [ref=e468]: Rand - Yen
+                - generic [ref=e469]: "0.10"
+                - generic [ref=e470]: +0.5%
+            - generic [ref=e471]:
+              - generic [ref=e472]: All JSE data delayed by at least 15 minutes
+              - img "Iress logo" [ref=e473]
+          - generic [ref=e475]:
+            - generic [ref=e476]: Company Snapshot
+            - textbox "Search" [ref=e477]
+          - generic [ref=e481]:
+            - generic [ref=e483]:
+              - generic [ref=e484]: FundHub
+              - paragraph [ref=e485]: FundHub
+            - img [ref=e487]
+            - generic [ref=e488]:
+              - img [ref=e489]
+              - paragraph [ref=e490]: An independent platform profiling asset managers, discretionary fund managers, investment platforms and solution providers.
+            - link "FIND OUT MORE" [ref=e491] [cursor=pointer]:
+              - /url: business/investing/fundhub
+          - generic [ref=e492]:
+            - generic [ref=e494]:
+              - generic [ref=e495]: Newsletters
+              - paragraph [ref=e496]: Bruce Whitfield’s Business Week
+            - img [ref=e498]
+            - generic [ref=e499]:
+              - img [ref=e500]
+              - paragraph [ref=e501]: Get each new episode of Bruce Whitfield’s weekly podcast delivered to your inbox to hear his take on business without the boring bits.
+            - link "Get the newsletter" [ref=e502] [cursor=pointer]:
+              - /url: profile/newsletters
+          - generic [ref=e504]:
+            - generic [ref=e506]:
+              - generic [ref=e507]: Game On!
+              - paragraph [ref=e508]: Time to Play
+            - img [ref=e510]
+            - generic [ref=e511]:
+              - img [ref=e512]
+              - paragraph [ref=e513]: Play today’s crossword, wordflower, and sudoku.
+            - link "Play Now" [ref=e514] [cursor=pointer]:
+              - /url: games
+          - generic [ref=e515]:
+            - link "Read more" [ref=e517] [cursor=pointer]:
+              - /url: /brandstory/
+              - text: Brand Story
+            - generic [ref=e521]:
+              - link "Making quality healthcare more accessible" [ref=e522] [cursor=pointer]:
+                - /url: https://partners.24.com/firstrand-foundation/making-quality-healthcare-more-accessible/index.html
+                - generic [ref=e523]:
+                  - generic [ref=e524]:
+                    - generic [ref=e525]: Making quality healthcare more accessible
+                    - paragraph [ref=e526]: 24 Apr
+                  - img "Making quality healthcare more accessible" [ref=e528]
+              - link "Explore The Kimberley, where Australia shows you its wild, ancient heart" [ref=e529] [cursor=pointer]:
+                - /url: https://www.news24.com/brandstory/partner-content/explore-the-kimberley-where-australia-shows-you-its-wild-ancient-heart-20260416-0517
+                - generic [ref=e530]:
+                  - generic [ref=e531]:
+                    - generic [ref=e532]: Explore The Kimberley, where Australia shows you its wild, ancient heart
+                    - paragraph [ref=e533]: 23 Apr
+                  - img "Explore The Kimberley, where Australia shows you its wild, ancient heart" [ref=e535]
+              - 'link "WATCH | Riaan Manser: Is YOUR outdoor world lived in 6D? Is it possible?" [ref=e536] [cursor=pointer]':
+                - /url: /brandstory/partner-content/outdoors/watch-riaan-manser-is-your-outdoor-world-lived-in-6d-is-it-possible-20260421-0761
+                - generic [ref=e537]:
+                  - generic [ref=e538]:
+                    - generic [ref=e539]: "WATCH | Riaan Manser: Is YOUR outdoor world lived in 6D? Is it possible?"
+                    - paragraph [ref=e540]: 22 Apr
+                  - 'img "WATCH | Riaan Manser: Is YOUR outdoor world lived in 6D? Is it possible?" [ref=e542]'
+              - link "WATCH | Love and budget on your special day" [ref=e543] [cursor=pointer]:
+                - /url: https://www.news24.com/business/money/vodcast-money-its-not-black-or-white-love-and-budget-on-your-special-day-20260422-0322
+                - generic [ref=e544]:
+                  - generic [ref=e545]:
+                    - generic [ref=e546]: WATCH | Love and budget on your special day
+                    - paragraph [ref=e547]: 30 Apr
+                  - img "WATCH | Love and budget on your special day" [ref=e549]
+              - link "WATCH | Two young lives changed by a chance in tech" [ref=e550] [cursor=pointer]:
+                - /url: https://partners.24.com/naspers-labs-empowering-young-south-africans-through-technology/two-young-lives-changed-by-a-chance-in-tech/index.html
+                - generic [ref=e551]:
+                  - generic [ref=e552]:
+                    - generic [ref=e553]: WATCH | Two young lives changed by a chance in tech
+                    - paragraph [ref=e554]: 27 Apr
+                  - img "WATCH | Two young lives changed by a chance in tech" [ref=e556]
+              - link "Riaan Manser | Mountain biking Wild Africa" [ref=e557] [cursor=pointer]:
+                - /url: /brandstory/partner-content/outdoors/riaan-manser-mountain-biking-wild-africa-20260424-0829
+                - generic [ref=e558]:
+                  - generic [ref=e559]:
+                    - generic [ref=e560]: Riaan Manser | Mountain biking Wild Africa
+                    - paragraph [ref=e561]: 25 Apr
+                  - img "Riaan Manser | Mountain biking Wild Africa" [ref=e563]
+              - link "Making quality healthcare more accessible" [ref=e564] [cursor=pointer]:
+                - /url: https://partners.24.com/firstrand-foundation/making-quality-healthcare-more-accessible/index.html
+                - generic [ref=e565]:
+                  - generic [ref=e566]:
+                    - generic [ref=e567]: Making quality healthcare more accessible
+                    - paragraph [ref=e568]: 24 Apr
+                  - img "Making quality healthcare more accessible" [ref=e570]
+              - link "Explore The Kimberley, where Australia shows you its wild, ancient heart" [ref=e571] [cursor=pointer]:
+                - /url: https://www.news24.com/brandstory/partner-content/explore-the-kimberley-where-australia-shows-you-its-wild-ancient-heart-20260416-0517
+                - generic [ref=e572]:
+                  - generic [ref=e573]:
+                    - generic [ref=e574]: Explore The Kimberley, where Australia shows you its wild, ancient heart
+                    - paragraph [ref=e575]: 23 Apr
+                  - img "Explore The Kimberley, where Australia shows you its wild, ancient heart" [ref=e577]
+              - 'link "WATCH | Riaan Manser: Is YOUR outdoor world lived in 6D? Is it possible?" [ref=e578] [cursor=pointer]':
+                - /url: /brandstory/partner-content/outdoors/watch-riaan-manser-is-your-outdoor-world-lived-in-6d-is-it-possible-20260421-0761
+                - generic [ref=e579]:
+                  - generic [ref=e580]:
+                    - generic [ref=e581]: "WATCH | Riaan Manser: Is YOUR outdoor world lived in 6D? Is it possible?"
+                    - paragraph [ref=e582]: 22 Apr
+                  - 'img "WATCH | Riaan Manser: Is YOUR outdoor world lived in 6D? Is it possible?" [ref=e584]'
+              - link "WATCH | Love and budget on your special day" [ref=e585] [cursor=pointer]:
+                - /url: https://www.news24.com/business/money/vodcast-money-its-not-black-or-white-love-and-budget-on-your-special-day-20260422-0322
+                - generic [ref=e586]:
+                  - generic [ref=e587]:
+                    - generic [ref=e588]: WATCH | Love and budget on your special day
+                    - paragraph [ref=e589]: 30 Apr
+                  - img "WATCH | Love and budget on your special day" [ref=e591]
+              - link "WATCH | Two young lives changed by a chance in tech" [ref=e592] [cursor=pointer]:
+                - /url: https://partners.24.com/naspers-labs-empowering-young-south-africans-through-technology/two-young-lives-changed-by-a-chance-in-tech/index.html
+                - generic [ref=e593]:
+                  - generic [ref=e594]:
+                    - generic [ref=e595]: WATCH | Two young lives changed by a chance in tech
+                    - paragraph [ref=e596]: 27 Apr
+                  - img "WATCH | Two young lives changed by a chance in tech" [ref=e598]
+              - link "Riaan Manser | Mountain biking Wild Africa" [ref=e599] [cursor=pointer]:
+                - /url: /brandstory/partner-content/outdoors/riaan-manser-mountain-biking-wild-africa-20260424-0829
+                - generic [ref=e600]:
+                  - generic [ref=e601]:
+                    - generic [ref=e602]: Riaan Manser | Mountain biking Wild Africa
+                    - paragraph [ref=e603]: 25 Apr
+                  - img "Riaan Manser | Mountain biking Wild Africa" [ref=e605]
+            - link "Read more" [ref=e608] [cursor=pointer]:
+              - /url: /brandstory/
+          - generic [ref=e609]:
+            - generic [ref=e610]: Editorial feedback and complaints
+            - paragraph [ref=e611]: Contact the public editor with feedback for our journalists, complaints, queries or suggestions about articles on News24.
+            - link "Learn More" [ref=e612] [cursor=pointer]:
+              - /url: https://www.news24.com/news24/southafrica/news/contact-news24s-public-editor-with-reader-complaints-20180212
+          - generic [ref=e613]:
+            - generic [ref=e615]:
+              - generic [ref=e616]: Government tenders
+              - paragraph [ref=e617]: Find public sector tender opportunities in South Africa here
+            - img [ref=e619]
+            - generic [ref=e620]:
+              - img [ref=e621]
+              - paragraph [ref=e622]: This portal provides access to information on all tenders made by all public sector organisations in all spheres of government.
+            - link "Find public sector tender" [ref=e623] [cursor=pointer]:
+              - /url: https://partners.24.com/governmenttenders/index.html
+        - generic [ref=e624]:
+          - generic [ref=e625]:
+            - link "GooglePlayLink" [ref=e626] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.news24.ui.core&hl=en_ZA
+              - img "GooglePlayLink" [ref=e627]
+            - link "HuaweiGalleryLink" [ref=e628] [cursor=pointer]:
+              - /url: https://appgallery.huawei.com/#/app/C100385467
+              - img "HuaweiGalleryLink" [ref=e629]
+            - link "AppleStoreLink" [ref=e630] [cursor=pointer]:
+              - /url: https://apps.apple.com/za/app/id310970460
+              - img "AppleStoreLink" [ref=e631]
+          - navigation [ref=e632]:
+            - list [ref=e633]:
+              - listitem [ref=e634]:
+                - link "Editorial Complaints" [ref=e635] [cursor=pointer]:
+                  - /url: "mailto: george.claassen@media24.com"
+                - text: "|"
+              - listitem [ref=e636]:
+                - link "Tip-Offs" [ref=e637] [cursor=pointer]:
+                  - /url: "mailto: tips@news24.com"
+                - text: "|"
+              - listitem [ref=e638]:
+                - link "Press Code" [ref=e639] [cursor=pointer]:
+                  - /url: /about/press-code-20180917
+              - listitem [ref=e640]:
+                - link "Advertise on News" [ref=e641] [cursor=pointer]:
+                  - /url: https://www.thespacestation.co.za/#portfolio
+                - text: "|"
+              - listitem [ref=e642]:
+                - link "Jobs at Media24" [ref=e643] [cursor=pointer]:
+                  - /url: https://media24.simplify.hr/
+                - text: "|"
+              - listitem [ref=e644]:
+                - link "About us" [ref=e645] [cursor=pointer]:
+                  - /url: /news24/about/about-us-20200520-8
+              - listitem [ref=e646]:
+                - link "FAQs" [ref=e647] [cursor=pointer]:
+                  - /url: https://www.news24.com/news24/about/frequently-asked-questions-20200121-5
+                - text: "|"
+              - listitem [ref=e648]:
+                - link "Careers24" [ref=e649] [cursor=pointer]:
+                  - /url: https://www.careers24.com/
+                - text: "|"
+              - listitem [ref=e650]:
+                - link "Property24" [ref=e651] [cursor=pointer]:
+                  - /url: https://www.property24.com/?utm_source=news24.com&utm_medium=referral&utm_campaign=news24-link
+                - text: "|"
+              - listitem [ref=e652]:
+                - link "Autotrader" [ref=e653] [cursor=pointer]:
+                  - /url: https://www.autotrader.co.za/
+          - generic [ref=e654]:
+            - text: © 2026 (3.9.26126.6) 24.com. All rights reserved.
+            - generic [ref=e655]:
+              - link "Terms and Conditions" [ref=e656] [cursor=pointer]:
+                - /url: https://www.24.com/terms-and-conditions/
+              - link "Media24 Privacy Policy" [ref=e657] [cursor=pointer]:
+                - /url: https://www.media24.com/privacy-policy/
+              - link "Vulnerability Disclosure" [ref=e658] [cursor=pointer]:
+                - /url: https://www.media24.com/vulnerability-disclosure
+            - link "Contact us" [ref=e659] [cursor=pointer]:
+              - /url: mailto:feedback@news24.com?subject=News24 Feedback
+            - link "Help with my Subscription" [ref=e660] [cursor=pointer]:
+              - /url: "mailto:subs@news24.com?subject=News24: Help with my Subscription"
+          - generic [ref=e661]:
+            - generic [ref=e662]: "Follow:"
+            - list [ref=e665]:
+              - listitem [ref=e666]:
+                - link "TikTok Social Share" [ref=e667] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@news24
+                  - img "TikTok" [ref=e668]
+              - listitem [ref=e669]:
+                - link "Twitter Social Share" [ref=e670] [cursor=pointer]:
+                  - /url: https://twitter.com/News24_Business
+                  - img "Twitter" [ref=e671]
+          - link "Iab Logo" [ref=e672] [cursor=pointer]:
+            - /url: https://www.iabsa.net/
+            - img "Iab Logo" [ref=e673]
+  - region "Cookie banner" [ref=e674]:
+    - dialog "Privacy" [ref=e675]:
+      - generic [ref=e677]:
+        - generic [ref=e680]:
+          - text: We use cookies to improve your site experience, perform analytics and show you relevant advertising. By clicking “OK”, you agree to the storing of cookies on your device. View our
+          - link "Cookie Policy" [active] [ref=e681] [cursor=pointer]:
+            - /url: https://www.media24.com/media24-cookie-policy
+          - text: "&"
+          - link "Cookie FAQ" [ref=e682] [cursor=pointer]:
+            - /url: https://www.media24.com/company/group-privacy-portal/cookies-faqs/
+          - text: .
+          - text: The Media24 Privacy Notice was last updated on 01 August 2025. View our
+          - link "Privacy Policy" [ref=e683] [cursor=pointer]:
+            - /url: https://www.media24.com/privacy-policy/
+          - text: "&"
+          - link "Privacy Portal" [ref=e684] [cursor=pointer]:
+            - /url: https://www.media24.com/group-privacy-portal/
+          - text: .
+        - button "OK" [ref=e687] [cursor=pointer]

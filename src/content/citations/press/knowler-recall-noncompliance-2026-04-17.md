@@ -25,7 +25,7 @@ The article documents two distinct recall non-compliance patterns at Takealot:
 1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B** — global recall (NCC issued a SA recall notice ~April 2026). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both were refused refunds when they sought them post-recall, on the basis that the manufacturer's 12-month warranty had expired. Takealot's PR agency declined to respond to Knowler's query.
 2. **Citro-Soda Regular** — SAHPRA recall (foreign-material contamination — metal fragments). Monogran Naidoo notified by Takealot, product collected, but the refund issued was a coupon valid for **two days** that expired in his spam folder before he saw it.
 
-These cases ground a new clause on **recall non-compliance** under CPA s 60 (warning concerning fact and nature of risks) read with the NCC's recall enforcement powers and the basic principle that a recall remedy is not extinguished by warranty expiry.
+These cases ground a new clause on **recall non-compliance** anchored on CPA s 60 (the NCC's safety-monitoring and recall power) read with the substantive refund rights under s 19 / s 55 / s 56, plus s 58 (the standalone supplier-warning duty) — and the basic principle that a recall remedy is not extinguished by warranty expiry.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -85,8 +85,11 @@ Ben Hart bought the unit in October 2024 for around R1,000. About a year later �
 
 ## Site reliance
 
-- **CPA s 60** — supplier must take reasonable measures to inform consumers of unusual or unforeseen risks of harm associated with goods. A recall instruction from the manufacturer or the NCC engages s 60 squarely; "warranty has expired" is not a defence on the s 60 duty.
-- **NCC enforcement** — recalls fall within the NCC's powers under Chapter 3. Non-compliance with a recall instruction is a contravention, separately actionable.
+- **CPA s 60 (Safety monitoring and recall)** — the NCC's power to direct safety-monitoring and recall procedures where goods present an unreasonable risk of harm. The recall direction is the regulatory hook, not a self-executing supplier duty. A supplier ignoring a recall direction contravenes the recall regime.
+- **CPA s 55 + s 56** — the substantive route to a refund. A recall direction by the regulator means the goods are authoritatively determined to fail s 55. The s 56 implied warranty applies and the consumer elects repair / replacement / refund — within six months of delivery, irrespective of any private-warranty calendar. "Warranty has expired" is not a defence.
+- **CPA s 58 (Warning concerning fact and nature of risks)** — supplier-warning duty in plain language. Where a recall has been published and a supplier still represents the product as safe (e.g. on the live listing), the s 58 duty has been breached and the listing is compoundable as a s 41 misrepresentation.
+- **CPA s 19** — right to refuse non-conforming delivery. Reactivated, in effect, when the regulator determines the goods are unsafe.
+- **NCC enforcement** — recalls fall within the NCC's powers under Chapter 3. Non-compliance with a recall direction is a contravention, separately actionable.
 - **Refund mechanics** — a recalled product cannot be effectively credited via a 2-day-validity coupon. The refund must be substantively equivalent to the consideration paid.
 
 ## Wayback / archive status
