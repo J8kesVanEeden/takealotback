@@ -9,6 +9,8 @@ wayback_url_dated: "https://web.archive.org/web/20260425123950/https://terms-and
 wayback_url_earlier: "https://web.archive.org/web/20260425103610/https://terms-and-policies.takealot.com/"
 metaDescription: "Verbatim snapshot of Takealot's returns policy (April 2026). Source-of-truth for every clause-by-clause comparison the site makes."
 retrieved: "2026-04-24"
+corrected_on: "2026-05-07"
+correction_note: "Companion T&Cs snapshot's forum-selection note was corrected on 2026-05-07; this file's parallel mention of that qualifier was updated to match. See takealot-tcs-2026-04-24.md for the full correction record."
 retrieved_by: "Takealot policy audit agent, 2026-04-24 — see commit 6f29a2e and ce0357f"
 used_in:
   - "src/data/content.ts — every CLAUSES[*].takealot paraphrase"
@@ -47,7 +49,7 @@ Takealot agent audit on this date verified the following clauses against the liv
 - Order cancellation for stock / payment / listing error / account-abuse — all four grounds present
 - Marketplace seller responsibility: *"Sellers are responsible for the items they sell on our platform"* (note: "Sellers", not "Other sellers")
 - Resale prohibition clause: verbatim present
-- High Court forum selection: current live text reads *"the High Court of South Africa (Western Cape Division, Cape Town) will have jurisdiction"* — the "even if the disputed amount would typically be heard by a lower court" qualifier from earlier versions is not present in the current live fetch
+- High Court forum selection: current live text reads *"the High Court of South Africa (Western Cape Division, Cape Town) will have jurisdiction to hear any legal matters between us. This applies even if the disputed amount would typically be heard by a lower court."* (See companion T&Cs snapshot — the 2026-04-24 audit originally misread this qualifier as absent; corrected 2026-05-07.)
 - CGSO named as escalation point: verified
 
 ## Policy version / last-updated
