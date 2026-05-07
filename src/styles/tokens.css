@@ -23,16 +23,23 @@
   --font-body:    "Geist Variable", "Geist", "Söhne", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono:    "JetBrains Mono Variable", "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* spacing scale — six steps. Use these in components rather than
-   * hard-coding margins/paddings so the rhythm stays coherent. */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
-  --space-7: 48px;
-  --space-8: 64px;
+  /* misc */
+  --radius: 2px;
+  /* density base. Tweaks-panel density toggle scales this; --space-* below
+   * is calc'd off it so dense/airy actually move the rhythm. */
+  --grid-unit: 8px;
+
+  /* spacing scale — derived from --grid-unit so the density toggle is real,
+   * not just a flipped data-attribute. Multipliers: 0.5/1/1.5/2/3/4/6/8.
+   * Use these in components rather than hard-coding margins/paddings. */
+  --space-1: calc(var(--grid-unit) * 0.5);
+  --space-2: var(--grid-unit);
+  --space-3: calc(var(--grid-unit) * 1.5);
+  --space-4: calc(var(--grid-unit) * 2);
+  --space-5: calc(var(--grid-unit) * 3);
+  --space-6: calc(var(--grid-unit) * 4);
+  --space-7: calc(var(--grid-unit) * 6);
+  --space-8: calc(var(--grid-unit) * 8);
 
   /* layout */
   --gutter: var(--space-5);
@@ -47,10 +54,6 @@
   --text-md: 14px;
   --text-base: 15px;
   --text-lg: 16px;
-
-  /* misc */
-  --radius: 2px;
-  --grid-unit: 8px;
 }
 
 /* palette variants driven by tweaks */
