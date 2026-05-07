@@ -17,24 +17,31 @@
 // Run:   npm run check:anchors   (rebuilds dist first)
 
 import { readdir, readFile, stat } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(fileURLToPath(import.meta.url), '..', '..');
 const distDir = path.join(root, 'dist');
 
-// Keep this map in sync with CLAUSES[] in src/data/content.ts, and with the
-// matching map in src/components/TriageModal.astro.
-const CLAUSE_SLUGS = {
-  '01': 'time-limits', '02': 'original-packaging', '03': 'damage-exclusions',
-  '04': 'unlock-codes', '05': 'bundle-return', '06': 'credit-vs-refund',
-  '07': 'manufacturer-deflection', '08': 'defective-exclusions', '09': 'rejected-disposal',
-  '10': 'non-returnable', '11': 'coupons-vouchers', '12': 'unilateral-changes',
-  '13': 'high-court-jurisdiction', '14': 'order-cancellation', '15': 'marketplace-sellers',
-  '16': 'digital-items', '17': 'resale-prohibition', '18': 'mis-returned-items',
-  '19': 'restocking-redelivery-fees', '20': 'inspection-assessment-delay',
-  '21': 'item-substitution', '22': 'recall-noncompliance',
-};
+// CLAUSE_SLUGS is derived from src/data/content.ts at runtime so this
+// script and the CLAUSES array can never drift apart. Adding a new
+// clause to content.ts is the only update required.
+function readClauseSlugs() {
+  const contentTs = readFileSync(path.join(root, 'src', 'data', 'content.ts'), 'utf-8');
+  const clausesBlock = contentTs.match(/export const CLAUSES[\s\S]*?\n\];/);
+  if (!clausesBlock) {
+    throw new Error('check-anchors: failed to parse CLAUSES block from content.ts');
+  }
+  const out = {};
+  const re = /n:\s*"(\d+)",\s*slug:\s*"([a-z0-9-]+)"/g;
+  let m;
+  while ((m = re.exec(clausesBlock[0])) !== null) {
+    out[m[1]] = m[2];
+  }
+  return out;
+}
+const CLAUSE_SLUGS = readClauseSlugs();
 
 async function walk(dir) {
   const out = [];
