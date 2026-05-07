@@ -45,13 +45,13 @@ The Ombud Council granted the NFO recognition as an industry ombud scheme on **2
 
 The four schemes opened amalgamation discussions in early 2020. The June 2021 World Bank report on the role of the financial-sector ombud system in South Africa recommended consolidation. Draft rules and MOI for the amalgamated scheme were published in late 2023; operational launch followed on 1 March 2024.
 
-### Site reliance — strengthen on next site update
+### Site reliance
 
-The current site copy says only "OBSSA amalgamated into NFO on 1 March 2024." This is accurate but understates scope. A more accurate version would be:
+`LAW_SECTIONS[4].items.nfo` in `src/data/content.ts` cites the full scope:
 
-> "OBSSA, Credit Ombud, OLTI and OSTI amalgamated into the National Financial Ombud Scheme (NFO) on 1 March 2024. The FAIS Ombud remains separate."
+> "OBSSA, Credit Ombud, OLTI and OSTI amalgamated into NFO on 1 March 2024. FAIS Ombud remains separate."
 
-This is a candidate refinement for `LAW_SECTIONS[4].items.nfo` in `src/data/content.ts` on the next site content pass.
+The earlier "OBSSA-only" framing was widened on the 2026-04-25 audit pass. The site copy now matches this citation file's scope.
 
 ## Cross-references
 
