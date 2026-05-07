@@ -33,6 +33,7 @@ const CLAUSE_SLUGS = {
   '13': 'high-court-jurisdiction', '14': 'order-cancellation', '15': 'marketplace-sellers',
   '16': 'digital-items', '17': 'resale-prohibition', '18': 'mis-returned-items',
   '19': 'restocking-redelivery-fees', '20': 'inspection-assessment-delay',
+  '21': 'item-substitution', '22': 'recall-noncompliance',
 };
 
 async function walk(dir) {

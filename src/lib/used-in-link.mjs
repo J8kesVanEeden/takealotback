@@ -32,7 +32,7 @@ export function usedInLink(s) {
   // 3. Cross-reference to another citation file. Supports `../cases/X.md`
   //    AND `citations/cases/X.md` (path style), since both occur in
   //    different files' frontmatter.
-  const xref = s.match(/(?:\.\.\/|citations\/)(cases|statutes|advisories|policies|regulators|commentary)\/([A-Za-z0-9-]+)\.md/);
+  const xref = s.match(/(?:\.\.\/|citations\/)(cases|statutes|advisories|policies|regulators|commentary|press)\/([A-Za-z0-9-]+)\.md/);
   if (xref) return {
     href: `/citations/${xref[1]}/${xref[2].toLowerCase()}`,
     label: `See ${xref[2].replace(/-/g, ' ')} →`,

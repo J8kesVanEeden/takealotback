@@ -38,3 +38,4 @@ notes/
 # Original zip
 takealotback-handoff.zip
 /.editor/
+.playwright-mcp/

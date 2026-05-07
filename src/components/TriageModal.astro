@@ -127,6 +127,8 @@
         opts: [
           { label: "Defective item", go: "defective" },
           { label: "Wrong / damaged / missing", go: "wrong" },
+          { label: "Wrong product entirely (substitution)", go: "substitution" },
+          { label: "Recalled product", go: "recall" },
           { label: "Refund / credit dispute", go: "refund" },
           { label: "Order cancelled by Takealot", go: "cancel" },
           { label: "Return refused on a technicality", go: "refused" },
@@ -147,6 +149,21 @@
         opts: [
           { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "CPA s19 / s20. Log within 30 days but assert s56 if latent." } },
           { label: "Missing part of a set", result: { clause: "05", tpl: "T05", note: "Non-conforming delivery. Partial replacement is the lawful remedy." } },
+        ],
+      },
+      substitution: {
+        q: "What did you receive?",
+        opts: [
+          { label: "A materially different product (e.g. iPhone → calculator)", result: { clause: "21", tpl: "T17", note: "Non-performance of sale + CPA s55(2)(a) + s41 misrepresentation. This is restitution, not a return — don't accept procedural refusals on accessories or packaging." } },
+          { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "CPA s19 / s20. Log within 30 days." } },
+        ],
+      },
+      recall: {
+        q: "What's Takealot's response?",
+        opts: [
+          { label: "Refund refused — \"warranty has expired\"", result: { clause: "22", tpl: "T18", note: "CPA s60 recall direction read with s55 / s56. Warranty expiry is not a defence — the CPA right runs from delivery, not the warranty calendar." } },
+          { label: "Short-validity coupon issued instead of a refund", result: { clause: "22", tpl: "T18", note: "Recall refund must be substantively equivalent — money to original payment method, or a money-equivalent credit at the standard 3-year validity." } },
+          { label: "Punted to the manufacturer", result: { clause: "22", tpl: "T18", note: "CPA s61 strict product liability is joint and several across the supply chain. Takealot is a retailer." } },
         ],
       },
       refund: {
@@ -198,6 +215,7 @@
       "13": "high-court-jurisdiction", "14": "order-cancellation", "15": "marketplace-sellers",
       "16": "digital-items", "17": "resale-prohibition", "18": "mis-returned-items",
       "19": "restocking-redelivery-fees", "20": "inspection-assessment-delay",
+      "21": "item-substitution", "22": "recall-noncompliance",
     };
 
     var dialog = document.querySelector('[data-triage]');
