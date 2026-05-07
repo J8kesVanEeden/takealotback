@@ -8,12 +8,17 @@ name: Wayback archive
 # Pace and budget:
 # - The script paces requests at 6s apart (~12 req/min ceiling on SPN).
 # - We pass --all so the script fetches the live sitemap and archives
-#   every URL it lists (currently ~37 site pages + 2 Takealot live URLs).
-#   Run takes ~4 minutes. Worth it: the previous default-only behaviour
-#   (17 URLs) silently skipped most citation pages on every push.
+#   every URL it lists (currently ~39 site pages + 2 Takealot live URLs).
+#   Run takes ~10–17 minutes depending on SPN response times — worse
+#   when SPN is slow or returning intermittent fetch failures (each
+#   failed request still waits ~16s before falling through). Worth it:
+#   the previous default-only behaviour (17 URLs) silently skipped most
+#   citation pages on every push.
 # - We wait 90s before archiving to give Cloudflare Pages time to redeploy
 #   so Wayback captures the new content, not the previous build.
 # - Failures (timeouts, 429s) are best-effort; partial archival is fine.
+# - Job timeout is 25 min — enough headroom for slow-SPN runs without
+#   hitting the cap (a 15-min cap historically tripped at ~20% of runs).
 
 on:
   push:
@@ -27,7 +32,7 @@ on:
 jobs:
   archive:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     permissions:
       contents: read
     steps:
