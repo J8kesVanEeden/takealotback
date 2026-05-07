@@ -119,7 +119,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   justify-content: center;
   min-width: 18px;
   height: 18px;
-  padding: 0 4px;
+  padding: 0 var(--space-1);
   border: 1px solid var(--rule);
   border-radius: 2px;
   font-family: var(--font-mono);
@@ -136,7 +136,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 3px 8px;
+  padding: 3px var(--space-2);
   border: 1px solid var(--rule);
   border-radius: 999px;
   font-family: var(--font-mono);
@@ -155,7 +155,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 14px;
+  padding: 10px 1var(--space-1);
   border: 1px solid var(--ink);
   border-radius: 2px;
   font-family: var(--font-mono);
@@ -177,17 +177,17 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
  * `.tb-section--pad` rules. The `.section` selector here is a legacy
  * baseline kept only for raw <section> markup outside Section.astro. */
 .section {
-  padding: clamp(64px, 7vw, 120px) 0;
+  padding: clamp(6var(--space-1), 7vw, 120px) 0;
   position: relative;
   border-top: 1px solid var(--rule);
 }
 .section:first-of-type { border-top: 0; }
 
 /* Utility */
-.row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
-.rowspread { display: flex; gap: 16px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
-.stack > * + * { margin-top: var(--stack, 16px); }
-.meta-grid { display: grid; grid-template-columns: 120px 1fr; gap: 6px 16px; }
+.row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+.rowspread { display: flex; gap: var(--space-4); justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
+.stack > * + * { margin-top: var(--stack, var(--space-4)); }
+.meta-grid { display: grid; grid-template-columns: 120px 1fr; gap: 6px var(--space-4); }
 .meta-grid dt { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); padding-top: 2px; }
 .meta-grid dd { margin: 0; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-soft); }
 
@@ -201,10 +201,10 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
    reveals itself as a prominent affordance at the top-left. */
 .skip-link {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: var(--space-2);
+  left: var(--space-2);
   z-index: 100;
-  padding: 8px 12px;
+  padding: var(--space-2) var(--space-3);
   background: var(--ink);
   color: var(--paper);
   font-family: var(--font-mono);
@@ -234,7 +234,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .prose a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .prose blockquote {
   border-left: 3px solid var(--rule);
-  padding: 4px 0 4px 16px;
+  padding: var(--space-1) 0 var(--space-1) var(--space-4);
   margin: 1.4em 0;
   color: var(--ink-soft);
   font-style: italic;

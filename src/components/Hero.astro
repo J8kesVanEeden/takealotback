@@ -79,7 +79,7 @@ const reviewedMonth = LAST_REVIEWED.slice(0, 7);
 <style>
   .tb-hero {
     position: relative;
-    padding: clamp(56px, 8vw, 120px) 0 clamp(48px, 6vw, 80px);
+    padding: clamp(56px, 8vw, 120px) 0 clamp(4var(--space-2), 6vw, 80px);
   }
 
   /* Hero variant switch driven by [data-hero] on <html>. */
@@ -92,7 +92,7 @@ const reviewedMonth = LAST_REVIEWED.slice(0, 7);
     align-items: flex-start;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: var(--space-3);
   }
   .tb-hero__jurisdiction { color: var(--ink-muted); }
 
@@ -100,7 +100,7 @@ const reviewedMonth = LAST_REVIEWED.slice(0, 7);
     font-size: clamp(42px, 7.4vw, 124px);
     line-height: 0.93;
     letter-spacing: -0.035em;
-    margin: 0 0 clamp(28px, 3vw, 40px);
+    margin: 0 0 clamp(2var(--space-2), 3vw, 40px);
     max-width: 22ch;
     font-weight: 500;
   }
@@ -109,13 +109,13 @@ const reviewedMonth = LAST_REVIEWED.slice(0, 7);
   .tb-hero__grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-    gap: clamp(24px, 5vw, 80px);
+    gap: clamp(2var(--space-1), 5vw, 80px);
     align-items: start;
   }
 
-  .tb-hero__rule { height: 1px; background: var(--rule); margin-bottom: 16px; }
-  .tb-hero__rule--tight { margin-top: 16px; margin-bottom: 0; }
-  .tb-hero__blocklabel { margin-bottom: 14px; }
+  .tb-hero__rule { height: 1px; background: var(--rule); margin-bottom: var(--space-4); }
+  .tb-hero__rule--tight { margin-top: var(--space-4); margin-bottom: 0; }
+  .tb-hero__blocklabel { margin-bottom: 1var(--space-1); }
   .tb-hero__dl { margin: 0; }
 
   .tb-hero__brief {
