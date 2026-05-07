@@ -15,9 +15,21 @@ on:
   pull_request:
     branches: [main]
 
+# Cancel any in-flight check for the same ref so a rapid second push doesn't
+# collide on the hardcoded astro-preview ports (4329, 4332) used by
+# check-links.mjs and check-a11y.mjs respectively.
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+# Lock to read-only — this workflow doesn't push, comment, or tag.
+permissions:
+  contents: read
+
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4

@@ -120,6 +120,11 @@ function hay(c: typeof CLAUSES[number]) {
 </Section>
 
 <style>
+  /* Single source of truth for the dismantled-section row geometry —
+   * header + each row reference this; previously duplicated. */
+  :where(.tb-dm__theader, .tb-dm__row) {
+    --clause-cols: 64px minmax(0, 1.6fr) minmax(0, 2.4fr) minmax(120px, 0.6fr) 140px;
+  }
   .tb-dm__intro {
     display: flex;
     justify-content: space-between;
@@ -153,7 +158,7 @@ function hay(c: typeof CLAUSES[number]) {
 
   .tb-dm__theader {
     display: grid;
-    grid-template-columns: 64px minmax(0, 1.6fr) minmax(0, 2.4fr) minmax(120px, 0.6fr) 140px;
+    grid-template-columns: var(--clause-cols);
     gap: 16px;
     padding: 10px 0;
     border-top: 1px solid var(--rule);
@@ -170,7 +175,7 @@ function hay(c: typeof CLAUSES[number]) {
 
   .tb-dm__row {
     display: grid;
-    grid-template-columns: 64px minmax(0, 1.6fr) minmax(0, 2.4fr) minmax(120px, 0.6fr) 140px;
+    grid-template-columns: var(--clause-cols);
     gap: 16px;
     width: 100%;
     padding: 16px 0;
@@ -269,6 +274,12 @@ function hay(c: typeof CLAUSES[number]) {
 
 <script is:inline>
   (function () {
+    // Idempotency guard: avoid double-binding the document-level click
+    // listeners (jump-tpl + share-clause) if the script is somehow run twice
+    // (e.g. Astro view-transitions).
+    if (window.__tbDismantledBound) return;
+    window.__tbDismantledBound = true;
+
     var filterButtons = document.querySelectorAll('.tb-dm__filter');
     var rows = document.querySelectorAll('[data-clause]');
 

@@ -28,6 +28,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Serialize IndexNow submissions — one queued submit at a time.
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
 jobs:
   submit:
     # Only run if the cache-purge workflow that triggered us actually

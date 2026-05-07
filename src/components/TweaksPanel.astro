@@ -202,18 +202,28 @@ const groups = [
     apply(t);
     reflect(t);
 
+    var lastFocused = null;
     function open() {
+      lastFocused = document.activeElement;
       panel.hidden = false;
       fab.hidden = true;
       fab.setAttribute('aria-expanded', 'true');
-      // Move focus into the panel so keyboard users can interact with it.
-      var firstInteractive = panel.querySelector('button');
-      if (firstInteractive) firstInteractive.focus();
+      // Move focus to the first tweak chip — focusing the close button (the
+      // first <button> in DOM order) means a keyboard user pressing Enter
+      // immediately dismisses the panel they just opened.
+      var firstChip = panel.querySelector('[data-tweak-key]');
+      if (firstChip) firstChip.focus();
     }
     function close() {
       panel.hidden = true;
       fab.hidden = false;
       fab.setAttribute('aria-expanded', 'false');
+      // Return focus to whatever opened the panel (typically the FAB).
+      if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
+      } else {
+        fab.focus();
+      }
     }
     function toggle() { panel.hidden ? open() : close(); }
 

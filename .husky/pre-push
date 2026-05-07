@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 # Pre-push gate — refuses to push code that doesn't pass `check:all`.
 #
 # Runs the same suite as the GitHub Actions workflow (.github/workflows/check.yml),
@@ -6,6 +7,17 @@
 # To bypass in a true emergency: `git push --no-verify`.
 # Don't make a habit of it; the hook exists because the test loop kept
 # catching real bugs that "looked fine in the editor".
+
+set -eu
+
+# Refuse to silently pass if `npm` isn't on PATH (some nvm-shell configs
+# strip it). Without this, the hook short-circuits clean and the push
+# goes through unverified.
+if ! command -v npm >/dev/null 2>&1; then
+  echo "✗ pre-push: npm not on PATH — refusing to push without running check:all" >&2
+  echo "  (load your Node toolchain or use --no-verify if you really mean to skip)" >&2
+  exit 1
+fi
 
 echo "→ pre-push: running npm run check:all"
 npm run check:all

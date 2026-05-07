@@ -102,29 +102,55 @@ async function readLocalSitemap() {
 async function archive(url) {
   const saveUrl = `https://web.archive.org/save/${url}`;
   const startedAt = new Date().toISOString();
-  try {
-    const res = await fetch(saveUrl, {
-      method: 'GET',
-      redirect: 'manual',
-      signal: AbortSignal.timeout(60_000),
-      headers: {
-        'User-Agent': 'TakealotBack-archive-bot/1.0 (+https://takealotback.com/)',
-        'Accept': 'text/html',
-      },
-    });
-    if (res.status === 302 || res.status === 301) {
-      const loc = res.headers.get('location') || '';
-      const m = loc.match(/\/web\/(\d{14})\//);
-      const timestamp = m ? m[1] : null;
-      return { url, status: 'ok', startedAt, archiveUrl: loc, timestamp };
+
+  // SPN frequently 429s the first request after ~12 req/min. Single shot
+  // turns transient throttling into permanent misses for the run.
+  // Retry on 429 with exponential backoff (12s, 24s, 48s) — capped at 3
+  // retries so a single URL can't eat the whole job timeout.
+  const maxAttempts = 4;
+  let lastStatus = null;
+  let lastErr = null;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const res = await fetch(saveUrl, {
+        method: 'GET',
+        redirect: 'manual',
+        signal: AbortSignal.timeout(30_000),
+        headers: {
+          'User-Agent': 'TakealotBack-archive-bot/1.0 (+https://takealotback.com/)',
+          'Accept': 'text/html',
+        },
+      });
+      if (res.status === 302 || res.status === 301) {
+        const loc = res.headers.get('location') || '';
+        const m = loc.match(/\/web\/(\d{14})\//);
+        const timestamp = m ? m[1] : null;
+        return { url, status: 'ok', startedAt, archiveUrl: loc, timestamp, attempts: attempt };
+      }
+      if (res.status === 429) {
+        lastStatus = 429;
+        if (attempt < maxAttempts) {
+          await sleep(12_000 * attempt);
+          continue;
+        }
+        return { url, status: 'rate-limited', startedAt, httpStatus: 429, attempts: attempt };
+      }
+      // Other non-redirect responses — don't retry, they're typically deterministic.
+      return { url, status: 'unexpected', startedAt, httpStatus: res.status, attempts: attempt };
+    } catch (err) {
+      lastErr = err;
+      // Network / timeout errors — retry once or twice; SPN flakes happen.
+      if (attempt < maxAttempts) {
+        await sleep(6_000 * attempt);
+        continue;
+      }
+      return { url, status: 'error', startedAt, error: String(err?.message || err), attempts: attempt };
     }
-    if (res.status === 429) {
-      return { url, status: 'rate-limited', startedAt, httpStatus: 429 };
-    }
-    return { url, status: 'unexpected', startedAt, httpStatus: res.status };
-  } catch (err) {
-    return { url, status: 'error', startedAt, error: String(err?.message || err) };
   }
+
+  // Defensive — shouldn't reach here.
+  return { url, status: 'error', startedAt, error: lastErr ? String(lastErr) : `unresolved status ${lastStatus}`, attempts: maxAttempts };
 }
 
 async function sleep(ms) {
