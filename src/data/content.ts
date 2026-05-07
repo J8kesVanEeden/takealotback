@@ -77,7 +77,7 @@ export interface PolicySummary {
   terms: string[];
 }
 
-export const LAST_REVIEWED = "2026.04.25";
+export const LAST_REVIEWED = "2026.05.07";
 export const TAKEALOT_POLICY_REVIEWED_AGAINST = "v2026.03";
 export const GITHUB_REPO_URL = "https://github.com/J8kesVanEeden/takealotback";
 
@@ -218,8 +218,9 @@ export const CLAUSES: Clause[] = [
       { stat: "ECT s42(2)(g)", body: "Unsealed audio/video/software is excluded only from ECT s44 cooling-off. Does not touch s56." },
       { stat: "CPA s41", body: "If a non-returnable item is not-as-described, a s41 misrepresentation claim still runs." },
       { stat: "CPA s61", body: "If perishable goods cause illness, product liability is unaffected by the non-returnable flag." },
+      { stat: "Listing-tag misuse", body: "A product listing on Takealot cannot be tagged \"non-refundable\" outside the s 42(2) carve-outs. ECT s 44 makes every online purchase refundable within 7 days regardless of listing wording. In Wendy Knowler's reporting (News24, 2 November 2025), Takealot refused a wrong-size T-shirt return on a \"non-refundable\" listing tag; on Knowler's intervention, the company confirmed the tag was a \"human error\" and the listing was \"delisted until this has been corrected.\" Cite the case, demand the refund, and read the credit-vs-refund election (Clause 06) — within the 7-day window the consumer is entitled to insist on cash to the original payment method, not credit." },
     ],
-    why: "Digital ≠ unreturnable. Defective digital items are still defective goods. \"Hygiene\" does not swallow your s56 rights.",
+    why: "Digital ≠ unreturnable. Defective digital items are still defective goods. \"Hygiene\" does not swallow your s56 rights. And a listing tag does not extend the carve-outs — a \"non-refundable\" T-shirt is still refundable under ECT s 44.",
     template: "T10", escalate: "CGSO",
   },
   {
@@ -284,12 +285,15 @@ export const CLAUSES: Clause[] = [
     angles: [
       { stat: "CPA s56(1)", body: "Three-tier warranty runs against producer/importer, distributor, AND retailer. \"Retailer\" on a platform transaction can include the platform operator — depending on the facts." },
       { stat: "CPA s61(3)", body: "Product-liability is joint and several across the supply chain. Proceed against any link." },
-      { stat: "ECT s43", body: "Platform has direct information and disclosure obligations under ECT regardless of seller identity." },
+      { stat: "ECT s43", body: "Platform has direct information and disclosure obligations under ECT regardless of seller identity. The CGSO's published view (per Lee Soobrathi in News24, 06 April 2025) is that ECT s 43 requires the supplier to inform customers how and when they can \"access and maintain a full record of the transaction\" — a duty the platform inherits as the consumer-facing party." },
+      { stat: "CPA s 26 — sales record", body: "Every supplier must provide a written record of every transaction — supplier and consumer details, date, description, unit and total price, taxes, deposits. The CGSO's interpretation is that a hosting platform is an intermediary for CPA purposes and inherits the s 26 obligation in respect of transactions it facilitates. In the Wales / Lenovo case (News24, 06 April 2025) Takealot was unable to produce an invoice when the third-party seller went unresponsive; that is the s 26 problem in concrete form. Without an invoice, the consumer cannot claim under a manufacturer warranty — which is why a missing s 26 record is consequential, not technical." },
+      { stat: "CPA s 27 — intermediary", body: "A person acting on behalf of a principal in a consumer transaction is an intermediary under s 27 and must (a) disclose the principal-intermediary relationship, and (b) keep the prescribed records of all relationships and transactions. CGSO Lee Soobrathi (News24, 06 April 2025): \"The approach of the CGSO is that an e-commerce platform hosting third-party business products will be regarded as an intermediary for the purpose of the Consumer Protection Act, and as such will need to comply with these provisions.\" The Wales case turned on this stance — once Takealot acted as the consumer-facing party in a third-party sale, it could not abandon the consumer to the seller for record-keeping." },
       { stat: "CGSO jurisdiction", body: "CGSO handles complaints against Takealot even where the item was sold by an other-seller. Takealot's own T&Cs name the CGSO as escalation point without distinguishing seller type." },
       { stat: "Apparent authority", body: "Takealot handles checkout, payment, delivery, and returns logging. It looks and feels like Takealot is the supplier — courts may give weight to that when resolving s1 \"supplier\" ambiguity." },
       { stat: "CPA s40", body: "Platform obligations extend to preventing unconscionable conduct on the platform — even by other-sellers." },
+      { stat: "Resolution pattern", body: "The Wales case followed a documented pattern: direct engagement → \"third-party seller is solely responsible\" → CGSO complaint → News24 escalation → Takealot reverses and provides remedy (here, a replacement laptop) within an hour of publication (News24 follow-up, 13 April 2025). Use the same path: CGSO formally, citing s 26 + s 27 as the platform's record-keeping obligations." },
     ],
-    why: "Don't let them punt you to an other-seller to avoid their own platform and supply-chain liability. Direct your s56 claim at Takealot; pursue the other-seller in parallel.",
+    why: "Don't let them punt you to an other-seller to avoid their own platform and supply-chain liability. The CGSO's published view treats Takealot as an intermediary under s 27, which inherits the s 26 sales-record obligation regardless of who the underlying seller is. Direct your s56 claim — and your invoice / records demand — at Takealot; pursue the other-seller in parallel.",
     template: "T11", escalate: "CGSO — name both Takealot and the other-seller",
   },
   {
@@ -361,6 +365,36 @@ export const CLAUSES: Clause[] = [
     ],
     why: "Takealot's inspection step has no SLA in the policy. That's the lever — in practice it's where s56 claims go to die. Give it a deadline yourself, in writing, and hold them to it.",
     template: "T16", escalate: "CGSO · NCC if the delay is a pattern across multiple consumers",
+  },
+  {
+    n: "21", slug: "item-substitution", title: "Item Substitution / Wrong Goods Delivered",
+    takealot: "Takealot's policy treats \"not what I ordered\" as a 30-day damaged-on-delivery / wrong-item return: log a \"Not What I Ordered\" return on your profile, the item is collected, replacement or refund follows. Their public position is that the company \"takes full accountability\" for picking, supplier, and labelling errors. In practice, when the substituted item is opened or used, Takealot's first response can refuse the return for \"missing accessories\" — even where the consumer paid for goods of materially different value (e.g. a R14,000 iPhone vs a sub-R400 calculator).",
+    angles: [
+      { stat: "CPA s55(2)(a)", body: "Goods must be reasonably suitable for the purposes for which they are generally intended. A calculator is not the goods you bought when you ordered an iPhone — the s 55 quality warranty is breached at the threshold. Substitution isn't \"defective goods\" in the colloquial sense; it's failure of consideration plus a s 55(2)(a) breach." },
+      { stat: "CPA s41", body: "The product page is a representation. Delivering goods that materially do not match the listing is a misrepresentation under s 41(1) — even where unintentional. Material substitution (R14k iPhone delivered as sub-R400 calculator) is the textbook case." },
+      { stat: "CPA s19(2)", body: "Right to inspect on delivery. Where you can spot the substitution at the door, refuse the parcel — risk does not pass to you on goods you decline to accept. Where you spot it after opening, the inspection right and the s 56 sale-not-completed framing both run." },
+      { stat: "CPA s56(2)", body: "On the legal frame that substitution is a non-conforming delivery, s 56 still applies and the consumer elects the remedy — replacement of the goods actually ordered, or refund. Account credit is not available unless the consumer chooses it." },
+      { stat: "Common-law contract", body: "Performance of a sale of X by delivery of Y is non-performance. The consumer can rescind for fundamental breach and demand restitution of the price. This runs alongside the statutory remedies and is sometimes the cleaner path where the supplier is hiding behind a returns-policy procedural obstacle." },
+      { stat: "Procedural defences (calculator pattern)", body: "Refusal-on-procedural-grounds is the documented pattern. In Wendy Knowler's reporting (News24, 12 April 2026) Takealot refused Thandi Bila's R14,000 calculator return on the basis that \"the return item is missing its accessories\" — as if the calculator's accessories, not the iPhone she'd paid for, were the issue. Re-frame the return: this is not a return of the calculator under the original return policy; this is restitution after non-performance of a R14,000 contract for a different product." },
+      { stat: "Evidence — Knowler's advice", body: "Where practically possible, open the box in front of the delivery person. If the contents do not match what you ordered, photograph the contents in the delivery person's hands. The \"Not What I Ordered\" claim is dramatically easier to win on contemporaneous evidence than on after-the-fact narrative." },
+      { stat: "Resolution pattern", body: "Knowler-reported substitution cases consistently end the same way: direct engagement → procedural refusal → media or ombud escalation → reversal. Bila received the R14,000 credit after News24 took up the case. The pattern matters because it shows the policy framework can be made to honour s 55(2)(a) — but it sometimes takes external pressure." },
+    ],
+    why: "If Takealot delivers something materially different from what you paid for, you are not asking for a goodwill return. You are asking for the goods you bought, or your money back. The right legal frame is non-performance of the sale plus s 55(2)(a) breach plus s 41 misrepresentation — not change-of-mind. Don't accept a procedural refusal on accessories or packaging.",
+    template: "T17", escalate: "CGSO · NCC for the pattern · Small Claims Court for the price difference if remedy delayed",
+  },
+  {
+    n: "22", slug: "recall-noncompliance", title: "Recall Non-Compliance",
+    takealot: "Takealot's published procedure (per Wendy Knowler, News24, 17 April 2026) is to engage \"all affected customers as per our standard recall procedures, offering a refund in the form of the original payment method.\" In practice, the documented response on the ESR HaloLock power-bank recall (NCC, April 2026) was to refuse refunds to consumers on the basis that the manufacturer's 12-month warranty had expired. On the Citro-Soda Regular recall (SAHPRA), one consumer was issued a 2-business-day-validity coupon as the recall \"refund\" — which expired in his spam folder before he saw it.",
+    angles: [
+      { stat: "CPA s 60", body: "Every supplier must take reasonable measures to inform consumers of unusual or unforeseen risks of harm. Where the NCC under s 60(2) directs a recall, the supplier's reasonable-measures duty includes ceasing supply and providing affected consumers with a refund or other appropriate remedy. This is a *substantive* duty independent of any private warranty. \"The 12-month warranty has expired\" is not a defence to s 60 — the recall instruction is the operative legal event, not the warranty calendar." },
+      { stat: "CPA s 61", body: "Strict product liability for harm caused by unsafe goods, joint and several across the supply chain. A recalled product is by definition one the regulator has determined to pose unreasonable risk; if it causes harm, s 61 runs against producer, importer, distributor, AND retailer. Takealot is a retailer. \"We are merely the platform\" is not a defence on s 61." },
+      { stat: "NCC enforcement", body: "Recalls fall within the NCC's powers under Chapter 3 of the CPA. Non-compliance with a recall instruction is a contravention. In the ESR power-bank case Knowler reported the supplier's recall responses to the NCC; the NCC has compliance-notice and administrative-fine powers under s 73 read with s 110. A consumer denied a recall remedy can lodge directly with the NCC." },
+      { stat: "Refund must be substantively equivalent", body: "A recall-mandated refund is a refund of the price paid in money or money-equivalent. A 2-business-day-validity coupon is not substantively equivalent. Where Takealot has substituted a coupon for a refund, demand the refund in money to the original payment method, citing s 60(3) and the recall instruction. In Knowler's reporting on the Citro-Soda case, Takealot eventually credited the consumer the full coupon value as \"goodwill\" — which is the right outcome, late." },
+      { stat: "ECT s 44 / s 46 — does not apply", body: "Recalls are not cooling-off cancellations. Don't let Takealot frame a recall return as a s 44 cooling-off (which would invite the 7-day-from-delivery argument) or a change-of-mind return. The instruction is the regulator's, not yours; the relevant section is CPA s 60, not the cooling-off framework." },
+      { stat: "Coupon-funded purchases", body: "Where the original purchase was paid using a Takealot coupon (Naidoo's case), Takealot's first response was to reissue the coupon with the original (short) validity. That is not a refund. Demand a money-equivalent credit valid for at least the standard 3-year period (Takealot's own credit-validity standard for non-coupon-funded refunds); cite s 48 (unfair-term) on the differential. Knowler's reporting confirms Takealot eventually conceded the full coupon value." },
+    ],
+    why: "When a product you bought is recalled, you are entitled to a refund — regardless of warranty status. The recall instruction by NCC under CPA s 60(2) is the operative legal event, not the manufacturer's warranty calendar. \"12-month warranty has expired\" is not a defence; \"return for refund\" is the recall's standard remedy. If Takealot refuses, escalate fast — to the manufacturer (which Hart did successfully), to the NCC, and to the CGSO in parallel.",
+    template: "T18", escalate: "Manufacturer (often the fastest route) · NCC · CGSO · ARB if Takealot's listing still represents the product as safe",
   },
 ];
 
@@ -586,6 +620,56 @@ Regards,
 [Name]
 [Contact]
 [Order number]` },
+  { code: "T17", title: "Wrong Goods Delivered (Substitution)", scenario: "Takealot delivered something materially different from what was ordered (e.g. an iPhone listing delivered as a calculator). The return is being refused on procedural grounds (\"missing accessories\" / \"item used\"), not on the substance.",
+    subject: "Non-conforming delivery — full refund required — Order #[ORDER]",
+    body: `Hi,
+
+Order #[ORDER]. On [date] I paid R[amount] for [item ordered, e.g. iPhone 15] on Takealot. The delivered item is [item received, e.g. a Casio calculator]. The two are materially different products at materially different prices. This is not a return under Takealot's returns policy — this is restitution of the purchase price after non-performance of the sale.
+
+The legal position:
+
+1. The sale contract was for [item ordered], not [item received]. Delivery of [item received] is not performance of that contract — it is non-performance, and I am entitled to rescind and recover the price.
+2. Section 55(2)(a) of the Consumer Protection Act requires goods to be reasonably suitable for the purposes for which they are generally intended. [Item received] is not the goods I bought when I ordered [item ordered].
+3. Section 41 of the Consumer Protection Act prohibits false, misleading or deceptive representations about a material fact, including the nature of goods. The product page represented the goods I would receive; what I received did not match.
+4. Section 19 of the Consumer Protection Act gives me the right to inspect on delivery. Goods I do not accept are at the supplier's risk.
+5. Takealot's own public statement (per its response to News24, 12 April 2026) acknowledges that "on the occasion that customers don't receive what they've ordered, we take full accountability and work swiftly to resolve them by collecting the incorrect item and delivering the right product as quickly as possible."
+
+I am not a change-of-mind return. The "missing accessories" objection does not apply: the accessories of [item received] are irrelevant — I did not buy [item received].
+
+Please confirm within 7 business days that Takealot will (a) collect [item received], and (b) refund R[amount] in full to my original payment method, OR deliver [item ordered] as originally paid for. If neither is forthcoming I will lodge with the Consumer Goods and Services Ombud and, in parallel, file a section 41 complaint with the National Consumer Commission.
+
+Regards,
+[Name]
+[Contact]
+[Order number]` },
+  { code: "T18", title: "Recall Refund Demand", scenario: "An item bought through Takealot has been recalled (manufacturer recall, NCC recall, or SAHPRA recall) and Takealot is refusing the recall refund — typically on the basis that the manufacturer warranty has expired, or by issuing a short-validity coupon as the \"refund.\"",
+    subject: "Recall refund — section 60 CPA — Order #[ORDER]",
+    body: `Hi,
+
+Order #[ORDER]. On [date] I bought a [item] for R[amount]. The product has since been recalled by [manufacturer / NCC / SAHPRA] on [recall date], reference [recall ID if known].
+
+Takealot's response so far has been to [refuse the refund / issue a coupon valid for N days / refer me to the manufacturer]. That is not consistent with the company's obligations under the recall.
+
+The legal position:
+
+1. Section 60 of the Consumer Protection Act requires every supplier to take reasonable measures to inform consumers of unusual or unforeseen risks of harm. Where the National Consumer Commission directs a recall under section 60(2), the supplier's reasonable-measures duty includes ceasing supply and providing affected consumers with a refund or other appropriate remedy. This is a substantive duty independent of any private warranty.
+2. The recall instruction is the operative legal event. "The manufacturer's 12-month warranty has expired" is not a defence on the section 60 duty.
+3. Section 61 of the Consumer Protection Act imposes joint and several strict product liability across the supply chain, including the retailer. Takealot is a retailer.
+4. A recall-mandated refund must be substantively equivalent to the price paid. A coupon valid for [N] business days is not. Where the original payment was via coupon, the substituted refund must be a money-equivalent credit valid for the standard credit-validity period.
+
+Please confirm within 7 business days that Takealot will collect the recalled product and refund R[amount] in money to the original payment method (or, where the original payment was a coupon, a money-equivalent credit valid for the standard 3-year credit period).
+
+If the refund is not provided I will:
+  (a) lodge with the National Consumer Commission for the section 60 contravention;
+  (b) lodge with the Consumer Goods and Services Ombud in parallel;
+  (c) approach the manufacturer directly (recalls are a manufacturer obligation as much as a retailer one);
+  (d) where the listing still represents the product as safe, lodge with the Advertising Regulatory Board.
+
+Regards,
+[Name]
+[Contact]
+[Order number]
+[Recall reference if known]` },
 ];
 
 export const QUICK_HITS: QuickHit[] = [
@@ -614,6 +698,8 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s22", title: "Plain language", blurb: "Terms must be in plain, understandable language. Ambiguous terms read against drafter." },
     { id: "s23", title: "Displayed price", blurb: "Suppliers bound by displayed price. s23(9) \"inadvertent and obvious\" error exception is narrow." },
     { id: "s25", title: "Reconditioned / refurbished goods", blurb: "Conspicuous notice required — buyers must know they're not getting new." },
+    { id: "s26", title: "Sales records", blurb: "Every supplier must provide a written record of every transaction — supplier and consumer details, date, description, prices, taxes. The CGSO treats hosting platforms as intermediaries that inherit this duty for the transactions they facilitate." },
+    { id: "s27", title: "Intermediary's authority to act for principal", blurb: "Intermediaries must disclose the principal-intermediary relationship and keep prescribed records of all relationships and transactions. The CGSO's published interpretation is that an e-commerce platform hosting third-party sellers is an intermediary for CPA purposes." },
     { id: "s40", title: "Unconscionable conduct", blurb: "Prohibited — covers physical force, coercion, undue influence, unfair tactics." },
     { id: "s41", title: "False, misleading, deceptive representations", blurb: "Advertised warranty that manufacturer won't honour = retailer misrepresentation. Damages flow via s4(2)(b)(ii), s52, s115." },
     { id: "s47", title: "Over-selling and over-booking", blurb: "s47(3): refund with interest plus compensation for directly incidental costs unless shortage beyond control. Separate s 112 administrative fine (paid to the State) may apply to the supplier." },
@@ -625,6 +711,7 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s55", title: "Right to safe, good-quality goods", blurb: "Reasonably suitable, good quality, durable, free of defects, compliant with formal standards. s55(6): disapplies (a)(b) where specific condition expressly disclosed and accepted." },
     { id: "s56", title: "Implied warranty of quality", blurb: "The big one. 6 months. Three-tier warranty (producer/distributor/retailer). Consumer elects repair/replace/refund. Cannot be contracted out of." },
     { id: "s57", title: "Warranty on repairs and parts", blurb: "Minimum 3-month warranty on any new/reconditioned part fitted during repair, plus the labour." },
+    { id: "s60", title: "Warning concerning fact and nature of risks", blurb: "Supplier duty to inform consumers of unusual risks. On a recall instruction by the NCC under s 60(2), the supplier must cease supply and provide affected consumers with a refund or appropriate remedy. \"Warranty has expired\" is not a defence on the s 60 duty." },
     { id: "s61", title: "Product liability", blurb: "Strict liability for harm caused by unsafe goods. Joint and several across the supply chain." },
     { id: "s69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 gave obiter guidance (para 26) that s 69(d) points to remedies in national legislation generally rather than a compulsory internal hierarchy — consumers may approach a court directly. The court expressly declined to decide the scope of s 69(d); the issue remains technically open." },
     { id: "s2(10)", title: "Saving of common-law rights", blurb: "No provision of the Act may be interpreted to preclude common-law rights — preserves the aedilitian remedies." },
