@@ -29,11 +29,25 @@ function main() {
   const html = readFileSync(HTML_PATH, 'utf-8');
   const findings = [];
 
+  // Section anchors — bail loudly if any are missing instead of silently
+  // passing the gate. indexOf returning -1 would make every substring()
+  // below empty and emit zero findings, masking real coverage gaps.
+  const dismantledStart = html.indexOf('id="dismantled"');
+  const templatesStart = html.indexOf('id="templates"');
+  const lawStart = html.indexOf('id="law"');
+  const missing = [];
+  if (dismantledStart === -1) missing.push('id="dismantled"');
+  if (templatesStart === -1) missing.push('id="templates"');
+  if (lawStart === -1) missing.push('id="law"');
+  if (missing.length) {
+    console.log(`✗ source-chip coverage check: required section anchors missing from index.html: ${missing.join(', ')}`);
+    console.log('  Either the section ids were renamed or the build output is stale. Re-run `npm run build` or update this script.');
+    process.exit(1);
+  }
+
   // Clauses — split the Dismantled section by `<div ... data-clause`
   // wrappers (each clause has exactly one). Stop at the start of the
   // Templates section.
-  const dismantledStart = html.indexOf('id="dismantled"');
-  const templatesStart = html.indexOf('id="templates"');
   const dismantledBlock = html.substring(dismantledStart, templatesStart);
   const clauseParts = dismantledBlock
     .split(/(?=<div [^>]*data-clause)/)
@@ -47,7 +61,6 @@ function main() {
   }
 
   // Templates — split the Templates section by id="template-TNN" wrapper.
-  const lawStart = html.indexOf('id="law"');
   const templatesBlock = html.substring(templatesStart, lawStart);
   const tplParts = templatesBlock
     .split(/(?=id="template-T\d+")/)

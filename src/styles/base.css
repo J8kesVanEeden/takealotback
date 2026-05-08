@@ -275,7 +275,15 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
  * If you find yourself reaching for a third breakpoint, push back —
  * the design is intentionally a two-tier collapse. */
 @media (max-width: 900px) {
-  .hero-grid, .two-col { grid-template-columns: 1fr !important; }
+  /* Collapse every 2-col section grid to a single column. The class
+   * list mirrors the actual scoped grid classes used across components
+   * (Hero, Policies, About, Escalate, QuickHits intro), so authors
+   * adding a new 2-col section either name it `*__grid` / `*__intro`
+   * or add `two-col` to the wrapper and the rule picks it up. */
+  .hero-grid, .two-col,
+  .tb-policies__grid, .tb-about__grid, .tb-esc__intro, .tb-qh__intro {
+    grid-template-columns: 1fr !important;
+  }
   .qh-grid .qh-col { grid-column: span 6 !important; }
   .three-grid { grid-template-columns: 1fr !important; }
   .three-col { border-right: 0 !important; }
