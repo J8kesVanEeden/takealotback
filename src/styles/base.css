@@ -312,6 +312,37 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   .angle-row > :nth-child(3) { grid-column: 1 / -1 !important; }
 }
 
+/* Chord-mode indicator — shown briefly while waiting for the second key of a
+   `g`-prefixed shortcut. Bottom-right so it doesn't fight the FAB at bottom-
+   left, and styled like an inline kbd-pair so the cue (`G_`) reads as
+   "you've pressed g, now press another key". */
+.tb-chord-indicator {
+  position: fixed;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink);
+  z-index: 9999;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.tb-chord-indicator .kbd { color: var(--ink); }
+.tb-chord-indicator__cue {
+  color: var(--ink-soft);
+  animation: tb-chord-blink 1s steps(2, start) infinite;
+}
+@keyframes tb-chord-blink {
+  to { visibility: hidden; }
+}
+
 /* Reduced motion — respect the OS setting */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -330,6 +361,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   dialog.tb-triage,
   aside.tb-tweaks,
   button.tb-tweaks-fab,
+  .tb-chord-indicator,
   .tb-hero,
   #short-version,
   #three-things,
