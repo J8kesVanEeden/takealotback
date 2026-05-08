@@ -93,12 +93,12 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
     border-top: 1px solid var(--ink);
     margin-top: 0;
   }
-  .tb-footer__top { padding: 72px 2var(--space-1) 4var(--space-2); }
+  .tb-footer__top { padding: 72px var(--space-5) var(--space-7); }
   .tb-footer__cols {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: var(--space-6);
-    margin-bottom: 4var(--space-2);
+    margin-bottom: var(--space-7);
   }
   .tb-footer__coltitle {
     color: color-mix(in oklab, var(--paper) 50%, transparent);
@@ -155,7 +155,7 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
   .tb-footer__legal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2var(--space-1);
+    gap: var(--space-5);
     margin-bottom: 40px;
   }
   .tb-footer__legalbody {
@@ -171,7 +171,7 @@ import { LAST_REVIEWED, GITHUB_REPO_URL } from '../data/content';
   }
 
   .tb-footer__bottom {
-    padding: 2var(--space-1) 2var(--space-1);
+    padding: var(--space-5) var(--space-5);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
