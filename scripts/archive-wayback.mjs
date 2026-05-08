@@ -26,6 +26,7 @@ import { argv } from 'node:process';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { setTimeout as sleep } from 'node:timers/promises';
 
 const root = path.resolve(fileURLToPath(import.meta.url), '..', '..');
 
@@ -151,10 +152,6 @@ async function archive(url) {
 
   // Defensive — shouldn't reach here.
   return { url, status: 'error', startedAt, error: lastErr ? String(lastErr) : `unresolved status ${lastStatus}`, attempts: maxAttempts };
-}
-
-async function sleep(ms) {
-  return new Promise((r) => setTimeout(r, ms));
 }
 
 async function main() {
