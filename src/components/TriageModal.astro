@@ -5,6 +5,13 @@
 // from the data. Embedded as JSON below for the inline client script.
 import { CLAUSES } from '../data/content';
 const slugMap = Object.fromEntries(CLAUSES.map((c) => [c.n, c.slug]));
+// Escape the two characters that could break out of a <script> tag — same
+// pattern as JsonLd.astro. Trust source today (slugs are kebab-case
+// constants in content.ts) but defence-in-depth costs nothing.
+const slugMapJson = JSON.stringify(slugMap)
+  .replace(/</g, '\\u003c')
+  .replace(/>/g, '\\u003e')
+  .replace(/&/g, '\\u0026');
 ---
 <dialog class="tb-triage" data-triage aria-label="Find your fight">
   <div class="tb-triage__panel">
@@ -17,7 +24,7 @@ const slugMap = Object.fromEntries(CLAUSES.map((c) => [c.n, c.slug]));
     </div>
   </div>
 </dialog>
-<script type="application/json" id="tb-clause-slugs" set:html={JSON.stringify(slugMap)} />
+<script type="application/json" id="tb-clause-slugs" set:html={slugMapJson} />
 
 <style>
   .tb-triage {
