@@ -21,7 +21,15 @@ type Props = { entry: CollectionEntry<'citations'> };
 const { entry } = Astro.props as Props;
 const { Content } = await entry.render();
 
-const data: Record<string, unknown> = entry.data as Record<string, unknown>;
+// The citations content-collection schema uses `.passthrough()` so additional
+// fields (e.g. `judge`, `case_number`, `wayback_url_dated`) are accepted at
+// load time but not in the typed schema. Widen the local view to recognise
+// the extras explicitly so we don't lean on `as any` casts at the call site.
+type CitationData = (typeof entry)['data'] & {
+  judge?: string;
+  case_number?: string;
+};
+const data = entry.data as CitationData;
 const top = entry.slug.split('/')[0];
 const groupLabel: Record<string, string> = {
   statutes: 'Statute / regulation',
@@ -141,8 +149,8 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
       <dl class="tb-cite__meta">
         {data.court_or_publisher && (<><dt>Body</dt><dd>{data.court_or_publisher}</dd></>)}
         {data.date && (<><dt>Date</dt><dd>{data.date}</dd></>)}
-        {(data as any).judge && (<><dt>Judge</dt><dd>{(data as any).judge}</dd></>)}
-        {(data as any).case_number && (<><dt>Case no.</dt><dd>{(data as any).case_number}</dd></>)}
+        {data.judge && (<><dt>Judge</dt><dd>{data.judge}</dd></>)}
+        {data.case_number && (<><dt>Case no.</dt><dd>{data.case_number}</dd></>)}
         {data.retrieved && (<><dt>Retrieved</dt><dd>{data.retrieved}</dd></>)}
       </dl>
 
