@@ -230,7 +230,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .prose ul li { font-size: 16px; line-height: 1.65; color: var(--ink-soft); margin-bottom: 0.4em; }
 .prose strong { color: var(--ink); font-weight: 600; }
 .prose em { font-style: italic; }
-.prose a { color: var(--ink); text-decoration: underline; text-decoration-color: color-mix(in oklab, var(--accent) 40%, transparent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.prose a { color: var(--ink); text-decoration: underline; text-decoration-color: color-mix(in oklab, var(--accent) 40%, transparent); text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .prose a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .prose blockquote {
   border-left: 3px solid var(--rule);

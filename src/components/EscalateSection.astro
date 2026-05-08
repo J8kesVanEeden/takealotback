@@ -87,7 +87,13 @@ function linkifyContact(contact: string) {
   .tb-esc__ladder { border-top: 1px solid var(--rule); }
   .tb-esc__tier {
     display: grid;
-    grid-template-columns: 80px minmax(0, 1fr) minmax(0, 2fr) minmax(180px, 1.4fr) 110px;
+    /* Last column was a hardcoded 110px, but the longest tier window text
+       ("15 biz days / 60 biz days") renders ~176px wide inside `.tb-stat`,
+       which has `white-space: nowrap` site-wide — so the stat overflowed
+       its column by ~66px and pushed body scrollWidth past the viewport.
+       `max-content` lets each tier's window column size to its own
+       (unbreakable) content; the 1.4fr column eats whatever's left. */
+    grid-template-columns: 80px minmax(0, 1fr) minmax(0, 2fr) minmax(180px, 1.4fr) max-content;
     gap: var(--space-4);
     padding: 20px 0;
     border-bottom: 1px solid var(--rule-soft);
@@ -111,12 +117,20 @@ function linkifyContact(contact: string) {
     line-height: 1.55;
     color: var(--ink-soft);
   }
-  .tb-esc__tiercontact { color: var(--ink-muted); }
+  .tb-esc__tiercontact {
+    color: var(--ink-muted);
+    /* Long unbreakable tokens (URLs, hyphenated emails) overflowed the
+       1fr column on viewports ≤ 360px, where the responsive collapse drops
+       the layout to 60px + 1fr. Allow break-anywhere wrapping so these
+       fall onto the next visual line instead of pushing scrollWidth. */
+    overflow-wrap: anywhere;
+  }
   .tb-esc__tiercontact .tb-esc__contact-link {
     color: var(--ink-soft);
     text-decoration: underline;
     text-decoration-color: var(--rule);
     text-underline-offset: 2px;
+    overflow-wrap: anywhere;
   }
   .tb-esc__tiercontact .tb-esc__contact-link:hover {
     color: var(--accent);
