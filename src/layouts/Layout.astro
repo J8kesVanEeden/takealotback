@@ -102,6 +102,10 @@ const templatesHowTo = templatesSchema
     <meta name="twitter:image:alt" content="TakealotBack.com — TAKE A LOT BACK. South African consumer rights, dismantled." />
 
     <meta name="color-scheme" content="light dark" />
+    {/* Theme-color tracks the actual --paper token after tweaks apply.
+        Defaults below are paper / carbon (the auto palettes); the
+        pre-paint script syncs to the resolved palette so users on
+        stark or newsprint don't get the wrong mobile chrome tone. */}
     <meta name="theme-color" content="#F3F1EC" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
@@ -154,12 +158,32 @@ const templatesHowTo = templatesSchema
         r.setAttribute('data-density', t.density || 'normal');
         r.setAttribute('data-hero', t.hero || 'default');
 
+        // Sync mobile-chrome theme-color to the resolved --paper token
+        // after the data-palette attribute has been set above. Safari +
+        // Chrome iOS pick up theme-color on every navigation; updating
+        // it here means stark / newsprint / carbon all get the right
+        // chrome tone instead of the hardcoded paper/carbon defaults.
+        try {
+          var paper = getComputedStyle(r).getPropertyValue('--paper').trim();
+          if (paper) {
+            var metas = document.querySelectorAll('meta[name="theme-color"]');
+            for (var i = 0; i < metas.length; i++) metas[i].setAttribute('content', paper);
+          }
+        } catch (e) { /* ignore */ }
+
         // Live-react to OS theme changes when the user hasn't overridden.
         try {
           var mm = window.matchMedia('(prefers-color-scheme: dark)');
           var onChange = function (ev) {
             if (r.getAttribute('data-palette-source') !== 'system') return;
             r.setAttribute('data-palette', ev.matches ? 'carbon' : 'paper');
+            try {
+              var p = getComputedStyle(r).getPropertyValue('--paper').trim();
+              if (p) {
+                var ms = document.querySelectorAll('meta[name="theme-color"]');
+                for (var i = 0; i < ms.length; i++) ms[i].setAttribute('content', p);
+              }
+            } catch (e2) { /* ignore */ }
           };
           // Modern API; legacy `addListener` fallback kept for older Safari
           // (deprecation hint is expected).

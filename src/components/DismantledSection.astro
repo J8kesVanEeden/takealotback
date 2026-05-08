@@ -364,12 +364,15 @@ function hay(c: typeof CLAUSES[number]) {
       var url = location.origin + '/#' + slug;
 
       function done() {
-        var prev = sb.textContent;
+        // In-flight guard: rapid second clicks would otherwise capture
+        // the "Copied ✓" text as the "original" and the button would
+        // stick on "Copied ✓" forever after the timeout fires.
+        if (sb.getAttribute('data-shared') === 'true') return;
         sb.setAttribute('data-shared', 'true');
         sb.textContent = 'Copied ✓';
         setTimeout(function () {
           sb.removeAttribute('data-shared');
-          sb.textContent = prev || 'Share →';
+          sb.textContent = 'Share →';
         }, 1800);
       }
       function fallback() {
