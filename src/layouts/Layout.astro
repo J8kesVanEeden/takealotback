@@ -203,7 +203,23 @@ const templatesHowTo = templatesSchema
     <TriageModal />
     <TweaksPanel />
 
-    {/* Global keyboard shortcuts + sticky-header scroll border + triage/tweaks toggles */}
+    {/* Chord-mode indicator. Shown briefly when the user presses `g` to enter
+        the section-jump chord, hidden again on second key press or timeout. */}
+    <div class="tb-chord-indicator" data-chord-indicator hidden aria-hidden="true">
+      <span class="kbd">G</span><span class="tb-chord-indicator__cue">_</span>
+    </div>
+
+    {/* Global keyboard shortcuts + sticky-header scroll border + triage/tweaks toggles.
+     *
+     * Section navigation uses a Gmail/GitHub-style chord: press `g`, then a
+     * second letter within ~1.5 s to jump (g-h home, g-d dismantled, g-t
+     * templates, g-l law, g-w warranties, g-e escalate, g-f faq, g-s
+     * citations, g-c triage). Bare letters are intentionally NOT bound —
+     * they collide with NVDA / JAWS / VoiceOver browse-mode quick-nav
+     * (h = next heading, d = next landmark, l = next list, etc.). The
+     * chord requires an explicit gesture, so screen-reader users get
+     * their bare letters back. `?` and Escape stay bare since neither
+     * SR uses them in browse mode. */}
     <script is:inline>
       (function () {
         var header = document.querySelector('[data-site-header]');
@@ -217,8 +233,6 @@ const templatesHowTo = templatesSchema
 
         // Jump to a homepage anchor. If the user is currently on a deep-dive
         // or citation page, navigate to /#id; otherwise smooth-scroll in place.
-        // Without this, all section shortcuts silently no-op'd off-home —
-        // surprising for keyboard users coming back from a citation page.
         function jump(id) {
           var onHome = location.pathname === '/' || location.pathname === '/index.html';
           if (!onHome) {
@@ -229,24 +243,53 @@ const templatesHowTo = templatesSchema
           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
+        var chordMode = false;
+        var chordTimer = null;
+        var chordIndicator = document.querySelector('[data-chord-indicator]');
+        var CHORD_TIMEOUT_MS = 1500;
+
+        function exitChord() {
+          chordMode = false;
+          if (chordTimer) { clearTimeout(chordTimer); chordTimer = null; }
+          if (chordIndicator) chordIndicator.hidden = true;
+        }
+        function enterChord() {
+          chordMode = true;
+          if (chordIndicator) chordIndicator.hidden = false;
+          if (chordTimer) clearTimeout(chordTimer);
+          chordTimer = setTimeout(exitChord, CHORD_TIMEOUT_MS);
+        }
+
+        // Map second-key → action. Any other key in chord mode silently
+        // exits without firing.
+        function fireChordAction(k) {
+          if (k === 'h') { jump('home'); return true; }
+          if (k === 'd') { jump('dismantled'); return true; }
+          if (k === 't') { jump('templates'); return true; }
+          if (k === 'l') { jump('law'); return true; }
+          if (k === 'w') { jump('warranties'); return true; }
+          if (k === 'e') { jump('escalate'); return true; }
+          if (k === 'f') { jump('faq'); return true; }
+          if (k === 's') { window.location.href = '/citations'; return true; }
+          if (k === 'c') { window.dispatchEvent(new CustomEvent('tb:triage-toggle')); return true; }
+          return false;
+        }
+
         window.addEventListener('keydown', function (e) {
           var target = e.target;
           if (target && target.matches && target.matches('input, textarea, select, [contenteditable]')) return;
           if (e.metaKey || e.ctrlKey || e.altKey) return;
           var k = (e.key || '').toLowerCase();
-          if (k === 'h') { jump('home'); return; }
-          if (k === 'd') { jump('dismantled'); return; }
-          if (k === 't') { jump('templates'); return; }
-          if (k === 'l') { jump('law'); return; }
-          if (k === 'w') { jump('warranties'); return; }
-          if (k === 'e') { jump('escalate'); return; }
-          if (k === 'f') { jump('faq'); return; }
-          if (k === 's') { window.location.href = '/citations'; return; }
-          if (k === 'c') {
-            e.preventDefault();
-            window.dispatchEvent(new CustomEvent('tb:triage-toggle'));
+
+          // In chord mode: any letter can trigger an action; non-action
+          // letters silently cancel. Either way, exit chord before next key.
+          if (chordMode) {
+            if (fireChordAction(k)) e.preventDefault();
+            exitChord();
             return;
           }
+
+          // Bare keys that DON'T collide with screen-reader browse-mode.
           if (e.key === '?' || (e.shiftKey && k === '/')) {
             e.preventDefault();
             window.dispatchEvent(new CustomEvent('tb:tweaks-toggle'));
@@ -255,6 +298,14 @@ const templatesHowTo = templatesSchema
           if (k === 'escape') {
             window.dispatchEvent(new CustomEvent('tb:triage-close'));
             window.dispatchEvent(new CustomEvent('tb:tweaks-close'));
+            return;
+          }
+
+          // `g` enters chord mode for the section-jump shortcuts.
+          if (k === 'g' && !e.shiftKey) {
+            e.preventDefault();
+            enterChord();
+            return;
           }
         });
       })();

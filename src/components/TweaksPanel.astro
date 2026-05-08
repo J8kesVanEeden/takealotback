@@ -65,7 +65,7 @@ const groups = [
   ))}
   <hr class="tb-tweaks__rule" />
   <div class="mono tb-tweaks__hint">
-    Keys: H · D · T · L · W · E · F jump sections. C opens triage. ? toggles this panel.
+    Keys: <span class="kbd">G</span> then <span class="kbd">H</span> · <span class="kbd">D</span> · <span class="kbd">T</span> · <span class="kbd">L</span> · <span class="kbd">W</span> · <span class="kbd">E</span> · <span class="kbd">F</span> jumps to a section, <span class="kbd">G</span> then <span class="kbd">S</span> opens the citations index, <span class="kbd">G</span> then <span class="kbd">C</span> opens triage. <span class="kbd">?</span> toggles this panel, <span class="kbd">Esc</span> closes it.
   </div>
 </aside>
 
@@ -148,6 +148,15 @@ const groups = [
   .tb-tweaks__hint {
     color: var(--ink-muted);
     font-size: 10px;
+    line-height: 1.8;
+  }
+  /* The hint paragraph mixes prose with kbd badges. The badges are taller
+     than the prose, so loosen the line-height and give the badges a hair
+     of vertical breathing room — otherwise the second line of badges
+     visually collides with the first. */
+  .tb-tweaks__hint .kbd {
+    margin: 0 1px;
+    color: var(--ink);
   }
 </style>
 
@@ -203,11 +212,27 @@ const groups = [
     reflect(t);
 
     var lastFocused = null;
+    // While the panel is open, mark the rest of the page as `inert` so
+    // tab-order, click-through, and AT focus all stop at the panel
+    // boundary. Cheap focus-trap that's strictly stronger than the older
+    // tabindex/aria-hidden loop, and respects native focusin/-out semantics.
+    var inertTargets = [
+      document.querySelector('header[data-site-header]'),
+      document.getElementById('main'),
+      document.querySelector('footer.tb-footer'),
+    ].filter(Boolean);
+    function setBackgroundInert(on) {
+      for (var i = 0; i < inertTargets.length; i++) {
+        if (on) inertTargets[i].setAttribute('inert', '');
+        else inertTargets[i].removeAttribute('inert');
+      }
+    }
     function open() {
       lastFocused = document.activeElement;
       panel.hidden = false;
       fab.hidden = true;
       fab.setAttribute('aria-expanded', 'true');
+      setBackgroundInert(true);
       // Move focus to the first tweak chip — focusing the close button (the
       // first <button> in DOM order) means a keyboard user pressing Enter
       // immediately dismisses the panel they just opened.
@@ -218,6 +243,7 @@ const groups = [
       panel.hidden = true;
       fab.hidden = false;
       fab.setAttribute('aria-expanded', 'false');
+      setBackgroundInert(false);
       // Return focus to whatever opened the panel (typically the FAB).
       if (lastFocused && typeof lastFocused.focus === 'function') {
         lastFocused.focus();
