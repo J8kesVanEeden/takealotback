@@ -36,10 +36,15 @@ const STOPS = [0, 20, 40, 60, 80, 100] as const;
     line-height: 12px;
     user-select: none;
   }
-  .tb-plus-row__mark--0   { left: 0%;   }
+  /* End marks snap to their edges instead of straddling them. Without
+     these per-edge transforms the --0 mark hangs ~4px off the left and
+     --100 hangs ~4px off the right, which contributes a few px of
+     horizontal scroll on viewports where `.page` runs flush with the
+     viewport edge. */
+  .tb-plus-row__mark--0   { left: 0%;   transform: translateX(0); }
   .tb-plus-row__mark--20  { left: 20%;  }
   .tb-plus-row__mark--40  { left: 40%;  }
   .tb-plus-row__mark--60  { left: 60%;  }
   .tb-plus-row__mark--80  { left: 80%;  }
-  .tb-plus-row__mark--100 { left: 100%; }
+  .tb-plus-row__mark--100 { left: 100%; transform: translateX(-100%); }
 </style>
