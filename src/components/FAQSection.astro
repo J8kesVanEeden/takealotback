@@ -47,7 +47,7 @@ function pad(n: number) {
     gap: var(--space-4);
     width: 100%;
     text-align: left;
-    padding: 1var(--space-2) var(--space-2);
+    padding: 18px var(--space-2);
     align-items: baseline;
     color: var(--ink);
     cursor: pointer;
@@ -77,7 +77,7 @@ function pad(n: number) {
     display: grid;
     grid-template-columns: 48px 1fr 40px;
     gap: var(--space-4);
-    padding-bottom: 2var(--space-1);
+    padding-bottom: var(--space-5);
   }
   /* `:global(*)` is required: child components like <SourceChips> render
    * with their own Astro scope id, so a plain `> *` only matches children
@@ -92,7 +92,7 @@ function pad(n: number) {
     max-width: 64ch;
   }
   .tb-faq__note {
-    margin-top: 2var(--space-2);
+    margin-top: 28px;
     font-size: 14px;
     line-height: 1.6;
     color: var(--ink-soft);

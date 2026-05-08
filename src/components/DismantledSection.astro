@@ -212,7 +212,7 @@ function hay(c: typeof CLAUSES[number]) {
     padding: var(--space-3) 0 36px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-    gap: clamp(2var(--space-1), 4vw, 56px);
+    gap: clamp(var(--space-5), 4vw, 56px);
     border-top: 1px dashed var(--rule);
     margin-top: var(--space-1);
   }
@@ -220,7 +220,7 @@ function hay(c: typeof CLAUSES[number]) {
 
   .tb-dm__takealot {
     border-left: 3px solid var(--warn);
-    padding-left: 1var(--space-1);
+    padding-left: 14px;
     margin-top: var(--space-4);
   }
   .tb-dm__takealot-label { color: var(--warn); margin-bottom: 6px; }
@@ -232,7 +232,7 @@ function hay(c: typeof CLAUSES[number]) {
   }
   .tb-dm__why {
     border-left: 3px solid var(--accent);
-    padding-left: 1var(--space-1);
+    padding-left: 14px;
     margin-top: 20px;
   }
   .tb-dm__why-label { color: var(--accent); margin-bottom: 6px; }
@@ -258,7 +258,7 @@ function hay(c: typeof CLAUSES[number]) {
     display: grid;
     grid-template-columns: 40px 180px 1fr;
     gap: var(--space-4);
-    padding: 1var(--space-1) 0;
+    padding: 14px 0;
     border-bottom: 1px solid var(--rule-soft);
     align-items: baseline;
   }

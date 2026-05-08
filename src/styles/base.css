@@ -155,7 +155,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 1var(--space-1);
+  padding: 10px 14px;
   border: 1px solid var(--ink);
   border-radius: 2px;
   font-family: var(--font-mono);
@@ -177,7 +177,7 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
  * `.tb-section--pad` rules. The `.section` selector here is a legacy
  * baseline kept only for raw <section> markup outside Section.astro. */
 .section {
-  padding: clamp(6var(--space-1), 7vw, 120px) 0;
+  padding: clamp(var(--space-8), 7vw, 120px) 0;
   position: relative;
   border-top: 1px solid var(--rule);
 }
