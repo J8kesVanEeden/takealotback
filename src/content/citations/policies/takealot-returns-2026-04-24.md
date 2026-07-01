@@ -5,10 +5,11 @@ court_or_publisher: "Takealot Online (RF) (Pty) Ltd"
 date: "2026-04-24"
 primary_url: "https://terms-and-policies.takealot.com/"
 wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/"
-wayback_url_dated: "https://web.archive.org/web/20260425123950/https://terms-and-policies.takealot.com/"
-wayback_url_earlier: "https://web.archive.org/web/20260425103610/https://terms-and-policies.takealot.com/"
+wayback_url_dated: "https://web.archive.org/web/20260701142454/https://terms-and-policies.takealot.com/"
+wayback_url_earlier: "https://web.archive.org/web/20260425123950/https://terms-and-policies.takealot.com/"
 metaDescription: "Verbatim snapshot of Takealot's returns policy (April 2026). Source-of-truth for every clause-by-clause comparison the site makes."
-retrieved: "2026-04-24"
+retrieved: "2026-07-01"
+reverified_on: "2026-07-01"
 corrected_on: "2026-05-07"
 correction_note: "Companion T&Cs snapshot's forum-selection note was corrected on 2026-05-07; this file's parallel mention of that qualifier was updated to match. See takealot-tcs-2026-04-24.md for the full correction record."
 retrieved_by: "Takealot policy audit agent, 2026-04-24 — see commit 6f29a2e and ce0357f"
@@ -55,6 +56,10 @@ Takealot agent audit on this date verified the following clauses against the liv
 ## Policy version / last-updated
 
 Takealot does not surface a "Last updated" date on either the Returns Policy page or the T&Cs page. The site's `TAKEALOT_POLICY_REVIEWED_AGAINST` constant (`v2026.03`) is a self-anchor rather than a Takealot-published version pin.
+
+## Re-verification log
+
+**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day manufacturer-deflection trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line — neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
 
 ## How to refresh this snapshot
 
