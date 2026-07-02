@@ -19,10 +19,41 @@
 // Spins up `astro preview` first so pa11y has a live origin; tears it
 // down on exit.
 
-import { spawn } from 'node:child_process';
+import { spawn, execFileSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
+import { existsSync } from 'node:fs';
 
 const PORT = 4332;
+
+// Pre-flight: make sure the Chrome build puppeteer expects is actually on
+// disk. In CI `npm ci` triggers puppeteer's download, so this is a no-op
+// there. But a local cache can go stale — a puppeteer bump changes the
+// pinned build, or ~/.cache/puppeteer gets cleared — and pa11y-ci then
+// dies with a raw puppeteer-core stack trace that halts the whole
+// `check:all` chain. Self-heal by installing the pinned build once;
+// fall back to a clear, actionable message if that fails.
+async function ensureChrome() {
+  let executablePath;
+  try {
+    const puppeteer = (await import('puppeteer')).default;
+    executablePath = puppeteer.executablePath();
+  } catch {
+    return; // puppeteer not resolvable — let pa11y-ci surface its own error
+  }
+  if (executablePath && existsSync(executablePath)) return;
+
+  console.log('Chrome for the a11y check is missing — installing it once (this can take a minute)…');
+  try {
+    execFileSync('npx', ['puppeteer', 'browsers', 'install', 'chrome'], { stdio: 'inherit' });
+  } catch {
+    console.error('\n✗ Could not auto-install Chrome for the accessibility check.');
+    console.error('  Run this once, then retry `npm run check:a11y`:');
+    console.error('    npx puppeteer browsers install chrome\n');
+    process.exit(1);
+  }
+}
+
+await ensureChrome();
 
 const server = spawn('npx', ['astro', 'preview', '--port', String(PORT), '--host', '127.0.0.1'], {
   stdio: ['ignore', 'pipe', 'pipe'],
