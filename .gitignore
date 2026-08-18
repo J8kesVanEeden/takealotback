@@ -37,7 +37,9 @@ _handoff/
 
 # Original zip
 takealotback-handoff.zip
-/.claude/
+# Claude Code: commit the shared settings, ignore everything else in .claude/
+/.claude/*
+!/.claude/settings.json
 .playwright-mcp/
 
 # Claude Code local settings (machine-specific, never committed)
