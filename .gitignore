@@ -39,3 +39,6 @@ notes/
 takealotback-handoff.zip
 /.editor/
 .playwright-mcp/
+
+# editor local settings (machine-specific, never committed)
+.editor/settings.local.json
