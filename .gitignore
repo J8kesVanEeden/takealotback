@@ -37,7 +37,9 @@ notes/
 
 # Original zip
 takealotback-handoff.zip
-/.editor/
+# editor: commit the shared settings, ignore everything else in .editor/
+/.editor/*
+!/.editor/settings.json
 .playwright-mcp/
 
 # editor local settings (machine-specific, never committed)
