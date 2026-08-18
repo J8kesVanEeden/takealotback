@@ -39,3 +39,6 @@ _handoff/
 takealotback-handoff.zip
 /.claude/
 .playwright-mcp/
+
+# Claude Code local settings (machine-specific, never committed)
+.claude/settings.local.json
