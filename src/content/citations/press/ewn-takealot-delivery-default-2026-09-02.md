@@ -8,7 +8,7 @@ wayback_url_dated: "https://web.archive.org/web/20261110155352/https://www.ewn.c
 metaDescription: "September 2026: Takealot raised its free-delivery minimum from R650 to R750, and EWN reported faster paid delivery options 'can now be selected by default' at checkout."
 retrieved: "2026-11-10"
 wayback_status: "Captured 2026-11-10 (20261110155352). EWN is not paywalled."
-disclosure: "EWN is a Primedia outlet, independent of Takealot's Naspers parent. The article contains no statement from Takealot. TakealotBack has not independently verified the checkout behaviour it describes, which may change."
+disclosure: "EWN is a Primedia outlet, independent of Takealot's Naspers parent. The article contains no statement from Takealot. TakealotBack does not independently verify reporting in the press, has not checked the checkout behaviour described, and that behaviour may change. (Published on this basis at the site editor's instruction, 2026-11-10.)"
 used_in:
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'CPA s 31 — pre-ticked paid delivery' angle"
 copyright: "© EWN / Primedia. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
