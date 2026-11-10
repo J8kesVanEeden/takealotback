@@ -1,0 +1,7 @@
+# AI Action Prompts
+
+## Quarterly refresh round
+Run the TakeALotBack refresh the way the November 2026 round did it (record: `_handoff/refresh-2026-11/PROGRESS.md`). Branch `refresh/YYYY-MM`; keep a PROGRESS.md in `_handoff/refresh-YYYY-MM/` and update it at every step. Tracks, in parallel: (A) render both live Takealot policy pages (full DOM, collapsed sections included) and diff like-for-like against the previous Wayback capture, then `npm run archive` the two URLs; (B) re-check every press, commentary and regulator source and the Small Claims / Magistrates' Court limits at justice.gov.za; (C) Wendy Knowler / News24 Consumer Lookout since the last round; (D) general sweep: regulators, new SAFLII judgments, Takealot complaint patterns. Copy contradictions are research to resolve and fix, not questions. Every new claim needs a primary source opened and quoted verbatim, saved to `raw/`. Only genuine judgment calls go to a questions session. Finish with `npm run check:all` (show output), bump `LAST_REVIEWED` and `TAKEALOT_POLICY_REVIEWED_AGAINST`, `npm run sync:obsidian`, PR, then `npm run check:live` and `npm run archive` after deploy.
+
+## Is a citation still saying what we claim?
+For the clause, template or page I name: list every source it attributes a claim to, open each primary source (SAFLII via the browser, Acts in the consolidated text), and report any sentence that's wrong, overstated or has the wrong pinpoint, with the verbatim source text and an exact fix. Report only; don't edit.

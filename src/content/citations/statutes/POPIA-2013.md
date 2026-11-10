@@ -48,7 +48,7 @@ s 19(2): The responsible party must take reasonable measures to —
 
 ## Information Regulator (s 40+)
 
-The Information Regulator is the independent body established under POPIA Chapter 5 (s 39 onwards). Its current operational details — including the eServices Portal as primary complaint channel since 2024 — are in [`citations/regulators/info-regulator-2026-04-24.md`](../regulators/info-regulator-2026-04-24.md).
+The Information Regulator is the independent body established under POPIA Chapter 5 (s 39 onwards). Its current operational details — including the eServices Portal (register, then submit) and the POPIAComplaints@ address listed on its contact page — are in [`citations/regulators/info-regulator-2026-04-24.md`](../regulators/info-regulator-2026-04-24.md).
 
 s 99 establishes the Information Regulator's enforcement powers (information notices, enforcement notices). Non-compliance penalties are in s 107.
 

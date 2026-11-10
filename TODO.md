@@ -130,11 +130,11 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 
 ## Open — content strategy / future
 
-- [ ] Quarterly Takealot policy refresh (next: ~July 2026)
+- [ ] Quarterly Takealot policy refresh (Q3 done 2026-07-01; Q4 done 2026-11-10, late; next: ~January 2027). Method that works: render the full DOM and diff like-for-like against the previous Wayback capture (see `_handoff/refresh-2026-11/A-policy-diff.md`).
 - [ ] Annual case-law refresh (next: ~April 2027) — re-verify SCA / Concourt decisions; check for any new judgments interpreting CPA s 56 / s 69
 - [ ] Annual regulator-details refresh
-- [ ] Watch for: Small Claims Court threshold raise from R20,000 → R50,000 (consultations underway as of late 2025; adjust ESCALATION + Bodies card if it lands)
-- [ ] **Magistrates' Court thresholds** — currently quoted as District R200,000 / Regional R400,000 (last set by GG 2014). Verify at next quarterly refresh; commentary suggests possible raise to R400k district / R600k regional under review. Affects Clause 13 + ESCALATION T9 + LawSection Bodies card if updated.
+- [x] Small Claims Court threshold: raised to **R30,000 from 1 Aug 2026** (GG 55038, GoN 7717; not R50,000). Site updated 2026-11-10. Lesson: the site carried the stale figure for 3 months, so check justice.gov.za/scc at every quarterly refresh, not only annually.
+- [ ] **Magistrates' Court thresholds** — currently quoted as District R200,000 / Regional R400,000 (last set by GG 2014). Re-verified 2026-11-10 against GoN 216/217 (GG 37477, 2014) and the DoJ notice lists to 26 Oct 2026: unchanged. Commentary suggests a possible raise to R400k district / R600k regional under review; check DoJ notices each quarter. Affects Clause 13 + ESCALATION T9 + LawSection Bodies card if updated.
 
 ### Citation expansion candidates — collaborative work needed
 
@@ -152,7 +152,7 @@ Each entry below would strengthen the citations vault but **needs primary-source
 - [ ] **Companies Act 71 of 2008** — Naspers / Takealot Online (RF) (Pty) Ltd entity references currently rely on commentary. Adding the Act would give the entity references a primary-source backstop.
 
 **Advisories worth adding:**
-- [ ] **CGSO Advisory Notes 2–10, 12+** — currently only have Notes 1 and 11. Note 2 (cooling-off) and Note 5 (refund mechanics) would directly support clauses we already make.
+- [ ] **CGSO Advisory Notes 2–10, 12+** — currently only have Notes 1 and 11. Corrected 2026-11-10 against SAFLII (ZACGSO/2021/1–16): **Note 2 = Pricing Errors** (supports Clause 14 / T10), **Note 5 = Delivery of Goods Bought on Credit**, **Note 10 = E-Commerce** (says CPA s 19 and s 23 don't apply where the ECT Act governs). The earlier description here ("Note 2 cooling-off, Note 5 refund mechanics") was written from memory and was wrong. Note: the CGSO withdrew all notes from cgso.org.za "under review" (by Feb 2026); SAFLII is the only public copy.
 - [ ] **NCC compliance notices** — when the NCC issues a public notice against a major retailer, snapshot it. None on file yet.
 
 **Regulator-info pages worth adding:**

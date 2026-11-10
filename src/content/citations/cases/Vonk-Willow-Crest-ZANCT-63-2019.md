@@ -8,8 +8,9 @@ primary_url: "https://www.saflii.org/za/cases/ZANCT/2019/68.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZANCT/2019/68.html"
 alternate_url: "https://www.saflii.org/za/cases/ZANCT/2019/63.html"
 nct_pdf: "https://www.thenct.org.za/wp-content/uploads/2019/05/Theodorus-Vonk-v-Willow-Crest-Motors-CC-NCT-115078-2018-751-b.pdf"
-metaDescription: "National Consumer Tribunal 2019: voetstoots ('as-is') clauses do not apply to transactions falling under the Consumer Protection Act."
+metaDescription: "National Consumer Tribunal 2019: using a voetstoots ('as-is') clause in a consumer sale is prohibited conduct under the Consumer Protection Act, even if the clause is removed before signing."
 retrieved: "2026-04-25"
+reverified_on: "2026-11-10"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
@@ -20,11 +21,13 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 ## Proposition cited on the site
 
-The voetstoots ("as-is") clause does not apply to transactions falling under the CPA.
+Using a voetstoots ("as-is") clause in a consumer sale is prohibited conduct under the CPA.
 
-Quoted on the site (verbatim from the judgment as widely cited in secondary commentary):
+Quoted on the site (verbatim from para 44.1 of the judgment, SAFLII [2019] ZANCT 63, checked 2026-11-10):
 
-> "the concept of a 'voetstoots' sale… is therefore not applicable to any transactions falling under the CPA"
+> "The use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act even though the clause was removed by the Applicant before the contract was signed"
+
+**Correction (2026-11-10).** An earlier version of this file and of the site credited Vonk with the sentence "the concept of a 'voetstoots' sale … is therefore not applicable to any transactions falling under the CPA". That sentence is **not in Vonk** (both SAFLII copies searched). It is para 35 of a different Tribunal decision, *National Consumer Commission v Western Car Sales CC* [2017] ZANCT 102 (14 September 2017), as quoted in CGSO Advisory Note 11 para 4.1. The site now credits each quote to its own case.
 
 ## Facts
 

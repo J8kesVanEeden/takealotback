@@ -105,7 +105,8 @@ export function buildOrganization() {
     '@id': ORG_ID,
     name: 'Milk Moon Studio',
     url: 'https://www.milkmoonstudio.com/',
-    email: 'mailto:jakes@milkmoonstudio.com',
+    // No email: OPERATIONS.md non-negotiable #2 (no email on the site).
+    // Corrections go via GitHub issues.
     // Logo points to the dedicated 512×512 brand mark (public/logo.png),
     // sized for Google rich-card publisher logo eligibility.
     logo: { '@id': LOGO_ID },
@@ -390,7 +391,7 @@ export function buildCitationArticle(args: {
 // ── HowTo (templates) ───────────────────────────────────────────────────
 // Every email template is structurally a how-to: "how to email Takealot
 // for [scenario]". Steps are: identify the order/issue, copy the subject,
-// copy the body, send to Takealot's help address. Citations referenced
+// copy the body, send it through Takealot's Help Centre form (or to legal@takealot.com for a formal notice). Citations referenced
 // inside the body get exposed as HowToTool entries — gives AEO
 // extractors the legal grounding for the content.
 //
@@ -398,7 +399,12 @@ export function buildCitationArticle(args: {
 // of 16 separate <script> tags. AEO parsers (Bing, Perplexity, ChatGPT)
 // handle ItemList-of-HowTo cleanly.
 
-const TEMPLATE_HELP_EMAIL = 'help@takealot.com';
+// Takealot publishes no general support email (help@takealot.com appears on
+// no Takealot page — checked 2026-11-10). Its own instruction is the Help
+// Centre 'Contact Us' form; its T&Cs give legal@takealot.com for legal
+// notices. Source: src/content/citations/policies/takealot-help-centre-contact-2026-11-10.md
+const TEMPLATE_SEND_TO =
+  "Paste the subject and body into the 'Contact Us' form at the bottom of the matching Takealot Help Centre topic (takealot.com/help-centre), signed in to the account you ordered with. For a formal notice, email it to legal@takealot.com, the address Takealot's terms give for legal notices.";
 
 function extractTools(body: string): Array<{ '@type': 'HowToTool'; name: string }> {
   // Pull the most-specific legal-citation tools the body invokes.
@@ -434,7 +440,7 @@ export function buildTemplateHowTo(t: Template) {
   return {
     '@type': 'HowTo',
     '@id': `${SITE_URL}/#howto-${t.code}`,
-    name: `How to email Takealot: ${t.title}`,
+    name: `How to write to Takealot: ${t.title}`,
     description: t.scenario,
     inLanguage: 'en-ZA',
     isAccessibleForFree: true,
@@ -465,7 +471,7 @@ export function buildTemplateHowTo(t: Template) {
         '@type': 'HowToStep',
         position: 4,
         name: 'Send to Takealot',
-        text: `Address the email to ${TEMPLATE_HELP_EMAIL} from the same email account you used to place the order. Replace any [BRACKETED] placeholders with your specifics.`,
+        text: `${TEMPLATE_SEND_TO} Replace any [BRACKETED] placeholders with your specifics.`,
       },
     ],
   };

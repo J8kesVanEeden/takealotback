@@ -50,8 +50,9 @@ jobs:
 
           ## 1. Diff the live policy pages
 
-          - [ ] Fetch https://terms-and-policies.takealot.com/ and diff against `src/content/citations/policies/takealot-tcs-2026-04-24.md` (or the most recent dated successor)
-          - [ ] Fetch https://terms-and-policies.takealot.com/terms-conditions/ and diff against `src/content/citations/policies/takealot-returns-2026-04-24.md` (or successor)
+          - [ ] Fetch https://terms-and-policies.takealot.com/ (Returns Policy) and diff against `src/content/citations/policies/takealot-returns-2026-04-24.md` (or the most recent dated successor)
+          - [ ] Fetch https://terms-and-policies.takealot.com/terms-conditions/ (Platform T&Cs) and diff against `src/content/citations/policies/takealot-tcs-2026-04-24.md` (or successor)
+          - [ ] Render the full DOM (sections are collapsed/hidden), and ALSO run the same extraction on the previous Wayback capture: diffing like-for-like extractions is more reliable than diffing against the hand-transcribed snapshot
 
           ## 2. Apply changes
 
