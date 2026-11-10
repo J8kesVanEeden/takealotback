@@ -8,12 +8,13 @@ name: Wayback archive
 # Pace and budget:
 # - The script paces requests at 6s apart (~12 req/min ceiling on SPN).
 # - We pass --all so the script fetches the live sitemap and archives
-#   every URL it lists (currently ~39 site pages + 2 Takealot live URLs).
-#   Run takes ~10–17 minutes depending on SPN response times — worse
-#   when SPN is slow or returning intermittent fetch failures (each
-#   failed request still waits ~16s before falling through). Worth it:
-#   the previous default-only behaviour (17 URLs) silently skipped most
-#   citation pages on every push.
+#   every URL it lists (~68 site pages + 2 Takealot live URLs as of
+#   Nov 2026). That no longer fits one 25-min job (~25 s per URL → ~29 min;
+#   two runs on 2026-11-10 stopped at 24/70 and 39/70), so the list is
+#   split across two parallel jobs with --shard=1/2 and --shard=2/2
+#   (every other URL each, ~35 URLs ≈ 15 min). Separate runners, separate
+#   IPs, so each paces against SPN independently. Add a third shard if
+#   the site grows past ~100 URLs.
 # - We wait 90s before archiving to give Cloudflare Pages time to redeploy
 #   so Wayback captures the new content, not the previous build.
 # - Failures (timeouts, 429s) are best-effort; partial archival is fine.
@@ -45,6 +46,10 @@ jobs:
   archive:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ['1/2', '2/2']
     steps:
       - uses: actions/checkout@v4
 
@@ -57,8 +62,8 @@ jobs:
           echo "Waiting 90s for Cloudflare Pages to ship the new build..."
           sleep 90
 
-      - name: Push every sitemap URL to the Wayback Machine
-        run: node scripts/archive-wayback.mjs --all
+      - name: Push this shard of the sitemap URLs to the Wayback Machine
+        run: node scripts/archive-wayback.mjs --all --shard=${{ matrix.shard }}
 
       - name: Note
         if: always()
