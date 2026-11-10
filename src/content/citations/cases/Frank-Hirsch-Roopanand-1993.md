@@ -28,7 +28,7 @@ In other words: a parallel import that escapes trade-mark infringement under s 3
 
 - Frank & Hirsch was the SA exclusive distributor of TDK blank audio cassette tapes since 1974.
 - Roopanand Brothers acquired TDK tapes from a third party in Singapore (which had got them from TDK Electronics Co Ltd of Japan) and imported them into SA — parallel imports / "grey goods."
-- The TDK tapes carried TDK's registered trade marks. Trade-mark statutory exhaustion under TMA s 34(2)(d) appeared to permit the parallel imports.
+- The TDK tapes carried TDK's registered trade marks. Frank & Hirsch's earlier trade-mark action against the parallel imports (under the then Trade Marks Act 62 of 1963, with an alternative Merchandise Marks Act claim) had been dismissed: *Frank & Hirsch (Pty) Ltd v Roopanand Brothers* 1987 (3) SA 165 (D & CLD). (The 1993 Act and its s 34(2)(d) did not yet exist; the case is cited on the site as the copyright analogue of today's s 34(2)(d) exhaustion position.) Correction 2026-11-10: an earlier version said TMA s 34(2)(d) "appeared to permit" the imports.
 - However, on 4 June 1987, TDK Electronics had assigned to Frank & Hirsch *the copyright* in the literary and artistic works comprised in the get-up and trade dress of TDK tapes (the wrappers and printed inserts) by deed of assignment in Japan.
 
 ## Held (Appellate Division)

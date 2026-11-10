@@ -4,10 +4,12 @@ citation: "News24, Consumer Lookout, 13 April 2025"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-04-13"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-exploding-charger-takealot-steps-in-after-supplier-ghosts-20250413"
+wayback_url_dated: "https://web.archive.org/web/20260507161118/https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-exploding-charger-takealot-steps-in-after-supplier-ghosts-20250413"
 metaDescription: "Follow-up to the Wales/Lenovo case: after News24 published, Takealot suspended the third-party seller and gave Wales a new replacement laptop. CGSO Soobrathi reiterates the intermediary stance."
 retrieved: "2026-05-07"
+reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07."
-wayback_status: "No Wayback Machine snapshot available for this URL as of 2026-05-07. News24 blocks bot/SPN requests."
+wayback_status: "Wayback capture 20260507161118 exists but holds only the paywall shell (title, no article body), checked 2026-11-10. The verbatim extracts here come from an authenticated News24 subscription."
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Disclosed for transparency."
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) angle — companion citation showing the resolution pattern after escalation"
@@ -20,7 +22,7 @@ copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 
 
 ## Why the site cites this
 
-The follow-up piece confirms the resolution pattern in the Wales / Lenovo case: after News24 published the original story (06 April 2025), Takealot reversed position within an hour and gave Wales a new replacement laptop in lieu of the broken one. The CGSO's intermediary stance — quoted in the original article — held. The follow-up is cited alongside the original to show that media + ombud pressure produced a remedy that direct engagement with Takealot had not.
+The follow-up piece confirms the resolution pattern in the Wales / Lenovo case: after News24 published the original story (06 April 2025), Takealot contacted Wales within an hour of publication and then gave him a new replacement laptop. The CGSO's intermediary stance was quoted for comment in the original article; neither piece records Wales filing a CGSO complaint. The follow-up is cited alongside the original to show that media coverage, with the CGSO's view on record, produced a remedy that direct engagement with Takealot had not. (Wording corrected 2026-11-10.)
 
 ## Verbatim extracts (fair-dealing quotations)
 

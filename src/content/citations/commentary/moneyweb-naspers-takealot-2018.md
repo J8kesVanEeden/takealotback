@@ -6,6 +6,7 @@ primary_url: "https://www.moneyweb.co.za/news/companies-and-deals/naspers-bags-a
 wayback_url: "https://web.archive.org/web/*/https://www.moneyweb.co.za/news/companies-and-deals/naspers-bags-all-of-takealot/"
 metaDescription: "Moneyweb (2018): Naspers reaches ~96% ownership of Takealot. Source for the 'Registered entity' block in the Policies section."
 retrieved: "2026-04-24"
+reverified_on: "2026-11-10"
 used_in:
   - "src/components/PoliciesSection.astro — '~96% by Naspers Limited since December 2017' line"
 copyright: "Moneyweb. Short excerpt / summary only — fair dealing under s 12(1)(a)."

@@ -23,6 +23,17 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   // Cases (specific names — match before statute prefixes to avoid collision)
   { test: /Motus|Wentzel/i, link: { url: '/citations/cases/motus-wentzel-zasca-40-2021', label: 'Motus v Wentzel' } },
   { test: /Voltex|CGSO NPC|CGSO\s*\(compulsory/i, link: { url: '/citations/cases/cgso-voltex-zagpphc-309-2021', label: 'CGSO v Voltex' } },
+  { test: /Edan Traders/i, link: { url: '/citations/cases/edan-traders-zagpjhc-386-2026', label: 'Edan Traders v NCT' } },
+  { test: /Wingfield/i, link: { url: '/citations/cases/wingfield-motors-zawchc-385-2025', label: 'Wingfield Motors v NCT' } },
+  { test: /Toyota Randburg/i, link: { url: '/citations/cases/toyota-randburg-ndlovu-zagpphc-591-2024', label: 'Toyota Randburg v Ndlovu' } },
+  { test: /Pure Silk/i, link: { url: '/citations/cases/pure-silk-martin-zawchc-568-2025', label: 'Pure Silk v Martin' } },
+  { test: /Van Niekerk/i, link: { url: '/citations/cases/van-niekerk-firstrand-zasca-187-2025', label: 'Van Niekerk v FirstRand' } },
+  { test: /Gareeb|Incredible Connections/i, link: { url: '/citations/cases/gareeb-incredible-connections-zanct-7-2024', label: 'Gareeb v Incredible Connections' } },
+  { test: /Fugui/i, link: { url: '/citations/cases/ncc-fugui-trading-zanct-9-2026', label: 'NCC v Fugui Trading' } },
+  { test: /Car Care Clinic/i, link: { url: '/citations/cases/ncc-car-care-clinic-gj-a2024-092517-2026', label: 'NCC v NCT (Car Care Clinic)' } },
+  { test: /Ntoatsabone|Hisense/i, link: { url: '/citations/cases/ntoatsabone-hisense-zanct-21-2026', label: 'Ntoatsabone v Hisense' } },
+  { test: /pre-ticked paid delivery/i, link: { url: '/citations/press/ewn-takealot-delivery-default-2026-09-02', label: 'EWN: paid delivery pre-selected (2026)' } },
+  { test: /Davis couch|Kelly Davis/i, link: { url: '/citations/press/ewn-knowler-davis-couch-2026-07-23', label: 'EWN / Knowler: Davis couch (2026)' } },
   { test: /Vonk|Willow Crest/i, link: { url: '/citations/cases/vonk-willow-crest-zanct-63-2019', label: 'Vonk v Willow Crest Motors' } },
   { test: /Fourie|Agenbag/i, link: { url: '/citations/cases/fourie-agenbag-zaconaf-3-2018', label: 'Fourie v Agenbag Motor Group' } },
   { test: /Laugh It Off/i, link: { url: '/citations/cases/laugh-it-off-zacc-7-2005', label: 'Laugh It Off v SAB' } },
@@ -33,19 +44,24 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   { test: /\bSony\b|TRC|Television Radio Centre/i, link: { url: '/citations/cases/trc-sony-1987', label: 'TRC v Sony Kabushiki Kaisha' } },
   { test: /Frank.*Hirsch|Hirsch.*Roopanand|Roopanand/i, link: { url: '/citations/cases/frank-hirsch-roopanand-1993', label: 'Frank & Hirsch v Roopanand Brothers' } },
 
-  // CGSO advisory notes
+  // CGSO advisory notes + regulator papers
+  { test: /CGSO case study|CGSO Annual Report/i, link: { url: '/citations/regulators/cgso-annual-report-2025-26', label: 'CGSO Annual Report 2025/26' } },
+  { test: /NCC \+ CGSO joint paper|Consumer Protection in E-Commerce/i, link: { url: '/citations/advisories/ncc-cgso-ecommerce-paper-2026', label: 'NCC + CGSO e-commerce paper (2026)' } },
+  { test: /Advisory Note 10\b/i, link: { url: '/citations/advisories/cgso-advisory-note-10', label: 'CGSO Advisory Note 10 (e-commerce)' } },
   { test: /CGSO Advisory.*\b11\b|Advisory Note 11|voetstoots.*advisory/i, link: { url: '/citations/advisories/cgso-advisory-note-11', label: 'CGSO Advisory Note 11 (voetstoots)' } },
-  { test: /CGSO Advisor|Advisory Note 1\b/i, link: { url: '/citations/advisories/cgso-advisory-note-01', label: 'CGSO Advisory Note 1 (onus / defective goods)' } },
+  { test: /CGSO Advisor|Advisory Note 1\b/i, link: { url: '/citations/advisories/cgso-advisory-note-01', label: 'CGSO Advisory Note 1 (defective goods)' } },
 
   // Regulators and bodies
+  { test: /takealot\.com\/help-centre|Help Centre topic/i, link: { url: '/citations/policies/takealot-help-centre-contact-2026-11-10', label: 'Takealot Help Centre contact route' } },
   { test: /Info Regulator|Information Regulator/i, link: { url: '/citations/regulators/info-regulator-2026-04-24', label: 'Information Regulator' } },
   // CGSO contact details — matches full name in template prose. Specific
   // patterns above (Voltex, Advisory Note) win when present because PATTERNS
   // are evaluated in order.
   { test: /Consumer Goods (?:and|&) Services Ombud|cgso\.org\.za/i, link: { url: '/citations/regulators/cgso-contacts-2026-04-24', label: 'CGSO contact details' } },
+  { test: /Competition Commission|CompCom|Online Intermediation Platforms/i, link: { url: '/citations/commentary/compcom-oipmi-takealot-2023', label: 'Competition Commission OIPMI (2023)' } },
   { test: /National Consumer Commission|\bNCC\b|thencc\.org\.za/i, link: { url: '/citations/regulators/ncc-contacts-2026-04-24', label: 'NCC contact details' } },
   { test: /Advertising Regulatory Board|\bARB\b|arb\.org\.za/i, link: { url: '/citations/regulators/arb-2026-04-24', label: 'ARB contact details' } },
-  { test: /Small Claims Court|\bSCC\b|R\s?20[, ]?000/i, link: { url: '/citations/regulators/scc-threshold-2026-04-24', label: 'Small Claims Court' } },
+  { test: /Small Claims Court|\bSCC\b|R\s?[23]0[, ]?000/i, link: { url: '/citations/regulators/scc-threshold-2026-04-24', label: 'Small Claims Court' } },
   { test: /National Financial Ombud|\bNFO\b|nfosa/i, link: { url: '/citations/regulators/nfo-amalgamation-2026-04-24', label: 'NFO scope' } },
 
   // Statutes — Reg 44 (CPA Regulations) before "CPA" so it doesn't collide
@@ -56,12 +72,10 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   // site are CPA — when they aren't, the more specific ECT / POPIA / TMA
   // patterns below catch the prose context first).
   { test: /\bCPA\s|CPA$|Consumer Protection Act/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
-  // Bare CPA section references — covers ss 1–119 of the Act so a stat
-  // tagged "s 19" / "section 56" / "s 82(8)" routes correctly even
-  // without an explicit "CPA" prefix. Range chosen to avoid false-
-  // positives on year strings (e.g. 2008) and case numbers.
-  { test: /(?:^|\s)s\s*(?:[1-9]|[1-9][0-9]|1[0-1][0-9])\b|\bsection\s+(?:[1-9]|[1-9][0-9]|1[0-1][0-9])\b/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
-
+  // Named statutes (ECT, POPIA, TMA, Prescription, Constitution) must be
+  // tested BEFORE the bare-section regex below, or a stat like "ECT s 46"
+  // or "POPIA s 10" matches " s 46" / " s 10" first and routes to the CPA
+  // page (fixed 2026-11-10).
   // ECT Act
   { test: /\bECT\b|Electronic Communications and Transactions/i, link: { url: '/citations/statutes/ect-act-2002', label: 'Electronic Communications and Transactions Act' } },
 
@@ -78,6 +92,12 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   // the site. Narrowed regex prevents future references to other sections
   // (e.g. s 9, s 34) silently routing to the s 16 page.
   { test: /Constitution[^.]{0,40}\bs(?:ection)?\s*16\b|\bs(?:ection)?\s*16[^.]{0,40}Constitution/i, link: { url: '/citations/statutes/constitution-s16', label: 'Constitution s 16' } },
+
+  // Bare CPA section references — covers ss 1–119 of the Act so a stat
+  // tagged "s 19" / "section 56" / "s 82(8)" routes correctly even
+  // without an explicit "CPA" prefix. Range chosen to avoid false-
+  // positives on year strings (e.g. 2008) and case numbers.
+  { test: /(?:^|\s)s\s*(?:[1-9]|[1-9][0-9]|1[0-1][0-9])\b|\bsection\s+(?:[1-9]|[1-9][0-9]|1[0-1][0-9])\b/i, link: { url: '/citations/statutes/cpa-2008', label: 'Consumer Protection Act' } },
 ];
 
 /**

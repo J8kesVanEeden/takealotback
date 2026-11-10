@@ -160,7 +160,7 @@ const slugMapJson = JSON.stringify(slugMap)
       wrong: {
         q: "Which one?",
         opts: [
-          { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "CPA s19 / s20. Log within 30 days but assert s56 if latent." } },
+          { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "ECT s 46 / CPA s 56. Log within 30 days, but assert s 56 if it's a defect." } },
           { label: "Missing part of a set", result: { clause: "05", tpl: "T05", note: "Non-conforming delivery. Partial replacement is the lawful remedy." } },
         ],
       },
@@ -168,15 +168,15 @@ const slugMapJson = JSON.stringify(slugMap)
         q: "What did you receive?",
         opts: [
           { label: "A materially different product (e.g. premium phone → calculator)", result: { clause: "21", tpl: "T17", note: "Non-performance of sale + CPA s55(2)(a) + s41 misrepresentation. This is restitution, not a return — don't accept procedural refusals on accessories or packaging." } },
-          { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "CPA s19 / s20. Log within 30 days." } },
+          { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "ECT s 44 (7-day cooling-off) / Takealot's 30-day window. Log within 30 days." } },
         ],
       },
       recall: {
         q: "What's Takealot's response?",
         opts: [
-          { label: "Refund refused — \"warranty has expired\"", result: { clause: "22", tpl: "T18", note: "CPA s60 recall direction read with s55 / s56. Warranty expiry is not a defence — the CPA right runs from delivery, not the warranty calendar." } },
+          { label: "Refund refused — \"warranty has expired\"", result: { clause: "22", tpl: "T18", note: "The recall notice is your refund route (e.g. 'return them to a point of purchase for a refund'). Within 6 months of delivery s 56(2) adds the refund election. Warranty expiry answers neither." } },
           { label: "Short-validity coupon issued instead of a refund", result: { clause: "22", tpl: "T18", note: "Recall refund must be substantively equivalent — money to original payment method, or a money-equivalent credit at the standard 3-year validity." } },
-          { label: "Punted to the manufacturer", result: { clause: "22", tpl: "T18", note: "CPA s61 strict product liability is joint and several across the supply chain. Takealot is a retailer." } },
+          { label: "Punted to the manufacturer", result: { clause: "22", tpl: "T18", note: "The recall notice sends you back to the point of purchase — that's Takealot. Within 6 months, s 56(1) makes the retailer a warrantor too. If the product caused harm, s 61 liability is joint and several." } },
         ],
       },
       refund: {
@@ -189,9 +189,9 @@ const slugMapJson = JSON.stringify(slugMap)
       cancel: {
         q: "Why did they say they cancelled?",
         opts: [
-          { label: "Pricing error", result: { clause: "14", tpl: "T10", note: "CPA s23 binds displayed price. Claim difference if you re-bought." } },
-          { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "CPA s47 over-selling. Up to double-damages compensation." } },
-          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T10", note: "ECT s 46. Online orders run on a 30-day delivery deadline. After that, 7-day written notice + cancel + s 46(3) refund within 30 days. Your contract is with Takealot, not the courier." } },
+          { label: "Pricing error", result: { clause: "14", tpl: "T10", note: "Contract formed on order confirmation. A pricing-error cancellation is attackable under s 48 + Reg 44(3)(k); see CGSO Advisory Note 10. Claim the difference if you re-bought." } },
+          { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "CPA s 47(3): refund with interest plus costs directly incidental to the breach, unless the shortage was beyond Takealot's control." } },
+          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T10", note: "ECT s 46. Online orders run on a 30-day delivery deadline. After that, 7-day written notice, then cancel and demand your money back (s 46(3)'s 30-day refund deadline applies if Takealot says the item is unavailable). Your contract is with Takealot, not the courier." } },
           { label: "Other reason", result: { clause: "14", tpl: "T10", note: "Contract was formed on confirmation. Seek refund + difference." } },
         ],
       },
@@ -199,11 +199,11 @@ const slugMapJson = JSON.stringify(slugMap)
         q: "On what basis?",
         opts: [
           { label: "No original packaging", result: { clause: "02", tpl: "T02", note: "s56 doesn't require packaging. s51 voids policy waivers." } },
-          { label: "“Consumer damage” / surge / misuse", result: { clause: "03", tpl: "T03", note: "Onus is on Takealot. Demand the technical report." } },
+          { label: "“Consumer damage” / surge / misuse", result: { clause: "03", tpl: "T03", note: "Takealot has to prove misuse (Edan Traders, 2026). Demand the technical report." } },
           { label: "Deflected to manufacturer", result: { clause: "07", tpl: "T07", note: "s56(1) retailer liability is concurrent and non-delegable." } },
           { label: "Marketplace seller's fault", result: { clause: "15", tpl: "T11", note: "Platform has concurrent obligations. CGSO has jurisdiction." } },
           { label: "Charged a collection or re-delivery fee", result: { clause: "19", tpl: "T15", note: "CPA s56(2) puts defective returns at the supplier's risk and expense. Don't pay; challenge the fee." } },
-          { label: "Inspection is dragging with no deadline", result: { clause: "20", tpl: "T16", note: "Policy has no SLA on inspection. Set your own written deadline (7 business days) and treat silence as acceptance of the s56 election." } },
+          { label: "Inspection is dragging with no deadline", result: { clause: "20", tpl: "T16", note: "Policy has no SLA on inspection. Set your own written deadline (7 business days) and escalate to the CGSO if there's no answer by then." } },
         ],
       },
       other: {
@@ -212,8 +212,8 @@ const slugMapJson = JSON.stringify(slugMap)
           { label: "Digital item doesn't work", result: { clause: "16", tpl: "T12", note: "Defective digital is still defective goods. s56 applies." } },
           { label: "Policy changed after my order", result: { clause: "12", tpl: "T09", note: "Applicable version = version at order time." } },
           { label: "Disposal threat", result: { clause: "09", tpl: "T08", note: "Dispute in writing. File CGSO immediately." } },
-          { label: "High Court clause", result: { clause: "13", tpl: "T14", note: "Statutory hierarchy overrides. You keep your SCC option." } },
-          { label: "Inspection / assessment delay", result: { clause: "20", tpl: "T16", note: "Demand a written outcome within 7 business days. Silence past the deadline = acceptance of your s56 election." } },
+          { label: "High Court clause", result: { clause: "13", tpl: "T14", note: "s 48 / Reg 44 / s 51(3) attack the forum clause. You keep your Small Claims option." } },
+          { label: "Inspection / assessment delay", result: { clause: "20", tpl: "T16", note: "Demand a written outcome within 7 business days, and escalate to the CGSO if there's no answer by then." } },
         ],
       },
     };
