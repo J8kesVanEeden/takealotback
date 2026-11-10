@@ -28,7 +28,7 @@ The Consumer Protection Act is powerful, but it's not a magic wand. If you're re
 
 **Free transportation of a non-defective return.** Change-of-mind and s20 returns have different rules about who pays courier costs, and Takealot's own policy charges re-delivery fees in some cases. Only section 56 defective-goods returns are unambiguously "at the supplier's risk and expense".
 
-**A forum of your absolute choice above a certain value.** You can use Small Claims Court up to R20,000, Magistrates' Court up to R400,000, and above that it's High Court territory. Takealot's forum-selection clause is vulnerable (see the Dismantled section), but even if you successfully attack it, the value of your claim still determines which court actually has jurisdiction.
+**A forum of your absolute choice above a certain value.** You can use Small Claims Court up to R30,000, Magistrates' Court up to R400,000, and above that it's High Court territory. Takealot's forum-selection clause is vulnerable (see the Dismantled section), but even if you successfully attack it, the value of your claim still determines which court actually has jurisdiction.
 
 **Rescue from a juristic-person threshold.** The CPA does not apply to transactions with juristic persons whose asset value or annual turnover exceeds the s5(2) threshold set by the Minister (currently R2 million). Most individual consumers are fine; small-business buyers should check before relying on the CPA.
 
@@ -36,7 +36,7 @@ The Consumer Protection Act is powerful, but it's not a magic wand. If you're re
 
 Don't walk away from this page defeated. The CPA gives you:
 
-- A 6-month implied warranty of quality that binds producer, distributor, and retailer jointly and severally (s56).
+- A 6-month implied warranty of quality given by the producer or importer, the distributor and the retailer — each of them (s56(1)).
 - A choice of remedy — repair, replacement, or refund — that sits with *you*, not the retailer (s56(2)).
 - A "without penalty and at the supplier's risk and expense" principle for defective returns (s56(2)).
 - A 3-month post-repair safety net (s56(3)).

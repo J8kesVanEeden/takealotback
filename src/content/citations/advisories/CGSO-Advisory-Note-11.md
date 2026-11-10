@@ -2,12 +2,13 @@
 title: "CGSO Advisory Note 11 — Supply of Voetstoots Goods"
 citation: "[2021] ZACGSO 11"
 court_or_publisher: "Consumer Goods and Services Ombud"
-date: "2021"
+date: "2021-03-01"
 primary_url: "https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
+wayback_url_dated: "https://web.archive.org/web/20260702061346/https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
 metaDescription: "CGSO Advisory Note 11: voetstoots ('as-is') clauses do not survive the CPA — suppliers cannot contract out of the s 55/56 quality warranty."
-retrieved: "2026-04-25"
+retrieved: "2026-11-10"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
 copyright: "No copyright — published by an accredited Ombud established under CPA s 82"
@@ -46,8 +47,8 @@ Voetstoots survives only in narrow non-CPA contexts:
 ## Cross-references
 
 - CPA s 45, s 51, s 55(6), s 56 — see [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md)
-- Companion Advisory Note 1 (defective goods / onus) — see [`./CGSO-Advisory-Note-01.md`](./CGSO-Advisory-Note-01.md)
+- Companion Advisory Note 1 (defective goods) — see [`./CGSO-Advisory-Note-01.md`](./CGSO-Advisory-Note-01.md)
 
 ## Status
 
-Operative effect summarised verbatim-equivalent above. Full Advisory Note text fillable on next refresh.
+The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page (fetched 2026-11-10) reads: *"Advisory Notes are under review, they will be reuploaded once the review is completed."* Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII as [2021] ZACGSO 11 (SAFLII title: "Advisory note 11: Supply of Voetstoots Goods [2021] ZACGSO 11 (1 March 2021)"), which is the copy relied on here. Re-verified live on SAFLII 2026-11-10.

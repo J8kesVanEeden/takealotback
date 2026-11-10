@@ -5,51 +5,61 @@ court_or_publisher: "Consumer Goods and Services Ombud"
 date: "2021-03-01"
 primary_url: "https://www.saflii.org/za/cases/ZACGSO/2021/1.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACGSO/2021/1.html"
+wayback_url_dated: "https://web.archive.org/web/20260702061323/https://www.saflii.org/za/cases/ZACGSO/2021/1.html"
 saflii_pdf: "https://www.saflii.org/za/cases/ZACGSO/2021/1.pdf"
-cgso_pdf: "https://cgso.org.za/dl/cgso%20advisory%20note%20returns.pdf"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
-metaDescription: "CGSO Advisory Note 1: confirms the onus is on the supplier (not the consumer) within 6 months of delivery to disprove a defect under CPA s 56."
-retrieved: "2026-04-25"
+metaDescription: "CGSO Advisory Note 1 on defective goods: refund rights apply irrespective of store policy, and supplier inspection is acceptable only for a genuine reason with the item back within 7–10 days. It does not presume a defect existed at sale."
+retrieved: "2026-11-10"
+corrected_on: "2026-11-10"
+correction_note: "Until 2026-11-10 the site cited this Note as confirming that the onus is on the supplier within the 6-month s 56 window. The Note does not say that: para 9.2 records that the CPA does not presume a defect manifesting within 6 months existed at sale. The onus point is now cited to Edan Traders v NCT [2026] ZAGPJHC 386 (Full Court) and related judgments; this Note is cited only for what it says (paras 9.3 and 13.1). The cgso.org.za PDF link (now 404) was removed: the CGSO withdrew its Advisory Notes from its website pending review."
 used_in:
-  - "src/data/content.ts — CLAUSES[2] (damage-exclusions) 'onus on supplier' angle"
-  - "src/content/pages/onus-of-proof.md — 'CGSO view' section"
+  - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) 'CGSO Advisory Note 1' angle"
+  - "src/data/content.ts — TEMPLATES T16 (inspection deadline) body"
+  - "src/content/pages/onus-of-proof.md — 'The CGSO view' section"
 copyright: "No copyright — published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
 ---
 
 # CGSO Advisory Note 1 — Consumer's Rights Regarding Defective Goods
 ## [2021] ZACGSO 1 | 1 March 2021
 
-## Why this Advisory Note matters to TakealotBack
+## Status of the Note
 
-It is the CGSO's published statement of how it applies CPA s 55–56 to defective-goods complaints — including its express position on **where the burden of proof sits during the 6-month s 56 window**. Because the CGSO is the compulsory Ombud for the consumer-goods-and-services sector under the Industry Code (gazetted under CPA s 82, upheld in *CGSO v Voltex* [2021] ZAGPPHC 309), this Advisory Note is more than commentary — it is the dispute-resolution standard the consumer can hold Takealot to.
+The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page (fetched 2026-11-10) reads: *"Advisory Notes are under review, they will be reuploaded once the review is completed."* Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII ([2021] ZACGSO 1), which is the copy relied on here. It is the Ombud's published interpretive position, not a binding ruling.
 
-## Operative effect
+## What the site relies on (verbatim, SAFLII, opened 2026-11-10)
 
-### The implied warranty in s 56
+### Inspection of returned goods (para 9.3)
 
-The CPA imposes a built-in warranty (under s 55 read with s 56) that all goods sold:
-- are reasonably suitable for the purposes for which they are generally intended;
-- are of good quality, in good working order, and free of defects;
-- will be useable and durable for a reasonable period;
-- comply with applicable standards;
-- are reasonably suitable for any specific purpose the consumer informed the supplier about.
+> "9.3 The present practice of suppliers of sending goods for inspection seems a reasonable practical solution to the problem, subject to the provisos that:
+> i. it be resorted to only in appropriate cases, where there is a genuine reason for believing that the suppler may not be liable;
+> ii. the inspection is conducted and the item be returned to the consumer speedily (a maximum of 7-10 days if the item needs to be sent away);
+> iii. the supplier informs the consumer before doing any repair;
+> iv. the letter and spirit of the CPA and good customer relations guide any such dealings.
+> v. the inspection and time taken thereon do not have the effect of depriving consumers of their rights under CPA. To do so would contravene the CPA."
 
-### The 6-month return right
+("suppler" is the Note's own typo; the site quotes it as "[supplier]".)
 
-Under s 56, if goods are not of good quality, defective, not suitable for purpose, or otherwise fail to comply with s 55, the consumer is entitled — within 6 months of delivery — to return them **at the supplier's risk and expense and without penalty**. Repair, replace, or refund — at the consumer's election under s 56(2).
+### Store policies don't override the CPA (para 13)
 
-### "Irrespective of the supplier's policy"
+> "13.1 The above rules regarding refunds apply irrespective of the store's refund policy or the terms of the manufacturer's guarantee/ warranty."
+>
+> "13.2 In other words, the store's refund policy or the terms of the manufacturer's guarantee/ warranty cannot override the CPA requirements, but they can go further than or offer more rights to the customer than the Act does. …"
 
-The CGSO is explicit: the rules regarding refunds apply **irrespective of the store's refund policy or the terms of the manufacturer's guarantee/warranty**. The store's refund policy or manufacturer warranty cannot override the CPA requirements.
+## What the Note does NOT say
 
-### Where the burden sits
+On the burden of proof the Note is cautious (para 9.2):
 
-Within the 6-month s 56 window, the practical burden is on the supplier to rebut non-conformity. A bare assertion ("we've assessed it, it's wear and tear") without supporting technical evidence is not sufficient. CGSO has repeatedly treated unsubstantiated rejections as a ground for finding in the consumer's favour.
+> "9.2 Conversely, the CPA also does not say that it will be presumed that any defect that manifests within 6 months was present in the goods at the time of sale. According to De Stadler, however, the consumer does not have to prove that the goods were unfit for their purpose when the contract was concluded. In most instances it would be necessary for the entity dealing with the complaint (ombudsman, Commission or Tribunal) to call for the item to be submitted for inspection, in order to make a call."
+
+So the Note is **not** authority that the onus sits with the supplier. The site's onus point rests on the courts: [*Edan Traders v NCT* [2026] ZAGPJHC 386](../cases/Edan-Traders-ZAGPJHC-386-2026.md) (Full Court), [*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591](../cases/Toyota-Randburg-Ndlovu-ZAGPPHC-591-2024.md) and [*Wingfield Motors v NCT* [2025] ZAWCHC 385](../cases/Wingfield-Motors-ZAWCHC-385-2025.md).
+
+The Note also does not deal with store credit vs refund.
 
 ## Site reliance
 
-- `src/data/content.ts` — Clause 03 (damage-exclusions), the "Onus on supplier" angle. Quoted on the site as: *"Within the 6-month s56 window, the practical burden sits with Takealot to rebut non-conformity. CGSO Advisory Note 1 confirms this. Bare assertion isn't enough — demand the assessment."*
-- `src/content/pages/onus-of-proof.md` — "The CGSO view" closing section: *"The Ombud has repeatedly treated unsubstantiated rejections as a ground for finding in the consumer's favour. A pattern of Takealot-side refusals with no underlying assessment is exactly what CGSO complaints are designed to catch."*
+- Clause 20 (open-ended inspection): the 7–10-day and "genuine reason" provisos in para 9.3.
+- Template T16 (inspection deadline): the same.
+- `/onus-of-proof`, "The CGSO view": para 9.2 (presented as the Ombud's cautious position), para 9.3 and para 13.1.
 
 ## Cross-references
 
@@ -57,7 +67,3 @@ Within the 6-month s 56 window, the practical burden is on the supplier to rebut
 - CGSO compulsory participation — see [`citations/cases/CGSO-Voltex-ZAGPPHC-309-2021.md`](../cases/CGSO-Voltex-ZAGPPHC-309-2021.md)
 - CGSO contact details — see [`citations/regulators/cgso-contacts-2026-04-24.md`](../regulators/cgso-contacts-2026-04-24.md)
 - Companion Advisory Note 11 (voetstoots) — see [`./CGSO-Advisory-Note-11.md`](./CGSO-Advisory-Note-11.md)
-
-## Status
-
-Operative effect summarised above. Full Advisory Note text fillable from the CGSO PDF or SAFLII PDF on next refresh.

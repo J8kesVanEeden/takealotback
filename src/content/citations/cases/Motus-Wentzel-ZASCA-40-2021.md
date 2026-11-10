@@ -7,8 +7,9 @@ case_number: "1272/2019"
 primary_url: "https://www.saflii.org/za/cases/ZASCA/2021/40.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZASCA/2021/40.html"
 alternate_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/2021/40"
-metaDescription: "SCA 2021: obiter guidance that CPA s 69(d) doesn't force consumers to exhaust the ombud before going to court. Removes the 'exhaust first' defence."
+metaDescription: "SCA 2021: obiter guidance (paras 26-27) that CPA s 69(d) should not lightly be read as stopping consumers from going to court before the ombud. Direction, not a holding."
 retrieved: "2026-04-24"
+reverified_on: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus v Wentzel angle"
   - "src/data/content.ts — LAW_SECTIONS[0].items s69 blurb"
@@ -22,9 +23,17 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978 (official texts
 
 Site uses it **only** for the SCA's obiter guidance on section 69(d) of the Consumer Protection Act — i.e. the proposition that s 69(d) is not a compulsory internal-hierarchy rule and that consumers may approach a court directly.
 
-## The critical paragraph — para 26 (verified verbatim)
+## The critical paragraphs — paras 26 and 27 (verbatim, checked against SAFLII 2026-11-10)
 
-> "The need for us to address the scope of s 69(d) fell away in argument, because Mr Botes SC, who appeared for Renault and Renault SA, indicated that he would not pursue the point as his clients preferred to address the issues of substance. Therefore, the court did not hear full argument on the matter. The issues arising from the section will need to be resolved on another occasion."
+Para 26:
+
+> "The need for us to address the scope of s 69(d) fell away in argument, because Mr Botes SC, who appeared for Renault and Renault SA, indicated that he would not pursue the point as his clients preferred to address the issues of substance. Therefore, we did not hear full argument on the matter. The issues arising from the section will need to be resolved on another occasion. It suffices to say that the primary guide in interpreting the section will be s 34 of the Constitution and the guarantee of the right of access to courts. Section 69(d) should not lightly be read as excluding the right of consumers to approach the court in order to obtain redress."
+
+Para 27 (the "national legislation" point the site relies on):
+
+> "Furthermore, subsec (d) does not refer to the consumer pursuing all other remedies 'in terms of this Act', but of pursuing all other remedies available in terms of national legislation."
+
+(An earlier version of this file quoted para 26 as "the court did not hear full argument"; the judgment says "we did not hear full argument". Corrected 2026-11-10.)
 
 This makes the SCA's reasoning about s 69(d) **obiter dicta**, not ratio. The court expressly declined to decide the point. Secondary commentary treats it the same way.
 

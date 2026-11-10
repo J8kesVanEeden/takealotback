@@ -4,10 +4,12 @@ citation: "News24, Consumer Lookout, 17/18 April 2026"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2026-04-17"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-power-banks-risky-antacids-and-a-shrug-from-takealot-20260417-1044"
+wayback_url_dated: "https://web.archive.org/web/20260507160946/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-power-banks-risky-antacids-and-a-shrug-from-takealot-20260417-1044"
 metaDescription: "Knowler reports two recall non-compliance cases against Takealot — ESR power banks (Hart, Chetty) and Citro-Soda (Naidoo). Takealot's PR agency: 'Takealot will not be responding to this query.' Knowler reported Takealot's recall responses to the NCC."
 retrieved: "2026-05-07"
+reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07."
-wayback_status: "No Wayback Machine snapshot available for this URL as of 2026-05-07. News24 blocks bot/SPN requests."
+wayback_status: "Wayback capture 20260507160946 exists but holds only the paywall shell (title, no article body), checked 2026-11-10. The verbatim extracts here come from an authenticated News24 subscription."
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Disclosed for transparency. Note: this article is unusually critical of Takealot — Knowler reports that Takealot's PR agency declined to respond to her central query, and she states she has reported Takealot's recall conduct to the National Consumer Commission. The Naspers parent-company link did not produce editorial deference here."
 used_in:
   - "src/data/content.ts — CLAUSES[21] (recall-noncompliance) takealot summary + angles"
@@ -25,7 +27,7 @@ The article documents two distinct recall non-compliance patterns at Takealot:
 1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B** — global recall (NCC issued a SA recall notice ~April 2026). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both were refused refunds when they sought them post-recall, on the basis that the manufacturer's 12-month warranty had expired. Takealot's PR agency declined to respond to Knowler's query.
 2. **Citro-Soda Regular** — SAHPRA recall (foreign-material contamination — metal fragments). Monogran Naidoo notified by Takealot, product collected, but the refund issued was a coupon valid for **two days** that expired in his spam folder before he saw it.
 
-These cases ground a new clause on **recall non-compliance** anchored on CPA s 60 (the NCC's safety-monitoring and recall power) read with the substantive refund rights under s 19 / s 55 / s 56, plus s 58 (the standalone supplier-warning duty) — and the basic principle that a recall remedy is not extinguished by warranty expiry.
+These cases ground the clause on **recall non-compliance**: a recall is strong evidence the goods failed CPA s 55; within six months of delivery s 56 gives the return-and-refund election; beyond that, the recall notice's own refund instruction is the route, with s 61 if the product caused harm — and warranty expiry is not an answer to a recall refund. Note the ESR buyers here bought in October/November 2024, so by the April 2026 recall s 56's six-month window had closed for them.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -85,12 +87,15 @@ Ben Hart bought the unit in October 2024 for around R1,000. About a year later �
 
 ## Site reliance
 
-- **CPA s 60 (Safety monitoring and recall)** — the NCC's power to direct safety-monitoring and recall procedures where goods present an unreasonable risk of harm. The recall direction is the regulatory hook, not a self-executing supplier duty. A supplier ignoring a recall direction contravenes the recall regime.
-- **CPA s 55 + s 56** — the substantive route to a refund. A recall direction by the regulator means the goods are authoritatively determined to fail s 55. The s 56 implied warranty applies and the consumer elects repair / replacement / refund — within six months of delivery, irrespective of any private-warranty calendar. "Warranty has expired" is not a defence.
-- **CPA s 58 (Warning concerning fact and nature of risks)** — supplier-warning duty in plain language. Where a recall has been published and a supplier still represents the product as safe (e.g. on the live listing), the s 58 duty has been breached and the listing is compoundable as a s 41 misrepresentation.
-- **CPA s 19** — right to refuse non-conforming delivery. Reactivated, in effect, when the regulator determines the goods are unsafe.
-- **NCC enforcement** — recalls fall within the NCC's powers under Chapter 3. Non-compliance with a recall direction is a contravention, separately actionable.
-- **Refund mechanics** — a recalled product cannot be effectively credited via a 2-day-validity coupon. The refund must be substantively equivalent to the consideration paid.
+Rewritten 2026-11-10 after the attribution audit (an internal review of every source attribution on the site). The earlier version leaned on CPA s 19, s 58, "Chapter 3" and an "after investigation / unreasonable risk of harm" reading of s 60; none of those survive a check against the Act.
+
+- **The recall notice** — the NCC notice quoted above tells consumers to "return them to a point of purchase for a refund". That instruction is the consumer's main route once s 56's six months have passed. The NCC's own ESR notice (thencc.org.za, 8 April 2026, per track B of the refresh) describes the recall as notified by the supplier, not as an NCC order under s 60(2).
+- **CPA s 60(2)** — the NCC can, on reasonable grounds to believe goods may be unsafe, require the producer by written notice to investigate or "carry out a recall programme on any terms required by the Commission". It is addressed to the producer or importer.
+- **CPA s 55 + s 56** — a recall is strong evidence the goods were not safe, good-quality goods (s 55). The s 56 election runs only "within six months after the delivery".
+- **CPA s 61** — strict liability for harm caused by unsafe goods; joint and several where more than one person is liable (s 61(3)).
+- **CPA s 41** — a listing that still presents a recalled product as safe is arguably a misleading representation. (s 58 covers risky activities/facilities and hazardous-goods packaging, not listings.)
+- **NCC enforcement** — compliance notice (s 100); administrative fine by the Tribunal (s 112); failing to comply with a compliance notice is an offence (s 110(2)). s 60 sits in Chapter 2 of the Act.
+- **Refund mechanics** — Takealot's statement on the Citro-Soda recall ("engaged all affected customers as per our standard recall procedures, offering a refund in the form of the original payment method") is a statement to Knowler, not a published procedure. The coupon Naidoo received was "valid for just two days" (calendar days, not business days).
 
 ## Wayback / archive status
 

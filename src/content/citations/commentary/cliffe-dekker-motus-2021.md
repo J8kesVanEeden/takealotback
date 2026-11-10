@@ -6,6 +6,7 @@ primary_url: "https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corpora
 wayback_url: "https://web.archive.org/web/*/https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
 metaDescription: "Cliffe Dekker Hofmeyr commentary on Motus v Wentzel (2021): treats the SCA's s 69(d) discussion as obiter — corroborates the site's framing."
 retrieved: "2026-04-24"
+reverified_on: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus angle — supports the obiter characterisation of s 69(d) reading"
 copyright: "Cliffe Dekker Hofmeyr. Short excerpt / summary only — fair dealing under s 12(1)(a) Copyright Act."

@@ -4,10 +4,12 @@ citation: "News24, Consumer Lookout, 12 April 2026"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2026-04-12"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539"
+wayback_url_dated: "https://web.archive.org/web/20260507160947/https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539"
 metaDescription: "Knowler reports a R14,000 iPhone 15 order on Takealot delivered as a sub-R400 calculator. Takealot initially refused the return citing 'missing accessories' before crediting the consumer in full."
 retrieved: "2026-05-07"
+reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; pasted into the citation pipeline by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time — flagged here for transparency."
-wayback_status: "No Wayback Machine snapshot available for this URL as of 2026-05-07. Wayback availability API returned an empty archived_snapshots set; SPN save attempts timed out (News24 bot-block)."
+wayback_status: "Wayback capture 20260507160947 holds the full article text (checked 2026-11-10)."
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Knowler is a long-running independent consumer journalist whose column carries News24's editorial credit; the parent-company link is disclosed for transparency, not because it bears on the reporting."
 used_in:
   - "src/data/content.ts — CLAUSES[20] (item-substitution) takealot summary + angles"
@@ -62,6 +64,4 @@ The article documents a substitution case — consumer paid R14,000 for an iPhon
 
 ## Wayback / archive status
 
-Wayback Machine has no snapshot of this URL as of 2026-05-07. Both `archive.org/wayback/available?url=…` and SPN (`/save/`) attempts return empty / time out. News24 deploys a Cloudflare-class bot filter that rejects archive crawlers and direct curl with a 403. The article is paywall-marked but flagged `isAccessibleForFree: true` in its JSON-LD. Site editor captured the verbatim text from an authenticated News24 subscription on 2026-05-07.
-
-If a snapshot becomes available later, paste its dated URL into `wayback_url_dated:` above. Until then, the citation relies on the live URL plus the verbatim extracts in this file.
+No Wayback snapshot existed when this file was first written (2026-05-07). A capture taken that day was later found in the archive: [20260507160947](https://web.archive.org/web/20260507160947/https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539) holds the full article text (checked 2026-11-10).
