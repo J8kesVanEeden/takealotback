@@ -136,6 +136,14 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 - [x] Small Claims Court threshold: raised to **R30,000 from 1 Aug 2026** (GG 55038, GoN 7717; not R50,000). Site updated 2026-11-10. Lesson: the site carried the stale figure for 3 months, so check justice.gov.za/scc at every quarterly refresh, not only annually.
 - [ ] **Magistrates' Court thresholds** — currently quoted as District R200,000 / Regional R400,000 (last set by GG 2014). Re-verified 2026-11-10 against GoN 216/217 (GG 37477, 2014) and the DoJ notice lists to 26 Oct 2026: unchanged. Commentary suggests a possible raise to R400k district / R600k regional under review; check DoJ notices each quarter. Affects Clause 13 + ESCALATION T9 + LawSection Bodies card if updated.
 
+### Carried over from the 2026-11 refresh (record: `_handoff/refresh-2026-11/PROGRESS.md`, local only)
+
+- [ ] **Review removal (possible new FAQ/clause):** CapeTalk "Consumer Talk", 22 Jul 2026 (~00:08–00:16) reportedly has Takealot removing a customer's negative review twice, plus a supplier refusal and a threatened re-delivery fee. Only Omny's machine transcript exists — get a human transcript before citing anything. Pair with Knowler's News24 column "We'll do the right thing, provided you keep your lips zipped" (13 Mar 2026): Jakes checked, Takealot isn't named; quoting it needs the full text from his login.
+- [ ] **Car Care Clinic (GJ, A2024-092517, 15 May 2026):** swap to the SAFLII neutral citation once published.
+- [ ] **Knowler Black Friday 2026:** check after 27 Nov for anything naming Takealot.
+- [ ] **CPA s 31 / pre-selected paid delivery:** published on the EWN report alone with a caveat (Jakes, 2026-11-10). Re-check the checkout behaviour if anyone without a Takealot subscription can look.
+- [x] Knowler paywalled columns of 13 Mar, 3 Apr and 8 Nov 2026: Takealot not named in any (Jakes checked with his login, 2026-11-10).
+
 ### Citation expansion candidates — collaborative work needed
 
 Each entry below would strengthen the citations vault but **needs primary-source verification with Jakes present**. Adding a citation speculatively from training-data recall is how we shipped Bandera last cycle. Don't go solo.
