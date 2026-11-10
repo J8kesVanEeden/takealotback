@@ -21,7 +21,7 @@
 
 import { spawn, execFileSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { existsSync, readdirSync, rmSync, mkdirSync } from 'node:fs';
+import { existsSync, readdirSync, rmSync, mkdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
 const PORT = 4332;
@@ -41,9 +41,21 @@ const PORT = 4332;
 // existsSync() check passes on that, and pa11y-ci then dies on dlopen.
 // So: test-launch, and if the install is broken, re-extract the cached
 // zip with the OS's own tool (ditto on macOS, unzip elsewhere).
+// Launch the probe with the same Chrome args pa11y-ci uses (.pa11yci.json →
+// defaults.chromeLaunchConfig). CI's Linux runner needs --no-sandbox; a probe
+// without it fails there even though pa11y itself would launch fine.
+function pa11yLaunchArgs() {
+  try {
+    const cfg = JSON.parse(readFileSync(new URL('../.pa11yci.json', import.meta.url), 'utf8'));
+    return cfg?.defaults?.chromeLaunchConfig?.args ?? [];
+  } catch {
+    return [];
+  }
+}
+
 async function canLaunch(puppeteer) {
   try {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ headless: true, args: pa11yLaunchArgs() });
     await browser.close();
     return true;
   } catch {
@@ -103,13 +115,17 @@ async function ensureChrome() {
     if (await canLaunch(puppeteer)) return;
   }
 
-  console.log('Chrome for the a11y check is installed but won\'t launch (truncated install) — re-extracting it…');
+  console.log('Chrome for the a11y check is installed but won\'t launch — trying to re-extract it from the cached download…');
   try {
     if (reextractFromCachedZip(executablePath) && (await canLaunch(puppeteer))) return;
   } catch {
     // fall through
   }
-  fail();
+  // The probe can be wrong about an environment it doesn't understand; don't
+  // block on it. Let pa11y-ci run and surface its own error if Chrome really
+  // is broken.
+  console.warn('⚠ Could not confirm Chrome launches; running pa11y-ci anyway. If it fails on dlopen, see the fix below.');
+  console.warn('  delete ~/.cache/puppeteer/chrome/<platform>-<version>/ and extract the cached .zip next to it into that folder (macOS: ditto -x -k <zip> <folder>).');
 }
 
 await ensureChrome();
