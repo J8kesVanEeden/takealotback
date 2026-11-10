@@ -13,6 +13,9 @@
 //   npm run archive -- <url> [<url>] -- archives just the URLs you pass
 //   npm run archive -- --json         -- machine-readable output for piping
 //                                        into citation file updates
+//   npm run archive -- --dry-run ...  -- print the URL list, archive nothing
+//   npm run archive -- --all --shard=1/2  -- only every 2nd URL from the
+//                                        1st (CI runs 1/2 and 2/2 in parallel)
 //
 // Notes:
 // - SPN is rate-limited (~12 req/min per IP). The script paces requests at
@@ -62,11 +65,28 @@ const args = argv.slice(2);
 const flagAll = args.includes('--all');
 const flagJson = args.includes('--json');
 const positional = args.filter((a) => !a.startsWith('--'));
+// --shard=N/M: archive only every M-th URL starting at the N-th (1-based).
+// The CI workflow runs shards 1/2 and 2/2 as parallel jobs so a full-site
+// run fits the per-job timeout (the site outgrew a single 25-min job in
+// Nov 2026: ~70 URLs at ~25 s each).
+const shardArg = args.find((a) => a.startsWith('--shard='));
+const shard = (() => {
+  if (!shardArg) return null;
+  const m = shardArg.slice('--shard='.length).match(/^(\d+)\/(\d+)$/);
+  if (!m) throw new Error(`Bad ${shardArg}; expected --shard=N/M, e.g. --shard=1/2`);
+  const n = Number(m[1]);
+  const total = Number(m[2]);
+  if (total < 1 || n < 1 || n > total) throw new Error(`Bad ${shardArg}; need 1 <= N <= M`);
+  return { n, total };
+})();
 
 async function urlsToArchive() {
-  if (positional.length > 0) return positional;
-  if (flagAll) return await loadAllSiteUrls();
-  return DEFAULT_URLS;
+  let urls;
+  if (positional.length > 0) urls = positional;
+  else if (flagAll) urls = await loadAllSiteUrls();
+  else urls = DEFAULT_URLS;
+  if (!shard) return urls;
+  return urls.filter((_, i) => i % shard.total === shard.n - 1);
 }
 
 async function loadAllSiteUrls() {
@@ -156,6 +176,12 @@ async function archive(url) {
 
 async function main() {
   const urls = await urlsToArchive();
+  if (args.includes('--dry-run')) {
+    // List what would be archived (e.g. to check a shard) without hitting SPN.
+    console.log(urls.join('\n'));
+    console.log(`\n${urls.length} URL${urls.length === 1 ? '' : 's'} (dry run, nothing archived).`);
+    return;
+  }
   if (!flagJson) {
     console.log(`Archiving ${urls.length} URL${urls.length === 1 ? '' : 's'} to the Wayback Machine.`);
     console.log(`Pacing requests ~6s apart to stay under SPN's rate limit.\n`);

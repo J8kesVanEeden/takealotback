@@ -142,6 +142,7 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 - [ ] **Car Care Clinic (GJ, A2024-092517, 15 May 2026):** swap to the SAFLII neutral citation once published.
 - [ ] **Knowler Black Friday 2026:** check after 27 Nov for anything naming Takealot.
 - [ ] **CPA s 31 / pre-selected paid delivery:** published on the EWN report alone with a caveat (Jakes, 2026-11-10). Re-check the checkout behaviour if anyone without a Takealot subscription can look.
+- [x] **Wayback archive job cap:** the site outgrew the 25-min job (~70 URLs, ~29 min; 2026-11-10 runs stopped at 24/70 and 39/70, the rest archived by hand). Jakes chose to split: `wayback-archive.yml` now runs two parallel shards (`--shard=1/2`, `--shard=2/2`). Add a third if the site passes ~100 URLs.
 - [x] Knowler paywalled columns of 13 Mar, 3 Apr and 8 Nov 2026: Takealot not named in any (Jakes checked with his login, 2026-11-10).
 
 ### Citation expansion candidates — collaborative work needed
