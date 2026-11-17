@@ -56,6 +56,11 @@ Outstanding work, in priority order. Tick items as they land.
   Until then, no traffic data is being recorded.
 - [x] Search Console / Bing Webmaster sitemap submission — `[Jakes]`
 - [x] `citations/` evidence vault + `OPERATIONS.md` SOP + footer link
+- [x] G-chord indicator no longer covers the Tweaks button bottom-right (PR #27, 2026-11-17). Its `display: inline-flex` overrode the browser's `[hidden]` rule so it never hid; added `.tb-chord-indicator[hidden] { display: none }` and moved it bottom-left. Verified live at 1440×900 and 390×844.
+
+## Open — needs a decision
+
+- [ ] **A Google tag is running on the live site and the CSP blocks it** (found 2026-11-17). Live console shows `G-C3ZPBQ78HV` / `analytics.google.com` / `doubleclick.net` / `google.com/ccm` collect calls refused by `connect-src`. Not in the repo source and not in the served HTML, so something adds it at runtime (likely a Cloudflare dashboard feature such as Zaraz or the Google tag gateway). Net effect: Google fires, collects nothing, and the page logs ~8 errors. Clashes with "self-hosted, no third-party leak" and "ADS: NONE". Decide: remove it at the source, or allow it in the CSP.
 
 ## Open — high priority
 
