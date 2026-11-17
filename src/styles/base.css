@@ -313,13 +313,13 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
 }
 
 /* Chord-mode indicator — shown briefly while waiting for the second key of a
-   `g`-prefixed shortcut. Bottom-right so it doesn't fight the FAB at bottom-
-   left, and styled like an inline kbd-pair so the cue (`G_`) reads as
-   "you've pressed g, now press another key". */
+   `g`-prefixed shortcut. Bottom-LEFT so it doesn't cover the Tweaks FAB,
+   which sits bottom-right, and styled like an inline kbd-pair so the cue
+   (`G_`) reads as "you've pressed g, now press another key". */
 .tb-chord-indicator {
   position: fixed;
   bottom: var(--space-3);
-  right: var(--space-3);
+  left: var(--space-3);
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
@@ -334,6 +334,10 @@ a.link-u:hover { color: var(--accent); text-decoration-color: var(--accent); }
   pointer-events: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+/* The `display: inline-flex` above beats the browser's built-in
+   `[hidden] { display: none }`, so without this the indicator never hides
+   and sits permanently over the Tweaks FAB. */
+.tb-chord-indicator[hidden] { display: none; }
 .tb-chord-indicator .kbd { color: var(--ink); }
 .tb-chord-indicator__cue {
   color: var(--ink-soft);
