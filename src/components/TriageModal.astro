@@ -162,7 +162,8 @@ const slugMapJson = JSON.stringify(slugMap)
         opts: [
           { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "ECT s 46 / CPA s 56. Log within 30 days, but assert s 56 if it's a defect." } },
           { label: "Missing part of a set", result: { clause: "01", tpl: "T01", note: "Missing parts is one of Takealot's own 30-day return grounds. Report it in writing the day it arrives (Takealot has told the press missing components must be reported immediately on receipt; its returns policy allows 30 days) and log it as 'missing parts'." } },
-          { label: "Says delivered, never arrived", result: { clause: "18", tpl: "T10", note: "GPS shows where the driver was, not who got the parcel. Ask Takealot in writing for signed proof of delivery (T10's bracketed non-delivery paragraph). If it can't show delivery, treat the order as not delivered: ECT s 46 lets you give 7 days' written notice and then cancel for a full refund. Use T14 only once that has been refused." } },
+          { label: "Says delivered, never arrived", result: { clause: "18", tpl: "T23", note: "GPS shows where the driver was, not who got the parcel. T23 asks for signed proof of delivery and gives 7 days' written notice under ECT s 46(2), after which you can cancel for a full refund. Send T22 at the same time: it asks, under POPIA s 23, for the delivery record and other records Takealot holds about your order. Use T14 only once that has been refused." } },
+          { label: "An item is missing from the delivery", result: { clause: "06", tpl: "T20", note: "Report it within 30 days of delivery. Takealot's own Help Centre asks you to choose credit, refund or replacement. Choose the refund in writing, and don't accept account credit in its place." } },
         ],
       },
       substitution: {
@@ -192,8 +193,9 @@ const slugMapJson = JSON.stringify(slugMap)
         opts: [
           { label: "Pricing error", result: { clause: "14", tpl: "T10", note: "Contract formed on order confirmation. A pricing-error cancellation is attackable under s 48 + Reg 44(3)(k); see CGSO Advisory Note 10. Claim the difference if you re-bought." } },
           { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "CPA s 47(3): refund with interest, plus costs directly incidental to the breach unless the shortage was beyond Takealot's control and it took reasonable steps to tell you as soon as practicable (s 47(5))." } },
-          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T10", note: "ECT s 46: Takealot must deliver within 30 days or by the date it agreed. If it misses that, give 7 days' written notice, then cancel and demand your money back (s 46(3)'s 30-day refund deadline applies if Takealot says the item is unavailable). Your contract is with Takealot, not the courier. Use T10's bracketed non-delivery paragraph." } },
-          { label: "Paid for faster delivery and it came late", result: { clause: "14", tpl: "T19", note: "CPA s 54: delivery you paid for separately is a service. Ask for the premium back as a refund, not account credit." } },
+          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T23", note: "ECT s 46: Takealot must deliver within 30 days or by the date it agreed. If it misses that, give 7 days' written notice (T23), then cancel and demand your money back (s 46(3)'s 30-day refund deadline applies if Takealot says the item is unavailable). Your contract is with Takealot, not the courier." } },
+          { label: "Paid for faster delivery and it came late", result: { clause: "14", tpl: "T19", note: "CPA s 54: delivery you paid for separately is a service. Ask for the premium back as a refund, not account credit. If the order still hasn't arrived, send T23 as well." } },
+          { label: "Cancelled, then relisted at a higher price", result: { clause: "23", tpl: "T10", note: "Screenshot the new listing (seller, price, date). Ask Takealot in writing why the item was treated as unavailable, using T10's bracketed relisting paragraph, and insist on the confirmed price or a refund to the way you paid. A different seller relisting it can be genuine." } },
           { label: "Other reason", result: { clause: "14", tpl: "T10", note: "Contract was formed on confirmation. Seek refund + difference." } },
         ],
       },
@@ -217,6 +219,7 @@ const slugMapJson = JSON.stringify(slugMap)
           { label: "Disposal threat", result: { clause: "09", tpl: "T08", note: "Dispute in writing. File CGSO immediately." } },
           { label: "High Court clause", result: { clause: "13", tpl: "T14", note: "s 48 / Reg 44 / s 51(3) attack the forum clause. You keep your Small Claims option." } },
           { label: "Inspection / assessment delay", result: { clause: "20", tpl: "T16", note: "Demand a written outcome within 7 business days, and escalate to the CGSO if there's no answer by then." } },
+          { label: "Account closed with credit on it", result: { clause: "24", tpl: "T21", note: "Refund credit came from money you paid. Ask in writing for the balance to be paid to your bank account, and for the reason for the closure." } },
         ],
       },
     };

@@ -19,6 +19,11 @@ used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers)"
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition)"
   - "src/data/content.ts — POLICY_SUMMARY.terms"
+  - "src/data/content.ts — CLAUSES[22] (sale-pricing) takealot text and 'Cart ≠ contract' angle"
+  - "src/data/content.ts — CLAUSES[23] (account-suspension) takealot text"
+  - "src/data/content.ts — TEMPLATES T23 body (order 'considered delivered')"
+  - "src/data/content.ts — CLAUSES[23] (account-suspension) 'Your credit is still yours' angle (gift voucher not exchangeable for cash)"
+  - "src/data/content.ts — FAQ (Black Friday at Takealot)"
   - "src/components/PoliciesSection.astro — Registered entity block"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(a) Copyright Act 98 of 1978 — research / criticism / review."
 ---
@@ -71,6 +76,50 @@ The site's Clause 14 (marketplace-sellers) currently uses "Sellers are responsib
 > "Do not resell any item purchased on our platform. If you do, we may suspend or terminate your Takealot account and cancel any pending orders."
 
 The site's Clause 16 dismantles this against TMA s 34(2)(d) statutory exhaustion (with carve-outs from *TRC v Sony* and *Frank & Hirsch v Roopanand*), and against the principle that purchase intent is not a statutory ground for refusing a s 56 return.
+
+### Lines added 2026-11-18 (verbatim, checked against the 2026-11-17 capture)
+
+These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captures; raw text raw capture kept on file, lines 213–301). They were not quoted in this file before; the site now relies on them in Clause 14, Clause 23, Clause 24, templates T21 and T23, and the Black Friday FAQ.
+
+**When the order is complete; cart and wish list**
+
+> "Your order is only complete once you have paid and received an order confirmation."
+
+> "If you add items to your wish list or cart, it does not mean you have reserved or ordered them, and it does not guarantee that you can purchase those items later at the same price."
+
+**Cancellation (full wording; the list above is a paraphrase)**
+
+> "Takealot may, for any reason, cancel your order or an item in your order after you receive your order confirmation. Sellers on our platform may also, for any reason, cancel an item they are responsible for. For example, if:
+> - an item is out of stock;
+> - you don’t pay for the item according to the terms of the payment method you selected;
+> - we discover an error in the listing information of an item, including its pricing; or
+> - you are being investigated for, or found guilty of, criminal activity or abuse of your Takealot account.
+> You may cancel an order if there is a ‘cancel’ button on the order details page of your Takealot account. Once you have initiated a cancellation, you cannot stop the process.
+> If an order or item is cancelled, we will refund you the amount paid for that cancelled order or item."
+
+**Discount deals**
+
+> "Each seller determines the pricing and discounts (“deals”) offered on their items on our platform. We will display the terms of each deal on the relevant product description page. You must follow all the terms of the deal to qualify for it."
+
+> "Deals are valid for a limited period but may expire sooner if Takealot or the seller runs out of the allocated amount of stock of the deal item."
+
+**Gift vouchers**
+
+> "Gift vouchers are valid for 3 years from the date of issue"
+
+> "You can’t return a gift voucher for a refund or exchange it for cash." (Added 2026-11-18, raw line 251; Clause 24 relies on it, and it is why template T21 asks only for refund credit to be paid out.)
+
+> "Takealot or Mr D will then credit the full value of the voucher to your account as a non-refundable credit, which you can use for a complete or partial payment of your Takealot or Mr D order."
+
+**Delivery**
+
+> "When someone accepts or collects the order at your chosen address or at a Takealot Pickup Point, your order is considered delivered. You must make sure that the person who accepts delivery or collects the order on your behalf has your permission to do so."
+
+**Account security, suspension and termination**
+
+> "Please keep your username and password private. This is to keep your information safe and to prevent anyone from misusing your Takealot account. You carry the risk of unauthorised and fraudulent activities on your Takealot account. If you suspect or know that there is unauthorised access to your Takealot account, you must notify us immediately. You must also take steps to mitigate any resultant loss by changing your password and blocking the payment cards you loaded onto your Takealot account."
+
+> "We may, at any time and for any reason, suspend or terminate your Takealot account."
 
 ### CGSO escalation reference
 
