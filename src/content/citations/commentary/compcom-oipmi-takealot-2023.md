@@ -10,7 +10,7 @@ retrieved: "2026-11-10"
 retrieved_by: "PDF fetched from compcom.co.za (HTTP 200, application/pdf) on 2026-11-10 and converted with pdftotext. PDF metadata: created 31 July 2023."
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) 'Competition Commission finding' angle"
-copyright: "© Competition Commission of South Africa. Short extracts quoted under fair dealing, Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Competition Commission of South Africa. Short extracts quoted under fair dealing for criticism and review, Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Competition Commission — Online Intermediation Platforms Market Inquiry (OIPMI)

@@ -8,15 +8,19 @@ import { buildCitationsCollectionPage, buildBreadcrumb } from '../../lib/schema'
 
 const all = await getCollection('citations');
 
-// Group by top-level subfolder (statutes / cases / advisories / policies / regulators / commentary)
+// Group by top-level subfolder (statutes / cases / advisories / policies /
+// regulators / commentary / press). Every subfolder of src/content/citations
+// needs a group here: an entry whose folder has no group is not listed, but
+// it still counts toward `total`.
 type Group = { name: string; label: string; entries: CollectionEntry<'citations'>[] };
 const groups: Group[] = [
   { name: 'statutes', label: 'Statutes & regulations', entries: [] },
   { name: 'cases', label: 'Case law', entries: [] },
-  { name: 'advisories', label: 'CGSO advisory notes', entries: [] },
+  { name: 'advisories', label: 'CGSO & NCC advisory notes', entries: [] },
   { name: 'policies', label: 'Takealot policy snapshots', entries: [] },
   { name: 'regulators', label: 'Regulators & courts', entries: [] },
   { name: 'commentary', label: 'Commentary (link + short excerpt)', entries: [] },
+  { name: 'press', label: 'Press reports', entries: [] },
 ];
 
 for (const entry of all) {
@@ -32,7 +36,7 @@ for (const g of groups) {
 
 const total = all.length;
 const title = `Citations & sources · TakealotBack.com`;
-const description = `Every statute, judgment, regulator detail, advisory note, Takealot policy clause, and third-party commentary the site relies on — dated, attributed, and indexed. ${total} sources, last refresh ${LAST_REVIEWED}.`;
+const description = `Every statute, judgment, regulator detail, advisory note, Takealot policy clause, press report and third-party commentary the site relies on — dated, attributed, and indexed. ${total} sources, last refresh ${LAST_REVIEWED}.`;
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}/citations`;

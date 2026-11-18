@@ -34,10 +34,11 @@ const top = entry.slug.split('/')[0];
 const groupLabel: Record<string, string> = {
   statutes: 'Statute / regulation',
   cases: 'Case law',
-  advisories: 'CGSO advisory note',
+  advisories: 'CGSO / NCC advisory note',
   policies: 'Takealot policy snapshot',
   regulators: 'Regulator / court',
   commentary: 'Commentary',
+  press: 'Press report',
 };
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';

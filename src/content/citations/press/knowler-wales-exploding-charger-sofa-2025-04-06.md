@@ -6,7 +6,7 @@ date: "2025-04-06"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
 wayback_url_dated: "https://web.archive.org/web/20261117210406/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
 wayback_url_earlier: "https://web.archive.org/web/20260507165447/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
-metaDescription: "Knowler reports the Wales/Lenovo case: Takealot third-party seller wouldn't issue an invoice, blocking a R23,000 laptop charger warranty claim. CGSO Lee Soobrathi quoted on intermediary obligations under the CPA + ECTA."
+metaDescription: "Knowler reports the Wales/Lenovo case: Takealot third-party seller wouldn't issue an invoice for a R23,000 laptop whose charger exploded, blocking the warranty claim. CGSO Lee Soobrathi quoted on intermediary obligations under the CPA + ECTA."
 retrieved: "2026-05-07"
 corrected_on: "2026-11-17"
 correction_note: "Three passages were set out as direct Takealot quotations but are partly or wholly Knowler's reported speech. Restored to the article's wording, with only Takealot's own words in quotation marks, 2026-11-17."
@@ -17,7 +17,7 @@ disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ult
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) angle on intermediary obligations + invoice availability"
   - "../press/knowler-wales-exploding-charger-followup-2025-04-13.md — companion follow-up"
-copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Wendy Knowler | Exploding charger, dirty 'new' sofa: When e-commerce giants deliver a dud
@@ -25,7 +25,7 @@ copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 
 
 ## Why the site cites this
 
-The article — published one year after Wales's purchase — establishes the marketplace-seller intermediary problem: a third-party seller on Takealot's platform sold a R23,000 Lenovo laptop, the charger exploded, the seller had not provided an invoice, and the seller went unresponsive when Takealot tried to obtain one. The article quotes the Consumer Goods and Services Ombud's stance — that an e-commerce platform hosting third-party products is an **intermediary** for CPA purposes and inherits the corresponding records-keeping and consumer-protection obligations. This grounds the site's marketplace-sellers angle on **CPA s 27 (intermediary) + ECT s 43**.
+The article — published one year after Wales's purchase — establishes the marketplace-seller intermediary problem: a third-party seller on Takealot's platform sold a R23,000 Lenovo laptop, the charger exploded, the seller had not provided an invoice, and the seller went unresponsive when Takealot tried to obtain one. The article quotes the Consumer Goods and Services Ombud's stance — that an e-commerce platform hosting third-party products is an **intermediary** for CPA purposes and inherits the corresponding records-keeping and consumer-protection obligations. This grounds the site's marketplace-sellers angle on **CPA s 27 (intermediary) + ECT s 43**. (Description corrected 2026-11-18: it read as if the charger cost R23,000. The R23,000 is the laptop's price: "the warranty on my R23 000 laptop".)
 
 ## Verbatim extracts (fair-dealing quotations)
 

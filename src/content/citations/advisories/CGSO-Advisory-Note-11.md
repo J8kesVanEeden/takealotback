@@ -51,7 +51,7 @@ The Note's reasoning runs through s 51(1)(b) (a term may not "waive or deprive a
 
 ## Aligned with judicial authority
 
-- *Vonk v Willow Crest Motors CC* [2019] ZANCT 63 (National Consumer Tribunal) — see [`../cases/Vonk-Willow-Crest-ZANCT-63-2019.md`](../cases/Vonk-Willow-Crest-ZANCT-63-2019.md). Held the voetstoots clause was a clear breach of CPA s 51.
+- *Vonk v Willow Crest Motors CC* [2019] ZANCT 63 (National Consumer Tribunal) — see [`../cases/Vonk-Willow-Crest-ZANCT-63-2019.md`](../cases/Vonk-Willow-Crest-ZANCT-63-2019.md). Held that the use of a voetstoots clause by a supplier in a contract of sale is prohibited conduct under the Act, even though the consumer removed the clause before signing (para 44.1). (Corrected 2026-11-18: this line said the Tribunal "held the voetstoots clause was a clear breach of CPA s 51"; that was the applicant's argument, para 40.2, not a finding.)
 - *Fourie v Agenbag Motor Group* [2018] ZACONAF 3 (North West Consumer Affairs Court) — see [`../cases/Fourie-Agenbag-ZACONAF-3-2018.md`](../cases/Fourie-Agenbag-ZACONAF-3-2018.md). Ordered a full refund against a dealer who had relied on a voetstoots clause.
 
 ## Site reliance

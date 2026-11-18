@@ -5,7 +5,7 @@ court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-11-02"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-can-retailers-mark-products-as-non-refundable-20251102-0538"
 wayback_url_dated: "https://web.archive.org/web/20260702063443/https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-can-retailers-mark-products-as-non-refundable-20251102-0538"
-metaDescription: "Knowler reports a Takealot listing tagging a R450 T-shirt as 'non-refundable'. The wrong-size return was refused on that basis; ECT s 44 cooling-off makes it refundable regardless. Takealot delisted the listing."
+metaDescription: "Knowler (News24, 2 November 2025): a Takealot listing tagged a R450 T-shirt 'non-refundable' and the return was refused. Takealot called it human error and delisted the item; ECT s 44 cooling-off applies regardless."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; pasted into the citation pipeline by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time — flagged here for transparency."
@@ -13,8 +13,7 @@ wayback_status: "Wayback capture 20260702063443 exists but holds only the paywal
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Knowler is a long-running independent consumer journalist whose column carries News24's editorial credit; the parent-company link is disclosed for transparency, not because it bears on the reporting."
 used_in:
   - "src/data/content.ts — CLAUSES[9] (non-returnable) angle on listing-tag misuse"
-  - "src/data/content.ts — POLICY_SUMMARY.returns supporting evidence for cooling-off override of listing tag"
-copyright: "© Media24 / News24. Quoted under fair dealing for research, criticism and review per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Wendy's Win of the Week | Can retailers mark products as 'non-refundable'?
@@ -57,8 +56,10 @@ Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot i
 ## Site reliance
 
 - ECT s 42(2) carves out specific categories from the s 44 cooling-off right (already covered in the site's Clause 10). The article shows the carve-outs cannot be extended by a listing tag.
-- Takealot's "human error" framing is significant: the *"non-refundable"* tag was not policy — it was a listing error. That distinction matters when consumers are asking the supplier to reverse a refusal.
-- The case strengthens the credit-vs-refund election framing in the site's Clause 06, in the cooling-off context.
+- Takealot's statement is significant: it called the refusal "the result of a human error during the return process" and acknowledged "the listing error". The tag was not presented as policy. That matters when consumers are asking the supplier to reverse a refusal.
+- Clause 10's angle points readers to the credit-vs-refund election (Clause 06). Knowler's note that within the cooling-off period "you are entitled to insist on a refund" supports that pointer; Clause 06 itself does not cite this article.
+
+(Corrected 2026-11-18: the description called it a "wrong-size" return, which is not in the extracts above (they say only that she bought two T-shirts in different sizes); `used_in` listed `POLICY_SUMMARY.returns`, which does not mention the article or listing tags; and this section said the article supports Clause 06 directly. Takealot's statement is now quoted as it reads: the human error was "during the return process", and the listing error was acknowledged separately.)
 
 ## Wayback / archive status
 

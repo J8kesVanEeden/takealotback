@@ -20,7 +20,7 @@ Both are preserved alongside the CPA by section 2(10): *"No provision of this Ac
 
 ## Prescription — 3 years
 
-Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the cause of action arose, or from when the creditor could reasonably have known. So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the CPA window closed in November 2024.
+Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the CPA window closed in November 2024.
 
 Prescription is the outer limit, not the deadline. To cancel the sale (actio redhibitoria) you must act within a reasonable time after you discover the defect, and be able to return the item (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14).
 
@@ -40,12 +40,14 @@ The Supreme Court of Appeal reaffirmed the test on 10 December 2025 in *Van Niek
 
 The aedilitian remedies work against the seller: Takealot for items Takealot sold itself, or the Marketplace seller where you bought from one (check your order details or invoice), not against a non-contracting manufacturer. And the relief is limited: cancellation and refund, or a pro-rata price reduction. Consequential damages — costs you incurred because the item failed — require the separate *actio empti*, which needs an express warranty, fraud, or a "merchant/manufacturer seller" who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A)).
 
-In practice, the better first-line route for defective goods is CPA s55/s56 — within the 6-month window, and especially where the fault shows up soon after delivery, the courts put the onus on the supplier to prove misuse (*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591, relied on in *Edan Traders v NCT* [2026] ZAGPJHC 386), and consequential loss can flow through s61 (strict product liability) where harm is caused. The aedilitian remedies come into play when:
+In practice, the better first-line route for defective goods is CPA s56 within the 6-month window: especially where the fault shows up soon after delivery, the courts put the onus on the supplier to prove misuse (*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591, relied on in *Edan Traders v NCT* [2026] ZAGPJHC 386), and consequential loss can flow through s61 (strict product liability) where harm is caused. The aedilitian remedies come into play when:
 
 - you're outside the 6-month s56 window;
 - the defect is genuinely latent (not wear and tear);
 - you want rescission (full cancel + refund) or a price reduction; and
 - you're prepared to produce technical evidence of the latent defect.
+
+Past six months the CPA doesn't drop out entirely. The s55(2)(c) right to goods that stay usable and durable for a reasonable period has no six-month limit, so it runs alongside the common law (see [Warranties](/#warranties)).
 
 ## Voetstoots is dead against consumers
 

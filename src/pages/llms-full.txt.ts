@@ -47,7 +47,7 @@ export const GET: APIRoute = async () => {
   }
 
   // Clauses
-  lines.push(`## Dismantled — ${CLAUSES.length} clauses of the Takealot returns policy`);
+  lines.push(`## Dismantled — ${CLAUSES.length} clauses of Takealot's returns policy and terms`);
   lines.push('');
   for (const c of CLAUSES) {
     lines.push(`### Clause ${c.n} — ${c.title}`);

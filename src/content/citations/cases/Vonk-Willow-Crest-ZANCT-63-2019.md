@@ -32,13 +32,14 @@ Quoted on the site (verbatim from para 44.1 of the judgment, SAFLII [2019] ZANCT
 
 ## Facts
 
-The Applicant (Theodorus Vonk) purchased a vehicle from the Respondent (Willow Crest Motors CC) which had a serious gearbox problem. The sales agreement contained a voetstoots clause. The Applicant lodged a complaint first with the Motor Industry Ombudsman of South Africa (MIOSA) under CPA s 72(1)(a), then with the National Consumer Commission, before referring the matter to the Tribunal.
+The Applicant (Theodorus Vonk) purchased a vehicle from the Respondent (Willow Crest Motors CC) which had a serious gearbox problem. The sales agreement had contained a voetstoots clause, which the Applicant removed before signing by adding the words "CPA shall prevail" (paras 6, 31 and 44.1). The Applicant lodged a complaint first with the Motor Industry Ombudsman of South Africa (MIOSA) under CPA s 72(1)(a), then with the National Consumer Commission, before referring the matter to the Tribunal.
 
 ## Held (operative)
 
-- The voetstoots clause was a clear breach of CPA s 51 — a contractual term purporting to waive the consumer's s 56 statutory rights is void to the extent of the contravention.
-- Selling a vehicle with serious safety implications (gearbox problem) was also a breach of CPA s 55 (right to safe, good-quality goods).
-- The Respondent was ordered to make remedial undertakings; the conduct was found to be prohibited.
+- The Tribunal found that the Respondent engaged in prohibited conduct in (para 44): trying to use the voetstoots clause when selling cars to consumers, as a way of circumventing the Act, even though the Applicant removed the clause before signing (44.1); totally ignoring the consumer's correspondence about the gearbox problems (44.2); and choosing not to repair the gearbox when asked (44.3).
+- Ordered (para 45): refund R46,489.20 for the gearbox repairs and up to R35,000 in other reasonable direct costs, both within 90 days; an administrative fine of R150,000, payable if the Respondent did not pay those amounts in time and suspended for five years provided they were paid; no order as to costs.
+
+**Correction (2026-11-18).** An earlier version of this section gave as findings that the voetstoots clause was "a clear breach of CPA s 51" and that the sale breached CPA s 55, and said the Respondent was "ordered to make remedial undertakings". The s 51 and s 55 points are what "The Applicant believed" (para 40.2 and 40.3), not findings, and the order was a refund plus a suspended fine (para 45), not undertakings. Checked against the judgment text (SAFLII [2019] ZANCT 63, captured 2026-11-17).
 
 ## Citation note
 
@@ -57,4 +58,4 @@ See [Fourie-Agenbag-ZACONAF-3-2018.md](./Fourie-Agenbag-ZACONAF-3-2018.md) for t
 
 ## Status
 
-Operative facts and holding summarised verbatim-equivalent above. Full judgment text fillable from the NCT PDF on next refresh.
+Facts, findings (para 44) and order (para 45) summarised above against the judgment text; the para 44.1 sentence is quoted verbatim. Full judgment text fillable from the NCT PDF on next refresh.

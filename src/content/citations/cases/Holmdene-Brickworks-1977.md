@@ -65,8 +65,10 @@ Note that under the CPA, **strict product liability for harm caused by unsafe go
 ## Cross-references
 
 - [Phame-Paizes-1973.md](./Phame-Paizes-1973.md) — dicta et promissa
-- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md) — three-part latent-defect test
-- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md) — three-part test, AD
+- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md) — duty to disclose (see also)
+- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md) — broad view of what counts as a defect
+
+(Cross-reference labels corrected 2026-11-18: *Dibley* and *Glaston House* were labelled as the source of the three-part test. The SCA calls the test the *Holmdene Brickworks* test, *Van Niekerk* para 16.)
 - [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md) — s 61 strict product liability
 
 ## Status

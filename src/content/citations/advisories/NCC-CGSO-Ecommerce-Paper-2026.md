@@ -6,13 +6,17 @@ date: "2026-03-01"
 primary_url: "https://thencc.org.za/wp-content/uploads/2026/03/Consumer-Protection-in-e-Commerce.pdf"
 wayback_url: "https://web.archive.org/web/*/https://thencc.org.za/wp-content/uploads/2026/03/Consumer-Protection-in-e-Commerce.pdf"
 wayback_url_dated: "https://web.archive.org/web/20260512213202/https://thencc.org.za/wp-content/uploads/2026/03/Consumer-Protection-in-e-Commerce.pdf"
-metaDescription: "SA's consumer regulator and the CGSO, March 2026: the hosting platform is responsible for resolving disputes and for making third-party sellers comply with the CPA and ECT Act. E-vouchers last 3 years and part-used value stays redeemable."
+metaDescription: "SA's consumer regulator and the CGSO, March 2026: the hosting platform is responsible for resolving disputes and for making third-party sellers comply with the CPA and ECT Act. E-vouchers fall under CPA s 63, and part-used value stays redeemable."
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) 'NCC + CGSO joint paper' angle"
   - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) 'CPA s 63' angle"
   - "src/data/content.ts — TEMPLATES T11 body"
-copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for research, criticism and review under s 12(1)(a) Copyright Act 98 of 1978."
+  - "src/data/content.ts — CLAUSES[0] (time-limits) s 20 read with s 19 inspection reading"
+  - "src/data/content.ts — CLAUSES[1] (original-packaging) 'NCC + CGSO joint paper (2026)' angle"
+  - "src/data/content.ts — CLAUSES[20] (item-substitution) s 20 read with s 19: refuse goods that don't match the order"
+  - "src/data/content.ts — LAW_SECTIONS CPA s 19 blurb (inspection right read with s 20)"
+copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "Takealot is named in the paper only as a market-share statistic (Statista survey), not as a wrongdoer. The paper's own disclaimer: 'The content of this paper should not be construed as findings for or against any e-commerce platform or related providers.'"
 ---
 
@@ -62,5 +66,8 @@ The site therefore presents platform responsibility as the regulators' stated vi
 - Clause 15 (marketplace sellers): the regulators' view that the platform is responsible for resolving disputes about third-party sellers' goods.
 - Template T11 (platform liability).
 - Clause 11 (coupons and vouchers): e-vouchers sit under s 63; part-used value stays redeemable.
+- Clauses 01 (time limits), 02 (original packaging) and 21 (item substitution), and the Law section's s 19 blurb: the paper reads CPA s 20 with s 19 as giving online buyers the right to inspect, refuse goods that don't match the order and claim a refund. The site notes each time that s 19(1)(b) switches s 19 off where ECT s 46 governs performance.
+
+(Updated 2026-11-18: the description said "E-vouchers last 3 years", which is not in the paper's text quoted here (the three-year floor is CPA s 63 itself); and Clauses 01, 02 and 21 and the Law section's s 19 blurb, which all rely on the s 20 inspection reading, were missing from this list.)
 
 The July 2025 explanatory note the paper refers to ("Transacting with E-commerce Platforms and E-vouchers") was not reachable at its CGSO URL on 2026-11-10 (404), so the site cites this joint paper, which restates its position.

@@ -15,7 +15,7 @@ disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ult
 used_in:
   - "src/data/content.ts — CLAUSES[20] (item-substitution) takealot summary + angles"
   - "src/data/content.ts — TEMPLATES T17 (substitution) scenario reference"
-copyright: "© Media24 / News24. Quoted under fair dealing for research, criticism and review per Copyright Act 98 of 1978 s 12(1)(a). Article URL is the canonical source; quotations herein are verbatim extracts."
+copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b). Article URL is the canonical source; quotations herein are verbatim extracts."
 ---
 
 # Wendy's Win of the Week | The battle to prove a calculator isn't an iPhone

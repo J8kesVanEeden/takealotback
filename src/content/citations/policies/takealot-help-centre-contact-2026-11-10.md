@@ -10,7 +10,7 @@ metaDescription: "Takealot's own published contact route: a Help Centre topic, t
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — ESCALATION[0] (Takealot customer support tier)"
-copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(a) Copyright Act 98 of 1978 — research / criticism / review."
+copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 — criticism / review."
 ---
 
 # Takealot Help Centre — How to contact us

@@ -7,12 +7,11 @@ primary_url: "https://www.saflii.org/za/cases/ZACGSO/2021/10.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACGSO/2021/10.html"
 saflii_pdf: "https://www.saflii.org/za/cases/ZACGSO/2021/10.pdf"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
-metaDescription: "CGSO Advisory Note 10 (2021) on online sales: some CPA sections (delivery s 19, price display s 23) give way to the ECT Act; an online seller is bound by the advertised price once accepted, unless the error was obvious; ECT s 46 lets you insist on delivery."
+metaDescription: "CGSO Advisory Note 10 (2021; withdrawn from the CGSO site pending review, still on SAFLII): online, delivery (s 19) and price display (s 23) give way to the ECT Act. Unless the seller's terms say otherwise, an accepted advertised price binds, except for an obvious error. ECT s 46 lets you insist on delivery."
 retrieved: "2026-11-10"
 used_in:
-  - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'Pricing errors online' and 'ECT s 46' angles"
-  - "src/data/content.ts — TEMPLATES T10 body"
-  - "src/data/content.ts — CLAUSES[22] (sale-pricing) relisting angle (insist on delivery)"
+  - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'CGSO Advisory Note 10' (pricing errors online) and 'ECT s 46' angles"
+  - "src/data/content.ts — TEMPLATES T10 body (applies the Note's 'ought to have realised' price-error test and the election to insist on performance; the letter does not name the Note)"
 copyright: "No copyright — published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
 ---
 
@@ -48,4 +47,6 @@ Takealot's T&Cs stipulate: "Your order is only complete once you have paid and r
 ## Site reliance
 
 - Clause 14 (order cancellation): pricing errors online; ECT s 46 (cancel or insist on delivery); why CPA s 23 isn't the hook for online orders.
-- Template T10 (wrongful cancellation).
+- Template T10 (wrongful cancellation): applies the Note's "ought to have realised that there was a mistake" test and the election to have the order performed, without naming the Note.
+
+(Updated 2026-11-18: the description now carries the Note's "unless the seller's terms say otherwise" condition and its withdrawal from the CGSO site; Clause 23 (sale pricing) removed from `used_in`, because its relisting angle no longer names the Note (it now argues delivery at the confirmed price through Reg 44(3)(k) and Clause 14); the T10 entry now says the letter applies the Note's test without naming it.)

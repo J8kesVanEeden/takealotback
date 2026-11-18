@@ -6,7 +6,7 @@ date: "2026-05-07"
 primary_url: "https://www.cgso.org.za/the-process/"
 wayback_url_earlier: "https://web.archive.org/web/20260507140055/https://www.cgso.org.za/cgso/the-process/"
 wayback_url_dated: "https://web.archive.org/web/20261008134137/https://www.cgso.org.za/the-process/"
-metaDescription: "CGSO's published service standards: 15 business days for the supplier to respond after CGSO referral; 60 business days target overall resolution. NCC under CPA s 71 if unresolved."
+metaDescription: "CGSO's process page (snapshot): 15 business days for the supplier to respond; 60 business days to resolve under the 2015 Code. From 1 December 2026 the new Code (GG 55719) sets 60 days from the start of the CGSO's investigation."
 retrieved: "2026-11-10"
 retrieved_by: "WebFetch on 2026-05-07; Wayback SPN snapshot captured same day."
 used_in:
@@ -38,7 +38,7 @@ The CGSO's published process page sets the timing benchmarks against which the s
 
 ### Industry Code (mentioned, not quoted in detail on the page)
 
-The page references "our industry Code" in connection with the 60-day standard. This is a reference to the **Consumer Goods and Services Industry Code of Conduct**, gazetted under CPA s 82 (March 2015). Compulsory participation under that Code is the basis of *CGSO NPC v Voltex (Pty) Ltd* [2021] ZAGPPHC 309 — already cited on the site.
+The page references "our industry Code" in connection with the 60-day standard. This is a reference to the **Consumer Goods and Services Industry Code of Conduct**, gazetted under CPA s 82 (March 2015), replaced from 1 December 2026 by the 2026 Code (GG 55719, GN 4264), whose cl 15.2.5.1 sets a target of "60 (sixty) days from commencement of an investigation"; see [cgso-code-2026.md](./cgso-code-2026.md). (Added 2026-11-18; this snapshot of the CGSO page predates the new Code.) Compulsory participation under that Code is the basis of *CGSO NPC v Voltex (Pty) Ltd* [2021] ZAGPPHC 309 — already cited on the site.
 
 ## Site reliance
 

@@ -1,7 +1,7 @@
 ---
 title: "Who has to prove what"
 slug: onus-of-proof
-description: "In a CPA defective-goods dispute you have to show the item has problems, not what caused them. The supplier has to prove misuse. Courts confirmed it in 2024–2026; this is the single most useful fact in a Takealot dispute."
+description: "In a CPA defective-goods dispute where problems show up soon after delivery, courts in 2024–2026 have held that you have to show the item has problems, not what caused them, and the supplier has to prove misuse. The single most useful fact in a Takealot dispute."
 metaTitle: "Who has to prove what — the CPA onus explained"
 datePublished: "2026-04-23"
 ---
@@ -12,7 +12,7 @@ This is probably the most useful single page on the site. Get this right and eve
 
 ## Inside the first 6 months (CPA s56 window)
 
-When you return goods under section 56 of the Consumer Protection Act within 6 months of delivery, you do not have to prove the goods were defective from the moment they left the warehouse. You only have to show that they fail the section 55 quality standard *now*, while still inside the window.
+In our reading of section 56(2), supported by the cases below where problems show up soon after delivery: when you return goods under section 56 of the Consumer Protection Act within 6 months of delivery, you do not have to prove the goods were defective from the moment they left the warehouse. You only have to show that they fail the section 55 quality standard *now*, while still inside the window.
 
 The practical burden then sits with the supplier to rebut. They have to show that the defect did not exist at delivery, or that the fault came from your misuse or from an alteration made contrary to the instructions or after the goods left the supply chain's control (s 56(1)). Takealot's own exclusion list (normal wear and tear, electrical surge, consumer damage, sea-air corrosion, consumer modification, unintended use) is a list of things it has to prove, not a defence it can simply assert.
 
