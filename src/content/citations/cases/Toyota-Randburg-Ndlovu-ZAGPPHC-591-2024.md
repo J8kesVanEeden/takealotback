@@ -11,6 +11,9 @@ metaDescription: "Gauteng appeal court, 2024: putting the burden of proof on the
 retrieved: "2026-11-10"
 used_in:
   - "src/content/pages/onus-of-proof.md — 'Inside the first 6 months' section"
+  - "src/data/content.ts — CLAUSES[2] (damage-exclusions) 'Edan Traders v NCT' angle"
+  - "src/data/content.ts — TEMPLATES T03 body"
+  - "src/content/pages/aedilitian-remedies.md — 'Practical limits' section (onus within 6 months)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
@@ -37,4 +40,8 @@ Vehicle case, before the Tribunal; a two-judge appeal bench. Persuasive in its o
 
 ## Site reliance
 
-- `/onus-of-proof` deep-dive: the consumer shows the goods fail the quality standard; the supplier has to prove misuse.
+- `/onus-of-proof` deep-dive: the consumer shows the goods fail the quality standard; the supplier has to prove misuse (including the sample reply).
+- Clause 03 (damage exclusions), "Edan Traders v NCT" angle: credits Toyota Randburg as the holding that Edan Traders relied on.
+- Template T03 (Demand Technical Evidence): cited for the supplier's onus to prove the exclusion it relies on.
+- `/aedilitian-remedies`, "Practical limits": why the CPA route is usually better inside 6 months.
+- Triage, "Return refused › Consumer damage / surge / misuse" note (no `used_in` line: the resolver has no destination for the triage modal).

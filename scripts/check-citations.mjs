@@ -36,6 +36,7 @@ const CASE_NAME_TO_FILE = {
   'Gareeb v Incredible Connections': 'Gareeb-Incredible-Connections-ZANCT-7-2024.md',
   'NCC v Fugui Trading': 'NCC-Fugui-Trading-ZANCT-9-2026.md',
   'Ntoatsabone v Hisense': 'Ntoatsabone-Hisense-ZANCT-21-2026.md',
+  'NCC v RC Auto': 'NCC-RC-Auto-Bloemfontein-NCT-2026.md',
   'Fourie v Agenbag Motor Group': 'Fourie-Agenbag-ZACONAF-3-2018.md',
   'Laugh It Off': 'Laugh-It-Off-ZACC-7-2005.md',
   'Holmdene Brickworks': 'Holmdene-Brickworks-1977.md',

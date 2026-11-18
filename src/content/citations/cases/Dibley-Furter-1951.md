@@ -7,7 +7,7 @@ judge: "Van Zyl J"
 metaDescription: "Cape Provincial Division 1951: canonical SA restatement of the seller's duty to disclose latent defects, foundation of the three-part aedilitian test."
 retrieved: "2026-04-25"
 used_in:
-  - "src/content/pages/aedilitian-remedies.md — canonical three-part latent-defect test"
+  - "src/content/pages/aedilitian-remedies.md — latent-defect test section (see also)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
@@ -36,9 +36,11 @@ Across *Dibley v Furter* and *Glaston House v Inag*, the test for whether a defe
 
 ## Site reliance
 
-`src/content/pages/aedilitian-remedies.md` cites Dibley v Furter alongside *Glaston House v Inag* as the canonical restatements of the three-part test:
+`src/content/pages/aedilitian-remedies.md` now cites Dibley v Furter only as "see also" in the latent-defect test paragraph:
 
-> "The test, worked out across the line of cases applying the aedilitian rules (see *Dibley v Furter* 1951 (4) SA 73 (C) and *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) for the canonical restatements; *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the family to *dicta et promissa*), is three-part."
+> "The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C)). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:"
+
+(Page wording as revised in the 2026-11-17 round; the earlier wording named *Dibley* and *Glaston House* as "the canonical restatements" of the test.)
 
 ## Cross-references
 
@@ -48,4 +50,4 @@ Across *Dibley v Furter* and *Glaston House v Inag*, the test for whether a defe
 
 ## Status
 
-Pre-digital judgment — not on SAFLII. Operative principle and seller's-duty-to-disclose summarised from SA Law of Sale literature. Verbatim text in SALR physical reports only.
+Pre-digital judgment — not on SAFLII; no online text found 2026-11-17. Operative principle and seller's-duty-to-disclose summarised from SA Law of Sale literature. Verbatim text in SALR physical reports only. Note (2026-11-17): the SCA's December 2025 restatement of the latent-defect test (*Van Niekerk v FirstRand* [2025] ZASCA 187 paras 13–16) relies on *Phame*, *Glaston House* and *Holmdene Brickworks* and does not cite *Dibley*; the SCA calls the test the *Holmdene Brickworks* test.

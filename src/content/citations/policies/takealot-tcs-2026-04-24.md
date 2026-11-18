@@ -5,11 +5,11 @@ court_or_publisher: "Takealot Online (RF) (Pty) Ltd"
 date: "2026-04-24"
 primary_url: "https://terms-and-policies.takealot.com/terms-conditions/"
 wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/terms-conditions/"
-wayback_url_dated: "https://web.archive.org/web/20261110140857/https://terms-and-policies.takealot.com/terms-conditions/"
-wayback_url_earlier: "https://web.archive.org/web/20260701142522/https://terms-and-policies.takealot.com/terms-conditions/"
+wayback_url_dated: "https://web.archive.org/web/20261117203437/https://terms-and-policies.takealot.com/terms-conditions/"
+wayback_url_earlier: "https://web.archive.org/web/20261110140857/https://terms-and-policies.takealot.com/terms-conditions/"
 metaDescription: "Verbatim snapshot of Takealot's terms & conditions (April 2026). Entity, unilateral-change, forum-selection, marketplace, and resale clauses."
 retrieved: "2026-11-10"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 corrected_on: "2026-05-07"
 correction_note: "2026-04-24 audit misread the forum-selection qualifier ('even if the disputed amount would typically be heard by a lower court') as absent from live T&Cs; re-verification confirms it has been continuously present. Clause 13 in src/data/content.ts and POLICY_SUMMARY.terms reverted; original misread commit + correction commit both retained in git history."
 used_in:
@@ -85,7 +85,7 @@ The site updated its ESCALATION tier 3 contact-email to `info@cgso.org.za` on 20
 
 ## Policy version / last-updated
 
-Takealot does not surface a "Last updated" date on either the Returns Policy page or the T&Cs page. The site's `TAKEALOT_POLICY_REVIEWED_AGAINST` constant records the date the live pages were last checked against this snapshot (currently "as live on 2026.11.10"); it is not a Takealot-published version. (Until 2026-11-10 it read `v2026.03`, a self-assigned label.) Page metadata shows a Yoast `dateModified` of 2026-05-22 for both pages, not displayed to visitors.
+Takealot does not surface a "Last updated" date on either the Returns Policy page or the T&Cs page. The site's `TAKEALOT_POLICY_REVIEWED_AGAINST` constant records the date the live pages were last checked against this snapshot (currently "as live on 2026.11.17"); it is not a Takealot-published version. (Until 2026-11-10 it read `v2026.03`, a self-assigned label.) Page metadata shows a Yoast `dateModified` of 2026-05-22 for both pages, not displayed to visitors.
 
 ## Re-verification log
 
@@ -94,6 +94,8 @@ Takealot does not surface a "Last updated" date on either the Returns Policy pag
 Non-material additions observed but **deliberately not incorporated**: the live T&Cs now also surface office-bearer names, a liquor-licence number (WCP/040408), and a PAIA-manual link. Per non-negotiable #3 (keep Takealot's entity footprint minimal) these are left out of the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
 
 **2026-11-10 (Q4 2026 quarterly refresh, run late; due 2026-10-01):** Live T&Cs rendered in headless Chrome (whole DOM walked) and diffed against this snapshot and against the Wayback captures of 2026-04-25 and 2026-07-01: **operative text identical across all three dates. No material change.** All five relied-on clauses match verbatim, including the forum-selection qualifier; registered entity, reg. 2010/020248/07, legal@takealot.com and CGSO info@cgso.org.za unchanged. Takealot's page metadata shows a re-save on 2026-05-22 (Yoast `dateModified`; it read 2026-02-05 when the 2026-05-07 correction above was made) with no wording change; nothing since. For the record: the office-bearer names, liquor-licence number and PAIA link described in the Q3 entry as newly surfaced were already in the 2026-04-25 capture. Still deliberately not incorporated (non-negotiable #3). Raw extracted text is kept with the maintainer's working notes (not published). The dated Wayback captures listed below are the public record. `retrieved` bumped to 2026-11-10.
+
+**2026-11-17 (interim check, one week after Q4):** Live T&Cs rendered with the same whole-DOM extractor and diffed against the 2026-11-10 extraction. **No change** to the terms text; only JavaScript-built navigation differs. Yoast `dateModified` still 2026-05-22. Complaints line "087 362 8000" and legal@takealot.com unchanged. `reverified_on` bumped to 2026-11-17. New Wayback capture: [20261117203437](https://web.archive.org/web/20261117203437/https://terms-and-policies.takealot.com/terms-conditions/).
 
 Wayback captures of this URL relied on, oldest first: [20260425124023](https://web.archive.org/web/20260425124023/https://terms-and-policies.takealot.com/terms-conditions/) · [20260701142522](https://web.archive.org/web/20260701142522/https://terms-and-policies.takealot.com/terms-conditions/) · [20261110140857](https://web.archive.org/web/20261110140857/https://terms-and-policies.takealot.com/terms-conditions/).
 

@@ -4,10 +4,11 @@ citation: "TimesLive (Sunday Times Daily), 06 November 2022"
 court_or_publisher: "Wendy Knowler (TimesLive / Sunday Times Daily column)"
 date: "2022-11-06"
 primary_url: "https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
-wayback_url_dated: "https://web.archive.org/web/20260507165451/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
+wayback_url_dated: "https://web.archive.org/web/20261117210609/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
+wayback_url_earlier: "https://web.archive.org/web/20260507165451/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
 metaDescription: "Knowler's column on the Scholle/Nanotec stolen-laptop case — paired with the MyBroadband article. Adds verbatim Stephanie Scholle quotes on the principled-grievance-vs-procedural-refusal framing."
 retrieved: "2026-05-07"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
 wayback_status: "Wayback capture 20260507165451 holds the full article text (checked 2026-11-10)."
 disclosure: "TimesLive is published by Arena Holdings, editorially independent of Takealot's Naspers parent. Knowler also writes for News24 (Naspers); this column is on Arena's TimesLive platform. Companion to mybroadband-scholle-stolen-laptop-2022-12.md."
@@ -69,4 +70,6 @@ This is Knowler's own writing on the Scholle case — companion to the MyBroadba
 
 ## Wayback / archive status
 
-Wayback Machine snapshot pending re-archive on next OPS refresh.
+Wayback capture [20260507165451](https://web.archive.org/web/20260507165451/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/) holds the full article text (checked 2026-11-10). Every quotation above was re-checked against the live article (TimesLIVE, HTTP 200) on 2026-11-17.
+
+(Until 2026-11-17 this section said no snapshot existed or that one was pending, which contradicted the `wayback_status` field above.)

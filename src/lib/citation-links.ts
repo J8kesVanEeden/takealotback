@@ -31,6 +31,8 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   { test: /Gareeb|Incredible Connections/i, link: { url: '/citations/cases/gareeb-incredible-connections-zanct-7-2024', label: 'Gareeb v Incredible Connections' } },
   { test: /Fugui/i, link: { url: '/citations/cases/ncc-fugui-trading-zanct-9-2026', label: 'NCC v Fugui Trading' } },
   { test: /Car Care Clinic/i, link: { url: '/citations/cases/ncc-car-care-clinic-gj-a2024-092517-2026', label: 'NCC v NCT (Car Care Clinic)' } },
+  { test: /GG 55719|2026 Code|CGSO 60-day benchmark/i, link: { url: '/citations/regulators/cgso-code-2026', label: 'CGSO Code 2026 (GG 55719)' } },
+  { test: /RC Auto/i, link: { url: '/citations/cases/ncc-rc-auto-bloemfontein-nct-2026', label: 'NCC v RC Auto Bloemfontein' } },
   { test: /Ntoatsabone|Hisense/i, link: { url: '/citations/cases/ntoatsabone-hisense-zanct-21-2026', label: 'Ntoatsabone v Hisense' } },
   { test: /pre-ticked paid delivery/i, link: { url: '/citations/press/ewn-takealot-delivery-default-2026-09-02', label: 'EWN: paid delivery pre-selected (2026)' } },
   { test: /Davis couch|Kelly Davis/i, link: { url: '/citations/press/ewn-knowler-davis-couch-2026-07-23', label: 'EWN / Knowler: Davis couch (2026)' } },

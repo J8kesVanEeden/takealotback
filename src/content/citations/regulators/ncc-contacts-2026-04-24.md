@@ -7,14 +7,14 @@ primary_url: "https://thencc.org.za/"
 wayback_url: "https://web.archive.org/web/*/https://thencc.org.za/"
 metaDescription: "National Consumer Commission (NCC): SA's consumer-protection regulator under the CPA. Contact details and complaint-flow for consumer disputes."
 retrieved: "2026-11-10"
-retrieved_by: "Direct WebFetch of the NCC homepage, 2026-04-24"
+retrieved_by: "Direct WebFetch of the NCC homepage, 2026-04-24; re-checked 2026-11-10 (refresh-2026-11 B-source-recheck R1)"
 used_in:
   - "src/data/content.ts — ESCALATION[4] (NCC tier)"
   - "src/components/LawSection.astro — Bodies card"
 copyright: "Facts (contact details) — not copyrightable."
 ---
 
-# NCC — current contact details (verified 2026-04-24)
+# NCC — current contact details (verified 2026-04-24; re-verified 2026-11-10)
 
 ## Official name
 

@@ -4,10 +4,11 @@ citation: "TimesLive Consumer Live, 24 November 2023"
 court_or_publisher: "Wendy Knowler (TimesLive Consumer Live column)"
 date: "2023-11-24"
 primary_url: "https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
-wayback_url_dated: "https://web.archive.org/web/20260714010241/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
+wayback_url_dated: "https://web.archive.org/web/20261117210528/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
+wayback_url_earlier: "https://web.archive.org/web/20260714010241/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
 metaDescription: "Knowler enumerates ECT s 42(2) cooling-off carve-outs: books/periodicals, insurance, online auctions, fast-moving consumer goods, lottery, accommodation/transport/catering. Confirms Takealot's 'no warranty at all' framing on books is wrong: 6-month CPA defective warranty still applies."
 retrieved: "2026-05-07"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
 wayback_status: "Wayback capture 20260714010241 holds the full article text (checked 2026-11-10)."
 disclosure: "TimesLive is published by Arena Holdings (Tiso Blackstar successor), editorially independent of Takealot's Naspers parent. Knowler also writes for News24 (Naspers); this column is on Arena's TimesLive platform."
@@ -65,4 +66,6 @@ The Nikki/books case is the cleanest documented example of Takealot framing a no
 
 ## Wayback / archive status
 
-Wayback Machine snapshot pending re-archive on next OPS refresh.
+Wayback capture [20260714010241](https://web.archive.org/web/20260714010241/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/) holds the full article text (checked 2026-11-10). Every quotation above was re-checked against the live article (TimesLIVE, HTTP 200; text read from the page's server-sent article data) on 2026-11-17.
+
+(Until 2026-11-17 this section said no snapshot existed or that one was pending, which contradicted the `wayback_status` field above.)

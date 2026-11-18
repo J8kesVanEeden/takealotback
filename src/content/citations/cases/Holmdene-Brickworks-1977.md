@@ -1,6 +1,6 @@
 ---
 title: "Holmdene Brickworks (Pty) Ltd v Roberts Construction Co Ltd"
-citation: "1977 (3) SA 670 (A); [1977] 4 All SA 94 (A); (173/75) [1977] ZASCA 61"
+citation: "1977 (3) SA 670 (A); [1977] 4 All SA 94 (A); (173/75) [1977] ZASCA 61 (neutral citation not verified)"
 court_or_publisher: "Appellate Division of the Supreme Court of South Africa"
 date: "1977-05-27"
 case_number: "173/75"
@@ -11,6 +11,7 @@ metaDescription: "Appellate Division 1977: leading authority on the merchant-sel
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — actio empti consequential-damages test"
+  - "src/content/pages/aedilitian-remedies.md — latent-defect test (683H–684A, via Van Niekerk para 16)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
@@ -26,11 +27,20 @@ The leading SA Appellate Division authority on the **merchant/manufacturer-selle
 
 Consumer-facing manufacturers and large retailers will typically fall in the third category, which is why a CPA-era retailer can be on the hook for consequential damages without the buyer having to prove fraud.
 
-## Facts
+## The latent-defect definition (683H–684A), verified through the SCA
+
+The only part of this judgment we have read in a primary source is the passage the SCA quoted in *Van Niekerk v FirstRand* [2025] ZASCA 187 para 16 (SAFLII text, read 2026-11-17):
+
+> "Broadly speaking in this context a defect may be described as an abnormal quality or attribute which destroys or substantially impairs the utility or effectiveness of the res vendita, for the purpose for which it has been sold or for which it is commonly used… Such a defect is latent when it is one which is not visible or discoverable upon an inspection of the res vendita." (*Holmdene Brickworks* at 683H–684A, as quoted in *Van Niekerk* para 16)
+
+The SCA added: "In Odendaal v Ferraris, this Court referred to the test for latent defects as the Holmdene Brickworks test." So *Holmdene* is also the SCA's name for the latent-defect test, not only the consequential-damages authority. See [Van-Niekerk-FirstRand-ZASCA-187-2025.md](./Van-Niekerk-FirstRand-ZASCA-187-2025.md).
+
+## Facts (secondary sources; not verified against the judgment)
+
 
 Roberts Construction (the respondent), a building and engineering company, contracted with Holmdene Brickworks (the appellant) for a supply of bricks to be used in walls of a building under construction. The bricks supplied contained an excessive quantity of magnesium sulphate, which caused them to crumble and decompose ("efflorescence"). The condition threatened the stability of the entire structure. The affected walls had to be demolished.
 
-## Held
+## Held (secondary sources; not verified against the judgment)
 
 - The bricks contained a **latent defect**.
 - The demolition was a natural and foreseeable consequence of the breach.
@@ -61,4 +71,4 @@ Note that under the CPA, **strict product liability for harm caused by unsafe go
 
 ## Status
 
-Available on LawLibrary as ZASCA 61/1977. Not currently on SAFLII for this neutral citation. Operative reasoning and holding summarised from the AD report (1977 (3) SA 670 (A)) via secondary commentary; the underlying judgment text is in the SALR physical reports.
+The LawLibrary URL in the frontmatter and the neutral citation [1977] ZASCA 61 are **not verified**: SAFLII returned 404 for it in the 2026-11-10 round, LawLibrary returns a Cloudflare challenge to this machine, and the Wayback Machine has no capture of either URL (checked 2026-11-17). The facts, the holding and the consequential-damages test above are summarised from secondary commentary on the AD report (1977 (3) SA 670 (A)). The 683H–684A definition is verified through *Van Niekerk* para 16. Not re-verified 2026-11-17 beyond that: no online primary text found. (Status note updated 2026-11-17.)

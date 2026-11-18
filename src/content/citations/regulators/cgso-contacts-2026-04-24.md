@@ -7,14 +7,14 @@ primary_url: "https://www.cgso.org.za/"
 wayback_url: "https://web.archive.org/web/*/https://www.cgso.org.za/"
 metaDescription: "Consumer Goods & Services Ombud (CGSO): mandatory ombud for retail-goods disputes under CPA s 82. Contact details, complaint flow, and scope."
 retrieved: "2026-11-10"
-retrieved_by: "Direct WebFetch of the CGSO homepage, 2026-04-24"
+retrieved_by: "Direct WebFetch of the CGSO homepage, 2026-04-24; re-checked 2026-11-10 (refresh-2026-11 B-source-recheck R2)"
 used_in:
   - "src/data/content.ts — ESCALATION[2] (CGSO tier)"
   - "src/components/LawSection.astro — Bodies card"
 copyright: "Facts (contact details) — not copyrightable. Published contact details are compiled for reference under fair use."
 ---
 
-# CGSO — current contact details (verified 2026-04-24)
+# CGSO — current contact details (verified 2026-04-24; re-verified 2026-11-10)
 
 ## Official name
 

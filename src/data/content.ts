@@ -1,5 +1,5 @@
 // TakealotBack — content data (clauses, templates, law, escalation, FAQ, etc.)
-// Source: Obsidian vault v2 content (23 April 2026 verification pass).
+// Source: Obsidian vault v2 content (last full verification pass 2026-11-10).
 // DO NOT rewrite content here. If anything looks wrong, flag it and raise it
 // against the vault first. See Build Brief / Content Map for the update flow.
 
@@ -77,10 +77,10 @@ export interface PolicySummary {
   terms: string[];
 }
 
-export const LAST_REVIEWED = "2026.11.10";
+export const LAST_REVIEWED = "2026.11.17";
 // Takealot publishes no policy version or "last updated" date, so this records
 // the date we last checked the live policy pages against our snapshots.
-export const TAKEALOT_POLICY_REVIEWED_AGAINST = "as live on 2026.11.10";
+export const TAKEALOT_POLICY_REVIEWED_AGAINST = "as live on 2026.11.17";
 export const GITHUB_REPO_URL = "https://github.com/J8kesVanEeden/takealotback";
 
 export const CLAUSES: Clause[] = [
@@ -122,7 +122,7 @@ export const CLAUSES: Clause[] = [
     n: "03", slug: "damage-exclusions", title: "Damage Exclusions",
     takealot: "An item won't be accepted as damaged on delivery if damaged by the consumer, by electrical surges, or by use for an unintended purpose.",
     angles: [
-      { stat: "Edan Traders v NCT", body: "Onus on the supplier. You have to show the item has problems, not what caused them; Takealot has to prove the damage was your doing (Full Court, Gauteng, 2026). Bare assertion isn't enough — demand the assessment." },
+      { stat: "Edan Traders v NCT", body: "Onus on the supplier. You have to show the item has problems, not what caused them; Takealot has to prove the damage was your doing. A Gauteng appeal bench held this in Toyota Randburg v Ndlovu (2024), and a Full Court in Johannesburg relied on that ruling in Edan Traders (2026). Bare assertion isn't enough — demand the assessment." },
       { stat: "CPA s 55(2)(c)", body: "Goods must stay usable and durable for a reasonable period. Early failure is evidence they fell short — make Takealot explain it with an actual assessment." },
       { stat: "CPA s 53(1)(a)", body: "\"Defect\" is a material imperfection, or any characteristic, that makes the goods less acceptable, useful or safe than people are reasonably entitled to expect in the circumstances (s 53(1)(a)(i)–(ii)). Ordinary South African conditions are part of \"the circumstances\"." },
       { stat: "Surge defence", body: "Takealot must prove an actual surge event occurred. A competent technician can tell a surge-damaged board from a manufacturing defect — ask for that report." },
@@ -226,14 +226,14 @@ export const CLAUSES: Clause[] = [
       { stat: "ECT s 42(2)", body: "Most of these exclusions are valid under ECT s 42(2) — but that only disapplies s 44 (cooling-off). It does not touch s 43, s 46, or the CPA." },
       { stat: "CPA s 56", body: "A \"non-returnable\" flag never bars a defective-goods return. Takealot's own policy confirms this — digital and hygiene items are still returnable when defective." },
       { stat: "\"No warranty at all\" framing is wrong", body: "Takealot has been documented telling consumers that non-returnable items have \"No warranty at all, except for delivery damages.\" That is legally wrong. Per Wendy Knowler (TimesLive, 24 November 2023), responding to a reader who was told this on three books: \"That's a bit confusing as the six-month Consumer Protection Act warranty against defects applies, but not the seven-day 'change your mind' cooling-off period.\" The s 42(2) carve-out goes to ECT s 44 (cooling-off). Section 56 still runs. A defective book, a digital code that doesn't work, an unsealed software bundle missing the licence — all still trigger the s 56 election." },
-      { stat: "ECT s 42(2)(f)", body: "Personalised-items exclusion is narrow — only goods made to the consumer's specifications. A standard item in your chosen size/colour is not personalised." },
+      { stat: "ECT s 42(2)(f)", body: "Covers goods made to your specifications, clearly personalised, that by their nature can't be returned, or that are likely to deteriorate or expire rapidly (s 42(2)(f)(i)–(iv)). A standard item in your chosen size or colour is none of those." },
       { stat: "ECT s 42(2)(g)", body: "Unsealed audio/video/software is excluded only from ECT s 44 cooling-off. Does not touch s 56." },
       { stat: "CPA s 41", body: "If a non-returnable item is not-as-described, a s 41 misrepresentation claim still runs." },
       { stat: "CPA s 61", body: "If perishable goods cause illness, product liability is unaffected by the non-returnable flag." },
       { stat: "Listing-tag misuse", body: "A product listing on Takealot cannot be tagged \"non-refundable\" outside the s 42(2) carve-outs. ECT s 44 makes every online purchase refundable within 7 days regardless of listing wording. In Wendy Knowler's reporting (News24, 2 November 2025), Takealot refused a wrong-size T-shirt return on a \"non-refundable\" listing tag; on Knowler's intervention, the company confirmed the tag was a \"human error\" and the listing was \"delisted until this has been corrected.\" Cite the case, demand the refund, and read the credit-vs-refund election (Clause 06) — within the 7-day window the consumer is entitled to insist on cash to the original payment method, not credit." },
     ],
     why: "Digital ≠ unreturnable. Defective digital items are still defective goods. \"Hygiene\" does not swallow your s 56 rights. And a listing tag does not extend the carve-outs — a \"non-refundable\" T-shirt is still refundable under ECT s 44.",
-    template: "T10", escalate: "CGSO",
+    template: "T01", escalate: "CGSO",
   },
   {
     n: "11", slug: "coupons-vouchers", title: "Coupons and Vouchers",
@@ -248,7 +248,7 @@ export const CLAUSES: Clause[] = [
       { stat: "Evidence", body: "Screenshot the original coupon terms at time of use. Wayback Machine for disputes." },
     ],
     why: "Read the replacement coupon terms carefully. If materially worse, object in writing and reference Regulation 44.",
-    template: "T01", escalate: "CGSO",
+    escalate: "CGSO",
   },
   {
     n: "12", slug: "unilateral-changes", title: "Unilateral Term Changes",
@@ -272,7 +272,7 @@ export const CLAUSES: Clause[] = [
       { stat: "CPA s 69", body: "Sets out the consumer's enforcement routes — Tribunal (where permitted), applicable ombud, CGSO under s 82(6), provincial consumer court, accredited ADR under s 70, NCC under s 71, or a court with jurisdiction. A contract can't close off statutory routes." },
       { stat: "Motus v Wentzel", body: "The SCA in Motus Corporation v Wentzel [2021] ZASCA 40 offered obiter guidance (paras 26–27) that, read with s 34 of the Constitution, s 69(d) \"should not lightly be read as excluding the right of consumers to approach the court\", and that its reference to remedies \"in terms of national legislation\" need not mean an ombud-first hierarchy. Counsel for the appellants expressly declined to pursue the point, so the court \"did not hear full argument on the matter\" and recorded that the issues \"will need to be resolved on another occasion.\" It is direction, not holding — but it's SCA direction, and the reasoning has been picked up by commentary at ENSafrica and Cliffe Dekker Hofmeyr. A forum-selection clause that tries to push you past a cheaper lower court is still attacked primarily under s 48 read with Regulation 44 and s 51(3); Motus gives you a strong answer to an \"exhaust the ombud first\" defence; it doesn't by itself strike the clause." },
       { stat: "Pure Silk v Martin", body: "The Western Cape High Court (December 2025) held that a consumer does not have to work through the s 69 complaint bodies before going to court, and declined to follow contrary decisions from other divisions: the CPA \"does not contemplate preventing consumers from approaching a court even prior to having knocked at the doors of the forums listed in section 69.\" Courts elsewhere still differ, but the Western Cape is the forum Takealot's own T&Cs choose." },
-      { stat: "CGSO (compulsory scheme)", body: "Takealot is a mandatory participant in the CGSO under the Consumer Goods and Services Industry Code of Conduct gazetted under CPA s 82 (March 2015). Compulsory participation was upheld in CGSO NPC v Voltex [2021] ZAGPPHC 309 (26 March 2021); non-participation contravenes CPA s 82(8). Takealot names CGSO as escalation point in its own T&Cs. Use it." },
+      { stat: "CGSO (compulsory scheme)", body: "Takealot is a mandatory participant in the CGSO under the Consumer Goods and Services Industry Code of Conduct gazetted under CPA s 82 (March 2015; replaced from 1 December 2026 by a new Code, GG 55719, whose clause 4.2 says registering with the CGSO is mandatory). Compulsory participation was upheld in CGSO NPC v Voltex [2021] ZAGPPHC 309 (26 March 2021); non-participation contravenes CPA s 82(8). Takealot names CGSO as escalation point in its own T&Cs. Use it." },
       { stat: "Small Claims Court", body: "Up to R30,000. No attorneys. No court fee to issue the summons. You can serve it yourself; if the sheriff serves it, the fixed tariff is R79 plus R7.50 a km travel (since 28 November 2025)." },
       { stat: "Magistrates' Court", body: "District Magistrates' up to R200,000. Regional Magistrates' R200,000–R400,000 (concurrent with High Court above R200,000). High Court above R400,000, with exclusive jurisdiction beyond regional's ceiling." },
       { stat: "CPA s 48 / s 51", body: "A forum-selection clause pushing consumers to the most expensive forum is a candidate for unfair-term and statutory-waiver challenge." },
@@ -286,9 +286,9 @@ export const CLAUSES: Clause[] = [
     angles: [
       { stat: "Contract formation", body: "Takealot's own terms say your \"order is only complete once you have paid and received an order confirmation.\" From that point there is a contract at the confirmed price. Cancelling it afterwards relies on Takealot's \"for any reason\" term, and that term is open to challenge as unfair (below)." },
       { stat: "Not CPA s 23", body: "The CPA's displayed-price rule switches itself off for online orders: s 23(1)(b) says it does not apply where ECT s 43 applies, which covers every takealot.com order. Don't cite s 23 against Takealot — argue the contract and the unfair cancellation term instead." },
-      { stat: "CGSO Advisory Note 10", body: "Pricing errors online: the Ombud's published view in 2021 (Advisory Note 10, [2021] ZACGSO 10) is that, unless the supplier's terms say otherwise, a supplier \"is bound by a consumer's acceptance of the offer and the advertised price\" — unless the price was so far off that you ought to have realised it was a mistake. A R2.99 TV won't hold; a believable sale price that turned out to be wrong is worth contesting. Takealot's terms do reserve a right to cancel for pricing errors, so against Takealot this works only together with the unfair-term argument below." },
+      { stat: "CGSO Advisory Note 10", body: "Pricing errors online: the Ombud's published view in 2021 (Advisory Note 10, [2021] ZACGSO 10; now under CGSO review, still on SAFLII) is that, unless the supplier's terms say otherwise, a supplier \"is bound by a consumer's acceptance of the offer and the advertised price\" — unless the price was so far off that you ought to have realised it was a mistake. A R2.99 TV won't hold; a believable sale price that turned out to be wrong is worth contesting. Takealot's terms do reserve a right to cancel for pricing errors, so against Takealot this works only together with the unfair-term argument below." },
       { stat: "CPA s 48 + Reg 44(3)(k)", body: "Takealot's terms let it cancel a confirmed order \"for any reason\", naming pricing errors. Regulation 44(3)(k) presumes unfair any term \"allowing the supplier to terminate the agreement at will where the same right is not granted to the consumer\" — and under Takealot's own terms you can cancel only if your order page shows a 'cancel' button (your ECT s 44 cooling-off and s 46 late-delivery rights aside). The presumption can be rebutted, but Takealot has to justify the term." },
-      { stat: "CPA s 47(3)", body: "On shortage-cancellation, the supplier must (a) refund with interest at the prescribed rate, and (b) compensate for costs directly incidental to the breach — unless beyond control and reasonable steps taken. No \"double damages\" — but s 112 administrative fine applies separately." },
+      { stat: "CPA s 47(3)", body: "On a shortage cancellation the supplier must (a) refund with interest at the prescribed rate and (b) compensate you for costs directly incidental to the breach. Only (b) falls away, if the shortage was beyond the supplier's control and it took reasonable steps to tell you as soon as practicable (s 47(5)); and it has a defence if you accepted, or unreasonably refused, comparable goods it offered (s 47(4)). No \"double damages\" — but a s 112 administrative fine may apply separately." },
       { stat: "ECT s 46", body: "Online orders must be executed within 30 days unless otherwise agreed. If they aren't, you may cancel on 7 days' written notice — or insist on delivery instead (the CGSO's Advisory Note 10 reads s 46 that way). If the item is unavailable, Takealot must tell you immediately and refund within 30 days of telling you (s 46(3))." },
       { stat: "Cover damages", body: "If you had to buy the equivalent elsewhere at a higher price, the difference is a damages claim." },
       { stat: "Late delivery — the silent cancel", body: "ECT s 46 also covers the slower pattern: order placed, promised date passes, no delivery, no communication. Documented in Wendy Knowler's Knight case (News24, 27 September 2024): R3,700 order placed 17 August, promised 30 August, undelivered by 16 September, ignored emails and calls. Knowler's intervention triggered next-day delivery. Path: written 7-day notice citing s 46(2); if still undelivered, cancel and demand your money back. If Takealot says the item is unavailable, s 46(3) sets a 30-day refund deadline from that notice. Don't accept Takealot framing the courier as the responsible party — your contract is with Takealot, not the courier." },
@@ -304,7 +304,7 @@ export const CLAUSES: Clause[] = [
     takealot: "Sellers are responsible for the items they sell on our platform.",
     angles: [
       { stat: "CPA s 56(1)", body: "Three-tier warranty runs against producer/importer, distributor, AND retailer. \"Retailer\" on a platform transaction can include the platform operator — depending on the facts." },
-      { stat: "CPA s 61(3)", body: "Product-liability is joint and several across the supply chain. Proceed against any link." },
+      { stat: "CPA s 61(3)", body: "If the product causes harm (injury, illness, or damage to property), liability is strict and joint and several across the supply chain (s 61(1), (3), (5)), subject to the s 61(4) defences — including a distributor's or retailer's defence that it could not reasonably have discovered the defect. Takealot is in that chain where it is the retailer. For an ordinary defect with no harm, use s 56." },
       { stat: "ECT s 43", body: "Platform has direct information and disclosure obligations under ECT regardless of seller identity. The CGSO's published view (per Lee Soobrathi in News24, 06 April 2025) is that ECT s 43 requires the supplier to inform customers how and when they can \"access and maintain a full record of the transaction\" — a duty the platform inherits as the consumer-facing party." },
       { stat: "ECT s 43(1)(m) — transaction record", body: "An online seller must tell you \"the manner and period within which consumers can access and maintain a full record of the transaction\" (ECT s 43(1)(m)). (The CPA's own sales-record section, s 26, switches off where ECT s 43 applies — s 26(1)(a) — so for online orders this is the record duty.) In the Wales / Lenovo case (News24, 06 April 2025) Takealot could not produce an invoice once the third-party seller went quiet. Without an invoice you cannot claim on a manufacturer warranty, so the missing record matters." },
       { stat: "CPA s 27 — intermediary", body: "An intermediary must disclose the prescribed information to the people it sells to on a third party's behalf, and \"keep the prescribed records of all relationships and transactions\" (s 27(1)). CGSO Lee Soobrathi (News24, 06 April 2025): \"The approach of the CGSO is that an e-commerce platform hosting third-party business products will be regarded as an intermediary for the purpose of the Consumer Protection Act, and as such will need to comply with these provisions.\" That was the CGSO's view on the Wales case: once Takealot acted as the consumer-facing party in a third-party sale, the consumer should not be left to chase the seller for the records." },
@@ -347,7 +347,7 @@ export const CLAUSES: Clause[] = [
       { stat: "Credit on a closed account", body: "The T&Cs also say Takealot \"may, at any time and for any reason, suspend or terminate your Takealot account.\" If that happens while your account holds refund credit, that credit came from money you paid. Takealot's returns policy itself contemplates you asking \"for a refund\" of unused credit — ask in writing for the balance to be paid to your bank account." },
     ],
     why: "Intent of purchase is not a statutory ground for refusing a s 56 return. If Takealot cites the resale clause as a reason to reject a defective return, push back and refer to s 56.",
-    template: "T07", escalate: "CGSO",
+    escalate: "CGSO",
   },
   {
     n: "18", slug: "mis-returned-items", title: "Mis-Returned Items",
@@ -363,13 +363,14 @@ export const CLAUSES: Clause[] = [
       { stat: "GPS ≠ proof of delivery", body: "Where Takealot claims an order was delivered but the consumer never received it, the platform's first-line defence is sometimes \"the delivery driver's GPS coordinates matched the delivery address.\" GPS coordinates are evidence of where the driver was; they are not evidence of what happened to the parcel. Per Wendy Knowler (News24, 27 September 2024) on a R600 whisky-not-delivered case: GPS matched, \"yet, no delivery signature could be produced.\" The relevant evidence is a signed proof-of-delivery (or a no-signature delivery confirmation acknowledged by the consumer), not the courier's trip log." },
     ],
     why: "Double-check every return before handing over. Photograph what you're returning. Note serial numbers. If you realise you've sent the wrong item, notify Takealot immediately and in writing. And if Takealot tries to come collect an item you never had, refuse the collection in writing — that pattern means the system hasn't registered your non-delivery report.",
-    template: "T08", escalate: "CGSO · Small Claims Court or Magistrates' Court for damages",
+    escalate: "CGSO · Small Claims Court or Magistrates' Court for damages",
   },
   {
     n: "19", slug: "restocking-redelivery-fees", title: "Restocking and Re-Delivery Fees",
     takealot: "If a return fails Takealot's packaging, seal or completeness check, Takealot refuses the return and sends the item back. If you re-log the return, Takealot reserves the right to charge a fee for collection and a fee for re-delivering the same or a replacement item to you.",
     angles: [
       { stat: "CPA s 56(2)", body: "A defective-goods return under s 56 is at the supplier's risk and expense. A collection fee or re-delivery fee on a defective return shifts the statute's cost allocation back onto the consumer — which is exactly what s 56(2) does not allow." },
+      { stat: "NCC v RC Auto (2026)", body: "The National Consumer Tribunal (5 November 2026) said a dealer ought to have collected a defective car, or authorised its repair, once the buyer told it she couldn't afford to bring it back more than 700 km: suppliers \"are, after all, statutorily obliged to pay for and bear the risk of returning the goods\" under s 56(2). It ordered a refund of the R244,000 she paid and a R100,000 penalty. A car dealer, not Takealot, and a Tribunal ruling rather than a court's — but it is the clearest recent statement that the cost of getting defective goods back sits with the supplier." },
       { stat: "CPA s 51(3)", body: "Any term that waives, defeats or avoids a right conferred by the Act is void. A packaging-condition fee that recovers s 56(2) costs from the consumer is a waiver of the \"supplier's risk and expense\" right." },
       { stat: "CPA s 48", body: "Unfair, unreasonable, unjust terms. A fee levied against a consumer who is exercising a statutory remedy is presumptively unfair, especially where Takealot chose the outbound courier and the outbound packaging." },
       { stat: "CPA Reg 44", body: "Regulation 44(3)(b) treats as presumptively unfair any term that excludes or restricts the consumer's legal rights or remedies against the supplier in the event of breach. Regulation 44(3)(g) catches any term that modifies the normal rules of risk-distribution to the consumer's detriment — exactly what a packaging-condition fee does when it shifts s 56(2)'s \"supplier's risk and expense\" allocation back onto the consumer." },
@@ -389,8 +390,8 @@ export const CLAUSES: Clause[] = [
       { stat: "CPA s 48", body: "A term or process that is excessively one-sided or so adverse as to be inequitable is unfair. An open-ended inspection clock with no SLA and no defined standard sits comfortably inside that definition — especially where the consumer has cash tied up in a failed purchase." },
       { stat: "CPA Reg 44(3)(j)", body: "Regulation 44(3)(j) presumes unfair any term \"giving the supplier the right to determine whether the goods or services supplied are in conformity with the agreement\". Takealot's own inspection is evidence, not the final word on whether your item is defective. If you dispute the outcome, the dispute goes to the CGSO or a court — not back to Takealot." },
       { stat: "CPA s 51(3)", body: "Any contractual mechanism that operates as a waiver of s 56 rights is void. A policy process that practically defeats the s 56(2) election by indefinite delay is vulnerable under s 51(3), even if the policy wording itself doesn't use the word \"waiver.\"" },
-      { stat: "CGSO Advisory Note 1", body: "The Ombud's own position (para 9.3): inspection is acceptable only \"in appropriate cases, where there is a genuine reason for believing that the [supplier] may not be liable\", and the item must come back \"speedily (a maximum of 7-10 days if the item needs to be sent away)\". A routine, open-ended inspection doesn't meet that." },
-      { stat: "CGSO 60-day benchmark", body: "CGSO's published resolution target is 60 business days, and supplier response is 15 business days. Those numbers are a useful comparator: an internal inspection that takes longer than a full CGSO complaint is prima facie unreasonable." },
+      { stat: "CGSO Advisory Note 1", body: "The Ombud's published 2021 position (para 9.3; the CGSO has since taken its Advisory Notes down pending review, and the text remains on SAFLII): inspection is acceptable only \"in appropriate cases, where there is a genuine reason for believing that the [supplier] may not be liable\", and the item must come back \"speedily (a maximum of 7-10 days if the item needs to be sent away)\". A routine, open-ended inspection doesn't meet that." },
+      { stat: "CGSO 60-day benchmark", body: "Suppliers get 15 business days to respond to a CGSO complaint. The Ombud's resolution target is 60 business days under the 2015 Code, and 60 days from the start of its investigation under the Code in force from 1 December 2026. Those numbers are a useful comparator: an internal inspection that takes longer than a full CGSO complaint is prima facie unreasonable." },
       { stat: "Paper trail", body: "Put the inspection demand in writing with a hard deadline (7–14 business days is defensible). State that if there's no written outcome by then, you'll treat it as a refusal and escalate. File with CGSO on the day the deadline lapses." },
     ],
     why: "Takealot's inspection step has no SLA in the policy. That's the lever — in practice it's where s 56 claims go to die. Give it a deadline yourself, in writing, and hold them to it.",
@@ -440,9 +441,9 @@ I am logging a return for [item] delivered on [date] under Order #[ORDER].
 
 The basis of the return is [select one: wrong item delivered / damaged on delivery / missing parts / defective goods per CPA s 56 / cancellation within the ECT Act s 44 7-day cooling-off period].
 
-I am electing [replacement / refund to original payment method] as my remedy.
+I am electing [repair / replacement / refund to original payment method] as my remedy. [Cooling-off cancellation: I am cancelling under section 44 of the ECT Act and claim a full refund within 30 days of cancellation (s 44(3)).]
 
-Please confirm within 5 business days that Takealot will process the return at no cost to me.
+Please confirm within 5 business days that Takealot will process the return [defective goods: at no cost to me, as section 56(2) requires / wrong, damaged or incomplete delivery: at no cost to me / cooling-off cancellation: charging me no more than the direct cost of returning the goods, as section 44(2) of the ECT Act allows].
 
 Regards,
 [Name] / [Order number] / [Contact]` },
@@ -462,7 +463,7 @@ Regards,
 
 Takealot has rejected the return of [item] on the basis of [normal wear and tear / consumer damage / electrical surge / sea air corrosion / modification / unintended use].
 
-I am not required to prove what caused the fault: the onus is on the supplier to prove the exclusion it relies on (Edan Traders v National Consumer Tribunal [2026] ZAGPJHC 386; Wingfield Motors v National Consumer Tribunal [2025] ZAWCHC 385). Please provide the technical report or assessment supporting the rejection, the specific exclusion relied on, and the evidence on which the conclusion rests. A conclusion unsupported by evidence is not a basis on which a section 56 election can be refused.
+I am not required to prove what caused the fault: the onus is on the supplier to prove the exclusion it relies on (Toyota Randburg v Ndlovu [2024] ZAGPPHC 591, relied on by the Full Court in Edan Traders v National Consumer Tribunal [2026] ZAGPJHC 386; Wingfield Motors v National Consumer Tribunal [2025] ZAWCHC 385). Please provide the technical report or assessment supporting the rejection, the specific exclusion relied on, and the evidence on which the conclusion rests. A conclusion unsupported by evidence is not a basis on which a section 56 election can be refused.
 
 Please provide the above within 7 business days or process the return on the basis of my section 56 election.
 
@@ -537,15 +538,17 @@ Please apply the policy in force on the order date.
 
 Regards,
 [Name]` },
-  { code: "T10", title: "Wrongful Cancellation", scenario: "Takealot cancelled a confirmed order citing pricing error or out-of-stock.",
-    subject: "Wrongful cancellation — Order #[ORDER]",
+  { code: "T10", title: "Wrongful Cancellation", scenario: "Takealot cancelled a confirmed order citing pricing error or out-of-stock — or the order is late or never arrived.",
+    subject: "Wrongful cancellation / non-delivery — Order #[ORDER]",
     body: `Hi,
 
 Order #[ORDER] was cancelled on [date] on the stated basis [reason]. I do not accept the cancellation is lawful. A contract was concluded on my payment and your order confirmation.
 
-Takealot's own terms state that an order is complete once the customer has paid and received an order confirmation. I paid and received that confirmation, so a contract was concluded at the confirmed price. A term allowing Takealot to cancel a confirmed order for any reason is presumed unfair under section 48 of the Consumer Protection Act read with Regulation 44(3)(k), because I have no equivalent right. [If the stated reason is a pricing error: the price shown was not so far from the item's usual price that I ought to have realised it was a mistake.]
+[If the order was not cancelled but is late or never arrived, use this paragraph instead of the cancellation paragraphs: Takealot had to execute the order within 30 days or by the agreed date (section 46(1) of the ECT Act). If you say it was delivered, please send me signed proof of delivery. If you cannot, this is my 7 days' written notice under section 46(2), after which I will cancel and claim a full refund.]
 
-Where the cancellation is due to shortage, section 47(3) of the CPA requires you to (a) refund me with interest at the prescribed rate from the date of payment, and (b) compensate me for costs directly incidental to your breach — unless the shortage was beyond your control and reasonable steps were taken. Under section 46 of the ECT Act, any refund flowing from a supplier's inability to perform is due within 30 days of notifying me of unavailability (s 46(3)).
+Takealot's own terms state that an order is complete once the customer has paid and received an order confirmation. I paid and received that confirmation, so a contract was concluded at the confirmed price. A term allowing Takealot to cancel a confirmed order for any reason is presumed unfair under section 48 of the Consumer Protection Act read with Regulation 44(3)(k), because I have no equivalent right to cancel at will. [If the stated reason is a pricing error: the price shown was not so far from the item's usual price that I ought to have realised it was a mistake.]
+
+Where the cancellation is due to shortage, section 47(3) of the CPA requires you to (a) refund me with interest at the prescribed rate from the date of payment, and (b) compensate me for costs directly incidental to your breach. Only (b) falls away, and only if the shortage was beyond your control and you took reasonable steps to tell me about it as soon as practicable (s 47(5)). Under section 46 of the ECT Act, any refund flowing from a supplier's inability to perform is due within 30 days of notifying me of unavailability (s 46(3)).
 
 Please either honour the order at the confirmed price or refund in full to my original payment method within 30 days, together with interest and the cost of sourcing an equivalent item elsewhere to the extent it exceeds the order price.
 
@@ -557,7 +560,7 @@ Regards,
 
 I understand the item was listed by [seller], an other-seller on your platform. My claim is against Takealot as the platform operator and as a member of the supply chain.
 
-Section 56(1) of the Consumer Protection Act imposes the implied warranty on every link of the supply chain — producer or importer, distributor, and retailer. Section 61(3) makes liability joint and several. Section 43 of the ECT Act places information and disclosure obligations on the platform directly. The National Consumer Commission and the Consumer Goods and Services Ombud have jointly stated that "it is the responsibility of the hosting platform to resolve disputes and to ensure that third party sellers comply with all provisions of the CPA and ECTA" (Consumer Protection in E-Commerce, March 2026). The Ombud has jurisdiction over platform transactions, and Takealot names it as the escalation point in its own terms.
+Section 56(1) of the Consumer Protection Act imposes the implied warranty on every link of the supply chain — producer or importer, distributor, and retailer. If the item has caused harm (injury, illness or damage to property), section 61 makes the producer, importer, distributor and retailer liable without proof of negligence, jointly and severally (s 61(1), (3)), subject only to the defences in section 61(4). Section 43 of the ECT Act places information and disclosure obligations on the platform directly. The National Consumer Commission and the Consumer Goods and Services Ombud have jointly stated that "it is the responsibility of the hosting platform to resolve disputes and to ensure that third party sellers comply with all provisions of the CPA and ECTA" (Consumer Protection in E-Commerce, March 2026). The Ombud has jurisdiction over platform transactions, and Takealot names it as the escalation point in its own terms.
 
 Please confirm within 7 business days how Takealot will address [issue].
 
@@ -571,6 +574,8 @@ The digital [code / download / course] under Order #[ORDER] [describe issue — 
 
 Under section 56 of the Consumer Protection Act, defective digital goods are returnable within 6 months — the definition of "goods" in section 1 of the CPA expressly includes data, software, code and licences. Section 42(2)(g) of the ECT Act excludes unsealed audio, video and software only from the 7-day cooling-off right under section 44; it has no bearing on a section 56 defective-goods claim.
 
+[If not delivered: this is non-performance under section 46 of the ECT Act, not a defect. The order had to be executed within 30 days or the agreed period; this is my 7 days' written notice under section 46(2), after which I will cancel and claim a full refund.]
+
 I am electing [refund / replacement].
 
 Regards,
@@ -583,7 +588,7 @@ Order #[ORDER], [product], purchased [date]. Failed on [date] — month [X] of o
 
 My claim against Takealot rests on the following:
 
-1. CPA section 55(2)(c) — reasonable durability. The goods must be usable and durable for a reasonable period having regard to use and all surrounding circumstances. Where Takealot represented an N-year warranty, that representation is part of the circumstances shaping reasonable durability. A failure in month [X] breaches this standard.
+1. CPA section 55(2)(c) — reasonable durability. The goods must be usable and durable for a reasonable period having regard to use and all surrounding circumstances. Where Takealot represented a [N-year] warranty, that representation is part of the circumstances shaping reasonable durability. A failure in month [X] breaches this standard.
 2. CPA section 55(4)(a) — whether goods meet the quality standard depends on all the circumstances, including the manner in which, and the purposes for which, they were marketed. I relied on the product page's warranty representation.
 3. CPA section 41 — false, misleading, or deceptive representations. Takealot advertised a warranty that the manufacturer has now declined to honour; I relied on that representation.
 4. CPA section 56(1) — retailer warrants compliance with section 55 independently of the manufacturer.
@@ -598,9 +603,9 @@ Regards,
     subject: "Final notice before CGSO referral — Order #[ORDER]",
     body: `Hi,
 
-I refer to prior correspondence dated [dates]. Takealot has not provided the remedy to which I am entitled under section 56 of the Consumer Protection Act. This is a final opportunity to resolve the matter directly.
+I refer to prior correspondence dated [dates]. Takealot has not provided the remedy to which I am entitled under [section 56 of the Consumer Protection Act / section 44(3) of the ECT Act / section 46 of the ECT Act]. This is a final opportunity to resolve the matter directly.
 
-If I do not have written confirmation of [remedy] within 5 business days, I will file with the Consumer Goods and Services Ombud under the Consumer Goods and Services Industry Code of Conduct. Under the CGSO's published process, Takealot will have 15 business days to respond to the complaint, and the CGSO aims to resolve complaints within 60 business days.
+If I do not have written confirmation of [remedy] within 5 business days, I will file with the Consumer Goods and Services Ombud under the Consumer Goods and Services Industry Code of Conduct. Under the CGSO's published process, Takealot will have 15 business days to respond to the complaint, and the CGSO aims to resolve complaints within 60 days of starting its investigation (60 business days under the Code in force until 30 November 2026).
 
 I reserve the right to escalate further to the National Consumer Commission and, if necessary, to the Small Claims Court (up to R30,000) or Magistrates' Court.
 
@@ -647,9 +652,9 @@ I would like to resolve this directly. I accordingly set the following deadline:
   (c) If the outcome accepts the claim, I expect the elected remedy — [repair / replacement / refund] — within a further 7 business days.
   (d) If I do not receive a written outcome by [DATE], I will treat that as Takealot's refusal to give effect to my section 56 election and will file a complaint with the Consumer Goods and Services Ombud on that basis.
 
-For reference, CGSO's published service standards give suppliers 15 business days to respond to a complaint and target 60 business days for resolution. An internal inspection that takes longer than a full CGSO complaint is not a reasonable assessment window.
+For reference, CGSO's published service standards give suppliers 15 business days to respond to a complaint and target resolution within 60 days of the Ombud starting its investigation (60 business days under the Code in force until 30 November 2026). An internal inspection that takes longer than a full CGSO complaint is not a reasonable assessment window.
 
-The Ombud's own Advisory Note 1 ([2021] ZACGSO 1, para 9.3) accepts supplier inspections only "in appropriate cases, where there is a genuine reason for believing that the [supplier] may not be liable", with the item inspected and returned "speedily (a maximum of 7-10 days if the item needs to be sent away)".
+The Ombud's published Advisory Note 1 ([2021] ZACGSO 1, para 9.3; currently under CGSO review) accepts supplier inspections only "in appropriate cases, where there is a genuine reason for believing that the [supplier] may not be liable", with the item inspected and returned "speedily (a maximum of 7-10 days if the item needs to be sent away)".
 
 Regards,
 [Name]
@@ -729,11 +734,11 @@ export const QUICK_HITS: QuickHit[] = [
   { n: "03", head: "One defective thing ≠ return the whole set",
     body: "The CPA's defect test looks at the goods you were sold. If one independently replaceable part fails and the rest works as sold, only that part is defective.", ref: "CPA s 53(1)(a)" },
   { n: "04", head: "7 days for any reason, by law",
-    body: "ECT Act section 44 gives every online buyer a 7-day no-fault return right. Takealot's 30-day window sits on top of that floor.", ref: "ECT Act s 44" },
+    body: "ECT Act section 44 gives you a 7-day no-fault return right on most online purchases (s 42(2) lists the exceptions). Takealot's 30-day window sits on top of that floor.", ref: "ECT Act s 44" },
   { n: "05", head: "Manufacturer warranty + CPA warranty run in parallel",
     body: "Takealot can't punt you to the manufacturer to escape section 56. Their liability is separate and concurrent.", ref: "CPA s 56(1)" },
   { n: "06", head: "CGSO is compulsory for Takealot, free for you",
-    body: "The Consumer Goods and Services Ombud is the industry's mandatory Ombud scheme under the Code gazetted under CPA s 82. Takealot is required to engage — it's not a goodwill gesture. 15 business days to respond, 60 to resolve. Filing costs nothing.", ref: "cgso.org.za" },
+    body: "The Consumer Goods and Services Ombud is the industry's mandatory Ombud scheme under the Code gazetted under CPA s 82. Takealot is required to engage — it's not a goodwill gesture. 15 business days to respond; the Ombud aims to resolve it within 60 days of starting its investigation (60 business days from receipt under the Code in force until 30 November 2026). Filing costs nothing.", ref: "cgso.org.za" },
   { n: "07", head: "Credit card chargeback", featured: true,
     body: "Your bank can reverse the transaction if Takealot doesn't deliver, doesn't refund, or ships defective goods. Most South African consumers don't know this exists.", ref: "Visa / Mastercard scheme rules" },
 ];
@@ -751,7 +756,7 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s 27", title: "Disclosure by intermediaries", blurb: "An intermediary must disclose the prescribed information to the people it sells to on a third party's behalf, and keep the prescribed records of those relationships and transactions (s 27(1)). The CGSO's published interpretation is that an e-commerce platform hosting third-party sellers is an intermediary for CPA purposes." },
     { id: "s 40", title: "Unconscionable conduct", blurb: "Prohibited — covers physical force, coercion, undue influence, unfair tactics." },
     { id: "s 41", title: "False, misleading, deceptive representations", blurb: "Advertised warranty that manufacturer won't honour = retailer misrepresentation. Remedies: a court must give practical effect to your right to redress (s 4(2)(b)(ii)); where the Act gives no other sufficient remedy it can order compensation for losses relating to the transaction (s 52(3)); s 115 governs a civil damages claim." },
-    { id: "s 47", title: "Over-selling and over-booking", blurb: "s 47(3): refund with interest plus compensation for directly incidental costs unless shortage beyond control. Separate s 112 administrative fine (paid to the State) may apply to the supplier." },
+    { id: "s 47", title: "Over-selling and over-booking", blurb: "s 47(3): refund with interest plus compensation for directly incidental costs. Only the compensation falls away, if the shortage was beyond the supplier's control and it took reasonable steps to inform the consumer as soon as practicable (s 47(5)). Separate s 112 administrative fine (paid to the State) may apply to the supplier." },
     { id: "s 48", title: "Unfair, unreasonable, unjust contract terms", blurb: "Substantive review. \"Excessively one-sided or so adverse as to be inequitable.\" Regulation 44 lists presumptively unfair terms." },
     { id: "s 49", title: "Notice for onerous terms", blurb: "Risky, restrictive, limiting terms must be separately brought to the consumer's attention." },
     { id: "s 51", title: "Prohibited terms", blurb: "Terms that waive rights conferred by the Act are void under s 51(3)." },
@@ -763,13 +768,13 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s 58", title: "Warning concerning fact and nature of risks", blurb: "Suppliers of risky activities or facilities must point out unusual or serious risks (s 58(1)); whoever packages hazardous or unsafe goods must put safe-handling instructions on or in the packaging (s 58(2))." },
     { id: "s 60", title: "Safety monitoring and recall", blurb: "s 60(2): if the NCC has reasonable grounds to believe goods may be unsafe and the producer or importer hasn't acted, it can by written notice require the producer to investigate or carry out a recall programme on the NCC's terms. Many recalls are instead notified by the supplier and published by the NCC. The recall notice is the consumer's refund route; within 6 months of delivery s 56 adds the return-and-refund election. \"Warranty expired\" answers neither." },
     { id: "s 61", title: "Product liability", blurb: "Strict liability for harm caused by unsafe goods. Joint and several across the supply chain." },
-    { id: "s 69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 gave obiter guidance (paras 26–27) that s 69(d) points to remedies in national legislation generally rather than a compulsory internal hierarchy — consumers may approach a court directly. The court expressly declined to decide the scope of s 69(d); the issue remains technically open." },
+    { id: "s 69", title: "Enforcement routes", blurb: "Tribunal / ombud / CGSO / provincial consumer court / ADR agent / NCC / court. The SCA in Motus v Wentzel [2021] ZASCA 40 gave obiter guidance (paras 26–27) that s 69(d) \"should not lightly be read as excluding the right of consumers to approach the court\", and that the routes it lists carry no clear hierarchy. The court expressly declined to decide the scope of s 69(d). The Western Cape High Court has since held that consumers need not go through the s 69 bodies first (Pure Silk v Martin [2025] ZAWCHC 568); other divisions differ." },
     { id: "s 2(10)", title: "Saving of common-law rights", blurb: "No provision of the Act may be interpreted to preclude common-law rights — preserves the aedilitian remedies." },
   ]},
   { group: "ECT Act", items: [
     { id: "s 42", title: "Exclusions from cooling-off", blurb: "Disapplies s 44 cooling-off only. Does not touch s 43, s 46, or the CPA." },
     { id: "s 43", title: "Information disclosure", blurb: "Online sellers must disclose identity, terms, payment, returns, warranty info. s 43(3): 14-day cancellation if breached." },
-    { id: "s 44", title: "7-day cooling-off", blurb: "Any online sale, any reason. Consumer pays only direct cost of return. Full refund within 30 days of cancellation." },
+    { id: "s 44", title: "7-day cooling-off", blurb: "Most online sales (s 42(2) lists the exceptions), any reason, within 7 days of receiving the goods. Consumer pays only direct cost of return. Full refund within 30 days of cancellation." },
     { id: "s 46", title: "Performance obligations", blurb: "30-day delivery deadline. Consumer may cancel on 7 days' notice if missed. Refund within 30 days of notification of unavailability." },
   ]},
   { group: "POPIA", items: [
@@ -796,8 +801,8 @@ export const ESCALATION: EscalationTier[] = [
     body: "Log the return on your account. For anything else, open the matching Help Centre topic and press 'Contact Us' at the bottom (the 'Get in Touch' form) — Takealot says this is the best way to reach an agent. Keep everything in writing and save the reference.", contact: "takealot.com/help-centre (Contact Us form) · 087 362 8000" },
   { tier: 2, title: "Formal written notice", window: "7 biz days",
     body: "Cite the specific CPA / ECT section. State your elected remedy explicitly. Reference Order # in subject.", contact: "legal@takealot.com · 12th Floor, 10 Rua Vasco Da Gama Plain, Foreshore, Cape Town, 8001" },
-  { tier: 3, title: "CGSO", window: "15 biz days / 60 biz days",
-    body: "Free, online. The Consumer Goods and Services Industry Code of Conduct (gazetted under CPA s 82 in March 2015) makes CGSO participation mandatory for qualifying suppliers, including Takealot — confirmed by the Gauteng High Court in CGSO NPC v Voltex [2021] ZAGPPHC 309. Supplier response in 15 business days; CGSO target resolution 60 business days.",
+  { tier: 3, title: "CGSO", window: "15 biz days / ~60 days",
+    body: "Free, online. The Consumer Goods and Services Industry Code of Conduct, gazetted under CPA s 82 (2015 Code; replaced by a new Code, GG 55719, from 1 December 2026), makes CGSO participation mandatory for qualifying suppliers, including Takealot — confirmed by the Gauteng High Court in CGSO NPC v Voltex [2021] ZAGPPHC 309 and restated in clause 4.2 of the 2026 Code. Supplier response in 15 business days; CGSO target resolution 60 business days under the 2015 Code, 60 days from the start of its investigation from 1 December 2026.",
     contact: "cgso.org.za · 0860 000 272 · WhatsApp +27 (0)81 335 3005 · info@cgso.org.za" },
   { tier: 4, title: "Credit card chargeback", window: "~120 days",
     body: "File with your bank's disputes team. Can run in parallel with CGSO. Visa/Mastercard scheme rules — card only, EFT/RTC/PayShap not covered.",
@@ -849,9 +854,9 @@ export const FAQ: FaqItem[] = [
 
 export const WARRANTY_ANGLES: WarrantyAngle[] = [
   { n: 1, title: "CPA s 56 — the 6-month baseline",
-    body: "The implied warranty of quality applies to every retailer of new goods, for 6 months from delivery, irrespective of any policy or stated warranty. Even if Takealot's product page says \"30-day warranty,\" they remain liable under s 56 for 6 months." },
+    body: "The s 56(2) right to return defective goods and choose repair, replacement or refund applies against every retailer for 6 months from delivery, irrespective of any policy or stated warranty. Even if Takealot's product page says \"30-day warranty,\" they remain liable under s 56 for 6 months." },
   { n: 2, title: "CPA s 55(2)(c) — reasonable durability",
-    body: "Goods must be usable and durable for a reasonable period having regard to use and all surrounding circumstances. An advertised 2-year manufacturer warranty becomes part of those circumstances — a failure within that window is prima facie a s 55(2)(c) breach." },
+    body: "Goods must be usable and durable for a reasonable period having regard to use and all surrounding circumstances. An advertised 2-year manufacturer warranty becomes part of those circumstances: a failure inside that window is strong evidence the goods fell short of s 55(2)(c)." },
   { n: 3, title: "CPA s 41 — misleading representations",
     body: "If Takealot's product page said \"2-year manufacturer warranty\" and the manufacturer refuses to honour, Takealot made a misleading representation you relied on. Remedies: a court must make orders that give practical effect to your right to redress (s 4(2)(b)(ii)); where the Act gives no other sufficient remedy for a s 41 breach it can order Takealot to compensate you for losses relating to the transaction (s 52(3)); s 115 governs a civil damages claim." },
   { n: 4, title: "CPA s 56(1) — three-tier warranty",
@@ -878,7 +883,7 @@ export const POLICY_SUMMARY: PolicySummary = {
     "30 days for wrong / damaged on delivery / missing / change-of-mind",
     "6 months for defective goods",
     "Original packaging, accessories, intact seals required",
-    "Consumer elects replacement / credit / refund — credit defaults if no stock",
+    "Consumer elects replacement / credit / refund (plus repair on defective returns) — credit defaults if no replacement stock",
     "Change of mind: unused, original packaging",
     "Defective: inspection required; exclusions for wear, surge, misuse, sea-air, modification",
     "Extended warranty via supplier (21-day refund trigger); direct manufacturer warranty direct with manufacturer",

@@ -24,7 +24,7 @@ copyright: "No copyright — published by an accredited Ombud established under 
 
 ## Status of the Note
 
-The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page (fetched 2026-11-10) reads: *"Advisory Notes are under review, they will be reuploaded once the review is completed."* Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII ([2021] ZACGSO 1), which is the copy relied on here. It is the Ombud's published interpretive position, not a binding ruling.
+The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page (fetched 2026-11-10, and unchanged when fetched again on 2026-11-17) reads: *"Advisory Notes are under review, they will be reuploaded once the review is completed."* Cite it as the Ombud's published 2021 view, withdrawn from the CGSO site pending review, not as current CGSO guidance. Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII ([2021] ZACGSO 1), which is the copy relied on here. It is the Ombud's published interpretive position, not a binding ruling.
 
 ## What the site relies on (verbatim, SAFLII, opened 2026-11-10)
 

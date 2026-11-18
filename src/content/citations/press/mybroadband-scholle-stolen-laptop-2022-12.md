@@ -7,7 +7,7 @@ primary_url: "https://mybroadband.co.za/news/it-services/473403-takealot-merchan
 wayback_url_dated: "https://web.archive.org/web/20260507170622/https://mybroadband.co.za/news/it-services/473403-takealot-merchant-sold-stolen-laptop.html"
 metaDescription: "Axel Scholle bought an HP laptop on Takealot in 2019; in 2022 it was remotely locked as Department of Agriculture stolen property. Takealot suspended the seller (Nanotec Digital) two months earlier. Refund flip-flopped repeatedly — credit, then reversed for 'tampering' (he had upgraded RAM/HDD then removed), then re-credited."
 retrieved: "2026-05-07"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
 wayback_status: "Wayback capture 20260507170622 holds the full article text (checked 2026-11-10)."
 disclosure: "MyBroadband is independent of Takealot's parent. The article is companion to Knowler's TimesLive piece (06 November 2022) on the same case — see knowler-scholle-stolen-laptop-timeslive-2022-11-06.md for the corroborating second source."
@@ -74,4 +74,6 @@ The Scholle / Nanotec Digital case is the strongest documented example of Takeal
 
 ## Wayback / archive status
 
-Wayback Machine snapshot pending re-archive on next OPS refresh.
+Wayback capture [20260507170622](https://web.archive.org/web/20260507170622/https://mybroadband.co.za/news/it-services/473403-takealot-merchant-sold-stolen-laptop.html) holds the full article text (checked 2026-11-10). Every quotation above was re-checked against the live article (MyBroadband, HTTP 200) on 2026-11-17.
+
+(Until 2026-11-17 this section said no snapshot existed or that one was pending, which contradicted the `wayback_status` field above.)
