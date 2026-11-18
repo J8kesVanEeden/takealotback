@@ -4,6 +4,37 @@ Outstanding work, in priority order. Tick items as they land.
 
 ---
 
+## ▶ JAKES — your to-do list (start here)
+
+Written 2026-11-18 after the update scan + content round + final legal sweep (PRs #29–#32, all live and checked). Nothing is half-done: no open branches, no uncommitted work. Each item says what **you** do; for the rest, open a Claude session in this folder and paste the "Tell Claude" line.
+
+### Before the Blue Dot Sale (starts 27 Nov 2026)
+- [ ] **Read the delivery-fee FAQ** ("I cancelled before delivery — can Takealot keep the delivery fee?", homepage FAQ). It argues against a line Takealot publishes; it's labelled our own reading of ECT s 44. 5 minutes. If you want it softened or removed: *Tell Claude: "change the delivery-fee FAQ to …"*.
+- [ ] **NCC Black Friday 2026 statement** — if the NCC publishes one before 27 Nov, *Tell Claude: "swap the NCC Black Friday 2024 statement for the 2026 one"* (the Black Friday FAQ cites 2024).
+
+### After 27 Nov
+- [ ] **Wendy Knowler's Black Friday column(s)** — check with your News24 login whether Takealot is named. If yes, paste the text to Claude.
+
+### On or after 1 Dec 2026
+- [ ] **CGSO Code switch** — the 2026 Code takes effect. *Tell Claude: "run the CGSO 1 December cleanup from TODO.md"* (drops the 2015 half of the "both sides of 1 December" sentences after re-checking cgso.org.za).
+
+### Needs your browser or login (whenever you have 30 minutes)
+- [ ] **SAFLII in a normal browser** (it blocks Claude with a "verify you are human" check). Open and save as PDF into `_handoff/` (or paste the text):
+  - *Standard Bank v Thobejane* [2021] ZASCA 92 — decides whether our "High Court concurrent above R200,000" wording is right (Clause 13, escalation tier 10, `limits.md`).
+  - *Ntoatsabone v Hisense* [2026] ZANCT 21 — confirms what the 3-year clock in the complaint-deadline FAQ counts from.
+  - Optional: new CPA / ECT judgments since 1 Oct 2026 (search "Consumer Protection Act" on the 2026 High Court and SCA indexes).
+  Then *Tell Claude: "I saved the SAFLII judgments in _handoff — apply the open SAFLII items in TODO.md"*.
+- [ ] **News24 login** — the 6 paywalled Knowler sources couldn't be re-checked (list in "Carried over from the 2026-11-17 update scan"). Open each and confirm the quotes still read the same, or paste the text to Claude.
+- [ ] **Analytics / Google tag** (from the 2026-11-18 tag session): the Google tag gateway is off; Zaraz still loads `G-C3ZPBQ78HV` once. Still yours: turn off Google Signals in that GA property, and decide whether the site keeps Google Analytics at all — the site and OPERATIONS.md promise "no tracking beyond Cloudflare Web Analytics", so either remove the Zaraz GA tool or change that wording. See "Open — needs a decision" below.
+
+### No rush — Claude can do these any time (just say "do the no-rush TODO items")
+- Retry the Wayback captures that failed (RC Auto PDF, SAFLII, LawLibrary, MyBroadband, Moneyweb, NCC Black Friday 2024 PDF).
+- Capture the NFO's 1 March 2024 amalgamation release; check POPIA against the consolidated Act.
+- Swap Car Care Clinic and NCC v RC Auto to their SAFLII citations once listed.
+- Next quarterly Takealot policy refresh ~January 2027 (Nimbalyst action "Quarterly refresh round"; for a quick check, "Interim update scan").
+
+---
+
 ## Done — for reference
 
 - [x] Astro port of the design prototype, deployed to Cloudflare Pages
@@ -145,7 +176,7 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 
 - [ ] **High Court jurisdiction:** Clause 13 and ESCALATION tier 10 say the High Court is "concurrent above R200,000". *Standard Bank v Thobejane* [2021] ZASCA 92 may hold the High Court can hear claims of any amount (with costs consequences). SAFLII/LawLibrary blocked automated reads — read the judgment in a browser, then correct both places and `limits.md:31`.
 - [ ] **Ntoatsabone FAQ:** says the Tribunal counted the 3 years from the purchase; para 12 only says "the conduct that gave rise to the complaint". Dates (bought 30 Nov 2021, filed 25 Apr 2025) are verified; confirm the counting point from the full judgment.
-- [ ] **AboutSection.astro:23** says "identification" is protected by Constitution s 16; s 16 protects expression. Reword or source it.
+- [x] **AboutSection.astro:23** "identification" under s 16 reworded (2026-11-18): the name identifies whose policy we discuss; the criticism and commentary are the protected expression.
 - [ ] **NFO file** has no verbatim primary text; capture the NFO's 1 March 2024 amalgamation release.
 - [ ] **Pre-1995 cases** (Dibley, Holmdene, Phame) still summarised from secondary sources.
 
