@@ -33,6 +33,13 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   { test: /Car Care Clinic/i, link: { url: '/citations/cases/ncc-car-care-clinic-gj-a2024-092517-2026', label: 'NCC v NCT (Car Care Clinic)' } },
   { test: /GG 55719|2026 Code|CGSO 60-day benchmark/i, link: { url: '/citations/regulators/cgso-code-2026', label: 'CGSO Code 2026 (GG 55719)' } },
   { test: /RC Auto/i, link: { url: '/citations/cases/ncc-rc-auto-bloemfontein-nct-2026', label: 'NCC v RC Auto Bloemfontein' } },
+  { test: /Bryanston/i, link: { url: '/citations/regulators/ncc-tribunal-fines-2026-11-17', label: 'NCC: Tribunal fines four suppliers (Nov 2026)' } },
+  { test: /NCC, Black Friday|Black Friday 2024/i, link: { url: '/citations/regulators/ncc-black-friday-2024-11-28', label: 'NCC Black Friday statement (2024)' } },
+  { test: /NCC \+ CGSO (?:voucher|e-commerce) note|e-vouchers?\b/i, link: { url: '/citations/advisories/ncc-cgso-evouchers-note-2025', label: 'NCC + CGSO e-voucher note (2025)' } },
+  { test: /Help Centre (?:says|gives|article)|missing-item page|Credit is the default/i, link: { url: '/citations/policies/takealot-help-centre-orders-2026-11-17', label: 'Takealot Help Centre: cancellations, refunds, missing items (Nov 2026)' } },
+  { test: /DS\.Privacy|privacy policy|PAIA manual/i, link: { url: '/citations/policies/takealot-privacy-paia-2026-11-17', label: 'Takealot privacy policy + PAIA manual' } },
+  { test: /Magistrates?'?\s*Court|GG 37477/i, link: { url: '/citations/regulators/magistrates-court-limits-2014', label: "Magistrates' Courts limits (GG 37477)" } },
+  { test: /GN 294|GG 34181|R2 million/i, link: { url: '/citations/regulators/cpa-threshold-gn294-2011', label: 'CPA R2 million threshold (GN 294)' } },
   { test: /Ntoatsabone|Hisense/i, link: { url: '/citations/cases/ntoatsabone-hisense-zanct-21-2026', label: 'Ntoatsabone v Hisense' } },
   { test: /pre-ticked paid delivery/i, link: { url: '/citations/press/ewn-takealot-delivery-default-2026-09-02', label: 'EWN: paid delivery pre-selected (2026)' } },
   { test: /Davis couch|Kelly Davis/i, link: { url: '/citations/press/ewn-knowler-davis-couch-2026-07-23', label: 'EWN / Knowler: Davis couch (2026)' } },
@@ -86,6 +93,9 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
 
   // TMA / Trade Marks
   { test: /\bTMA\b|Trade Marks/i, link: { url: '/citations/statutes/tma-1993', label: 'Trade Marks Act' } },
+
+  // National Credit Act
+  { test: /National Credit Act|\bNCA\b/i, link: { url: '/citations/statutes/nca-2005', label: 'National Credit Act' } },
 
   // Prescription Act
   { test: /Prescription Act/i, link: { url: '/citations/statutes/prescription-act-1969', label: 'Prescription Act' } },

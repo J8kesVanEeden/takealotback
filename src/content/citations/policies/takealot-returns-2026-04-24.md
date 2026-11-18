@@ -16,6 +16,7 @@ retrieved_by: "Takealot policy audit agent, 2026-04-24 — see commit 6f29a2e an
 used_in:
   - "src/data/content.ts — every CLAUSES[*].takealot paraphrase"
   - "src/data/content.ts — POLICY_SUMMARY.returns"
+  - "src/data/content.ts — FAQ (delivery fee on a cancelled order: 'Our returns are free!')"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing for research / criticism / review per s 12(1)(a) Copyright Act 98 of 1978, in support of the commentary at takealotback.com."
 ---
 
@@ -43,6 +44,14 @@ Takealot agent audit on this date verified the following clauses against the liv
 - **Mis-returned items** — disposed, no compensation
 - **Collection / re-delivery fees on re-logged returns** — verbatim: *"we may charge you a fee for collecting the item from you and, where applicable, a fee for delivering the same or a replacement item back to you"* — this is the textual hook for the site's Clause 19
 - **Inspection step** — verbatim: *"when we receive the item, we'll inspect it"* — with no SLA; the textual hook for the site's Clause 20
+
+## Lines added 2026-11-18 (verbatim, from the 2026-11-17 capture)
+
+Quoted because the site now relies on them (delivery-fee FAQ; Clause 11 e-voucher angle). Raw text: `_handoff/refresh-2026-11-17/raw/returns-2026-11-17.txt` (lines 15 and 246).
+
+> "We want you to love what you buy from us, so if something is wrong, you can return the item so that we can exchange it, replace it, or credit your Takealot account. Our returns are free!"
+
+> "If you paid for your items with a voucher and you want to return or cancel your whole order or some of the items in your order, we’ll load the value of the voucher you used as non-refundable credit on your Takealot account."
 
 ## Clauses in the Terms & Conditions
 

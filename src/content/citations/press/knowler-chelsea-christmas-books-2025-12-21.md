@@ -15,6 +15,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) angle on cancellation refund-vs-credit election"
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) angle on system-error cancellation + ECT s 46"
   - "src/data/content.ts — CLAUSES[17] (mis-returned-items) angle on courier collecting non-existent items"
+  - "src/data/content.ts — CLAUSES[22] (sale-pricing) relisting angle (system error)"
 copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
 ---
 

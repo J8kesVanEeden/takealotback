@@ -14,6 +14,7 @@ used_in:
   - "src/content/pages/aedilitian-remedies.md — 'Prescription — 3 years' section (reasonable time, para 14)"
   - "src/content/pages/limits.md — 'And where the CPA stops' section (reasonable time to cancel)"
   - "src/components/WarrantiesSection.astro — aedilitian link note (reasonable time to cancel)"
+  - "src/data/content.ts — FAQ (buy-now-pay-later, credit or eBucks: same rights?)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
