@@ -12,14 +12,14 @@ retrieved: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) 'NCC + CGSO voucher note (2025)' angle"
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) 'NCC + CGSO e-commerce note (2025)' angle"
-copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for research, criticism and review under s 12(1)(a) Copyright Act 98 of 1978."
+copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "The note does not name Takealot. It is the two regulators' stated view, not a ruling or a binding rule; it carries its own disclaimer ('provided for informational purposes only and is not legal advice')."
 ---
 
 # NCC + CGSO explanatory note: e-commerce platforms and e-vouchers
 ## 13 July 2025 · National Consumer Commission and Consumer Goods and Services Ombud
 
-A 4-page note issued jointly by the NCC and the CGSO, dated 13 July 2025 (PDF creation date 8 September 2025). It is listed for download on the CGSO's Advisory Notes page, under the banner "Advisory Notes are under review, they will be reuploaded once the review is completed." An earlier URL (`/cgso/download/transacting-with-ecommerce-platforms-and-e-vouchers/`) returned 404 on 2026-11-10; the URL above worked on 2026-11-17.
+A 4-page note issued jointly by the NCC and the CGSO, dated 13 July 2025 (PDF creation date 8 September 2025). The PDF opened at the direct download URL above on 2026-11-17, but it is **not listed** on the CGSO's Advisory Notes page: that page (captured the same day, `_handoff/refresh-2026-11-17/raw/R-cgso-advisory-notes-page.txt`) lists no documents and shows only the banner "Advisory Notes are under review, they will be reuploaded once the review is completed." (Corrected 2026-11-18: this paragraph said the note was "listed for download" on that page.) An earlier URL (`/cgso/download/transacting-with-ecommerce-platforms-and-e-vouchers/`) returned 404 on 2026-11-10; the URL above worked on 2026-11-17.
 
 **Status:** guidance, not law. It predates the two regulators' March 2026 joint paper ([NCC-CGSO-Ecommerce-Paper-2026.md](./NCC-CGSO-Ecommerce-Paper-2026.md)), which states the platform-responsibility view again.
 

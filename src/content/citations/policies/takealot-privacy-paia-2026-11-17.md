@@ -12,7 +12,7 @@ metaDescription: "Takealot's own privacy policy and PAIA manual: customers can a
 retrieved: "2026-11-17"
 used_in:
   - "src/data/content.ts — TEMPLATES T22 body (where to send a POPIA s 23 request)"
-copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(a) Copyright Act 98 of 1978 — research / criticism / review."
+copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 — criticism / review."
 ---
 
 # Takealot privacy policy and PAIA manual — how a customer asks for their own records

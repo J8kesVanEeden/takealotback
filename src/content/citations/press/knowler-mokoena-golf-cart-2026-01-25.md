@@ -13,7 +13,7 @@ wayback_status: "Wayback capture 20260507161627 exists but holds only the paywal
 disclosure: "News24 (Media24) and Takealot share Naspers as ultimate parent. Disclosed for transparency."
 used_in:
   - "src/data/content.ts — CLAUSES[1] (original-packaging) angle on missing-accessory exclusion vs unrelated defect"
-copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Knowler — Mokoena golf cart, missing cupholder + s 56

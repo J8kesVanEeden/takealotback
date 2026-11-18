@@ -14,7 +14,7 @@ wayback_status: "Wayback capture 20260507205643 holds the full article text (che
 disclosure: "Business Day is published by Arena Holdings (Tiso Blackstar's successor), editorially independent of Takealot's Naspers parent. Wendy Knowler also writes for News24 (Naspers); her Business Day column is hosted on Arena's BusinessLIVE platform."
 used_in:
   - "src/data/content.ts — CLAUSES[1] (original-packaging) angle on delivery-box vs product-packaging + Takealot admission"
-copyright: "© Arena Holdings (Business Day). Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Arena Holdings (Business Day). Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Knowler — when Takealot tries to box clever

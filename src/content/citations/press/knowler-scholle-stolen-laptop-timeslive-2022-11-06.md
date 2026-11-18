@@ -15,7 +15,7 @@ disclosure: "TimesLive is published by Arena Holdings, editorially independent o
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) angle on stolen-goods — corroborating second source"
   - "../press/mybroadband-scholle-stolen-laptop-2022-12.md — companion source on the same case"
-copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Knowler — Scholle stolen laptop (TimesLive)

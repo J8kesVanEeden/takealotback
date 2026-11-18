@@ -141,6 +141,14 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 - [x] Small Claims Court threshold: raised to **R30,000 from 1 Aug 2026** (GG 55038, GoN 7717; not R50,000). Site updated 2026-11-10. Lesson: the site carried the stale figure for 3 months, so check justice.gov.za/scc at every quarterly refresh, not only annually.
 - [ ] **Magistrates' Court thresholds** — currently quoted as District R200,000 / Regional R400,000 (last set by GG 2014). Re-verified 2026-11-10 against GoN 216/217 (GG 37477, 2014) and the DoJ notice lists to 26 Oct 2026: unchanged. Commentary suggests a possible raise to R400k district / R600k regional under review; check DoJ notices each quarter. Affects Clause 13 + ESCALATION T9 + LawSection Bodies card if updated.
 
+### Carried over from the 2026-11-18 final sweep (record: `_handoff/sweep-2026-11-18/`, local only)
+
+- [ ] **High Court jurisdiction:** Clause 13 and ESCALATION tier 10 say the High Court is "concurrent above R200,000". *Standard Bank v Thobejane* [2021] ZASCA 92 may hold the High Court can hear claims of any amount (with costs consequences). SAFLII/LawLibrary blocked automated reads — read the judgment in a browser, then correct both places and `limits.md:31`.
+- [ ] **Ntoatsabone FAQ:** says the Tribunal counted the 3 years from the purchase; para 12 only says "the conduct that gave rise to the complaint". Dates (bought 30 Nov 2021, filed 25 Apr 2025) are verified; confirm the counting point from the full judgment.
+- [ ] **AboutSection.astro:23** says "identification" is protected by Constitution s 16; s 16 protects expression. Reword or source it.
+- [ ] **NFO file** has no verbatim primary text; capture the NFO's 1 March 2024 amalgamation release.
+- [ ] **Pre-1995 cases** (Dibley, Holmdene, Phame) still summarised from secondary sources.
+
 ### Carried over from the 2026-11-17 update scan (record: `_handoff/refresh-2026-11-17/PROGRESS.md`, local only)
 
 - [ ] **CGSO after 1 Dec 2026:** the 2026 Code (GG 55719) takes effect. Re-check cgso.org.za/the-process for the new "60 days from start of investigation" wording; then the site's "both sides of 1 December" sentences (Clause 13, Clause 20, T14, T16, QH06, ESCALATION CGSO) can drop the 2015 half.

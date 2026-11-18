@@ -141,85 +141,120 @@ const slugMapJson = JSON.stringify(slugMap)
           { label: "Defective item", go: "defective" },
           { label: "Wrong / damaged / missing", go: "wrong" },
           { label: "Wrong product entirely (substitution)", go: "substitution" },
+          { label: "I changed my mind", go: "mind" },
           { label: "Recalled product", go: "recall" },
           { label: "Refund / credit dispute", go: "refund" },
           { label: "Order cancelled, late or never arrived", go: "cancel" },
+          { label: "Sale price or Black Friday deal", go: "deal" },
           { label: "Return refused on a technicality", go: "refused" },
           { label: "Something else", go: "other" },
         ],
       },
       defective: {
+        q: "When was it delivered?",
+        opts: [
+          { label: "Less than 6 months ago", go: "defective6" },
+          { label: "More than 6 months ago", result: { clause: "07", tpl: "T13", note: "Past the s 56 return window. CPA s 55(2)(c) still requires goods to be usable and durable for a reasonable period, with no 6-month cap. If the warranty Takealot advertised turns out not to exist or not to be as described, s 41 adds a misrepresentation angle. Use T13 where a warranty was advertised, and pursue the manufacturer in parallel. The common-law aedilitian remedies may also apply (see the Aedilitian remedies page)." } },
+        ],
+      },
+      defective6: {
         q: "Which fits best?",
         opts: [
-          { label: "Delivered less than 6 months ago", result: { clause: "01", tpl: "T01", note: "CPA s 56(2): return it within 6 months of delivery and you elect repair, replacement or refund. The retailer is liable regardless of the manufacturer." } },
-          { label: "Delivered more than 6 months ago", result: { clause: "07", tpl: "T13", note: "Past the s 56 return window. CPA s55(2)(c) durability + s41 if a warranty was advertised; the common-law aedilitian remedies may also apply. Pursue both retailer and manufacturer. If a warranty was advertised, use T13; if not, see /aedilitian-remedies." } },
-          { label: "It's a data-storage device", result: { clause: "04", tpl: "T04", note: "Factory-reset. Refuse live credentials. POPIA is on your side." } },
-          { label: "It's part of a bundle", result: { clause: "05", tpl: "T05", note: "CPA s56 + s53(1)(a). A defect in one component doesn't convert working components into defective goods." } },
+          { label: "An ordinary defect", result: { clause: "01", tpl: "T01", note: "CPA s 56(2): return it within 6 months of delivery and you elect repair, replacement or refund. The retailer is liable regardless of the manufacturer." } },
+          { label: "It's a data-storage device", result: { clause: "04", tpl: "T04", note: "Back up, sign out of your accounts (so no activation lock remains) and factory-reset it yourself. Refuse live credentials: POPIA says processing must be adequate, relevant and not excessive. This route relies on CPA s 56, which runs for 6 months from delivery." } },
+          { label: "It's part of a bundle", result: { clause: "05", tpl: "T05", note: "CPA s 56 + s 53(1)(a): a defect in one independently replaceable part doesn't make the working parts defective, so ask for that part to be repaired or replaced. Want your money back instead? A refund is of the bundle price, so expect to return the whole bundle (T06). This route relies on CPA s 56, which runs for 6 months from delivery." } },
         ],
       },
       wrong: {
         q: "Which one?",
         opts: [
-          { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "ECT s 46 / CPA s 56. Log within 30 days, but assert s 56 if it's a defect." } },
+          { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "Log it within Takealot's 30 days if you can, and refuse it at the door if it's obviously wrong or damaged. If it arrived damaged or doesn't work, CPA s 56 still gives you 6 months from delivery: Takealot's 30-day window can't cut that down (Clause 01). If what arrived is a completely different product, go back and choose 'Wrong product entirely' (T17)." } },
           { label: "Missing part of a set", result: { clause: "01", tpl: "T01", note: "Missing parts is one of Takealot's own 30-day return grounds. Report it in writing the day it arrives (Takealot has told the press missing components must be reported immediately on receipt; its returns policy allows 30 days) and log it as 'missing parts'." } },
-          { label: "Says delivered, never arrived", result: { clause: "18", tpl: "T23", note: "GPS shows where the driver was, not who got the parcel. T23 asks for signed proof of delivery and gives 7 days' written notice under ECT s 46(2), after which you can cancel for a full refund. Send T22 at the same time: it asks, under POPIA s 23, for the delivery record and other records Takealot holds about your order. Use T14 only once that has been refused." } },
+          { label: "Says delivered, never arrived", result: { clause: "18", tpl: "T23", note: "GPS shows where the driver was, not who got the parcel. Ask now, in writing, for signed proof of delivery (T23's bracketed paragraph), and send T22 at the same time: it asks, under POPIA s 23, for the delivery record and other records Takealot holds about your order. Once 30 days have passed since you ordered, or an agreed delivery date has passed, T23 also gives 7 days' written notice under ECT s 46(2), after which you can cancel for a full refund. Use T14 only once Takealot has refused." } },
           { label: "An item is missing from the delivery", result: { clause: "06", tpl: "T20", note: "Report it within 30 days of delivery. Takealot's own Help Centre asks you to choose credit, refund or replacement. Choose the refund in writing, and don't accept account credit in its place." } },
+          { label: "I sent the wrong item back by mistake", result: { clause: "18", note: "Tell Takealot in writing straight away, with the order number, what you sent and any serial number: its policy says it disposes of incorrect returns and won't pay for lost items. On our own reading, CPA s 65(2) says a supplier holding your property must look after it and is liable for its loss, and the 'won't pay' term is open to challenge under s 48." } },
         ],
       },
       substitution: {
         q: "What did you receive?",
         opts: [
-          { label: "A materially different product (e.g. premium phone → calculator)", result: { clause: "21", tpl: "T17", note: "Non-performance of sale + CPA s55(2)(a) + s41 misrepresentation. This is restitution, not a return — don't accept procedural refusals on accessories or packaging." } },
-          { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "If Takealot sent the wrong size or colour, that's a wrong-item delivery, not a change of mind: log it as 'Not What I Ordered' within Takealot's 30 days, and refuse it at the door if you can. If you ordered the wrong size yourself, ECT s 44 gives you 7 days from delivery, and Takealot's own change-of-mind window is 30 days (unused, in original packaging)." } },
+          { label: "A materially different product (e.g. premium phone → calculator)", result: { clause: "21", tpl: "T17", note: "Non-performance of the sale (and ECT s 46). This is restitution, not a return — don't accept procedural refusals on accessories or packaging." } },
+          { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "If Takealot sent the wrong size or colour, that's a wrong-item delivery, not a change of mind: log it as 'Not What I Ordered' within Takealot's 30 days, and refuse it at the door if you can. If you ordered the wrong size yourself, ECT s 44 gives you 7 days from receiving it, and Takealot's own change-of-mind window is 30 days (unused, in original packaging)." } },
+        ],
+      },
+      mind: {
+        q: "When did you receive it?",
+        opts: [
+          { label: "Within the last 7 days", result: { clause: "01", tpl: "T01", note: "ECT s 44: you can cancel most online purchases within 7 days of receiving them, without giving a reason. The law allows no charge other than the direct cost of returning the goods, and Takealot's returns policy says \"Our returns are free!\". The refund is due within 30 days of cancelling (s 44(3)), and you can insist on a refund rather than credit. s 42(2) excludes some items, e.g. food, personalised items, books and unsealed software. Choose the cooling-off option in T01." } },
+          { label: "8 to 30 days ago", result: { clause: "01", tpl: "T01", note: "Past the ECT 7 days, so this is Takealot's own 30-day change-of-mind policy: unused, in its original product packaging with all its parts, and not on the non-returnable list. Choose the change-of-mind option in T01." } },
+          { label: "More than 30 days ago", result: { clause: "01", note: "Neither the ECT 7 days nor Takealot's 30-day window covers a change of mind this late, and we know of no other right to return it. If the item is defective, go back and choose 'Defective item': CPA s 56 runs for 6 months from delivery." } },
         ],
       },
       recall: {
         q: "What's Takealot's response?",
         opts: [
           { label: "Refund refused — \"warranty has expired\"", result: { clause: "22", tpl: "T18", note: "The recall notice is your refund route (e.g. 'return them to a point of purchase for a refund'). Within 6 months of delivery s 56(2) adds the refund election. Warranty expiry answers neither." } },
-          { label: "Short-validity coupon issued instead of a refund", result: { clause: "22", tpl: "T18", note: "Recall refund must be substantively equivalent — money to original payment method, or a money-equivalent credit at the standard 3-year validity." } },
-          { label: "Punted to the manufacturer", result: { clause: "22", tpl: "T18", note: "The recall notice sends you back to the point of purchase — that's Takealot. Within 6 months, s 56(1) makes the retailer a warrantor too. If the product caused harm, s 61 liability is joint and several." } },
+          { label: "Short-validity coupon issued instead of a refund", result: { clause: "22", tpl: "T18", note: "A two-day coupon isn't a refund. Ask for the money back to the way you paid. If you originally paid with a coupon, ask for a money-equivalent credit valid for Takealot's standard 3 years: a reasonable ask rather than a statutory right, but a two-day coupon is no refund at all." } },
+          { label: "Punted to the manufacturer", result: { clause: "22", tpl: "T18", note: "Recall notices usually send you back to where you bought it, and that's Takealot (e.g. 'return them to a point of purchase for a refund'). s 56(1) makes the retailer a warrantor alongside the manufacturer, and within 6 months of delivery s 56(2) also lets you return it for a refund. If the product caused harm, s 61 liability is joint and several." } },
+          { label: "I haven't asked yet, or Takealot hasn't answered", result: { clause: "22", tpl: "T18", note: "Ask Takealot in writing for the refund the recall notice provides for, quoting the notice (e.g. 'return them to a point of purchase for a refund'). T18 works as a first letter: leave out the paragraph about Takealot's response. Within 6 months of delivery s 56(2) also lets you return it for a refund." } },
         ],
       },
       refund: {
         q: "What's the issue?",
         opts: [
-          { label: "Forced store credit", result: { clause: "06", tpl: "T06", note: "CPA s56(2). You elect cash refund." } },
-          { label: "Refund not processed", result: { clause: "06", tpl: "T14", note: "Final notice + chargeback in parallel." } },
+          { label: "Credit instead of a refund on a defective return", result: { clause: "06", tpl: "T06", note: "If the item was defective, CPA s 56(2) lets you direct the remedy, and credit isn't one of the statutory options unless you agree to it. Takealot's own returns policy also lets you choose a refund. Ask in writing for the refund to go back the way you paid." } },
+          { label: "Order cancelled and the money came back as credit", result: { clause: "06", tpl: "T06", note: "Takealot's own terms say \"If an order or item is cancelled, we will refund you the amount paid for that cancelled order or item.\" If the reason was stock, ECT s 46(3) also requires the refund within 30 days of Takealot telling you. Ask in writing for the refund back the way you paid, not credit (T06, 'Order cancelled by Takealot' option). If you also dispute the cancellation itself, use T10." } },
+          { label: "Missing item credited instead of refunded", result: { clause: "06", tpl: "T20", note: "Takealot's Help Centre asks you to choose credit, refund or replacement for a missing item. Choose the refund in writing, and ask for any credit already loaded to be reversed and refunded." } },
+          { label: "Paid with a voucher, got non-refundable credit back", result: { clause: "11", note: "Takealot's policy loads a voucher's value as non-refundable credit when you return or cancel. If one item in a voucher-paid order was cancelled for stock, the NCC and CGSO's 2025 note says the voucher's full value must go to the rest of that order, not into credit for later: ask for that in writing. A voucher you paid for can't expire within 3 years of issue (CPA s 63)." } },
+          { label: "Refund not processed", result: { clause: "06", tpl: "T14", note: "Final notice (T14), plus a card chargeback in parallel if you paid by card." } },
         ],
       },
       cancel: {
         q: "What happened to the order?",
         opts: [
-          { label: "Pricing error", result: { clause: "14", tpl: "T10", note: "Contract formed on order confirmation. A pricing-error cancellation is attackable under s 48 + Reg 44(3)(k); see CGSO Advisory Note 10. Claim the difference if you re-bought." } },
-          { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "CPA s 47(3): refund with interest, plus costs directly incidental to the breach unless the shortage was beyond Takealot's control and it took reasonable steps to tell you as soon as practicable (s 47(5))." } },
-          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T23", note: "ECT s 46: Takealot must deliver within 30 days or by the date it agreed. If it misses that, give 7 days' written notice (T23), then cancel and demand your money back (s 46(3)'s 30-day refund deadline applies if Takealot says the item is unavailable). Your contract is with Takealot, not the courier." } },
+          { label: "Pricing error", result: { clause: "14", tpl: "T10", note: "Once you've paid and received an order confirmation, there's a contract at the confirmed price. A pricing-error cancellation is attackable under s 48 + Reg 44(3)(k); see CGSO Advisory Note 10 (now under CGSO review). That fails if the price was so far off that you ought to have realised it was a mistake. Claim the difference if you re-bought." } },
+          { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "Where CPA s 47 applies, s 47(3) requires a refund with interest, plus costs directly incidental to the breach unless the shortage was beyond Takealot's control and it took reasonable steps to tell you as soon as practicable (s 47(5)). ECT s 46(3) requires the refund within 30 days of Takealot telling you the item is unavailable. Ask for it back the way you paid, not as credit." } },
+          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T23", note: "ECT s 46: Takealot must deliver within 30 days or by the date it agreed. Takealot's terms call its delivery dates estimates, so count the 30 days from your order. If it misses that, give 7 days' written notice (T23), then cancel and demand your money back (s 46(3)'s 30-day refund deadline applies if Takealot says the item is unavailable). Your contract is with Takealot, not the courier." } },
+          { label: "Tracking says delivered, but I never got it", result: { clause: "18", tpl: "T23", note: "GPS shows where the driver was, not who got the parcel. Ask now, in writing, for signed proof of delivery (T23's bracketed paragraph), and send T22 at the same time: it asks, under POPIA s 23, for the delivery record and other records Takealot holds about your order. Once 30 days have passed since you ordered, or an agreed delivery date has passed, T23 also gives 7 days' written notice under ECT s 46(2), after which you can cancel for a full refund. Use T14 only once Takealot has refused." } },
           { label: "Paid for faster delivery and it came late", result: { clause: "14", tpl: "T19", note: "CPA s 54: delivery you paid for separately is a service. Ask for the premium back as a refund, not account credit. If the order still hasn't arrived, send T23 as well." } },
+          { label: "Charged for a paid delivery option I didn't choose", result: { clause: "14", note: "EWN reported in September 2026 that faster paid delivery could be pre-selected at Takealot checkout. If you were charged for a paid option you didn't actively choose, CPA s 31 arguably makes that charge void. This rests on a press report we haven't checked ourselves, and no court or regulator has applied s 31 to a checkout default yet. Ask Takealot in writing for the fee back." } },
+          { label: "I cancelled, and Takealot kept the delivery fee", result: { clause: "01", tpl: "T01", note: "Takealot's Help Centre says delivery fees aren't reimbursed if you cancel an order that's already being fulfilled. Our own reading, not a ruling: ECT s 44 allows no charge other than the direct cost of returning the goods, so keeping the delivery fee is a charge it doesn't allow. It fits most cleanly once the order has arrived: accept it, keep it unopened, log a return within 7 days (T01, cooling-off option) and ask in writing for a full refund, delivery fee included, under s 44(3). See the FAQ on delivery fees." } },
           { label: "Cancelled, then relisted at a higher price", result: { clause: "23", tpl: "T10", note: "Screenshot the new listing (seller, price, date). Ask Takealot in writing why the item was treated as unavailable, using T10's bracketed relisting paragraph, and insist on the confirmed price or a refund to the way you paid. A different seller relisting it can be genuine." } },
-          { label: "Other reason", result: { clause: "14", tpl: "T10", note: "Contract was formed on confirmation. Seek refund + difference." } },
+          { label: "Other reason", result: { clause: "14", tpl: "T10", note: "Once you've paid and received an order confirmation, there's a contract. Seek a refund to the way you paid, plus the difference if you had to buy elsewhere." } },
+        ],
+      },
+      deal: {
+        q: "What happened?",
+        opts: [
+          { label: "The \"was\" price looks fake", result: { clause: "23", note: "A \"was\" price the item never really sold at is misleading pricing under CPA s 29(b)(iii), and falsely implying a saving is a misleading representation under s 41(3)(f). Screenshot the listing with the date showing and report it to the NCC, or to the Advertising Regulatory Board about the advert. If you've already bought it, ECT s 44 lets you cancel within 7 days of receiving it." } },
+          { label: "The deal sold out, or the price changed, before I paid", result: { clause: "23", note: "Until you've paid and received an order confirmation, Takealot's terms say the order isn't complete, so there's usually nothing to enforce. If the deal was advertised with almost no stock behind it, that may be bait marketing (CPA s 30): screenshot it and report it to the NCC." } },
+          { label: "I paid, then it was cancelled and relisted for more", result: { clause: "23", tpl: "T10", note: "Screenshot the new listing (seller, price, date). Ask Takealot in writing why the item was treated as unavailable, using T10's bracketed relisting paragraph, and insist on the confirmed price or a refund to the way you paid. A different seller relisting it can be genuine." } },
         ],
       },
       refused: {
         q: "On what basis?",
         opts: [
-          { label: "No original packaging", result: { clause: "02", tpl: "T02", note: "s56 doesn't require packaging. s51 voids policy waivers." } },
-          { label: "“Consumer damage” / surge / misuse", result: { clause: "03", tpl: "T03", note: "Takealot has to prove misuse (Toyota Randburg 2024, relied on in Edan Traders 2026). Demand the technical report." } },
+          { label: "No original packaging", result: { clause: "02", tpl: "T02", note: "If the item is defective, s 56 doesn't require original packaging, and s 51(3) voids a term that waives that right (T02). On any return, the 'original packaging' is the product's box, not Takealot's brown delivery box: Takealot has publicly said it doesn't expect that back." } },
+          { label: "Defective item refused for “wear and tear” / consumer damage / surge / sea air / misuse", result: { clause: "08", tpl: "T03", note: "Takealot has to prove the exclusion it relies on (Toyota Randburg 2024, relied on in Edan Traders 2026; Wingfield 2025). Demand the technical report." } },
+          { label: "Not accepted as damaged on delivery (\"you damaged it\" / surge / misuse)", result: { clause: "03", tpl: "T03", note: "Takealot has to prove the damage was your doing (Toyota Randburg 2024, relied on in Edan Traders 2026). Demand the technical report. If the item arrived damaged or doesn't work, CPA s 56 still runs for 6 months from delivery." } },
           { label: "Marked “non-returnable”", result: { clause: "10", tpl: "T01", note: "The s 42(2) carve-outs only remove the 7-day cooling-off. A defective item is still a s 56 return, and a “non-refundable” tag on an item outside s 42(2) doesn't remove the 7 days either." } },
-          { label: "Deflected to manufacturer", result: { clause: "07", tpl: "T07", note: "s56(1) retailer liability is concurrent and non-delegable." } },
-          { label: "Marketplace seller's fault", result: { clause: "15", tpl: "T11", note: "Platform has concurrent obligations. CGSO has jurisdiction." } },
-          { label: "Charged a collection or re-delivery fee", result: { clause: "19", tpl: "T15", note: "CPA s56(2) puts defective returns at the supplier's risk and expense. Don't pay; challenge the fee." } },
-          { label: "Inspection is dragging with no deadline", result: { clause: "20", tpl: "T16", note: "Policy has no SLA on inspection. Set your own written deadline (7 business days) and escalate to the CGSO if there's no answer by then." } },
+          { label: "Deflected to manufacturer", result: { clause: "07", tpl: "T07", note: "s 56(1) makes the retailer a warrantor alongside the manufacturer, so Takealot can't hand you off. T07 is for the first 6 months after delivery; after that, use T13." } },
+          { label: "\"You bought it to resell\"", result: { clause: "17", note: "Why you bought an item isn't a ground for refusing a CPA s 56 defective return. If Takealot cites its resale clause to refuse one, push back in writing and refer to s 56." } },
+          { label: "Marketplace seller's fault", result: { clause: "15", tpl: "T11", note: "The NCC and CGSO say the platform must resolve the dispute and make sure its sellers comply with the CPA and ECT Act. The CGSO takes complaints against Takealot for other-seller items." } },
+          { label: "Charged a collection or re-delivery fee on a return", result: { clause: "19", tpl: "T15", note: "On a defective return, CPA s 56(2) puts the return at the supplier's risk and expense: don't pay the fee, and challenge it (T15). Inside the 7-day ECT cooling-off, the only charge allowed is the direct cost of returning the goods (s 44(2)). On an ordinary change-of-mind return outside those 7 days, Takealot's own terms apply." } },
+          { label: "Inspection is dragging with no deadline", result: { clause: "20", tpl: "T16", note: "Policy has no SLA on inspection. Set your own written deadline (7 business days) and escalate to the CGSO if there's no answer by then. T16 is for a return within 6 months of delivery; for an extended-warranty evaluation after that, see Clause 07." } },
         ],
       },
       other: {
         q: "What category?",
         opts: [
-          { label: "Digital item doesn't work", result: { clause: "16", tpl: "T12", note: "Defective digital is still defective goods. s56 applies." } },
+          { label: "Digital item doesn't work", result: { clause: "16", tpl: "T12", note: "Defective digital items are still defective goods: CPA s 56 applies for 6 months from delivery. Never delivered at all? T12 has a paragraph for that." } },
           { label: "Policy changed after my order", result: { clause: "12", tpl: "T09", note: "Applicable version = version at order time." } },
-          { label: "Disposal threat", result: { clause: "09", tpl: "T08", note: "Dispute in writing. File CGSO immediately." } },
+          { label: "Disposal threat", result: { clause: "09", tpl: "T08", note: "Dispute the rejection in writing before day 30 and file with the CGSO. Either ask Takealot to keep the item and confirm that in writing, or accept re-delivery under protest: the policy treats a refused re-delivery as abandonment." } },
           { label: "High Court clause", result: { clause: "13", tpl: "T14", note: "s 48 / Reg 44 / s 51(3) attack the forum clause. You keep your Small Claims option." } },
-          { label: "Inspection / assessment delay", result: { clause: "20", tpl: "T16", note: "Demand a written outcome within 7 business days, and escalate to the CGSO if there's no answer by then." } },
+          { label: "Inspection / assessment delay", result: { clause: "20", tpl: "T16", note: "Demand a written outcome within 7 business days, and escalate to the CGSO if there's no answer by then. T16 is for a return within 6 months of delivery; for an extended-warranty evaluation after that, see Clause 07." } },
           { label: "Account closed with credit on it", result: { clause: "24", tpl: "T21", note: "Refund credit came from money you paid. Ask in writing for the balance to be paid to your bank account, and for the reason for the closure." } },
+          { label: "Someone took over my account", result: { clause: "24", tpl: "T22", note: "Report it to Takealot in writing the same day, change your Takealot and email passwords, remove saved cards, and ask your bank to block the card and dispute fraudulent transactions. Takealot's terms put the risk of account fraud on you, but that term is arguably presumed unfair (Reg 44(3)(g)), and where Takealot was grossly negligent CPA s 51(1)(c)(ii) makes it void. T22 asks for the records Takealot holds about your account." } },
         ],
       },
     };
@@ -244,11 +279,13 @@ const slugMapJson = JSON.stringify(slugMap)
       if (state.result) {
         body.innerHTML =
           '<div class="mono tb-triage__result-label">/ Result</div>' +
-          '<div class="tb-triage__result-head">Clause ' + esc(state.result.clause) + ' · Template ' + esc(state.result.tpl) + '</div>' +
+          '<div class="tb-triage__result-head">Clause ' + esc(state.result.clause) + (state.result.tpl ? ' · Template ' + esc(state.result.tpl) : '') + '</div>' +
           '<p class="tb-triage__result-body">' + esc(state.result.note) + '</p>' +
           '<div class="tb-triage__result-actions">' +
             '<button type="button" class="btn primary" data-triage-openclause="' + esc(state.result.clause) + '">Open clause &rarr;</button>' +
-            '<button type="button" class="btn" data-triage-opentpl="' + esc(state.result.tpl) + '">Open template &rarr;</button>' +
+            // Some results have no template (e.g. a fake "was" price is a
+            // report to the NCC, not a letter to Takealot).
+            (state.result.tpl ? '<button type="button" class="btn" data-triage-opentpl="' + esc(state.result.tpl) + '">Open template &rarr;</button>' : '') +
             '<button type="button" class="btn ghost" data-triage-restart>Start over</button>' +
           '</div>';
         return;

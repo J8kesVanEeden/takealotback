@@ -20,7 +20,7 @@ The Consumer Protection Act is powerful, but it's not a magic wand. If you're re
 
 **Protection against your own misuse, unauthorised modification, or damage you caused.** Section 56's protection is expressly excluded *"to the extent that those goods have been altered contrary to the instructions, or after leaving the control, of the producer or importer, a distributor or the retailer"*.
 
-**Protection against ordinary wear and tear.** Section 55(2)(c) requires durability for a *reasonable* period — which is a high bar for a long-lived product and a lower one for a short-lived one. Ordinary deterioration from normal use is not a defect. A TV that fails at 18 months is defective; a pair of running shoes worn daily for 18 months is not.
+**Protection against ordinary wear and tear.** Section 55(2)(c) requires durability for a *reasonable* period — which is a high bar for a long-lived product and a lower one for a short-lived one. Ordinary deterioration from normal use is not a defect. A TV that fails at 18 months of normal use will usually fall short of that standard; a pair of running shoes worn daily for 18 months will not.
 
 **A right to the exact replacement of your choice.** Section 56 gives you repair, replacement, or refund — not "replacement with a newer model" or "upgrade at no charge".
 
@@ -30,13 +30,13 @@ The Consumer Protection Act is powerful, but it's not a magic wand. If you're re
 
 **A forum of your absolute choice above a certain value.** You can use Small Claims Court up to R30,000, the District Magistrates' Court up to R200,000 and the Regional Magistrates' Court up to R400,000 ([GoN 216 and 217, GG 37477, 2014](/citations/regulators/magistrates-court-limits-2014)), and above that it's High Court territory. Takealot's forum-selection clause is vulnerable (see the Dismantled section), but even if you successfully attack it, the value of your claim still determines which court actually has jurisdiction.
 
-**Rescue from a juristic-person threshold.** The CPA does not protect a buyer that is itself a juristic person (a company, for example) whose asset value or annual turnover, at the time of the transaction, equals or exceeds the threshold the Minister sets under s 6 (s 5(2)(b); currently R2 million under [GN 294, GG 34181, 2011](/citations/regulators/cpa-threshold-gn294-2011)). Most individual consumers are fine; small-business buyers should check before relying on the CPA.
+**Rescue from a juristic-person threshold.** The CPA does not protect a buyer that is itself a juristic person (a company, for example) whose asset value or annual turnover, at the time of the transaction, equals or exceeds the threshold the Minister sets under s 6 (s 5(2)(b); currently R2 million under [GN 294, GG 34181, 2011](/citations/regulators/cpa-threshold-gn294-2011)). Most individual consumers are fine; small-business buyers should check before relying on the CPA. (Recall and product-liability protection under ss 60 and 61 still apply to the goods: s 5(5).)
 
 ## The CPA does do:
 
 Don't walk away from this page defeated. The CPA gives you:
 
-- A 6-month implied warranty of quality given by the producer or importer, the distributor and the retailer — each of them (s56(1)–(2)).
+- An implied warranty of quality given by the producer or importer, the distributor and the retailer — each of them (s56(1)) — and a 6-month right to return goods that fall short of it (s56(2)).
 - A choice of remedy — repair, replacement, or refund — that sits with *you*, not the retailer (s56(2)).
 - A "without penalty and at the supplier's risk and expense" principle for defective returns (s56(2)).
 - A 3-month post-repair safety net (s56(3)).

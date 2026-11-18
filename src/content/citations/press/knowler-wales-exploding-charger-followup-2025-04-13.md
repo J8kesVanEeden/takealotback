@@ -14,7 +14,7 @@ disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ult
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) angle — companion citation showing the resolution pattern after escalation"
   - "../press/knowler-wales-exploding-charger-sofa-2025-04-06.md — original story"
-copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Wendy Knowler Win of the Week | Exploding charger: Takealot steps in after supplier ghosts

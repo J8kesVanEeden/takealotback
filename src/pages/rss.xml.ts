@@ -8,10 +8,11 @@ const DEEP_DIVE_ORDER = ['onus-of-proof', 'aedilitian-remedies', 'limits'];
 const CITATION_GROUP_LABEL: Record<string, string> = {
   statutes: 'Statute / regulation',
   cases: 'Case law',
-  advisories: 'CGSO advisory note',
+  advisories: 'CGSO / NCC advisory note',
   policies: 'Takealot policy snapshot',
   regulators: 'Regulator / court',
   commentary: 'Commentary',
+  press: 'Press report',
 };
 
 // All site content surfaces, in one feed:

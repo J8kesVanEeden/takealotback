@@ -8,7 +8,7 @@ primary_url: "https://www.gov.za/documents/electronic-communications-and-transac
 wayback_url: "https://web.archive.org/web/*/https://www.gov.za/documents/electronic-communications-and-transactions-act"
 saflii_url: "https://www.saflii.org/za/legis/consol_act/ecata2002427/"
 itu_url: "https://www.itu.int/ITU-D/projects/ITU_EC_ACP/hipssa/Activities/SA/docs/SA-1_Legislations/South%20Africa/ElecComm.PDF"
-metaDescription: "Electronic Communications and Transactions Act 25 of 2002: 7-day cooling-off, electronic signatures, and consumer protections for online transactions."
+metaDescription: "Electronic Communications and Transactions Act 25 of 2002, Chapter VII verbatim: the 7-day cooling-off and its exclusions, seller information duties, 30-day performance, and no contracting out (s 48)."
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES citing ECT sxx (s 42, s 43, s 44, s 46)"
@@ -17,12 +17,13 @@ used_in:
   - "src/data/content.ts — CLAUSES[23] (account-suspension) s 43(5)–(6) angle"
   - "src/data/content.ts — FAQ (Black Friday; buy-now-pay-later s 44(1); delivery fee on a cancelled order s 44)"
   - "src/data/content.ts — TEMPLATES T20 and T23 (s 46)"
+  - "src/data/content.ts — CLAUSES[11] (unilateral-changes) 'CPA s 51 / ECT s 48' angle and TEMPLATES T09 body (s 48 non-exclusion)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Electronic Communications and Transactions Act 25 of 2002
 
-**Status of this file:** verbatim text of Chapter VII (consumer protection), ss 42–49, copied from the SAFLII consolidated text (https://www.saflii.org/za/legis/consol_act/ecata2002427/) on 2026-11-10, with a short note on how the site uses each section. s 45 was repealed by POPIA s 110 with effect from 30 June 2021 and is not relied on.
+**Status of this file:** verbatim text of Chapter VII (consumer protection), ss 42–49, copied from the SAFLII consolidated text (https://www.saflii.org/za/legis/consol_act/ecata2002427/) on 2026-11-10, with a short note on how the site uses each section. s 45 was repealed by POPIA s 110 with effect from 30 June 2021 and is not relied on. (Description corrected 2026-11-18: it listed "electronic signatures", which this file does not cover and the site does not rely on.)
 
 ---
 

@@ -14,7 +14,7 @@ disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ult
 used_in:
   - "src/data/content.ts — CLAUSES[21] (recall-noncompliance) takealot summary + angles"
   - "src/data/content.ts — TEMPLATES T18 (recall) scenario reference"
-copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot
@@ -24,10 +24,12 @@ copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 
 
 The article documents two distinct recall non-compliance patterns at Takealot:
 
-1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B** — global recall (NCC issued a SA recall notice ~April 2026). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both were refused refunds when they sought them post-recall, on the basis that the manufacturer's 12-month warranty had expired. Takealot's PR agency declined to respond to Knowler's query.
+1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B** — global recall, listed among the product recalls announced by the National Consumer Commission in 2026 (the NCC's own notice, 8 April 2026, describes the recall as notified by the supplier, not as an NCC order; see Site reliance below). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both were refused refunds when they sought them post-recall: Takealot told Chetty the product's 12-month warranty had expired, and gave Hart a final response that it could not confirm the recall (extracts below). Takealot's PR agency declined to respond to Knowler's query.
 2. **Citro-Soda Regular** — SAHPRA recall (foreign-material contamination — metal fragments). Monogran Naidoo notified by Takealot, product collected, but the refund issued was a coupon valid for **two days** that expired in his spam folder before he saw it.
 
 These cases ground the clause on **recall non-compliance**: a recall is strong evidence the goods failed CPA s 55; within six months of delivery s 56 gives the return-and-refund election; beyond that, the recall notice's own refund instruction is the route, with s 61 if the product caused harm — and warranty expiry is not an answer to a recall refund. Note the ESR buyers here bought in October/November 2024, so by the April 2026 recall s 56's six-month window had closed for them.
+
+(Corrected 2026-11-18: item 1 said the "NCC issued a SA recall notice". Knowler's words are "announced by the National Consumer Commission", and the NCC's notice records the recall as supplier-notified.)
 
 ## Verbatim extracts (fair-dealing quotations)
 

@@ -10,7 +10,9 @@ wayback_url_dated: "https://web.archive.org/web/20250827070620/https://www.safli
 metaDescription: "Western Cape High Court, 2025 (reported 2026 (2) SA 662): a supplier blaming a defect on the consumer's use must prove it; speculation isn't evidence. CPA s 56 applies to all goods without exception."
 retrieved: "2026-11-10"
 used_in:
-  - "src/data/content.ts — CLAUSES[7] (defective-exclusions) 'Onus on supplier' angle"
+  - "src/data/content.ts — CLAUSES[7] (defective-exclusions) 'Wingfield v NCT' angle"
+  - "src/data/content.ts — TEMPLATES T03 body (onus on the supplier to prove the exclusion)"
+  - "src/data/content.ts — FAQ (why templates mention case names)"
   - "src/content/pages/onus-of-proof.md — 'Inside the first 6 months' section"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
@@ -38,5 +40,9 @@ Vehicle case. A Western Cape Division decision: Takealot's own T&Cs choose the W
 
 ## Site reliance
 
-- Clause 08 (defective exclusions), "Onus on supplier": an exclusion like wear and tear or consumer damage has to be proved by Takealot, not asserted.
+- Clause 08 (defective exclusions), "Wingfield v NCT" angle: an exclusion like wear and tear or consumer damage has to be proved by Takealot, not asserted.
+- Template T03: cited with *Toyota* and *Edan* for the point that the supplier must prove the exclusion it relies on.
+- FAQ "Why do the templates mention case names?": named as an example.
 - `/onus-of-proof` deep-dive.
+
+(Updated 2026-11-18: the angle was labelled "Onus on supplier"; its label on the site is "Wingfield v NCT". Template T03 and the FAQ were added to this list.)

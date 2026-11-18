@@ -10,6 +10,7 @@ metaDescription: "Western Cape High Court, December 2025: a consumer doesn't hav
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) 'Pure Silk v Martin' angle"
+  - "src/data/content.ts — LAW_SECTIONS CPA s 69 'Enforcement routes' blurb"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
@@ -38,3 +39,4 @@ In the Western Cape Division, **a consumer may go straight to court** on a CPA c
 ## Site reliance
 
 - Clause 13 (High Court jurisdiction): you are not forced through every complaint body before going to court.
+- Law section, CPA s 69 "Enforcement routes" blurb: named for the Western Cape High Court's view that a consumer need not exhaust the s 69 bodies first. (Added 2026-11-18.)

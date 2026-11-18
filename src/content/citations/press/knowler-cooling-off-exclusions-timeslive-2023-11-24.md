@@ -6,7 +6,7 @@ date: "2023-11-24"
 primary_url: "https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
 wayback_url_dated: "https://web.archive.org/web/20261117210528/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
 wayback_url_earlier: "https://web.archive.org/web/20260714010241/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
-metaDescription: "Knowler enumerates ECT s 42(2) cooling-off carve-outs: books/periodicals, insurance, online auctions, fast-moving consumer goods, lottery, accommodation/transport/catering. Confirms Takealot's 'no warranty at all' framing on books is wrong: 6-month CPA defective warranty still applies."
+metaDescription: "Knowler names some ECT s 42(2) cooling-off exclusions ('among them' books, insurance, online auctions, everyday consumables, lottery tickets, travel and leisure bookings). Confirms Takealot's 'no warranty at all' framing on books is wrong: 6-month CPA defective warranty still applies."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
@@ -14,7 +14,7 @@ wayback_status: "Wayback capture 20260714010241 holds the full article text (che
 disclosure: "TimesLive is published by Arena Holdings (Tiso Blackstar successor), editorially independent of Takealot's Naspers parent. Knowler also writes for News24 (Naspers); this column is on Arena's TimesLive platform."
 used_in:
   - "src/data/content.ts — CLAUSES[9] (non-returnable) angle on Takealot's 'no warranty at all' framing being legally wrong"
-copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Knowler — cooling-off exclusions
@@ -22,7 +22,7 @@ copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing per Copyrig
 
 ## Why the site cites this
 
-The Nikki/books case is the cleanest documented example of Takealot framing a non-returnable item as having **no warranty at all**, when in fact ECT s 42(2) only disapplies the s 44 cooling-off — the CPA s 56 6-month defective-goods warranty still applies. Knowler corrects this directly. The article also enumerates the full ECT s 42(2) carve-out list, which is useful as a reference for Clause 10.
+The Nikki/books case is the cleanest documented example of Takealot framing a non-returnable item as having **no warranty at all**, when in fact ECT s 42(2) only disapplies the s 44 cooling-off — the CPA s 56 6-month defective-goods warranty still applies. Knowler corrects this directly. The article also names some of the ECT s 42(2) exclusions (Knowler: "among them"); the full list, including services begun with consent, market-linked prices, made-to-spec or personalised goods, and unsealed audio, video or software, is in [ECT-Act-2002.md](../statutes/ECT-Act-2002.md).
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -42,7 +42,7 @@ The Nikki/books case is the cleanest documented example of Takealot framing a no
 
 > "Online purchases are regulated by the Electronic Communications and Transactions Act, which gives us a cooling-off period of seven days in which to change our minds and return the goods (at our cost) for a full refund within 30 days."
 
-### The full ECT s 42(2) carve-out list
+### Some of the ECT s 42(2) exclusions (partial list; the full list is in ECT-Act-2002.md)
 
 > "However, there are exclusions, among them 'newspapers, periodicals, magazines and books'. Also insurance products, goods bought on an online auction, fast-moving consumer goods meant for daily consumption (Sixty60, et al), lottery tickets, and 'purchases for the provision of accommodation, transport, catering or leisure services and where the supplier undertakes, when the transaction is concluded, to provide these services on a specific date or within a specific period'."
 
@@ -61,7 +61,9 @@ The Nikki/books case is the cleanest documented example of Takealot framing a no
 ## Site reliance
 
 - **Clause 10 (Non-Returnable Items):** the centrepiece. Takealot's *"No warranty at all"* framing on books is wrong. ECT s 42(2) only disapplies s 44 cooling-off; CPA s 56 still runs. A book that is defective (binding faulty, pages missing, wrong content) is still defective goods.
-- **Reference framing for the ECT s 42(2) carve-out list** — useful when explaining what *is* legitimately non-coolable.
+- **Plain-language examples of ECT s 42(2) exclusions** — useful when explaining what *is* legitimately non-coolable. Knowler's list is partial; use the statute for the full list.
+
+(Corrected 2026-11-18: this file called Knowler's list "the full ECT s 42(2) carve-out list". Her own words are "among them", and s 42(2) also excludes (d) services begun with consent within the seven days, (e) prices tied to financial-market fluctuations, (f) goods made to spec, clearly personalised or that cannot be returned by nature, or likely to deteriorate quickly, and (g) audio or video recordings or software unsealed by the consumer.)
 - **Risk-of-loss-in-transit:** retailer + third-party courier carry the risk until delivery; consumer not stuck with a "deal with the courier" deflection.
 
 ## Wayback / archive status

@@ -343,6 +343,22 @@ const GROUP_TOPIC: Record<string, Array<typeof TOPICS[keyof typeof TOPICS]>> = {
   press: [TOPICS.cpa],
 };
 
+// Statute pages are each about one instrument, so the group-wide
+// CPA/ECT/POPIA list above is only the fallback for an unmapped slug.
+// The NCA has no Wikipedia article to `sameAs` (checked 2026-11-18), so it
+// is a plain Thing and stays out of TOPICS / ALL_TOPICS.
+const NCA_TOPIC = { '@type': 'Thing', name: 'National Credit Act 34 of 2005' } as const;
+const STATUTE_TOPIC: Record<string, Array<Record<string, string>>> = {
+  'cpa-2008': [TOPICS.cpa],
+  'cpa-regulations-2011': [TOPICS.cpa],
+  'ect-act-2002': [TOPICS.ect],
+  'popia-2013': [TOPICS.popia],
+  'tma-1993': [TOPICS.tma],
+  'constitution-s16': [TOPICS.constitution],
+  'prescription-act-1969': [TOPICS.prescription],
+  'nca-2005': [NCA_TOPIC],
+};
+
 export function buildCitationArticle(args: {
   group: string;          // "cases", "statutes", etc.
   canonical: string;
@@ -351,6 +367,8 @@ export function buildCitationArticle(args: {
 }) {
   const { group, canonical, data, description } = args;
   const type = CITATION_TYPES[group] ?? 'Article';
+  const slug = canonical.split('/').pop() ?? '';
+  const topics = (group === 'statutes' && STATUTE_TOPIC[slug]) || GROUP_TOPIC[group] || [];
   const obj: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': type,
@@ -369,10 +387,10 @@ export function buildCitationArticle(args: {
     dateModified:
       (data.retrieved as string)?.replace(/\./g, '-') ??
       LAST_REVIEWED.replace(/\./g, '-'),
-    about: data.citation ? [...(GROUP_TOPIC[group] ?? []), {
+    about: data.citation ? [...topics, {
       '@type': 'Thing',
       name: data.citation,
-    }] : (GROUP_TOPIC[group] ?? []),
+    }] : topics,
   };
 
   // Resolve datePublished from frontmatter `date:`. Three cases:
@@ -411,25 +429,56 @@ function extractTools(body: string): Array<{ '@type': 'HowToTool'; name: string 
   // Conservative: only match patterns that the citation-links resolver
   // already recognises, so we never list a tool we can't ground.
   const found = new Set<string>();
-  // Section ranges: emit one tool per distinct section number cited, never
-  // a literal "5x" / "4x" placeholder.
-  for (const m of body.matchAll(/\bsection (5\d)\b/gi)) {
-    found.add(`Section ${m[1]} of the Consumer Protection Act`);
-  }
-  for (const m of body.matchAll(/\bsection (4[2-6])\b/gi)) {
-    found.add(`Section ${m[1]} of the Electronic Communications and Transactions Act`);
+  // Section tools: one per distinct (Act, section) the body cites, never a
+  // literal "5x" / "4x" placeholder. A bare "section N" says nothing about
+  // which Act it belongs to, and the CPA and POPIA share section numbers the
+  // templates use (19, 22, 23): T22's "section 23 of the Protection of
+  // Personal Information Act" was once labelled CPA s 23, the very section
+  // the site tells readers not to cite against Takealot. So each mention is
+  // attributed to an Act in this order:
+  //   1. the Act named straight after it ("section 46(2) of the ECT Act");
+  //   2. else the Act named most recently before it in the body, if that
+  //      Act has this section in SECTION_TOOLS ("Under the Protection of
+  //      Personal Information Act, section 10 … section 19 requires");
+  //   3. else the number's unambiguous default (DEFAULT_ACT). 19, 20, 22
+  //      and 23 have none: they are emitted only when an Act is named.
+  const ACT_RE =
+    /Consumer Protection Act|\bCPA\b|\bECT Act\b|Electronic Communications and Transactions Act|Protection of Personal Information Act|\bPOPIA\b/gi;
+  const actOf = (name: string): 'cpa' | 'ect' | 'popia' =>
+    // Case-sensitive \bECT\b: a case-insensitive "ect" also hits "Protection".
+    /\bECT\b|Electronic/.test(name) ? 'ect' : /POPIA|Personal Information/i.test(name) ? 'popia' : 'cpa';
+  const ACT_LABEL = {
+    cpa: 'Consumer Protection Act',
+    ect: 'Electronic Communications and Transactions Act',
+    popia: 'Protection of Personal Information Act',
+  } as const;
+  const SECTION_TOOLS: Record<'cpa' | 'ect' | 'popia', (n: number) => boolean> = {
+    cpa: (n) => [19, 20, 22, 23, 41, 47, 51, 69, 82].includes(n) || (n >= 50 && n <= 59),
+    ect: (n) => n >= 42 && n <= 46,
+    popia: (n) => [10, 19, 22, 23].includes(n),
+  };
+  const DEFAULT_ACT = (n: number): 'cpa' | 'ect' | null =>
+    [41, 47, 51, 69, 82].includes(n) || (n >= 50 && n <= 59) ? 'cpa'
+      : n >= 42 && n <= 46 ? 'ect'
+      : null;
+  const actMentions = [...body.matchAll(ACT_RE)].map((m) => ({ at: m.index ?? 0, act: actOf(m[0]) }));
+  for (const m of body.matchAll(/\bsection (\d+)\b/gi)) {
+    const n = Number(m[1]);
+    const at = m.index ?? 0;
+    const after = body.slice(at + m[0].length, at + m[0].length + 80);
+    const named = after.match(
+      /^(?:\([^)]*\))*\s+of the (Consumer Protection Act|CPA|ECT Act|Electronic Communications and Transactions Act|Protection of Personal Information Act|POPIA)\b/i,
+    );
+    let act: 'cpa' | 'ect' | 'popia' | null = null;
+    if (named) {
+      act = actOf(named[1]);
+    } else {
+      const prev = actMentions.filter((a) => a.at < at).pop();
+      act = prev && SECTION_TOOLS[prev.act](n) ? prev.act : DEFAULT_ACT(n);
+    }
+    if (act && SECTION_TOOLS[act](n)) found.add(`Section ${n} of the ${ACT_LABEL[act]}`);
   }
   const patterns: Array<[RegExp, string]> = [
-    [/\bsection 19\b/i, 'Section 19 of the Consumer Protection Act'],
-    [/\bsection 20\b/i, 'Section 20 of the Consumer Protection Act'],
-    [/\bsection 22\b/i, 'Section 22 of the Consumer Protection Act'],
-    [/\bsection 23\b/i, 'Section 23 of the Consumer Protection Act'],
-    [/\bsection 41\b/i, 'Section 41 of the Consumer Protection Act'],
-    [/\bsection 47\b/i, 'Section 47 of the Consumer Protection Act'],
-    [/\bsection 51\b/i, 'Section 51 of the Consumer Protection Act'],
-    [/\bsection 56\b/i, 'Section 56 of the Consumer Protection Act'],
-    [/\bsection 69\b/i, 'Section 69 of the Consumer Protection Act'],
-    [/\bsection 82\b/i, 'Section 82 of the Consumer Protection Act'],
     [/\bPOPIA\b|Protection of Personal Information/i, 'Protection of Personal Information Act 4 of 2013'],
     [/\bConsumer Protection Act\b|\bCPA\b/i, 'Consumer Protection Act 68 of 2008'],
     [/\bRegulation 44\b|\bReg 44\b/i, 'Regulation 44 of the CPA Regulations 2011'],
