@@ -63,6 +63,7 @@ const STATUTE_PATTERN_TO_FILE = {
   '\\bPOPIA\\b': 'POPIA-2013.md',
   '\\bTMA\\b|\\bTrade\\s*Marks\\s*Act': 'TMA-1993.md',
   '\\bPrescription\\s*Act': 'Prescription-Act-1969.md',
+  '\\bNational\\s*Credit\\s*Act|\\bNCA\\b': 'NCA-2005.md',
   '\\bConstitution\\b': 'Constitution-s16.md',
 };
 

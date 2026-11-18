@@ -12,6 +12,7 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'Pricing errors online' and 'ECT s 46' angles"
   - "src/data/content.ts — TEMPLATES T10 body"
+  - "src/data/content.ts — CLAUSES[22] (sale-pricing) relisting angle (insist on delivery)"
 copyright: "No copyright — published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
 ---
 

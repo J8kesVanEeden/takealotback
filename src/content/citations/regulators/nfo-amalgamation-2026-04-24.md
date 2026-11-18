@@ -10,6 +10,7 @@ metaDescription: "National Financial Ombud (NFO, 2024): one-stop ombud combining
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — LAW_SECTIONS[4].items.nfo (NFO entry under Chargebacks)"
+  - "src/data/content.ts — FAQ (buy-now-pay-later: credit disputes)"
 copyright: "Facts — not copyrightable."
 ---
 

@@ -14,6 +14,9 @@ used_in:
   - "src/data/content.ts — CLAUSES citing ECT sxx (s 42, s 43, s 44, s 46)"
   - "src/data/content.ts — LAW_SECTIONS[1] (ECT Act group)"
   - "src/data/content.ts — TEMPLATES referring to ECT s 44 / s 46"
+  - "src/data/content.ts — CLAUSES[23] (account-suspension) s 43(5)–(6) angle"
+  - "src/data/content.ts — FAQ (Black Friday; buy-now-pay-later s 44(1); delivery fee on a cancelled order s 44)"
+  - "src/data/content.ts — TEMPLATES T20 and T23 (s 46)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
