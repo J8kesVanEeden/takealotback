@@ -3,12 +3,14 @@ title: "Laugh It Off Promotions CC v South African Breweries International (Fina
 citation: "[2005] ZACC 7; 2006 (1) SA 144 (CC); 2005 (8) BCLR 743 (CC)"
 court_or_publisher: "Constitutional Court of South Africa"
 date: "2005-05-27"
-judge: "Moseneke J (Sachs J concurring; unanimous court)"
+judge: "Moseneke J (Langa DCJ, Madala J, Mokgoro J, Ngcobo J, O'Regan J, Sachs J, Skweyiya J, Van der Westhuizen J and Yacoob J concurring; Sachs J also wrote a separate concurring judgment)"
 primary_url: "https://www.saflii.org/za/cases/ZACC/2005/7.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACC/2005/7.html"
+wayback_url_dated: "https://web.archive.org/web/20261030000647/https://www.saflii.org/za/cases/ZACC/2005/7.html"
 collections_concourt: "https://collections.concourt.org.za/handle/20.500.12144/2330"
 metaDescription: "ConCourt 2005: trade-mark anti-dilution under TMA s 34(1)(c) requires proof of substantial economic detriment; protects non-commercial expressive use."
-retrieved: "2026-04-25"
+retrieved: "2026-11-17"
+reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — FAQ[0] ('Is using the name Takealot in the domain legal?')"
   - "src/components/AboutSection.astro — legal-grounding (implicitly, via the constitutional balancing argument)"
@@ -27,9 +29,17 @@ The court did **not** hold that any expressive use defeats trade-mark rights. It
 
 ## The substantial-economic-detriment test (Moseneke J)
 
-The court's holding (operative paraphrase, widely quoted across SA IP commentary):
+In summary (our paraphrase, not a quotation): a proprietor invoking the anti-dilution provision in s 34(1)(c) against expressive use must prove the likelihood of substantial economic detriment to the mark. Offence to the proprietor or unauthorised use is not enough, and the onus is on the proprietor.
 
-> A trade-mark proprietor seeking to invoke the anti-dilution provision in s 34(1)(c) of the Trade Marks Act 194 of 1993 against expressive (and especially non-commercial) use of the mark must prove the **likelihood of substantial economic detriment** to the distinctive character or repute of the mark. Mere offence to the proprietor, or hurt feelings, or unauthorised use, is not enough. The burden of proof rests on the proprietor.
+The court's own words (verbatim, SAFLII text re-checked 2026-11-17):
+
+> [49] "… Equally clear is that the detriment relied upon must not be flimsy or negligible. It must be substantial in the sense that it is likely to cause substantial harm to the uniqueness and repute of the marks. … A court will have to weigh carefully the competing interests of the owner of the mark against the claim of free expression of a user without permission."
+
+> [50] "… In sum, in order to succeed the owner of the mark bears the onus to demonstrate likelihood of substantial harm or detriment which, seen within the context of the case, amounts to unfairness."
+
+> [56] "I hold that in a claim under section 34(1)(c), a party that seeks to oust an expressive conduct protected under the Constitution must, on the facts, establish a likelihood of substantial economic detriment to the claimant's mark. There is indeed much to be said for the contention that, in a claim based on tarnishment of a trade mark, the probability of material detriment to the mark envisaged in the section must be restricted to economic and trade harm. In essence the protection is against detriment to the repute of the mark; and not against the dignity but the selling magnetism of the mark. In an open democracy valuable expressive acts in public ought not to be lightly trampled upon by marginal detriment or harm unrelated to the commercial value that vests in the mark itself."
+
+(Paragraph numbers from SAFLII's numbered list. An earlier version of this file set the paraphrase out as a blockquote, which read as a quotation. Corrected 2026-11-17: the paraphrase is now plain text and the court's words are quoted separately.)
 
 Where the use is constitutionally protected speech under s 16 of the Constitution — including parody, criticism, commentary, and similar expressive use — the court must conduct a constitutional balancing exercise: the proprietor's commercial interest in the integrity of its mark on the one side; the speaker's right to engage in expressive use on the other.
 
@@ -50,8 +60,8 @@ The site's "AboutSection" lists this constitutional balancing as part of its leg
 
 > "In *Laugh It Off v SAB* [2005] ZACC 7 the Constitutional Court held that a trade mark proprietor must prove likely substantial economic detriment — mere offence isn't enough — and expressive use is balanced against freedom of expression."
 
-That paraphrase aligns with the operative effect of the judgment. To upgrade to direct verbatim, fetch the SAFLII page.
+That paraphrase matches paras 50 and 56 quoted above.
 
 ## Status
 
-Full judgment text not yet mirrored. Primary source: https://www.saflii.org/za/cases/ZACC/2005/7.html. Operative effect summarised verbatim-equivalent above.
+Full judgment text not mirrored; the paragraphs relied on are quoted above. Primary source: https://www.saflii.org/za/cases/ZACC/2005/7.html, read 2026-11-17 through the Wayback capture of 30 October 2026 (raw capture kept on file).

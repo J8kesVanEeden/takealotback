@@ -8,7 +8,10 @@ wayback_url_dated: "https://web.archive.org/web/20260702061346/https://www.safli
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACGSO/2021/11.html"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
 metaDescription: "CGSO Advisory Note 11: voetstoots ('as-is') clauses do not survive the CPA — suppliers cannot contract out of the s 55/56 quality warranty."
-retrieved: "2026-11-10"
+retrieved: "2026-11-17"
+reverified_on: "2026-11-17"
+corrected_on: "2026-11-17"
+correction_note: "The file had no verbatim text and its carve-out list was presented as the CGSO's published statement. Paras 1.5, 1.6, 3.8, 3.13, 4.1 and 5.1 are now quoted verbatim. The s 55(6) carve-out omitted \"or knowingly acted in a manner consistent with accepting the goods in that condition\"; the auction carve-out was tied to CPA s 45, which the Note does not cite; and the juristic-person carve-out is stated as the Note words it, alongside the statute's own test (s 5(2)(b): asset value or annual turnover equals or exceeds the s 6 threshold)."
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
 copyright: "No copyright — published by an accredited Ombud established under CPA s 82"
@@ -21,19 +24,30 @@ copyright: "No copyright — published by an accredited Ombud established under 
 
 A voetstoots ("as-is") clause cannot disclaim the CPA's quality warranty for transactions where the buyer is a CPA consumer. Any contractual voetstoots wording is **void to the extent it would waive s 55 / s 56 protections** — voetstoots is dead against consumers under the CPA.
 
-## Operative position
+## What the Note says (verbatim, SAFLII text)
 
-The CGSO's published statement on voetstoots is that:
+Read 2026-11-17 from the SAFLII page through the Wayback capture of 2 July 2026 (raw capture kept on file; SAFLII itself returns a Cloudflare challenge to automated clients). Footnote markers removed.
 
-- s 51 of the CPA renders void any term that purports to waive a right conferred by the Act.
-- s 56 (the implied warranty of quality) is a CPA right that cannot be waived.
-- A voetstoots clause attempting to do so is therefore unenforceable against a CPA consumer.
+> 1.5 "The issue of whether Voetstoots clauses apply to consumer transaction that the CPA applies to, has been put to rest by the National Consumer Tribunal which has ruled not only that a voetstoots sale, whereby the supplier is able to sell goods without any form of liability for any defects, whether patent or latent, whatsoever is not applicable to any transactions falling under the CPA, but also that the use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act."
 
-Voetstoots survives only in narrow non-CPA contexts:
-- (a) genuine auction sales (CPA s 45);
-- (b) goods materially altered after they left the supplier's control;
-- (c) the s 55(6) scenario where a specific implied condition was expressly drawn to the consumer's attention and expressly accepted on that basis;
-- (d) transactions outside CPA scope (e.g. juristic persons above the s 5(2) R 2m threshold, private once-off sales between non-suppliers).
+> 1.6 "The only exceptions are where the goods are sold by auction, where the goods have been altered after the sale and where the consumer has been expressly informed that particular goods were offered in a specific condition and has either expressly agreed to accept the goods in that condition, or knowingly acted in a manner consistent with accepting the goods in that condition. In the latter situation, it would generally be necessary for the supplier to have described the defects with some particularity."
+
+> 3.13 "Suppliers should also note that, section 55(6) does not safeguard the supplier against all claims relating to post-purchase quality issues. It only qualifies the first two of the four standards listed in section (55)(2). It will always be open to a consumer to claim that the goods were not useable or durable for a reasonable period of time or that they did not meet other statutory requirements. This right cannot be excluded."
+
+> 4.1 "National Consumer Commission v Western Car Sales CC t/a Western Car Sales (NCT/81554/2017/73(2)(b)) [2017] ZANCT 102 (14 September 2017) 35. The concept of a "voetstoots" sale, whereby the supplier is able to sell goods without any form of liability for any defects, whether patent or latent, whatsoever is therefore not applicable to any transactions falling under the CPA."
+
+> 5.1 "The Consumer Protection Act (CPA) has put a limitation on the application of the "voetstoots" clause …However, this only applies in instances where transactions find application under the CPA. There are two important stipulations. i. The first being that the CPA only applies to transactions which are decided in the ordinary course of the suppliers' business. ii. Secondly, where the purchaser or "consumer" is an entity with a yearly turnover exceeding R2 million, the CPA shall have no application."
+
+The Note's reasoning runs through s 51(1)(b) (a term may not "waive or deprive a consumer of a right in terms of this Act") and s 55(2) (para 3.6–3.8).
+
+## Where voetstoots can still operate — our summary of paras 1.6 and 5.1
+
+- goods sold by auction (para 1.6);
+- goods altered after the sale (para 1.6);
+- the s 55(6) situation: the consumer was expressly informed that particular goods were offered in a specific condition and expressly agreed to accept them in that condition, **or knowingly acted in a manner consistent with accepting the goods in that condition** (para 1.6; CPA s 55(6)(b)). Even then s 55(6) only qualifies s 55(2)(a) and (b), not durability (para 3.13);
+- transactions outside the CPA: not in the ordinary course of the supplier's business (para 5.1(i)), or a buyer that is a juristic person at or above the Minister's threshold. The Note words this as "an entity with a yearly turnover exceeding R2 million" (para 5.1(ii)); the Act's test is a juristic-person consumer "whose asset value or annual turnover, at the time of the transaction, equals or exceeds the threshold value determined by the Minister in terms of section 6" (s 5(2)(b)). The R2 million figure itself is not yet in a citation file.
+
+(An earlier version of this section presented an unquoted carve-out list as "the CGSO's published statement", tied the auction carve-out to CPA s 45 (the Note does not cite s 45), described altered goods as altered "after they left the supplier's control" (the Note says "altered after the sale"), and stated the s 55(6) carve-out without "or knowingly acted in a manner consistent with accepting the goods in that condition". Corrected 2026-11-17.)
 
 ## Aligned with judicial authority
 
@@ -51,4 +65,4 @@ Voetstoots survives only in narrow non-CPA contexts:
 
 ## Status
 
-The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page (fetched 2026-11-10) reads: *"Advisory Notes are under review, they will be reuploaded once the review is completed."* Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII as [2021] ZACGSO 11 (SAFLII title: "Advisory note 11: Supply of Voetstoots Goods [2021] ZACGSO 11 (1 March 2021)"), which is the copy relied on here. Re-verified live on SAFLII 2026-11-10.
+The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page still reads, on 2026-11-17 (fetched live): *"Advisory Notes are under review, they will be reuploaded once the review is completed."* (raw capture kept on file). Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII as [2021] ZACGSO 11 (SAFLII title: "Advisory note 11: Supply of Voetstoots Goods [2021] ZACGSO 11 (1 March 2021)"), which is the copy relied on here. Cite it as the CGSO's published 2021 view, withdrawn from the CGSO site pending review, not as current CGSO guidance. A revised CGSO Code (GN 4264, GG 55719) takes effect on 1 December 2026; the Notes have not been re-issued under it as of 2026-11-17.

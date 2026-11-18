@@ -9,7 +9,9 @@ wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZASC
 lawlibrary_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/1993/90"
 commentary_url: "https://blogs.sun.ac.za/iplaw/files/2012/08/Case-Comment-South-Africa-Copyright-parallel-importation-of-artistic-works-Frank-Hirsch-v-Roopanand-a-Brothers.pdf"
 metaDescription: "Appellate Division 1993: separate SA copyright in packaging can block parallel imports even where TMA s 34(2)(d) would otherwise allow them."
-retrieved: "2026-04-25"
+wayback_url_dated: "https://web.archive.org/web/20261110161950/https://www.saflii.org/za/cases/ZASCA/1993/90.html"
+retrieved: "2026-11-17"
+reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) Frank & Hirsch angle"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
@@ -27,15 +29,23 @@ In other words: a parallel import that escapes trade-mark infringement under s 3
 ## Facts
 
 - Frank & Hirsch was the SA exclusive distributor of TDK blank audio cassette tapes since 1974.
-- Roopanand Brothers acquired TDK tapes from a third party in Singapore (which had got them from TDK Electronics Co Ltd of Japan) and imported them into SA — parallel imports / "grey goods."
+- Roopanand Brothers imported TDK tapes into SA — parallel imports / "grey goods". In the judgment's words, it "obtains its supplies of TDK tapes from Dialdas and Co of Singapore, which in turn acquires them from Hock Cheong and Co, also of Singapore and the authorized dealer appointed by TDK Electronics in Singapore."
 - The TDK tapes carried TDK's registered trade marks. Frank & Hirsch's earlier trade-mark action against the parallel imports (under the then Trade Marks Act 62 of 1963, with an alternative Merchandise Marks Act claim) had been dismissed: *Frank & Hirsch (Pty) Ltd v Roopanand Brothers* 1987 (3) SA 165 (D & CLD). (The 1993 Act and its s 34(2)(d) did not yet exist; the case is cited on the site as the copyright analogue of today's s 34(2)(d) exhaustion position.) Correction 2026-11-10: an earlier version said TMA s 34(2)(d) "appeared to permit" the imports.
 - However, on 4 June 1987, TDK Electronics had assigned to Frank & Hirsch *the copyright* in the literary and artistic works comprised in the get-up and trade dress of TDK tapes (the wrappers and printed inserts) by deed of assignment in Japan.
 
-## Held (Appellate Division)
+## Held (Appellate Division, Corbett CJ, unanimous)
 
-- The wrapper and printed inserts of TDK tapes constitute **artistic works** protected under SA copyright law.
-- Frank & Hirsch, as the assignee of the SA copyright, could enforce that copyright against parallel importers — independently of any trade-mark issue.
-- The Court granted Frank & Hirsch an **interdict** restraining Roopanand from trading in the grey TDK tapes bearing the offending get-up, plus a delivery-up order for any infringing material.
+- The court a quo (Booysen J, reported as 1991 (3) SA 240 (D & CLD)) had dismissed the copyright application. The AD allowed the appeal.
+- The cellophane wrapper and the first insert of the TDK D60 tapes contain original **artistic work** protected by the Copyright Act 98 of 1978 (as it read before the 1992 amendments). The court did not decide the literary-work point, and no order was made for the cassette itself, whose printing "is not separable from the cassette".
+- Frank & Hirsch, as assignee of the SA copyright, could enforce it against the parallel importer, independently of the trade-mark position.
+
+The order (verbatim):
+
+> "(1) The appeal is allowed with costs, including those occasioned by the employment of two counsel. (2) The order of the Court a quo is set aside and the following order is substituted: 'It is ordered: (a) That respondent is interdicted from infringing the applicant's copyright in the get-up (consisting of the cellophane wrapper and the first insert) of TDK D60 audio cassette tapes (hereafter referred to as the "subject works") by: (i) importing into the Republic of South Africa audio tapes in the get-up of which copies of the subject works appear; and/or (ii) selling, exposing for sale or distributing for trade audiotapes in the get-up of which copies of the subject works appear; (b) that respondent deliver up to the applicant for destruction all copies of the subject works which are in their possession or under their control; and (c) that respondent pay the costs of suit, including the costs of two counsel.'"
+
+(SAFLII page-number artefacts removed. Read 2026-11-17 through the Wayback capture of 10 November 2026; raw text raw capture kept on file.)
+
+(An earlier version of this file said the court held that "the wrapper and printed inserts" are artistic works and ordered delivery-up of "any infringing material". The order is limited to the cellophane wrapper and the first insert of TDK D60 tapes, and to delivery-up of copies of those works. Corrected 2026-11-17.)
 
 ## Operative principle
 
@@ -56,4 +66,4 @@ The angle is structurally important: even in a "you can sell your own property" 
 
 ## Status
 
-Available on SAFLII as `[1993] ZASCA 90` and on LawLibrary. Operative effect summarised from primary citation index + Stellenbosch IP-law commentary on the case (PDF link in frontmatter). Verbatim text fillable from SAFLII on next refresh.
+Available on SAFLII as `[1993] ZASCA 90` and on LawLibrary. Facts and holding re-checked against the SAFLII text on 2026-11-17 (Wayback capture 20261110161950); the order is quoted verbatim above.

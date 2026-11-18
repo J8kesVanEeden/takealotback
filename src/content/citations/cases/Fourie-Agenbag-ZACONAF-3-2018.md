@@ -10,10 +10,11 @@ parties:
   defendant: "Agenbag Motor Group CC"
 primary_url: "https://www.saflii.org/za/cases/ZACONAF/2018/3.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACONAF/2018/3.html"
+wayback_url_dated: "https://web.archive.org/web/20261110161925/https://www.saflii.org/za/cases/ZACONAF/2018/3.html"
 pdf_url: "https://www.saflii.org/za/cases/ZACONAF/2018/3.pdf"
 metaDescription: "North West Consumer Affairs Court 2018: no defects were disclosed (s 55(6)), so the dealer's voetstoots clause was of no force or effect; full R35,000 refund ordered."
 retrieved: "2026-04-24"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section (attributed to NW Consumer Affairs Court, not NCT)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"

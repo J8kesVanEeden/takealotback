@@ -4,10 +4,13 @@ citation: "Stuff South Africa, 26 January 2024"
 court_or_publisher: "Toby Shapshak (Editor-in-Chief, Stuff South Africa)"
 date: "2024-01-26"
 primary_url: "https://stuff.co.za/2024/01/26/takealot-refused-my-return-amazon-eat-lunch/"
-wayback_url_dated: "https://web.archive.org/web/20260507170757/https://stuff.co.za/2024/01/26/takealot-refused-my-return-amazon-eat-lunch/"
+wayback_url_dated: "https://web.archive.org/web/20261117210733/https://stuff.co.za/2024/01/26/takealot-refused-my-return-amazon-eat-lunch/"
+wayback_url_earlier: "https://web.archive.org/web/20260507170757/https://stuff.co.za/2024/01/26/takealot-refused-my-return-amazon-eat-lunch/"
 metaDescription: "Shapshak returned an unopened Lego box; Takealot rejected the return because he'd written the return code on the brown delivery box. Original return email had different T&Cs from rejection email."
 retrieved: "2026-05-07"
-reverified_on: "2026-11-10"
+corrected_on: "2026-11-17"
+correction_note: "The escalation quote opened with 'It turns out Takealot called' and closed Takealot's message after its first sentence; the article reads 'After I finished writing this, Takealot called' and the message has a second sentence. Quote restored verbatim 2026-11-17."
+reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
 wayback_status: "Wayback capture 20260507170757 holds the full article text (checked 2026-11-10)."
 disclosure: "Stuff South Africa is editorially independent of Takealot's parent company. Toby Shapshak is the publication's Editor-in-Chief and a Forbes senior contributor; he writes about technology and was the subject of the case as well as its reporter."
@@ -56,7 +59,11 @@ The rejection email contained a longer, different list of T&Cs which had not app
 
 > "I cc'd consumer journalist Wendy Knowler. She was just as bemused as I was at the bizarre refusal justification."
 >
-> "It turns out Takealot called and emailed to say: 'I have been requested by management to contact you and let you know that the complaint related to the decline of your return has our full attention.' That took 10 days from my original email and I am sure the only reason I got a response is because of my title in my email signature – and that I CC'd Wendy Knowler."
+> "After I finished writing this, Takealot called and emailed to say: 'I have been requested by management to contact you and let you know that the complaint related to the decline of your return has our full attention. We will be in contact with you to advise you on the resolution as soon as we receive feedback.'"
+>
+> "That took 10 days from my original email and I am sure the only reason I got a response is because of my title in my email signature – and that I CC'd Wendy Knowler."
+
+(An earlier version of this file began the first quotation "It turns out Takealot called" and ended Takealot's message after its first sentence. The article, in an "Update" at its foot, reads "After I finished writing this, Takealot called", and the message continues "We will be in contact with you to advise you on the resolution as soon as we receive feedback." Corrected 2026-11-17.)
 
 ## Site reliance
 
@@ -65,4 +72,6 @@ The rejection email contained a longer, different list of T&Cs which had not app
 
 ## Wayback / archive status
 
-Wayback availability not yet confirmed at retrieval time. Re-attempt SPN archive on next refresh; Stuff South Africa is not bot-blocked the way News24 is, so SPN should succeed.
+Wayback capture [20260507170757](https://web.archive.org/web/20260507170757/https://stuff.co.za/2024/01/26/takealot-refused-my-return-amazon-eat-lunch/) holds the full article text (checked 2026-11-10). Every quotation above was re-checked against the live article (Stuff, HTTP 200) on 2026-11-17.
+
+(Until 2026-11-17 this section said no snapshot existed or that one was pending, which contradicted the `wayback_status` field above.)

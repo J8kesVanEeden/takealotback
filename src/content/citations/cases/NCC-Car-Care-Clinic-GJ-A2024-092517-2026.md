@@ -18,7 +18,7 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 Judgment by Ben-Zeev AJ, Du Plessis J concurring. Marked "REPORTABLE: Yes". The Tribunal had dismissed a referral as time-barred under s 116(1). On appeal the High Court set that aside and remitted the matter.
 
-**Source note:** at 2026-11-10 the judgment was not yet in SAFLII's ZAGPJHC 2026 index (checked). The copy relied on is the full signed judgment PDF published by a trade-newsletter site (primary_url), archived on the Wayback Machine on 2026-06-16. Replace with the SAFLII citation once published.
+**Source note:** at 2026-11-10 the judgment was not yet in SAFLII's ZAGPJHC 2026 index (checked). The copy relied on is the full signed judgment PDF published by a trade-newsletter site (primary_url), archived on the Wayback Machine on 2026-06-16. Replace with the SAFLII citation once published. Re-checked 2026-11-17: no neutral citation found. SAFLII's ZAGPJHC 2026 index could not be opened (Cloudflare challenge; a Wayback save of the index returned 520; the latest Wayback capture of the index is from 11 July 2026), and web searches for the case turn up only the NCC and Moonstone coverage and the PDF.
 
 ## Proposition cited on the site
 

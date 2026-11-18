@@ -31,7 +31,15 @@ The aedilitian remedies are therefore available in **two broad classes** of case
 1. **Latent-defect cases** — the *res vendita* had a hidden defect at the time of sale. The three-part test (hidden / present at sale / material) is in *Dibley v Furter* and *Glaston House v Inag*.
 2. **Dicta et promissa cases** — *Phame v Paizes*. The seller made a material affirmative statement during negotiations on the faith of which the buyer entered the contract or agreed to the price; the statement turned out to be unfounded.
 
-## Facts in summary
+## Verified through the SCA (2026-11-17)
+
+*Van Niekerk v FirstRand* [2025] ZASCA 187 para 13 quotes *Phame* at 416H–417A:
+
+> "(i) If there is a latent defect, at the time of the sale ipso facto the aedilitian remedy is available (unless excluded by agreement). The seller's obligation and the buyer's right arise by operation of law, and not by reference to the intention of the parties. … Nor does the buyer have to aver and prove a breach of a term of the contract…. (ii) Similarly, if during the negotiations the seller made a dictum et promissum bearing on the quality of the res vendita and it falls short of it, ipso facto the aedilitian remedy is available, by operation of law. There is no need to invoke any warranty or term or to aver the breach of either. Indeed, that is one of the reasons why the aedilitian remedy is useful to buyers…"
+
+So *Phame* is authority for both classes: latent defects (i) and *dicta et promissa* (ii). See [Van-Niekerk-FirstRand-ZASCA-187-2025.md](./Van-Niekerk-FirstRand-ZASCA-187-2025.md).
+
+## Facts in summary (secondary source; not verified against the judgment)
 
 The plaintiff negotiated with the defendant in October 1970 to purchase the defendant's shareholding in, and certain claims against, a company. The principal asset of the company was an immovable property which was rent-producing. To the defendant's knowledge, the plaintiff was interested in the purchase because of the income derived from the property. Statements were made about that income during the negotiations.
 
@@ -39,7 +47,9 @@ The plaintiff negotiated with the defendant in October 1970 to purchase the defe
 
 `src/content/pages/aedilitian-remedies.md` references the *Phame* family in the three-part-test paragraph, with the corrected attribution applied on 2026-04-24:
 
-> "The test, worked out across the line of cases applying the aedilitian rules (see *Dibley v Furter* 1951 (4) SA 73 (C) and *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) for the canonical restatements; *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the family to *dicta et promissa*), is three-part."
+> "The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C)). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:"
+
+(Page wording as revised in the 2026-11-17 round; the earlier wording named *Dibley* and *Glaston House* as "the canonical restatements" of the test.)
 
 Earlier site copy attributed the three-part test directly to *Phame*; that was a misattribution corrected after the April 2026 accuracy review.
 
@@ -51,4 +61,4 @@ Earlier site copy attributed the three-part test directly to *Phame*; that was a
 
 ## Status
 
-Operative effect summarised from the SA Law of Sale literature citing the judgment. Not on SAFLII (pre-digital). Verbatim text in SALR physical reports only.
+Operative effect summarised from the SA Law of Sale literature citing the judgment, plus the 416H–417A passage verified through *Van Niekerk* para 13 (added 2026-11-17). Not on SAFLII (pre-digital); no online text found 2026-11-17. Verbatim text in SALR physical reports only.

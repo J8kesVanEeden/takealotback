@@ -7,8 +7,12 @@ case_number: "18096/2017"
 judge: "Strijdom AJ"
 primary_url: "https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html"
+wayback_url_dated: "https://web.archive.org/web/20261110163917/https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html"
 metaDescription: "Gauteng High Court 2021: CGSO participation is compulsory for suppliers under CPA s 82's Code of Conduct. Authority for forcing retailer engagement."
-retrieved: "2026-04-24"
+retrieved: "2026-11-17"
+reverified_on: "2026-11-17"
+corrected_on: "2026-11-17"
+correction_note: "The file said Voltex refused levies of ~R285,000 annually; the judgment (para 12) refers to repayment of the R285 000.00 fee already paid. The file also said the court confirmed the levies were lawfully collected and Voltex was an electrical wholesaler; the order (para 75) grants the declaratory prayers and dismisses both counter-applications, and the judgment does not describe Voltex's business. Key paragraphs now quoted verbatim."
 used_in:
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory)"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) CGSO angle"
@@ -23,14 +27,34 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 The site cites Voltex for the proposition that **participation in the CGSO is compulsory** for qualifying suppliers under the Consumer Goods and Services Industry Code of Conduct, which was gazetted under CPA s 82 in March 2015.
 
-## Facts
+## Facts (re-checked against the judgment 2026-11-17)
 
-- Voltex, an electrical wholesaler, refused to pay the CGSO's annual supplier levies (~R285,000 annually at the time) and demanded a refund of levies previously paid.
-- CGSO sought a declaratory order from the High Court confirming that the Industry Code is binding on all suppliers in the consumer-goods-and-services sector and that Voltex's levies had been lawfully collected.
+- The Ombud (CGSO NPC and the Ombudsman) applied for declaratory relief to "vindicate the provisions of the Consumer Goods and Services Industry Code" because "industry suppliers are not complying with its provisions" (para 1).
+- Voltex (first respondent) counter-applied "for repayment of the levies thus far paid to the Ombud in terms of the Code" (para 2.1); one issue was "whether or not the first respondent is entitled to repayment of the R285 000.00 fee already paid by it to the first applicant" (para 12). Astral Operations (fourth respondent) counter-applied to have the Code struck down (para 2.2).
+- The Code: "Publication of the final version of the Consumer Goods Services Industry Code in the Government Gazette 38637 by way of Notice No GNR 271 on 30 March 2015" (para 3.3); "The Code came into operation on the 29 April 2015" (para 3.4); the Minister published it under s 82 of the CPA (para 3.5).
 
-## Held
+## Held — paras 72 and 75 (verbatim)
 
-The court granted CGSO the declaratory order sought. The Code is a binding regulatory instrument made under CPA s 82; suppliers in the sector cannot opt out of participation or levies.
+> 72. In conclusion I am of the view that a proper case has been made out by the applicants for a declaratory order based on the following primary findings;
+> 72.1 The jurisdictional prerequisites are established on the evidence before me;
+> 72.2 The code is not irrational or unreasonable;
+> 72.3 The power to levy a fee is not ultra vires the Ministers' powers under the CPA·
+> 72.4 The decision is not vitiated by irrelevant considerations;
+> 72.5 The power to levy a fee is necessary and incidental;
+> 72.6 The code is mandatory for all suppliers belonging to the industry;
+
+> 75. In the result, the following order is made:
+> 75.1 A declaratory order is granted with prayers 1,2,3,4,5,6 and 7.1, 7.2 and 8 of the amended notice of motion.
+> 75.2 The counter-application of the first respondent is dismissed with costs.
+> 75.3 The counter-application of the fourth respondent is dismissed with costs.
+
+Source: SAFLII text read through the Wayback capture of 10 November 2026 (raw capture kept on file); SAFLII itself returns a Cloudflare challenge to automated clients.
+
+(An earlier version of this file said Voltex, "an electrical wholesaler", refused levies of "~R285,000 annually", and that the court confirmed the levies "had been lawfully collected". The judgment speaks of "the R285 000.00 fee already paid" (para 12), does not describe Voltex's business, and its order is the declaratory relief in para 75. Corrected 2026-11-17.)
+
+## The 2015 Code is being replaced (noted 2026-11-17)
+
+Voltex is about the 2015 Code (GNR 271, GG 38637). The Minister has published a revised Consumer Goods and Services Industry Code of Conduct, 2026 (General Notice 4264, Government Gazette 55719, 11 November 2026). The NCC and CGSO joint release of 12 November 2026 says it "replaces the 2015 Code as of 1 December 2026" (raw capture kept on file). Voltex's reasoning (a s 82 code binds every supplier in the industry) still describes how an accredited industry code works, but from 1 December 2026 the instrument it is applied to is the 2026 Code.
 
 ## Why we cite it
 
@@ -43,4 +67,4 @@ Voltex is the case that converts "CGSO is an Ombud" into "CGSO is a **compulsory
 
 ## Full judgment text
 
-Not yet mirrored in this file. Primary source: https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html
+Not mirrored in full; the paragraphs relied on are quoted above. Primary source: https://www.saflii.org/za/cases/ZAGPPHC/2021/309.html

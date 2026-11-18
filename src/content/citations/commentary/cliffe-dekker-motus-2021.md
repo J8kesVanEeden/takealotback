@@ -4,9 +4,10 @@ publication: "Cliffe Dekker Hofmeyr (Corporate & Commercial Alert)"
 date: "2021-06-23"
 primary_url: "https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
 wayback_url: "https://web.archive.org/web/*/https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
+wayback_url_dated: "https://web.archive.org/web/20261117210830/https://www.cliffedekkerhofmeyr.com/en/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
 metaDescription: "Cliffe Dekker Hofmeyr commentary on Motus v Wentzel (2021): treats the SCA's s 69(d) discussion as obiter — corroborates the site's framing."
 retrieved: "2026-04-24"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus angle — supports the obiter characterisation of s 69(d) reading"
 copyright: "Cliffe Dekker Hofmeyr. Short excerpt / summary only — fair dealing under s 12(1)(a) Copyright Act."
@@ -17,5 +18,11 @@ copyright: "Cliffe Dekker Hofmeyr. Short excerpt / summary only — fair dealing
 Full content not reproduced (publisher copyright). Short summary:
 
 The article analyses the SCA's decision in *Motus Corporation v Wentzel* [2021] ZASCA 40, focusing on s 56 of the CPA (the statutory warranty) rather than s 69 (enforcement). On s 69(d), CDH treats the SCA's discussion as guidance only — corroborating the site's obiter framing.
+
+Re-checked against the live page 2026-11-17 (the URL now redirects to the `/en/news/publications/...` path; the page is dated 22 Jun 2021, author Justine Krige). The one passage on s 69 reads, verbatim:
+
+> "On appeal, the SCA briefly considered the special pleas raised by Renault before proceeding to deal with the facts of the matter. In spite of the fact that the SCA did not hear the full argument in relation to the issue of internal remedies, it made a number of remarks about restricting a consumer's right to approach the court, given that this right is specifically entrenched in the Constitution, suggesting that it would likely have found that a failure to exhaust internal remedies does not oust the High Court's jurisdiction."
+
+CDH does not use the word "obiter"; it describes "remarks" made without full argument, which is the same characterisation.
 
 Use: if link rot takes the original URL down, archived copy can be fetched from web.archive.org.

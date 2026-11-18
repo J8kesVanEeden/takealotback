@@ -4,10 +4,13 @@ citation: "News24, Consumer Lookout, 06 April 2025"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-04-06"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
-wayback_url_dated: "https://web.archive.org/web/20260507165447/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
+wayback_url_dated: "https://web.archive.org/web/20261117210406/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
+wayback_url_earlier: "https://web.archive.org/web/20260507165447/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
 metaDescription: "Knowler reports the Wales/Lenovo case: Takealot third-party seller wouldn't issue an invoice, blocking a R23,000 laptop charger warranty claim. CGSO Lee Soobrathi quoted on intermediary obligations under the CPA + ECTA."
 retrieved: "2026-05-07"
-reverified_on: "2026-11-10"
+corrected_on: "2026-11-17"
+correction_note: "Three passages were set out as direct Takealot quotations but are partly or wholly Knowler's reported speech. Restored to the article's wording, with only Takealot's own words in quotation marks, 2026-11-17."
+reverified_on: "2026-11-17"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; copied into this file by the site editor."
 wayback_status: "Wayback capture 20260507165447 holds the full article text (checked 2026-11-10)."
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Disclosed for transparency."
@@ -36,7 +39,7 @@ The article — published one year after Wales's purchase — establishes the ma
 
 > "The third-party seller is solely responsible for fulfilment of delivery of the goods. The third-party seller is also responsible to provide an invoice to the registered user if required."
 
-> "As with all the products sold by independent third-party sellers on the Takealot platform, the sale takes place between a customer and the seller. We are therefore unfortunately not able to provide an invoice for the sale of the product."
+> As with all the products sold by independent third-party sellers on the Takealot platform, the company said, "the sale takes place between a customer and the seller. We are therefore unfortunately not able to provide an invoice for the sale of the product."
 
 ### CGSO Lee Soobrathi (extensively quoted)
 
@@ -52,9 +55,17 @@ The article — published one year after Wales's purchase — establishes the ma
 
 ### Takealot's vetting framing
 
-> "All third-party sellers had to go through a robust vetting process before they could start trading on the platform... Documentation and information was automatically checked and validated using a matrix of databases. SAPS and company registration records were also checked, and sellers' sources of supply were validated using previous invoice checks."
+> The company told News24 that all third-party sellers had to go through a robust vetting process before they could start trading on the platform.
+>
+> They were required to submit documentation and information, which was automatically checked and validated using a matrix of databases.
+>
+> SAPS and company registration records were also checked, and sellers' sources of supply were validated using previous invoice checks.
+>
+> "If the seller does not pass the checks and overall vetting process, they are not permitted to trade on Takealot."
+>
+> On the "rare" occasions when the checks and balances fail, Takealot said, "we assist customers as best possible".
 
-> "On the 'rare' occasions when the checks and balances fail, we assist customers as best possible."
+(An earlier version of this file put the first, third and fourth passages above entirely inside quotation marks, as if Takealot had said them. In the article the opening clause of the first and the whole vetting description are Knowler's reported speech; Takealot's own words are only those in quotation marks above. Corrected 2026-11-17.)
 
 ## Site reliance
 
@@ -63,4 +74,6 @@ The article — published one year after Wales's purchase — establishes the ma
 
 ## Wayback / archive status
 
-No Wayback Machine snapshot for this URL as of 2026-05-07. Verbatim text from authenticated subscription capture, 2026-05-07.
+Wayback capture [20260507165447](https://web.archive.org/web/20260507165447/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406) holds the full article text (checked 2026-11-10). Every quotation above was re-checked against the live article (News24, served in full without a login) on 2026-11-17.
+
+(Until 2026-11-17 this section said no snapshot existed or that one was pending, which contradicted the `wayback_status` field above.)

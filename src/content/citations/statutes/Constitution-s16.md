@@ -5,8 +5,11 @@ court_or_publisher: "Parliament of the Republic of South Africa"
 date: "1996-12-18"
 primary_url: "https://www.gov.za/documents/constitution-republic-south-africa-1996"
 wayback_url: "https://web.archive.org/web/*/https://www.gov.za/documents/constitution-republic-south-africa-1996"
+wayback_url_dated: "https://web.archive.org/web/20261117210040/https://www.gov.za/documents/constitution/chapter-2-bill-rights"
 metaDescription: "Section 16 of the SA Constitution — guarantees freedom of expression including non-commercial criticism, opinion, and commentary."
+secondary_url: "https://www.gov.za/documents/constitution/chapter-2-bill-rights"
 retrieved: "2026-04-24"
+reverified_on: "2026-11-17"
 used_in:
   - "src/components/AboutSection.astro — legal grounding block"
   - "src/components/Footer.astro — copyright row rationale for criticism/commentary"
@@ -16,7 +19,7 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 # Constitution of the RSA, 1996 — s 16
 
-## Verbatim text
+## Verbatim text (re-checked 2026-11-17 against the gov.za Chapter 2 text; unchanged)
 
 > **16. Freedom of expression**
 >
@@ -33,4 +36,6 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 ## Site reliance
 
-The site's non-commercial criticism/commentary framework rests on s 16(1)(b) and (d), balanced by the *Laugh It Off v SAB* [2005] ZACC 7 analysis (see [../cases/Laugh-It-Off-ZACC-7-2005.md](../cases/Laugh-It-Off-ZACC-7-2005.md)).
+The site's non-commercial criticism/commentary framework rests on the general right in s 16(1) and in particular s 16(1)(b) (freedom to receive or impart information or ideas), balanced by the *Laugh It Off v SAB* [2005] ZACC 7 analysis (see [../cases/Laugh-It-Off-ZACC-7-2005.md](../cases/Laugh-It-Off-ZACC-7-2005.md)).
+
+(An earlier version of this file also listed s 16(1)(d), academic freedom and freedom of scientific research, as a basis. The site is not academic or scientific work, so (d) was dropped. Corrected 2026-11-17.)

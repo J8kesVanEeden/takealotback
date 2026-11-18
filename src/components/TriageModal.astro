@@ -143,16 +143,16 @@ const slugMapJson = JSON.stringify(slugMap)
           { label: "Wrong product entirely (substitution)", go: "substitution" },
           { label: "Recalled product", go: "recall" },
           { label: "Refund / credit dispute", go: "refund" },
-          { label: "Order cancelled by Takealot", go: "cancel" },
+          { label: "Order cancelled, late or never arrived", go: "cancel" },
           { label: "Return refused on a technicality", go: "refused" },
           { label: "Something else", go: "other" },
         ],
       },
       defective: {
-        q: "When did it fail?",
+        q: "Which fits best?",
         opts: [
-          { label: "Within 6 months", result: { clause: "01", tpl: "T01", note: "Pure CPA s56. You elect repair / replace / refund. Retailer liable regardless of manufacturer." } },
-          { label: "Between 6 and 24 months", result: { clause: "07", tpl: "T13", note: "CPA s55(2)(c) durability + s41 if warranty advertised. Pursue both retailer and manufacturer." } },
+          { label: "Delivered less than 6 months ago", result: { clause: "01", tpl: "T01", note: "CPA s 56(2): return it within 6 months of delivery and you elect repair, replacement or refund. The retailer is liable regardless of the manufacturer." } },
+          { label: "Delivered more than 6 months ago", result: { clause: "07", tpl: "T13", note: "Past the s 56 return window. CPA s55(2)(c) durability + s41 if a warranty was advertised; the common-law aedilitian remedies may also apply. Pursue both retailer and manufacturer. If a warranty was advertised, use T13; if not, see /aedilitian-remedies." } },
           { label: "It's a data-storage device", result: { clause: "04", tpl: "T04", note: "Factory-reset. Refuse live credentials. POPIA is on your side." } },
           { label: "It's part of a bundle", result: { clause: "05", tpl: "T05", note: "CPA s56 + s53(1)(a). A defect in one component doesn't convert working components into defective goods." } },
         ],
@@ -161,14 +161,15 @@ const slugMapJson = JSON.stringify(slugMap)
         q: "Which one?",
         opts: [
           { label: "Wrong item / damaged on delivery", result: { clause: "01", tpl: "T01", note: "ECT s 46 / CPA s 56. Log within 30 days, but assert s 56 if it's a defect." } },
-          { label: "Missing part of a set", result: { clause: "05", tpl: "T05", note: "Non-conforming delivery. Partial replacement is the lawful remedy." } },
+          { label: "Missing part of a set", result: { clause: "01", tpl: "T01", note: "Missing parts is one of Takealot's own 30-day return grounds. Report it in writing the day it arrives (Takealot has told the press missing components must be reported immediately on receipt; its returns policy allows 30 days) and log it as 'missing parts'." } },
+          { label: "Says delivered, never arrived", result: { clause: "18", tpl: "T10", note: "GPS shows where the driver was, not who got the parcel. Ask Takealot in writing for signed proof of delivery (T10's bracketed non-delivery paragraph). If it can't show delivery, treat the order as not delivered: ECT s 46 lets you give 7 days' written notice and then cancel for a full refund. Use T14 only once that has been refused." } },
         ],
       },
       substitution: {
         q: "What did you receive?",
         opts: [
           { label: "A materially different product (e.g. premium phone → calculator)", result: { clause: "21", tpl: "T17", note: "Non-performance of sale + CPA s55(2)(a) + s41 misrepresentation. This is restitution, not a return — don't accept procedural refusals on accessories or packaging." } },
-          { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "ECT s 44 (7-day cooling-off) / Takealot's 30-day window. Log within 30 days." } },
+          { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "If Takealot sent the wrong size or colour, that's a wrong-item delivery, not a change of mind: log it as 'Not What I Ordered' within Takealot's 30 days, and refuse it at the door if you can. If you ordered the wrong size yourself, ECT s 44 gives you 7 days from delivery, and Takealot's own change-of-mind window is 30 days (unused, in original packaging)." } },
         ],
       },
       recall: {
@@ -187,11 +188,12 @@ const slugMapJson = JSON.stringify(slugMap)
         ],
       },
       cancel: {
-        q: "Why did they say they cancelled?",
+        q: "What happened to the order?",
         opts: [
           { label: "Pricing error", result: { clause: "14", tpl: "T10", note: "Contract formed on order confirmation. A pricing-error cancellation is attackable under s 48 + Reg 44(3)(k); see CGSO Advisory Note 10. Claim the difference if you re-bought." } },
-          { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "CPA s 47(3): refund with interest plus costs directly incidental to the breach, unless the shortage was beyond Takealot's control." } },
-          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T10", note: "ECT s 46. Online orders run on a 30-day delivery deadline. After that, 7-day written notice, then cancel and demand your money back (s 46(3)'s 30-day refund deadline applies if Takealot says the item is unavailable). Your contract is with Takealot, not the courier." } },
+          { label: "Out of stock", result: { clause: "14", tpl: "T10", note: "CPA s 47(3): refund with interest, plus costs directly incidental to the breach unless the shortage was beyond Takealot's control and it took reasonable steps to tell you as soon as practicable (s 47(5))." } },
+          { label: "Late / silent non-delivery", result: { clause: "14", tpl: "T10", note: "ECT s 46: Takealot must deliver within 30 days or by the date it agreed. If it misses that, give 7 days' written notice, then cancel and demand your money back (s 46(3)'s 30-day refund deadline applies if Takealot says the item is unavailable). Your contract is with Takealot, not the courier. Use T10's bracketed non-delivery paragraph." } },
+          { label: "Paid for faster delivery and it came late", result: { clause: "14", tpl: "T19", note: "CPA s 54: delivery you paid for separately is a service. Ask for the premium back as a refund, not account credit." } },
           { label: "Other reason", result: { clause: "14", tpl: "T10", note: "Contract was formed on confirmation. Seek refund + difference." } },
         ],
       },
@@ -199,7 +201,8 @@ const slugMapJson = JSON.stringify(slugMap)
         q: "On what basis?",
         opts: [
           { label: "No original packaging", result: { clause: "02", tpl: "T02", note: "s56 doesn't require packaging. s51 voids policy waivers." } },
-          { label: "“Consumer damage” / surge / misuse", result: { clause: "03", tpl: "T03", note: "Takealot has to prove misuse (Edan Traders, 2026). Demand the technical report." } },
+          { label: "“Consumer damage” / surge / misuse", result: { clause: "03", tpl: "T03", note: "Takealot has to prove misuse (Toyota Randburg 2024, relied on in Edan Traders 2026). Demand the technical report." } },
+          { label: "Marked “non-returnable”", result: { clause: "10", tpl: "T01", note: "The s 42(2) carve-outs only remove the 7-day cooling-off. A defective item is still a s 56 return, and a “non-refundable” tag on an item outside s 42(2) doesn't remove the 7 days either." } },
           { label: "Deflected to manufacturer", result: { clause: "07", tpl: "T07", note: "s56(1) retailer liability is concurrent and non-delegable." } },
           { label: "Marketplace seller's fault", result: { clause: "15", tpl: "T11", note: "Platform has concurrent obligations. CGSO has jurisdiction." } },
           { label: "Charged a collection or re-delivery fee", result: { clause: "19", tpl: "T15", note: "CPA s56(2) puts defective returns at the supplier's risk and expense. Don't pay; challenge the fee." } },

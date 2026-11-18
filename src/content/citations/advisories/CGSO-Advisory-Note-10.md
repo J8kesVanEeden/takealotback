@@ -20,7 +20,7 @@ copyright: "No copyright — published by an accredited Ombud established under 
 
 ## Status of the Note
 
-Published by the CGSO on 1 March 2021 and still public on SAFLII ([2021] ZACGSO 10). The CGSO has since taken all its advisory notes off its own website: its advisory-notes page (fetched 2026-11-10) says *"Advisory Notes are under review, they will be reuploaded once the review is completed."* Treat this as the Ombud's 2021 published view, not current CGSO guidance.
+Published by the CGSO on 1 March 2021 and still public on SAFLII ([2021] ZACGSO 10). The CGSO has since taken all its advisory notes off its own website: its advisory-notes page (fetched 2026-11-10, and unchanged when fetched again on 2026-11-17) says *"Advisory Notes are under review, they will be reuploaded once the review is completed."* Treat this as the Ombud's 2021 published view, not current CGSO guidance.
 
 ## Verbatim extracts (SAFLII, opened 2026-11-10)
 
