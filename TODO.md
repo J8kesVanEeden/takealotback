@@ -135,11 +135,23 @@ These aren't "fix one thing" — they're guardrails that make future regressions
 
 ## Open — content strategy / future
 
-- [ ] Quarterly Takealot policy refresh (Q3 done 2026-07-01; Q4 done 2026-11-10, late; next: ~January 2027). Method that works: render the full DOM and diff like-for-like against the previous Wayback capture (see `_handoff/refresh-2026-11/A-policy-diff.md`).
+- [ ] Quarterly Takealot policy refresh (Q3 done 2026-07-01; Q4 done 2026-11-10, late; interim update scan 2026-11-17, PR #29; next: ~January 2027). Method that works: render the full DOM and diff like-for-like against the previous Wayback capture (see `_handoff/refresh-2026-11/A-policy-diff.md`).
 - [ ] Annual case-law refresh (next: ~April 2027) — re-verify SCA / Concourt decisions; check for any new judgments interpreting CPA s 56 / s 69
 - [ ] Annual regulator-details refresh
 - [x] Small Claims Court threshold: raised to **R30,000 from 1 Aug 2026** (GG 55038, GoN 7717; not R50,000). Site updated 2026-11-10. Lesson: the site carried the stale figure for 3 months, so check justice.gov.za/scc at every quarterly refresh, not only annually.
 - [ ] **Magistrates' Court thresholds** — currently quoted as District R200,000 / Regional R400,000 (last set by GG 2014). Re-verified 2026-11-10 against GoN 216/217 (GG 37477, 2014) and the DoJ notice lists to 26 Oct 2026: unchanged. Commentary suggests a possible raise to R400k district / R600k regional under review; check DoJ notices each quarter. Affects Clause 13 + ESCALATION T9 + LawSection Bodies card if updated.
+
+### Carried over from the 2026-11-17 update scan (record: `_handoff/refresh-2026-11-17/PROGRESS.md`, local only)
+
+- [ ] **CGSO after 1 Dec 2026:** the 2026 Code (GG 55719) takes effect. Re-check cgso.org.za/the-process for the new "60 days from start of investigation" wording; then the site's "both sides of 1 December" sentences (Clause 13, Clause 20, T14, T16, QH06, ESCALATION CGSO) can drop the 2015 half.
+- [ ] **SAFLII High Court / SCA sweep Oct–Nov 2026** not done: SAFLII's 2026 indexes show a Cloudflare "verify you are human" check to automated tools. Open in a normal browser: CPA ss 20/55/56/61/69/115/116 and ECT ss 42–46 judgments since 2026-10-01.
+- [ ] **NCC v RC Auto (NCT, 5 Nov 2026):** swap to the SAFLII neutral citation once listed; its Wayback capture failed twice (SPN rate limit), retry `npm run archive -- <pdf url>`.
+- [ ] **Paywalled News24 sources (6 files)** could not be re-verified on 2026-11-17 (paywall page only); they rest on the May 2026 subscription capture. Re-check with a login.
+- [ ] **SAFLII / LawLibrary / MyBroadband / Moneyweb Wayback captures** returned HTTP 520 on 2026-11-17; their files point at the earlier capture actually read. Retry.
+- [ ] **POPIA file** checked against the 2013 Gazette text only; check the consolidated Act for amendments.
+- [ ] **Pre-1995 cases** (Holmdene, Glaston House, Phame, Dibley) have no online text; summaries only.
+- [ ] **TakealotMORE** (DStv Premium free-trial converting to R99/month, MyBroadband 16 Nov 2026): possible FAQ; no legal hook found yet, terms page is a JS app.
+- [ ] **NCC Opt-Out Registry** opens to consumers May 2027 — consider an FAQ line then.
 
 ### Carried over from the 2026-11 refresh (record: `_handoff/refresh-2026-11/PROGRESS.md`, local only)
 
@@ -185,7 +197,7 @@ Each entry below would strengthen the citations vault but **needs primary-source
 These five rules are load-bearing — see [`OPERATIONS.md`](./OPERATIONS.md):
 
 1. Non-commercial absolute. No ads / affiliates / donations / tracking beyond CF Web Analytics.
-2. No contact form, no email on the site. Corrections via GitHub issues only.
+2. No contact form, no email address of our own on the site (third-party contact addresses stay). Corrections via GitHub issues only.
 3. Footer credit row = Milk Moon Studio only.
 4. Don't silently "fix" content in `src/data/content.ts`. Flag, don't edit.
 5. No Takealot branding (no blue, no logo).
