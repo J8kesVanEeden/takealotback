@@ -11,7 +11,7 @@ wayback_status: "Wayback capture 20260723080310 holds the article (EWN is not pa
 disclosure: "EWN and CapeTalk are Primedia outlets, independent of Takealot's Naspers parent. The article is EWN's write-up of Knowler's CapeTalk interview; Knowler is quoted, not the author."
 used_in:
   - "src/data/content.ts — CLAUSES[0] (time-limits) 'Davis couch (2026)' angle"
-copyright: "© EWN / Primedia. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© EWN / Primedia. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # EWN | Know your rights: Why a store's return policy isn't always the final word

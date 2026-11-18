@@ -11,7 +11,7 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[1] (original-packaging) 'CGSO case study' angle"
   - "src/data/content.ts — CLAUSES[18] (restocking-redelivery-fees) 'CGSO case study' angle"
-copyright: "Published by an accredited ombud for public information. Quoted for research, criticism and review under s 12(1)(a) Copyright Act 98 of 1978."
+copyright: "Published by an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 ---
 
 # CGSO Annual Report 2025/26

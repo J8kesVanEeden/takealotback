@@ -37,4 +37,4 @@ National Consumer Commission of South Africa
 
 ## Nature of body
 
-The NCC is the statutory enforcement body under CPA Chapter 7, responsible for investigating systemic contraventions, referring matters to the National Consumer Tribunal, and publishing guidelines. Individual disputes are typically referred back to the CGSO (for qualifying suppliers) or accredited alternative dispute-resolution agents.
+The NCC is the statutory body established by CPA s 85 (Chapter 5, "National consumer protection institutions"), with its enforcement functions in Chapter 6 ("Enforcement of Act", from s 99), responsible for investigating systemic contraventions, referring matters to the National Consumer Tribunal, and publishing guidelines. Individual disputes are typically referred back to the CGSO (for qualifying suppliers) or accredited alternative dispute-resolution agents. (Corrected 2026-11-18: this paragraph said the NCC sits under "CPA Chapter 7"; Chapter 7 is general provisions. Checked against the CPA table of contents, SAFLII consolidated text.)

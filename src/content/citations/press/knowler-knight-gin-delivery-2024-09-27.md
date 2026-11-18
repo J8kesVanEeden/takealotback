@@ -14,7 +14,7 @@ disclosure: "News24 (Media24) and Takealot share Naspers as ultimate parent. Dis
 used_in:
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) angle on late delivery + ECT s 46"
   - "src/data/content.ts — CLAUSES[17] (mis-returned-items) angle on courier deflection / GPS-without-signature"
-copyright: "© Media24 / News24. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Knowler — Knight late delivery

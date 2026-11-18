@@ -17,12 +17,12 @@ used_in:
   - "src/data/content.ts — every CLAUSES[*].takealot paraphrase"
   - "src/data/content.ts — POLICY_SUMMARY.returns"
   - "src/data/content.ts — FAQ (delivery fee on a cancelled order: 'Our returns are free!')"
-copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing for research / criticism / review per s 12(1)(a) Copyright Act 98 of 1978, in support of the commentary at takealotback.com."
+copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing for criticism / review per s 12(1)(b) Copyright Act 98 of 1978, in support of the commentary at takealotback.com."
 ---
 
 # Takealot Returns Policy — snapshot 2026-04-24
 
-Policy text is Takealot's copyrighted material. This file is a **dated reference snapshot** retained to support our commentary on the policy at takealotback.com. Use is fair dealing under Copyright Act s 12(1)(a) for research, criticism and review.
+Policy text is Takealot's copyrighted material. This file is a **dated reference snapshot** retained to support our commentary on the policy at takealotback.com. Use is fair dealing under Copyright Act s 12(1)(b) for criticism and review.
 
 ## Verified current clauses (as of 2026-04-24)
 
@@ -88,7 +88,7 @@ Wayback captures of this URL relied on, oldest first: [20260425123950](https://w
 
 ## Section-by-section live text (retrieved 2026-04-25)
 
-The following is the operative wording of the Returns Policy as fetched from `terms-and-policies.takealot.com` on 2026-04-25. Direct quotations are flagged with quotation marks; everything else is faithful paraphrase. Fair-dealing snapshot under Copyright Act s 12(1)(a).
+The following is the operative wording of the Returns Policy as fetched from `terms-and-policies.takealot.com` on 2026-04-25. Direct quotations are flagged with quotation marks; everything else is faithful paraphrase. Fair-dealing snapshot under Copyright Act s 12(1)(b) (criticism and review).
 
 ### Time Limits
 

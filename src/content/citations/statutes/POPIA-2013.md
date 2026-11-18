@@ -5,7 +5,7 @@ court_or_publisher: "Parliament of the Republic of South Africa"
 date: "2013-11-26"
 assented: "2013-11-19"
 gazette: "Government Gazette 37067, No. 912, 26 November 2013"
-commenced: "2021-07-01 (substantive provisions; some sections earlier)"
+commenced: "In stages: ss 1, 39-54, 112 and 113 on 2014-04-11; ss 2-38, 55-109, 111 and 114(1)-(3) on 2020-07-01; ss 110 and 114(4) on 2021-06-30 (SAFLII consolidated text, commencement note, captured 2026-11-10)"
 primary_url: "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf"
 wayback_url: "https://web.archive.org/web/*/https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf"
 wayback_url_dated: "https://web.archive.org/web/20261117205942/https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf"
@@ -29,6 +29,8 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 # Protection of Personal Information Act 4 of 2013
 
 **Status of this file:** ss 10 and 19 verbatim from the Act as published in Government Gazette 37067 (26 November 2013), read 2026-11-17 from the gov.za PDF (raw capture kept on file). This is the as-enacted text; the consolidated text on SAFLII and LawLibrary could not be opened from this machine (Cloudflare challenge), so amendments after 2013 were not checked here.
+
+**Commencement (corrected 2026-11-18).** The `commenced` field said "2021-07-01 (substantive provisions; some sections earlier)". SAFLII's consolidated text (captured 2026-11-10, raw capture kept on file) gives: ss 1, Chapter 5 Part A (ss 39–54), 112 and 113 from 11 April 2014; ss 2–38, 55–109, 111 and 114(1)–(3) from 1 July 2020; ss 110 and 114(4) from 30 June 2021. The sections the site relies on (ss 10, 19, 22 and 23) commenced on 1 July 2020.
 
 POPIA's eight Conditions for Lawful Processing of Personal Information are in Chapter 3, sections 8–25. The site relies on Condition 2 (s 10, Minimality) and Condition 7 (s 19, Security Safeguards).
 

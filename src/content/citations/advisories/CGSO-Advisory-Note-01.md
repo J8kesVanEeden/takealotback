@@ -8,7 +8,7 @@ wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACG
 wayback_url_dated: "https://web.archive.org/web/20260702061323/https://www.saflii.org/za/cases/ZACGSO/2021/1.html"
 saflii_pdf: "https://www.saflii.org/za/cases/ZACGSO/2021/1.pdf"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
-metaDescription: "CGSO Advisory Note 1 on defective goods: refund rights apply irrespective of store policy, and supplier inspection is acceptable only for a genuine reason with the item back within 7–10 days. It does not presume a defect existed at sale."
+metaDescription: "CGSO Advisory Note 1 (2021; withdrawn from the CGSO site pending review, still on SAFLII): refund rights apply whatever the store policy; inspection only for a genuine reason, item back within 7–10 days if sent away."
 retrieved: "2026-11-10"
 corrected_on: "2026-11-10"
 correction_note: "Until 2026-11-10 the site cited this Note as confirming that the onus is on the supplier within the 6-month s 56 window. The Note does not say that: para 9.2 records that the CPA does not presume a defect manifesting within 6 months existed at sale. The onus point is now cited to Edan Traders v NCT [2026] ZAGPJHC 386 (Full Court) and related judgments; this Note is cited only for what it says (paras 9.3 and 13.1). The cgso.org.za PDF link (now 404) was removed: the CGSO withdrew its Advisory Notes from its website pending review."

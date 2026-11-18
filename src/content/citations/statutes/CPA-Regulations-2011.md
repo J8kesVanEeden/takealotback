@@ -6,18 +6,22 @@ date: "2011-04-01"
 primary_url: "https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
 wayback_url: "https://web.archive.org/web/*/https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
 wayback_url_dated: "https://web.archive.org/web/20261117210220/https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
-metaDescription: "CPA Regulations 2011 (GN R293): contains Reg 44 — the grey list of presumptively unfair contract terms that bind every retailer including Takealot."
+metaDescription: "CPA Regulations 2011 (GN R293), Reg 44: an indicative, non-exhaustive grey list of terms presumed unfair in a business supplier's agreements with individual consumers. The presumption can be rebutted."
 retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
-  - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) Reg 44(3)(q) angle"
-  - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) Reg 44 reference"
-  - "src/data/content.ts — CLAUSES[11] (unilateral-changes) Reg 44 reference"
-  - "src/data/content.ts — CLAUSES[17] (mis-returned-items) Reg 44 reference"
+  - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'CPA Reg 44 + s 48' angle (Reg 44(3)(q) by analogy only; Reg 44(2)(b) non-exhaustive list)"
+  - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) Reg 44(3)(i) angle"
+  - "src/data/content.ts — CLAUSES[11] (unilateral-changes) Reg 44(3)(i) angle"
+  - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) s 48 read with Regulation 44"
+  - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'CPA s 48 + Reg 44(3)(k)' angle"
+  - "src/data/content.ts — CLAUSES[22] (sale-pricing) 'Cancelled, then relisted for more' angle (Reg 44(3)(k))"
+  - "src/data/content.ts — CLAUSES[17] (mis-returned-items) Reg 44(3)(b) angle"
   - "src/data/content.ts — CLAUSES[18] (restocking-redelivery-fees) Reg 44(3)(b) + 44(3)(g) angle"
-  - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) Reg 44 reference"
-  - "src/data/content.ts — TEMPLATES (T09, T15) Reg 44 references"
+  - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) Reg 44(3)(j) angle"
   - "src/data/content.ts — CLAUSES[23] (account-suspension) Reg 44(3)(l) and Reg 44(3)(g) angles"
+  - "src/data/content.ts — TEMPLATES T09 (Reg 44(3)(i)), T10 (Reg 44(3)(k)), T15 (Reg 44(3)(b) and (g))"
+  - "src/data/content.ts — LAW_SECTIONS CPA s 48 blurb (Regulation 44 lists presumptively unfair terms)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
@@ -135,14 +139,21 @@ A term of a consumer agreement subject to the provisions of subregulation (1) is
 
 ## How the site maps Reg 44(3) letters to clauses
 
+Reg 44(1) limits the presumption to agreements between a supplier acting for business purposes and an individual consumer acting wholly or mainly outside business. The list is "indicative only" and "non-exhaustive" (Reg 44(2)(a) and (b)): a listed term is presumed unfair, and the supplier can rebut the presumption.
+
 | Subsection | What it catches | Used on site |
 |---|---|---|
-| **44(3)(b)** | Excluding / restricting consumer's remedies against supplier's breach | Clause 19 (restocking fees) — shifting s 56(2) costs onto consumer |
-| **44(3)(g)** | Modifying risk distribution to consumer's detriment | Clause 19 — packaging-condition fee on defective return reallocates s 56(2)'s "supplier's risk and expense" |
-| **44(3)(i)** | Supplier unilaterally altering terms | Clause 11 (coupons), Clause 12 (unilateral changes), Template T09 |
-| **44(3)(q)** | Supplier retaining consumer payment without reciprocal consumer compensation | Clause 06 (credit expiry) — 3-year drop-dead on refund credit |
+| **44(3)(b)** | Excluding / restricting consumer's remedies against supplier's breach | Clause 18 (mis-returned items); Clause 19 (restocking / re-delivery fees) — shifting s 56(2) costs onto the consumer; Template T15 |
+| **44(3)(g)** | Modifying risk distribution to consumer's detriment | Clause 19 — packaging-condition fee on a defective return reallocates s 56(2)'s "supplier's risk and expense"; Template T15; Clause 24 (account suspension) — fraud risk put on the account holder |
+| **44(3)(i)** | Supplier unilaterally altering terms | Clause 11 (coupons), Clause 12 (unilateral changes), Template T09. Reg 44(4)(c)(iv) takes a term out of (i) where the supplier reserves the right to alter the conditions of an **open-ended** agreement, but only if the supplier "must forthwith inform the consumer thereof" and "the consumer is free to dissolve the agreement immediately". Clause 12's "CPA Reg 44" angle reasons through this carve-out: Takealot's clause allows changes "without giving you notice" (it says only that it will publish them on its platform), so the carve-out's conditions aren't met and the presumption stands. |
+| **44(3)(j)** | Supplier deciding whether goods conform to the agreement | Clause 20 (inspection and assessment) — Takealot's own inspection is evidence, not the final word |
+| **44(3)(k)** | Supplier terminating at will where the consumer has no same right | Clause 14 (order cancellation) — "for any reason" cancellation of a confirmed order; Clause 23 (sale pricing), relisting angle; Template T10 |
+| **44(3)(l)** | Supplier terminating an open-ended agreement without reasonable notice, except for the consumer's material breach | Clause 24 (account suspension and closure) |
+| **44(3)(q)** | Supplier keeping a consumer's payment where the **consumer** fails to conclude or perform, with no matching right for the consumer | Clause 06 cites it by analogy only; the credit-expiry argument is made under s 48 and Reg 44(2)(b) (list non-exhaustive) |
 
-Other Reg 44 subsections are referenced generally in clauses that invoke "the grey list" without a specific letter.
+Clause 13 (High Court jurisdiction) and the Law section's s 48 blurb refer to Regulation 44 generally, without a specific letter.
+
+(Table corrected 2026-11-18. It had no rows for (j), (k) and (l), left Clauses 18, 23 and 24 and Templates T10 and T15 out of the (b), (g) and (k) uses, described (q) as if it applied whenever a supplier keeps a payment (its trigger is the **consumer's** failure to conclude or perform), and gave the (i) row without the Reg 44(4)(c)(iv) open-ended-agreement carve-out quoted above. The description also said the grey list "bind[s] every retailer"; Reg 44(1) limits it to agreements with individual consumers, and the presumption is rebuttable.)
 
 ## Other regulations (not yet mirrored)
 

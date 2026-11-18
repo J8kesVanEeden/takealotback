@@ -16,6 +16,7 @@ correction_note: "The file presented the onus rule as Edan's own holding and sai
 used_in:
   - "src/data/content.ts — CLAUSES[2] (damage-exclusions) 'Edan Traders v NCT' angle"
   - "src/data/content.ts — TEMPLATES T03 body"
+  - "src/data/content.ts — TEMPLATES T16 body (rejection must identify the exclusion and the evidence for it)"
   - "src/content/pages/onus-of-proof.md — 'Inside the first 6 months' section"
   - "src/content/pages/aedilitian-remedies.md — 'Practical limits' section (onus within 6 months)"
 copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
@@ -48,5 +49,6 @@ In a defective-goods dispute under the CPA, **the consumer has to show that ther
 
 ## Site reliance
 
-- Clause 03 (damage exclusions), "Onus on supplier" (Clause 08 cites *Wingfield*, not Edan; corrected 2026-11-17): when Takealot rejects a return as wear and tear, consumer damage or a surge, it has to prove that; the consumer doesn't have to prove the cause of the fault.
+- Clause 03 (damage exclusions), "Edan Traders v NCT" angle (Clause 08 cites *Wingfield*, not Edan; corrected 2026-11-17; angle label corrected from "Onus on supplier" 2026-11-18): when Takealot rejects a return as wear and tear, consumer damage or a surge, it has to prove that; the consumer doesn't have to prove the cause of the fault.
+- Templates T03 and T16: cited as the Full Court that relied on *Toyota* for the supplier's onus to prove the exclusion it relies on.
 - `/onus-of-proof` deep-dive.

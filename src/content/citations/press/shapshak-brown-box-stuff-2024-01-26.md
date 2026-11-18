@@ -17,7 +17,7 @@ disclosure: "Stuff South Africa is editorially independent of Takealot's parent 
 used_in:
   - "src/data/content.ts — CLAUSES[1] (original-packaging) angle on delivery-box vs product-packaging"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) angle on shifting T&Cs within a single transaction"
-copyright: "© Stuff South Africa. Quoted under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+copyright: "© Stuff South Africa. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # Shapshak — brown box marked, return refused

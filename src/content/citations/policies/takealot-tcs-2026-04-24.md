@@ -25,7 +25,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[23] (account-suspension) 'Your credit is still yours' angle (gift voucher not exchangeable for cash)"
   - "src/data/content.ts — FAQ (Black Friday at Takealot)"
   - "src/components/PoliciesSection.astro — Registered entity block"
-copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(a) Copyright Act 98 of 1978 — research / criticism / review."
+copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 — criticism / review."
 ---
 
 # Takealot Terms & Conditions — snapshot 2026-04-24
@@ -47,7 +47,11 @@ See the companion [takealot-returns-2026-04-24.md](./takealot-returns-2026-04-24
 
 > "While we may change any provision of our agreement at any time without giving you notice, we will publish those changes on our platform."
 
-The site's Clause 11 dismantles the "without giving you notice" reservation against CPA s 51, Reg 44(3)(i), and the SCA's *Motus v Wentzel* obiter on s 69(d) consumer enforcement.
+The same paragraph continues (verbatim, 2026-11-17 capture, raw `tcs-2026-11-17.txt:345`; added 2026-11-18 because Clause 12 now quotes it):
+
+> "Any change we make takes effect from the date we publish it on our platform. You accept the change when you use our platform after the change is made."
+
+The site's Clause 12 (unilateral-changes) answers the "without giving you notice" reservation with CPA s 51 read with ECT s 48 (statutory rights can't be waived), Reg 44(3)(i) (the Reg 44(4)(c)(iv) open-ended-agreement carve-out needs immediate notice, which this clause doesn't give), CPA s 48, and the point that a later change can't rewrite a concluded order. (Corrected 2026-11-18: this line said "Clause 11" and listed *Motus v Wentzel*, which Clause 12 does not use.)
 
 ### High Court Western Cape forum-selection (verbatim)
 
@@ -63,19 +67,21 @@ Takealot may cancel an order for reasons including:
 - *"we discover an error in the listing information of an item, including its pricing"*;
 - investigation or conviction for criminal activity or account abuse.
 
-The site's Clause 13 dismantles each of these against CPA s 23 (displayed-price binding), s 47 (over-selling refund-with-interest plus compensation), and ECT s 46 (30-day refund deadline).
+The site's Clause 14 (order-cancellation) answers these with the contract formed on confirmation, CPA s 48 read with Reg 44(3)(k), CPA s 47(3) (refund with interest plus directly incidental costs on a shortage) and ECT s 46 (30-day performance; refund within 30 days of notice that goods are unavailable). It does not rely on CPA s 23, which s 23(1)(b) switches off where ECT s 43 applies, as it does to takealot.com orders.
+
+**Correction (2026-11-18).** This line said "Clause 13" (that is High Court jurisdiction) and that the site relied on CPA s 23 (displayed-price binding) against these cancellation grounds. Clause 14 says the opposite: "Don't cite s 23 against Takealot".
 
 ### Marketplace seller / "Sellers" clause (verbatim)
 
 > "Sellers are responsible for the items they sell on our platform. This includes providing an invoice, making sure the item is in stock, keeping the product information accurate, and getting the item to our warehouse."
 
-The site's Clause 14 (marketplace-sellers) currently uses "Sellers are responsible for the items they sell on our platform" — verbatim accurate. (Earlier site copy used "Other sellers"; corrected on 2026-04-24 following the Takealot policy audit.)
+The site's Clause 15 (marketplace-sellers) currently uses "Sellers are responsible for the items they sell on our platform" — verbatim accurate. (Earlier site copy used "Other sellers"; corrected on 2026-04-24 following the Takealot policy audit. Clause number corrected from "Clause 14" on 2026-11-18.)
 
 ### Resale prohibition (verbatim)
 
 > "Do not resell any item purchased on our platform. If you do, we may suspend or terminate your Takealot account and cancel any pending orders."
 
-The site's Clause 16 dismantles this against TMA s 34(2)(d) statutory exhaustion (with carve-outs from *TRC v Sony* and *Frank & Hirsch v Roopanand*), and against the principle that purchase intent is not a statutory ground for refusing a s 56 return.
+The site's Clause 17 (resale-prohibition; this line said "Clause 16" until 2026-11-18) dismantles this against TMA s 34(2)(d) statutory exhaustion (with carve-outs from *TRC v Sony* and *Frank & Hirsch v Roopanand*), and against the principle that purchase intent is not a statutory ground for refusing a s 56 return.
 
 ### Lines added 2026-11-18 (verbatim, checked against the 2026-11-17 capture)
 
@@ -96,6 +102,10 @@ These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captur
 > - you are being investigated for, or found guilty of, criminal activity or abuse of your Takealot account.
 > You may cancel an order if there is a ‘cancel’ button on the order details page of your Takealot account. Once you have initiated a cancellation, you cannot stop the process.
 > If an order or item is cancelled, we will refund you the amount paid for that cancelled order or item."
+
+**Delivery estimates** (added 2026-11-18, raw line 286; Clause 14's "CPA s 54 — paid delivery missed" angle refers to Takealot's terms calling delivery dates "estimates")
+
+> "Delivery times may vary and are determined by the items you order, the payment method, and the location you choose for delivery or collection, as explained in our Help Centre. We provide our delivery estimates on the product description page to help you shop, but always check your order’s estimated delivery date at checkout for the most accurate delivery information."
 
 **Discount deals**
 

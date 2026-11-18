@@ -15,7 +15,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'Takealot's own missing-item page' angle"
   - "src/data/content.ts — TEMPLATES T20 body"
   - "src/data/content.ts — FAQ (Black Friday at Takealot; buy-now-pay-later; delivery fee on a cancelled order)"
-copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(a) Copyright Act 98 of 1978 — research / criticism / review."
+copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 — criticism / review."
 ---
 
 # Takealot Help Centre — order cancellation, refunds and missing items

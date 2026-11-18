@@ -4,26 +4,26 @@
 
 This site is intentionally a one-way reference. No contact form, no accounts, no user-submitted content, no ads, no tracking beyond privacy-preserving Cloudflare Web Analytics. Content is licensed CC BY 4.0 — attribution is appreciated; linking back to the canonical URL is the preferred form. Code is MIT.
 
-Content was verified against published South African statutes, regulations, and case law in April 2026.
+Content was last reviewed on 2026-11-18 against published South African statutes, regulations and case law, and against Takealot's policies as live on 2026-11-17. The current review date is always in the `last_reviewed` field of https://takealotback.com/api/data.json.
 
 ## Homepage sections (single-page reference)
 
 - [Hero / Mission](https://takealotback.com/#home): The site's purpose and metadata card (jurisdiction, instruments, counts).
 - [The short version — 7 quick hits](https://takealotback.com/#short-version): One-screen summary of the seven most-underused rights, including chargebacks.
 - [Three things to do right now](https://takealotback.com/#three-things): Find your fight, grab a template, escalate.
-- [Dismantled — 20 clauses](https://takealotback.com/#dismantled): Takealot's returns-policy clauses paired with CPA/ECT/POPIA counterpoints, case law, and the onus-of-proof position.
-- [Templates — 16 ready-to-send emails](https://takealotback.com/#templates): Copy-paste emails keyed to CPA/ECT sections for the most common disputes.
+- [Dismantled — clause by clause](https://takealotback.com/#dismantled): Clauses from Takealot's returns policy and terms, each paired with CPA/ECT/POPIA counterpoints, case law, and the onus-of-proof position.
+- [Templates — ready-to-send emails](https://takealotback.com/#templates): Copy-paste emails keyed to CPA, ECT Act and POPIA sections for the most common disputes.
 - [The Law — full reference](https://takealotback.com/#law): CPA, ECT Act, POPIA, common law, and chargeback rules as section cards; plus a "where to file" bodies card.
 - [Warranties — manufacturer vs CPA](https://takealotback.com/#warranties): Three-layer warranty analysis (retailer, manufacturer, common law) + A/B/C/D playbook.
-- [Escalate — 10-tier ladder](https://takealotback.com/#escalate): Takealot support → CGSO → chargeback → NCC → IR → ARB → Small Claims → Magistrates' → High Court.
+- [Escalate — 10-tier ladder](https://takealotback.com/#escalate): Takealot support → formal written notice → CGSO → chargeback (card payments) → NCC → Information Regulator → ARB → Small Claims → Magistrates' → High Court.
 - [Their policies, summarised](https://takealotback.com/#policies): Plain-English summary of Takealot's returns policy and terms, with the official URL.
-- [About](https://takealotback.com/#about): The site's legal grounding (s16 Constitution, TMA s34(2), UDRP, fair comment) and non-commercial commitments.
-- [FAQ](https://takealotback.com/#faq): Ten questions including affiliation, commercial status, legal-advice disclaimer, and correction routes.
+- [About](https://takealotback.com/#about): The site's legal grounding (s16 Constitution, Trade Marks Act s34(1)(c) read with Laugh It Off, UDRP, fair comment) and non-commercial commitments.
+- [FAQ](https://takealotback.com/#faq): Questions including Black Friday cancellations, buy-now-pay-later, delivery fees on cancelled orders, deadlines, affiliation, commercial status, the legal-advice disclaimer and correction routes.
 
 ## Deep-dive pages
 
-- [Onus of proof](https://takealotback.com/onus-of-proof): Who has to prove what inside the 6-month CPA s56 window — the single most useful fact in a Takealot dispute.
-- [Aedilitian remedies](https://takealotback.com/aedilitian-remedies): Common-law remedies that extend your rights up to 3 years past the CPA's 6-month window, for latent defects. Includes the death of voetstoots under the CPA.
+- [Onus of proof](https://takealotback.com/onus-of-proof): Who has to prove what inside the 6-month CPA s56 window, where problems show up soon after delivery — the single most useful fact in a Takealot dispute.
+- [Aedilitian remedies](https://takealotback.com/aedilitian-remedies): Common-law remedies for latent defects that carry on after the CPA's 6-month s56 return window, within the 3-year prescription period. Includes the death of voetstoots under the CPA.
 - [Limits of the CPA](https://takealotback.com/limits): Honest account of what the CPA does *not* do — where return claims are actually weak. Credibility section.
 
 ## Source of truth and updates
@@ -32,8 +32,8 @@ Content was verified against published South African statutes, regulations, and 
 - [Content licence (CC BY 4.0)](https://github.com/J8kesVanEeden/takealotback/blob/main/CONTENT-LICENSE.md)
 - [Code licence (MIT)](https://github.com/J8kesVanEeden/takealotback/blob/main/LICENSE)
 - [Full content as plain markdown](https://takealotback.com/llms-full.txt)
-- [RSS feed (deep dives + every citation)](https://takealotback.com/rss.xml): 35 items — 3 long-form deep-dive pages plus all 32 citation entries (statutes, case law, advisories, regulator details, Takealot policy snapshots, third-party commentary). Every entry carries the formal citation string in the title for unambiguous identification.
-- [Citations & sources index](https://takealotback.com/citations): every primary source the site relies on — statutes, case law, CGSO advisory notes, Takealot policy snapshots, regulator details, third-party commentary — dated, attributed, with primary URLs and Wayback Machine archival links.
+- [RSS feed (deep dives + every citation)](https://takealotback.com/rss.xml): every long-form deep-dive page plus every citation entry (statutes, case law, advisories, regulator details, Takealot policy snapshots, third-party commentary, press reports). Every entry carries the formal citation string in the title for unambiguous identification.
+- [Citations & sources index](https://takealotback.com/citations): every primary source the site relies on — statutes, case law, CGSO and NCC advisory notes, Takealot policy snapshots, regulator details, third-party commentary, press reports — dated, attributed, with primary URLs and Wayback Machine archival links.
 - [Structured JSON API](https://takealotback.com/api/data.json): machine-readable export of every clause, template, quick hit, law-section reference, escalation tier, FAQ entry, warranty angle, playbook scenario, and policy-summary bullet on the site. CC BY 4.0; CORS-open; refreshed on every deploy.
 - [Operations runbook (in-repo)](https://github.com/J8kesVanEeden/takealotback/blob/main/OPERATIONS.md): editorial protocol — when Takealot policy changes, when case law shifts, when regulator details change. Surfaces how the site keeps current and what triggers an update. Useful for crawlers wanting to know if a snapshot is still authoritative.
 

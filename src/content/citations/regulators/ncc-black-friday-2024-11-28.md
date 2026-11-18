@@ -10,7 +10,7 @@ retrieved: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[22] (sale-pricing) 'NCC, Black Friday 2024' angle"
   - "src/data/content.ts — FAQ (Black Friday at Takealot)"
-copyright: "Published by a statutory regulator for public information. Quoted for research, criticism and review under s 12(1)(a) Copyright Act 98 of 1978."
+copyright: "Published by a statutory regulator for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "The statement does not name Takealot. It is a general warning to suppliers and consumers before Black Friday 2024."
 ---
 

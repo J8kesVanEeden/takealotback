@@ -6,22 +6,22 @@ date: "2026-05-07"
 primary_url: "https://www.complaintsboard.com/takealot-b126819"
 wayback_url_dated: "https://web.archive.org/web/20261117210310/https://www.complaintsboard.com/takealot-b126819"
 wayback_url_earlier: "https://web.archive.org/web/20260507140134/https://www.complaintsboard.com/takealot-b126819"
-metaDescription: "Snapshot of ComplaintsBoard's Takealot dashboard at 2026-05-07: 835 complaints, 8 resolved (1%), 827 unresolved (99%). Pattern-evidence support — not authority — for the substitution and recall clauses on the site."
+metaDescription: "Snapshot of ComplaintsBoard's Takealot dashboard at 2026-05-07: 835 complaints, 8 resolved (1%), 827 unresolved (99%). Background pattern evidence only; not currently cited by any clause."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "WebFetch on 2026-05-07; Wayback SPN snapshot taken same day."
 disclosure: "ComplaintsBoard is a third-party complaint-aggregator with grievance-skewed content (consumers come to it to complain, not to report satisfaction). It is cited on this site only as **pattern evidence** — corroboration that the patterns documented in named-case journalism are not isolated — and never as legal authority. The site does not adopt or endorse individual complaint narratives on the platform; the cited summary is the dashboard's own counts."
-used_in:
-  - "src/data/content.ts — CLAUSES[20] (item-substitution) supporting pattern evidence"
-  - "src/data/content.ts — CLAUSES[21] (recall-noncompliance) supporting pattern evidence"
-copyright: "Page summary content © ComplaintsBoard. Quoted at the structural-statistics level only, under fair dealing per Copyright Act 98 of 1978 s 12(1)(a)."
+used_in: []
+copyright: "Page summary content © ComplaintsBoard. Quoted at the structural-statistics level only, under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
 # ComplaintsBoard — Takealot complaint dashboard (snapshot, 7 May 2026)
 
 ## Why the site cites this
 
-ComplaintsBoard is the largest publicly-indexable aggregate of Takealot consumer complaints in English. The dashboard's structural statistics — total complaints, resolution rate, dominant complaint categories — corroborate the patterns documented by named-case journalism (Knowler, News24). This file exists to give a reader who clicks through from the substitution or recall clauses something to *contextualise* the named cases. It is not legal authority and the site does not lift any individual complaint narrative from the dashboard as evidence.
+ComplaintsBoard is the largest publicly-indexable aggregate of Takealot consumer complaints in English. The dashboard's structural statistics — total complaints, resolution rate, dominant complaint categories — corroborate the patterns documented by named-case journalism (Knowler, News24). It is kept as background; no clause currently cites it. It is not legal authority and the site does not lift any individual complaint narrative from the dashboard as evidence.
+
+(Updated 2026-11-18: this file's `used_in` and description said it supported the substitution and recall clauses (Clauses 21 and 22). No page or data file on the site cites it any longer, so both were removed.)
 
 ## Snapshot statistics (retrieved 2026-05-07)
 

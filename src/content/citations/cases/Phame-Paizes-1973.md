@@ -17,7 +17,7 @@ copyright: "No copyright in the judgment text — s 12(8)(a) Copyright Act 98 of
 
 ## Why this case matters
 
-*Phame v Paizes* is the leading SA Appellate Division authority on **dicta et promissa** — the doctrine that extends aedilitian relief beyond pure latent-defect cases to material statements made by the seller during negotiations that turn out to be unfounded. It is **not** the source of the three-part latent-defect test; that is in *Dibley v Furter* and *Glaston House v Inag*.
+*Phame v Paizes* is the leading SA Appellate Division authority on **dicta et promissa** — the doctrine that extends aedilitian relief beyond pure latent-defect cases to material statements made by the seller during negotiations that turn out to be unfounded. It is **not** the source of the latent-defect test. The SCA calls that the *Holmdene Brickworks* test (*Van Niekerk* para 16), and the site's three-part list is its own synthesis of *Holmdene* and *Van Niekerk* para 14. (Corrected 2026-11-18: this sentence and the two-classes list below said the three-part test "is in *Dibley v Furter* and *Glaston House v Inag*".)
 
 ## Operative effect
 
@@ -28,7 +28,7 @@ If such a statement turns out to be unfounded, the purchaser has at his disposal
 - the **actio quanti minoris** — sue for a reduction in the purchase price (a partial refund equivalent to the diminution in value).
 
 The aedilitian remedies are therefore available in **two broad classes** of case:
-1. **Latent-defect cases** — the *res vendita* had a hidden defect at the time of sale. The three-part test (hidden / present at sale / material) is in *Dibley v Furter* and *Glaston House v Inag*.
+1. **Latent-defect cases** — the *res vendita* had a hidden defect at the time of sale. The site's three-part list (hidden / present at sale / material) is its own synthesis of the *Holmdene Brickworks* definition (*Van Niekerk* para 16) and the requirements in *Van Niekerk* para 14.
 2. **Dicta et promissa cases** — *Phame v Paizes*. The seller made a material affirmative statement during negotiations on the faith of which the buyer entered the contract or agreed to the price; the statement turned out to be unfounded.
 
 ## Verified through the SCA (2026-11-17)
@@ -55,9 +55,9 @@ Earlier site copy attributed the three-part test directly to *Phame*; that was a
 
 ## Cross-references
 
-- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md) — three-part test
-- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md) — three-part test, AD
-- [Holmdene-Brickworks-1977.md](./Holmdene-Brickworks-1977.md) — *actio empti* for consequential damages
+- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md) — duty to disclose (see also)
+- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md) — broad view of what counts as a defect
+- [Holmdene-Brickworks-1977.md](./Holmdene-Brickworks-1977.md) — the latent-defect test (*Holmdene Brickworks* test) and the *actio empti* for consequential damages
 
 ## Status
 

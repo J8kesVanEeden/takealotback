@@ -8,7 +8,7 @@ saflii_url: "https://www.saflii.org/za/cases/ZASCA/1993/90.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZASCA/1993/90.html"
 lawlibrary_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/1993/90"
 commentary_url: "https://blogs.sun.ac.za/iplaw/files/2012/08/Case-Comment-South-Africa-Copyright-parallel-importation-of-artistic-works-Frank-Hirsch-v-Roopanand-a-Brothers.pdf"
-metaDescription: "Appellate Division 1993: separate SA copyright in packaging can block parallel imports even where TMA s 34(2)(d) would otherwise allow them."
+metaDescription: "Appellate Division 1993: a South African assignee of the copyright in packaging (TDK's wrapper and insert) can stop parallel imports on copyright grounds, whatever the trade-mark position."
 wayback_url_dated: "https://web.archive.org/web/20261110161950/https://www.saflii.org/za/cases/ZASCA/1993/90.html"
 retrieved: "2026-11-17"
 reverified_on: "2026-11-17"
@@ -22,9 +22,11 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 ## Why this case matters
 
-The Appellate Division authority for the **copyright-on-packaging carve-out from trade-mark statutory exhaustion**. Even where TMA s 34(2)(d) would otherwise allow parallel importation of genuine goods bearing a registered trade mark, a *separate SA copyright owner* of the packaging or printed inserts can independently block the imports on copyright grounds.
+The Appellate Division authority for the **copyright-on-packaging carve-out from trade-mark statutory exhaustion**. Under today's Act, even where TMA s 34(2)(d) would otherwise allow parallel importation of genuine goods bearing a registered trade mark, a *separate SA copyright owner* of the packaging or printed inserts can independently block the imports on copyright grounds.
 
 In other words: a parallel import that escapes trade-mark infringement under s 34(2)(d) **may still infringe copyright** in the get-up / wrapper / printed material, where that copyright has been assigned to a SA distributor.
+
+The case itself predates the 1993 Act (see Facts); it decided the copyright point only. (Corrected 2026-11-18: the description said the case applied "even where TMA s 34(2)(d) would otherwise allow" the imports, a section that did not yet exist.)
 
 ## Facts
 

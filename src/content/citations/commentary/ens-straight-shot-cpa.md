@@ -17,6 +17,8 @@ copyright: "ENSafrica. Short excerpt / summary only — fair dealing."
 
 # ENSafrica — Straight shot to the courts for consumers
 
-Short summary: commentary on post-Motus s 69 litigation, including the Steynberg / Tammy Taylor Nails preliminary jurisdictional ruling. Useful secondary source for the post-Motus trajectory, though the site no longer cites Steynberg directly (the 3 July 2023 final judgment expressly did not decide the CPA jurisdiction question — see ../cases/Motus-Wentzel-ZASCA-40-2021.md).
+Short summary: commentary on post-Motus s 69 litigation, including the Steynberg / Tammy Taylor Nails preliminary jurisdictional ruling. Useful secondary source for the post-Motus trajectory, though the site no longer cites Steynberg directly.
+
+(Corrected 2026-11-18: this paragraph added that "the 3 July 2023 final judgment expressly did not decide the CPA jurisdiction question" and pointed to the Motus file for it. The Motus file says nothing about Steynberg, and no source for that statement is held in the repo, so it has been removed as unverified.)
 
 Re-checked against the live page 2026-11-17 (authors Wandile Ndabambi and Atlegang Raganya). The article says the court in *Steynberg* "cited the obiter remarks of the Supreme Court of Appeal in Motus Corporation (Pty) Ltd t/a Zambezi Multi Franchise and another v Wentzel, that the CPA should not be read to exclude the rights of consumers to approach the court in order to obtain redress". (Until 2026-11-17 this file's `date` read "undated"; the Legal 500 copy dates it 13 July 2022.)
