@@ -75,4 +75,4 @@ All eleven official languages may be used in a Small Claims Court.
 
 ## Cross-reference
 
-See [../cases/Motus-Wentzel-ZASCA-40-2021.md](../cases/Motus-Wentzel-ZASCA-40-2021.md) for the SCA's obiter guidance that CPA s 69 does not preclude a consumer from approaching a lower court directly — the most important case-law anchor for the Small Claims / Magistrates' Court routes.
+See [../cases/Motus-Wentzel-ZASCA-40-2021.md](../cases/Motus-Wentzel-ZASCA-40-2021.md) for the SCA's obiter guidance (paras 26–27) that s 69(d) "should not lightly be read as excluding the right of consumers to approach the court in order to obtain redress"; the SCA left the question open. In the Western Cape, *Pure Silk v Martin* [2025] ZAWCHC 568 holds that a consumer may go straight to court ([../cases/Pure-Silk-Martin-ZAWCHC-568-2025.md](../cases/Pure-Silk-Martin-ZAWCHC-568-2025.md)). (An earlier version of this line said Motus held that s 69 does not preclude approaching a lower court directly; that overstated an obiter remark. Corrected 2026-11-17.)

@@ -8,7 +8,7 @@ datePublished: "2026-04-23"
 
 # Your claim doesn't die at 6 months
 
-The Consumer Protection Act's implied warranty runs for six months. Plenty of things fail later — a TV at 14 months, a washing machine at 20 months, a laptop at 19 months. South African common law carries on where section 56 stops.
+The Consumer Protection Act's section 56 return-and-refund right runs for six months. Plenty of things fail later — a TV at 14 months, a washing machine at 20 months, a laptop at 19 months. South African common law carries on where section 56 stops.
 
 ## Two remedies from Roman-Dutch law
 
@@ -22,9 +22,11 @@ Both are preserved alongside the CPA by section 2(10): *"No provision of this Ac
 
 Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the cause of action arose, or from when the creditor could reasonably have known. So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the CPA window closed in November 2024.
 
+Prescription is the outer limit, not the deadline. To cancel the sale (actio redhibitoria) you must act within a reasonable time after you discover the defect, and be able to return the item (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14).
+
 ## What "latent defect" actually means
 
-The test, worked out across the line of cases applying the aedilitian rules (see *Dibley v Furter* 1951 (4) SA 73 (C) and *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) for the canonical restatements; *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the family to *dicta et promissa*), is three-part. The defect must be:
+The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C)). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:
 
 1. **Hidden** — not discoverable on reasonable inspection by an ordinary non-expert buyer.
 2. **Present at sale** — existing at the time of sale, at least in embryonic form, even if it only manifested later.
@@ -36,9 +38,9 @@ The Supreme Court of Appeal reaffirmed the test on 10 December 2025 in *Van Niek
 
 ## Practical limits — and why CPA s55/s56 is usually better
 
-The aedilitian remedies work against the seller (Takealot), not a non-contracting manufacturer. And the relief is limited: cancellation and refund, or a pro-rata price reduction. Consequential damages — costs you incurred because the item failed — require the separate *actio empti*, which needs an express warranty, fraud, or a "merchant/manufacturer seller" who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A)).
+The aedilitian remedies work against the seller: Takealot for items Takealot sold itself, or the Marketplace seller where you bought from one (check your order details or invoice), not against a non-contracting manufacturer. And the relief is limited: cancellation and refund, or a pro-rata price reduction. Consequential damages — costs you incurred because the item failed — require the separate *actio empti*, which needs an express warranty, fraud, or a "merchant/manufacturer seller" who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A)).
 
-In practice, the better first-line route for defective goods is CPA s55/s56 — within the 6-month window, and especially where the fault shows up soon after delivery, the courts put the onus on the supplier to prove misuse (*Edan Traders v NCT* [2026] ZAGPJHC 386), and consequential loss can flow through s61 (strict product liability) where harm is caused. The aedilitian remedies come into play when:
+In practice, the better first-line route for defective goods is CPA s55/s56 — within the 6-month window, and especially where the fault shows up soon after delivery, the courts put the onus on the supplier to prove misuse (*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591, relied on in *Edan Traders v NCT* [2026] ZAGPJHC 386), and consequential loss can flow through s61 (strict product liability) where harm is caused. The aedilitian remedies come into play when:
 
 - you're outside the 6-month s56 window;
 - the defect is genuinely latent (not wear and tear);
@@ -47,6 +49,6 @@ In practice, the better first-line route for defective goods is CPA s55/s56 — 
 
 ## Voetstoots is dead against consumers
 
-Any attempt by a retailer to sell "as-is" to a consumer under the CPA is void. Section 51 read with section 56 prohibits waiver of the quality warranty, and the CGSO has confirmed this in Advisory Note 11 ("Supply of Voetstoots Goods", [2021] ZACGSO 11). The National Consumer Tribunal has reached the same conclusion. In *National Consumer Commission v Western Car Sales* [2017] ZANCT 102 it held that "the concept of a 'voetstoots' sale … is therefore not applicable to any transactions falling under the CPA" (para 35, quoted in Advisory Note 11 para 4.1); and in *Vonk v Willow Crest Motors* [2019] ZANCT 63 that "The use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act" (para 44.1). The North West Consumer Affairs Court reached the same result on narrower grounds in *Fourie v Agenbag Motor Group* [2018] ZACONAF 3: because no defects had been disclosed (s55(6)), the dealer's voetstoots clause was of no force or effect, and it had to refund the full R35,000.
+Any attempt by a retailer to sell "as-is" to a consumer under the CPA is void. Section 51 read with section 56 prohibits waiver of the quality warranty, and the CGSO took the same line in its published Advisory Note 11 ("Supply of Voetstoots Goods", [2021] ZACGSO 11; since taken off the CGSO's website pending review, still on SAFLII). The National Consumer Tribunal has reached the same conclusion. In *National Consumer Commission v Western Car Sales* [2017] ZANCT 102 it held that "the concept of a 'voetstoots' sale … is therefore not applicable to any transactions falling under the CPA" (para 35, quoted in Advisory Note 11 para 4.1); and in *Vonk v Willow Crest Motors* [2019] ZANCT 63 that "The use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act …" (para 44.1). The North West Consumer Affairs Court reached the same result on narrower grounds in *Fourie v Agenbag Motor Group* [2018] ZACONAF 3: because no defects had been disclosed (s55(6)), the dealer's voetstoots clause was of no force or effect, and it had to refund the full R35,000.
 
-Voetstoots survives only in (a) auction sales (CPA s55(1), read with s45), (b) goods altered after they left the retailer's control, (c) the s55(6) scenario where a specific condition was expressly disclosed and expressly accepted, and (d) transactions outside CPA scope (e.g. juristic-person consumers above the s5(2) asset/turnover threshold, private once-off sales).
+Voetstoots survives only in (a) auction sales (CPA s55(1), read with s45), (b) goods altered after they left the retailer's control, (c) the s55(6) scenario where a specific condition was expressly disclosed and expressly accepted (or the buyer knowingly acted in a way consistent with accepting it), and (d) transactions outside CPA scope (e.g. a juristic-person buyer whose asset value or turnover equals or exceeds the s5(2)(b) threshold, private once-off sales).

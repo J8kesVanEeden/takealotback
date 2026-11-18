@@ -411,8 +411,15 @@ function extractTools(body: string): Array<{ '@type': 'HowToTool'; name: string 
   // Conservative: only match patterns that the citation-links resolver
   // already recognises, so we never list a tool we can't ground.
   const found = new Set<string>();
+  // Section ranges: emit one tool per distinct section number cited, never
+  // a literal "5x" / "4x" placeholder.
+  for (const m of body.matchAll(/\bsection (5\d)\b/gi)) {
+    found.add(`Section ${m[1]} of the Consumer Protection Act`);
+  }
+  for (const m of body.matchAll(/\bsection (4[2-6])\b/gi)) {
+    found.add(`Section ${m[1]} of the Electronic Communications and Transactions Act`);
+  }
   const patterns: Array<[RegExp, string]> = [
-    [/\bsection 5[0-9]\b/i, 'Section 5x of the Consumer Protection Act'],
     [/\bsection 19\b/i, 'Section 19 of the Consumer Protection Act'],
     [/\bsection 20\b/i, 'Section 20 of the Consumer Protection Act'],
     [/\bsection 22\b/i, 'Section 22 of the Consumer Protection Act'],
@@ -423,7 +430,6 @@ function extractTools(body: string): Array<{ '@type': 'HowToTool'; name: string 
     [/\bsection 56\b/i, 'Section 56 of the Consumer Protection Act'],
     [/\bsection 69\b/i, 'Section 69 of the Consumer Protection Act'],
     [/\bsection 82\b/i, 'Section 82 of the Consumer Protection Act'],
-    [/\bsection 4[2-6]\b/i, 'Section 4x of the Electronic Communications and Transactions Act'],
     [/\bPOPIA\b|Protection of Personal Information/i, 'Protection of Personal Information Act 4 of 2013'],
     [/\bConsumer Protection Act\b|\bCPA\b/i, 'Consumer Protection Act 68 of 2008'],
     [/\bRegulation 44\b|\bReg 44\b/i, 'Regulation 44 of the CPA Regulations 2011'],
@@ -484,7 +490,7 @@ export function buildTemplatesHowToList(templates: Template[]) {
     '@id': `${SITE_URL}/#templates-list`,
     name: 'Email templates for South African consumers in dispute with Takealot',
     description:
-      `Sixteen ready-to-send email templates, each grounded in a specific section of the Consumer Protection Act, ECT Act, or POPIA. Copy, paste, send.`,
+      `${templates.length} ready-to-send email templates, each grounded in a specific section of the Consumer Protection Act, ECT Act, or POPIA. Copy, paste, send.`,
     numberOfItems: templates.length,
     isPartOf: { '@id': WEBSITE_ID },
     itemListElement: templates.map((t, i) => ({

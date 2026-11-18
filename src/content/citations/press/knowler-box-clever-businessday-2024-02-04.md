@@ -4,10 +4,11 @@ citation: "Business Day (BusinessLIVE), 04 February 2024"
 court_or_publisher: "Wendy Knowler (Business Day column)"
 date: "2024-02-04"
 primary_url: "https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/"
-wayback_url_dated: "https://web.archive.org/web/20260507205643/https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/"
+wayback_url_dated: "https://web.archive.org/web/20261117210434/https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/"
+wayback_url_earlier: "https://web.archive.org/web/20260507205643/https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/"
 metaDescription: "Knowler reports the Shapshak Lego case + Arnold cellophane-bag cutlery case; Takealot's spokesperson admits 'human error' on both, and confirms 'Takealot does not expect shoppers to return products in the original, undamaged or altered Takealot box.'"
 retrieved: "2026-05-07"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
 wayback_status: "Wayback capture 20260507205643 holds the full article text (checked 2026-11-10)."
 disclosure: "Business Day is published by Arena Holdings (Tiso Blackstar's successor), editorially independent of Takealot's Naspers parent. Wendy Knowler also writes for News24 (Naspers); her Business Day column is hosted on Arena's BusinessLIVE platform."
@@ -69,4 +70,6 @@ This is the legal-frame piece for Clause 02 (Original Packaging). Knowler took t
 
 ## Wayback / archive status
 
-Wayback Machine snapshot pending re-archive at next OPS refresh.
+Wayback capture [20260507205643](https://web.archive.org/web/20260507205643/https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/) holds the full article text (checked 2026-11-10). Every quotation above was re-checked against the live article (BusinessLIVE, HTTP 200) on 2026-11-17.
+
+(Until 2026-11-17 this section said no snapshot existed or that one was pending, which contradicted the `wayback_status` field above.)

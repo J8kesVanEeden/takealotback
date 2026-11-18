@@ -294,7 +294,7 @@ function genClause(clause) {
 title: ${clause.n} - ${clause.title}
 slug: ${clause.slug}
 n: ${clause.n}
-template: ${clause.template}
+template: ${clause.template ?? 'none'}
 generated_by: scripts/sync-obsidian.mjs
 tags:
   - clause
@@ -319,7 +319,9 @@ ${angles}
 
 ## Use this template
 
-[[../Email Templates/${clause.template}|${clause.template}]] is the matched email for this clause.
+${clause.template
+  ? `[[../Email Templates/${clause.template}|${clause.template}]] is the matched email for this clause.`
+  : 'No email template is matched to this clause yet.'}
 
 ## Escalation
 
@@ -328,7 +330,7 @@ ${clause.escalate}
 }
 
 function genClausesIndex(clauses) {
-  const rows = clauses.map(c => `| ${c.n} | [[${c.n} - ${c.title}\\|${c.title}]] | [[../Email Templates/${c.template}\\|${c.template}]] |`).join('\n');
+  const rows = clauses.map(c => `| ${c.n} | [[${c.n} - ${c.title}\\|${c.title}]] | ${c.template ? `[[../Email Templates/${c.template}\\|${c.template}]]` : '—'} |`).join('\n');
   return `---
 title: Clauses Index
 generated_by: scripts/sync-obsidian.mjs

@@ -5,8 +5,10 @@ court_or_publisher: "Minister of Trade and Industry (now Trade, Industry and Com
 date: "2011-04-01"
 primary_url: "https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
 wayback_url: "https://web.archive.org/web/*/https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
+wayback_url_dated: "https://web.archive.org/web/20261117210220/https://thencc.org.za/wp-content/uploads/2020/11/CPA-REGS.pdf"
 metaDescription: "CPA Regulations 2011 (GN R293): contains Reg 44 — the grey list of presumptively unfair contract terms that bind every retailer including Takealot."
 retrieved: "2026-04-24"
+reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) Reg 44(3)(q) angle"
   - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) Reg 44 reference"
@@ -29,7 +31,7 @@ The Regulations made under the CPA cover franchise agreements (Regs 2–3), the 
 
 ---
 
-## Regulation 44 — full text of the grey list (verified 2026-04-24)
+## Regulation 44 — full text of the grey list (verified 2026-04-24; re-checked word for word against the NCC-hosted gazette PDF 2026-11-17, no differences)
 
 ### 44(1)
 

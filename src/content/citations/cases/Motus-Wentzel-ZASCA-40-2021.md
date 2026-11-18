@@ -6,10 +6,11 @@ date: "2021-04-13"
 case_number: "1272/2019"
 primary_url: "https://www.saflii.org/za/cases/ZASCA/2021/40.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZASCA/2021/40.html"
+wayback_url_dated: "https://web.archive.org/web/20261110162447/https://www.saflii.org/za/cases/ZASCA/2021/40.html"
 alternate_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/2021/40"
 metaDescription: "SCA 2021: obiter guidance (paras 26-27) that CPA s 69(d) should not lightly be read as stopping consumers from going to court before the ombud. Direction, not a holding."
 retrieved: "2026-04-24"
-reverified_on: "2026-11-10"
+reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus v Wentzel angle"
   - "src/data/content.ts — LAW_SECTIONS[0].items s69 blurb"
@@ -21,7 +22,9 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978 (official texts
 
 ## Summary of what this judgment is relied on for
 
-Site uses it **only** for the SCA's obiter guidance on section 69(d) of the Consumer Protection Act — i.e. the proposition that s 69(d) is not a compulsory internal-hierarchy rule and that consumers may approach a court directly.
+Site uses it **only** for the SCA's obiter guidance on section 69(d) of the Consumer Protection Act: that s 69(d) "should not lightly be read as excluding the right of consumers to approach the court in order to obtain redress" (para 26), and that it refers to remedies "available in terms of national legislation" rather than only those "in terms of this Act" (para 27). The SCA left the question open ("The issues arising from the section will need to be resolved on another occasion"). It did not hold that consumers may go straight to court; for a holding to that effect in the Western Cape, see *Pure Silk v Martin* [2025] ZAWCHC 568 ([`Pure-Silk-Martin-ZAWCHC-568-2025.md`](./Pure-Silk-Martin-ZAWCHC-568-2025.md)).
+
+(An earlier version of this summary said the obiter means "consumers may approach a court directly". That overstates paras 26–27, which only say s 69(d) should not lightly be read as excluding court access, and leave the point open. Corrected 2026-11-17; quotes re-checked against the SAFLII text, Wayback capture 20261110162447.)
 
 ## The critical paragraphs — paras 26 and 27 (verbatim, checked against SAFLII 2026-11-10)
 

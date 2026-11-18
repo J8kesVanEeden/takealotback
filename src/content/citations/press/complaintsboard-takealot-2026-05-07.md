@@ -4,9 +4,11 @@ citation: "complaintsboard.com/takealot-b126819, retrieved 7 May 2026"
 court_or_publisher: "ComplaintsBoard.com (third-party consumer-complaints aggregator)"
 date: "2026-05-07"
 primary_url: "https://www.complaintsboard.com/takealot-b126819"
-wayback_url_dated: "https://web.archive.org/web/20260507140134/https://www.complaintsboard.com/takealot-b126819"
+wayback_url_dated: "https://web.archive.org/web/20261117210310/https://www.complaintsboard.com/takealot-b126819"
+wayback_url_earlier: "https://web.archive.org/web/20260507140134/https://www.complaintsboard.com/takealot-b126819"
 metaDescription: "Snapshot of ComplaintsBoard's Takealot dashboard at 2026-05-07: 835 complaints, 8 resolved (1%), 827 unresolved (99%). Pattern-evidence support — not authority — for the substitution and recall clauses on the site."
 retrieved: "2026-05-07"
+reverified_on: "2026-11-17"
 retrieved_by: "WebFetch on 2026-05-07; Wayback SPN snapshot taken same day."
 disclosure: "ComplaintsBoard is a third-party complaint-aggregator with grievance-skewed content (consumers come to it to complain, not to report satisfaction). It is cited on this site only as **pattern evidence** — corroboration that the patterns documented in named-case journalism are not isolated — and never as legal authority. The site does not adopt or endorse individual complaint narratives on the platform; the cited summary is the dashboard's own counts."
 used_in:
@@ -26,6 +28,8 @@ ComplaintsBoard is the largest publicly-indexable aggregate of Takealot consumer
 - **Total complaints:** 835
 - **Resolved:** 8 (~1%)
 - **Unresolved:** 827 (~99%)
+
+**Re-checked 2026-11-17** (live page, HTTP 200): 837 complaints, 8 resolved (1%), 829 unresolved (99%); most recent complaint posted 13 October 2026. The three sample complaints below are still on the page. The category list in the next section could not be found on the live page that day (it is not in the page text, static or rendered), so treat it as the 2026-05-07 reading only. This file stays a dated snapshot of 2026-05-07.
 
 ## Dominant complaint categories (per the dashboard)
 

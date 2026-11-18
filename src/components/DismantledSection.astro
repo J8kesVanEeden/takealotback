@@ -290,7 +290,7 @@ function hay(c: typeof CLAUSES[number]) {
       rows.forEach(function (row) {
         var hay = (row.getAttribute('data-hay') || '').toLowerCase();
         var match = true;
-        if (id === 's56') match = hay.indexOf('s56') !== -1;
+        if (id === 's56') match = /\bs ?56\b/.test(hay);
         else if (id === 'popia') match = hay.indexOf('popia') !== -1;
         else if (id === 'contract') match = /common law|contract|bailment|delict/.test(hay);
         else if (id === 'process') match = /onus|cgso|escalat/.test(hay);

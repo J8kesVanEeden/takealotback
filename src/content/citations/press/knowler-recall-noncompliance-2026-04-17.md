@@ -99,4 +99,8 @@ Rewritten 2026-11-10 after the attribution audit (an internal review of every so
 
 ## Wayback / archive status
 
-No Wayback Machine snapshot for this URL as of 2026-05-07. Verbatim text from authenticated subscription capture, 2026-05-07.
+Wayback capture [20260507160946](https://web.archive.org/web/20260507160946/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-power-banks-risky-antacids-and-a-shrug-from-takealot-20260417-1044) exists but holds only the News24 paywall shell (headline, no article body), checked 2026-11-10. The verbatim extracts here come from an authenticated News24 subscription capture on 2026-05-07.
+
+**Not re-verified 2026-11-17:** the live page served only the subscriber paywall shell, so the extracts could not be checked against the source that day. Re-check with a subscription before any new reliance.
+
+(Until 2026-11-17 this section said no Wayback snapshot existed, which contradicted the `wayback_status` field above.)
