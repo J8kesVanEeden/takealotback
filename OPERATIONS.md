@@ -151,7 +151,7 @@ A future enhancement may add a check that every case citation in `src/data/conte
 These five rules are not editorial. They are load-bearing:
 
 1. **Non-commercial absolute** — no ads, no affiliates, no donations, no tracking beyond Cloudflare Web Analytics.
-2. **No contact form, no email on the site** — corrections via GitHub issues only.
+2. **No contact form, no email address of our own on the site** — corrections via GitHub issues only. Third-party contact addresses a reader needs (Takealot's legal@ notice address, the CGSO, NCC, Information Regulator, ARB) are published channels of those bodies and stay.
 3. **Footer credit is Milk Moon Studio only.** Takealot's legal entity appears only in the disclaimer paragraph + Policies-summary "Registered entity" box, never in credits.
 4. **Do not silently "fix" content in `src/data/content.ts`.** It's been fact-checked. If something looks wrong, flag it (GitHub issue) and follow this OPERATIONS flow — don't just edit.
 5. **No Takealot branding** — no blue, no logo, visually distinct.
