@@ -151,10 +151,13 @@ Quoted because the site prints them: POLICY_SUMMARY.terms (age and contracting c
 
 ### CGSO escalation reference
 
-The T&Cs route unresolved complaints to the Consumer Goods and Services Ombud (CGSO):
-- Website
-- Phone: 0860 000 272
-- Email: info@cgso.org.za
+The T&Cs route unresolved complaints to the Consumer Goods and Services Ombud (CGSO). Verbatim (2026-11-17 capture, "Lodging complaints"):
+
+> "If you are unhappy with the outcome of your complaint and it has not been resolved to your satisfaction, you may contact the Consumer Goods and Services Ombud (“CGSO”) to assist you in resolving your complaint."
+>
+> "Call: 0860 000 272"
+>
+> "Email: info@cgso.org.za"
 
 The site updated its ESCALATION tier 3 contact-email to `info@cgso.org.za` on 2026-04-24, matching the T&Cs (and CGSO's own homepage). Earlier site copy had `complaints@cgso.org.za`.
 

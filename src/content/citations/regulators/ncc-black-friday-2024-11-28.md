@@ -36,6 +36,8 @@ The rest of the statement warns about fake online stores and about 40 suppliers 
 
 > "The NCC identified about 40 suppliers that seem to have either disappeared or cannot be traced at their addresses listed on the sales records or websites provided to consumers."
 
+> "The modus operandi observed is that these suppliers accept the orders, take consumers’ money and never deliver the goods or services as expected."
+
 > "Consumers are urged to be very vigilant when transacting online as some of the online stores are masquerading as legitimate businesses while they are effectively out to scam consumers."
 
 The statement does not name Takealot, and the site does not rely on that part.

@@ -25,7 +25,7 @@ updated: "2026-11-23"
 
 The article reports complaints about how Takealot handled two recalls:
 
-1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B**: global recall, listed among the product recalls announced by the National Consumer Commission in 2026 (the NCC's own notice, 8 April 2026, describes the recall as notified by the supplier, not as an NCC order; see Site reliance below). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both were refused refunds when they sought them post-recall: Takealot told Chetty the product's 12-month warranty had expired, and gave Hart a final response that it could not confirm the recall (extracts below). On these power-bank cases Takealot's PR agency told Knowler that Takealot "will not be responding to this query"; Takealot did answer her on the Citro-Soda case below.
+1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B**: recall, listed among the product recalls announced by the National Consumer Commission in 2026 (the NCC's own notice, 8 April 2026, describes the recall as notified by the supplier, not as an NCC order; see Site reliance below). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both say Takealot refused them after the recall: Chetty says it told him the product's 12-month warranty had expired, and Hart says its final response was that it could not confirm the recall (extracts below). On these power-bank cases Takealot's PR agency told Knowler that Takealot "will not be responding to this query"; Takealot did answer her on the Citro-Soda case below.
 2. **Citro-Soda Regular** recall: Takealot notified Monogran Naidoo and collected the product, but the refund issued was a coupon valid for **two days** that went to his spam folder and expired before he saw it. Takealot's explanation: Naidoo had paid with a promotional coupon, so it reissued that coupon on its original terms, including the short validity; after Knowler's query it credited him the coupon's full value (extract below).
 
 These cases ground the site's clause on recalls: a recall is strong evidence the goods failed CPA s 55. Within six months of delivery s 56 gives the return-and-refund election. Beyond that, the recall notice's own refund instruction is the route, with s 61 if the product caused harm, and warranty expiry is not an answer to a recall refund. Note the ESR buyers here bought in October/November 2024, so by the April 2026 recall s 56's six-month window had closed for them.
@@ -46,7 +46,7 @@ From Wendy Knowler, Consumer Lookout, News24, 17 April 2026. Quoted under s 12(1
 
 ### Hart's case
 
-Ben Hart bought the unit through Takealot. After he found the global recall, he emailed Takealot:
+Ben Hart bought the unit through Takealot. After he found the recall, he emailed Takealot:
 
 > "I pointed out that, by my understanding, the Consumer Protection Act requires them to respect the recall."
 
