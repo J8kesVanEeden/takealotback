@@ -51,9 +51,13 @@ From Wendy Knowler, "Exploding charger, dirty 'new' sofa: When e-commerce giants
 
 ### CGSO Lee Soobrathi
 
-> "An intermediary - such as Takealot in this case - must 'keep the prescribed records of all relationships and transactions...'"
+Knowler's account of what he pointed to (her narration, quoting the statutes):
 
-> "[The Electronic Communications and Transactions Act] states that a supplier must inform customers how and when they can 'access and maintain a full record of the transaction'."
+> "Asked to comment, Consumer Goods and Services Ombud Lee Soobrathi pointed to a section of the Consumer Protection Act (CPA) which states that an intermediary - such as Takealot in this case - must "keep the prescribed records of all relationships and transactions…""
+
+> "And the Electronic Communications and Transactions Act (ECTA), which regulates online transactions, states that a supplier must inform customers how and when they can "access and maintain a full record of the transaction"."
+
+In his own words:
 
 > "The approach of the CGSO is that an e-commerce platform hosting third-party business products will be regarded as an intermediary for the purpose of the Consumer Protection Act, and as such will need to comply with these provisions."
 

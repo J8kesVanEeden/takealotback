@@ -65,5 +65,5 @@ Television Radio Centre was the **appellant** and Sony the **respondent**; the a
 
 ## Cross-references
 
-- [Frank-Hirsch-Roopanand-1993.md](./Frank-Hirsch-Roopanand-1993.md): copyright-on-packaging carve-out
+- [Frank-Hirsch-Roopanand-1993.md](./Frank-Hirsch-Roopanand-1993.md): copyright in packaging used to block parallel imports
 - [`citations/statutes/TMA-1993.md`](../statutes/TMA-1993.md): s 34(2)(d) statutory exhaustion (current Act)
