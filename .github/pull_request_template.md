@@ -1,6 +1,6 @@
 <!--
-PR template — pulls authors through the checks that the test loop found
-catch the bugs that recur most. If a box doesn't apply to your change,
+PR template: walks authors through the checks that catch the bugs that
+recur most. If a box doesn't apply to your change,
 strike it through (~~text~~). If a box applies and isn't ticked, the
 review will likely block on it.
 -->
@@ -50,7 +50,3 @@ review will likely block on it.
 ## Test plan
 
 <!-- How will you / a reviewer verify this works on the live site after deploy? Reference specific URLs, keystrokes, or behaviour. -->
-
----
-
-🤖 Generated with [Claude Code](https://claude.com/claude-code)

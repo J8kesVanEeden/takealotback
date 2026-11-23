@@ -9,7 +9,7 @@ wayback_url_earlier: "https://web.archive.org/web/20260507160947/https://www.new
 metaDescription: "Knowler reports a R14,000 iPhone 15 order on Takealot delivered as a sub-R400 calculator. Takealot initially refused the return citing 'missing accessories' before crediting the consumer in full."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
-retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; pasted into the citation pipeline by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time — flagged here for transparency."
+retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; copied into this file by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time. Flagged here for transparency."
 wayback_status: "Wayback capture 20260507160947 holds the full article text (checked 2026-11-10)."
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Knowler is a long-running independent consumer journalist whose column carries News24's editorial credit; the parent-company link is disclosed for transparency, not because it bears on the reporting."
 used_in:

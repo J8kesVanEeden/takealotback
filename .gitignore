@@ -3,7 +3,7 @@ dist/
 .output/
 
 # dependencies
-node_modules/
+node_modules
 
 # logs
 npm-debug.log*
@@ -37,10 +37,13 @@ _handoff/
 
 # Original zip
 takealotback-handoff.zip
-# Claude Code: commit the shared settings, ignore everything else in .claude/
-/.claude/*
-!/.claude/settings.json
+# Editor and tooling settings (machine-specific, never committed)
+/.claude/
 .playwright-mcp/
+/nimbalyst-local/
 
-# Claude Code local settings (machine-specific, never committed)
-.claude/settings.local.json
+# Maintainer working notes (kept locally, not part of the public repo)
+/TODO.md
+/CLAUDE.md
+/COPY-GUIDE.md
+/TAKEALOTBACK-AUDIT-*.md

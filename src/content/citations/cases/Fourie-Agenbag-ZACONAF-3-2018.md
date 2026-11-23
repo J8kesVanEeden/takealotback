@@ -27,7 +27,7 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 A dealer's voetstoots (as-is) clause was of no force or effect because no defects had been disclosed to the buyer (CPA s 55(6)), and the dealer had to refund the full price. The court's reasoning is **narrower** than a flat "voetstoots never applies" rule — see the verbatim extracts below.
 
-**Important provenance note:** `ZACONAF` is the SAFLII neutral-citation code for the **Consumer Affairs Courts** (provincial bodies established under CPA s 73). `ZANCT` is the code for the **National Consumer Tribunal**. These are two different bodies. The site previously cited Fourie under an NCT-attribution sentence, which was wrong; it was corrected on 2026-04-24 following the Claude Desktop copy-check audit.
+**Provenance note:** `ZACONAF` is the SAFLII neutral-citation code for the **Consumer Affairs Courts** (provincial bodies established under CPA s 73). `ZANCT` is the code for the **National Consumer Tribunal**. These are two different bodies. The site previously cited Fourie under an NCT-attribution sentence, which was wrong; it was corrected on 2026-04-24 in the April 2026 accuracy review.
 
 ## Facts
 
