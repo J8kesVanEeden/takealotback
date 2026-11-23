@@ -29,7 +29,7 @@ Prescription is the outer limit, not the only deadline. To cancel the sale (acti
 
 The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect. *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa*. On the seller's duty to disclose known defects, see also *Dibley v Furter* 1951 (4) SA 73 (C), cited in the literature. Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:
 
-1. **Hidden**: not discoverable on reasonable inspection by an ordinary non-expert buyer.
+1. **Hidden**: "not visible or discoverable upon an inspection" of the goods (*Holmdene Brickworks*, as quoted in *Van Niekerk* para 16).
 2. **Present at sale**: existing at the time of sale, even if it only showed up later.
 3. **Material**: serious enough to render the goods unfit or substantially less fit for purpose.
 

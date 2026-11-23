@@ -42,6 +42,8 @@ From Wendy Knowler, "Wendy's Win of the Week | The battle to prove a calculator 
 
 > "I never opened or used the calculator because it wasn't what I ordered," she told me.
 
+> "Not a word about the fact that she had actually ordered and paid R14 000 for an iPhone, not a calculator."
+
 Takealot's response treated the return as deficient because the calculator was missing its accessories. It did not address that Bila had ordered and paid R14,000 for an iPhone, not a calculator.
 
 ### The reversal

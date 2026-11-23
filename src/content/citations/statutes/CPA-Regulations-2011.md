@@ -10,6 +10,7 @@ metaDescription: "CPA Regulations 2011 (GN R293), Reg 44: an indicative, non-exh
 retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
+  - "src/data/content.ts — FAQ (Black Friday at Takealot)"
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'CPA Reg 44 + s 48' angle (Reg 44(3)(q) by analogy only; Reg 44(2)(b) non-exhaustive list)"
   - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) Reg 44(3)(i) angle"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) Reg 44(3)(i) angle"
@@ -148,7 +149,7 @@ Reg 44(1) limits the presumption to agreements between a supplier acting for bus
 | **44(3)(g)** | Modifying risk distribution to consumer's detriment | Clause 19: packaging-condition fee on a defective return reallocates s 56(2)'s "supplier's risk and expense"; Template T15; Clause 24 (account suspension): fraud risk put on the account holder |
 | **44(3)(i)** | Supplier unilaterally altering terms | Clause 11 (coupons), Clause 12 (unilateral changes), Template T09. Reg 44(4)(c)(iv) takes a term out of (i) where the supplier reserves the right to alter the conditions of an **open-ended** agreement, but only if the supplier "must forthwith inform the consumer thereof" and "the consumer is free to dissolve the agreement immediately". Clause 12's "CPA Reg 44" angle reasons through this carve-out: Takealot's clause allows changes "without giving you notice" (it says only that it will publish them on its platform), so the carve-out's conditions aren't met and the presumption stands. |
 | **44(3)(j)** | Supplier deciding whether goods conform to the agreement | Clause 20 (inspection and assessment): Takealot's own inspection is evidence, not the final word |
-| **44(3)(k)** | Supplier terminating at will where the consumer has no same right | Clause 14 (order cancellation): "for any reason" cancellation of a confirmed order; Clause 23 (sale pricing), relisting angle; Template T10 |
+| **44(3)(k)** | Supplier terminating at will where the consumer has no same right | Clause 14 (order cancellation): "for any reason" cancellation of a confirmed order; the Black Friday FAQ; Clause 23 (sale pricing), relisting angle; Template T10 |
 | **44(3)(l)** | Supplier terminating an open-ended agreement without reasonable notice, except for the consumer's material breach | Clause 24 (account suspension and closure) |
 | **44(3)(q)** | Supplier keeping a consumer's payment where the **consumer** fails to conclude or perform, with no matching right for the consumer | Clause 06 cites it by analogy only; the credit-expiry argument is made under s 48 and Reg 44(2)(b) (list non-exhaustive) |
 

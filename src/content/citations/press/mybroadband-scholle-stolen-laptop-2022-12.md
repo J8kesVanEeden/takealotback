@@ -70,7 +70,7 @@ From Hanno Labuschagne, "Takealot merchant sold stolen laptop", MyBroadband, 9 D
 ## Site reliance
 
 - **Clause 15 (marketplace sellers):** a laptop bought from a Takealot-vetted seller turned out to be the Department of Agriculture's property, so seller vetting can fail. Takealot said its own investigation found the seller "guilty of selling stolen goods" and told MyBroadband it had opened a police case; no court outcome is known. Even after the suspension, and after agreeing to a refund, Takealot declined the return on procedural grounds ("tampering"). The sequence is documented: Takealot agreed to refund, declined the return, credited the store account, took the credit back, then refunded.
-- When the consumer is in a dispute that has already flipped once, ask for the refund **to bank account, not store credit**. That was Scholle's own request, made "to avoid the retailer potentially flip-flopping again". The article reports the request; it does not say whether it worked. (2026-11-10: earlier wording called it "the only thing that prevented further reversals", which the article does not support.)
+- When the consumer is in a dispute that has already flipped once, ask for the refund **to bank account, not store credit**. That was Scholle's own request, made "to avoid the retailer potentially flip-flopping again". The article reports the request, and that "Scholle said the money was finally in his account — over eight weeks after first logging the issue." (2026-11-10: earlier wording called it "the only thing that prevented further reversals", which the article does not support.)
 - **Pairs with:** TimesLive Knowler article (06 Nov 2022) for second-source corroboration.
 
 ## Wayback / archive status

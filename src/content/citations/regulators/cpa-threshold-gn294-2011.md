@@ -22,7 +22,7 @@ CPA s 5(2)(b) says the Act does not apply to a transaction in which "the consume
 
 **Read on 2026-11-18** from the gazette PDF on gov.za (PDF title "Consumer Protection Act: Determination of threshold applicable to size of juristic person"; curl + pdftotext).
 
-**Still current?** No later s 6 determination was found on 2026-11-18. A web search turned up none, and 2026 commentary still gives R2 million and says the figure has not been revised since 2011. The Government Gazette index itself was not searched. CPA s 2(5) keeps a threshold in effect until a later one takes effect.
+**Still current?** No later s 6 determination was found on 2026-11-18. A web search turned up none, and 2026 commentary still gives R2 million and says the figure has not been revised since 2011. The Government Gazette index itself was not searched. CPA s 2(5) keeps a threshold in effect until a later one takes effect: "each successive threshold determined by the Minister in terms of that section continues in effect until a subsequent threshold in terms of that section takes effect" (SAFLII consolidated text).
 
 ## Verbatim
 
