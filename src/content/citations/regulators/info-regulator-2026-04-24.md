@@ -27,7 +27,7 @@ updated: "2026-11-23"
 
 **Complaints page** (https://inforegulator.org.za/complaints/):
 
-> "How to Lodge a Complaint — To access this service, the user must first register a user profile on our eService Portal and submit the complaint through the Portal."
+> Under "How to Lodge a Complaint": "To access this service, the user must first register a user profile on our eService Portal and submit the complaint through the Portal."
 
 Portal: `eservices.inforegulator.org.za`.
 
@@ -35,9 +35,7 @@ Portal: `eservices.inforegulator.org.za`.
 
 > "POPIAComplaints@inforegulator.org.za – should you feel that your personal information has been violated, you may use this e-mail address to lodge a complaint"
 
-**General enquiries** (contact page):
-
-> "General enquiries — Toll Free :0800 017 160 — Landline :010 023 5200 — enquiries@inforegulator.org.za"
+General enquiries (contact page): toll free 0800 017 160; landline 010 023 5200; enquiries@inforegulator.org.za.
 
 The two pages differ in emphasis (the complaints page describes the portal; the contact page lists the email for complaints). The site reports both.
 

@@ -21,7 +21,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-Template T22 asks Takealot for the records it holds about a customer's own order (proof of delivery, call and chat records) under POPIA s 23. These two Takealot documents say how a customer makes that request: through the privacy policy's route, with the Data Compliance Team for help. The legal right itself is in [POPIA-2013.md](../statutes/POPIA-2013.md) (s 23).
+Template T22 asks Takealot for the records it holds about a customer's own order (proof of delivery, call and chat records) under POPIA s 23. The PAIA manual sends customers to the privacy policy. That policy lists the right and points complaints and questions to the Data & Privacy section of the Help Centre, the route T22 uses. The manual also names the Data Compliance Team for help. The legal right itself is in [POPIA-2013.md](../statutes/POPIA-2013.md) (s 23).
 
 ## Privacy policy: "What are your rights under POPI?" (verbatim)
 

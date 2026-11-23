@@ -32,9 +32,7 @@ It is the regulator's own reminder, issued for Black Friday, that a supplier mus
 
 > "On the upcoming Black Friday, consumers are further reminded that knowing the original prices of items they intend buying during this period will help to determine if an item is indeed discounted or not."
 
-(The statement goes on to warn about fake online stores. It does not name Takealot, and the site does not rely on that part.)
-
-The rest of the statement concerns about 40 suppliers the NCC could not trace after they took payment and did not deliver. The site does not rely on that part.
+The rest of the statement warns about fake online stores and concerns about 40 suppliers the NCC could not trace after they took payment and did not deliver. It does not name Takealot, and the site does not rely on that part.
 
 ## Note
 

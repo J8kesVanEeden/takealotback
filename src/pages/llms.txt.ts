@@ -38,7 +38,7 @@ const SECTIONS: Array<{ id: string; name: string; about: string }> = [
   { id: 'warranties', name: 'Warranties: manufacturer vs CPA', about: `${WARRANTY_ANGLES.length} angles on the three layers of warranty (retailer, manufacturer, common law) and a playbook by scenario (${PLAYBOOK.map((p) => p.letter).join('/')}).` },
   { id: 'escalate', name: `Escalate: ${ESCALATION.length}-tier ladder`, about: `${ESCALATION.map((t) => `${t.tier}. ${t.title}`).join('; ')}.` },
   { id: 'policies', name: 'Their policies, summarised', about: "Takealot's returns policy and terms in plain English, with the official URLs." },
-  { id: 'about', name: 'About', about: 'Why the site starts with Takealot and why the rights apply at other retailers too; its legal footing (s16 Constitution, Trade Marks Act s34(1)(c) read with Laugh It Off, UDRP, fair comment), its non-commercial commitments and the privacy note.' },
+  { id: 'about', name: 'About', about: 'Why the site starts with Takealot and why the rights apply at other retailers too; its legal footing (s 16 Constitution, Trade Marks Act s 34(1)(c) read with Laugh It Off, UDRP, fair comment), its non-commercial commitments and the privacy note.' },
   { id: 'faq', name: `FAQ: ${FAQ.length} questions`, about: 'Every question and answer is also in llms-full.txt.' },
 ];
 
@@ -85,7 +85,7 @@ export const GET: APIRoute = async () => {
   line('## Source of truth and updates');
   line();
   line(`- [Full content as plain markdown](${SITE_URL}/llms-full.txt): every quick hit, clause, template, law card, warranty angle, escalation tier, FAQ answer and deep-dive page in one file.`);
-  line(`- [Citations & sources index](${SITE_URL}/citations): all ${citations.length} sources the site relies on (statutes, case law, CGSO and NCC advisory notes, Takealot policy snapshots, regulator details, commentary, press reports), dated, attributed, with primary URLs and Wayback Machine links.`);
+  line(`- [Citations & sources index](${SITE_URL}/citations): all ${citations.length} sources the site relies on (statutes, case law, CGSO and NCC advisory notes, Takealot policy snapshots, regulator details, commentary, press reports), dated, attributed, with primary URLs and Wayback Machine links where available.`);
   line(`- [Structured JSON API](${SITE_URL}/api/data.json): machine-readable export of every clause, template, quick hit, law-section card, escalation tier, FAQ entry, warranty angle, playbook scenario and policy-summary bullet. CC BY 4.0; CORS-open; rebuilt on every deploy.`);
   line(`- [RSS feed](${SITE_URL}/rss.xml): every deep-dive page and every citation page. Each entry's title carries the formal citation.`);
   line(`- [GitHub repository](${GITHUB_REPO_URL}): public; corrections via issues only.`);

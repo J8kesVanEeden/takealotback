@@ -12,7 +12,7 @@ retrieved_by: "WebFetch on 2026-05-07; Wayback SPN snapshot captured same day."
 used_in:
   - "src/data/content.ts — ESCALATION (CGSO entry) timing addition"
   - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) — 'CGSO 60-day benchmark' angle"
-copyright: "No copyright: published by an accredited Ombud established under CPA s 82; functions as a regulatory text."
+copyright: "Published by an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 updated: "2026-11-23"
 ---
 
@@ -44,7 +44,7 @@ The page references "our industry Code" in connection with the 60-day standard. 
 ## Site reliance
 
 - **ESCALATION, CGSO entry:** the 15-day / 60-day numbers are added so that consumers know what to expect.
-- **Clause 20 (inspection-assessment-delay), "CGSO 60-day benchmark" angle:** the 60-day published target is a useful comparator. An internal inspection process that takes longer than a full CGSO cycle has a hard time defending itself as reasonable.
+- **Clause 20 (inspection-assessment-delay), "CGSO 60-day benchmark" angle:** the 60-day published target is a useful comparator.
 - **No consumer fee shown:** the page doesn't surface a fee schedule. (The CGSO is funded by the businesses that must take part in its scheme: 2026 Code cl 4.2 requires participants to "contribute towards the funding of the CGSO".)
 
 ## How to refresh this snapshot

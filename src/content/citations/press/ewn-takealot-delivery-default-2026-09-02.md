@@ -26,6 +26,8 @@ It is the only source the site has for the report that Takealot's checkout pre-s
 
 From Celeste Martin, EWN (Eyewitness News), 2 September 2026, read on the live page on 2026-11-10. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
+> "Takealot has increased the minimum order value for free standard delivery from R650 to R750."
+
 > "The online retailer has also changed its checkout process. Faster paid delivery options, including same-day or next-day delivery where available, can now be selected by default, while free standard delivery may require shoppers to choose a later delivery date manually."
 
 > "This means customers could end up paying for delivery even when their order qualifies for free standard shipping."

@@ -73,7 +73,7 @@ const title = buildTitle(data.title as string, data.citation as string | undefin
 const description =
   (data.metaDescription as string | undefined) ??
   ((data.citation ? `${data.citation}. ` : '') +
-    `${groupLabel[top] ?? 'Source'} mirrored from primary source on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`);
+    `${groupLabel[top] ?? 'Source'} captured on ${data.retrieved ?? 'unknown date'} for the TakealotBack.com evidence vault.`);
 
 // JSON-LD: type-aware Article (LegalCaseDocument / Legislation / etc.)
 // + BreadcrumbList. Type and per-group `about` topics resolve in

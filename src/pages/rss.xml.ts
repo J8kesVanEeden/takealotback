@@ -70,8 +70,8 @@ export async function GET(context: APIContext) {
       const date = typeof data.date === 'string' ? data.date : undefined;
       const description =
         (citation ? `${citation} · ` : '') +
-        `${groupLabel}, mirrored from primary source` +
-        (retrieved ? ` on ${retrieved}` : '') +
+        `${groupLabel}` +
+        (retrieved ? `, captured on ${retrieved}` : '') +
         ' for the TakealotBack.com evidence vault.';
       return {
         title: `${entry.data.title}${citation ? `: ${citation}` : ''}`,

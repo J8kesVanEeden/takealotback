@@ -69,6 +69,6 @@ The site therefore presents platform responsibility as the regulators' stated vi
 - Clause 11 (coupons and vouchers): e-vouchers sit under s 63; part-used value stays redeemable.
 - Clauses 01 (time limits), 02 (original packaging) and 21 (item substitution), and the Law section's s 19 blurb: the paper reads CPA s 20 with s 19 as giving online buyers the right to inspect, refuse goods that don't match the order and claim a refund. The site notes each time that s 19(1)(b) switches s 19 off where ECT s 46 governs performance.
 
-(Updated 2026-11-18: the description said "E-vouchers last 3 years", which is not in the paper's text quoted here (the three-year floor is CPA s 63 itself); and Clauses 01, 02 and 21 and the Law section's s 19 blurb, which all rely on the s 20 inspection reading, were missing from this list.)
+(Updated 2026-11-18: the description said "E-vouchers last 3 years", which is not in the paper's text quoted here; the three-year floor is CPA s 63 itself. Clauses 01, 02 and 21 and the Law section's s 19 blurb, which all rely on the s 20 inspection reading, were also missing from this list.)
 
 The July 2025 explanatory note the paper refers to ("Transacting with E-commerce Platforms and E-vouchers") returned 404 at its old CGSO URL on 2026-11-10. It opened at a different CGSO download URL on 2026-11-17 and has its own file: [NCC-CGSO-Evouchers-Note-2025.md](./NCC-CGSO-Evouchers-Note-2025.md). The site cites both.

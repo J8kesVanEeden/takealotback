@@ -51,4 +51,4 @@ Unanimous five-judge bench (judgment by Steyn AJA). The buyer of a second-hand v
 
 - `/aedilitian-remedies`, `/limits` and the Warranties section link note: para 14's "reasonable time after discovering the defect" requirement for cancelling (the actio redhibitoria); prescription is the outer limit, not the only one.
 - `/aedilitian-remedies`: para 14's requirements combined with the Holmdene definition (para 16) give the site's three-point list (hidden, present at sale, material); the list is the site's synthesis.
-- `/aedilitian-remedies`: modern SCA confirmation of the latent-defect test; "a repair attempt doesn't cost you the right to cancel"; credit purchases (e.g. instalment or buy-now-pay-later finance) don't take the goods outside the CPA.
+- `/aedilitian-remedies`: modern SCA confirmation of the latent-defect test; "taking the item back after a failed repair did not waive the buyer's right to cancel"; credit purchases (e.g. instalment or buy-now-pay-later finance) don't take the goods outside the CPA.

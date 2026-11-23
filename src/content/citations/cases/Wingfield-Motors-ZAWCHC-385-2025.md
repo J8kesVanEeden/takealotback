@@ -43,7 +43,7 @@ Vehicle case. A Western Cape Division decision: Takealot's own T&Cs choose the W
 
 - Clause 08 (defective exclusions), "Wingfield v NCT" angle: an exclusion like wear and tear or consumer damage has to be proved by Takealot, not asserted.
 - Template T03: cited with *Toyota* and *Edan* for the point that the supplier must prove the exclusion it relies on.
-- FAQ "Why do the templates mention case names?": named as an example.
+- FAQ "Why do your templates mention case names and NCT references?": named as an example.
 - `/onus-of-proof` deep-dive.
 
 (Updated 2026-11-18: the angle was labelled "Onus on supplier"; its label on the site is "Wingfield v NCT". Template T03 and the FAQ were added to this list.)

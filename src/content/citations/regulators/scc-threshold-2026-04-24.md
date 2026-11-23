@@ -52,7 +52,7 @@ If your claim is above R30,000, the DoJ page says you can "institute a claim for
 
 **No court fee to issue a summons.** The Small Claims Court Rules (GN R2573 of 2022) list only one court fee (a photocopy charge) in Annexure 2 Part I. As amended by GoN R6755 (GG 53572, 24 October 2025; in force 28 November 2025):
 
-> "PART I — Court fees — For a copy of a record made by the clerk of the court— for every photocopy of an A4 size page or part thereof: [R2,00] R3,00."
+> Under "PART I", "Court fees": "For a copy of a record made by the clerk of the court— for every photocopy of an A4 size page or part thereof: [R2,00] R3,00."
 
 **You can serve the summons yourself.** The DoJ Small Claims page: "The summons can be delivered by you or the sheriff of the court."
 
