@@ -1,8 +1,8 @@
 # Quarterly Takealot policy refresh reminder.
 #
 # Opens a GitHub issue every quarter with the full refresh checklist
-# baked in. Runs in the cloud, fires reliably, doesn't depend on a
-# Claude Code session being open.
+# baked in. Runs in the cloud, so it fires whether or not anyone is
+# working on the repo that day.
 #
 # Cadence: 1st of Jan / Apr / Jul / Oct at 09:07 UTC. Slightly off the
 # hour because every workflow on the planet that picks "0 9" lands on
@@ -14,9 +14,7 @@
 #   2. Capture fresh snapshots if material changes; bump retrieved:
 #      dates if not.
 #   3. Refresh the Wayback archive for both Takealot URLs.
-#   4. Sync the Obsidian vault at:
-#      ~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Milk Moon Studio/Side Projects/TakealotBack.com/
-#      following the established _Archive vN/ pattern.
+#   4. Sync the maintainer's Obsidian notes (npm run sync:obsidian).
 #   5. Run npm run check:all and open a PR.
 name: Quarterly policy refresh reminder
 
@@ -67,10 +65,9 @@ jobs:
           - [ ] Bump the `retrieved:` date in both existing citation files to today
           - [ ] Run `npm run archive` for the two Takealot URLs to refresh Wayback, update `wayback_url_dated`
 
-          ## 3. Sync the Obsidian vault
+          ## 3. Sync the maintainer's Obsidian notes
 
-          - [ ] Open `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Milk Moon Studio/Side Projects/TakealotBack.com/`
-          - [ ] If counts/wording have drifted, follow the `_Archive vN/` pattern: archive current → produce v(N+1) reflecting the live site → update `_agent.md` per folder
+          - [ ] Run `npm run sync:obsidian` (skipped automatically if the notes folder isn't on this machine)
 
           ## 4. Verify and ship
 
@@ -81,7 +78,7 @@ jobs:
           ## Reference
 
           - `OPERATIONS.md` → "When you change CLAUSES" + "When you add a citation" runbooks
-          - Memory: never push directly to main — open a PR
+          - Never push directly to main; open a PR
           EOF
           )
 

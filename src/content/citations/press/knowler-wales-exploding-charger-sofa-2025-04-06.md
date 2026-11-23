@@ -11,7 +11,7 @@ retrieved: "2026-05-07"
 corrected_on: "2026-11-17"
 correction_note: "Three passages were set out as direct Takealot quotations but are partly or wholly Knowler's reported speech. Restored to the article's wording, with only Takealot's own words in quotation marks, 2026-11-17."
 reverified_on: "2026-11-17"
-retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; pasted into the citation pipeline by the site editor."
+retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; copied into this file by the site editor."
 wayback_status: "Wayback capture 20260507165447 holds the full article text (checked 2026-11-10)."
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Disclosed for transparency."
 used_in:
