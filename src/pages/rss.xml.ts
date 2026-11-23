@@ -19,7 +19,7 @@ const CITATION_GROUP_LABEL: Record<string, string> = {
 //
 //   1. The 3 long-form deep-dive pages (onus-of-proof, aedilitian-remedies,
 //      limits) — primary content updates.
-//   2. The citations evidence vault (currently 32 sources) — every
+//   2. The citations evidence vault  — every
 //      statute / judgment / advisory / regulator detail / Takealot policy
 //      snapshot / third-party commentary the site relies on.
 //
