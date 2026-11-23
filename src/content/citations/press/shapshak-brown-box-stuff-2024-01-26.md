@@ -26,7 +26,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-Takealot refused Shapshak's return because it conflated the **brown delivery box** with **original product packaging**. The case also documents the *shifting T&Cs* pattern: the rules cited in the rejection email were not the same as those cited in the original return-acceptance email. Shapshak is Stuff SA's Editor-in-Chief and a Forbes senior contributor, and Stuff is independent of Naspers.
+Takealot refused Shapshak's return because it conflated the **brown delivery box** with **original product packaging**. The case also documents the *shifting T&Cs* pattern: the rules cited in the rejection email were not the same as those cited in the original return-acceptance email. Shapshak is Stuff SA's editor-in-chief and a Forbes senior contributor. From the author note under the article: "Toby Shapshak is editor-in-chief of Stuff, a Forbes senior contributor and a columnist for Business Day."
 
 ## Extracts (fair dealing for criticism and review)
 

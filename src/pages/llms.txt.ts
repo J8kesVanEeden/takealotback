@@ -85,7 +85,7 @@ export const GET: APIRoute = async () => {
   line('## Source of truth and updates');
   line();
   line(`- [Full content as plain markdown](${SITE_URL}/llms-full.txt): every quick hit, clause, template, law card, warranty angle, escalation tier, FAQ answer and deep-dive page in one file.`);
-  line(`- [Citations & sources index](${SITE_URL}/citations): all ${citations.length} sources the site relies on (statutes, case law, CGSO and NCC advisory notes, Takealot policy snapshots, regulator details, commentary, press reports), dated, attributed, with primary URLs and Wayback Machine links where available.`);
+  line(`- [Citations & sources index](${SITE_URL}/citations): all ${citations.length} sources the site relies on (statutes, case law, CGSO and NCC advisory notes, Takealot policy snapshots, regulator details, commentary, press reports, service provider terms), dated, attributed, with primary URLs and Wayback Machine links where available.`);
   line(`- [Structured JSON API](${SITE_URL}/api/data.json): machine-readable export of every clause, template, quick hit, law-section card, escalation tier, FAQ entry, warranty angle, playbook scenario and policy-summary bullet. CC BY 4.0; CORS-open; rebuilt on every deploy.`);
   line(`- [RSS feed](${SITE_URL}/rss.xml): every deep-dive page and every citation page. Each citation entry's title carries its formal citation where it has one.`);
   line(`- [GitHub repository](${GITHUB_REPO_URL}): public; corrections via issues only.`);

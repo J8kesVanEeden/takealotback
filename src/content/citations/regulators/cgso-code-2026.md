@@ -12,6 +12,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) 'CGSO (compulsory scheme)' angle"
   - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) — 'CGSO 60-day benchmark' angle"
   - "src/data/content.ts — ESCALATION[2] (CGSO tier)"
+  - "src/data/content.ts — ESCALATION[4] (NCC tier) CGSO accreditation"
   - "src/data/content.ts — TEMPLATES T14 body"
   - "src/data/content.ts — TEMPLATES T16 body"
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory) resolution target"
@@ -47,6 +48,14 @@ Clause 15.2.5.1 says the CGSO shall:
 > make every effort to resolve all Complaints within 60 (sixty) days from commencement of an investigation in terms of clause 15.4 failing which the CGSO shall close the complaint and refer the complaint to the NCC;
 
 The Code gives the participant "15 (fifteen) business days" to respond once the CGSO refers a complaint to it (cl 15.2.7.7: "the Participant shall have 15 (fifteen) business days from receipt of the communication to investigate and attempt to resolve the Dispute with the Complainant or to provide the CGSO with its reasons for repudiating the Complaint").
+
+## The CGSO's accreditation
+
+From the joint media release of the NCC and the CGSO, 12 November 2026 (thencc.org.za/joint-media-release-from-the-national-consumer-commission-and-the-consumer-goods-and-services-ombud/, retrieved 2026-11-17):
+
+> "Established in 2013, the CGSO is an independent and accredited alternative dispute resolution scheme as defined in the Consumer Protection Act (CPA). Its accreditation derives from section 82 of the CPA, and its dispute resolution mandate from section 70 of the CPA."
+
+The site's NCC tier relies on this, read with CPA s 72(1)(b), for the NCC's power to refer a dispute to the CGSO.
 
 ## The 2015 Code, for comparison
 

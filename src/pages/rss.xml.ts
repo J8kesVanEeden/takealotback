@@ -90,7 +90,7 @@ export async function GET(context: APIContext) {
   return rss({
     title: 'TakealotBack.com: deep dives & citations',
     description:
-      "Long-form South African consumer-law explainers and the underlying citations vault: every statute, judgment, advisory, regulator detail, Takealot policy snapshot, press report, service provider terms and third-party commentary the site relies on. Non-commercial, CC BY 4.0.",
+      "Long-form South African consumer-law explainers and the underlying citations vault: every statute, judgment, advisory, regulator detail, Takealot policy snapshot, press report, service provider's terms and third-party commentary the site relies on. Non-commercial, CC BY 4.0.",
     site,
     items,
     customData: `<language>en-ZA</language><copyright>CC BY 4.0, Milk Moon Studio</copyright>`,

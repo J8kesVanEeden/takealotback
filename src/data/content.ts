@@ -931,7 +931,7 @@ export const ESCALATION: EscalationTier[] = [
     body: "File with your bank's disputes team. It may be able to run alongside a CGSO complaint: check with both. Card only: EFT/RTC/PayShap not covered.",
     contact: "Your card issuer's disputes team" },
   { tier: 5, title: "National Consumer Commission (NCC)", window: "Variable",
-    body: "Broader CPA enforcement. The NCC can refer individual disputes to the CGSO (CPA s 72(1)(b)). NCC is best for patterns or systemic issues. The NCC can issue a compliance notice, and ignoring one has a cost: in November 2026 the NCC reported a R200,000 Tribunal fine on a solar supplier that ignored a notice to propose a remedy for a battery that failed within six months (the Tribunal ruled only on the ignored notice, not on the battery).",
+    body: "Broader CPA enforcement. The NCC can refer an individual dispute to the CGSO (CPA s 72(1)(b)), but not one the CGSO has already failed to resolve. NCC is best for patterns or systemic issues. The NCC can issue a compliance notice, and ignoring one has a cost: in November 2026 the NCC reported a R200,000 Tribunal fine on a solar supplier that ignored a notice to propose a remedy for a battery that failed within six months (the Tribunal ruled only on the ignored notice, not on the battery).",
     contact: "thencc.org.za · 012 065 1940 · enquiries@thencc.org.za · eservice.thencc.org.za" },
   { tier: 6, title: "Information Regulator", window: "Variable",
     body: "POPIA issues: credential demand, unlawful data retention, excessive information requests.",

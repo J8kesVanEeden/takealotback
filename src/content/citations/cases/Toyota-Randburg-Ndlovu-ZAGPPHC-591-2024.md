@@ -53,6 +53,6 @@ Vehicle case, before the Tribunal; a two-judge appeal bench. Persuasive in its o
 - `/onus-of-proof` deep-dive: the consumer shows the goods fail the quality standard; the supplier has to prove misuse (including the sample reply).
 - Clause 03 (damage exclusions), "Edan Traders v NCT" angle: credits Toyota Randburg as the holding that Edan Traders relied on.
 - Template T03 (Demand technical evidence): cited for the supplier's onus to prove the exclusion it relies on.
-- Template T16 (Inspection deadline): cited, as relied on by the Full Court in *Edan Traders*, for a rejection having to identify the exclusion and the evidence for it.
+- Template T16 (Inspection deadline): cited, as relied on by the Full Court in *Edan Traders*, for the supplier's onus to prove the exclusion it relies on.
 - `/aedilitian-remedies`, "Practical limits": why the CPA route is usually better inside 6 months.
 - Triage, "Return refused › Consumer damage / surge / misuse" note (no `used_in` line: the resolver has no destination for the triage modal).
