@@ -21,7 +21,7 @@ A market inquiry under the Competition Act into online platforms (eCommerce, tra
 
 ## Proposition cited on the site
 
-Takealot both runs the marketplace and competes on it through Takealot Retail. The Inquiry found that this "creates a conflict of interest" and required Takealot to segregate its Retail division from its Marketplace operations. The site uses this only to undercut a "the seller is solely responsible" deflection; it does not claim the finding gives a consumer any remedy.
+Takealot both runs the marketplace and competes on it through Takealot Retail. The Inquiry found that this "creates a conflict of interest" and required Takealot to segregate its Retail division from its Marketplace operations. The site cites it as "a competition remedy that protects sellers, not a consumer-law ruling"; it does not claim the finding gives a consumer any remedy.
 
 ## Verbatim extracts (eCommerce section, p 4-5)
 
@@ -35,7 +35,7 @@ Takealot both runs the marketplace and competes on it through Takealot Retail. T
 
 `src/data/content.ts` Clause 15 (marketplace-sellers), angle "Competition Commission finding":
 
-> "In July 2023 the Competition Commission's Online Intermediation Platforms Market Inquiry found that Takealot trading through its own Retail division on its marketplace "creates a conflict of interest", and said "Takealot is required to segregate its Retail division from its Marketplace operations". It is a competition remedy that protects sellers, not a consumer-law ruling, but it undercuts any "the seller is solely responsible" deflection."
+> "In July 2023 the Competition Commission's Online Intermediation Platforms Market Inquiry found that Takealot trading through its own Retail division on its marketplace "creates a conflict of interest", and said "Takealot is required to segregate its Retail division from its Marketplace operations". It is a competition remedy that protects sellers, not a consumer-law ruling."
 
 **Correction (2026-11-10).** Earlier site copy dated the finding to August 2023 and said the Inquiry was "recommending the marketplace be operated as a separate business". The summary is dated July 2023, and its wording is that Takealot "is required to segregate" Retail from Marketplace.
 

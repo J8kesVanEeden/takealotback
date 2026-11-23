@@ -55,7 +55,7 @@ From Wendy Knowler, "How committed to customer relations are retailers?", TimesL
 ## Site reliance
 
 - **Clause 15 (marketplace sellers) corroborating angle:** confirms the MyBroadband narrative. The two sources together (independent SA tech outlet and columnist on Arena Holdings) strengthen the citation.
-- **Stephanie Scholle calls it "a stolen unit that was sold to us as new".** That is the consumer-side grievance in her own words: the supplier's vetting failure is the *primary* fault, and the refusal over "tampering" is downstream noise.
+- **Stephanie Scholle calls it "a stolen unit that was sold to us as new".** That is the consumer-side grievance in her own words: "The main problem with the laptop is that it is a stolen unit", and "The laptop is upgradeable — that is not tampering."
 
 ## Wayback / archive status
 

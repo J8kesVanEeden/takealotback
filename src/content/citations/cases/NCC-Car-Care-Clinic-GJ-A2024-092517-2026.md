@@ -46,7 +46,7 @@ The "cause of the complaint" for the three-year limit in CPA s 116(1)(a) was the
 ## Scope and limits
 
 - s 116 governs complaints to the National Consumer Tribunal and consumer courts. Claims in the ordinary courts are governed by the Prescription Act (3 years for ordinary debts).
-- Compare [*Ntoatsabone v Hisense* [2026] ZANCT 21](./Ntoatsabone-Hisense-ZANCT-21-2026.md), where a complaint was counted from the sale and held time-barred. That case concerned a misrepresentation claim. Acting early avoids the question.
+- Compare [*Ntoatsabone v Hisense* [2026] ZANCT 21](./Ntoatsabone-Hisense-ZANCT-21-2026.md), where a complaint was counted from the sale and held time-barred. There the Tribunal counted from the sale because the TV's features "were part of the representation made at the time of the sale" (para 12). Acting early avoids the question.
 
 ## Site reliance
 

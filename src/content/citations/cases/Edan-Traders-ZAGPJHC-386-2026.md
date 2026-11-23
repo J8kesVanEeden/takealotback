@@ -26,11 +26,11 @@ updated: "2026-11-23"
 # Edan Traders (Pty) Ltd v National Consumer Tribunal and Others
 ## [2026] ZAGPJHC 386 | Gauteng Division, Johannesburg (Full Court) | 13 April 2026
 
-Judgment by Yacoob J, Windell and Wanless JJ concurring. Marked "REPORTABLE: YES". An appeal by a used-vehicle dealer against a National Consumer Tribunal finding of prohibited conduct under the CPA; the appeal was dismissed.
+Judgment by Yacoob J, Windell and Wanless JJ concurring. Marked "REPORTABLE: YES". An appeal by Edan, which sold the consumer a second-hand truck, against a National Consumer Tribunal finding of prohibited conduct under the CPA; the appeal was dismissed.
 
 ## Proposition cited on the site
 
-In a defective-goods dispute under the CPA, **the consumer has to show that there were problems with the goods, not what caused them.** Once problems that arose shortly after delivery are shown, **the supplier carries the onus** to rebut the conclusion that the goods were defective and to prove that the problems came from the consumer's own conduct.
+In a defective-goods dispute under the CPA, **the consumer has to show that there were problems with the goods, not what caused them.** Once problems that arose shortly after delivery are shown, **the supplier carries the onus** to rebut the conclusion that the goods were defective and to prove that the issues arose from the purchaser's negligence.
 
 **Whose holding this is.** The rule comes from *Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591 (paras 43 and 46; see [Toyota-Randburg-Ndlovu-ZAGPPHC-591-2024.md](./Toyota-Randburg-Ndlovu-ZAGPPHC-591-2024.md)). In Edan para 36 the Full Court summarises *Toyota* and relies on it: the sentence "The onus on the purchaser is to demonstrate that there were problems, not to show the cause of the problems" carries footnote 8, "Paragraph 43", and the sentence before it footnote 7, "Paragraph 46", both pointing to *Toyota*. The court's own summary line reads: "onus on supplier of goods to show issues either did not exist at the time of delivery, or were disclosed and accepted by consumer – consistent with principles of consumer protection". On the facts the court upheld the Tribunal's "inference … that there were serious defects at the time of purchase" as "consistent with the evidence" (para 34). Cite it as: *Toyota Randburg* (2024), relied on by the Full Court in *Edan Traders* (2026).
 
@@ -50,6 +50,6 @@ In a defective-goods dispute under the CPA, **the consumer has to show that ther
 
 ## Site reliance
 
-- Clause 03 (damage exclusions), "Edan Traders v NCT" angle: when Takealot rejects a return as wear and tear, consumer damage or a surge, it has to prove that; the consumer doesn't have to prove the cause of the fault. (Clause 08 cites *Wingfield*, not Edan; corrected 2026-11-17; angle label corrected from "Onus on supplier" 2026-11-18.)
+- Clause 03 (damage exclusions), "Edan Traders v NCT" angle: when Takealot rejects a return as consumer damage, a surge or unintended use, it has to prove that; the consumer doesn't have to prove the cause of the fault. (Clause 08 cites *Wingfield*, not Edan; corrected 2026-11-17; angle label corrected from "Onus on supplier" 2026-11-18.)
 - Templates T03 and T16: cited as the Full Court that relied on *Toyota* for the supplier's onus to prove the exclusion it relies on.
 - `/onus-of-proof` deep-dive.

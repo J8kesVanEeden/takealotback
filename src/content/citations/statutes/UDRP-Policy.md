@@ -6,7 +6,7 @@ date: "2024-02-21"
 primary_url: "https://www.icann.org/resources/pages/policy-2024-02-21-en"
 wayback_url: "https://web.archive.org/web/*/https://www.icann.org/resources/pages/policy-2024-02-21-en"
 wayback_url_dated: "https://web.archive.org/web/20261115225730/https://www.icann.org/resources/pages/policy-2024-02-21-en"
-metaDescription: "UDRP para 4(c)(iii), verbatim: a legitimate noncommercial or fair use of a domain name, without intent to mislead consumers or tarnish the mark, shows a legitimate interest."
+metaDescription: "UDRP para 4(c)(iii): \"a legitimate noncommercial or fair use of the domain name, without intent for commercial gain to misleadingly divert consumers or to tarnish the trademark or service mark at issue\" shows a legitimate interest, if the Panel finds it proved."
 retrieved: "2026-11-23"
 used_in:
   - "src/components/AboutSection.astro — legal grounding block"

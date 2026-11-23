@@ -7,7 +7,7 @@ primary_url: "https://www.saflii.org/za/cases/ZACGSO/2021/10.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZACGSO/2021/10.html"
 saflii_pdf: "https://www.saflii.org/za/cases/ZACGSO/2021/10.pdf"
 cgso_index: "https://www.cgso.org.za/advisory-notes/"
-metaDescription: "CGSO Advisory Note 10 (2021; withdrawn from the CGSO site pending review, still on SAFLII): online, delivery (s 19) and price display (s 23) give way to the ECT Act. Unless the seller's terms say otherwise, an accepted advertised price binds, except for an obvious error. ECT s 46 doesn't stop you insisting on delivery."
+metaDescription: "CGSO Advisory Note 10 (2021; withdrawn from the CGSO site pending review, still on SAFLII): online, delivery (s 19) and price display (s 23) give way to the ECT Act. Unless the seller's terms say otherwise, an accepted advertised price binds, except for an obvious error. ECT s 46 doesn't stop you insisting on delivery, assuming the agreement does not specify otherwise."
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'CGSO Advisory Note 10' (pricing errors online) and 'ECT s 46' angles"
@@ -43,7 +43,7 @@ Takealot's T&Cs stipulate: "Your order is only complete once you have paid and r
 
 ### Late delivery: cancel or insist
 
-> "It is our understanding that this section [ECT s 46] does not prevent the consumer from, rather than cancelling the agreement, electing to seek specific performance of the seller's obligation to perform."
+> "It is our understanding that this section [ECT s 46] does not prevent the consumer from, rather than cancelling the agreement, electing to seek specific performance of the seller's obligation to perform. This is assuming the agreement does not specify otherwise."
 
 ## Site reliance
 

@@ -99,7 +99,9 @@ export const GET: APIRoute = async () => {
     lines.push(`### ${group.group}`);
     lines.push('');
     for (const it of group.items) {
-      lines.push(`- **${group.group} ${it.id} (${it.title})**: ${it.blurb}`);
+      // Same label as the homepage card (LawSection.astro): only section numbers are shown, not internal ids.
+      const label = /^ss? /.test(it.id) ? `${group.group} ${it.id}` : group.group;
+      lines.push(`- **${label} (${it.title})**: ${it.blurb}`);
     }
     lines.push('');
   }

@@ -56,6 +56,8 @@ Verbatim (same SAFLII capture; paragraph numbers not given because the capture's
 
 > "… The words “Black Label” on the respondent's registered trade marks were replaced, on the T-shirt, with “Black Labour”; the respondent's “Carling Beer” was substituted with “White Guilt”; and where written “America's lusty lively beer” and “enjoyed by men around the world”, the applicant had printed “Africa's lusty lively exploitation since 1652” and “No regard given worldwide”, respectively."
 
+> "The applicant sells the T-shirts for profit in order to make social comment."
+
 > "The respondent approached the High Court for an interdict on the ground that the unauthorised use of its registered trade marks by the applicant in the course of trade offended the anti-dilution provisions of section 34(1)(c). …"
 
 > "The High Court upheld the respondent's claim and granted with costs the restraint order sought. …"
