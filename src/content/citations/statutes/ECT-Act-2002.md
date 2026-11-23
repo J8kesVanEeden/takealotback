@@ -11,6 +11,7 @@ itu_url: "https://www.itu.int/ITU-D/projects/ITU_EC_ACP/hipssa/Activities/SA/doc
 metaDescription: "Electronic Communications and Transactions Act 25 of 2002, Chapter VII verbatim: the 7-day cooling-off and its exclusions, seller information duties, 30-day performance, and no contracting out (s 48)."
 retrieved: "2026-11-10"
 used_in:
+  - "src/content/pages/limits.md — cooling-off limits (s 42(2), s 44)"
   - "src/data/content.ts — CLAUSES citing ECT sxx (s 42, s 43, s 44, s 46)"
   - "src/data/content.ts — LAW_SECTIONS[1] (ECT Act group)"
   - "src/data/content.ts — TEMPLATES referring to ECT s 44 / s 46"

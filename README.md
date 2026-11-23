@@ -82,7 +82,7 @@ Every factual, legal, or policy claim on the live site traces to a source in
 [`src/content/citations/`](./src/content/citations/). Primary-source snapshots of statutes, case law,
 regulator contact details, and Takealot's own policies, dated and versioned
 so content changes are always defensible and change-detectable. Start at
-[`citations/INDEX.md`](./citations/INDEX.md) for the mini-sitemap.
+[takealotback.com/citations](https://takealotback.com/citations), which is built from that folder on every deploy.
 
 ## Operations
 

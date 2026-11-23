@@ -44,6 +44,10 @@ From Wendy Knowler, Consumer Lookout, News24, 17 April 2026. Quoted under s 12(1
 
 > "Consumers in possession of the affected products are urged to immediately stop using them and return them to a point of purchase for a refund." (NCC recall notice)
 
+The NCC's own notice (thencc.org.za/product-safety-recall-esr-halolock-wireless-power-banks/, posted 8 April 2026, read 2026-11-23) records the recall as notified by the supplier:
+
+> "The National Consumer Commission (NCC) informs consumers of the recall of ESR HaloLock Wireless Power Banks, as notified by Waymeet Limited."
+
 ### Hart's case
 
 Ben Hart bought the unit through Takealot. After he found the recall, he emailed Takealot:

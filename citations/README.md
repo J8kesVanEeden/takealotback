@@ -81,7 +81,7 @@ Nothing in this folder is licensed CC BY 4.0 — the content-licence in `CONTENT
 
 Before changing any factual claim in `src/data/content.ts`, `src/content/pages/*.md`, or any component with a citation, the flow is:
 
-1. **Open `citations/INDEX.md`** and locate the source that supports the claim you're changing.
+1. **Open the live index at https://takealotback.com/citations** (built from `src/content/citations/` on every deploy) and locate the source that supports the claim you're changing.
 2. **Check the `retrieved` date.** If older than 6 months, refresh the snapshot from the original URL before relying on it.
 3. **If no snapshot exists** for a source you want to cite, create one in the appropriate subfolder *before* you ship the content change.
 4. **In your commit message**, reference the citation file path (e.g. `cf. citations/cases/Motus-Wentzel-ZASCA-40-2021.md`) so the reviewer can verify the source without leaving the repo.

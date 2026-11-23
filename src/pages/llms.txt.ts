@@ -31,7 +31,7 @@ import { SITE_URL } from '../lib/schema';
 const SECTIONS: Array<{ id: string; name: string; about: string }> = [
   { id: 'home', name: 'Home', about: "What the site is for, with the jurisdiction, the laws it draws on and the counts below." },
   { id: 'short-version', name: `The short version: ${QUICK_HITS.length} quick hits`, about: 'One screen of the rights people use least, chargebacks included.' },
-  { id: 'three-things', name: 'Three things to do right now', about: 'Find your fight (a short quiz that points you to the right clause and template), grab a template, escalate.' },
+  { id: 'three-things', name: 'Three things to do right now', about: 'Find your fight (browse the clauses), grab a template, escalate.' },
   { id: 'dismantled', name: `Dismantled: ${CLAUSES.length} clauses`, about: "Clauses from Takealot's returns policy and terms, each set against the CPA, ECT Act and POPIA, with case law and who has to prove what." },
   { id: 'templates', name: `Templates: ${TEMPLATES.length} ready-to-send emails`, about: 'Copy-and-paste emails, each built on a specific section of the CPA, ECT Act or POPIA.' },
   { id: 'law', name: 'The law: full reference', about: `Section cards for ${LAW_SECTIONS.map((g) => g.group).join(', ')}, plus where to file.` },
