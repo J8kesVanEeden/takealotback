@@ -55,4 +55,4 @@ Vehicle case, before the Tribunal; a two-judge appeal bench. Persuasive in its o
 - Template T03 (Demand technical evidence): cited for the supplier's onus to prove the exclusion it relies on.
 - Template T16 (Inspection deadline): cited, as relied on by the Full Court in *Edan Traders*, for the supplier's onus to prove the exclusion it relies on.
 - `/aedilitian-remedies`, "Practical limits": why the CPA route is usually better inside 6 months.
-- Triage, "Return refused › Consumer damage / surge / misuse" note (no `used_in` line: the resolver has no destination for the triage modal).
+- Triage, "Return refused on a technicality" › the "wear and tear" / consumer damage option and the "Not accepted as damaged on delivery" option, both notes (no `used_in` line: the resolver has no destination for the triage modal).

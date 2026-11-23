@@ -18,7 +18,7 @@ updated: "2026-11-23"
 
 # ComplaintsBoard: Takealot complaint dashboard (snapshot, 7 May 2026)
 
-## Why the site cites this
+## Why we keep this snapshot
 
 ComplaintsBoard is a publicly indexed aggregate of Takealot consumer complaints in English. The dashboard's structural statistics (total complaints, resolution rate, dominant complaint categories) corroborate the patterns documented by named-case journalism (Knowler, News24). It is kept as background; no clause currently cites it. It is not legal authority and the site does not lift any individual complaint narrative from the dashboard as evidence.
 

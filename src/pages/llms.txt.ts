@@ -57,7 +57,7 @@ export const GET: APIRoute = async () => {
   line();
   line(`Why Takealot: it's South Africa's biggest online retailer, so the site started there. The rights come from South African law, not from Takealot. ${SCOPE_LAW} ${SCOPE_TEMPLATES}`);
   line();
-  line(`This site is a one-way reference. No contact form, no accounts, no user-submitted content, no ads. Page views are counted with Cloudflare Web Analytics (no cookies) and with Google Analytics 4 run through Cloudflare Zaraz (sets cookies); see the [privacy note](${SITE_URL}/#privacy). Content is licensed CC BY 4.0: attribution is appreciated, and a link to the canonical URL is the preferred form. Code is MIT.`);
+  line(`This site is a one-way reference. No contact form, no accounts, no user-submitted content, no ads. Page views are counted with Cloudflare Web Analytics (no cookies) and with Google Analytics 4 run through Cloudflare Zaraz (sets cookies); see the [privacy note](${SITE_URL}/#privacy). Content is licensed CC BY 4.0, so credit the site when you reuse it; a link to the canonical URL is the preferred form. Code is MIT.`);
   line();
   line(`Content was last reviewed on ${reviewed} against published South African statutes, regulations and case law, and against Takealot's policies as live on ${policyDate}. The current review date is always in the \`last_reviewed\` field of ${SITE_URL}/api/data.json.`);
   line();

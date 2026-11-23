@@ -106,7 +106,7 @@ If you renamed a clause slug, `src/components/TriageModal.astro` picks up the ne
 1. Take a fresh snapshot to [`src/content/citations/policies/`](./src/content/citations/policies/) and name it with today's date (e.g. `takealot-returns-2026-10-15.md`). Do **not** overwrite the old snapshot; version the change.
 2. Diff against the prior dated snapshot. Flag material changes.
 3. Update affected `CLAUSES[*]` entries in `src/data/content.ts` and, if needed, `POLICY_SUMMARY.returns` or `POLICY_SUMMARY.terms`.
-4. Bump `LAST_REVIEWED` and, if the policy version identifier is tracked, `TAKEALOT_POLICY_REVIEWED_AGAINST`.
+4. Bump `LAST_REVIEWED` and `TAKEALOT_POLICY_REVIEWED_AGAINST` (the date you checked the live policy).
 5. Commit referencing the new snapshot file path in the message.
 
 ---
