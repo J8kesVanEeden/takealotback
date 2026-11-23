@@ -33,6 +33,9 @@ const citations = defineCollection({
     wayback_url: z.string().url().optional(),
     wayback_url_dated: z.string().url().optional(),
     retrieved: z.string().optional(),
+    /** YYYY-MM-DD this page was last edited. JSON-LD dateModified is the later
+     *  of this and `retrieved`. check:machine-readable keeps it current. */
+    updated: z.string().optional(),
     used_in: z.array(z.string()).optional(),
     copyright: z.string().optional(),
     /** Bespoke 130-160 char description used as the page's <meta name="description">

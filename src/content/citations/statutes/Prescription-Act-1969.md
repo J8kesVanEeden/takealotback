@@ -19,6 +19,7 @@ correction_note: "The date field read 1969-06-27. LawLibrary records the Act as 
 used_in:
   - "src/content/pages/aedilitian-remedies.md — 3-year ordinary prescription window for aedilitian claims"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Prescription Act 68 of 1969

@@ -12,6 +12,7 @@ disclosure: "EWN is a Primedia outlet, independent of Takealot's Naspers parent.
 used_in:
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'CPA s 31 — pre-ticked paid delivery' angle"
 copyright: "© EWN / Primedia. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
+updated: "2026-11-23"
 ---
 
 # EWN | Takealot raises minimum spend for free delivery to R750

@@ -32,7 +32,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Full history, so the public-repo check can read every commit in the PR.
+          # Full history and origin/main: the public-repo check reads every commit
+          # in the PR, and check-machine-readable checks edited pages' dates moved.
           fetch-depth: 0
 
       - name: Set up Node

@@ -15,6 +15,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus v Wentzel angle"
   - "src/data/content.ts — LAW_SECTIONS[0].items s69 blurb"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legal nature)"
+updated: "2026-11-23"
 ---
 
 # Motus Corporation (Pty) Ltd and Another v Wentzel

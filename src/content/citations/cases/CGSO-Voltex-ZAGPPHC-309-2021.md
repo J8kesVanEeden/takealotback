@@ -18,6 +18,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) CGSO angle"
   - "src/data/content.ts — ESCALATION[2] (CGSO tier) body"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Consumer Goods and Services Ombud NPC v Voltex (Pty) Ltd

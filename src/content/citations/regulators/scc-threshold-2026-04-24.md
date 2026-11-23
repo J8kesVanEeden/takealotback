@@ -19,6 +19,7 @@ used_in:
   - "src/components/LawSection.astro — Bodies card"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Small Claims Court angle"
 copyright: "Facts + regulatory thresholds, not copyrightable. Government Gazette text quoted verbatim."
+updated: "2026-11-23"
 ---
 
 # Small Claims Court: monetary jurisdiction (verified 2026-11-10)

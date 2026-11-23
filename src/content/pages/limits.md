@@ -4,6 +4,7 @@ slug: limits
 description: "The Consumer Protection Act is strong, but it doesn't do everything. This page lays out the limits of your statutory rights so you know when a claim is actually weak."
 metaTitle: "The limits of your rights: what the CPA doesn't do"
 datePublished: "2026-04-23"
+dateModified: "2026-11-23"
 ---
 
 # Where your rights stop

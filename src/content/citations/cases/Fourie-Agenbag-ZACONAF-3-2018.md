@@ -18,6 +18,7 @@ reverified_on: "2026-11-17"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section (attributed to NW Consumer Affairs Court, not NCT)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Fourie v Agenbag Motor Group

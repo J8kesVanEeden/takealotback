@@ -5,6 +5,7 @@ import Section from '../../components/Section.astro';
 import JsonLd from '../../components/JsonLd.astro';
 import { GITHUB_REPO_URL, LAST_REVIEWED } from '../../data/content';
 import { buildCitationsCollectionPage, buildBreadcrumb } from '../../lib/schema';
+import { CITATION_GROUPS } from '../../lib/site-index';
 
 const all = await getCollection('citations');
 
@@ -12,16 +13,9 @@ const all = await getCollection('citations');
 // regulators / commentary / press). Every subfolder of src/content/citations
 // needs a group here: an entry whose folder has no group is not listed, but
 // it still counts toward `total`.
+// The list itself lives in src/lib/site-index.ts (llms.txt uses it too).
 type Group = { name: string; label: string; entries: CollectionEntry<'citations'>[] };
-const groups: Group[] = [
-  { name: 'statutes', label: 'Statutes & regulations', entries: [] },
-  { name: 'cases', label: 'Case law', entries: [] },
-  { name: 'advisories', label: 'CGSO & NCC advisory notes', entries: [] },
-  { name: 'policies', label: 'Takealot policy snapshots', entries: [] },
-  { name: 'regulators', label: 'Regulators & courts', entries: [] },
-  { name: 'commentary', label: 'Commentary (link + short excerpt)', entries: [] },
-  { name: 'press', label: 'Press reports', entries: [] },
-];
+const groups: Group[] = CITATION_GROUPS.map((g) => ({ ...g, entries: [] }));
 
 for (const entry of all) {
   const top = entry.slug.split('/')[0];

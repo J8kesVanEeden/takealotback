@@ -20,6 +20,7 @@ used_in:
   - "src/content/pages/onus-of-proof.md — 'Inside the first 6 months' section"
   - "src/content/pages/aedilitian-remedies.md — 'Practical limits' section (onus within 6 months)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Edan Traders (Pty) Ltd v National Consumer Tribunal and Others
