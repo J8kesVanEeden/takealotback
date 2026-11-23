@@ -28,9 +28,9 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 # Protection of Personal Information Act 4 of 2013
 
-**Status of this file:** ss 10 and 19 verbatim from the Act as published in Government Gazette 37067 (26 November 2013), read 2026-11-17 from the gov.za PDF (`_handoff/refresh-2026-11-17/raw/R-POPIA-2013.txt`). This is the as-enacted text; the consolidated text on SAFLII and LawLibrary could not be opened from this machine (Cloudflare challenge), so amendments after 2013 were not checked here.
+**Status of this file:** ss 10 and 19 verbatim from the Act as published in Government Gazette 37067 (26 November 2013), read 2026-11-17 from the gov.za PDF (raw capture kept on file). This is the as-enacted text; the consolidated text on SAFLII and LawLibrary could not be opened from this machine (Cloudflare challenge), so amendments after 2013 were not checked here.
 
-**Commencement (corrected 2026-11-18).** The `commenced` field said "2021-07-01 (substantive provisions; some sections earlier)". SAFLII's consolidated text (captured 2026-11-10, `_handoff/refresh-2026-11/raw/saflii-popia-2013-full.txt`) gives: ss 1, Chapter 5 Part A (ss 39–54), 112 and 113 from 11 April 2014; ss 2–38, 55–109, 111 and 114(1)–(3) from 1 July 2020; ss 110 and 114(4) from 30 June 2021. The sections the site relies on (ss 10, 19, 22 and 23) commenced on 1 July 2020.
+**Commencement (corrected 2026-11-18).** The `commenced` field said "2021-07-01 (substantive provisions; some sections earlier)". SAFLII's consolidated text (captured 2026-11-10) gives: ss 1, Chapter 5 Part A (ss 39–54), 112 and 113 from 11 April 2014; ss 2–38, 55–109, 111 and 114(1)–(3) from 1 July 2020; ss 110 and 114(4) from 30 June 2021. The sections the site relies on (ss 10, 19, 22 and 23) commenced on 1 July 2020.
 
 POPIA's eight Conditions for Lawful Processing of Personal Information are in Chapter 3, sections 8–25. The site relies on Condition 2 (s 10, Minimality) and Condition 7 (s 19, Security Safeguards).
 
@@ -62,7 +62,7 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 
 ## s 22 — Notification of security compromises (Condition 7)
 
-**Site reliance:** Clause 24 (account suspension, closure and takeover): if there are reasonable grounds to believe someone unauthorised got into a customer's personal information, Takealot must tell the Information Regulator and the customer, in writing, with enough detail for the customer to protect themselves. (Added 2026-11-18. Verbatim from the gazette text, GG 37067; matches the SAFLII consolidated capture of 2026-11-10, `_handoff/refresh-2026-11-17/raw/popia-s22-s23-extract.txt`, which notes "S 22 commencement: 1 July 2020".)
+**Site reliance:** Clause 24 (account suspension, closure and takeover): if there are reasonable grounds to believe someone unauthorised got into a customer's personal information, Takealot must tell the Information Regulator and the customer, in writing, with enough detail for the customer to protect themselves. (Added 2026-11-18. Verbatim from the gazette text, GG 37067; matches the SAFLII consolidated capture of 2026-11-10, which notes "S 22 commencement: 1 July 2020".)
 
 > **22.** (1) Where there are reasonable grounds to believe that the personal information of a data subject has been accessed or acquired by any unauthorised person, the responsible party must notify—
 > (a) the Regulator; and
@@ -124,4 +124,4 @@ The Regulator's enforcement tools are the information notice (s 90) and the enfo
 
 ## Verbatim text
 
-Sections 10, 19, 22 and 23 above are verbatim. Full Act text as read on 2026-11-17 is in `_handoff/refresh-2026-11-17/raw/R-POPIA-2013.txt`.
+Sections 10, 19, 22 and 23 above are verbatim. The full Act text as read on 2026-11-17 is kept on file.

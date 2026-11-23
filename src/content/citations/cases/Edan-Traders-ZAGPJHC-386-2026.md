@@ -44,7 +44,7 @@ In a defective-goods dispute under the CPA, **the consumer has to show that ther
 - The goods were a vehicle and the forum was the National Consumer Tribunal. The onus reasoning is general: it turns on the consumer not having the technical knowledge to prove the cause of a fault, which applies with more force to a consumer returning electronics to an online retailer.
 - It is a Full Court decision of the Gauteng Division (Johannesburg), marked reportable. On the onus point it applies *Toyota* rather than laying down a new rule, so treat *Toyota* as the source and Edan as a Full Court that relied on it. Whether the onus passage is binding ratio in the Johannesburg Division is arguable; the site does not claim it is.
 
-(An earlier version of this file said Edan "binds courts in that Division" on the onus point and presented the para 36 sentence as the court's own holding. Corrected 2026-11-17 after re-reading para 36 and footnotes 7–8 in the SAFLII text, Wayback capture 20261110161901, raw file `_handoff/refresh-2026-11-17/raw/D2-Edan-Traders-ZAGPJHC-386-2026.txt`.)
+(An earlier version of this file said Edan "binds courts in that Division" on the onus point and presented the para 36 sentence as the court's own holding. Corrected 2026-11-17 after re-reading para 36 and footnotes 7–8 in the SAFLII text, Wayback capture 20261110161901.)
 - It adopts and applies [*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591](./Toyota-Randburg-Ndlovu-ZAGPPHC-591-2024.md). See also [*Wingfield Motors v NCT* [2025] ZAWCHC 385](./Wingfield-Motors-ZAWCHC-385-2025.md) for the same approach in the Western Cape.
 
 ## Site reliance

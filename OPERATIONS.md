@@ -71,7 +71,7 @@ Skip the live test only when you know no content / structure changed (e.g. comme
 
 ## Content-update runbook — *when you change CLAUSES, TEMPLATES, ESCALATION, FAQ, or any data array in `src/data/content.ts`*
 
-These are the steps the test loop found get forgotten. The CI / pre-push guards catch most of them, but doing them in this order saves a fail-and-fix round-trip:
+These are the steps that most often get forgotten. The CI / pre-push guards catch most of them, but doing them in this order saves a fail-and-fix round-trip:
 
 1. **Edit `src/data/content.ts` only** — never duplicate the source-of-truth into a component.
 2. **Run `npm run check:counts`** — flags any literal "20 clauses", "16 templates" etc. that drifted from the constant. Fix by reading from `CLAUSES.length` etc.
@@ -79,9 +79,8 @@ These are the steps the test loop found get forgotten. The CI / pre-push guards 
 4. **Run `npm run build:og`** — regenerates `public/og-image.png` so social-card preview reflects the new counts.
 5. **Bump `LAST_REVIEWED`** in `content.ts` if the change is substantive.
 6. **Run `npm run check:all`** — the full suite. This is what CI will run; pass locally first.
-7. **Commit + push.** Pre-push hook re-runs `check:all` — including `check:obsidian`, which fails if the Obsidian vault has drifted from the codebase.
-8. **Run `npm run sync:obsidian`** to refresh the maintainer's Obsidian notes from the codebase. The script archives the prior state and regenerates the generated folders; it skips itself (and `check:obsidian` passes) on any machine without the notes folder.
-9. **After deploy lands**: cache-purge runs automatically via GHA. Run `npm run check:live` to confirm the edge serves the new build.
+7. **Commit + push.** Pre-push hook re-runs `check:all`.
+8. **After deploy lands**: cache-purge runs automatically via GHA. Run `npm run check:live` to confirm the edge serves the new build.
 
 If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/TriageModal.astro` and any anchored deep-link in `src/components/AboutSection.astro`. `check:anchors` catches broken `#clause-X` references.
 
@@ -95,7 +94,6 @@ If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/Tria
 4. **Wire `src/lib/used-in-link.mjs`** — if your citation file references a target that doesn't fit existing patterns (CLAUSES[N], TEMPLATES, component names, deep-dive `.md`), add a regex.
 5. **Add the citation file path** to `scripts/check-citations.mjs` `CASE_NAME_TO_FILE` if it's a case (statutes already auto-detect).
 6. **Build + check + commit** following the standard runbook.
-7. **Run `npm run sync:obsidian`** so the new citation appears in the vault under `Citations/<group>/`.
 
 ---
 
@@ -146,7 +144,7 @@ A future enhancement may add a check that every case citation in `src/data/conte
 
 ---
 
-## Non-negotiables (inherited from the Build Brief)
+## Non-negotiables
 
 These five rules are not editorial. They are load-bearing:
 

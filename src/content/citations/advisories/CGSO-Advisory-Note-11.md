@@ -26,7 +26,7 @@ A voetstoots ("as-is") clause cannot disclaim the CPA's quality warranty for tra
 
 ## What the Note says (verbatim, SAFLII text)
 
-Read 2026-11-17 from the SAFLII page through the Wayback capture of 2 July 2026 (`_handoff/refresh-2026-11-17/raw/D2-CGSO-AN11-saflii.txt`; SAFLII itself returns a Cloudflare challenge to automated clients). Footnote markers removed.
+Read 2026-11-17 from the SAFLII page through the Wayback capture of 2 July 2026 (raw capture kept on file; SAFLII itself returns a Cloudflare challenge to automated clients). Footnote markers removed.
 
 > 1.5 "The issue of whether Voetstoots clauses apply to consumer transaction that the CPA applies to, has been put to rest by the National Consumer Tribunal which has ruled not only that a voetstoots sale, whereby the supplier is able to sell goods without any form of liability for any defects, whether patent or latent, whatsoever is not applicable to any transactions falling under the CPA, but also that the use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act."
 
@@ -65,4 +65,4 @@ The Note's reasoning runs through s 51(1)(b) (a term may not "waive or deprive a
 
 ## Status
 
-The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page still reads, on 2026-11-17 (fetched live): *"Advisory Notes are under review, they will be reuploaded once the review is completed."* (`_handoff/refresh-2026-11-17/raw/R-cgso-advisory-notes-page.txt`). Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII as [2021] ZACGSO 11 (SAFLII title: "Advisory note 11: Supply of Voetstoots Goods [2021] ZACGSO 11 (1 March 2021)"), which is the copy relied on here. Cite it as the CGSO's published 2021 view, withdrawn from the CGSO site pending review, not as current CGSO guidance. A revised CGSO Code (GN 4264, GG 55719) takes effect on 1 December 2026; the Notes have not been re-issued under it as of 2026-11-17.
+The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page still reads, on 2026-11-17 (fetched live): *"Advisory Notes are under review, they will be reuploaded once the review is completed."* (raw capture kept on file). Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII as [2021] ZACGSO 11 (SAFLII title: "Advisory note 11: Supply of Voetstoots Goods [2021] ZACGSO 11 (1 March 2021)"), which is the copy relied on here. Cite it as the CGSO's published 2021 view, withdrawn from the CGSO site pending review, not as current CGSO guidance. A revised CGSO Code (GN 4264, GG 55719) takes effect on 1 December 2026; the Notes have not been re-issued under it as of 2026-11-17.

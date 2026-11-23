@@ -45,7 +45,7 @@ const files = explicit.length
 // ── Banned list ─────────────────────────────────────────────────────────────
 // Each entry: [regex, label]. Word-boundaried, case-insensitive.
 const BANNED = [
-  // AI vocabulary (Wikipedia: Signs of AI writing, "AI vocabulary")
+  // Overused vocabulary
   [/\bdelv(?:e|es|ed|ing)\b/i, 'delve'],
   [/\btapestry\b/i, 'tapestry'],
   [/\btestament to\b/i, 'testament to'],
@@ -116,7 +116,7 @@ const WARNS = [
   [/,\s(?:ensuring|highlighting|underscoring|emphasi[sz]ing|reflecting|showcasing|cementing)\b/i, 'trailing -ing significance clause'],
   [/(?:^|["'`>\s])(?:Practical advice|Why it matters|Key point|Bottom line|In practice):/, 'announcing label'],
   [/’|‘/, 'curly apostrophe/quote in our prose'],
-  [/\b(?:matters|quietly|clearer|steady|dependable|prioriti[sz]e|universally|practical)\b/i, 'mid-2026 AI vocabulary (fine alone, not in clusters)'],
+  [/\b(?:matters|quietly|clearer|steady|dependable|prioriti[sz]e|universally|practical)\b/i, 'overused word (fine alone, not in clusters)'],
 ];
 
 // ── Strip exempt text, keeping line numbers ────────────────────────────────

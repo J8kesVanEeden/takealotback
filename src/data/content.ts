@@ -1,7 +1,7 @@
 // TakealotBack — content data (clauses, templates, law, escalation, FAQ, etc.)
-// Source: Obsidian vault v2 content (last full verification pass 2026-11-10).
-// DO NOT rewrite content here. If anything looks wrong, flag it and raise it
-// against the vault first. See Build Brief / Content Map for the update flow.
+// Last full verification pass 2026-11-10.
+// DO NOT rewrite content here without checking the source first. If anything
+// looks wrong, open an issue. See OPERATIONS.md for the update flow.
 
 export interface Angle {
   stat: string;

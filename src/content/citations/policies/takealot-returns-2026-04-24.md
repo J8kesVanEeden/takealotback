@@ -47,7 +47,7 @@ Our audit on this date (ours, not Takealot's) verified the following clauses aga
 
 ## Lines added 2026-11-18 (verbatim, from the 2026-11-17 capture)
 
-Quoted because the site now relies on them (delivery-fee FAQ; Clause 11 e-voucher angle). Raw text: `_handoff/refresh-2026-11-17/raw/returns-2026-11-17.txt` (lines 15 and 246).
+Quoted because the site now relies on them (delivery-fee FAQ; Clause 11 e-voucher angle). Raw capture kept on file.
 
 > "We want you to love what you buy from us, so if something is wrong, you can return the item so that we can exchange it, replace it, or credit your Takealot account. Our returns are free!"
 

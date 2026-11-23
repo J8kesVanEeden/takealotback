@@ -48,13 +48,13 @@ The site cites Voltex for the proposition that **participation in the CGSO is co
 > 75.2 The counter-application of the first respondent is dismissed with costs.
 > 75.3 The counter-application of the fourth respondent is dismissed with costs.
 
-Source: SAFLII text read through the Wayback capture of 10 November 2026 (`_handoff/refresh-2026-11-17/raw/D2-Voltex-ZAGPPHC-309-2021.txt`); SAFLII itself returns a Cloudflare challenge to automated clients.
+Source: SAFLII text read through the Wayback capture of 10 November 2026 (raw capture kept on file); SAFLII itself returns a Cloudflare challenge to automated clients.
 
 (An earlier version of this file said Voltex, "an electrical wholesaler", refused levies of "~R285,000 annually", and that the court confirmed the levies "had been lawfully collected". The judgment speaks of "the R285 000.00 fee already paid" (para 12), does not describe Voltex's business, and its order is the declaratory relief in para 75. Corrected 2026-11-17.)
 
 ## The 2015 Code is being replaced (noted 2026-11-17)
 
-Voltex is about the 2015 Code (GNR 271, GG 38637). The Minister has published a revised Consumer Goods and Services Industry Code of Conduct, 2026 (General Notice 4264, Government Gazette 55719, 11 November 2026). The NCC and CGSO joint release of 12 November 2026 says it "replaces the 2015 Code as of 1 December 2026" (`_handoff/refresh-2026-11-17/raw/ncc-cgso-2026-11-12-revised-cgso-code.txt`). Voltex's reasoning (a s 82 code binds every supplier in the industry) still describes how an accredited industry code works, but from 1 December 2026 the instrument it is applied to is the 2026 Code.
+Voltex is about the 2015 Code (GNR 271, GG 38637). The Minister has published a revised Consumer Goods and Services Industry Code of Conduct, 2026 (General Notice 4264, Government Gazette 55719, 11 November 2026). The NCC and CGSO joint release of 12 November 2026 says it "replaces the 2015 Code as of 1 December 2026" (raw capture kept on file). Voltex's reasoning (a s 82 code binds every supplier in the industry) still describes how an accredited industry code works, but from 1 December 2026 the instrument it is applied to is the 2026 Code.
 
 ## Why we cite it
 

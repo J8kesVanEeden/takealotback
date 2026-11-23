@@ -43,5 +43,5 @@ The CGSO describes itself as *"the consumer goods and services industry's compul
 
 ## Changes from previous audits
 
-- 2026-11-18: the process standards and the nature-of-scheme paragraph described only the 2015 Code. Updated for the 2026 Code (GG 55719, GN 4264), which takes effect on 1 December 2026 and withdraws the 2015 Code; checked against the Gazette text captured 2026-11-17 (`_handoff/refresh-2026-11-17/raw/cgso-code-2026-gg55719-gn4264.txt`).
+- 2026-11-18: the process standards and the nature-of-scheme paragraph described only the 2015 Code. Updated for the 2026 Code (GG 55719, GN 4264), which takes effect on 1 December 2026 and withdraws the 2015 Code; checked against the Gazette text captured 2026-11-17 (raw capture kept on file).
 - The site previously used `complaints@cgso.org.za` in the ESCALATION tier. CGSO's own homepage lists `info@cgso.org.za` as the published email. Updated on 2026-04-24.
