@@ -75,7 +75,7 @@ export async function GET(context: APIContext) {
         (retrieved ? `, captured on ${retrieved}` : '') +
         ' for the TakealotBack.com evidence vault.';
       return {
-        title: `${entry.data.title}${citation ? `: ${citation}` : ''}`,
+        title: `${entry.data.title}${citation && !String(entry.data.title).includes(citation.replace(/^Act /, '')) ? `: ${citation}` : ''}`,
         description,
         pubDate: asDate(retrieved) ?? asDate(date) ?? reviewed,
         categories: [groupLabel],

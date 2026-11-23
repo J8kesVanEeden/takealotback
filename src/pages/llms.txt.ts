@@ -113,7 +113,7 @@ export const GET: APIRoute = async () => {
       .filter((e) => e.slug.split('/')[0] === g.name)
       .sort((a, b) => (a.data.title || '').localeCompare(b.data.title || ''));
     for (const e of entries) {
-      line(`- [${g.label}: ${e.data.title}](${SITE_URL}/citations/${e.slug})${e.data.citation ? `: ${e.data.citation}` : ''}`);
+      line(`- [${g.label}: ${e.data.title}](${SITE_URL}/citations/${e.slug})${e.data.citation && !String(e.data.title).includes(e.data.citation.replace(/^Act /, '')) ? `: ${e.data.citation}` : ''}`);
     }
   }
 

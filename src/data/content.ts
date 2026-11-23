@@ -160,7 +160,7 @@ export const CLAUSES: Clause[] = [
     takealot: "If a product is a pre-packed bundle and only one item is defective, you must return the whole bundle. Partial returns may be refused.",
     angles: [
       { stat: "CPA s 53(1)(a)", body: "\"Defect\" includes a material imperfection in the goods. A defect in one independently-replaceable component is not a defect in the working components." },
-      { stat: "CPA s 55 + s 56", body: "The warranty attaches to the failed goods. Working parts aren't \"defective goods\" under s 56." },
+      { stat: "CPA s 55 + s 56", body: "The warranty attaches to the failed goods. If the failed component is independently replaceable and the rest of the bundle works as sold, the working parts aren't \"defective goods\" under s 56." },
       { stat: "s 53(1)(a) applies to the goods in issue", body: "The CPA's definition of a defect includes a material imperfection in \"the goods or components\". In a bundled sale, the goods are the bundle you were sold. If one component's failure means the bundle no longer does what the bundle was sold to do, the s 56 remedy runs against the supply. If the failed component is independently replaceable and the rest of the bundle works as sold, only the failed component is \"defective goods\" under s 56. The question is functional, not semantic." },
       { stat: "CPA s 51", body: "Requiring return of non-defective goods as a condition of a s 56 remedy arguably operates as an indirect waiver (s 51(1)(b)(i)), void under s 51(3)." },
       { stat: "CPA s 48", body: "Forcing return of installed, configured, data-holding equipment is open to challenge as unfair under s 48." },

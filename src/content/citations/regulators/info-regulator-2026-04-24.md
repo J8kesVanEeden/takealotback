@@ -17,6 +17,8 @@ used_in:
   - "src/data/content.ts — CLAUSES[3] (unlock-codes) angles → Info Regulator entry"
   - "src/data/content.ts — ESCALATION[5] (Information Regulator tier)"
   - "src/data/content.ts — LAW_SECTIONS[2].items.reg (Information Regulator entry)"
+  - "src/components/AboutSection.astro — Privacy note (complain to the Information Regulator)"
+  - "src/components/LawSection.astro — Bodies card (POPIA)"
 copyright: "Facts, not copyrightable."
 updated: "2026-11-23"
 ---

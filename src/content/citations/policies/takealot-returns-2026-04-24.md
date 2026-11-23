@@ -15,10 +15,18 @@ correction_note: "2026-11-10: two transcription errors in this snapshot correcte
 retrieved_by: "TakealotBack's own audit of the Takealot policy, 2026-04-24; see commits cd2f26c and c60d4ef"
 used_in:
   - "src/content/pages/limits.md — re-delivery fees (change-of-mind returns)"
+  - "src/content/pages/onus-of-proof.md — Takealot's exclusion list for defective items"
   - "src/data/content.ts — every CLAUSES[*].takealot paraphrase"
   - "src/data/content.ts — POLICY_SUMMARY.returns"
   - "src/data/content.ts — FAQ (delivery fee on a cancelled order: 'Our returns are free!')"
   - "src/data/content.ts — TEMPLATES T01, T06, T18, T21 body (returns-policy quotes: free returns, the refund choice, 3-year credit)"
+  - "src/data/content.ts — CLAUSES[3] (unlock-codes) 'CPA s 56' angle (factory reset line)"
+  - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) why (repair and stock line)"
+  - "src/data/content.ts — CLAUSES[9] (non-returnable) 'CPA s 56' angle"
+  - "src/data/content.ts — CLAUSES[10] (coupons-vouchers) 'NCC + CGSO voucher note (2025)' angle"
+  - "src/data/content.ts — CLAUSES[15] (digital-items) 's 56(2) election' angle"
+  - "src/data/content.ts — CLAUSES[16] (resale-prohibition) 'Credit on a closed account' angle ('for a refund')"
+  - "src/data/content.ts — CLAUSES[23] (account-suspension) 'Your credit is still yours' angle ('for a refund')"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing for criticism / review per s 12(1)(b) Copyright Act 98 of 1978, in support of the commentary at takealotback.com."
 updated: "2026-11-23"
 ---

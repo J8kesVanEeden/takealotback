@@ -11,6 +11,8 @@ retrieved_by: "Direct WebFetch of the CGSO homepage, 2026-04-24; re-checked 2026
 used_in:
   - "src/data/content.ts — ESCALATION[2] (CGSO tier)"
   - "src/components/LawSection.astro — Bodies card"
+  - "src/data/content.ts — QUICK_HITS[5] (CGSO free: 'Filing costs nothing')"
+  - "src/data/content.ts — FAQ (Is this legal advice? CGSO free)"
 copyright: "Facts (contact details), not copyrightable."
 updated: "2026-11-23"
 ---

@@ -29,6 +29,8 @@ used_in:
   - "src/data/content.ts — FAQ (Black Friday at Takealot)"
   - "src/data/content.ts — TEMPLATES T21 body (gift voucher not exchangeable for cash)"
   - "src/components/PoliciesSection.astro — Registered entity block"
+  - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) takealot text (gift-voucher validity) and 'Cancellation context' angle"
+  - "src/data/content.ts — ESCALATION[1] (formal written notice: legal@takealot.com and Head Office address)"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
 updated: "2026-11-23"
 ---
