@@ -53,9 +53,9 @@ From Wendy Knowler, "Exploding charger, dirty 'new' sofa: When e-commerce giants
 
 Knowler's account of what he pointed to (her narration, quoting the statutes):
 
-> "Asked to comment, Consumer Goods and Services Ombud Lee Soobrathi pointed to a section of the Consumer Protection Act (CPA) which states that an intermediary - such as Takealot in this case - must "keep the prescribed records of all relationships and transactions…""
+> Asked to comment, Consumer Goods and Services Ombud Lee Soobrathi pointed to a section of the Consumer Protection Act (CPA) which states that an intermediary - such as Takealot in this case - must "keep the prescribed records of all relationships and transactions…"
 
-> "And the Electronic Communications and Transactions Act (ECTA), which regulates online transactions, states that a supplier must inform customers how and when they can "access and maintain a full record of the transaction"."
+> And the Electronic Communications and Transactions Act (ECTA), which regulates online transactions, states that a supplier must inform customers how and when they can "access and maintain a full record of the transaction".
 
 In his own words:
 
