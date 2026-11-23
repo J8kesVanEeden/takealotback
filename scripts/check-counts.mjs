@@ -43,6 +43,12 @@ function deriveCounts() {
   if (qhMatch) counts.quick_hits = (qhMatch[0].match(/\n\s+\{\s*n:\s*"\d+"/g) || []).length;
   const faqMatch = src.match(/export const FAQ[\s\S]*?\n\];/);
   if (faqMatch) counts.faq = (faqMatch[0].match(/\n\s+\{\s*q:\s*"/g) || []).length;
+  const waMatch = src.match(/export const WARRANTY_ANGLES[\s\S]*?\n\];/);
+  if (waMatch) counts.warranty_angles = (waMatch[0].match(/\n\s+\{\s*\w+:/g) || []).length;
+  const deepDir = join(SRC, 'content', 'pages');
+  counts.deep_dives = readdirSync(deepDir).filter((f) => f.endsWith('.md')).length;
+  const citDir = join(SRC, 'content', 'citations');
+  counts.sources = readdirSync(citDir).reduce((n, d) => n + readdirSync(join(citDir, d)).filter((f) => f.endsWith('.md')).length, 0);
   return counts;
 }
 
@@ -52,7 +58,7 @@ function* walk(dir) {
     if (name.startsWith('.') || name === 'node_modules') continue;
     const full = join(dir, name);
     if (statSync(full).isDirectory()) yield* walk(full);
-    else if (/\.(astro|ts|tsx|mjs)$/.test(name)) yield full;
+    else if (/\.(astro|ts|tsx|mjs|md|mdx)$/.test(name)) yield full;
   }
 }
 
@@ -62,22 +68,36 @@ function* walk(dir) {
 // The regex captures the digits group; we compare it to the expected
 // count and warn when they differ. Keep these patterns conservative —
 // false positives erode trust in the check.
+// Numbers may be digits or words ("seven quick hits", "Ten-tier ladder").
+const WORDS = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve',
+  'thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty','twenty-one',
+  'twenty-two','twenty-three','twenty-four','twenty-five','twenty-six','twenty-seven','twenty-eight',
+  'twenty-nine','thirty'];
+const N = `(\\d{1,3}|${[...WORDS].reverse().join('|')})`;
+const toNum = (s) => (/^\d+$/.test(s) ? parseInt(s, 10) : WORDS.indexOf(s.toLowerCase()));
+const P = (src, key) => ({ re: new RegExp(src.replace('N', N), 'gi'), key });
 const PATTERNS = [
   // Examples that match: "20 clauses", "All 20 clauses", "{20} clauses dismantled"
-  { re: /(\d{1,3})\s+clauses\b/gi, key: 'clauses' },
-  { re: /(\d{1,3})\s+ready-to-send\b/gi, key: 'templates' },
-  { re: /(\d{1,3})\s+email\s+templates\b/gi, key: 'templates' },
-  { re: /(\d{1,3})-tier\s+(?:escalation|ladder)\b/gi, key: 'escalation' },
-  { re: /(\d{1,3})\s+escalation\s+tiers\b/gi, key: 'escalation' },
-  { re: /(\d{1,3})\s+quick\s+hits\b/gi, key: 'quick_hits' },
-  { re: /(\d{1,3})\s+FAQ\s+entries\b/gi, key: 'faq' },
+  P('\\bN\\s+clauses\\b', 'clauses'),
+  P('\\bN\\s+ready-to-send\\b', 'templates'),
+  P('\\bN\\s+(?:email\\s+)?templates\\b', 'templates'),
+  P('\\bN-tier\\s+(?:escalation|ladder)\\b', 'escalation'),
+  P('\\bN\\s+escalation\\s+tiers\\b', 'escalation'),
+  P('\\bN\\s+quick\\s+hits\\b', 'quick_hits'),
+  P('\\bN\\s+things most consumers\\b', 'quick_hits'),
+  P('\\bN\\s+FAQ\\s+entries\\b', 'faq'),
+  P('\\(N angles\\)', 'warranty_angles'),
+  P('\\bN\\s+(?:long-form\\s+)?deep-dive pages\\b', 'deep_dives'),
+  P('\\(currently N sources\\)|\\bN\\s+(?:primary\\s+)?sources in the (?:evidence )?vault\\b', 'sources'),
 ];
+// Public files outside src/ that carry counts in prose.
+const EXTRA = ['public/llms.txt', 'public/og-image.svg'].map((p) => join(ROOT, p));
 
 function main() {
   const expected = deriveCounts();
   const findings = [];
 
-  for (const file of walk(SRC)) {
+  for (const file of [...walk(SRC), ...EXTRA]) {
     // Skip content.ts itself — that's where the source-of-truth lives.
     if (file === CONTENT_TS) continue;
     const text = readFileSync(file, 'utf-8');
@@ -88,8 +108,8 @@ function main() {
       re.lastIndex = 0;
       let m;
       while ((m = re.exec(text)) !== null) {
-        const literal = parseInt(m[1], 10);
-        if (!Number.isFinite(literal)) continue;
+        const literal = toNum(m[1]);
+        if (!Number.isFinite(literal) || literal < 0) continue;
         if (literal === expected[key]) continue;
 
         // Locate the line for the diagnostic.
@@ -99,6 +119,8 @@ function main() {
         const lineText = lines[lineNo - 1] || '';
         // Allowlist
         if (/\/\/\s*count-ok|<!--\s*count-ok\s*-->/.test(lineText)) continue;
+        // Citation-file used_in lines and statute text describe other things ("s 19 angles").
+        if (/^\s*-\s*"src\//.test(lineText)) continue;
 
         findings.push({
           file: relative(ROOT, file),
