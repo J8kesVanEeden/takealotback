@@ -85,7 +85,7 @@ The site's Clause 17 (resale-prohibition; this line said "Clause 16" until 2026-
 
 ### Lines added 2026-11-18 (verbatim, checked against the 2026-11-17 capture)
 
-These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captures; raw text raw capture kept on file, lines 213–301). They were not quoted in this file before; the site now relies on them in Clause 14, Clause 23, Clause 24, templates T21 and T23, and the Black Friday FAQ.
+These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captures, kept on file). They were not quoted in this file before; the site now relies on them in Clause 14, Clause 23, Clause 24, templates T21 and T23, and the Black Friday FAQ.
 
 **When the order is complete; cart and wish list**
 

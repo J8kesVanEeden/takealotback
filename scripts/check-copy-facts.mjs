@@ -12,7 +12,7 @@
 // fine; losing "s 56" from a file entirely is not.
 //
 // Usage:  node scripts/check-copy-facts.mjs [--base <ref>] [--verbose]
-// Allowlist: notes/copy-review-2026-11-23/facts-allow.txt, one `path|token`
+// Allowlist: internal/facts-allow.txt (maintainer's copy, optional), one `path|token`
 // per line, for losses that were checked and are intended (with a # reason).
 
 import { execFileSync } from 'node:child_process';
@@ -32,7 +32,7 @@ const files = git('ls-files', 'src', 'public/llms.txt')
   .split('\n')
   .filter((f) => /\.(astro|ts|md|mdx|txt)$/.test(f));
 
-const allowPath = join(ROOT, 'notes/copy-review-2026-11-23/facts-allow.txt');
+const allowPath = join(ROOT, 'internal/facts-allow.txt');
 const allow = new Set(
   existsSync(allowPath)
     ? readFileSync(allowPath, 'utf-8').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter(Boolean)

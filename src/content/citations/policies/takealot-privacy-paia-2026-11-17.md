@@ -24,7 +24,7 @@ Template T22 asks Takealot for the records it holds about a customer's own order
 
 ## Privacy policy — "What are your rights under POPI?" (verbatim)
 
-Source: https://terms-and-policies.takealot.com/privacy-policy/, fetched 2026-11-17 (static HTML, tags stripped). Raw: raw capture kept on file.
+Source: https://terms-and-policies.takealot.com/privacy-policy/, fetched 2026-11-17 (static HTML, tags stripped). Raw capture kept on file.
 
 > "You can:
 > request a record or description of your personal information. We might have reasons to say no to some information but you can ask for reasons why;
@@ -37,7 +37,7 @@ Source: https://terms-and-policies.takealot.com/privacy-policy/, fetched 2026-11
 
 ## PAIA manual (labelled 2024) — "Requesting access to information" (verbatim)
 
-Source: https://static.takealot.com/files/pdfs/PAIA2024.pdf, fetched 2026-11-17 (curl + pdftotext). Raw: raw capture kept on file.
+Source: https://static.takealot.com/files/pdfs/PAIA2024.pdf, fetched 2026-11-17 (curl + pdftotext). Raw capture kept on file.
 
 > "Any Requester is advised to contact the Data Compliance Team (DS.Privacy@takealot.com) should the Requester require any assistance in respect of the utilisation of this manual and/or the requesting of documents/information including personal information from Takealot, Superbalist or Mr D Food."
 

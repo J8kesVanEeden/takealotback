@@ -36,4 +36,4 @@ The schedule ("Threshold determination — method of calculation") says assets a
 - `/limits`: a buyer that is itself a juristic person (a company, close corporation or trust, for example) with asset value or annual turnover at or above R2 million is outside the CPA. Individual consumers are not affected by the threshold.
 - CGSO Advisory Note 11 (para 5.1(ii)) mentions the figure as "an entity with a yearly turnover exceeding R2 million"; the notice's test is asset value **or** annual turnover that **equals or exceeds** R2 million.
 
-Raw capture: raw capture kept on file.
+Raw capture kept on file.

@@ -26,7 +26,7 @@ The Minister of Justice and Constitutional Development set the money limits for 
 
 **Figures the site states:** District Magistrates' Court up to **R200,000**; Regional Magistrates' Court **above R200,000 up to R400,000**; above R400,000, the High Court.
 
-**Read on 2026-11-18** from the Department of Justice's own PDFs of the gazette (curl + pdftotext). The figures were also checked on 2026-11-10 (raw capture kept on file, R7).
+**Read on 2026-11-18** from the Department of Justice's own PDFs of the gazette (curl + pdftotext). The figures were also checked on 2026-11-10.
 
 **Newer notice?** On 2026-11-17 the Department's notice list (`justice.gov.za/legislation/notices/notice_list.html`, entries to 26 October 2026) showed Magistrates' Courts Act notices only on areas, places of sitting and rules, none on monetary jurisdiction, and a web search found no later determination (raw capture kept on file). The Department's list is its own index, not the full Gazette.
 
@@ -66,4 +66,4 @@ The Small Claims Court limit (R30,000 since 1 August 2026) is a separate determi
 
 Wayback captures 2026-11-18: GoN 217 [20261118100642](https://web.archive.org/web/20261118100642/https://www.justice.gov.za/legislation/notices/2014/2014-03-27-gg37477_gon217.pdf) · GoN 216 [20261118100622](https://web.archive.org/web/20261118100622/https://www.justice.gov.za/legislation/notices/2014/2014-03-27-gg37477_gon216.pdf).
 
-Raw capture: raw capture kept on file.
+Raw capture kept on file.

@@ -1,12 +1,8 @@
 # Quality gate — runs on every push to main and every PR targeting main.
 #
-# Encodes the audit loop we ran by hand: TypeScript check, anchor refs,
+# Runs the full check suite: public-repo check, TypeScript, anchor refs,
 # citation completeness, html-validate, internal-link crawl. If any step
 # fails, the workflow fails and (for PRs) blocks merge.
-#
-# Why now: the checks caught 8 real bugs across one session. Without
-# this, the only thing catching regressions is whoever remembers to run
-# `npm run check:all` before pushing.
 name: Check
 
 on:
@@ -14,6 +10,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+    # `edited` re-runs the check when a PR title or body changes.
+    types: [opened, synchronize, reopened, edited]
 
 # Cancel any in-flight check for the same ref so a rapid second push doesn't
 # collide on the hardcoded astro-preview ports (4329, 4332) used by
@@ -33,6 +31,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Full history, so the public-repo check can read every commit in the PR.
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -49,4 +50,6 @@ jobs:
         # `check:all` runs astro check, check:anchors, check:citations,
         # check:html, and check:links. Any failure exits non-zero and
         # fails the job.
+        env:
+          PUBLIC_DENYLIST: ${{ secrets.PUBLIC_DENYLIST }}
         run: npm run check:all

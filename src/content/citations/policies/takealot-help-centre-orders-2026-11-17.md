@@ -23,7 +23,7 @@ copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1
 
 Takealot edits these articles often: six customer articles were updated between 6 and 17 November 2026. Each quote below carries the article's own `updated_at` time from Takealot's Help Centre. The site quotes Takealot's own words; where they differ from its terms and conditions, or from the law, the site says so.
 
-Source of the text: Takealot's public Help Centre articles API (`help.takealot.com/api/v2/help_center/en-us/articles.json`), fetched 2026-11-17, HTML stripped. Raw capture: raw capture kept on file.
+Source of the text: Takealot's public Help Centre articles API (`help.takealot.com/api/v2/help_center/en-us/articles.json`), fetched 2026-11-17, HTML stripped. Raw capture kept on file.
 
 ## 1. "Why was my order cancelled?" (updated 2026-11-06 13:15 UTC)
 

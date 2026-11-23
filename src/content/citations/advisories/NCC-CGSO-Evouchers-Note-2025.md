@@ -19,7 +19,7 @@ disclosure: "The note does not name Takealot. It is the two regulators' stated v
 # NCC + CGSO explanatory note: e-commerce platforms and e-vouchers
 ## 13 July 2025 · National Consumer Commission and Consumer Goods and Services Ombud
 
-A 4-page note issued jointly by the NCC and the CGSO, dated 13 July 2025 (PDF creation date 8 September 2025). The PDF opened at the direct download URL above on 2026-11-17, but it is **not listed** on the CGSO's Advisory Notes page: that page (captured the same day, raw capture kept on file) lists no documents and shows only the banner "Advisory Notes are under review, they will be reuploaded once the review is completed." (Corrected 2026-11-18: this paragraph said the note was "listed for download" on that page.) An earlier URL (`/cgso/download/transacting-with-ecommerce-platforms-and-e-vouchers/`) returned 404 on 2026-11-10; the URL above worked on 2026-11-17.
+A 4-page note issued jointly by the NCC and the CGSO, dated 13 July 2025 (PDF creation date 8 September 2025). The PDF opened at the direct download URL above on 2026-11-17, but it is **not listed** on the CGSO's Advisory Notes page: that page (captured the same day) lists no documents and shows only the banner "Advisory Notes are under review, they will be reuploaded once the review is completed." (Corrected 2026-11-18: this paragraph said the note was "listed for download" on that page.) An earlier URL (`/cgso/download/transacting-with-ecommerce-platforms-and-e-vouchers/`) returned 404 on 2026-11-10; the URL above worked on 2026-11-17.
 
 **Status:** guidance, not law. It predates the two regulators' March 2026 joint paper ([NCC-CGSO-Ecommerce-Paper-2026.md](./NCC-CGSO-Ecommerce-Paper-2026.md)), which states the platform-responsibility view again.
 
@@ -48,4 +48,4 @@ A 4-page note issued jointly by the NCC and the CGSO, dated 13 July 2025 (PDF cr
 
 The note also quotes CPA s 63 in full (see [CPA-2008.md](../statutes/CPA-2008.md)) and summarises CPA ss 41, 48, 55, 56 and ECT ss 43, 44, 46.
 
-Raw capture: raw capture kept on file.
+Raw capture kept on file.

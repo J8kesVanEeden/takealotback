@@ -32,18 +32,7 @@ pnpm-debug.log*
 # Astro
 .astro/
 
-# Handoff bundle (reference only; not part of the public repo)
-notes/
-
-# Original zip
-takealotback-handoff.zip
-# Editor and tooling settings (machine-specific, never committed)
-/.editor/
+# Maintainer's private checkout (never committed). Editor and tool folders are
+# listed in .git/info/exclude on the maintainer's machine.
+/internal
 .playwright-mcp/
-/local-notes/
-
-# Maintainer working notes (kept locally, not part of the public repo)
-/the to-do list
-/NOTES.md
-/style notes
-/audit notes-*.md

@@ -45,7 +45,7 @@ The order (verbatim):
 
 > "(1) The appeal is allowed with costs, including those occasioned by the employment of two counsel. (2) The order of the Court a quo is set aside and the following order is substituted: 'It is ordered: (a) That respondent is interdicted from infringing the applicant's copyright in the get-up (consisting of the cellophane wrapper and the first insert) of TDK D60 audio cassette tapes (hereafter referred to as the "subject works") by: (i) importing into the Republic of South Africa audio tapes in the get-up of which copies of the subject works appear; and/or (ii) selling, exposing for sale or distributing for trade audiotapes in the get-up of which copies of the subject works appear; (b) that respondent deliver up to the applicant for destruction all copies of the subject works which are in their possession or under their control; and (c) that respondent pay the costs of suit, including the costs of two counsel.'"
 
-(SAFLII page-number artefacts removed. Read 2026-11-17 through the Wayback capture of 10 November 2026; raw text raw capture kept on file.)
+(SAFLII page-number artefacts removed. Read 2026-11-17 through the Wayback capture of 10 November 2026.)
 
 (An earlier version of this file said the court held that "the wrapper and printed inserts" are artistic works and ordered delivery-up of "any infringing material". The order is limited to the cellophane wrapper and the first insert of TDK D60 tapes, and to delivery-up of copies of those works. Corrected 2026-11-17.)
 
