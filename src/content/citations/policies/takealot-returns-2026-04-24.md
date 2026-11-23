@@ -42,7 +42,7 @@ Our audit on this date (ours, not Takealot's) verified the following clauses aga
 - **Rejected-return disposal**: "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it"
 - **Non-returnable items**: intimate / underwear / swimwear / jewellery / foodstuffs / digital items / unsealed AV+software / books / personalised / made to specification
 - **Vouchers and coupons**: verbatim distinction confirmed
-- **Digital items**: returnable only if defective (the policy: "You can only return digital items … if they are defective")
+- **Digital items**: returnable only if defective (the policy: "You can only return digital items (such as electronic vouchers, gaming codes, online course codes, or other digital downloads) if they are defective")
 - **Mis-returned items**: disposed, no compensation
 - **Collection / re-delivery fees on re-logged returns**, verbatim: *"we may charge you a fee for collecting the item from you and, where applicable, a fee for delivering the same or a replacement item back to you"*. This is the textual hook for the site's Clause 19
 - **Inspection step**, verbatim: *"when we receive the item, we'll inspect it"*, with no SLA; the textual hook for the site's Clause 20
@@ -149,7 +149,7 @@ Items with a manufacturer ("direct") warranty are different: the manufacturer ha
 
 ### Pre-packed Bundles
 
-> "You can only return a Pre-packed Bundle if you return all the items that formed part of that bundle to us."
+> "Unless we say otherwise, you can only return a Pre-packed Bundle if you return all the items that formed part of that bundle to us. We may refuse the return if you only send back some of the items."
 
 ### Bundle Deals
 

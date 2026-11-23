@@ -23,7 +23,7 @@ Judgment by Ben-Zeev AJ, Du Plessis J concurring. Marked "REPORTABLE: Yes". The 
 
 ## Proposition cited on the site
 
-The "cause of the complaint" for the three-year limit in CPA s 116(1)(a) was the **supplier's refusal to provide a remedy under s 54(2)**, not the work itself. The complaint was about **services**: an engine replacement the customer said was faulty, where the NCC alleged breaches of s 54(1)(b) and (c) read with s 54(2)(a); the merits are undecided because the court remitted the matter to the Tribunal. The court reasoned (paras 41–42) that the same applies to a refusal of the s 56(2) remedy for defective goods; that part is reasoning by analogy, not the decision itself.
+The "cause of the complaint" for the three-year limit in CPA s 116(1)(a) was the **supplier's refusal to provide a remedy under s 54(2)**, not the work itself. The complaint was about **services**: an engine replacement the customer said was faulty, where the NCC alleged breaches of s 54(1)(b) and (c) read with s 54(2)(a); the merits are undecided because the court remitted the matter to the Tribunal. The court reasoned (para 42) that the same applies to a refusal of the s 56(2) remedy for defective goods; that part is reasoning by analogy, not the decision itself.
 
 ## Verbatim extracts (judgment PDF, read 2026-11-10; re-fetched from primary_url and checked 2026-11-23)
 
