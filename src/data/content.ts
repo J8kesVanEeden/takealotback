@@ -808,7 +808,7 @@ Regards,
     subject: "Request for my personal information (POPIA s 23): Order #[ORDER]",
     body: `Hi,
 
-I make this request as a Takealot customer under section 23 of the Protection of Personal Information Act (POPIA). Takealot's privacy policy also says customers can "request a record or description of your personal information". I am the holder of the Takealot account [account email] and attach proof of identity.
+I make this request as a Takealot customer under section 23 of the Protection of Personal Information Act (POPIA). Takealot's privacy policy also says customers can "request a record or description" of their personal information. I am the holder of the Takealot account [account email] and attach proof of identity.
 
 1. Please confirm, free of charge (s 23(1)(a)), whether Takealot holds personal information about me in connection with Order #[ORDER].
 2. Please provide the record or a description of that information (s 23(1)(b)), including:
