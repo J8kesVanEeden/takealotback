@@ -36,13 +36,23 @@ From Wendy Knowler, "Exploding charger, dirty 'new' sofa: When e-commerce giants
 
 > "A year ago, Kyle Wales of Cape Town bought a laptop on Takealot from a third-party seller, one of around 10 000 on the platform. Earlier this year, the laptop's charger exploded, but Wales hasn't been able to get it replaced under warranty because he wasn't issued an invoice."
 
+> "As I bought it from Takealot, a reputable seller, I expected to have no problems logging onto my Takealot profile, downloading the invoice and submitting it to Lenovo," he said.
+
+> Ten days later, Takealot told him that the seller was "unresponsive" and that they were thus unable to supply him with the required invoice.
+
+> "Not being able to procure an invoice means the warranty on my R23 000 laptop is effectively invalidated because you need an invoice to claim under a warranty," Wales told News24.
+
 ### Takealot's position (T&Cs reference)
 
-> "The third-party seller is solely responsible for fulfilment of delivery of the goods. The third-party seller is also responsible to provide an invoice to the registered user if required."
+> Having lodged a complaint with the Consumer Goods and Services Ombud, Takealot shared with him its response to the Ombud's office, pointing to one of its Ts and Cs that states: "The third-party seller is solely responsible for fulfilment of delivery of the goods".
+>
+> "The third-party seller is also responsible to provide an invoice to the registered user if required."
 
 ### CGSO Lee Soobrathi
 
 > "An intermediary - such as Takealot in this case - must 'keep the prescribed records of all relationships and transactions...'"
+
+> "[The Electronic Communications and Transactions Act] states that a supplier must inform customers how and when they can 'access and maintain a full record of the transaction'."
 
 > "The approach of the CGSO is that an e-commerce platform hosting third-party business products will be regarded as an intermediary for the purpose of the Consumer Protection Act, and as such will need to comply with these provisions."
 

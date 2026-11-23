@@ -26,6 +26,10 @@ A 2026, on-record example of Takealot applying its **30-day** damage-reporting w
 
 From Sara-Jayne Makwala King, EWN (Eyewitness News), 23 July 2026, reporting Wendy Knowler on CapeTalk; read on the live page on 2026-11-10. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
+> "Langebaan resident Kelly Davis contacted Knowler recently after buying a couch from Takealot."
+
+> "When Kelly unpacked the sofa just over a month later, she discovered damaged armrests, missing cushions, poor workmanship and a tear in the fabric underneath."
+
 > "When she tried to return it, Takealot refused because it fell outside the company's 30-day damage reporting window."
 
 > "Section 56 of the Consumer Protection Act gives consumers 6 months, not 30 days, to return goods that are defective – and at the supplier's risk and expense," (Knowler)

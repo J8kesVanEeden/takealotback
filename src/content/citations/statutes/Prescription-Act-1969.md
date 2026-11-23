@@ -24,7 +24,7 @@ updated: "2026-11-23"
 
 # Prescription Act 68 of 1969
 
-**Status of this file:** verbatim text of ss 11 and 12, re-checked 2026-11-17 against the LawLibrary (Laws.Africa) consolidated text, version dated 23 December 2020 (shown as "the latest version of this Act" in the capture read). Raw capture kept on file. (The earlier primary URL, gov.za/documents/prescription-act, returned 404 on 2026-11-17; replaced with the consolidated text, and the gov.za scan of the Act as enacted in 1969 is kept as `pdf_url`. The 1969 scan predates the 1984 substitution of s 12(3).)
+**Status of this file:** verbatim text of ss 11 and 12, re-checked 2026-11-17 against the LawLibrary (Laws.Africa) consolidated text, version dated 23 December 2020 (shown as "the latest version of this Act" in the capture read). LawLibrary and SAFLII returned a Cloudflare challenge to a direct fetch, so the text was read from the Wayback Machine's copy of the LawLibrary page captured on 17 November 2025 (`wayback_url_dated` above). Raw capture kept on file. (The earlier primary URL, gov.za/documents/prescription-act, returned 404 on 2026-11-17; replaced with the consolidated text, and the gov.za scan of the Act as enacted in 1969 is kept as `pdf_url`. The 1969 scan predates the 1984 substitution of s 12(3).)
 
 ## s 11: Periods of prescription of debts (verbatim)
 

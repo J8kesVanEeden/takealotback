@@ -36,7 +36,7 @@ Our audit on this date (ours, not Takealot's) verified the following clauses aga
 - **Pre-packed Bundle return**: whole-bundle return requirement verified verbatim
 - **Credit vs refund**: policy concedes consumer election on defective returns ("you must choose...")
 - **Credit expiry**, verbatim: *"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit"*
-- **Referral to the manufacturer + 21-day trigger**: runs from receipt at supplier's returns evaluation facility
+- **Extended-warranty returns via the supplier + 21-day trigger**: for a defect more than 6 months after delivery, Takealot helps you return the item to the supplier; if the supplier's repair or replacement takes longer than 21 days from receipt at its returns evaluation facility, Takealot offers credit or a refund (see "Warranty items" below)
 - **Defective-item exclusions**: wear, consumer damage, surge, sea-air, modification, unintended use
 - **Rejected-return disposal**: "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it"
 - **Non-returnable items**: intimate / underwear / swimwear / jewellery / foodstuffs / unsealed AV+software / books / personalised
@@ -69,7 +69,7 @@ Takealot does not surface a "Last updated" date on either the Returns Policy pag
 
 ## Re-verification log
 
-**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day manufacturer-referral trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line. Neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
+**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day extended-warranty (supplier) trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line. Neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
 
 **2026-11-10 (Q4 2026 quarterly refresh, run late; due 2026-10-01):** Live Returns Policy rendered in headless Chrome (whole DOM walked, collapsed sections included) and diffed against this snapshot. The same extractor was run on the Wayback captures of 2026-04-25 and 2026-07-01: **the policy body text is identical across all three dates.** **No material change.** Every relied-on clause matches verbatim (programmatic check of every quoted string in this file and in CLAUSES: all found except the coupon quote, a transcription error in this file, now corrected above, along with the non-returnable list's missing digital-items entry). Takealot's page metadata shows a re-save on 2026-05-22 (Yoast `dateModified`) with no wording change; nothing since. Note for the record: the "Exchanges" blurb and donation line called new in the Q3 entry were already present in the 2026-04-25 capture. Raw extracted text is kept with the maintainer's working notes (not published; it reproduces the full pages). The dated Wayback captures listed below are the public record. `retrieved` bumped to 2026-11-10.
 
@@ -100,7 +100,7 @@ The following is the operative wording of the Returns Policy as fetched from `te
 
 ### Prepare Your Return
 
-> Items must be returned "in its original product packaging with all the accessories and parts included, and all seals must be intact (if applicable)."
+> The item must be returned "in its original product packaging with all the accessories and parts included, and all seals must be intact (if applicable)."
 
 Tags must remain on; items must not have been worn or used.
 
@@ -110,9 +110,23 @@ For damaged, wrong, or incomplete deliveries within 30 days, Takealot offers rep
 
 ### Defective Items
 
-Defective returns within 6 months may be repaired, replaced, credited, or refunded **after Takealot's inspection**. Excluded: normal wear and tear, consumer damage, electrical surges, sea-air corrosion, consumer modification, or unintended use.
+Defective returns within 6 months may be repaired, replaced, credited, or refunded **after Takealot's inspection**. The choice is the customer's:
+
+> "If we accept the return, you must choose whether we should repair or replace the item, credit your Takealot account with the purchase price, or refund you."
+
+Excluded: normal wear and tear, consumer damage, electrical surges, sea-air corrosion, consumer modification, or unintended use.
 
 The inspection step is built in to the workflow: *"when we receive the item, we'll inspect it"*, with no published SLA. (This is the textual hook for the site's Clause 20.)
+
+### Warranty items
+
+Under "Extended warranties", for a defect that shows up more than 6 months after delivery:
+
+> "You must log your return with us as soon as possible if an item becomes defective more than 6 months after delivery."
+
+> "If the supplier accepts the return and offers to repair or replace the item and this takes longer than 21 days from when the item is received at the supplier’s returns evaluation facility, we’ll offer you credit or a refund directly from Takealot."
+
+Items with a manufacturer ("direct") warranty are different: the manufacturer handles the return itself, and Takealot gives you its contact details.
 
 ### Pre-packed Bundles
 

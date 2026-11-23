@@ -15,7 +15,7 @@ used_in:
   - "src/data/content.ts — ESCALATION[8] (Magistrates' Court tier)"
   - "src/data/content.ts — ESCALATION[9] (High Court tier)"
   - "src/content/pages/limits.md — forum paragraph"
-  - "src/components/LawSection.astro — Magistrate's Court card"
+  - "src/components/LawSection.astro — Magistrates' Court card"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legislative or administrative nature)"
 updated: "2026-11-23"
 ---
@@ -61,7 +61,7 @@ Schedule (extract):
 
 - Clause 13 (High Court jurisdiction), "Magistrates' Court" angle, and Escalation tiers 9 and 10: District up to R200,000, Regional R200,000–R400,000, High Court above that.
 - `/limits`: the forum paragraph.
-- Law section "Bodies" card: Magistrate's Court up to R400,000.
+- Law section "Bodies" card: Magistrates' Court up to R400,000.
 
 The Small Claims Court limit (R30,000 since 1 August 2026) is a separate determination: [scc-threshold-2026-04-24.md](./scc-threshold-2026-04-24.md).
 

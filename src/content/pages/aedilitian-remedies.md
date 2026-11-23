@@ -2,7 +2,7 @@
 title: "Your claim doesn't die at 6 months"
 slug: aedilitian-remedies
 description: "Your rights don't end at the 6-month CPA window. South African common law gives you actio redhibitoria and actio quanti minoris for latent defects, with a 3-year prescription period."
-metaTitle: "When the CPA runs out: common-law aedilitian remedies"
+metaTitle: "When section 56 runs out: common-law aedilitian remedies"
 datePublished: "2026-04-23"
 dateModified: "2026-11-23"
 ---
@@ -15,22 +15,22 @@ The Consumer Protection Act's section 56 return-and-refund right runs for six mo
 
 Both are preserved alongside the CPA by section 2(10): *"No provision of this Act must be interpreted so as to preclude a consumer from exercising any rights afforded in terms of the common law."*
 
-**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect: hidden from reasonable inspection, existing (at least in embryonic form) at the time of sale, and serious enough that a reasonable buyer would not have bought at all.
+**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect: hidden from reasonable inspection, existing at the time of sale, and serious enough that a reasonable buyer would not have bought at all.
 
 **Actio quanti minoris.** A price reduction (a partial refund) for a latent defect that would have reduced the price rather than killed the deal.
 
 ## Prescription: 3 years
 
-Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the CPA window closed in November 2024.
+Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the s 56 window closed in November 2024.
 
 Prescription is the outer limit, not the only deadline. To cancel the sale (actio redhibitoria) you must act within a reasonable time after you discover the defect, and be able to return the item (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14).
 
 ## What "latent defect" actually means
 
-The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C)). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:
+The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C), on the seller's duty to disclose known defects). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:
 
 1. **Hidden**: not discoverable on reasonable inspection by an ordinary non-expert buyer.
-2. **Present at sale**: existing at the time of sale, at least in embryonic form, even if it only manifested later.
+2. **Present at sale**: existing at the time of sale, even if it only showed up later.
 3. **Material**: serious enough to render the goods unfit or substantially less fit for purpose.
 
 A hairline manufacturing crack in a casting, a bad solder joint on a motherboard, a firmware flaw that only triggers after a specific operating condition: these are typical examples of defects that were present at sale but only surfaced with use.

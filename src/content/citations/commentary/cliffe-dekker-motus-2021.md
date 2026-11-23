@@ -10,7 +10,7 @@ metaDescription: "Cliffe Dekker Hofmeyr on Motus v Wentzel (2021): describes the
 retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
-  - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus angle — supports the obiter characterisation of s 69(d) reading"
+  - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus angle — supports reading the s 69(d) remarks as obiter"
 copyright: "Cliffe Dekker Hofmeyr. Short excerpt / summary only: fair dealing for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 updated: "2026-11-23"
 ---

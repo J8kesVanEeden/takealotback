@@ -26,7 +26,7 @@ The Minister of Trade, Industry and Competition prescribed a new Code for the co
 
 ## Why the site cites this
 
-- It is the current primary source for the site's statement that taking part in the CGSO is compulsory, alongside the 2021 *Voltex* judgment, which was decided under the 2015 Code.
+- From 1 December 2026 it is the primary source for the site's statement that taking part in the CGSO is compulsory, alongside the 2021 *Voltex* judgment, which was decided under the 2015 Code.
 - It changes the Ombud's resolution target: the 2015 Code said 60 business days from receipt; the 2026 Code says 60 days from when the CGSO starts its investigation. The supplier's 15 business days to respond is unchanged.
 
 Wayback captures (2026-11-17): the Gazette PDF [20261117211817](https://web.archive.org/web/20261117211817/https://www.cgso.org.za/download/final-gazetted-cgso-code-12-november-2026/?wpdmdl=25224) and the CGSO's Code page [20261117211829](https://web.archive.org/web/20261117211829/https://www.cgso.org.za/cgso-code/).

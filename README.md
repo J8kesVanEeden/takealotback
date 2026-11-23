@@ -3,7 +3,7 @@
 A non-commercial South African consumer-rights reference.
 
 When Takealot's returns policy strays past the Consumer Protection Act, the ECT Act, or
-POPIA, this site explains exactly where and how — with statute numbers, case citations,
+POPIA, this site explains exactly where and how, with statute numbers, case citations,
 ready-to-send email templates, and a 10-tier escalation ladder.
 
 Live site: <https://takealotback.com>
@@ -11,12 +11,12 @@ Studio: [Milk Moon Studio](https://www.milkmoonstudio.com/)
 
 ## Stack
 
-- **[Astro 5](https://astro.build/)** — static SSG, one homepage route plus three markdown
+- **[Astro 5](https://astro.build/)**: static SSG, one homepage route plus three markdown
   deep-dives via a content collection.
 - **Vanilla CSS** with custom properties. No Tailwind. Tokens in `src/styles/tokens.css`.
 - **Vanilla JS** for interactivity (clause + template accordions, triage modal, tweaks
   panel, keyboard shortcuts). No runtime framework.
-- **Cloudflare Pages** for hosting. Auto-deploy on push to `main`.
+- **Cloudflare Workers (static assets)** for hosting. Auto-deploy on push to `main`.
 - **Cloudflare Web Analytics** for cookie-free page views, and **Google Analytics 4** through
   Cloudflare Zaraz (sets cookies). Both are disclosed in the privacy note at
   [takealotback.com/#privacy](https://takealotback.com/#privacy).
@@ -25,16 +25,17 @@ Studio: [Milk Moon Studio](https://www.milkmoonstudio.com/)
 
 ```
 src/
-  content/pages/         — three deep-dive markdown files (content collection)
-  components/            — .astro components (Shell, Hero, Dismantled, Templates, …)
-  data/content.ts        — single source of truth for all homepage content (typed)
-  layouts/Layout.astro   — shared shell, meta tags, pre-apply tweaks script
-  pages/                 — index.astro (homepage) + [slug].astro (3 deep-dives)
-  styles/                — tokens.css, base.css
-public/                  — favicon, robots.txt, static assets
+  content/pages/         three deep-dive markdown files (content collection)
+  content/citations/     the citation files (content collection)
+  components/            .astro components (Hero, Dismantled, Templates, …)
+  data/content.ts        single source of truth for all homepage content (typed)
+  layouts/Layout.astro   shared shell, meta tags, pre-apply tweaks script
+  pages/                 index.astro (homepage) + [slug].astro (3 deep-dives)
+  styles/                tokens.css, base.css
+public/                  favicon, robots.txt, static assets
 astro.config.mjs
-CONTENT-LICENSE.md       — CC BY 4.0 for content
-LICENSE                  — MIT for code
+CONTENT-LICENSE.md       CC BY 4.0 for content
+LICENSE                  MIT for code
 ```
 
 ## Development
@@ -46,7 +47,7 @@ npm run build     # static output to ./dist
 npm run preview   # serve ./dist locally
 npm run check          # astro check (type-check)
 npm run check:anchors  # build, then scan dist/ for broken in-page anchors, data-jump-* targets, and template/clause jumps
-npm run check:all      # both of the above
+npm run check:all      # the full guard suite; the list is in OPERATIONS.md
 npm run build:og       # re-render public/og-image.png from public/og-image.svg (only needed when the OG image changes)
 ```
 
@@ -54,7 +55,7 @@ Requires Node 20+.
 
 The OG image source-of-truth is `public/og-image.svg`. The PNG is rendered once
 locally with `npm run build:og` (uses `sharp`, a dev-only dependency) and the
-resulting `public/og-image.png` is committed so Cloudflare Pages serves it
+resulting `public/og-image.png` is committed so Cloudflare serves it
 without needing sharp in the build environment.
 
 ## Content updates
@@ -64,11 +65,11 @@ edits are object edits. The three deep-dive pages live in `src/content/pages/`.
 
 **Do not rewrite content without cross-checking the source vault.** The April 2026
 verification pass left statute citations and case references embedded that aren't
-easy to reconstruct. If something looks wrong, open an issue — don't silently
+easy to reconstruct. If something looks wrong, open an issue. Don't silently
 "fix" it.
 
 For small corrections (a typo, a phone number), edit `src/data/content.ts` directly
-in the GitHub web UI and commit — Cloudflare Pages redeploys in about a minute.
+in the GitHub web UI and commit. Cloudflare redeploys in about a minute.
 
 ## Licences
 
@@ -78,36 +79,36 @@ in the GitHub web UI and commit — Cloudflare Pages redeploys in about a minute
 ## Citations archive
 
 Every factual, legal, or policy claim on the live site traces to a source in
-[`citations/`](./citations/). Primary-source snapshots of statutes, case law,
-regulator contact details, and Takealot's own policies — dated and versioned
+[`src/content/citations/`](./src/content/citations/). Primary-source snapshots of statutes, case law,
+regulator contact details, and Takealot's own policies, dated and versioned
 so content changes are always defensible and change-detectable. Start at
 [`citations/INDEX.md`](./citations/INDEX.md) for the mini-sitemap.
 
 ## Operations
 
-Before making factual content changes, read [`OPERATIONS.md`](./OPERATIONS.md)
-— the SOP for keeping the site current (citation-check flow, refresh cadence,
+Before making factual content changes, read [`OPERATIONS.md`](./OPERATIONS.md):
+the SOP for keeping the site current (citation-check flow, refresh cadence,
 quality gates, Takealot-policy-change protocol, non-negotiables).
 
 ## Corrections
 
-This site has no contact form and no email address. That's intentional — it's a
+This site has no contact form and no email address. That's intentional: it's a
 one-way reference resource. If you find something factually wrong,
 **[open an issue](https://github.com/J8kesVanEeden/takealotback/issues)**.
 
-## Non-commercial — permanently
+## Non-commercial, permanently
 
 No ads. No affiliate links. No donations. Analytics are limited to Cloudflare Web
 Analytics and Google Analytics 4 (via Zaraz), both disclosed in the site's privacy
-note. This is non-negotiable — both a matter of principle and of legal
+note. This is non-negotiable, both a matter of principle and of legal
 footing, since the site's use of the name "Takealot" relies on non-commercial
-criticism/commentary protections (s16 of the Constitution, TMA s34(2), UDRP
-4(c)(iii)).
+criticism/commentary protections (s 16 of the Constitution, TMA s 34(1)(c) read with
+*Laugh It Off*, UDRP 4(c)(iii)).
 
 ## Not affiliated
 
 TakealotBack.com is not affiliated with, endorsed by, or connected to Takealot
-Online (RF) (Pty) Ltd or its parent company Naspers / Prosus. Takealot's
+Online (RF) (Pty) Ltd or its parent company Naspers. Takealot's
 official website is <https://takealot.com>. Nothing on this site is legal advice.
 For free consumer dispute resolution, contact the Consumer Goods & Services
 Ombud at <https://cgso.org.za>.

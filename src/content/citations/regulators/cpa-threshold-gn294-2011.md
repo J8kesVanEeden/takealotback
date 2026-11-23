@@ -30,7 +30,7 @@ CPA s 5(2)(b) says the Act does not apply to a transaction in which "the consume
 
 > "I, Dr Rob Davies, Minister of Trade and Industry, do hereby determine in terms of section 6 (1) of the Consumer Protection Act, 2008 (Act 68 of 2008) that the monetary threshold applicable to the size of the juristic person in terms of section 5 (2) (b) is R2 000 000.00 (Two Million Rands). The afore-mentioned monetary threshold must be calculated in accordance with the attached schedule."
 
-The schedule ("Threshold determination — method of calculation") says assets and turnover are calculated under South African generally accepted accounting standards: asset value is gross assets with no deduction for liabilities (item 2), and annual turnover is gross revenue from the sale of goods, the rendering of services and the use by others of the juristic person's assets (item 3), taken from audited financial statements where the juristic person has or must have them (item 4).
+The schedule ("Threshold determination: method of calculation") says assets and turnover are calculated under South African generally accepted accounting standards: asset value is gross assets with no deduction for liabilities (item 2), and annual turnover is gross revenue from the sale of goods, the rendering of services and the use by others of the juristic person's assets (item 3), taken from audited financial statements where the juristic person has or must have them (item 4).
 
 ## Site reliance
 

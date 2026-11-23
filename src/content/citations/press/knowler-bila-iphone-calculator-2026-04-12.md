@@ -24,7 +24,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). It is the spine of the site's clause on **item substitution / wrong goods delivered**. The case demonstrates the practical pattern: refusal-on-procedural-grounds, then escalation-via-journalist, then reversal.
+The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). The site's clause on **item substitution / wrong goods delivered** rests on it. The case demonstrates the practical pattern: refusal-on-procedural-grounds, then escalation-via-journalist, then reversal.
 
 ## Extracts (fair dealing for criticism and review)
 
@@ -32,13 +32,17 @@ From Wendy Knowler, "Wendy's Win of the Week | The battle to prove a calculator 
 
 ### The substitution
 
+> "But for some reason, that robust system failed Thandi Bila."
+
 > "She emailed me recently to say that she bought a R14 000 iPhone 15 on the Takealot site on 7 March but received a Casio calculator instead, a model which is currently being sold by several retailers for less than R400."
 
 ### Takealot's procedural refusal
 
 > "Unfortunately, we cannot accept your return request as the return item is missing its accessories. Our returns policy states that a return can only be accepted if you return all the parts of the item you received."
 
-(Takealot's response framed the return as deficient because the calculator was missing its accessories (Bila says she never opened or used it), without addressing that the consumer had ordered and paid R14,000 for an iPhone, not a calculator.)
+> "I never opened or used the calculator because it wasn't what I ordered," she told me.
+
+Takealot's response treated the return as deficient because the calculator was missing its accessories. It did not address that Bila had ordered and paid R14,000 for an iPhone, not a calculator.
 
 ### The reversal
 
@@ -48,11 +52,15 @@ From Wendy Knowler, "Wendy's Win of the Week | The battle to prove a calculator 
 
 > "On the occasion that customers don't receive what they've ordered, we take full accountability and work swiftly to resolve them by collecting the incorrect item and delivering the right product as quickly as possible."
 
-### Other substitution cases referenced in the article
+> "Customers can report these issues through our customer help centre or by logging a 'Not What I Ordered' return on their Takealot profile."
 
-- Birgit Westermann-Winter (Cape Town, late 2024): ordered an office chair from Makro, got a box of biscuits.
-- Precious (TikTok, 2026): paid R14,000 for a PS5 and a controller, got metal sock hangers.
-- Knowler's partner: ordered a Bluetooth transmitter/receiver, got a pack of teeth-whitening strips.
+> "Our ecosystem operates with thousands of suppliers and sellers, multiple fulfilment centres, and complex logistics networks. This means there can be various contributing factors – from supplier or seller labelling inconsistencies and warehouse picking errors to delivery mix-ups."
+
+### Knowler's standing advice
+
+> "If you order something online, especially an expensive item, if practically possible, open the box in front of the delivery person, and, if what you ordered is not inside it, photograph it in the hands of the delivery person. Such evidence will be invaluable in the event of a dispute."
+
+The article also mentions other substitution cases. The site doesn't rely on them, so they are not quoted here.
 
 ## Wayback / archive status
 

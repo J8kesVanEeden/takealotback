@@ -43,7 +43,7 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 
 **Operative effect:** any processing of personal information must be adequate, relevant and not excessive for the purpose. Excessive collection, retention, or use breaches the condition, and s 10 contains no exception for consent.
 
-**Site reliance:** Clause 04 (unlock codes): in our reading, Takealot's policy demand for live unlock codes/passwords on data-storage devices may go beyond what s 10 allows (processing must be "not excessive"), given the legitimate purpose (technical assessment), which can be performed on a factory-reset device. No Regulator or court has ruled on it.
+**Site reliance:** Clause 04 (unlock codes): in our reading, Takealot's policy demand for live unlock codes/passwords on data-storage devices may go beyond what s 10 allows (processing must be "not excessive"). The legitimate purpose is a technical assessment, and that can be done on a factory-reset device. No Regulator or court has ruled on it.
 
 ## s 19: Security safeguards (Condition 7)
 
@@ -59,7 +59,7 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 >
 > (3) The responsible party must have due regard to generally accepted information security practices and procedures which may apply to it generally or be required in terms of specific industry or professional rules and regulations.
 
-**Site reliance:** Clause 04 (unlock codes): accepting live credentials *is itself* a security risk. Holding multiple consumers' active passwords creates a target. Forcing a consumer to compromise their device security as a condition of return is incompatible with s 19's "appropriate, reasonable technical and organisational measures" obligation.
+**Site reliance:** Clause 04 (unlock codes): accepting live credentials *is itself* a security risk. Holding multiple consumers' active passwords creates a target. In our reading, making a customer weaken their device security to get a return sits badly with s 19's "appropriate, reasonable technical and organisational measures" obligation. No Regulator or court has ruled on it.
 
 ## s 22: Notification of security compromises (Condition 7)
 

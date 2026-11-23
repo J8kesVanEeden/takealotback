@@ -40,9 +40,13 @@ From Wendy Knowler, Consumer Lookout, News24, 21 December 2025. Quoted under s 1
 
 > "On 10 December, she received an email from Takealot telling her that the Elf book order had been cancelled due to stock issues and that R147 had been credited to her account."
 
-### Knowler's parenthetical on credit-vs-refund (the load-bearing legal note)
+### Knowler's parenthetical on credit-vs-refund
 
 > "(In such cases, you don't have to accept a credit; you can insist on a refund.)"
+
+### The cancelled book arrives anyway
+
+> "The very next day, Chelsea was sent that Elf book: the one that was supposed to be out of stock. But she didn't get the Christmas Bear book."
 
 ### Courier collecting a phantom book
 
@@ -54,7 +58,7 @@ From Wendy Knowler, Consumer Lookout, News24, 21 December 2025. Quoted under s 1
 
 ## Site reliance
 
-- **Clause 06 (credit vs refund):** Knowler's parenthetical is the canonical Knowler statement on the cancellation-refund election: when Takealot cancels and credits, you can insist on cash to the original payment method instead.
+- **Clause 06 (credit vs refund):** Knowler's parenthetical states the cancellation-refund election: when Takealot cancels and credits, you can insist on cash to the original payment method instead.
 - **Clause 14 (order cancellation):** documents the system-error-then-deliver pattern. Useful for the framing that an automated cancellation is reversible: the cancelled order was, in fact, in stock.
 - **Clause 18 (mis-returned items):** the courier-sent-to-collect-non-existent-book pattern. Demonstrates how mis-returns can run in the opposite direction: supplier-initiated collection of items the consumer never had.
 - **Clause 23 (sale pricing):** when a cancelled order turns up relisted, Takealot's admission that "a system error incorrectly flagged an in-stock item as cancelled" shows an automated "out of stock" cancellation can be wrong.

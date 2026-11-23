@@ -8,7 +8,7 @@ secondary_url: "https://help.takealot.com/hc/en-us/articles/360019415653-What-ha
 alternate_url: "https://help.takealot.com/hc/en-us/articles/360019253774-How-do-I-cancel-my-order"
 wayback_url: "https://web.archive.org/web/*/https://help.takealot.com/hc/en-us/articles/360019252854-Why-was-my-order-cancelled"
 wayback_url_dated: "https://web.archive.org/web/20261118095656/https://help.takealot.com/hc/en-us/articles/360019252854-Why-was-my-order-cancelled"
-metaDescription: "Takealot's Help Centre, November 2026: paid orders cancelled for stock are credited to your account, delivery fees aren't reimbursed on cancellation, and missing items offer credit, refund or replacement."
+metaDescription: "Takealot's Help Centre, November 2026: paid orders cancelled for stock are credited to your account, delivery fees aren't reimbursed once a cancelled order is being fulfilled, and missing items offer credit, refund or replacement."
 retrieved: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[22] (sale-pricing) 'Credit is the default, not the rule' angle"

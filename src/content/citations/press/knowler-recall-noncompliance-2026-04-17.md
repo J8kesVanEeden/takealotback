@@ -10,7 +10,7 @@ retrieved: "2026-05-07"
 reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07."
 wayback_status: "Wayback capture 20260507160946 exists but holds only the paywall shell (title, no article body), checked 2026-11-10. The verbatim extracts here come from an authenticated News24 subscription."
-disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Disclosed for transparency. Note: this article is unusually critical of Takealot: Knowler reports that Takealot's PR agency declined to respond to her central query, and she states she has reported Takealot's recall conduct to the National Consumer Commission. The Naspers parent-company link did not produce editorial deference here."
+disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Disclosed for transparency. Note: this article is unusually critical of Takealot: Knowler reports that Takealot's PR agency declined to respond to her query on the power banks, and she states she has reported Takealot's recall conduct to the National Consumer Commission. The Naspers parent-company link did not produce editorial deference here."
 used_in:
   - "src/data/content.ts — CLAUSES[21] (recall-noncompliance) takealot summary + angles"
   - "src/data/content.ts — TEMPLATES T18 (recall) scenario reference"
@@ -25,8 +25,8 @@ updated: "2026-11-23"
 
 The article reports complaints about how Takealot handled two recalls:
 
-1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B**: global recall, listed among the product recalls announced by the National Consumer Commission in 2026 (the NCC's own notice, 8 April 2026, describes the recall as notified by the supplier, not as an NCC order; see Site reliance below). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both were refused refunds when they sought them post-recall: Takealot told Chetty the product's 12-month warranty had expired, and gave Hart a final response that it could not confirm the recall (extracts below). Takealot's PR agency declined to respond to Knowler's query.
-2. **Citro-Soda Regular**: SAHPRA recall (foreign-material contamination: metal fragments). Monogran Naidoo notified by Takealot, product collected, but the refund issued was a coupon valid for **two days** that expired in his spam folder before he saw it. Takealot's explanation: Naidoo had paid with a promotional coupon, so it reissued that coupon on its original terms, including the short validity; after Knowler's query it credited him the coupon's full value (extract below).
+1. **ESR HaloLock Kickstand wireless power bank, Model 2G505B**: global recall, listed among the product recalls announced by the National Consumer Commission in 2026 (the NCC's own notice, 8 April 2026, describes the recall as notified by the supplier, not as an NCC order; see Site reliance below). Two named consumers (Ben Hart, Mahendren Chetty) bought the unit through Takealot in Oct/Nov 2024. Both were refused refunds when they sought them post-recall: Takealot told Chetty the product's 12-month warranty had expired, and gave Hart a final response that it could not confirm the recall (extracts below). On these power-bank cases Takealot's PR agency told Knowler that Takealot "will not be responding to this query"; Takealot did answer her on the Citro-Soda case below.
+2. **Citro-Soda Regular** recall: Takealot notified Monogran Naidoo and collected the product, but the refund issued was a coupon valid for **two days** that went to his spam folder and expired before he saw it. Takealot's explanation: Naidoo had paid with a promotional coupon, so it reissued that coupon on its original terms, including the short validity; after Knowler's query it credited him the coupon's full value (extract below).
 
 These cases ground the site's clause on recalls: a recall is strong evidence the goods failed CPA s 55. Within six months of delivery s 56 gives the return-and-refund election. Beyond that, the recall notice's own refund instruction is the route, with s 61 if the product caused harm, and warranty expiry is not an answer to a recall refund. Note the ESR buyers here bought in October/November 2024, so by the April 2026 recall s 56's six-month window had closed for them.
 
@@ -39,6 +39,8 @@ These cases ground the site's clause on recalls: a recall is strong evidence the
 From Wendy Knowler, Consumer Lookout, News24, 17 April 2026. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 ### The recall notice
+
+> "Among the 18 product recalls announced by the National Consumer Commission (NCC) so far this year was a wireless power bank sold online by retailers including Takealot between 2023 and 2024. It's the ESR HaloLock Kickstand wireless power bank, Model 2G505B."
 
 > "Consumers in possession of the affected products are urged to immediately stop using them and return them to a point of purchase for a refund." (NCC recall notice)
 
@@ -54,9 +56,21 @@ Ben Hart bought the unit in October 2024 for around R1,000. About a year later (
 
 ### Chetty's case
 
+> "A few days later, Mahendren Chetty emailed me to say he'd also bought the now-recalled ESR power bank from Takealot in November 2024, and when he read a report about the NCC's recall notice, he contacted the online retailer about a refund – as instructed by the commission."
+>
 > "But Takealot told him: 'There is a 12-month warranty on the product, which expired on 12 Nov 2025 ... The item is well out of warranty.'"
 
+### Takealot's reply to Knowler's power-bank query
+
+In the article this reply follows the power-bank cases:
+
+> "Takealot will not be responding to this query." (Takealot's PR agency, quoted in the article)
+
 ### The Citro-Soda case (Naidoo)
+
+> "Monogran Naidoo told me that he was notified of the recall by Takealot, which collected the product from him."
+
+> "Instead, he was issued a voucher, which he didn't see until it went to his spam folder, he told me."
 
 > "Notably, it was valid for just two days and had expired before he became aware of it, leaving him effectively without the product and without compensation."
 

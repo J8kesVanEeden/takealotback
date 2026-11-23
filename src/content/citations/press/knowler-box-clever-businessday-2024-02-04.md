@@ -29,11 +29,19 @@ This is the legal-frame piece for Clause 02 (original packaging). Knowler took t
 
 From Wendy Knowler, "When Takealot humans try to box clever with customers", Business Day (BusinessLIVE), 4 February 2024. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
+### The Shapshak case (Knowler's account)
+
+> "Topping the list is Toby Shapshak's experience. He bought a box of Lego, returned it in time, but it was rejected because he wrote on the box."
+
+### The Arnold case
+
+> "Robyn Arnold's case was similar. She returned four different portable cutlery sets to a Takealot centre where a staffer examined and accepted them. But later she was told her return was rejected on the grounds that the barcoded cellophane bag in which each item had been delivered to her had been opened."
+
 ### Arnold's argument as quoted by Knowler
 
 > "It's not possible to look at the quality of the item without opening the bag. I dispute the fact that with online purchases one is expected to satisfy oneself as the quality of a product from the photograph alone, without looking at the actual item, which one would be able to do when purchasing in a physical shop."
 
-### Takealot's admission (the centrepiece)
+### Takealot's admission
 
 > "We apologise for the inconvenience caused; both customers have since been refunded. Unfortunately, both [rejected returns] were due to human error. The employees involved have received fresh training on this specific matter, to minimise future incidents of this kind."
 >

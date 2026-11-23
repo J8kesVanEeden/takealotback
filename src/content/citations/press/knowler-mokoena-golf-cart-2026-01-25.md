@@ -28,9 +28,19 @@ Takealot rejected Mokoena's **section 56 defective-goods claim** on a procedural
 
 From Wendy Knowler, Consumer Lookout, News24, 25 January 2026. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
+### The purchase and the defect
+
+> "Elliot Mokoena paid Takealot almost R9 000 for an electric golf bag caddy in late June last year."
+
+> "He'd read reviews from a few other buyers who said their caddies had been delivered without a cupholder, so he wasn't entirely surprised when it happened to him. 'But I didn't need the cupholder, so I did not alert Takealot of this and proceeded to use the cart, which worked as intended,' he said."
+
+> "That is, until the sixth month, by which time the lithium battery was going flat after just a few rounds of golf."
+
 ### Takealot's rejection
 
 > "Takealot sent my caddy back to me, citing their policy: for a warranty claim to succeed, 'you must return the item in its original product packaging with all the accessories and parts included…'"
+
+> "But a cup holder is not an essential part of the caddy's inherent capability but rather just cosmetic." (Mokoena)
 
 ### Knowler's legal framing (direct)
 

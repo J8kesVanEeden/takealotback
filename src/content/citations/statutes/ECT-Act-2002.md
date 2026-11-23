@@ -30,7 +30,7 @@ updated: "2026-11-23"
 
 ## s 42. Scope of application
 
-**Site reliance:** Chapter VII applies to electronic transactions. The s 42(2) list excludes certain transactions from the **s 44 cooling-off right only**, not from s 43, s 46 or the CPA's s 56 defective-goods return. The site's Clause 10 uses (f) (personalised / made to specification / can't be returned / deteriorates rapidly) and (g) (unsealed audio, video or software). Until 2026-11-10 this file dropped item (e) and shifted every later letter by one; corrected.
+**Site reliance:** Chapter VII applies to electronic transactions. The s 42(2) list excludes certain transactions from the **s 44 cooling-off right only**, not from s 43, s 46 or the CPA's s 56 defective-goods return. The site's Clause 10 uses (c) (foodstuffs, beverages and other everyday-consumption goods), (f) (personalised / made to specification / can't be returned / deteriorates rapidly), (g) (unsealed audio, video or software) and (h) (newspapers, periodicals, magazines and books). Until 2026-11-10 this file dropped item (e) and shifted every later letter by one; corrected.
 
 > (1) This Chapter applies only to electronic transactions.
 >

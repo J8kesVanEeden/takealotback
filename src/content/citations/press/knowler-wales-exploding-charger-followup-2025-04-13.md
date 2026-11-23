@@ -5,7 +5,7 @@ court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-04-13"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-exploding-charger-takealot-steps-in-after-supplier-ghosts-20250413"
 wayback_url_dated: "https://web.archive.org/web/20260507161118/https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-exploding-charger-takealot-steps-in-after-supplier-ghosts-20250413"
-metaDescription: "Follow-up to the Wales/Lenovo case: within an hour of publication Takealot contacted Wales and gave him a new replacement laptop. CGSO Soobrathi reiterates the intermediary stance."
+metaDescription: "Follow-up to the Wales/Lenovo case: within an hour of publication Takealot contacted Wales and gave him a new replacement laptop. Knowler restates the CGSO's view that marketplaces are intermediaries under the CPA."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07."
@@ -36,6 +36,10 @@ From Wendy Knowler, Consumer Lookout, News24, 13 April 2025. Quoted under s 12(1
 ### The resolution
 
 > "A few days after News24 published the story of Wales' experience, he contracted me to say: 'Thank you for writing about my plight. Within an hour of publishing Takealot contacted me to resolve the situation. As the warranty on my old laptop had expired, they have given me a new replacement laptop.'"
+
+### Knowler on the CGSO's stance
+
+> "The Ombud's stance on the issue of third-party suppliers being hosted on prominent e-commerce sites - making the latter intermediaries in terms of the CPA - offers consumers much needed protection should a third party supplier's service fall short."
 
 ## Site reliance
 

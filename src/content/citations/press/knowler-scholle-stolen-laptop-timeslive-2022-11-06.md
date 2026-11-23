@@ -32,6 +32,10 @@ From Wendy Knowler, "How committed to customer relations are retailers?", TimesL
 
 (MyBroadband reported R14,000 and "Axel"; Knowler reports R14,400 and "Azel". The underlying case is the same.)
 
+### The purchase
+
+> "Husband Azel bought a Hewlett Packard laptop on the platform in November 2019, paying R14,400."
+
 ### The flip-flop (Knowler's account)
 
 > "Then things took a bad turn. Takealot reversed its decision, saying there would be no refund. In an email the couple was told: 'Please be advised the return was declined due to tampering, as the unit shows signs of being opened.'"

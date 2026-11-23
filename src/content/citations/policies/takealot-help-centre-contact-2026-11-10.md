@@ -29,7 +29,7 @@ The page points customers to the Help Centre rather than a phone number. You sea
 
 > "If something goes wrong, please start by contacting our Customer Support team via the Help Centre; most problems can be easily resolved this way."
 
-> "Lodging complaints — If you have a complaint about the goods or services that we or other sellers provide on our platform, please reach out to us via our Help Centre to lodge a complaint or contact our Customer Support team on 087 362 8000."
+> Under "Lodging complaints": "If you have a complaint about the goods or services that we or other sellers provide on our platform, please reach out to us via our Help Centre to lodge a complaint or contact our Customer Support team on 087 362 8000."
 
 > "You must send legal notices and documents in writing to our Head Office located at 12th Floor, 10 Rua Vasco Da Gama Plain, Foreshore, Cape Town, or by email to legal@takealot.com."
 

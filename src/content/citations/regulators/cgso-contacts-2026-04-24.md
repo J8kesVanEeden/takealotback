@@ -36,7 +36,7 @@ Consumer Goods and Services Ombud NPC (CGSO)
 
 - Supplier response window: **15 business days** from complaint referral
 - CGSO target resolution: **60 business days** from receipt under the 2015 Code (until 30 November 2026); from 1 December 2026, **60 days from the start of its investigation** (2026 Code cl 15.2.5.1: "within 60 (sixty) days from commencement of an investigation"). See [cgso-code-2026.md](./cgso-code-2026.md).
-- Filing cost to consumer: **none**
+- Filing cost to consumer: **none**. The NCC and CGSO's [joint media release of 12 November 2026](https://thencc.org.za/joint-media-release-from-the-national-consumer-commission-and-the-consumer-goods-and-services-ombud/) (retrieved 2026-11-17): "CGSO’s complaint-resolution services remain free to consumers."
 
 ## Nature of scheme
 

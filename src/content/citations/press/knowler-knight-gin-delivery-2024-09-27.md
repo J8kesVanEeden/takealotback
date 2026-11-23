@@ -5,7 +5,7 @@ court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2024-09-27"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-when-your-online-drinks-order-runs-dry-20240927"
 wayback_url_dated: "https://web.archive.org/web/20260702063522/https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-when-your-online-drinks-order-runs-dry-20240927"
-metaDescription: "Knight's R3,700 Takealot order including a non-alcoholic gin promised by 30 August was undelivered by 16 September. Multiple ignored emails and calls. Delivered the day after Knowler's media query. Plus an earlier whisky-not-delivered case where Takealot claimed GPS-confirmed delivery without producing a signature."
+metaDescription: "Knight's R3,700 Takealot order promised by 30 August was undelivered by 16 September, after calls and emails to no avail. Delivered the day after Knowler's media query. Plus an earlier whisky-not-delivered case where Takealot claimed GPS-confirmed delivery without producing a signature."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-10"
 retrieved_by: "Source captured from the user's authenticated News24 subscription, included in the 2026-05-07 download bundle."
@@ -25,7 +25,7 @@ updated: "2026-11-23"
 
 Two threads:
 
-1. **Late delivery and ECT s 46** (Clause 14). Knight's order was promised by 30 August, undelivered by 16 September (more than two weeks past); calls and emails went unanswered. After Knowler's media query, delivered the next day.
+1. **Late delivery and ECT s 46** (Clause 14). Knight's order was promised by 30 August, undelivered by 16 September (more than two weeks past); she called and emailed to no avail. After Knowler's media query, delivered the next day.
 2. **Courier-claims-delivered-without-evidence** (Clause 18). An earlier case in Knowler's column documents Takealot claiming delivery on GPS coordinates and a signature it could not produce.
 
 ## Extracts (fair dealing for criticism and review)
