@@ -43,6 +43,7 @@ Vehicle case. A Western Cape Division decision: Takealot's own T&Cs choose the W
 
 ## Site reliance
 
+- Triage, "Return refused on a technicality" › the "wear and tear" / consumer damage option (no `used_in` line: the resolver has no destination for the triage modal).
 - Clause 08 (defective exclusions), "Wingfield v NCT" angle: an exclusion like wear and tear or consumer damage has to be proved by Takealot, not asserted.
 - Template T03: cited with *Toyota* and *Edan* for the point that the supplier must prove the exclusion it relies on.
 - FAQ "Why do your templates mention case names and NCT references?": named as an example.

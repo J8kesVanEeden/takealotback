@@ -36,4 +36,5 @@ Standfirst: "The online retailer has also changed its checkout system, with fast
 
 ## Site reliance
 
+- Triage, paid delivery option: "EWN reported in September 2026 that faster paid delivery could be pre-selected" (no `used_in` line: the resolver has no destination for the triage modal).
 - Clause 14: the CPA s 31 point, presented as an argument ("arguably void"), with the caveat that no court or regulator has applied s 31 to a checkout default and that the site hasn't verified the checkout.

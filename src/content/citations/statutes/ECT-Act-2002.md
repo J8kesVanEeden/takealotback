@@ -21,6 +21,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) 'CPA s 51 / ECT s 48' angle and TEMPLATES T09 body (s 48 non-exclusion)"
   - "src/data/content.ts — QUICK_HITS[3] (7 days for any reason, s 44)"
   - "src/data/content.ts — WARRANTY_ANGLES[6] (ECT Act s 43: information disclosure)"
+  - "src/data/content.ts — TEMPLATES T11 body (ECT s 43 disclosure duties)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 updated: "2026-11-23"
 ---
