@@ -68,7 +68,7 @@ South African copyright law (Copyright Act 98 of 1978) determines what we can an
 |---|---|---|---|
 | `statutes/` | Acts, Regulations, Constitution | **None** — s 12(8)(a) excludes "official texts of a legislative, administrative or legal nature" | **Full verbatim** with attribution + `retrieved` date |
 | `cases/` | Court / Tribunal / CAC judgments | **None** — s 12(8)(a) | **Full verbatim** with SAFLII / court URL + `retrieved` date |
-| `advisories/` | CGSO Advisory Notes | None (same basis — functions as regulator-published legal text) | **Full verbatim** with CGSO URL + `retrieved` date |
+| `advisories/` | CGSO Advisory Notes | Fair dealing, s 12(1)(b): the CGSO is a private non-profit company, so the s 12(8)(a) official-text exclusion may not cover its notes | **Quoted extracts** with the source named, CGSO / SAFLII URL + `retrieved` date |
 | `policies/` | Takealot's published policies | **Yes (Takealot copyright)** | Snapshot under fair dealing for criticism or review, Copyright Act s 12(1)(b) (research and private study is s 12(1)(a)). Retained to support the site's criticism of the same policy. Full text OK. |
 | `regulators/` | Contact details, monetary thresholds, URLs | None (facts, not expression) | Compiled facts OK |
 | `commentary/` | Third-party legal commentary, news, press | **Yes (publisher copyright)** | **Link + short excerpt only** (never full reproduction). Our quotations are justified by fair dealing for criticism or review, s 12(1)(b) (source and author named, as the proviso requires). |

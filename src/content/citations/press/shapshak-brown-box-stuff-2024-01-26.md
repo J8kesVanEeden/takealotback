@@ -27,7 +27,9 @@ copyright: "© Stuff South Africa. Quoted under fair dealing for criticism and r
 
 Takealot refused Shapshak's return because it conflated the **brown delivery box** with **original product packaging**. The case also documents the *shifting T&Cs* pattern: the rules cited in the rejection email were not the same as those cited in the original return-acceptance email. Public-figure-named (Stuff SA Editor-in-Chief, Forbes senior contributor) and independent of Naspers.
 
-## Verbatim extracts (fair-dealing quotations)
+## Extracts (fair dealing for criticism and review)
+
+From Toby Shapshak, Stuff South Africa, 26 January 2024. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 ### The transaction
 
@@ -44,24 +46,6 @@ Takealot refused Shapshak's return because it conflated the **brown delivery box
 > "The original email approving the return – which was duly picked up that day – had one line of Ts&Cs: 'Please do not mark the original product packaging, and include all parts and accessories (e.g. TV remote, laptop charger, cables, etc.).'"
 
 The rejection email contained a longer, different list of T&Cs which had not appeared in the original: the shifting-rules pattern within a single transaction.
-
-### The definitional confusion
-
-> "is Takealot saying that the random brown box that was sent to me to protect the actual product is 'the original product packing'? You can't be serious. But it turns out Takealot can't differentiate between 'original product packing' and the brown cardboard box they put the 'original product packing' into for delivery."
-
-### The box comes back
-
-> "Then, on Wednesday, the box — so badly disfigured by my koki — arrived back at my house. Clearly, the writing did not impede Takealot's ability to deliver it, because there it was: delivered to my house with the usual delivery sticker stuck over the writing."
-
-### The escalation pattern
-
-> "I cc'd consumer journalist Wendy Knowler. She was just as bemused as I was at the bizarre refusal justification."
->
-> "After I finished writing this, Takealot called and emailed to say: 'I have been requested by management to contact you and let you know that the complaint related to the decline of your return has our full attention. We will be in contact with you to advise you on the resolution as soon as we receive feedback.'"
->
-> "That took 10 days from my original email and I am sure the only reason I got a response is because of my title in my email signature – and that I CC'd Wendy Knowler."
-
-(An earlier version of this file began the first quotation "It turns out Takealot called" and ended Takealot's message after its first sentence. The article, in an "Update" at its foot, reads "After I finished writing this, Takealot called", and the message continues "We will be in contact with you to advise you on the resolution as soon as we receive feedback." Corrected 2026-11-17.)
 
 ## Site reliance
 

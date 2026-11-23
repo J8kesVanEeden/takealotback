@@ -27,7 +27,7 @@ The cover reads "Joint Paper MARCH 2026 … Compiled by The National Consumer Co
 
 ## Why the site cites this
 
-It is the two regulators' stated position on the exact deflection Takealot's T&Cs make ("Sellers are responsible for the items they sell on our platform"): the **platform** is responsible for resolving disputes and for making third-party sellers comply.
+It is the two regulators' stated position on the exact point Takealot's T&Cs make ("Sellers are responsible for the items they sell on our platform"): the **platform** is responsible for resolving disputes and for making third-party sellers comply.
 
 ## Verbatim extracts
 

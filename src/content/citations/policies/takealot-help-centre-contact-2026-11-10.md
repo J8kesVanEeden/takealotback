@@ -20,14 +20,9 @@ copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1
 
 Until 2026-11-10 the site listed `help@takealot.com` as Takealot's support address. A 2026-11-10 check found that address on no Takealot page or document (T&Cs, Returns Policy, Help Centre, PAIA manual). The site now gives the routes Takealot itself publishes.
 
-## Verbatim (rendered page, 2026-11-10)
+## What the page says (rendered page, 2026-11-10, in our words)
 
-> "Need to speak with one of our customer service agents? Looking for our contact number? The best way to reach us is through our Help Centre. Submitting a query from the most relevant Help Centre topic allows us to direct your question to the agent best equipped to assist with your specific request.
-> How do I submit a query?
-> Use the search bar above to find a topic related to your query
-> If the content of the topic does not resolve your issue, select the 'Contact Us' button at the bottom of the topic
-> Complete and submit the 'Get in Touch' contact form
-> Your query will be directed to one of our customer service agents, who will respond as soon as possible."
+The page points customers to the Help Centre rather than a phone number. You search for the topic closest to your query. If the topic doesn't resolve it, you select the 'Contact Us' button at the bottom of the topic and complete the 'Get in Touch' form, and a customer service agent replies. (Paraphrased 2026-11-23; the page's own wording is at the primary URL.)
 
 ## Companion text in Takealot's T&Cs (see takealot-tcs-2026-04-24.md; raw capture 2026-11-10)
 

@@ -25,19 +25,11 @@ copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing for critici
 
 This is Knowler's own writing on the Scholle case, companion to the MyBroadband article. Adds verbatim Stephanie Scholle (Axel's wife) framing on the principled-grievance-vs-procedural-refusal tension, and Knowler's own concluding observation. Different publication, same facts: the corroboration matters.
 
-## Verbatim extracts (fair-dealing quotations)
+## Extracts (fair dealing for criticism and review)
 
-### The transaction (Knowler's framing)
+From Wendy Knowler, "How committed to customer relations are retailers?", TimesLive (Sunday Times Daily), 6 November 2022. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
-> "Husband Azel bought a Hewlett Packard laptop on the platform in November 2019, paying R14,400. Last month, without warning, while working on it, a message appeared on the screen stating the laptop had been stolen from the department of agriculture."
-
-(Note: MyBroadband reported R14,000 and "Axel"; Knowler reports R14,400 and "Azel". The underlying case is the same.)
-
-### Stephanie Scholle's question
-
-> "What liability does Takealot carry in this regard?"
-
-> "Apart from the huge inconvenience and disruption, it is deeply disturbing to have been sold stolen property and it raises many questions about Takealot's vetting process of its suppliers."
+(MyBroadband reported R14,000 and "Axel"; Knowler reports R14,400 and "Azel". The underlying case is the same.)
 
 ### The flip-flop (Knowler's account)
 
@@ -45,23 +37,11 @@ This is Knowler's own writing on the Scholle case, companion to the MyBroadband 
 
 ### Stephanie Scholle's rebuttal
 
-> "This is a bit disingenuous. The memory of the computer was upgraded — HP allows this — and before my husband returned the unit he removed the upgraded memory and replaced it with the original one as that was his work computer."
-
 > "The main problem with the laptop is that it is a stolen unit that was sold to us as new via the Takealot platform nearly three years ago. The laptop is upgradeable — that is not tampering."
-
-### Takealot's eventual position
-
-> "Takealot has been in touch with Stephanie Scholle and has offered her a full refund. We have agreed with her that the refund would be for the laptop, she will remove the upgrade components."
-
-> "Despite our seller onboarding process, the contractual undertakings we have in place, and our compliance protocols, the marketplace seller was found guilty of selling stolen goods. They were suspended from trading on our platform in August 2022 after a full investigation. Takealot remains committed to offering our customers the best and safest online shopping experience."
 
 ### Knowler's concluding observation
 
 > "And yet when the Scholles alerted the company in October — two months after the suspension — that they had just discovered the laptop bought from that supplier via Takealot three years earlier was stolen, they were refused recourse because of a perfectly legitimate upgrade."
->
-> "Despite that they were not only sold used goods but stolen goods, and despite that the laptop, three years on, had been remotely disabled by the organisation it had been stolen from, rendering it useless."
->
-> "Eish, the mind boggles. This couple really shouldn't have needed my help to get justice."
 
 ## Site reliance
 

@@ -23,21 +23,15 @@ copyright: "© Media24 / News24. Quoted under fair dealing for criticism and rev
 
 The article confirms (with named consumer, named retailer, dated transaction, and Takealot's own admission) that a Takealot listing tag of "non-refundable" was applied to an item that did not fall within any statutory carve-out (a R450 T-shirt). The site's clause on non-returnable items relies on the article to ground the angle that **a supplier listing tag cannot expand the carve-outs in s 42(2) of the ECT Act or override the s 44 cooling-off right**.
 
-## Verbatim extracts (fair-dealing quotations)
+## Extracts (fair dealing for criticism and review)
+
+From Wendy Knowler, Consumer Lookout, News24, 2 November 2025. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 ### The transaction
 
 Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot in different sizes. The listed item was tagged "non-refundable."
 
-### The refusal
-
-> "I checked the listing again and it does say 'non-refundable'. But since when are T-shirts non-refundable?"
-
 ### Knowler's legal framing
-
-> "The Electronic Communications and Transactions Act gives consumers the benefit of a 'cooling off' period of seven days in which to return an unwanted purchase for a full refund. Provided it is in a re-saleable condition, with the consumer being responsible for the cost of returning it."
-
-> "Unlike most online retailers, the Takealot Group absorbs the cost of the return courier. It also gives consumers up to 30 days from the date of delivery to return unwanted goods."
 
 > "They aren't [non-refundable]. They are most definitely refundable within seven days of delivery when bought online."
 

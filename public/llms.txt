@@ -2,7 +2,7 @@
 
 > A non-commercial, plain-English reference to South African consumer rights in disputes with Takealot. It sets Takealot's published returns policy against the Consumer Protection Act (CPA), the Electronic Communications and Transactions Act (ECT Act), POPIA and the common law, and gives the statute citations, case law, email templates and escalation ladder to go with it.
 
-This site is intentionally a one-way reference. No contact form, no accounts, no user-submitted content, no ads, no tracking beyond privacy-preserving Cloudflare Web Analytics. Content is licensed CC BY 4.0. Attribution is appreciated; linking back to the canonical URL is the preferred form. Code is MIT.
+This site is intentionally a one-way reference. No contact form, no accounts, no user-submitted content, no ads. Page views are counted with Cloudflare Web Analytics (no cookies) and with Google Analytics 4 run through Cloudflare Zaraz (sets cookies); the privacy note is at https://takealotback.com/#privacy. Content is licensed CC BY 4.0. Attribution is appreciated; linking back to the canonical URL is the preferred form. Code is MIT.
 
 Content was last reviewed on 2026-11-18 against published South African statutes, regulations and case law, and against Takealot's policies as live on 2026-11-17. The current review date is always in the `last_reviewed` field of https://takealotback.com/api/data.json.
 

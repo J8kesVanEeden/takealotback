@@ -6,7 +6,7 @@ date: "2023-11-24"
 primary_url: "https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
 wayback_url_dated: "https://web.archive.org/web/20261117210528/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
 wayback_url_earlier: "https://web.archive.org/web/20260714010241/https://www.timeslive.co.za/news/consumer-live/2023-11-24-wendy-knowler-cooling-off-exclusions-black-friday-scams-and-cross-border-travel-tips/"
-metaDescription: "Knowler names some ECT s 42(2) cooling-off exclusions ('among them' books, insurance, online auctions, everyday consumables, lottery tickets, travel and leisure bookings). Confirms Takealot's 'no warranty at all' framing on books is wrong: 6-month CPA defective warranty still applies."
+metaDescription: "Knowler names some ECT s 42(2) cooling-off exclusions ('among them' books, insurance, online auctions, everyday consumables, lottery tickets, travel and leisure bookings). Knowler says Takealot's 'no warranty at all' framing on books is wrong: 6-month CPA defective warranty still applies."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
@@ -61,7 +61,7 @@ Takealot told Nikki her non-returnable books had **no warranty at all**, when in
 
 ## Site reliance
 
-- **Clause 10 (non-returnable items):** the centrepiece. Takealot's *"No warranty at all"* framing on books is wrong. ECT s 42(2) only disapplies s 44 cooling-off; CPA s 56 still runs. A book that is defective (binding faulty, pages missing, wrong content) is still defective goods.
+- **Clause 10 (non-returnable items):** the centrepiece. In our reading, and Knowler's, Takealot's *"No warranty at all"* framing on books is wrong. ECT s 42(2) only disapplies s 44 cooling-off; CPA s 56 still runs. A book that is defective (binding faulty, pages missing, wrong content) is still defective goods.
 - **Plain-language examples of ECT s 42(2) exclusions**: useful when explaining what *is* legitimately non-coolable. Knowler's list is partial; use the statute for the full list.
 - **Risk-of-loss-in-transit:** retailer and third-party courier carry the risk until delivery; consumer not stuck with a "deal with the courier" deflection.
 

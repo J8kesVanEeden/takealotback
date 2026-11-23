@@ -7,7 +7,7 @@ primary_url: "https://terms-and-policies.takealot.com/terms-conditions/"
 wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/terms-conditions/"
 wayback_url_dated: "https://web.archive.org/web/20261117203437/https://terms-and-policies.takealot.com/terms-conditions/"
 wayback_url_earlier: "https://web.archive.org/web/20261110140857/https://terms-and-policies.takealot.com/terms-conditions/"
-metaDescription: "Verbatim snapshot of Takealot's terms & conditions (April 2026): entity, unilateral change, forum, cancellation, sellers, resale, vouchers, delivery, accounts."
+metaDescription: "Dated extracts from Takealot's terms & conditions (April 2026), quoted for criticism and review: entity, unilateral change, forum, cancellation, sellers, resale, vouchers, delivery, accounts."
 retrieved: "2026-11-10"
 reverified_on: "2026-11-17"
 corrected_on: "2026-05-07"
@@ -35,7 +35,7 @@ See the companion [takealot-returns-2026-04-24.md](./takealot-returns-2026-04-24
 
 ---
 
-## Section-by-section live text (retrieved 2026-04-25)
+## Extracts by section (retrieved 2026-04-25)
 
 ### Registered entity (verbatim from the T&Cs)
 
@@ -106,11 +106,9 @@ These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captur
 
 **Delivery estimates** (added 2026-11-18, raw line 286; Clause 14's "CPA s 54: paid delivery missed" angle refers to Takealot's terms calling delivery dates "estimates")
 
-> "Delivery times may vary and are determined by the items you order, the payment method, and the location you choose for delivery or collection, as explained in our Help Centre. We provide our delivery estimates on the product description page to help you shop, but always check your order’s estimated delivery date at checkout for the most accurate delivery information."
+> "… We provide our delivery estimates on the product description page to help you shop, but always check your order’s estimated delivery date at checkout for the most accurate delivery information."
 
-**Discount deals**
-
-> "Each seller determines the pricing and discounts (“deals”) offered on their items on our platform. We will display the terms of each deal on the relevant product description page. You must follow all the terms of the deal to qualify for it."
+**Discount deals** (Clause 23 quotes this)
 
 > "Deals are valid for a limited period but may expire sooner if Takealot or the seller runs out of the allocated amount of stock of the deal item."
 
@@ -120,15 +118,13 @@ These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captur
 
 > "You can’t return a gift voucher for a refund or exchange it for cash." (Added 2026-11-18, raw line 251; Clause 24 relies on it, and it is why template T21 asks only for refund credit to be paid out.)
 
-> "Takealot or Mr D will then credit the full value of the voucher to your account as a non-refundable credit, which you can use for a complete or partial payment of your Takealot or Mr D order."
-
 **Delivery**
 
 > "When someone accepts or collects the order at your chosen address or at a Takealot Pickup Point, your order is considered delivered. You must make sure that the person who accepts delivery or collects the order on your behalf has your permission to do so."
 
 **Account security, suspension and termination**
 
-> "Please keep your username and password private. This is to keep your information safe and to prevent anyone from misusing your Takealot account. You carry the risk of unauthorised and fraudulent activities on your Takealot account. If you suspect or know that there is unauthorised access to your Takealot account, you must notify us immediately. You must also take steps to mitigate any resultant loss by changing your password and blocking the payment cards you loaded onto your Takealot account."
+> "… You carry the risk of unauthorised and fraudulent activities on your Takealot account. If you suspect or know that there is unauthorised access to your Takealot account, you must notify us immediately. You must also take steps to mitigate any resultant loss by changing your password and blocking the payment cards you loaded onto your Takealot account."
 
 > "We may, at any time and for any reason, suspend or terminate your Takealot account."
 
@@ -169,4 +165,4 @@ Wayback captures of this URL relied on, oldest first: [20260425124023](https://w
 
 ## Status
 
-Policy text mirrored verbatim for the clauses the site relies on: registered entity, unilateral changes, High Court forum selection, order cancellation, marketplace sellers and resale, plus (since 2026-11-18) order completion, cart and wish list, delivery, deals, gift vouchers and account suspension; companion Returns Policy at [`takealot-returns-2026-04-24.md`](./takealot-returns-2026-04-24.md). Fair-dealing snapshot retained for research / criticism / review.
+Dated extracts, quoted for criticism and review (Copyright Act 98 of 1978, s 12(1)(b)), for the clauses the site relies on: registered entity, unilateral changes, High Court forum selection, order cancellation, marketplace sellers and resale, plus (since 2026-11-18) order completion, cart and wish list, delivery, deals, gift vouchers and account suspension; companion Returns Policy at [`takealot-returns-2026-04-24.md`](./takealot-returns-2026-04-24.md). Fair-dealing snapshot retained for research / criticism / review.

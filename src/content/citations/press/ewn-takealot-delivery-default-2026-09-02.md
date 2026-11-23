@@ -1,5 +1,5 @@
 ---
-title: "EWN: Takealot raises free-delivery minimum, pre-selects paid delivery (2026)"
+title: "EWN: Takealot raises free-delivery minimum, pre-selects paid delivery in some cases (2026)"
 citation: "EWN (Eyewitness News), 2 September 2026, Celeste Martin"
 court_or_publisher: "EWN / Primedia"
 date: "2026-09-02"
@@ -21,9 +21,9 @@ copyright: "© EWN / Primedia. Quoted under fair dealing for criticism and revie
 
 It is the only source the site has for the report that Takealot's checkout pre-selects a paid delivery option. The site uses it, with a visible caveat, for the CPA s 31 (negative-option) point. TakealotBack has **not** checked the checkout itself; checkout behaviour can change at any time.
 
-## Verbatim extracts (live page, 2026-11-10)
+## Extracts (fair dealing for criticism and review)
 
-> "Takealot has increased the minimum order value for free standard delivery from R650 to R750. The standard delivery fee remains R75 for orders below the threshold."
+From Celeste Martin, EWN (Eyewitness News), 2 September 2026, read on the live page on 2026-11-10. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 > "The online retailer has also changed its checkout process. Faster paid delivery options, including same-day or next-day delivery where available, can now be selected by default, while free standard delivery may require shoppers to choose a later delivery date manually."
 

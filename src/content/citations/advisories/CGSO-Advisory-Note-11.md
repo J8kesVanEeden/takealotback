@@ -14,7 +14,7 @@ corrected_on: "2026-11-23"
 correction_note: "The file had no verbatim text and its carve-out list was presented as the CGSO's published statement. Paras 1.5, 1.6, 3.13, 4.1 and 5.1 are now quoted verbatim. The s 55(6) carve-out omitted \"or knowingly acted in a manner consistent with accepting the goods in that condition\"; the auction carve-out was tied to CPA s 45, which the Note does not cite; and the juristic-person carve-out is stated as the Note words it, alongside the statute's own test (s 5(2)(b): asset value or annual turnover equals or exceeds the s 6 threshold). 2026-11-23: the description and proposition now say voetstoots is void outside the narrow exceptions (paras 1.6 and 5.1)."
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
-copyright: "No copyright: published by an accredited Ombud established under CPA s 82"
+copyright: "© Consumer Goods and Services Ombud NPC (a private non-profit company accredited as an ombud under CPA s 82). Quoted, with the source named, under fair dealing for criticism and review, s 12(1)(b) Copyright Act 98 of 1978."
 ---
 
 # CGSO Advisory Note 11: Supply of Voetstoots Goods

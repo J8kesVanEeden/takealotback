@@ -143,7 +143,7 @@ Reg 44(1) limits the presumption to agreements between a supplier acting for bus
 
 | Subsection | What it catches | Used on site |
 |---|---|---|
-| **44(3)(b)** | Excluding / restricting consumer's remedies against supplier's breach | Clause 18 (mis-returned items); Clause 19 (restocking / re-delivery fees), shifting s 56(2) costs onto the consumer; Template T15 |
+| **44(3)(b)** | Excluding / restricting consumer's remedies against supplier's breach | Clause 18 (mis-returned items); Clause 19 (collection / re-delivery fees), shifting s 56(2) costs onto the consumer; Template T15 |
 | **44(3)(g)** | Modifying risk distribution to consumer's detriment | Clause 19: packaging-condition fee on a defective return reallocates s 56(2)'s "supplier's risk and expense"; Template T15; Clause 24 (account suspension): fraud risk put on the account holder |
 | **44(3)(i)** | Supplier unilaterally altering terms | Clause 11 (coupons), Clause 12 (unilateral changes), Template T09. Reg 44(4)(c)(iv) takes a term out of (i) where the supplier reserves the right to alter the conditions of an **open-ended** agreement, but only if the supplier "must forthwith inform the consumer thereof" and "the consumer is free to dissolve the agreement immediately". Clause 12's "CPA Reg 44" angle reasons through this carve-out: Takealot's clause allows changes "without giving you notice" (it says only that it will publish them on its platform), so the carve-out's conditions aren't met and the presumption stands. |
 | **44(3)(j)** | Supplier deciding whether goods conform to the agreement | Clause 20 (inspection and assessment): Takealot's own inspection is evidence, not the final word |

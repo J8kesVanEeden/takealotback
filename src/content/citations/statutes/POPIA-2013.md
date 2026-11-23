@@ -42,7 +42,7 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 
 **Operative effect:** any processing of personal information must be adequate, relevant and not excessive for the purpose. Excessive collection, retention, or use breaches the condition, and s 10 contains no exception for consent.
 
-**Site reliance:** Clause 04 (unlock codes): Takealot's policy demand for live unlock codes/passwords on data-storage devices is "excessive" given the legitimate purpose (technical assessment), which can be performed on a factory-reset device.
+**Site reliance:** Clause 04 (unlock codes): in our reading, Takealot's policy demand for live unlock codes/passwords on data-storage devices may go beyond what s 10 allows (processing must be "not excessive"), given the legitimate purpose (technical assessment), which can be performed on a factory-reset device. No Regulator or court has ruled on it.
 
 ## s 19: Security safeguards (Condition 7)
 

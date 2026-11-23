@@ -16,7 +16,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) 'CGSO Advisory Note 1' angle"
   - "src/data/content.ts — TEMPLATES T16 (inspection deadline) body"
   - "src/content/pages/onus-of-proof.md — 'The CGSO view' section"
-copyright: "No copyright: published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
+copyright: "© Consumer Goods and Services Ombud NPC (a private non-profit company accredited as an ombud under CPA s 82). Quoted, with the source named, under fair dealing for criticism and review, s 12(1)(b) Copyright Act 98 of 1978."
 ---
 
 # CGSO Advisory Note 1: Consumer's Rights Regarding Defective Goods

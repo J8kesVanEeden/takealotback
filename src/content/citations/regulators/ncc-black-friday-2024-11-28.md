@@ -29,7 +29,9 @@ It is the regulator's own reminder, issued for Black Friday, that a supplier mus
 
 > "Suppliers are reminded of their obligation in terms of the CPA. This includes not marketing their offerings in a misleading or deceptive manner. The CPA requires that “when a retailer or service provider markets the goods, they must do so in a manner that is not misleading or deceiving including the condition of the goods, the price at which the goods may be supplied, or the relationship of the price to any previous price or competitor’s price for comparable or similar goods.”"
 
-> "On the upcoming Black Friday, consumers are further reminded that knowing the original prices of items they intend buying during this period will help to determine if an item is indeed discounted or not. Consumers are urged to be very vigilant when transacting online as some of the online stores are masquerading as legitimate businesses while they are effectively out to scam consumers."
+> "On the upcoming Black Friday, consumers are further reminded that knowing the original prices of items they intend buying during this period will help to determine if an item is indeed discounted or not."
+
+(The statement goes on to warn about fake online stores. It does not name Takealot, and the site does not rely on that part.)
 
 The rest of the statement concerns about 40 suppliers the NCC could not trace after they took payment and did not deliver. The site does not rely on that part.
 
