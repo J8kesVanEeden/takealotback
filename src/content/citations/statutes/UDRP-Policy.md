@@ -39,8 +39,8 @@ Para 4(c), the registrant's answer to element (ii):
 
 ## Site reliance
 
-- About section, "Legal grounding": UDRP para 4(c)(iii), legitimate non-commercial fair use.
-- FAQ, "Is using the name "Takealot" in the domain legal?": the UDRP protects legitimate non-commercial fair use of a domain name.
+- About section, "Legal grounding": UDRP para 4(c)(iii), legitimate noncommercial or fair use.
+- FAQ, "Is using the name "Takealot" in the domain legal?": the UDRP treats a legitimate noncommercial or fair use of a domain name as a legitimate interest.
 
 ## Scope and limits
 

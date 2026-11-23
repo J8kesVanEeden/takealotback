@@ -25,7 +25,7 @@ updated: "2026-11-23"
 
 Using a voetstoots ("as-is") clause in a consumer sale is prohibited conduct under the CPA.
 
-Quoted on the site (verbatim from para 44.1 of the judgment, SAFLII [2019] ZANCT 63, checked 2026-11-10):
+Quoted on the site, in part (verbatim from para 44.1 of the judgment, SAFLII [2019] ZANCT 63, checked 2026-11-10):
 
 > "The use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act even though the clause was removed by the Applicant before the contract was signed"
 
@@ -33,7 +33,7 @@ Quoted on the site (verbatim from para 44.1 of the judgment, SAFLII [2019] ZANCT
 
 ## Facts
 
-The Applicant (Theodorus Vonk) purchased a 2008 Nissan X Trail from the Respondent (Willow Crest Motors CC). He says that within an hour of delivery he noticed oil leaking from the gearbox (paras 5 and 9). The sales agreement had contained a voetstoots clause, which the Applicant removed before signing by adding the words "CPA shall prevail" (paras 6, 31 and 44.1). The Applicant lodged a complaint first with the Motor Industry Ombudsman of South Africa (MIOSA) under CPA s 72(1)(a), then with the National Consumer Commission, before referring the matter to the Tribunal.
+The Applicant (Theodorus Vonk) purchased a 2008 Nissan X Trail from the Respondent (Willow Crest Motors CC). He says that within an hour of Mrs Vonk arriving home with the car he noticed oil leaking from the gearbox (paras 5 and 9). The sales agreement had contained a voetstoots clause, which the Applicant removed before signing by adding the words "CPA shall prevail" (paras 6, 31 and 44.1). The Applicant lodged a complaint first with the Motor Industry Ombudsman of South Africa (MIOSA) under CPA s 72(1)(a), then with the National Consumer Commission, before referring the matter to the Tribunal.
 
 Verbatim (SAFLII [2019] ZANCT 63, captured 2026-11-17):
 
