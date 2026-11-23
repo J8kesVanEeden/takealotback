@@ -974,7 +974,7 @@ export const FAQ: FaqItem[] = [
   { q: "What if my situation isn't covered by one of the clauses?",
     a: "The site's GitHub repository is public. Open an issue with the scenario and the clause you're fighting." },
   { q: "Can I copy content from this site?",
-    a: "Yes. Our own text is under Creative Commons BY 4.0, so credit the site when you reuse it. A link back is appreciated, not required. Quoted statutes, judgments and Takealot's policy wording aren't ours to license." },
+    a: "Yes. Our own text is under Creative Commons BY 4.0, so credit the site, link to the licence and say if you changed anything when you reuse it. A link back to the site is appreciated, not required. Quoted statutes, judgments, news reports and Takealot's policy wording aren't ours to license." },
   { q: "How current is the content?",
     a: `Content is checked against the published CPA, ECT Act, POPIA, Takealot's live policies, SA case law and the regulators' own pages. It was last reviewed on ${LAST_REVIEWED.replaceAll(".", "-")}. Takealot's policies are re-checked every quarter, case law and regulator details at least once a year, and the site is updated as soon as something material changes.` },
   { q: "Why no contact form or email?",
