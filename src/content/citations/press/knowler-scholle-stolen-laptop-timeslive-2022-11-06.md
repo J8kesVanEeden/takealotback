@@ -46,7 +46,7 @@ From Wendy Knowler, "How committed to customer relations are retailers?", TimesL
 
 ### Knowler's concluding observation
 
-> "And yet when the Scholles alerted the company in October — two months after the suspension — that they had just discovered the laptop bought from that supplier via Takealot three years earlier was stolen, they were refused recourse because of a perfectly legitimate upgrade."
+> "And yet when the Scholles alerted the company in October — two months after the suspension — that they had just discovered the laptop bought from that supplier via Takealot three years earlier was stolen, they were refused recourse because of a perfectly legitimate upgrade. Despite that they were not only sold used goods but stolen goods, and despite that the laptop, three years on, had been remotely disabled by the organisation it had been stolen from, rendering it useless."
 
 ## Site reliance
 

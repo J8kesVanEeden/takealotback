@@ -102,7 +102,11 @@ The following is the operative wording of the Returns Policy as fetched from `te
 
 > The item must be returned "in its original product packaging with all the accessories and parts included, and all seals must be intact (if applicable)."
 
-Tags must remain on; items must not have been worn or used.
+Tags must remain on; items must not have been worn or used. Verbatim (2026-11-17 capture):
+
+> "the item is returned in its original product packaging and is unused;"
+>
+> "the tags are still on, and it hasn’t been worn – it's okay to try things on, but it’s not okay to wear an item and then try to return it;"
 
 ### Wrong item, damaged on delivery, or missing parts
 
@@ -136,7 +140,11 @@ Under "Extended warranties", for a defect that shows up more than 6 months after
 
 > "If the supplier accepts the return and offers to repair or replace the item and this takes longer than 21 days from when the item is received at the supplier’s returns evaluation facility, we’ll offer you credit or a refund directly from Takealot."
 
-Items with a manufacturer ("direct") warranty are different: the manufacturer handles the return itself, and Takealot gives you its contact details.
+Items with a manufacturer ("direct") warranty are different: the manufacturer handles the return itself, and Takealot gives you its contact details. Verbatim (2026-11-17 capture):
+
+> "With a manufacturer warranty, the manufacturer handles the return of any defective items themselves."
+>
+> "When you log the return of a defective item with a manufacturer warranty, you will receive the contact details of the relevant manufacturer. You must then contact that manufacturer directly."
 
 ### Pre-packed Bundles
 
@@ -144,7 +152,9 @@ Items with a manufacturer ("direct") warranty are different: the manufacturer ha
 
 ### Bundle Deals
 
-Customers may return a whole Bundle Deal **or any of the individual items** in the bundle, with the credited / refunded amount reflecting the discounts applied at purchase.
+Customers may return a whole Bundle Deal **or any of the individual items** in the bundle, with the amount credited to their Takealot account reflecting the discounts applied at purchase. Verbatim (2026-11-17 capture):
+
+> "You may return a whole Bundle Deal or any of the items in the bundle to us. If we accept your return, we will credit your Takealot account with the price you paid (after any applicable discounts have been applied)."
 
 ### Digital items and items that store data
 
@@ -180,7 +190,11 @@ If a return is rejected, Takealot returns the item to the consumer.
 
 ### Collection or delivery, and re-delivery fees
 
-Consumers choose collection or pickup-point drop-off within **7 days** of logging the return. Large items and alcohol are collection-only.
+Consumers choose collection or pickup-point drop-off within **7 days** of logging the return. Large items and alcohol are collection-only. Verbatim (2026-11-17 capture):
+
+> "If you choose to return the item to a pickup point you must do it within 7 days of logging the return."
+>
+> "We must collect large items and alcohol – you don’t have the option to return them to our pickup points."
 
 > "If you don't [return the item with packaging, parts, accessories, seals], we will not accept the return and will send the item back to you. However, you may log the return again if you can do so with all the missing packaging and parts, but **we may charge you a fee for collecting the item from you and, where applicable, a fee for delivering the same or a replacement item back to you.**"
 

@@ -224,7 +224,7 @@ export const CLAUSES: Clause[] = [
       { stat: "Delict", body: "Wrongful destruction of property gives a damages claim independent of the sales contract." },
       { stat: "CPA s 65", body: "While Takealot holds your rejected return, it holds your property. Section 65(2) covers a supplier that has \"any other property belonging to or ordinarily under the control of a consumer\". It \"must not treat that property as being the property of the supplier\", must look after it with the care \"that can reasonably be expected of a person responsible for managing any property belonging to another person\", and \"is liable to the owner of the property for any loss\" if it doesn't. Applying s 65 to a held return is our own reading; no court or Ombud has ruled on it that we know of. Disposing of the item during a live dispute is hard to square with it." },
       { stat: "CPA s 48", body: "A term allowing disposal during a contested dispute is a strong candidate for unfair-term challenge." },
-      { stat: "CPA s 52", body: "Courts (including Small Claims) can declare a term unenforceable for unconscionability." },
+      { stat: "CPA s 52", body: "Courts can declare a term unenforceable for unconscionability." },
       { stat: "Contract", body: "The abandonment clause is hard to apply to a rejection you are disputing in writing: your written objection shows you haven't given the item up. This is our reading; no court or Ombud has ruled on this clause that we know of." },
       { stat: "Evidence", body: "Put objection in writing before day 30. Create the record. File with CGSO immediately." },
     ],
@@ -237,7 +237,7 @@ export const CLAUSES: Clause[] = [
     angles: [
       { stat: "ECT s 42(2)", body: "Most of these exclusions match ECT s 42(2): food (c), personalised or made-to-spec (f)(i)–(ii), unsealed audio/video/software (g), books and periodicals (h). Digital items such as vouchers, gaming codes and downloads arguably fall under (f)(iii). Hygiene items may fall under (f)(iii) (\"by reason of their nature cannot be returned\"). Jewellery isn't on the list, so the 7-day right arguably still applies to it. Either way, s 42(2) only disapplies s 44 (cooling-off). It does not touch s 43, s 46, or the CPA." },
       { stat: "CPA s 56", body: "A \"non-returnable\" flag never bars a defective-goods return. Takealot's own policy confirms this: digital and hygiene items are still returnable when defective." },
-      { stat: "\"No warranty at all\" framing is wrong", body: "Takealot has been documented telling consumers that non-returnable items have \"No warranty at all, except for delivery damages.\" That is legally wrong. Per Wendy Knowler (TimesLive, 24 November 2023), responding to a reader who was told this on three books: \"That's a bit confusing as the six-month Consumer Protection Act warranty against defects applies, but not the seven-day 'change your mind' cooling-off period.\" The s 42(2) carve-out goes to ECT s 44 (cooling-off). Section 56 still runs. A defective book, a digital code that doesn't work, an unsealed software bundle missing the licence: all still trigger the s 56 election." },
+      { stat: "\"No warranty at all\" framing is wrong", body: "Takealot has been documented telling a buyer that non-returnable items have \"No warranty at all, except for delivery damages.\" That is legally wrong. Per Wendy Knowler (TimesLive, 24 November 2023), responding to a reader who was told this on three books: \"That's a bit confusing as the six-month Consumer Protection Act warranty against defects applies, but not the seven-day 'change your mind' cooling-off period.\" The s 42(2) carve-out goes to ECT s 44 (cooling-off). Section 56 still runs. A defective book, a digital code that doesn't work, an unsealed software bundle missing the licence: all still trigger the s 56 election." },
       { stat: "ECT s 42(2)(f)", body: "Covers goods made to your specifications, clearly personalised, that by their nature can't be returned, or that are likely to deteriorate or expire rapidly (s 42(2)(f)(i)–(iv)). A standard item in your chosen size or colour is none of those." },
       { stat: "ECT s 42(2)(g)", body: "Unsealed audio/video/software is excluded only from ECT s 44 cooling-off. Does not touch s 56." },
       { stat: "CPA s 41", body: "If a non-returnable item is not-as-described, a s 41 misrepresentation claim still runs." },
@@ -369,7 +369,7 @@ export const CLAUSES: Clause[] = [
     angles: [
       { stat: "Bailment", body: "Takealot holds returned goods as bailee (depositary) and owes a duty of care. Under CPA s 51(1)(c)(i) it cannot exclude liability for loss caused by its gross negligence, and any wider exclusion is open to challenge under s 48 (below). Reasonable steps to identify mis-returned items (serials, associated order) are expected." },
       { stat: "Delict", body: "Negligent destruction is actionable. Immediate disposal without reasonable inspection may be negligent." },
-      { stat: "CPA s 65", body: "An item you returned by mistake is still yours while Takealot holds it. Section 65(2) says a supplier holding a consumer's property \"must not treat that property as being the property of the supplier\" and \"is liable to the owner of the property for any loss\" if it fails to look after it with reasonable care. On our reading, that is the statutory answer to \"we dispose of it and don't pay\". Applying s 65 to a mis-return is our own reading; no court or Ombud has ruled on it that we know of." },
+      { stat: "CPA s 65", body: "An item you returned by mistake is still yours while Takealot holds it. Section 65(2) says a supplier holding a consumer's property \"must not treat that property as being the property of the supplier\" and \"is liable to the owner of the property for any loss\" if it fails to look after it with reasonable care. On our reading, that is the statutory answer to \"we dispose of incorrect returns\" and \"we will not pay for lost items\". Applying s 65 to a mis-return is our own reading; no court or Ombud has ruled on it that we know of." },
       { stat: "CPA s 48", body: "s 48 lets you attack a blanket liability exclusion for destroyed consumer property as unfair." },
       { stat: "CPA Reg 44", body: "Regulation 44(3)(b) presumes unfair a term that excludes or restricts your remedies against the supplier when it breaches its obligations." },
       { stat: "Mitigate fast", body: "Notify Takealot the moment you realise, in writing. Photograph what you're returning. Note serial numbers. Create the paper trail." },
@@ -653,7 +653,7 @@ Regards,
 
 I refer to prior correspondence dated [dates]. Takealot has not provided the remedy to which I am entitled under [section 56 of the Consumer Protection Act / section 44(3) of the ECT Act / section 46 of the ECT Act]. This is a final opportunity to resolve the matter directly.
 
-If I do not have written confirmation of [remedy] within 5 business days, I will file with the Consumer Goods and Services Ombud under the Consumer Goods and Services Industry Code of Conduct. Takealot will have 15 business days to respond to the complaint, and the CGSO aims to resolve complaints within 60 days of starting its investigation under the Code in force from 1 December 2026 (60 business days under the Code in force until 30 November 2026).
+If I do not have written confirmation of [remedy] within 5 business days, I will file with the Consumer Goods and Services Ombud under the Consumer Goods and Services Industry Code of Conduct. Takealot will have 15 business days to respond to the complaint, and the CGSO aims to resolve complaints within 60 days of starting its investigation under the Code in force from 1 December 2026 (60 business days from receipt under the Code in force until 30 November 2026).
 
 [If Takealot has pointed to its High Court clause: I do not accept that this clause takes away my right to go to the Consumer Goods and Services Ombud, the National Consumer Commission or a lower court. A term that tries to push a consumer past those forums is open to challenge under sections 48 and 51 of the Consumer Protection Act.]
 
@@ -702,7 +702,7 @@ I would like to resolve this directly. I accordingly set the following deadline:
   (c) If the outcome accepts the claim, I expect the elected remedy, [repair / replacement / refund], within a further 7 business days.
   (d) If I do not receive a written outcome by [date], I will treat that as Takealot's refusal to give effect to my section 56 election and will file a complaint with the Consumer Goods and Services Ombud on that basis.
 
-For reference, suppliers get 15 business days to respond to a CGSO complaint, and the CGSO targets resolution within 60 days of starting its investigation under the Code in force from 1 December 2026 (60 business days under the Code in force until 30 November 2026). An internal inspection that takes longer than a full CGSO complaint is not a reasonable assessment window.
+For reference, suppliers get 15 business days to respond to a CGSO complaint, and the CGSO targets resolution within 60 days of starting its investigation under the Code in force from 1 December 2026 (60 business days from receipt under the Code in force until 30 November 2026). An internal inspection that takes longer than a full CGSO complaint is not a reasonable assessment window.
 
 The Ombud's published Advisory Note 1 ([2021] ZACGSO 1, para 9.3; currently under CGSO review) accepts supplier inspections only "in appropriate cases, where there is a genuine reason for believing" that the supplier "may not be liable", with the item inspected and returned "speedily (a maximum of 7-10 days if the item needs to be sent away)".
 
@@ -753,7 +753,7 @@ Please confirm within 7 business days that Takealot will collect the recalled pr
 If the refund is not provided I will:
   (a) report Takealot's non-compliance with the recall to the National Consumer Commission;
   (b) lodge with the Consumer Goods and Services Ombud in parallel;
-  (c) approach the manufacturer directly (recalls are a manufacturer obligation as much as a retailer one);
+  (c) approach the manufacturer directly as well;
   (d) where the listing still represents the product as safe, lodge a misleading-advertising complaint with the Advertising Regulatory Board.
 
 Regards,
@@ -880,7 +880,7 @@ export const LAW_SECTIONS: LawGroup[] = [
     { id: "s 48", title: "Unfair, unreasonable, unjust contract terms", blurb: "Substantive review. A term is unfair if it is \"excessively one-sided in favour of any person other than the consumer\" (s 48(2)(a)) or \"so adverse to the consumer as to be inequitable\" (s 48(2)(b)). Regulation 44 lists presumptively unfair terms." },
     { id: "s 49", title: "Notice for onerous terms", blurb: "Risky, restrictive, limiting terms must be separately brought to the consumer's attention." },
     { id: "s 51", title: "Prohibited terms", blurb: "Terms that waive rights conferred by the Act are void under s 51(3)." },
-    { id: "s 52", title: "Court powers", blurb: "Courts (including Small Claims) may declare a term unconscionable, unreasonable, or unjust." },
+    { id: "s 52", title: "Court powers", blurb: "Courts may declare a term unconscionable, unreasonable, or unjust." },
     { id: "s 53", title: "Definitions: \"defect\", \"failure\"", blurb: "Defect means a material imperfection, or a characteristic, that makes goods less acceptable, useful or safe than people are reasonably entitled to expect." },
     { id: "s 55", title: "Right to safe, good-quality goods", blurb: "Reasonably suitable, good quality, durable, free of defects, compliant with formal standards. s 55(6): disapplies (a)(b) where specific condition expressly disclosed and accepted." },
     { id: "s 56", title: "Implied warranty of quality", blurb: "The big one. 6 months. Three-tier warranty (producer/distributor/retailer). Consumer elects repair/replace/refund. Cannot be contracted out of." },
@@ -931,7 +931,7 @@ export const ESCALATION: EscalationTier[] = [
     body: "File with your bank's disputes team. It may be able to run alongside a CGSO complaint: check with both. Card only: EFT/RTC/PayShap not covered.",
     contact: "Your card issuer's disputes team" },
   { tier: 5, title: "National Consumer Commission (NCC)", window: "Variable",
-    body: "Broader CPA enforcement. Most individual disputes get referred back to CGSO. NCC is best for patterns or systemic issues. The NCC can issue a compliance notice, and ignoring one has a cost: in November 2026 the NCC reported a R200,000 Tribunal fine on a solar supplier that ignored a notice to propose a remedy for a battery that failed within six months (the Tribunal ruled only on the ignored notice, not on the battery).",
+    body: "Broader CPA enforcement. The NCC can refer individual disputes to the CGSO (CPA s 72(1)(b)). NCC is best for patterns or systemic issues. The NCC can issue a compliance notice, and ignoring one has a cost: in November 2026 the NCC reported a R200,000 Tribunal fine on a solar supplier that ignored a notice to propose a remedy for a battery that failed within six months (the Tribunal ruled only on the ignored notice, not on the battery).",
     contact: "thencc.org.za · 012 065 1940 · enquiries@thencc.org.za · eservice.thencc.org.za" },
   { tier: 6, title: "Information Regulator", window: "Variable",
     body: "POPIA issues: credential demand, unlawful data retention, excessive information requests.",
@@ -960,7 +960,7 @@ export const FAQ: FaqItem[] = [
   { q: "Is this legal advice?",
     a: "No. Consumer education based on published legislation, reported case law, and Takealot's own public policies. For advice on your specific situation, consult a qualified South African attorney. To have a dispute with Takealot resolved for free, complain to the Consumer Goods and Services Ombud." },
   { q: "Why do your templates mention case names and NCT references?",
-    a: "Because case law, not just statute, shapes how the CPA is applied. Citing the CGSO's 2021 advisory notes (now under CGSO review, still on SAFLII), or flagging decisions like Wingfield Motors v NCT (Western Cape High Court) or the Tribunal's Gareeb v Incredible Connections, shows Takealot's team you've done the reading, not just parroted the Act. We only name a case where it materially supports the statutory argument; if the statute does the work on its own, we leave the case law out." },
+    a: "Because case law, not just statute, shapes how the CPA is applied. Citing the CGSO's 2021 advisory notes (now under CGSO review, still on SAFLII), or flagging decisions like Wingfield Motors v NCT (Western Cape High Court) or the Tribunal's Gareeb v Incredible Connections, shows Takealot's team you've done the reading. We only name a case where it materially supports the statutory argument; if the statute does the work on its own, we leave the case law out." },
   { q: "Is there a deadline for complaining?",
     a: "Yes. Don't sit on it. A complaint to the National Consumer Tribunal or a consumer court can't be brought more than three years after the conduct that caused it (CPA s 116(1)). A May 2026 appeal concerned an engine replacement the customer said was faulty (a service under CPA s 54; the merits are still undecided). The Gauteng High Court in Johannesburg held that the clock ran from the supplier's refusal to put it right, not from the work itself, and reasoned that the same applies to a refusal to repair, replace or refund defective goods under s 56(2) (NCC v NCT, the Car Care Clinic case). But in Ntoatsabone v Hisense [2026] ZANCT 21 (a complaint about a TV bought in 2021) the Tribunal counted from the purchase and turned the complaint away as too late. So get every refusal in writing, keep it, and escalate well inside three years of buying. Claims in the ordinary courts fall under the Prescription Act, which generally also allows three years." },
   { q: "Black Friday at Takealot: the deal sold out, my paid order was cancelled, or the discount looks fake. What now?",
@@ -997,7 +997,7 @@ export const WARRANTY_ANGLES: WarrantyAngle[] = [
   { n: 7, title: "ECT Act s 43: information disclosure",
     body: "Before you pay, an online seller must show the terms of sale, \"including any guarantees\", and a sufficient description of the goods (s 43(1)(h), (k)). If it didn't, you can cancel within 14 days of receiving the goods (s 43(3)). Misrepresentation itself is a CPA s 41 claim." },
   { n: 8, title: "ARB complaint",
-    body: "Free, creates a public record, strengthens subsequent CGSO or court claims. Succeeded the ASA in 2018." },
+    body: "Creates a public record: the ARB publishes its rulings. Succeeded the ASA in 2018." },
 ];
 
 export const PLAYBOOK: PlaybookItem[] = [

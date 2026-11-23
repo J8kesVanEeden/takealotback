@@ -41,7 +41,7 @@ ComplaintsBoard is a publicly indexed aggregate of Takealot consumer complaints 
 5. Warranty complications: warranty expiry during repair
 6. Customer-service unresponsiveness: ignored emails, dropped calls
 
-## Sample of substitution / wrong-item complaints (illustrative; not adopted)
+## Sample substitution and warranty complaints (illustrative; not adopted)
 
 - *Ordered an iPhone 13, got cosmetics* (March 2024): return collected; the replacement was also cosmetics and was handed back ("I found gentle magic cosmetics I gave it back to the driver").
 - *Stanley charger* (December 2025): warranty condition: "The said i have to return all the items before they even check for the problem."

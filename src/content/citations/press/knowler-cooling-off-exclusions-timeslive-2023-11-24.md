@@ -13,7 +13,7 @@ retrieved_by: "Source captured from the user's authenticated download bundle on 
 wayback_status: "Wayback capture 20260714010241 holds the full article text (checked 2026-11-10)."
 disclosure: "TimesLive is published by Arena Holdings (Tiso Blackstar successor), editorially independent of Takealot's Naspers parent. Knowler also writes for News24 (Naspers); this column is on Arena's TimesLive platform."
 used_in:
-  - "src/components/AboutSection.astro — 'Why Takealot?' paragraph (\"the country's largest e-tailer\")"
+  - "src/components/AboutSection.astro — 'Why Takealot?' paragraph (\"biggest online retailer\"; Knowler: \"the country's largest e-tailer\")"
   - "src/data/content.ts — CLAUSES[9] (non-returnable) angle on Takealot's 'no warranty at all' framing being legally wrong"
 copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 updated: "2026-11-23"

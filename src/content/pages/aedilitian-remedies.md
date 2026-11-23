@@ -15,7 +15,7 @@ The Consumer Protection Act's section 56 return-and-refund right runs for six mo
 
 Both are preserved alongside the CPA by section 2(10): *"No provision of this Act must be interpreted so as to preclude a consumer from exercising any rights afforded in terms of the common law."*
 
-**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect: hidden from reasonable inspection, existing at the time of sale, and serious enough that a reasonable buyer would not have bought at all.
+**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect: hidden from reasonable inspection, existing at the time of sale, and serious enough that you would not have bought it at all had you known.
 
 **Actio quanti minoris.** A price reduction (a partial refund) for a latent defect that would have reduced the price rather than killed the deal.
 
@@ -27,7 +27,7 @@ Prescription is the outer limit, not the only deadline. To cancel the sale (acti
 
 ## What "latent defect" actually means
 
-The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C), cited in the literature on the seller's duty to disclose known defects). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:
+The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect. *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa*. On the seller's duty to disclose known defects, see also *Dibley v Furter* 1951 (4) SA 73 (C), cited in the literature. Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:
 
 1. **Hidden**: not discoverable on reasonable inspection by an ordinary non-expert buyer.
 2. **Present at sale**: existing at the time of sale, even if it only showed up later.

@@ -37,7 +37,7 @@ The site's three-part list (hidden; present at sale; material) is its own synthe
 
 `src/content/pages/aedilitian-remedies.md` now cites Dibley v Furter only as "see also" in the latent-defect test paragraph:
 
-> "The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C), cited in the literature on the seller's duty to disclose known defects). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:"
+> "The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect. *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa*. On the seller's duty to disclose known defects, see also *Dibley v Furter* 1951 (4) SA 73 (C), cited in the literature. Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:"
 
 (Page wording as revised in the 2026-11-17 round; the earlier wording named *Dibley* and *Glaston House* as "the canonical restatements" of the test.)
 

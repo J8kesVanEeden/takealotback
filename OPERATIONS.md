@@ -164,7 +164,7 @@ Breaching a non-negotiable (especially #1) may strip legal protection under UDRP
 
 ## When in doubt
 
-- **Legal nuance:** raise it in a [GitHub issue](https://github.com/J8kesVanEeden/takealotback/issues) before writing.
+- **A fine legal point:** raise it in a [GitHub issue](https://github.com/J8kesVanEeden/takealotback/issues) before writing.
 - **Statutory reference:** primary source first, then SAFLII. Never rely on secondary commentary for a statute citation.
 - **Case citation:** open the SAFLII page before citing. If SAFLII doesn't have the judgment, the citation goes into `src/content/citations/cases/` as a stub with a note that the judgment is in physical SALR reports only.
 - **Takealot policy:** re-fetch the live page; diff against the most recent snapshot. If the site's claim no longer matches live, the site (not the live Takealot policy) is what gets updated.

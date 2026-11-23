@@ -12,6 +12,7 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'Gareeb v Incredible Connections' angle"
   - "src/data/content.ts — TEMPLATES T06 body"
+  - "src/data/content.ts — FAQ (why templates mention case names)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 updated: "2026-11-23"
 ---
@@ -48,3 +49,4 @@ Unopposed Tribunal decision; an electronics retailer, the closest reported analo
 ## Site reliance
 
 - Clause 06 (credit vs refund) and template T06 (refund election): Takealot can't substitute credit, or its preferred fix, for the remedy you chose.
+- FAQ "Why do your templates mention case names and NCT references?": named as an example.

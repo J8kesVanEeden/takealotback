@@ -48,7 +48,7 @@ The manual lists the Information Officer's email as legal@takealot.com, and rese
 
 ## Site reliance
 
-- **Template T22**: send the request through the Data & Privacy section of the Help Centre or to DS.Privacy@takealot.com, copied to legal@takealot.com; ask for a written fee estimate first if any fee is mentioned (POPIA s 23(3)).
+- **Template T22**: send the request through the Data & Privacy section of the Help Centre, copying DS.Privacy@takealot.com and legal@takealot.com; ask for a written fee estimate first if any fee is mentioned (POPIA s 23(3)).
 
 Wayback captures 2026-11-18: privacy policy [20261118100806](https://web.archive.org/web/20261118100806/https://terms-and-policies.takealot.com/privacy-policy/) · PAIA manual [20261118100841](https://web.archive.org/web/20261118100841/https://static.takealot.com/files/pdfs/PAIA2024.pdf).
 
