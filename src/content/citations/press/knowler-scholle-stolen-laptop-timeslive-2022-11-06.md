@@ -42,6 +42,10 @@ From Wendy Knowler, "How committed to customer relations are retailers?", TimesL
 
 ### Stephanie Scholle's rebuttal
 
+> "“What liability does Takealot carry in this regard?” Stephanie Scholle asked me."
+>
+> "And then she stated the obvious, which eluded Takealot’s assessors."
+
 > "The main problem with the laptop is that it is a stolen unit that was sold to us as new via the Takealot platform nearly three years ago. The laptop is upgradeable — that is not tampering."
 
 ### Knowler's concluding observation

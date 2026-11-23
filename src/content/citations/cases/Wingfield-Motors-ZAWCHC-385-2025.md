@@ -35,6 +35,8 @@ Where the evidence points to a defect, **a supplier that blames the consumer's u
 
 > [87] "… Wingfield, under section 56(2)(a) of the CPA, was required to cover the costs of repairs. The provisions of section 56 are explicit; they apply to all goods without exception, and Wingfield's attempt to argue that section 56 does not apply to used goods is misplaced."
 
+> [86] "Motus, in our view, is entirely distinguishable from the present case. … Clearly, the issues in Motus required more investigation as they were not immediately obvious."
+
 ## Scope and limits
 
 Vehicle case. A Western Cape Division decision: Takealot's own T&Cs choose the Western Cape High Court as forum, which makes this Division's approach directly relevant to any High Court dispute with Takealot. The court distinguished *Motus v Wentzel* (para 86) because the defects there "required more investigation as they were not immediately obvious".

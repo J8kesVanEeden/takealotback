@@ -14,6 +14,7 @@ corrected_on: "2026-11-10"
 correction_note: "2026-11-10: two transcription errors in this snapshot corrected (coupon-reissue quote; non-returnable list omitted digital items). Neither was a Takealot change, since the 2026-04-25 Wayback capture carries the corrected wording, and neither affected a site claim. Earlier, 2026-05-07: companion T&Cs snapshot's forum-selection note corrected; this file's parallel mention updated to match. See takealot-tcs-2026-04-24.md."
 retrieved_by: "TakealotBack's own audit of the Takealot policy, 2026-04-24; see commits cd2f26c and c60d4ef"
 used_in:
+  - "src/content/pages/limits.md — re-delivery fees (change-of-mind returns)"
   - "src/data/content.ts — every CLAUSES[*].takealot paraphrase"
   - "src/data/content.ts — POLICY_SUMMARY.returns"
   - "src/data/content.ts — FAQ (delivery fee on a cancelled order: 'Our returns are free!')"
@@ -39,7 +40,7 @@ Our audit on this date (ours, not Takealot's) verified the following clauses aga
 - **Extended-warranty returns via the supplier + 21-day trigger**: for a defect more than 6 months after delivery, Takealot helps you return the item to the supplier; if the supplier's repair or replacement takes longer than 21 days from receipt at its returns evaluation facility, Takealot offers credit or a refund (see "Warranty items" below)
 - **Defective-item exclusions**: wear, consumer damage, surge, sea-air, modification, unintended use
 - **Rejected-return disposal**: "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it"
-- **Non-returnable items**: intimate / underwear / swimwear / jewellery / foodstuffs / unsealed AV+software / books / personalised
+- **Non-returnable items**: intimate / underwear / swimwear / jewellery / foodstuffs / digital items / unsealed AV+software / books / personalised / made to specification
 - **Vouchers and coupons**: verbatim distinction confirmed
 - **Digital items**: returnable only if defective (the policy: "You can only return digital items … if they are defective")
 - **Mis-returned items**: disposed, no compensation

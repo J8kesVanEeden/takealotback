@@ -14,6 +14,7 @@ retrieved: "2026-11-10"
 corrected_on: "2026-11-10"
 correction_note: "The limit rose from R20,000 to R30,000 with effect from 1 August 2026 (GG 55038). The site carried R20,000 until the 2026-11-10 refresh; every figure on the site was updated that day. The earlier R50,000 consultation figure was never implemented."
 used_in:
+  - "src/content/pages/limits.md — forum paragraph"
   - "src/data/content.ts — ESCALATION[7] (Small Claims Court tier)"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) escalate"
   - "src/data/content.ts — TEMPLATES.T14 body (R30,000 reference)"
