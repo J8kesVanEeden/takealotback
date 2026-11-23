@@ -20,6 +20,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES.T14 body (R30,000 reference)"
   - "src/components/LawSection.astro — Bodies card"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Small Claims Court angle"
+  - "src/data/content.ts — CLAUSES[0] (time-limits) escalate (up to R30,000)"
 copyright: "Facts + regulatory thresholds, not copyrightable. Government Gazette text quoted verbatim."
 updated: "2026-11-23"
 ---

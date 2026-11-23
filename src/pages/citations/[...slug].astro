@@ -63,7 +63,8 @@ function truncateTitle(s: string, max = 65): string {
 function buildTitle(rawTitle: string, citation: string | undefined): string {
   const t = String(rawTitle);
   if (t.length >= 30) return truncateTitle(t);
-  if (!citation) return t;
+  // Skip the suffix when the title already carries it ("Prescription Act 68 of 1969" + "Act 68 of 1969").
+  if (!citation || t.includes(citation.replace(/^Act /, ''))) return t;
   const suffixed = `${t}: ${citation}`;
   return truncateTitle(suffixed);
 }

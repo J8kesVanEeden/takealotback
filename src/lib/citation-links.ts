@@ -31,7 +31,7 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   { test: /Gareeb|Incredible Connections/i, link: { url: '/citations/cases/gareeb-incredible-connections-zanct-7-2024', label: 'Gareeb v Incredible Connections' } },
   { test: /Fugui/i, link: { url: '/citations/cases/ncc-fugui-trading-zanct-9-2026', label: 'NCC v Fugui Trading' } },
   { test: /Car Care Clinic/i, link: { url: '/citations/cases/ncc-car-care-clinic-gj-a2024-092517-2026', label: 'NCC v NCT (Car Care Clinic)' } },
-  { test: /GG 55719|2026 Code|CGSO 60-day benchmark/i, link: { url: '/citations/regulators/cgso-code-2026', label: 'CGSO Code 2026 (GG 55719)' } },
+  { test: /GG 55719|2026 Code|CGSO 60-day benchmark|Code in force from 1 December 2026/i, link: { url: '/citations/regulators/cgso-code-2026', label: 'CGSO Code 2026 (GG 55719)' } },
   { test: /RC Auto/i, link: { url: '/citations/cases/ncc-rc-auto-bloemfontein-nct-2026', label: 'NCC v RC Auto Bloemfontein' } },
   { test: /Bryanston/i, link: { url: '/citations/regulators/ncc-tribunal-fines-2026-11-17', label: 'NCC: Tribunal fines four suppliers (Nov 2026)' } },
   { test: /NCC, Black Friday|Black Friday 2024/i, link: { url: '/citations/regulators/ncc-black-friday-2024-11-28', label: 'NCC Black Friday statement (2024)' } },

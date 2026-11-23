@@ -19,6 +19,8 @@ used_in:
   - "src/data/content.ts — FAQ (Black Friday; buy-now-pay-later s 44(1); delivery fee on a cancelled order s 44)"
   - "src/data/content.ts — TEMPLATES T20 and T23 (s 46)"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) 'CPA s 51 / ECT s 48' angle and TEMPLATES T09 body (s 48 non-exclusion)"
+  - "src/data/content.ts — QUICK_HITS[3] (7 days for any reason, s 44)"
+  - "src/data/content.ts — WARRANTY_ANGLES[6] (ECT Act s 43: information disclosure)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 updated: "2026-11-23"
 ---
