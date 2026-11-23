@@ -13,7 +13,7 @@ correction_note: "The escalation quote opened with 'It turns out Takealot called
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
 wayback_status: "Wayback capture 20260507170757 holds the full article text (checked 2026-11-10)."
-disclosure: "Stuff South Africa is editorially independent of Takealot's parent company. Toby Shapshak is the publication's Editor-in-Chief and a Forbes senior contributor; he writes about technology and was the subject of the case as well as its reporter."
+disclosure: "Toby Shapshak is Stuff South Africa's editor-in-chief and a Forbes senior contributor; he writes about technology and was the subject of the case as well as its reporter."
 used_in:
   - "src/data/content.ts — CLAUSES[1] (original-packaging) angle on delivery-box vs product-packaging"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) angle on shifting T&Cs within a single transaction"
