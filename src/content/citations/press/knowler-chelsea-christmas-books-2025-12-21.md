@@ -31,15 +31,11 @@ This case threads four patterns at once, each useful for a different clause:
 3. **Courier collecting non-existent items** (Clause 18). Takealot sent a driver twice to collect a book Chelsea never received.
 4. **Sale pricing: a system error can cancel an in-stock order** (Clause 23). Takealot admitted the "out of stock" cancellation was its own system error.
 
-The case also documents the worst-case customer-service experience pattern: "probably about 10" different agents by Chelsea's count, and one told her the issue was *"breaking (his) brain."*
+## Extracts (fair dealing for criticism and review)
 
-## Verbatim extracts (fair-dealing quotations)
+From Wendy Knowler, Consumer Lookout, News24, 21 December 2025. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
-### The order
-
-> "In late November, she ordered two books from the country's top online retailer: *We're Going on an Elf Hunt* (R147) and *The Christmas Bear* (R225). They were to be Christmas presents for her two young children."
-
-### The wrongful cancellation
+### The erroneous cancellation
 
 > "On 10 December, she received an email from Takealot telling her that the Elf book order had been cancelled due to stock issues and that R147 had been credited to her account."
 
@@ -47,31 +43,13 @@ The case also documents the worst-case customer-service experience pattern: "pro
 
 > "(In such cases, you don't have to accept a credit; you can insist on a refund.)"
 
-### The system contradicting itself
-
-> "The very next day, Chelsea was sent that Elf book: the one that was supposed to be out of stock. But she didn't get the Christmas Bear book."
-
-### The conditional remedy
-
-> "Then she was told that she would not be sent the Christmas Bear book until she sent the Elf one back. But, of course, she wanted to keep the Elf book, which she had ordered in good faith. And she was willing to pay for it. Again. But, as in that famous Little Britain scene, the computer said no."
-
 ### Courier collecting a phantom book
 
 > "To top it all, when she reported that the Christmas Bear book had not been delivered, Takealot sent a courier driver – on two occasions – 'to collect the book that I told them I do not possess!'"
 
-### The customer-service collapse
-
-> "I have spoken to probably about 10 different people and each one tells me something different. One even told me on the phone that this issue is 'breaking (his) brain'."
-
-### Chelsea's escalation
-
-> "Last weekend, Chelsea proposed two solutions to Takelot's 'escalations' team. Either deliver the book to her at no additional cost and reverse the R147 credit, or refund her the cost of the Christmas Bear book — minus that R147 credit – within 48 hours. 'Any attempt to make resolution conditional on returning an item I legitimately ordered and wish to keep is unreasonable,' she said."
-
 ### Takealot's resolution and admission
 
 > "A system error incorrectly flagged an in-stock item as cancelled, triggering an unnecessary cancellation notice and refund. And a pick failure at our distribution centre resulted in the wrong item being dispatched while the correct item was missed."
->
-> "While this is certainly an exceptional case, we have taken the steps needed to strengthen our processes and will provide additional training during the festive season."
 
 ## Site reliance
 

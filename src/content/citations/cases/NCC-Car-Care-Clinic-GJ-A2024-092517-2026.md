@@ -22,7 +22,7 @@ Judgment by Ben-Zeev AJ, Du Plessis J concurring. Marked "REPORTABLE: Yes". The 
 
 ## Proposition cited on the site
 
-On a **services** complaint (a botched engine replacement; the NCC found breaches of s 54(1)(b) and (c) read with s 54(2)(a)), the "cause of the complaint" for the three-year limit in CPA s 116(1)(a) was the **supplier's refusal to provide a remedy under s 54(2)**, not the work itself. The court reasoned (paras 41–42) that the same applies to a refusal of the s 56(2) remedy for defective goods; that part is reasoning by analogy, not the decision itself.
+On a **services** complaint (an engine replacement the customer said was faulty; the NCC alleged breaches of s 54(1)(b) and (c) read with s 54(2)(a), and the merits are undecided because the court remitted the matter to the Tribunal), the "cause of the complaint" for the three-year limit in CPA s 116(1)(a) was the **supplier's refusal to provide a remedy under s 54(2)**, not the work itself. The court reasoned (paras 41–42) that the same applies to a refusal of the s 56(2) remedy for defective goods; that part is reasoning by analogy, not the decision itself.
 
 ## Verbatim extracts (judgment PDF, read 2026-11-10)
 
@@ -35,7 +35,7 @@ On a **services** complaint (a botched engine replacement; the NCC found breache
 ## Scope and limits
 
 - s 116 governs complaints to the National Consumer Tribunal and consumer courts. Claims in the ordinary courts are governed by the Prescription Act (3 years for ordinary debts).
-- Compare [*Ntoatsabone v Hisense* [2026] ZANCT 21](./Ntoatsabone-Hisense-ZANCT-21-2026.md), where a complaint was counted from the sale and held time-barred. That case concerned a misrepresentation claim; the safe advice is to act early.
+- Compare [*Ntoatsabone v Hisense* [2026] ZANCT 21](./Ntoatsabone-Hisense-ZANCT-21-2026.md), where a complaint was counted from the sale and held time-barred. That case concerned a misrepresentation claim. Acting early avoids the question.
 
 ## Site reliance
 

@@ -22,29 +22,19 @@ copyright: "© Media24 / News24. Quoted under fair dealing for criticism and rev
 
 ## Why the site cites this
 
-The follow-up piece confirms the resolution pattern in the Wales / Lenovo case: after News24 published the original story (06 April 2025), Takealot contacted Wales within an hour of publication and then gave him a new replacement laptop. The CGSO's intermediary stance was quoted for comment in the original article; neither piece records Wales filing a CGSO complaint. The follow-up is cited alongside the original to show that media coverage, with the CGSO's view on record, produced a remedy that direct engagement with Takealot had not. (Wording corrected 2026-11-10.)
+The follow-up piece confirms the resolution pattern in the Wales / Lenovo case: after News24 published the original story (06 April 2025), Takealot contacted Wales within an hour of publication and then gave him a new replacement laptop. Wales had already lodged a complaint with the CGSO: the original article records that Takealot shared with him its response to the Ombud's office, which relied on the "solely responsible" term. The CGSO's intermediary stance was quoted for comment in that article. The follow-up is cited alongside the original to show that media coverage, with the CGSO's view on record, produced a remedy that direct engagement with Takealot and the CGSO complaint had not yet produced. (Wording corrected 2026-11-10. Corrected 2026-11-23: this said neither piece records a CGSO complaint; the original article does.)
 
-## Verbatim extracts (fair-dealing quotations)
+## Extracts (fair dealing for criticism and review)
+
+From Wendy Knowler, Consumer Lookout, News24, 13 April 2025. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 ### Takealot's earlier framing of the seller obligation
 
 > "Takealot maintained that: 'The third-party seller is solely responsible for fulfilment of delivery of the goods'."
 
-### Takealot's suspension of the seller
-
-> "In Mr Wales' case, the seller has unfortunately been unresponsive despite our best efforts to make contact with them. As a result, we have suspended them from trading on Takealot Marketplace until we have established contact with them and resolved the matter at hand."
-
-### CGSO Soobrathi's reiterated stance
-
-> "Online platforms were required to protect their customers' rights in terms of consumer protection laws, in cases of 'a defective product, a sales record, warranty or otherwise'."
-
-> "It could not have been the intention of the Consumer Protection Act (CPA) or Electronic Communications and Transactions Act for the consumer to be left to deal with the third party directly when the consumer has been engaging with the online platform from inception to finalisation of the initial transaction."
-
 ### The resolution
 
 > "A few days after News24 published the story of Wales' experience, he contracted me to say: 'Thank you for writing about my plight. Within an hour of publishing Takealot contacted me to resolve the situation. As the warranty on my old laptop had expired, they have given me a new replacement laptop.'"
-
-> "The Ombud's stance on the issue of third-party suppliers being hosted on prominent e-commerce sites - making the latter intermediaries in terms of the CPA - offers consumers much needed protection should a third party supplier's service fall short."
 
 ## Site reliance
 

@@ -21,13 +21,9 @@ copyright: "© EWN / Primedia. Quoted under fair dealing for criticism and revie
 
 A 2026, on-record example of Takealot applying its **30-day** damage-reporting window to a **defective** item, and conceding once challenged. It is the site's Clause 01 argument in practice: defective goods get the CPA's six months, whatever the returns policy says.
 
-## Verbatim extracts (live page, 2026-11-10)
+## Extracts (fair dealing for criticism and review)
 
-> "Langebaan resident Kelly Davis contacted Knowler recently after buying a couch from Takealot."
-
-> "It was delivered on 3 May but remained boxed while she completed renovations at her home."
-
-> "When Kelly unpacked the sofa just over a month later, she discovered damaged armrests, missing cushions, poor workmanship and a tear in the fabric underneath."
+From Sara-Jayne Makwala King, EWN (Eyewitness News), 23 July 2026, reporting Wendy Knowler on CapeTalk; read on the live page on 2026-11-10. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 > "When she tried to return it, Takealot refused because it fell outside the company's 30-day damage reporting window."
 
@@ -37,8 +33,6 @@ A 2026, on-record example of Takealot applying its **30-day** damage-reporting w
 
 > "According to the company, the returns team had initially followed its standard policy because the damage was reported 35 days after delivery."
 
-> "But Knowler said the case served as an important reminder that a retailer's internal returns policy could not override consumers' rights under the Consumer Protection Act when goods were defective, not fit for purpose or of poor quality."
-
 Knowler's practical caveat (also in the article): "even if you aren't ready to place the product or use it immediately, you should open it to see if there are any issues with it."
 
 ## Site reliance
@@ -47,4 +41,4 @@ Knowler's practical caveat (also in the article): "even if you aren't ready to p
 
 ## Not yet used
 
-The CapeTalk audio behind this article (22 July 2026) reportedly also covers a supplier refusal, a threatened re-delivery charge and Takealot removing the customer's review. Only a machine transcript exists (kept with the maintainer's working notes, not published); nothing from it is cited until it has been transcribed by a person.
+The CapeTalk audio behind this article (22 July 2026) may cover more of the case. Only an unchecked machine transcript exists (kept with the maintainer's working notes, not published), so nothing from it is cited or repeated here until a person has transcribed and checked it.

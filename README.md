@@ -17,7 +17,9 @@ Studio: [Milk Moon Studio](https://www.milkmoonstudio.com/)
 - **Vanilla JS** for interactivity (clause + template accordions, triage modal, tweaks
   panel, keyboard shortcuts). No runtime framework.
 - **Cloudflare Pages** for hosting. Auto-deploy on push to `main`.
-- **Cloudflare Web Analytics** for privacy-preserving, cookie-free page views.
+- **Cloudflare Web Analytics** for cookie-free page views, and **Google Analytics 4** through
+  Cloudflare Zaraz (sets cookies). Both are disclosed in the privacy note at
+  [takealotback.com/#privacy](https://takealotback.com/#privacy).
 
 ## Project layout
 
@@ -95,8 +97,9 @@ one-way reference resource. If you find something factually wrong,
 
 ## Non-commercial — permanently
 
-No ads. No affiliate links. No donations. No tracking beyond Cloudflare Web
-Analytics. This is non-negotiable — both a matter of principle and of legal
+No ads. No affiliate links. No donations. Analytics are limited to Cloudflare Web
+Analytics and Google Analytics 4 (via Zaraz), both disclosed in the site's privacy
+note. This is non-negotiable — both a matter of principle and of legal
 footing, since the site's use of the name "Takealot" relies on non-commercial
 criticism/commentary protections (s16 of the Constitution, TMA s34(2), UDRP
 4(c)(iii)).

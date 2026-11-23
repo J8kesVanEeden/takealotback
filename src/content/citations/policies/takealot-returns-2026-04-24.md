@@ -31,11 +31,11 @@ Our audit on this date (ours, not Takealot's) verified the following clauses aga
 - **Time Limits**: 30 days for wrong / damaged / missing / change-of-mind; 6 months for defective
 - **Original Packaging**: required per "Prepare Your Return"
 - **Damage-on-delivery exclusions**: consumer damage / electrical surges / unintended purpose (sea-air is on the defective-item list only, not damage-on-delivery)
-- **Unlock codes**: policy says supplier *can* refuse return without access (discretionary wording, not absolute)
+- **Unlock codes**, verbatim (live policy, re-read 2026-11-17): *"If you return an item that stores data, you will have to give us your unlock codes or passwords – we just want to assess your return. If you decide not to provide us with access, we can refuse your return because it’s the only way we can assess your device."* Handing over the codes is stated as a requirement; refusing the return if you don't is "can refuse".
 - **Pre-packed Bundle return**: whole-bundle return requirement verified verbatim
 - **Credit vs refund**: policy concedes consumer election on defective returns ("you must choose...")
 - **Credit expiry**, verbatim: *"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit"*
-- **Manufacturer deflection + 21-day trigger**: runs from receipt at supplier's returns evaluation facility
+- **Referral to the manufacturer + 21-day trigger**: runs from receipt at supplier's returns evaluation facility
 - **Defective-item exclusions**: wear, consumer damage, surge, sea-air, modification, unintended use
 - **Rejected-return disposal**: "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it"
 - **Non-returnable items**: intimate / underwear / swimwear / jewellery / foodstuffs / unsealed AV+software / books / personalised
@@ -68,7 +68,7 @@ Takealot does not surface a "Last updated" date on either the Returns Policy pag
 
 ## Re-verification log
 
-**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day manufacturer-deflection trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line. Neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
+**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day manufacturer-referral trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line. Neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
 
 **2026-11-10 (Q4 2026 quarterly refresh, run late; due 2026-10-01):** Live Returns Policy rendered in headless Chrome (whole DOM walked, collapsed sections included) and diffed against this snapshot. The same extractor was run on the Wayback captures of 2026-04-25 and 2026-07-01: **the policy body text is identical across all three dates.** **No material change.** Every relied-on clause matches verbatim (programmatic check of every quoted string in this file and in CLAUSES: all found except the coupon quote, a transcription error in this file, now corrected above, along with the non-returnable list's missing digital-items entry). Takealot's page metadata shows a re-save on 2026-05-22 (Yoast `dateModified`) with no wording change; nothing since. Note for the record: the "Exchanges" blurb and donation line called new in the Q3 entry were already present in the 2026-04-25 capture. Raw extracted text is kept with the maintainer's working notes (not published; it reproduces the full pages). The dated Wayback captures listed below are the public record. `retrieved` bumped to 2026-11-10.
 
@@ -79,14 +79,14 @@ Wayback captures of this URL relied on, oldest first: [20260425123950](https://w
 ## How to refresh this snapshot
 
 1. Fetch https://terms-and-policies.takealot.com/ and its sub-pages (Returns Policy, Terms & Conditions).
-2. Diff against the "Section-by-section live text" block below.
+2. Diff against the "Extracts by section" block below.
 3. Flag material changes; update the site content.
 4. Bump the `retrieved` date in this frontmatter.
 5. If the changes are material, preserve the 2026-04-24 version as a sibling file: `takealot-returns-2026-04-24.md` stays untouched; new snapshot goes in a new file with the new date.
 
 ---
 
-## Section-by-section live text (retrieved 2026-04-25)
+## Extracts by section (retrieved 2026-04-25)
 
 The following is the operative wording of the Returns Policy as fetched from `terms-and-policies.takealot.com` on 2026-04-25. Direct quotations are flagged with quotation marks; everything else is faithful paraphrase. Fair-dealing snapshot under Copyright Act s 12(1)(b) (criticism and review).
 
@@ -164,4 +164,4 @@ Consumers choose collection or pickup-point drop-off within **7 days** of loggin
 
 ## Status
 
-Policy text mirrored verbatim where direct quotes are available; faithful paraphrase elsewhere. Fair-dealing snapshot retained for research / criticism / review.
+Dated extracts of Takealot's policy, quoted for criticism and review (Copyright Act 98 of 1978, s 12(1)(b)); paraphrase elsewhere. Not a copy of the policy: read the full text at terms-and-policies.takealot.com.

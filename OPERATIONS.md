@@ -31,7 +31,7 @@ After every substantive content change is live on `takealotback.com`:
 The Wayback Machine is genuine third-party version-insurance — independent of GitHub, Cloudflare, our own infrastructure. If the live site disappears for any reason, content remains recoverable from web.archive.org under the snapshots we forced. Example:
 
 ```
-Update Clause 06 to mention inventory soft-landing
+Update Clause 06 to mention the inventory fallback
 
 cf. citations/policies/takealot-returns-2026-04-24.md (para "Credit vs refund")
 ```
@@ -148,7 +148,7 @@ A future enhancement may add a check that every case citation in `src/data/conte
 
 These five rules are not editorial. They are load-bearing:
 
-1. **Non-commercial absolute** — no ads, no affiliates, no donations, no tracking beyond Cloudflare Web Analytics.
+1. **Non-commercial absolute** — no ads, no affiliates, no donations. Analytics: Cloudflare Web Analytics and Google Analytics 4 via Zaraz only, both disclosed in the About section's privacy note (`/#privacy`). Any change to what is collected means updating that note in the same change.
 2. **No contact form, no email address of our own on the site** — corrections via GitHub issues only. Third-party contact addresses a reader needs (Takealot's legal@ notice address, the CGSO, NCC, Information Regulator, ARB) are published channels of those bodies and stay.
 3. **Footer credit is Milk Moon Studio only.** Takealot's legal entity appears only in the disclaimer paragraph + Policies-summary "Registered entity" box, never in credits.
 4. **Do not silently "fix" content in `src/data/content.ts`.** It's been fact-checked. If something looks wrong, flag it (GitHub issue) and follow this OPERATIONS flow — don't just edit.

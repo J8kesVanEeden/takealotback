@@ -25,7 +25,9 @@ copyright: "© Media24 / News24. Quoted under fair dealing for criticism and rev
 
 The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). It is the spine of the site's clause on **item substitution / wrong goods delivered**. The case demonstrates the practical pattern: refusal-on-procedural-grounds, then escalation-via-journalist, then reversal.
 
-## Verbatim extracts (fair-dealing quotations)
+## Extracts (fair dealing for criticism and review)
+
+From Wendy Knowler, "Wendy's Win of the Week | The battle to prove a calculator isn't an iPhone", Consumer Lookout, News24, 12 April 2026. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 ### The substitution
 
@@ -37,10 +39,6 @@ The article documents a substitution case: consumer paid R14,000 for an iPhone 1
 
 (Takealot's response framed the return as deficient because the calculator was missing its accessories (Bila says she never opened or used it), without addressing that the consumer had ordered and paid R14,000 for an iPhone, not a calculator.)
 
-### The repeated re-delivery attempt
-
-> "Last week, Bila told me that a Takealot driver had tried to return the calculator to her for the fourth time. 'We just didn't open the gate, so he left with it,' she said."
-
 ### The reversal
 
 > "Responding to my query about the case, Takealot conceded that Bila 'did not receive the correct item'. 'We have been attempting to reach her directly to resolve this issue and, based on her previous communication requesting a credit, we will be honouring that request.' Takealot has credited Bila the R14 000."
@@ -48,14 +46,6 @@ The article documents a substitution case: consumer paid R14,000 for an iPhone 1
 ### Takealot's general statement on substitutions
 
 > "On the occasion that customers don't receive what they've ordered, we take full accountability and work swiftly to resolve them by collecting the incorrect item and delivering the right product as quickly as possible."
->
-> "Customers can report these issues through our customer help centre or by logging a 'Not What I Ordered' return on their Takealot profile."
->
-> "Our ecosystem operates with thousands of suppliers and sellers, multiple fulfilment centres, and complex logistics networks. This means there can be various contributing factors – from supplier or seller labelling inconsistencies and warehouse picking errors to delivery mix-ups."
-
-### Knowler's standing advice
-
-> "If you order something online, especially an expensive item, if practically possible, open the box in front of the delivery person, and, if what you ordered is not inside it, photograph it in the hands of the delivery person. Such evidence will be invaluable in the event of a dispute."
 
 ### Other substitution cases referenced in the article
 

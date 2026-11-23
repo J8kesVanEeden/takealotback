@@ -20,7 +20,7 @@ copyright: "No copyright: published by an accredited Ombud established under CPA
 
 ## Why the site cites this
 
-The CGSO's published process page sets the timing benchmarks against which the site measures Takealot's responsiveness, both internally (an internal inspection that takes longer than a CGSO complaint cycle is *prima facie* unreasonable) and externally (a complainant approaching CGSO knows what to expect, and when they can escalate to the NCC).
+The CGSO's published process page sets the timing benchmarks against which the site measures Takealot's responsiveness, both internally (an internal inspection that takes longer than a CGSO complaint cycle is, in our view, hard to defend as reasonable) and externally (a complainant approaching CGSO knows what to expect, and when they can escalate to the NCC).
 
 ## Verbatim extracts
 

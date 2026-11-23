@@ -59,7 +59,7 @@ Trade-mark statutory exhaustion under TMA s 34(2)(d) is **not the end of the ana
 
 > "Frank & Hirsch v Roopanand Brothers 1993 (4) SA 279 (A): where a separate SA copyright owner controls the packaging/get-up, parallel imports can still be blocked on copyright grounds."
 
-Even in a "you can sell your own property" exhaustion frame (the consumer's basic position when Takealot tries to enforce a resale-prohibition clause), copyright in packaging gives the manufacturer, or its SA assignee, an *independent* lever. The site notes the carve-out without suggesting it changes the consumer's primary defence under exhaustion and the CPA.
+Even in a "you can sell your own property" exhaustion frame (the consumer's basic position if Takealot were to enforce a resale-prohibition clause), copyright in packaging gives the manufacturer, or its SA assignee, an *independent* lever. The site notes the carve-out without suggesting it changes the consumer's primary defence under exhaustion and the CPA.
 
 ## Cross-references
 

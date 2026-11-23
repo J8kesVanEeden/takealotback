@@ -37,4 +37,4 @@ A displayed return policy of exchange only, not money back, is itself an unfair 
 
 ## Site reliance
 
-- Clause 06 (credit vs refund): a policy that defaults to credit where the law gives a refund rests on the same logic as an exchange-only notice.
+- Clause 06 (credit vs refund): in our reading, a policy that defaults to credit where the law gives a refund raises the same s 48 question as an exchange-only notice. The Tribunal ruled on a shop notice, not on Takealot's policy.

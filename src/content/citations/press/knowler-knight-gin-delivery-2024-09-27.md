@@ -13,7 +13,7 @@ wayback_status: "Wayback capture 20260702063522 exists but holds only the paywal
 disclosure: "News24 (Media24) and Takealot share Naspers as ultimate parent. Disclosed for transparency."
 used_in:
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) angle on late delivery + ECT s 46"
-  - "src/data/content.ts — CLAUSES[17] (mis-returned-items) angle on courier deflection / GPS-without-signature"
+  - "src/data/content.ts — CLAUSES[17] (mis-returned-items) angle on delivery evidence / GPS-without-signature"
 copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
@@ -24,20 +24,16 @@ copyright: "© Media24 / News24. Quoted under fair dealing for criticism and rev
 
 Two threads:
 
-1. **Late delivery and ECT s 46** (Clause 14). Knight's order was promised by 30 August, undelivered by 16 September (more than two weeks past); calls and emails were ignored. After Knowler's media query, delivered the next day.
+1. **Late delivery and ECT s 46** (Clause 14). Knight's order was promised by 30 August, undelivered by 16 September (more than two weeks past); calls and emails went unanswered. After Knowler's media query, delivered the next day.
 2. **Courier-claims-delivered-without-evidence** (Clause 18). An earlier case in Knowler's column documents Takealot claiming delivery on GPS coordinates and a signature it could not produce.
 
-## Verbatim extracts (fair-dealing quotations)
+## Extracts (fair dealing for criticism and review)
 
-### Knowler's broader observation
-
-> "I get a huge number of complaints from readers about online orders not being delivered, and in most cases the lack of delivery is compounded by a lack of communication about the service lapse. Double whammy."
+From Wendy Knowler, Consumer Lookout, News24, 27 September 2024. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
 ### The Knight case
 
 > "Margaret Knight of Plettenberg Bay placed a R3 700 order with Takealot on 17 August, with a promised delivery date of 30 August. When the goods hadn't been delivered by 16 September - more than two weeks later - and she'd called and emailed the company more than once to no avail, she contacted me for help."
-
-> "One of the items she ordered was an R800 bottle of non-alcoholic gin."
 
 ### The earlier whisky case
 
@@ -49,19 +45,13 @@ Two threads:
 
 > "We can confirm that the order was delivered on Tuesday [the day after the media query was sent]."
 >
-> "We are very unhappy about the service our customer has received for this order. Delivery was fulfilled by a third-party delivery service. Their communication regarding the delayed delivery was poor and we are investigating what happened. It is not the norm."
-
-### Takealot's stats framing
-
-> "Instances of missing alcohol orders are infrequent and can be considered isolated events."
->
-> "There is no data indicating that alcohol is more susceptible to being lost in transit when compared to other product categories."
+> "… Delivery was fulfilled by a third-party delivery service. …"
 
 ## Site reliance
 
-- **Clause 14 (order cancellation):** ECT s 46 gives the consumer a 7-day-notice cancellation right after a missed delivery deadline (s 46(1) sets 30 days; s 46(2) the cancellation right; s 46(3) the 30-day refund window after notification of unavailability). Knight's case demonstrates the pattern: 17 days past promised date, ignored contacts, only resolved on third-party intervention.
-- **Clause 18 (mis-returned items) / general delivery-deflection angle:** "GPS coordinates matched" is not equivalent to "consumer received the goods." A signed proof-of-delivery (or a clear no-signature delivery confirmation acknowledged by the consumer) is the relevant evidence. The earlier whisky case is documented as an analogue.
-- **Third-party courier deflection:** Takealot framing the delay as the third-party courier's communication failure does not relieve the platform of its delivery obligations to the consumer (the contract is with Takealot).
+- **Clause 14 (order cancellation):** ECT s 46 gives the consumer a 7-day-notice cancellation right after a missed delivery deadline (s 46(1) sets 30 days; s 46(2) the cancellation right; s 46(3) the 30-day refund window after notification of unavailability). Knight's case demonstrates the pattern: 17 days past promised date, calls and emails to no avail, only resolved on third-party intervention.
+- **Clause 18 (mis-returned items) / general delivery-evidence angle:** "GPS coordinates matched" is not equivalent to "consumer received the goods." A signed proof-of-delivery (or a clear no-signature delivery confirmation acknowledged by the consumer) is the relevant evidence. The earlier whisky case is documented as an analogue.
+- **Third-party courier:** Takealot putting the delay down to the third-party courier ("Delivery was fulfilled by a third-party delivery service") does not relieve the platform of its delivery obligations to the consumer (the contract is with Takealot).
 
 ## Wayback / archive status
 

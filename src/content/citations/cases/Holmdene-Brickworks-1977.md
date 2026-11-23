@@ -25,7 +25,7 @@ The leading SA Appellate Division authority on the **merchant/manufacturer-selle
 - **fraud** by the seller; or
 - a **merchant/manufacturer seller** who publicly professes skill in the production or sale of goods of the kind sold.
 
-Consumer-facing manufacturers and large retailers will typically fall in the third category, which is why a CPA-era retailer can be on the hook for consequential damages without the buyer having to prove fraud.
+In our reading, consumer-facing manufacturers and large retailers are likely to fall in the third category, so a CPA-era retailer may be on the hook for consequential damages without the buyer having to prove fraud.
 
 ## The latent-defect definition (683H–684A), verified through the SCA
 

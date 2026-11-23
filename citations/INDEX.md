@@ -51,8 +51,8 @@ Legend:
 
 | File | Publisher | Retrieved | Status |
 |---|---|---|---|
-| [takealot-returns-2026-04-24.md](https://takealotback.com/citations/policies/takealot-returns-2026-04-24) | Takealot Online (RF) (Pty) Ltd | 2026-04-25 | 📋 section-by-section live text + verbatim quotations |
-| [takealot-tcs-2026-04-24.md](https://takealotback.com/citations/policies/takealot-tcs-2026-04-24) | Takealot Online (RF) (Pty) Ltd | 2026-04-25 | 📋 verbatim for all 5 cited clauses |
+| [takealot-returns-2026-04-24.md](https://takealotback.com/citations/policies/takealot-returns-2026-04-24) | Takealot Online (RF) (Pty) Ltd | 2026-04-25 | 📋 dated extracts quoted for criticism and review |
+| [takealot-tcs-2026-04-24.md](https://takealotback.com/citations/policies/takealot-tcs-2026-04-24) | Takealot Online (RF) (Pty) Ltd | 2026-04-25 | 📋 dated extracts of the cited clauses |
 
 ## Regulators & courts (`regulators/`)
 

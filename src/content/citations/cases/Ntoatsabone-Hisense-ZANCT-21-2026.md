@@ -28,9 +28,9 @@ The three-year limit in CPA s 116(1) is enforced: a complaint brought too late w
 
 ## Scope and limits
 
-Here the time ran from the sale and the representation about the product. The Gauteng High Court in [*NCC v NCT (Car Care Clinic)*](./NCC-Car-Care-Clinic-GJ-A2024-092517-2026.md) (May 2026) counted a services complaint (s 54) from the supplier's refusal to remedy instead, and reasoned (paras 41–42) that the same applies to a refusal of the s 56(2) remedy for defective goods. Safest reading for a consumer: don't wait.
+Here the time ran from the sale and the representation about the product. The Gauteng High Court in [*NCC v NCT (Car Care Clinic)*](./NCC-Car-Care-Clinic-GJ-A2024-092517-2026.md) (May 2026) counted a services complaint (s 54) from the supplier's refusal to remedy instead, and reasoned (paras 41–42) that the same applies to a refusal of the s 56(2) remedy for defective goods. Until a higher court settles it, waiting is a risk.
 
-(An earlier version of this paragraph said *Car Care Clinic* counted "a defective-goods complaint" from the refusal. The complaint there was about services (a botched engine replacement, s 54); the defective-goods point is reasoning by analogy. Corrected 2026-11-17 against the Car Care Clinic citation file and its verbatim paras 42, 46 and 53.)
+(An earlier version of this paragraph said *Car Care Clinic* counted "a defective-goods complaint" from the refusal. The complaint there was about services (an engine replacement the customer said was faulty, s 54; the merits are undecided); the defective-goods point is reasoning by analogy. Corrected 2026-11-17 against the Car Care Clinic citation file and its verbatim paras 42, 46 and 53.)
 
 ## Site reliance
 

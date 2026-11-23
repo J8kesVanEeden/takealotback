@@ -26,7 +26,7 @@ A 4-page note issued jointly by the NCC and the CGSO, dated 13 July 2025 (PDF cr
 ## Why the site cites this
 
 1. **Clause 15 (marketplace sellers):** a second, earlier regulator statement that the hosting platform must resolve a dispute about a third-party seller's item.
-2. **Clause 11 (coupons and vouchers):** where one item in a voucher-paid order is unavailable, the regulators say the voucher's full value must go to the rest of that order; the supplier may not hold it back for a future date. Takealot's returns policy instead loads the voucher value "as non-refundable credit" when you "return or cancel your whole order or some of the items in your order" ([takealot-returns-2026-04-24.md](../policies/takealot-returns-2026-04-24.md)).
+2. **Clause 11 (coupons and vouchers):** where one item in a voucher-paid order is unavailable, the regulators say the voucher's full value must go to the rest of that order; the supplier may not hold it back for a future date. Takealot's returns policy loads the voucher value "as non-refundable credit" when you "return or cancel your whole order or some of the items in your order" ([takealot-returns-2026-04-24.md](../policies/takealot-returns-2026-04-24.md)).
 
 ## Verbatim extracts (PDF text, read 2026-11-17)
 

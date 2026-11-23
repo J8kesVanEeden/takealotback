@@ -43,7 +43,7 @@ ComplaintsBoard is a publicly indexed aggregate of Takealot consumer complaints 
 ## Sample of substitution / wrong-item complaints (illustrative; not adopted)
 
 - *Ordered an iPhone 13, got cosmetics* (March 2024): driver collected return twice; second replacement also cosmetics.
-- *Stanley charger* (December 2025): warranty deflection: "return all items or no warranty check."
+- *Stanley charger* (December 2025): warranty condition: "return all items or no warranty check."
 - *Lenovo laptop* (April 2024): repaired for OS issue, RAM burnt out the same day on receipt back; warranty denial on RAM.
 
 These narratives are **not** independently verified by the site. They are reproduced here only to show that the substitution / warranty-stuck patterns documented in named-case journalism are also present in self-reported aggregate data.

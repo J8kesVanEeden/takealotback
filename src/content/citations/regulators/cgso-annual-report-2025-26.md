@@ -40,4 +40,4 @@ The case study is a CGSO recommendation in a cooling-off (ECT s 44) return, acce
 
 ## Site reliance
 
-- Clause 02 (original packaging) and Clause 19 (restocking and re-delivery fees).
+- Clause 02 (original packaging) and Clause 19 (collection and re-delivery fees).
