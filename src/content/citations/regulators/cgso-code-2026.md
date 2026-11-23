@@ -27,7 +27,7 @@ The Minister of Trade, Industry and Competition prescribed a new Code for the co
 ## Why the site cites this
 
 - From 1 December 2026 it is the primary source for the site's statement that taking part in the CGSO is compulsory, alongside the 2021 *Voltex* judgment, which was decided under the 2015 Code.
-- It changes the Ombud's resolution target: the 2015 Code said 60 business days from receipt; the 2026 Code says 60 days from when the CGSO starts its investigation. The supplier's 15 business days to respond is unchanged.
+- It changes the Ombud's resolution target: the 2015 Code said "within 60 (sixty) business days of receipt by it" (cl 11.2.5); the 2026 Code says "within 60 (sixty) days from commencement of an investigation" (cl 15.2.5.1). The supplier's 15 business days to respond is unchanged (2015 cl 11.2.7.7; 2026 cl 15.2.7.7). Both clauses are quoted below.
 
 Wayback captures (2026-11-17): the Gazette PDF [20261117211817](https://web.archive.org/web/20261117211817/https://www.cgso.org.za/download/final-gazetted-cgso-code-12-november-2026/?wpdmdl=25224) and the CGSO's Code page [20261117211829](https://web.archive.org/web/20261117211829/https://www.cgso.org.za/cgso-code/).
 
@@ -46,7 +46,19 @@ Clause 15.2.5.1 says the CGSO shall:
 
 > make every effort to resolve all Complaints within 60 (sixty) days from commencement of an investigation in terms of clause 15.4 failing which the CGSO shall close the complaint and refer the complaint to the NCC;
 
-The Code gives the participant "15 (fifteen) business days" to respond once the CGSO refers a complaint to it.
+The Code gives the participant "15 (fifteen) business days" to respond once the CGSO refers a complaint to it (cl 15.2.7.7: "the Participant shall have 15 (fifteen) business days from receipt of the communication to investigate and attempt to resolve the Dispute with the Complainant or to provide the CGSO with its reasons for repudiating the Complaint").
+
+## The 2015 Code, for comparison
+
+GG 38637, GN R. 271 of 30 March 2015 (gov.za PDF, `gov.za/sites/default/files/gcis_document/201503/38637rg10407gon271.pdf`, read 2026-11-17; the PDF's text layer is OCR, which renders "CGSO" as "CGS()" in places).
+
+Clause 11.2.5:
+
+> Time Limits of Complaint Resolution: The CGSO shall make every effort to resolve all Complaints within 60 (sixty) business days of receipt by it, failing which it will refer the Complaint to the NCC or motivate to the NCC for an extension of this time limit.
+
+Clause 11.2.7.7 (the participant's 15 business days):
+
+> … the CGS() shall inform the Designated Officer, in writing, that a Complaint has been lodged with the CGS() and that the Participant shall have 15 (fifteen) Business Days from receipt of the communication to investigate and attempt to resolve the Dispute with the Complainant or to provide the CGSO with its reasons for repudiating the Complaint.
 
 ## Timing note
 

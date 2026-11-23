@@ -45,6 +45,10 @@ This makes the SCA's reasoning about s 69(d) **obiter dicta**, not ratio. The co
 
 The SCA disposed of the appeal on section 56(3) grounds, finding that Ms Wentzel had not satisfied the s 56(3) requirements for a refund. The High Court's refund order was set aside.
 
+> [45] "In my view, Ms Wentzel has failed to show that the requirements of s 56(3) were satisfied and that she was entitled to a refund of the purchase price in respect of the vehicle. …"
+
+> [52] "In the result the following order is made: 1 The appeal succeeds with no order as to costs. 2 The order of the high court is set aside and is replaced with the following order: 'The application is dismissed, with no order as to costs.'"
+
 ## Why we still cite it
 
 Even as obiter, the guidance is from the SCA and has been discussed in commentary:

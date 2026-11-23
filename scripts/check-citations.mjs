@@ -65,6 +65,7 @@ const STATUTE_PATTERN_TO_FILE = {
   '\\bPrescription\\s*Act': 'Prescription-Act-1969.md',
   '\\bNational\\s*Credit\\s*Act|\\bNCA\\b': 'NCA-2005.md',
   '\\bConstitution\\b': 'Constitution-s16.md',
+  '\\bUDRP\\b': 'UDRP-Policy.md',
 };
 
 // Every case/statute in the maps that points to a non-null file must have

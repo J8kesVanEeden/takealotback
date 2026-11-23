@@ -46,11 +46,13 @@ From Wendy Knowler, Consumer Lookout, News24, 17 April 2026. Quoted under s 12(1
 
 ### Hart's case
 
-Ben Hart bought the unit in October 2024 for around R1,000. About a year later (weeks after manufacturer warranty expired) it stopped charging properly and felt hot. He discovered the global recall, then emailed Takealot, saying he understood the CPA required it to respect the recall:
+Ben Hart bought the unit through Takealot. After he found the global recall, he emailed Takealot:
+
+> "I pointed out that, by my understanding, the Consumer Protection Act requires them to respect the recall."
 
 > "But after much back and forth, Takealot ultimately chose to ignore this. Their final response was that they could not confirm the recall and therefore absolved themselves of any responsibility."
 
-(Hart was refunded by ESR directly after engaging the manufacturer.)
+(The extracts held here don't record what ESR itself did for Hart, beyond his remark below.)
 
 > "I pointed out again to Takealot that if anyone on their side had merely emailed the manufacturer, they could have received the same response, but they still stonewalled me."
 

@@ -5,7 +5,7 @@ court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-11-02"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-can-retailers-mark-products-as-non-refundable-20251102-0538"
 wayback_url_dated: "https://web.archive.org/web/20260702063443/https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-can-retailers-mark-products-as-non-refundable-20251102-0538"
-metaDescription: "Knowler (News24, 2 November 2025): a Takealot listing tagged a R450 T-shirt 'non-refundable' and the return was refused. Takealot called it human error and delisted the item; ECT s 44 cooling-off applies regardless."
+metaDescription: "Knowler (News24, 2 November 2025): a Takealot listing tagged a T-shirt 'non-refundable'. Takealot put the problem down to 'a human error during the return process' and delisted the item; ECT s 44 cooling-off applies regardless."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; copied into this file by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time. Flagged here for transparency."
@@ -22,15 +22,15 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-The article confirms (with named consumer, named retailer, dated transaction, and Takealot's own admission) that a Takealot listing tag of "non-refundable" was applied to an item that did not fall within any statutory carve-out (a R450 T-shirt). The site's clause on non-returnable items relies on the article to ground the angle that **a supplier listing tag cannot expand the carve-outs in s 42(2) of the ECT Act or override the s 44 cooling-off right**.
+The article confirms (with named consumer, named retailer and Takealot's own admission) that a Takealot listing tag of "non-refundable" was applied to an item that did not fall within any statutory carve-out (a T-shirt). The site's clause on non-returnable items relies on the article to ground the angle that **a supplier listing tag cannot expand the carve-outs in s 42(2) of the ECT Act or override the s 44 cooling-off right**.
 
 ## Extracts (fair dealing for criticism and review)
 
 From Wendy Knowler, Consumer Lookout, News24, 2 November 2025. Quoted under s 12(1)(b) of the Copyright Act 98 of 1978, with the author and source named. Trimmed on 2026-11-23 to the passages the site relies on.
 
-### The transaction
+### The listing tag
 
-Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot in different sizes. The listed item was tagged "non-refundable."
+> "I checked the listing again and it does say 'non-refundable'. But since when are T-shirts non-refundable?"
 
 ### Knowler's legal framing
 
@@ -42,8 +42,6 @@ Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot i
 
 > "Yes, we're aware of the listing error, as it formed part of the issue we identified. The product has been delisted until this has been corrected."
 
-(Knowler confirms the listing later returned without the "non-refundable" tag.)
-
 ### Knowler's note on credit-vs-refund
 
 > "If you return an unwanted product bought online within the legal cooling-off period, you do not have to accept a credit – you are entitled to insist on a refund."
@@ -54,7 +52,9 @@ Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot i
 - Takealot called the refusal "the result of a human error during the return process" and acknowledged "the listing error". The tag was not presented as policy. That matters when consumers are asking the supplier to reverse a refusal.
 - Clause 10's angle points readers to the credit-vs-refund election (Clause 06). Knowler's note that within the cooling-off period "you are entitled to insist on a refund" supports that pointer; Clause 06 itself does not cite this article.
 
-(Corrected 2026-11-18: the description called it a "wrong-size" return, which is not in the extracts above (they say only that she bought two T-shirts in different sizes); `used_in` listed `POLICY_SUMMARY.returns`, which does not mention the article or listing tags; and this section said the article supports Clause 06 directly. Takealot's statement is now quoted as it reads: the human error was "during the return process", and the listing error was acknowledged separately.)
+(Corrected 2026-11-18: the description called it a "wrong-size" return, which the extracts above don't support. `used_in` listed `POLICY_SUMMARY.returns`, which does not mention the article or listing tags, and this section said the article supports Clause 06 directly. Takealot's statement is now quoted as it reads: the human error was "during the return process", and the listing error was acknowledged separately.)
+
+(Corrected 2026-11-23: this file said Dewey bought two R450 "Rock Ts The Offspring" T-shirts and that the listing later came back without the tag. Neither is in the extracts held here, so both were removed.)
 
 ## Wayback / archive status
 

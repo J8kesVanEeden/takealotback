@@ -25,13 +25,23 @@ Judgment by Ben-Zeev AJ, Du Plessis J concurring. Marked "REPORTABLE: Yes". The 
 
 The "cause of the complaint" for the three-year limit in CPA s 116(1)(a) was the **supplier's refusal to provide a remedy under s 54(2)**, not the work itself. The complaint was about **services**: an engine replacement the customer said was faulty, where the NCC alleged breaches of s 54(1)(b) and (c) read with s 54(2)(a); the merits are undecided because the court remitted the matter to the Tribunal. The court reasoned (paras 41–42) that the same applies to a refusal of the s 56(2) remedy for defective goods; that part is reasoning by analogy, not the decision itself.
 
-## Verbatim extracts (judgment PDF, read 2026-11-10)
+## Verbatim extracts (judgment PDF, read 2026-11-10; re-fetched from primary_url and checked 2026-11-23)
+
+> Cover page: "(1) REPORTABLE: Yes"
+
+> [1] "The appellants have brought an appeal against the entire judgment and order of the first respondent (the “Tribunal”), in which it dismissed the appellants' claim on the basis that the referral to the Tribunal was time-barred under section 116(1) of the Consumer Protection Act 68 of 2008 (the “Act”)."
+
+> [2] "The second respondent (the “Supplier”) supplied and installed a second-hand engine in a Land Rover belonging to the second appellant (the “Consumer”) on 25 July 2020. …"
+
+> [10] "… It found the Supplier in breach of section 54(1)(b) and (c) read together with section 54(2)(a) of the Act, in that the services that it provided were not in a manner or quality that a person is generally entitled to expect and the supplier has refused to remedy the defect in the quality of services performed, or refund the consumer a reasonable portion of the price paid. …"
 
 > [42] "The fact that section 56(2) sets out an internal process to follow, which affords a specific right to the consumer and imposes a specific obligation on the supplier, suggests that it is an infringement of section 56(2) that gives rise to a complaint in terms of section 69 of the Act, and not the breach of section 55. …"
 
-> [46] "… The cause for the Consumer's complaint under the Act is the Supplier's refusal to provide a remedy to the Consumer."
+> [46] "Properly understood, therefore, the cause of the Consumer's complaint in this matter is not the poor installation of the engine, or the engine subsequently having caught fire in September 2020. … The cause for the Consumer's complaint under the Act is the Supplier's refusal to provide a remedy to the Consumer. …"
 
 > [53] "The cause for complaint in this case, therefore, only arose on 13 November 2020, which means that the period under section 116(1)(a) of the Act had not lapsed when the Commission referred the matter to the Tribunal on 15 September 2023."
+
+> [60] "The following order is made: 1. The appeal is upheld. 2. The judgment and order of the National Consumer Tribunal under case number NCT/287279/2023/73(2)(b) is hereby set aside. 3. The matter is remitted to the National Consumer Tribunal to be heard on the merits. …"
 
 ## Scope and limits
 

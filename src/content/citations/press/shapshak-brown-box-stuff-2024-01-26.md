@@ -46,7 +46,11 @@ From Toby Shapshak, Stuff South Africa, 26 January 2024. Quoted under s 12(1)(b)
 
 > "The original email approving the return – which was duly picked up that day – had one line of Ts&Cs: 'Please do not mark the original product packaging, and include all parts and accessories (e.g. TV remote, laptop charger, cables, etc.).'"
 
-The rejection email contained a longer, different list of T&Cs which had not appeared in the original: the shifting-rules pattern within a single transaction.
+> "Included in the rejection email, was a list of Ts&Cs which had never appeared in the original return email."
+
+### The escalation
+
+> "After I finished writing this, Takealot called and emailed to say: 'I have been requested by management to contact you and let you know that the complaint related to the decline of your return has our full attention. We will be in contact with you to advise you on the resolution as soon as we receive feedback.'"
 
 ## Site reliance
 

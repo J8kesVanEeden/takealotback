@@ -29,7 +29,15 @@ Downloaded from the CGSO website on 2026-11-10 (PDF; document creation date 27 J
 
 ### Case study: a handling fee on a returned online purchase
 
-An online buyer asked to exchange a bed shortly after delivery; the supplier's own delivery driver had removed the packaging. The supplier then demanded a 15% handling fee because the bed "was no longer in its original packaging".
+An online buyer asked to exchange a bed shortly after delivery. The buyer said the supplier's delivery driver had removed the packaging as part of the supplier's standard delivery procedure. The supplier then demanded a 15% handling fee because the bed "was no longer in its original packaging".
+
+Case study 1, "Cooling-off period – Section 44 of the ECTA" (p. 32; the same PDF re-downloaded from the CGSO download page and read 2026-11-23):
+
+> "The complainant purchased a three-quarter bed online but, upon delivery, realised it was too small for their needs. The complainant requested to exchange it for a double bed and indicated this intention to the delivery driver. According to the complainant, the delivery driver removed the bed’s original packaging as part of the supplier’s standard delivery procedure."
+
+> "When the complainant later proceeded with the exchange request, the supplier advised that a 15% handling fee would apply because the bed was no longer in its original packaging. The complainant disputed liability for the fee, arguing that the supplier’s delivery personnel had removed the packaging in accordance with the supplier’s own process."
+
+> "In this matter, the complainant exercised the cooling-off right within the prescribed period by requesting to return the bed shortly after delivery."
 
 > "The supplier's attempt to impose a 15% handling fee was found to be inconsistent with section 44 of the ECTA, which expressly limits the supplier's recovery to the direct transportation or return costs associated with the goods."
 

@@ -6,7 +6,7 @@ date: "2026-04-12"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539"
 wayback_url_dated: "https://web.archive.org/web/20261117210340/https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539"
 wayback_url_earlier: "https://web.archive.org/web/20260507160947/https://www.news24.com/business/consumer-lookout/wendys-win-of-the-week-the-battle-to-prove-a-calculator-isnt-an-iphone-20260412-0539"
-metaDescription: "Knowler reports a R14,000 iPhone 15 order on Takealot delivered as a sub-R400 calculator. Takealot initially refused the return citing 'missing accessories' before crediting the consumer in full."
+metaDescription: "Knowler reports a R14,000 iPhone 15 order on Takealot delivered as a sub-R400 calculator. Takealot first refused the return because the item was 'missing its accessories', then credited the consumer in full."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; copied into this file by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time. Flagged here for transparency."
@@ -24,7 +24,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). The site's clause on **item substitution / wrong goods delivered** rests on it. The case demonstrates the practical pattern: refusal-on-procedural-grounds, then escalation-via-journalist, then reversal.
+The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). The site's clause on **item substitution / wrong goods delivered** rests on it. It shows the usual pattern: Takealot refused on a procedural point and reversed only after the consumer went to a journalist.
 
 ## Extracts (fair dealing for criticism and review)
 

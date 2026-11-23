@@ -31,7 +31,7 @@ updated: "2026-11-23"
 
 ## Summary
 
-The Regulations made under the CPA cover franchise agreements (Regs 2–3), the ombud scheme framework, the Commission's enforcement structures, and (most relevant to this site) the **grey list** of presumptively unfair contract terms in **Regulation 44**.
+The Regulations made under the CPA cover, among other things, franchise agreements (Regs 2–3), what an intermediary must disclose and the records it must keep (Regs 9–10), auctions (Regs 18–33), complaints to and investigations by the Commission (Regs 35–37), and (most relevant to this site) the **grey list** of presumptively unfair contract terms in **Regulation 44**.
 
 **Heading ambiguity:** the printed Table of Contents in the gazette reads "45. List of contract terms which are presumed not to be fair and reasonable" but the body of the gazette numbers the regulation **44**. The body numbering is authoritative. The site cites this as **Regulation 44**.
 
@@ -165,4 +165,4 @@ The description also said the grey list "bind[s] every retailer". Reg 44(1) limi
 
 ## Other regulations (not yet mirrored)
 
-Regulations 1–43 and 45–46 of the same instrument are not yet in this file. Add on next refresh if/when the site cites them.
+Regulations 1–43 of the same instrument are not yet in this file. (The body of the gazette ends at Regulation 44. The printed Table of Contents runs to 45 because its item 44, "Notice from the Chairperson: Civil actions", has no regulation in the body.) Add on next refresh if/when the site cites them.

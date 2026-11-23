@@ -26,7 +26,7 @@ updated: "2026-11-23"
 Two threads:
 
 1. **Late delivery and ECT s 46** (Clause 14). Knight's order was promised by 30 August, undelivered by 16 September (more than two weeks past); she called and emailed to no avail. After Knowler's media query, delivered the next day.
-2. **Courier-claims-delivered-without-evidence** (Clause 18). An earlier case in Knowler's column documents Takealot claiming delivery on GPS coordinates and a signature it could not produce.
+2. **A courier claiming delivery without evidence** (Clause 18). An earlier case in Knowler's column documents Takealot claiming delivery on GPS coordinates and a signature it could not produce.
 
 ## Extracts (fair dealing for criticism and review)
 
@@ -46,13 +46,13 @@ From Wendy Knowler, Consumer Lookout, News24, 27 September 2024. Quoted under s 
 
 > "We can confirm that the order was delivered on Tuesday [the day after the media query was sent]."
 >
-> "… Delivery was fulfilled by a third-party delivery service. …"
+> "… Delivery was fulfilled by a third-party delivery service. Their communication regarding the delayed delivery was poor and we are investigating what happened. …"
 
 ## Site reliance
 
 - **Clause 14 (order cancellation):** ECT s 46 gives the consumer a 7-day-notice cancellation right after a missed delivery deadline (s 46(1) sets 30 days; s 46(2) the cancellation right; s 46(3) the 30-day refund window after notification of unavailability). Knight's case demonstrates the pattern: 17 days past promised date, calls and emails to no avail, only resolved on third-party intervention.
 - **Clause 18 (mis-returned items) / general delivery-evidence angle:** "GPS coordinates matched" is not equivalent to "consumer received the goods." A signed proof-of-delivery (or a clear no-signature delivery confirmation acknowledged by the consumer) is the relevant evidence. The earlier whisky case is documented as an analogue.
-- **Third-party courier:** Takealot putting the delay down to the third-party courier ("Delivery was fulfilled by a third-party delivery service") does not relieve the platform of its delivery obligations to the consumer (the contract is with Takealot).
+- **Third-party courier:** Takealot pointing to the third-party courier ("Delivery was fulfilled by a third-party delivery service. Their communication regarding the delayed delivery was poor") does not relieve the platform of its delivery obligations to the consumer (the contract is with Takealot).
 
 ## Wayback / archive status
 

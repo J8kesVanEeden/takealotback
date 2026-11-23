@@ -35,7 +35,7 @@ Takealot both runs the marketplace and competes on it through Takealot Retail. T
 
 `src/data/content.ts` Clause 15 (marketplace-sellers), angle "Competition Commission finding":
 
-> "In July 2023 the Competition Commission's Online Intermediation Platforms Market Inquiry found that Takealot trading through its own Retail division on its marketplace "creates a conflict of interest", and said "Takealot is required to segregate its Retail division from its Marketplace operations". It is a competition remedy aimed at sellers, not a consumer-law ruling, but it undercuts any "the seller is solely responsible" deflection."
+> "In July 2023 the Competition Commission's Online Intermediation Platforms Market Inquiry found that Takealot trading through its own Retail division on its marketplace "creates a conflict of interest", and said "Takealot is required to segregate its Retail division from its Marketplace operations". It is a competition remedy that protects sellers, not a consumer-law ruling, but it undercuts any "the seller is solely responsible" deflection."
 
 **Correction (2026-11-10).** Earlier site copy dated the finding to August 2023 and said the Inquiry was "recommending the marketplace be operated as a separate business". The summary is dated July 2023, and its wording is that Takealot "is required to segregate" Retail from Marketplace.
 

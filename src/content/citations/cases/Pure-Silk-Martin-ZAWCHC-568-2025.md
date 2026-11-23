@@ -26,16 +26,32 @@ In the Western Cape Division, **a consumer may go straight to court** on a CPA c
 
 ## Verbatim extracts (SAFLII, opened 2026-11-10)
 
+> 3. "The magistrates' court found against the appellant both on the special plea and the merits of the action. The appellant was ordered to refund the purchase price to the respondent. …"
+
+> 5. "The special plea raised by the appellant in the magistrates' court was that the court did not have the necessary jurisdiction to hear the matter, as the respondent (as plaintiff) had not followed the hierarchy of remedies provided for in section 69 of the CPA. …"
+
 > 9. "An ordinary reading of the section indicates that it is couched in permissible language through the use of the word "may" at the outset. There has nevertheless been uncertainty as to the impact of the reference in section 69(d) to "other remedies available". Counsel for the appellant has referred us to various cases in which the exhaustion of the other remedies set out in section 69 was required. None of these decisions emanate from this Division, and I respectfully decline to follow them."
+
+> Footnote 4 (to para 9): "Joroy 4440 CC v Potgieter and another NNO 2016 (3) SA 465 (FB); Ngoza v Roque Quality Cars … 2018 ZANCT 70 (28 June 2018); Oos Vrystaat Kaap Bedryf Beperk v Cilliers 2019 JDR 0049 (FB); Nzwana v Dukes Motors t/a Dampier Nissan [2019] ZAECGHC 81 (3 September 2019)."
 
 > 15. "… No such provision is made in the CPA. This is a further indication that the CPA does not contemplate preventing consumers from approaching a court even prior to having knocked at the doors of the forums listed in section 69."
 
+> 20. "It is clear from the evidence that the respondent, who was elderly, was looking to buy a "bakkie" with his pension money. … It turned out that the vehicle, sold to him by the appellant, was unsuitable for its intended purpose. …"
+
 > 40. "… any attempt by a dealership to use a voetstoots clause or limited warranty to circumvent the consumer's right to quality, defect-free goods would be unfair and thus unenforceable."
+
+> 47. "In the premises, I suggest that the following order be granted: The appeal is dismissed, with costs, inclusive of counsel's fees taxed on Scale B."
 
 ## Scope and limits
 
 - Binding in the Western Cape Division. Courts in other divisions have gone the other way: the judgment's footnote 4 lists the contrary line, including *Joroy 4440 CC v Potgieter* 2016 (3) SA 465 (FB). The question is not settled nationally; the SCA left it open in *Motus v Wentzel* and again in *Van Niekerk v FirstRand* [2025] ZASCA 187.
 - The Western Cape is the forum Takealot's own T&Cs choose, so this is the Division whose approach matters most in a dispute with Takealot.
+
+The SCA on leaving the s 69 question open:
+
+> *Motus v Wentzel* [2021] ZASCA 40 para 26: "The issues arising from the section will need to be resolved on another occasion."
+
+> *Van Niekerk v FirstRand* [2025] ZASCA 187 para 27: "Mrs Van Niekerk's counsel invited this Court to finally resolve the conflicting judgments regarding s 69 of the CPA. … It is therefore not necessary to seek to resolve the position concerning that section in these proceedings."
 
 ## Site reliance
 

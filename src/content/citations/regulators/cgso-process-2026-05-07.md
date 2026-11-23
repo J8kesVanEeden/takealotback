@@ -21,7 +21,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-The CGSO's published process page sets the timing benchmarks against which the site measures Takealot's responsiveness, both internally (an internal inspection that takes longer than a CGSO complaint cycle is, in our view, hard to defend as reasonable) and externally (a complainant approaching CGSO knows what to expect, and when they can escalate to the NCC).
+The CGSO's published process page sets the timing benchmarks against which the site measures Takealot's responsiveness. Internally: an inspection inside Takealot that takes longer than a whole CGSO complaint cycle is, in our view, hard to defend as reasonable. Externally: a complainant going to the CGSO knows what to expect, and when they can escalate to the NCC.
 
 ## Verbatim extracts
 

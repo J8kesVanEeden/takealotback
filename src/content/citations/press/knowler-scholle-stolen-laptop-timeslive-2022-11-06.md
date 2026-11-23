@@ -6,7 +6,7 @@ date: "2022-11-06"
 primary_url: "https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
 wayback_url_dated: "https://web.archive.org/web/20261117210609/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
 wayback_url_earlier: "https://web.archive.org/web/20260507165451/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
-metaDescription: "Knowler's column on the Scholle/Nanotec stolen-laptop case, paired with the MyBroadband article. Adds verbatim Stephanie Scholle quotes on the principled-grievance-vs-procedural-refusal framing."
+metaDescription: "Knowler's column on the Scholle/Nanotec stolen-laptop case, paired with the MyBroadband article. Adds Stephanie Scholle's own words, setting her grievance (a stolen laptop sold as new) against Takealot's procedural refusal."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
@@ -24,7 +24,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-This is Knowler's own writing on the Scholle case, companion to the MyBroadband article. Adds verbatim Stephanie Scholle (Axel's wife) framing on the principled-grievance-vs-procedural-refusal tension, and Knowler's own concluding observation. Different publication, same facts: the corroboration matters.
+This is Knowler's own writing on the Scholle case, companion to the MyBroadband article. Adds Stephanie Scholle's (Azel's wife) own words, setting her grievance against Takealot's procedural refusal, and Knowler's own concluding observation. Different publication, same facts: the corroboration matters.
 
 ## Extracts (fair dealing for criticism and review)
 
@@ -51,7 +51,7 @@ From Wendy Knowler, "How committed to customer relations are retailers?", TimesL
 ## Site reliance
 
 - **Clause 15 (marketplace sellers) corroborating angle:** confirms the MyBroadband narrative. The two sources together (independent SA tech outlet and columnist on Arena Holdings) strengthen the citation.
-- **Stephanie Scholle calls it "a stolen unit that was sold to us as new".** That is the consumer-side grievance in her own words: the supplier's vetting failure is the *primary* fault, and the procedural-refusal-on-tampering is downstream noise.
+- **Stephanie Scholle calls it "a stolen unit that was sold to us as new".** That is the consumer-side grievance in her own words: the supplier's vetting failure is the *primary* fault, and the refusal over "tampering" is downstream noise.
 
 ## Wayback / archive status
 

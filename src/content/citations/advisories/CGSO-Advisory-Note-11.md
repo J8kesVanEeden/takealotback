@@ -11,7 +11,7 @@ metaDescription: "CGSO Advisory Note 11: voetstoots ('as-is') clauses do not sur
 retrieved: "2026-11-17"
 reverified_on: "2026-11-17"
 corrected_on: "2026-11-23"
-correction_note: "The file had no verbatim text and its carve-out list was presented as the CGSO's published statement. Paras 1.5, 1.6, 3.13, 4.1 and 5.1 are now quoted verbatim. The s 55(6) carve-out omitted \"or knowingly acted in a manner consistent with accepting the goods in that condition\"; the auction carve-out was tied to CPA s 45, which the Note does not cite; and the juristic-person carve-out is stated as the Note words it, alongside the statute's own test (s 5(2)(b): asset value or annual turnover equals or exceeds the s 6 threshold). 2026-11-23: the description and proposition now say voetstoots is void outside the narrow exceptions (paras 1.6 and 5.1)."
+correction_note: "The file had no verbatim text and its carve-out list was presented as the CGSO's published statement. Paras 1.5, 1.6, 3.13, 4.1 and 5.1 are now quoted verbatim. The s 55(6) carve-out omitted \"or knowingly acted in a manner consistent with accepting the goods in that condition\"; the auction carve-out was tied to CPA s 45, which the Note does not cite; and the juristic-person carve-out is stated as the Note words it, alongside the statute's own test (s 5(2)(b): asset value or annual turnover equals or exceeds the s 6 threshold). 2026-11-23: the description and proposition now say voetstoots is void outside the narrow exceptions (paras 1.6 and 5.1). Later on 2026-11-23: the proposition said a voetstoots clause is \"void to the extent it would waive s 55 / s 56 protections\" and that the Note's reasoning \"runs through s 51(1)(b)\"; the Note gives s 51 as \"the prevailing academic view\" and calls an umbrella clause \"invalid\" (paras 3.6 and 3.7, now quoted)."
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
 copyright: "© Consumer Goods and Services Ombud NPC (a private non-profit company accredited as an ombud under CPA s 82). Quoted, with the source named, under fair dealing for criticism and review, s 12(1)(b) Copyright Act 98 of 1978."
@@ -23,7 +23,7 @@ updated: "2026-11-23"
 
 ## Proposition cited on the site
 
-A voetstoots ("as-is") clause cannot disclaim the CPA's quality warranty for transactions where the buyer is a CPA consumer, outside the narrow exceptions summarised below (paras 1.6 and 5.1). Any contractual voetstoots wording is **void to the extent it would waive s 55 / s 56 protections**. Voetstoots is dead against consumers under the CPA.
+A voetstoots ("as-is") clause cannot disclaim the CPA's quality warranty for transactions where the buyer is a CPA consumer, outside the narrow exceptions summarised below (paras 1.6 and 5.1). A general "umbrella" voetstoots clause that would waive the s 55 / s 56 protections is **invalid** (para 3.7, quoting Barnard). Voetstoots is dead against consumers under the CPA.
 
 ## What the Note says (verbatim, SAFLII text)
 
@@ -33,13 +33,17 @@ Read 2026-11-17 from the SAFLII page through the Wayback capture of 2 July 2026 
 
 > 1.6 "The only exceptions are where the goods are sold by auction, where the goods have been altered after the sale and where the consumer has been expressly informed that particular goods were offered in a specific condition and has either expressly agreed to accept the goods in that condition, or knowingly acted in a manner consistent with accepting the goods in that condition. In the latter situation, it would generally be necessary for the supplier to have described the defects with some particularity."
 
+> 3.6 "The prevailing academic view, however, is that the voetstoots clause has not survived the CPA. The academics rely on the following section of the CPA: 51. (1) A supplier must not make a transaction or agreement subject to any term or condition if— … (b) it directly or indirectly purports to— (i) waive or deprive a consumer of a right in terms of this Act; (ii) avoid a supplier’s obligation or duty in terms of this Act; (iii) set aside or override the effect of any provision of this Act; …"
+
+> 3.7 "According to Barnard, Selling goods in terms of a general “umbrella” voetstoots clause is a clear waiver and deprivation of a consumer’s right. Whether a voetstoots clause is worded as a condition or term or if it boils down to a waiver or deprivation, it will still be invalid. The fact that goods should not only be free of any defects but also useable and durable and comply with any publically regulated standard makes the reliance on a voetstoots clause even more difficult."
+
 > 3.13 "Suppliers should also note that, section 55(6) does not safeguard the supplier against all claims relating to post-purchase quality issues. It only qualifies the first two of the four standards listed in section (55)(2). It will always be open to a consumer to claim that the goods were not useable or durable for a reasonable period of time or that they did not meet other statutory requirements. This right cannot be excluded."
 
 > 4.1 "National Consumer Commission v Western Car Sales CC t/a Western Car Sales (NCT/81554/2017/73(2)(b)) [2017] ZANCT 102 (14 September 2017) 35. The concept of a "voetstoots" sale, whereby the supplier is able to sell goods without any form of liability for any defects, whether patent or latent, whatsoever is therefore not applicable to any transactions falling under the CPA."
 
 > 5.1 "The Consumer Protection Act (CPA) has put a limitation on the application of the "voetstoots" clause …However, this only applies in instances where transactions find application under the CPA. There are two important stipulations. i. The first being that the CPA only applies to transactions which are decided in the ordinary course of the suppliers' business. ii. Secondly, where the purchaser or "consumer" is an entity with a yearly turnover exceeding R2 million, the CPA shall have no application."
 
-The Note's reasoning runs through s 51(1)(b) (a term may not "waive or deprive a consumer of a right in terms of this Act") and s 55(2) (para 3.6–3.8).
+The Note gives the s 51(1)(b) route (a term may not "waive or deprive a consumer of a right in terms of this Act") as "the prevailing academic view" (para 3.6), and quotes Barnard's conclusion that an umbrella clause "will still be invalid" (para 3.7). Para 3.8 then turns to s 55(6), which qualifies s 55(2) only in its paragraphs (a) and (b).
 
 ## Where voetstoots can still operate: our summary of paras 1.6 and 5.1
 
@@ -66,4 +70,4 @@ The Note's reasoning runs through s 51(1)(b) (a term may not "waive or deprive a
 
 ## Status
 
-The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page still reads, on 2026-11-17 (fetched live): *"Advisory Notes are under review, they will be reuploaded once the review is completed."* (raw capture kept on file). Wayback captures show the notes were already withdrawn by 2026-02-10. The published text remains available on SAFLII as [2021] ZACGSO 11 (SAFLII title: "Advisory note 11: Supply of Voetstoots Goods [2021] ZACGSO 11 (1 March 2021)"), which is the copy relied on here. Cite it as the CGSO's published 2021 view, withdrawn from the CGSO site pending review, not as current CGSO guidance. A revised CGSO Code (GN 4264, GG 55719) takes effect on 1 December 2026; the Notes have not been re-issued under it as of 2026-11-17.
+The CGSO has taken all its Advisory Notes off its own website. Its advisory-notes page still reads, on 2026-11-17 (fetched live): *"Advisory Notes are under review, they will be reuploaded once the review is completed."* (raw capture kept on file). The Wayback capture of 2026-02-10 ([20260210143028](https://web.archive.org/web/20260210143028/https://www.cgso.org.za/advisory-notes/), opened 2026-11-23) already carries the same "under review" line and links no notes. The published text remains available on SAFLII as [2021] ZACGSO 11 (SAFLII title: "Advisory note 11: Supply of Voetstoots Goods [2021] ZACGSO 11 (1 March 2021)"), which is the copy relied on here. Cite it as the CGSO's published 2021 view, withdrawn from the CGSO site pending review, not as current CGSO guidance. A revised CGSO Code (GN 4264, GG 55719) takes effect on 1 December 2026; the Notes have not been re-issued under it as of 2026-11-17.

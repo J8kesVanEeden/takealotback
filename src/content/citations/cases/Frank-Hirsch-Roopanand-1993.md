@@ -33,14 +33,38 @@ The case itself predates the 1993 Act (see Facts); it decided the copyright poin
 
 - Frank & Hirsch was the SA exclusive distributor of TDK blank audio cassette tapes since 1974.
 - Roopanand Brothers imported TDK tapes into SA: parallel imports / "grey goods". In the judgment's words, it "obtains its supplies of TDK tapes from Dialdas and Co of Singapore, which in turn acquires them from Hock Cheong and Co, also of Singapore and the authorized dealer appointed by TDK Electronics in Singapore."
-- The TDK tapes carried TDK's registered trade marks. Frank & Hirsch's earlier trade-mark action against the parallel imports (under the then Trade Marks Act 62 of 1963, with an alternative Merchandise Marks Act claim) had been dismissed: *Frank & Hirsch (Pty) Ltd v Roopanand Brothers* 1987 (3) SA 165 (D & CLD). (The 1993 Act and its s 34(2)(d) did not yet exist; the case is cited on the site as the copyright carve-out from today's s 34(2)(d) exhaustion position.) Correction 2026-11-10: an earlier version said TMA s 34(2)(d) "appeared to permit" the imports.
+- The TDK tapes carried TDK's registered trade marks. Frank & Hirsch's earlier trade-mark action against the parallel imports (brought in 1986 under the trade-mark law then in force, with an alternative claim under the Merchandise Marks Act 17 of 1941) had been dismissed: *Frank & Hirsch (Pty) Ltd v Roopanand Brothers* 1987 (3) SA 165 (D & CLD). (The 1993 Act and its s 34(2)(d) did not yet exist; the case is cited on the site as the copyright carve-out from today's s 34(2)(d) exhaustion position.) Correction 2026-11-10: an earlier version said TMA s 34(2)(d) "appeared to permit" the imports.
 - However, on 4 June 1987, TDK Electronics had assigned to Frank & Hirsch *the copyright* in the literary and artistic works comprised in the get-up and trade dress of TDK tapes (the wrappers and printed inserts) by deed of assignment in Japan.
+
+Verbatim (SAFLII text, Wayback capture of 10 November 2026, read 2026-11-17):
+
+> "Since 1974 appellant has acted as the sole and exclusive importer and distributor of blank TDK audio recording tapes ("TDK tapes") in terms of a distributorship agreement entered into between appellant and the manufacturer of TDK tapes, TDK Electronics Co Ltd …"
+
+> "In 1986 and after a running dispute for some years appellant instituted an action against respondent in the Durban and Coast Local Division, claiming that respondent's activities constituted the infringement of the mark "TDK" and a certain device mark … on the cassette tapes, which were both registered trade marks; or alternatively that such activities amounted to the contravention of certain provisions of the Merchandise Marks Act 17 of 1941. The action was heard by Page J, who dismissed it with costs (see Frank & Hirsch (Pty) Ltd v Roopanand Brothers 1987 (3) SA 165 (D & CLD)."
+
+> "… TDK Electronics would assign to appellant all its copyright in the literary and/or artistic works comprised in the get-up and trade dress of TDK tapes. This was done by means of a written deed of assignment of copyright entered into between the parties in Japan on 4 June 1987. …"
 
 ## Held (Appellate Division, Corbett CJ, unanimous)
 
 - The court a quo (Booysen J, reported as 1991 (3) SA 240 (D & CLD)) had dismissed the copyright application. The AD allowed the appeal.
 - The cellophane wrapper and the first insert of the TDK D60 tapes contain original **artistic work** protected by the Copyright Act 98 of 1978 (as it read before the 1992 amendments). The court did not decide the literary-work point, and no order was made for the cassette itself, whose printing "is not separable from the cassette".
 - Frank & Hirsch, as assignee of the SA copyright, could enforce it against the parallel importer, independently of the trade-mark position.
+
+Verbatim (same capture):
+
+> "… The appeal to this Court seeks the reversal of the decision of that Court, which has been reported (see Frank & Hirsch (Pty) Ltd v A Roopanand Brothers (Pty) Ltd 1991 (3) SA 240 (D & CLD)."
+
+> "… The matter came before Booysen J who, for reasons which I shall later elaborate, dismissed the application with costs, but granted leave to appeal to this Court."
+
+> "… it is common cause that this case must be decided on the basis of the law as laid down by the Act prior to the 1992 amendments. …"
+
+> "Applying these definitions I am satisfied that the whole of the wrapper constitutes "artistic work" within the meaning of the statutory definition. …"
+
+> "The claim that the wrapper includes literary work is perhaps more debatable, but in view of the finding in respect of artistic work it is not necessary to pursue this aspect. …"
+
+> "Turning to the first insert, I am of the view that, mainly on the strength of the portion displaying the. coloured strips and panels, this item of get-up has artistic subject-matter. Again it is not necessary to consider literary subject-matter. Nor is it necessary to deal with the inscriptions printed on the cassette itself. As far as can be ascertained this is not separable from the cassette."
+
+> Signature block: "M M CORBETT … BOTHA JA) GOLDSTONE JA) NICHOLAS AJA) CONCUR HARMS AJA)"
 
 The order (verbatim):
 
