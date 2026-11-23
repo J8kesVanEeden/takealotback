@@ -15,7 +15,7 @@ The Consumer Protection Act's section 56 return-and-refund right runs for six mo
 
 Both are preserved alongside the CPA by section 2(10): *"No provision of this Act must be interpreted so as to preclude a consumer from exercising any rights afforded in terms of the common law."*
 
-**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect: hidden from reasonable inspection, existing at the time of sale, and serious enough that you would not have bought it at all had you known.
+**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect: hidden from reasonable inspection, existing at the time of sale, and serious enough that you would not have bought them at all had you known.
 
 **Actio quanti minoris.** A price reduction (a partial refund) for a latent defect that would have reduced the price rather than killed the deal.
 

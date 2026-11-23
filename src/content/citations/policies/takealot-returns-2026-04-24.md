@@ -190,7 +190,7 @@ If a return is rejected, Takealot returns the item to the consumer.
 
 ### Collection or delivery, and re-delivery fees
 
-Consumers choose collection or pickup-point drop-off within **7 days** of logging the return. Large items and alcohol are collection-only. Verbatim (2026-11-17 capture):
+Consumers choose collection or pickup-point drop-off; a drop-off must happen within **7 days** of logging the return. Large items and alcohol are collection-only. Verbatim (2026-11-17 capture):
 
 > "If you choose to return the item to a pickup point you must do it within 7 days of logging the return."
 >
