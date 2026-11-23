@@ -15,6 +15,7 @@ reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) Frank & Hirsch angle"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Frank & Hirsch (Pty) Ltd v A Roopanand Brothers (Pty) Ltd

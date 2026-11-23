@@ -13,6 +13,7 @@ reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) TRC v Sony angle"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Television Radio Centre (Pty) Ltd v Sony Kabushiki Kaisha

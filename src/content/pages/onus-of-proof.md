@@ -4,6 +4,7 @@ slug: onus-of-proof
 description: "In a CPA defective-goods dispute where problems show up soon after delivery, courts in 2024–2026 have held that you have to show the item has problems, not what caused them, and the supplier has to prove misuse."
 metaTitle: "Who has to prove what: the CPA onus explained"
 datePublished: "2026-04-23"
+dateModified: "2026-11-23"
 ---
 
 # Who has to prove what

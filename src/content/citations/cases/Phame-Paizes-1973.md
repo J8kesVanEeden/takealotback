@@ -10,6 +10,7 @@ retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — aedilitian family reference, dicta et promissa"
 copyright: "No copyright in the judgment text: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Phame (Pty) Ltd v Paizes

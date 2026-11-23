@@ -9,6 +9,7 @@ retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — latent-defect test section (see also)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Dibley v Furter

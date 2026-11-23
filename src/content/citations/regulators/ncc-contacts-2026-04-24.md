@@ -12,6 +12,7 @@ used_in:
   - "src/data/content.ts — ESCALATION[4] (NCC tier)"
   - "src/components/LawSection.astro — Bodies card"
 copyright: "Facts (contact details), not copyrightable."
+updated: "2026-11-23"
 ---
 
 # NCC: current contact details (verified 2026-04-24; re-verified 2026-11-10)

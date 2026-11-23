@@ -13,6 +13,7 @@ retrieved_by: "WebFetch on 2026-05-07; Wayback SPN snapshot taken same day."
 disclosure: "ComplaintsBoard is a third-party complaint-aggregator with grievance-skewed content (consumers come to it to complain, not to report satisfaction). It is kept on this site only as background **pattern evidence** (corroboration that the patterns documented in named-case journalism are not isolated) and never as legal authority. The site does not adopt or endorse individual complaint narratives on the platform; the cited summary is the dashboard's own counts."
 used_in: []
 copyright: "Page summary content © ComplaintsBoard. Quoted at the structural-statistics level only, under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
+updated: "2026-11-23"
 ---
 
 # ComplaintsBoard: Takealot complaint dashboard (snapshot, 7 May 2026)

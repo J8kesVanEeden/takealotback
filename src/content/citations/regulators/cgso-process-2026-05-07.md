@@ -13,6 +13,7 @@ used_in:
   - "src/data/content.ts — ESCALATION (CGSO entry) timing addition"
   - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) — 'CGSO 60-day benchmark' angle"
 copyright: "No copyright: published by an accredited Ombud established under CPA s 82; functions as a regulatory text."
+updated: "2026-11-23"
 ---
 
 # CGSO complaint process: service standards & timing

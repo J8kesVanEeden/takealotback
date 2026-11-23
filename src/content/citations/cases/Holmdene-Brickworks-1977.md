@@ -13,6 +13,7 @@ used_in:
   - "src/content/pages/aedilitian-remedies.md — actio empti consequential-damages test"
   - "src/content/pages/aedilitian-remedies.md — latent-defect test (683H–684A, via Van Niekerk para 16)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Holmdene Brickworks (Pty) Ltd v Roberts Construction Co Ltd

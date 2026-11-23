@@ -17,6 +17,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T16 (inspection deadline) body"
   - "src/content/pages/onus-of-proof.md — 'The CGSO view' section"
 copyright: "© Consumer Goods and Services Ombud NPC (a private non-profit company accredited as an ombud under CPA s 82). Quoted, with the source named, under fair dealing for criticism and review, s 12(1)(b) Copyright Act 98 of 1978."
+updated: "2026-11-23"
 ---
 
 # CGSO Advisory Note 1: Consumer's Rights Regarding Defective Goods

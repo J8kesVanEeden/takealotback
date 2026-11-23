@@ -15,6 +15,7 @@ correction_note: "The file had no verbatim text and its carve-out list was prese
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
 copyright: "© Consumer Goods and Services Ombud NPC (a private non-profit company accredited as an ombud under CPA s 82). Quoted, with the source named, under fair dealing for criticism and review, s 12(1)(b) Copyright Act 98 of 1978."
+updated: "2026-11-23"
 ---
 
 # CGSO Advisory Note 11: Supply of Voetstoots Goods

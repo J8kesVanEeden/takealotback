@@ -12,6 +12,7 @@ used_in:
   - "src/data/content.ts — LAW_SECTIONS nfo item ('If the bank gets it wrong')"
   - "src/data/content.ts — FAQ (buy-now-pay-later: credit disputes)"
 copyright: "Facts, not copyrightable."
+updated: "2026-11-23"
 ---
 
 # National Financial Ombud Scheme: establishment and amalgamation

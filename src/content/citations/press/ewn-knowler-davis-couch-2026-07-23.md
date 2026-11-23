@@ -12,6 +12,7 @@ disclosure: "EWN and CapeTalk are Primedia outlets, independent of Takealot's Na
 used_in:
   - "src/data/content.ts — CLAUSES[0] (time-limits) 'Davis couch (2026)' angle"
 copyright: "© EWN / Primedia. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
+updated: "2026-11-23"
 ---
 
 # EWN | Know your rights: Why a store's return policy isn't always the final word

@@ -15,6 +15,7 @@ used_in:
   - "src/components/Footer.astro — copyright row rationale for criticism/commentary"
   - "src/data/content.ts — FAQ[0] (domain-name-use-legal question)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Constitution of the RSA, 1996: s 16
