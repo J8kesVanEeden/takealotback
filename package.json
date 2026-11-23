@@ -14,6 +14,8 @@
     "check:anchors": "npm run build --silent && node scripts/check-anchors.mjs",
     "check:citations": "node scripts/check-citations.mjs",
     "check:counts": "node scripts/check-counts.mjs",
+    "check:copy": "node scripts/check-copy.mjs",
+    "check:copy-facts": "node scripts/check-copy-facts.mjs",
     "check:used-in": "node scripts/check-used-in.mjs",
     "check:chips": "node scripts/check-source-chip-coverage.mjs",
     "check:headings": "node scripts/check-heading-hierarchy.mjs",
