@@ -36,7 +36,7 @@ function pad(n: number) {
         {group.items.map((it, i) => (
           <div class="tb-law__cell law-cell">
             <div class="tb-law__cellhead">
-              <Stat>{group.group} {it.id}</Stat>
+              <Stat>{/^ss? /.test(it.id) ? `${group.group} ${it.id}` : group.group}</Stat>
               <span class="mono tb-law__cellnum">{pad(i + 1)}</span>
             </div>
             <div class="tb-law__celltitle">{it.title}</div>
