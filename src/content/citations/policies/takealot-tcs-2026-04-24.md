@@ -15,6 +15,7 @@ correction_note: "2026-04-24 audit misread the forum-selection qualifier ('even 
 used_in:
   - "src/data/content.ts — CLAUSES[4] (bundle-return) 'why' (pre-packed Bundle Deal price)"
   - "src/data/content.ts — TEMPLATES T11 body (CGSO named as escalation point)"
+  - "src/data/content.ts — TEMPLATES T06, T10, T14 body (cancellation refund, order complete, High Court clause)"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes)"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction)"
   - "src/data/content.ts — CLAUSES[13] (order-cancellation)"

@@ -101,9 +101,10 @@ one-way reference resource. If you find something factually wrong,
 No ads. No affiliate links. No donations. Analytics are limited to Cloudflare Web
 Analytics and Google Analytics 4 (via Zaraz), both disclosed in the site's privacy
 note. This is non-negotiable, both a matter of principle and of legal
-footing, since the site's use of the name "Takealot" relies on non-commercial
-criticism/commentary protections (s 16 of the Constitution, TMA s 34(1)(c) read with
-*Laugh It Off*, UDRP 4(c)(iii)).
+footing, since the site's use of the name "Takealot" relies on criticism and
+commentary protections (s 16 of the Constitution, TMA s 34(1)(c) read with
+*Laugh It Off*), and its domain on UDRP 4(c)(iii)'s "legitimate noncommercial or
+fair use".
 
 ## Not affiliated
 
