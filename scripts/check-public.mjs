@@ -126,8 +126,14 @@ if (process.env.GITHUB_EVENT_PATH && existsSync(process.env.GITHUB_EVENT_PATH)) 
     scanText('PR body', ev.pull_request.body || '');
     scanText('PR branch name', ev.pull_request.head?.ref || '');
     range = `${ev.pull_request.base.sha}..${ev.pull_request.head.sha}`;
-  } else if (ev.before && ev.after && !/^0+$/.test(ev.before)) {
-    range = `${ev.before}..${ev.after}`;
+  } else if (ev.after) {
+    // A normal push checks the new commits. A forced push, a new branch, or a
+    // "before" commit that no longer exists checks the whole history instead.
+    let known = false;
+    if (ev.before && !/^0+$/.test(ev.before) && !ev.forced) {
+      try { git('cat-file', '-e', `${ev.before}^{commit}`); known = true; } catch {}
+    }
+    range = known ? `${ev.before}..${ev.after}` : ev.after;
   }
 }
 if (range) scanCommits(range);
