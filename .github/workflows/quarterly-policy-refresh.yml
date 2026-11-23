@@ -14,8 +14,7 @@
 #   2. Capture fresh snapshots if material changes; bump retrieved:
 #      dates if not.
 #   3. Refresh the Wayback archive for both Takealot URLs.
-#   4. Sync the maintainer's Obsidian notes (npm run sync:obsidian).
-#   5. Run npm run check:all and open a PR.
+#   4. Run npm run check:all and open a PR.
 name: Quarterly policy refresh reminder
 
 on:
@@ -65,11 +64,7 @@ jobs:
           - [ ] Bump the `retrieved:` date in both existing citation files to today
           - [ ] Run `npm run archive` for the two Takealot URLs to refresh Wayback, update `wayback_url_dated`
 
-          ## 3. Sync the maintainer's Obsidian notes
-
-          - [ ] Run `npm run sync:obsidian` (skipped automatically if the notes folder isn't on this machine)
-
-          ## 4. Verify and ship
+          ## 3. Verify and ship
 
           - [ ] `npm run check:all` passes locally
           - [ ] Open a PR titled `Quarterly Takealot policy refresh — YYYY-MM` with a short body listing the diffs found

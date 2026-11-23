@@ -64,4 +64,4 @@ The About section's "Legal grounding" list names and links the case for the s 34
 
 ## Status
 
-Full judgment text not mirrored; the paragraphs relied on are quoted above. Primary source: https://www.saflii.org/za/cases/ZACC/2005/7.html, read 2026-11-17 through the Wayback capture of 30 October 2026 (`_handoff/refresh-2026-11-17/raw/R-Laugh-It-Off-ZACC-7-2005.txt`).
+Full judgment text not mirrored; the paragraphs relied on are quoted above. Primary source: https://www.saflii.org/za/cases/ZACC/2005/7.html, read 2026-11-17 through the Wayback capture of 30 October 2026 (raw capture kept on file).

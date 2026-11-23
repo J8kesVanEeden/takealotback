@@ -5,7 +5,7 @@
 # so a local fail = no push, no CI round-trip.
 #
 # To bypass in a true emergency: `git push --no-verify`.
-# Don't make a habit of it; the hook exists because the test loop kept
+# Don't make a habit of it; the hook exists because these checks keep
 # catching real bugs that "looked fine in the editor".
 
 set -eu
@@ -18,6 +18,14 @@ if ! command -v npm >/dev/null 2>&1; then
   echo "  (load your Node toolchain or use --no-verify if you really mean to skip)" >&2
   exit 1
 fi
+
+# Check every commit message being pushed, not only the files.
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ "$local_sha" = "0000000000000000000000000000000000000000" ] && continue
+  if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then base=origin/main; else base=$remote_sha; fi
+  echo "→ pre-push: public-repo check on $base..$local_sha"
+  node scripts/check-public.mjs --commits "$base..$local_sha"
+done
 
 echo "→ pre-push: running npm run check:all"
 npm run check:all

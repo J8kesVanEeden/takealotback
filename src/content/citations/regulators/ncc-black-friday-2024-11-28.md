@@ -37,4 +37,4 @@ The rest of the statement concerns about 40 suppliers the NCC could not trace af
 
 The NCC's quotation marks around its summary of the CPA are its own. The Act's actual wording is CPA s 29(b)(iii), quoted verbatim in [CPA-2008.md](../statutes/CPA-2008.md).
 
-Raw capture: `_handoff/refresh-2026-11-17/raw/ncc-media-statement-black-friday-2024-11-28.txt` (curl + pdftotext, 2026-11-17).
+Raw capture kept on file (curl + pdftotext, 2026-11-17).
