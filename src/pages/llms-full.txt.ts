@@ -196,7 +196,7 @@ export const GET: APIRoute = async () => {
   // Footer
   lines.push('---');
   lines.push('');
-  lines.push('Not legal advice. Not affiliated with Takealot Online (RF) (Pty) Ltd. Content CC BY 4.0: credit the site, link to the licence and to https://takealotback.com/ where you can, and say if you changed anything. Corrections via issues at ' + GITHUB_REPO_URL + '.');
+  lines.push('Not legal advice. Not affiliated with Takealot Online (RF) (Pty) Ltd. Content CC BY 4.0: credit the site, link to the licence, say if you changed anything, and link to https://takealotback.com/ where you can. Corrections via issues at ' + GITHUB_REPO_URL + '.');
 
   return new Response(lines.join('\n'), {
     headers: {
