@@ -129,6 +129,26 @@ These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captur
 
 > "We may, at any time and for any reason, suspend or terminate your Takealot account."
 
+### Lines added 2026-11-23 (verbatim, 2026-11-17 capture)
+
+Quoted because the site prints them: POLICY_SUMMARY.terms (age and contracting capacity; South African law), Clause 05 (pre-packed bundles) and Clause 23 (sellers' own prices).
+
+**Who may register and shop**
+
+> "You must be at least 18 years old to register a Takealot account to shop on our platform. You must also be legally able to enter into contracts in South Africa."
+
+**Governing law**
+
+> "These terms and any disputes arising from them are governed by South African law."
+
+**Sellers' prices**
+
+> "When more than one seller offers the same product for sale on our platform, they may charge different prices, or one may offer a discount while the other does not."
+
+**Pre-packed Bundle Deals**
+
+> "A pre-packed Bundle Deal is an assortment of items combined into a single unit at a discounted price. One discounted price is offered for the entire bundle, not for the individual items in the bundle."
+
 ### CGSO escalation reference
 
 The T&Cs route unresolved complaints to the Consumer Goods and Services Ombud (CGSO):

@@ -177,7 +177,8 @@ export function buildFaqPage(faq: FaqItem[]) {
       name: f.q,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: f.a,
+        // Plain text: paragraph breaks ("\n\n") in the answer become spaces.
+        text: f.a.replace(/\s*\n\n+\s*/g, ' '),
       },
     })),
   };
@@ -351,6 +352,7 @@ const GROUP_TOPIC: Record<string, Array<typeof TOPICS[keyof typeof TOPICS]>> = {
 // The NCA has no Wikipedia article to `sameAs` (checked 2026-11-18), so it
 // is a plain Thing and stays out of TOPICS / ALL_TOPICS.
 const NCA_TOPIC = { '@type': 'Thing', name: 'National Credit Act 34 of 2005' } as const;
+const UDRP_TOPIC = { '@type': 'Thing', name: 'Uniform Domain Name Dispute Resolution Policy' } as const;
 const STATUTE_TOPIC: Record<string, Array<Record<string, string>>> = {
   'cpa-2008': [TOPICS.cpa],
   'cpa-regulations-2011': [TOPICS.cpa],
@@ -360,6 +362,7 @@ const STATUTE_TOPIC: Record<string, Array<Record<string, string>>> = {
   'constitution-s16': [TOPICS.constitution],
   'prescription-act-1969': [TOPICS.prescription],
   'nca-2005': [NCA_TOPIC],
+  'udrp-policy': [UDRP_TOPIC],
 };
 
 export function buildCitationArticle(args: {
