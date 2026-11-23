@@ -5,7 +5,7 @@ court_or_publisher: "National Consumer Tribunal"
 date: "2026-11-05"
 case_number: "NCT/398794/2025/73(2)(b)"
 primary_url: "https://www.thenct.org.za/wp-content/uploads/2026/11/NCC-v-RC-Auto-Bloemfontein-Judgment-and-Reasons-Final_.pdf"
-metaDescription: "National Consumer Tribunal, November 2026: under CPA s 56(2) suppliers are 'statutorily obliged to pay for and bear the risk of returning the goods'; a dealer ought to have collected, or authorised repair of, a defective car the buyer could not afford to bring back 700 km. Refund of R244,000 and a R100,000 penalty."
+metaDescription: "National Consumer Tribunal, November 2026: under CPA s 56(2) suppliers are 'statutorily obliged to pay for and bear the risk of returning the goods'; a dealer ought to have collected, or authorised repair of, a defective car the buyer could not afford to bring back more than 700 km. Refund of R244,000 and a R100,000 penalty."
 retrieved: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[18] (restocking-redelivery-fees) 'NCC v RC Auto' angle"

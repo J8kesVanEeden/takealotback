@@ -49,10 +49,10 @@ respective owners:
   ("official texts of a legislative, administrative or legal nature").
 - Summaries and excerpts of Takealot's published returns policy and terms, used under
   section 16 of the Constitution for consumer education, commentary, and criticism,
-  and retained as dated snapshots in [`citations/policies/`](./citations/policies/)
-  under fair dealing for research and criticism (s 12(1)(a) Copyright Act 98 of 1978).
+  and retained as dated snapshots in [`src/content/citations/policies/`](./src/content/citations/policies/)
+  under fair dealing for criticism and review (s 12(1)(b) Copyright Act 98 of 1978).
 - Third-party legal commentary and news articles referenced in
-  [`citations/commentary/`](./citations/commentary/) — link + short excerpt only,
+  [`src/content/citations/commentary/`](./src/content/citations/commentary/): link + short excerpt only,
   never full reproduction. Fair dealing for citation purposes.
 
 Our own compilation, organisation, and annotation of these materials in
@@ -64,5 +64,5 @@ in [`citations/README.md`](./citations/README.md) § Copyright policy.
 
 Content was verified against the published Consumer Protection Act, Electronic
 Communications and Transactions Act, Protection of Personal Information Act, Takealot's
-current published policies, and South African case law as of **April 2026**. Material
+current published policies, and South African case law as of **November 2026**. Material
 updates are noted in git history.

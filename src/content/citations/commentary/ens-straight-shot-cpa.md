@@ -18,7 +18,9 @@ updated: "2026-11-23"
 
 # ENSafrica: Straight shot to the courts for consumers
 
-Short summary: commentary on post-Motus s 69 litigation, including the Steynberg / Tammy Taylor Nails preliminary jurisdictional ruling. Useful secondary source for the post-Motus trajectory, though the site no longer cites Steynberg directly.
+Short summary: commentary on post-Motus s 69 litigation, including the Steynberg / Tammy Taylor Nails ruling that the High Court "has jurisdiction to deal with a complaint in terms of the CPA". Useful secondary source for the post-Motus trajectory, though the site no longer cites Steynberg directly.
+
+> "In the case of Steynberg v Tammy Taylor Nails Franchising 2022, the High Court concluded that it has jurisdiction to deal with a complaint in terms of the CPA."
 
 (Corrected 2026-11-18: this paragraph added that "the 3 July 2023 final judgment expressly did not decide the CPA jurisdiction question" and pointed to the Motus file for it. The Motus file says nothing about Steynberg, and no source for that statement is held in the repo, so it has been removed as unverified.)
 

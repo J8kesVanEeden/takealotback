@@ -20,7 +20,7 @@ function linkifyContact(contact: string) {
     }
     const phoneMatch = p.match(/(?:\+?\d[\d\s()-]{6,}\d)/);
     if (phoneMatch) {
-      return { kind: 'phone' as const, raw: p, phone: phoneMatch[0].replace(/[\s()-]/g, '') };
+      return { kind: 'phone' as const, raw: p, phone: phoneMatch[0].replace(/\(0\)/g, '').replace(/[\s()-]/g, '') };
     }
     const urlMatch = p.match(/^([a-z0-9-]+\.)+[a-z]{2,}(\/[^\s]*)?$/i);
     if (urlMatch) {
