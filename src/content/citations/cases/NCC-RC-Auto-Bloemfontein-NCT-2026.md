@@ -38,9 +38,13 @@ Order (para 30), which also declares the contravention prohibited conduct (30.2)
 
 > [30.1] "The respondent contravened section 56(2)(b) read with section 55(2)(a) to (c) of the CPA."
 
+> [30.2] "The respondent’s contravention of section 56(2)(b) read with section 55(2)(a) to (c) of the CPA is declared prohibited conduct."
+
 > [30.3] "The respondent must refund the complainant an amount of R244 000.00, being the amount she paid for the vehicle."
 
 > [30.4] "The respondent must pay an administrative penalty in the amount of R100 000.00 (One Hundred Thousand Rands) within 60 business days from the date of the issuance of this order …"
+
+> [30.5] "There is no order as to costs."
 
 ## Scope and limits
 

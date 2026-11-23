@@ -24,7 +24,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). The site's clause on **item substitution / wrong goods delivered** rests on it. It shows the usual pattern: Takealot refused on a procedural point and reversed only after the consumer went to a journalist.
+The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). The site's clause on **item substitution / wrong goods delivered** rests on it. It shows a familiar pattern: Takealot refused on a procedural point and reversed after the consumer went to a journalist.
 
 ## Extracts (fair dealing for criticism and review)
 
