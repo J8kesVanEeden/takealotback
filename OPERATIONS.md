@@ -80,7 +80,7 @@ These are the steps the checks found get forgotten. The CI / pre-push guards cat
 5. **Bump `LAST_REVIEWED`** in `content.ts` if the change is substantive.
 6. **Run `npm run check:all`** — the full suite. This is what CI will run; pass locally first.
 7. **Commit + push.** Pre-push hook re-runs `check:all` — including `check:notes`, which fails if the Notes vault has drifted from the codebase.
-8. **Run `npm run sync:notes`** to refresh the Notes vault at `the maintainer's notes folder` (the Notes iOS iCloud container — the `~` characters in `notes` are part of the folder name). The script archives the prior live state into `_Archive vN/` and regenerates Clauses/, Email Templates/, Citations/, Site Copy/, Sections/ from the codebase. Personal notes in `Background/` and `Legal Research/` are left alone.
+8. **Run `npm run sync:notes`** to refresh the maintainer's Notes notes from the codebase. The script archives the prior state and regenerates the generated folders; it skips itself (and `check:notes` passes) on any machine without the notes folder.
 9. **After deploy lands**: cache-purge runs automatically via GHA. Run `npm run check:live` to confirm the edge serves the new build.
 
 If you renamed a clause slug, also update `CLAUSE_SLUGS` in `src/components/TriageModal.astro` and any anchored deep-link in `src/components/AboutSection.astro`. `check:anchors` catches broken `#clause-X` references.
@@ -162,7 +162,7 @@ Breaching a non-negotiable (especially #1) may strip legal protection under UDRP
 
 ## When in doubt
 
-- **Legal nuance:** flag to Milk Moon Studio ([address removed]) before writing.
+- **Legal nuance:** raise it in a [GitHub issue](https://github.com/J8kesVanEeden/takealotback/issues) before writing.
 - **Statutory reference:** primary source first, then SAFLII. Never rely on secondary commentary for a statute citation.
 - **Case citation:** open the SAFLII page before citing. If SAFLII doesn't have the judgment, the citation goes into `citations/cases/` as a stub with a note that the judgment is in physical SALR reports only.
 - **Takealot policy:** re-fetch the live page; diff against the most recent snapshot. If the site's claim no longer matches live, the site — not the live Takealot policy — is what gets updated.

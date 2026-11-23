@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // check-copy-facts — guard for copy rewrites: nothing legal may go missing.
 //
-// Why this exists: the 2026-11 copy pass rewrites almost every public sentence to
-// read less like formulaic. A rewrite is allowed to change the wording; it is not
+// Why this exists: a copy edit may change the wording of any public sentence, but
+// it must not change the facts. A rewrite is allowed to change the wording; it is not
 // allowed to drop a statute section, a rand amount, a date, a year, a quote or a
 // blockquoted extract. This script compares each public-copy file against a base
 // git ref (default: main) and fails when a fact token present in the base file is

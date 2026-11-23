@@ -8,7 +8,7 @@ wayback_url_dated: "https://web.archive.org/web/20260702063443/https://www.news2
 metaDescription: "Knowler (News24, 2 November 2025): a Takealot listing tagged a R450 T-shirt 'non-refundable' and the return was refused. Takealot called it human error and delisted the item; ECT s 44 cooling-off applies regardless."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-10"
-retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; copied into this file by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time — flagged here for transparency."
+retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07; copied into this file by the site editor. News24 blocks bot/SPN requests, so no Wayback Machine snapshot of this URL exists at retrieval time. Flagged here for transparency."
 wayback_status: "Wayback capture 20260702063443 exists but holds only the paywall shell (title, no article body), checked 2026-11-10. The verbatim extracts here come from an authenticated News24 subscription."
 disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ultimate parent company. Knowler is a long-running independent consumer journalist whose column carries News24's editorial credit; the parent-company link is disclosed for transparency, not because it bears on the reporting."
 used_in:

@@ -51,7 +51,7 @@ The plaintiff negotiated with the defendant in October 1970 to purchase the defe
 
 (Page wording as revised in the 2026-11-17 round; the earlier wording named *Dibley* and *Glaston House* as "the canonical restatements" of the test.)
 
-Earlier site copy attributed the three-part test directly to *Phame*; that was a misattribution corrected after the April 2026 accuracy review.
+Earlier site copy attributed the three-part test directly to *Phame*; that was a misattribution, corrected in the April 2026 accuracy review.
 
 ## Cross-references
 

@@ -3,7 +3,7 @@ dist/
 .output/
 
 # dependencies
-node_modules/
+node_modules
 
 # logs
 npm-debug.log*
@@ -37,10 +37,13 @@ notes/
 
 # Original zip
 takealotback-handoff.zip
-# editor: commit the shared settings, ignore everything else in .editor/
-/.editor/*
-!/.editor/settings.json
+# Editor and tooling settings (machine-specific, never committed)
+/.editor/
 .playwright-mcp/
+/local-notes/
 
-# editor local settings (machine-specific, never committed)
-.editor/settings.local.json
+# Maintainer working notes (kept locally, not part of the public repo)
+/the to-do list
+/NOTES.md
+/style notes
+/audit notes-*.md
