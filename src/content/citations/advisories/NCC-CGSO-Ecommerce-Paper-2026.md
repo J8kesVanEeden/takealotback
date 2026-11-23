@@ -18,6 +18,7 @@ used_in:
   - "src/data/content.ts — LAW_SECTIONS CPA s 19 blurb (inspection right read with s 20)"
 copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "Takealot is named in the paper only as a market-share statistic (Statista survey), not as a wrongdoer. The paper's own disclaimer: 'The content of this paper should not be construed as findings for or against any e-commerce platform or related providers.'"
+updated: "2026-11-23"
 ---
 
 # Consumer Protection in E-Commerce: NCC + CGSO joint paper

@@ -13,7 +13,10 @@ import {
   LAST_REVIEWED,
   TAKEALOT_POLICY_REVIEWED_AGAINST,
   GITHUB_REPO_URL,
+  SCOPE_LAW,
+  SCOPE_TEMPLATES,
 } from '../data/content';
+import { CITATION_GROUPS, sortDeepDives } from '../lib/site-index';
 
 export const GET: APIRoute = async () => {
   const pages = await getCollection('pages');
@@ -31,7 +34,11 @@ export const GET: APIRoute = async () => {
   lines.push('');
   lines.push('> Plain-markdown dump of the site for LLM consumption. The canonical site is at https://takealotback.com/. Content CC BY 4.0. Last reviewed ' + LAST_REVIEWED + ' against Takealot policy ' + TAKEALOT_POLICY_REVIEWED_AGAINST + '. Source of truth: ' + GITHUB_REPO_URL + '.');
   lines.push('');
-  lines.push('This file is generated at build time from src/data/content.ts and src/content/pages/. When citing, prefer the canonical page URLs in llms.txt over this file.');
+  lines.push('This file is generated at build time from src/data/content.ts and src/content/. When citing, prefer the canonical page URLs in llms.txt over this file.');
+  lines.push('');
+  lines.push("## Who it's for");
+  lines.push('');
+  lines.push("The site starts with Takealot because it's South Africa's biggest online retailer, so its returns policy reaches more shoppers than anyone else's. The rights come from South African law, not from Takealot. " + SCOPE_LAW + ' ' + SCOPE_TEMPLATES);
   lines.push('');
 
   // Quick hits
@@ -152,9 +159,7 @@ export const GET: APIRoute = async () => {
   // Deep dives
   lines.push('## Deep-dive pages (full text)');
   lines.push('');
-  const order = ['onus-of-proof', 'aedilitian-remedies', 'limits'];
-  const sorted = [...subPages].sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
-  for (const p of sorted) {
+  for (const p of sortDeepDives(subPages)) {
     lines.push(`### ${p.title}`);
     lines.push('');
     lines.push(`URL: https://takealotback.com/${p.slug}`);
@@ -164,6 +169,25 @@ export const GET: APIRoute = async () => {
     // Strip frontmatter (defensive — p.body is already body-only, but guard anyway)
     const body = p.body.replace(/^---[\s\S]*?---\s*/, '').trim();
     lines.push(body);
+    lines.push('');
+  }
+
+  // Citations index: titles and URLs only; the full text of each is on its page.
+  const citations = await getCollection('citations');
+  lines.push(`## Citations & sources (${citations.length})`);
+  lines.push('');
+  lines.push('Every source the site relies on. Each page carries the primary URL, a Wayback Machine link and the date it was retrieved.');
+  lines.push('');
+  for (const g of CITATION_GROUPS) {
+    const entries = citations
+      .filter((e) => e.slug.split('/')[0] === g.name)
+      .sort((a, b) => (a.data.title || '').localeCompare(b.data.title || ''));
+    if (!entries.length) continue;
+    lines.push(`### ${g.label}`);
+    lines.push('');
+    for (const e of entries) {
+      lines.push(`- ${e.data.title}${e.data.citation ? ` (${e.data.citation})` : ''}: https://takealotback.com/citations/${e.slug}`);
+    }
     lines.push('');
   }
 

@@ -12,6 +12,7 @@ used_in:
   - "src/data/content.ts — ESCALATION[4] (NCC tier)"
 copyright: "Published by a statutory regulator for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "The release does not name Takealot. The site relies on the NCC's own summary; the Bryanston Executive Cars judgment itself was not found among the Tribunal's uploads (checked 2026-11-17)."
+updated: "2026-11-23"
 ---
 
 # NCC: Tribunal fines four suppliers R1.15 million

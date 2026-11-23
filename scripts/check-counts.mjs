@@ -91,7 +91,7 @@ const PATTERNS = [
   P('\\(currently N sources\\)|\\bN\\s+(?:primary\\s+)?sources in the (?:evidence )?vault\\b', 'sources'),
 ];
 // Public files outside src/ that carry counts in prose.
-const EXTRA = ['public/llms.txt', 'public/og-image.svg'].map((p) => join(ROOT, p));
+const EXTRA = ['public/og-image.svg'].map((p) => join(ROOT, p));
 
 function main() {
   const expected = deriveCounts();

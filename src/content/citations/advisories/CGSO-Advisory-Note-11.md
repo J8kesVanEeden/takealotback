@@ -15,6 +15,7 @@ correction_note: "The file had no verbatim text and its carve-out list was prese
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
 copyright: "No copyright: published by an accredited Ombud established under CPA s 82"
+updated: "2026-11-23"
 ---
 
 # CGSO Advisory Note 11: Supply of Voetstoots Goods

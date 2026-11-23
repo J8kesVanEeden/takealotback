@@ -16,6 +16,7 @@ used_in:
   - "src/components/AboutSection.astro — 'Why Takealot?' paragraph (\"the country's largest e-tailer\")"
   - "src/data/content.ts — CLAUSES[9] (non-returnable) angle on Takealot's 'no warranty at all' framing being legally wrong"
 copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
+updated: "2026-11-23"
 ---
 
 # Knowler: cooling-off exclusions

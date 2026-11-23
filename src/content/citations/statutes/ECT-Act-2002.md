@@ -19,6 +19,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T20 and T23 (s 46)"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) 'CPA s 51 / ECT s 48' angle and TEMPLATES T09 body (s 48 non-exclusion)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Electronic Communications and Transactions Act 25 of 2002

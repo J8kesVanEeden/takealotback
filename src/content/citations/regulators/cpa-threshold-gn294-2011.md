@@ -12,6 +12,7 @@ used_in:
   - "src/content/pages/limits.md — juristic-person threshold paragraph"
   - "../advisories/CGSO-Advisory-Note-11.md (para 5.1(ii) 'R2 million')"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legislative or administrative nature)"
+updated: "2026-11-23"
 ---
 
 # CPA juristic-person threshold: R2 million

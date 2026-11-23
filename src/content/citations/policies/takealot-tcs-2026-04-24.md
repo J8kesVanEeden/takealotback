@@ -27,6 +27,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T21 body (gift voucher not exchangeable for cash)"
   - "src/components/PoliciesSection.astro — Registered entity block"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
+updated: "2026-11-23"
 ---
 
 # Takealot Terms & Conditions: snapshot 2026-04-24

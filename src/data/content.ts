@@ -78,10 +78,19 @@ export interface PolicySummary {
 }
 
 export const LAST_REVIEWED = "2026.11.18";
+// When this file or a homepage component last changed. The homepage JSON-LD
+// dateModified is the later of this and LAST_REVIEWED.
+// scripts/check-machine-readable.mjs fails if an edit leaves this behind.
+export const CONTENT_UPDATED = "2026.11.23";
 // Takealot publishes no policy version or "last updated" date, so this records
 // the date we last checked the live policy pages against our snapshots.
 export const TAKEALOT_POLICY_REVIEWED_AGAINST = "as live on 2026.11.17";
 export const GITHUB_REPO_URL = "https://github.com/J8kesVanEeden/takealotback";
+// Why the rights reach beyond Takealot. Shown in the About section's
+// "Why Takealot?" paragraph and repeated in llms.txt, llms-full.txt and the
+// WebSite JSON-LD, so all four say the same thing.
+export const SCOPE_LAW = "The Consumer Protection Act covers what you buy from most businesses in the country, online or in a shop, and the ECT Act's 7-day cooling-off covers most online orders.";
+export const SCOPE_TEMPLATES = "Most templates work anywhere: swap the name and cut any line that quotes Takealot's own policy.";
 
 export const CLAUSES: Clause[] = [
   {

@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
 import JsonLd from '../components/JsonLd.astro';
+import { latestDate } from '../lib/site-index';
 import SourceChips from '../components/SourceChips.astro';
 import { LAST_REVIEWED } from '../data/content';
 import { scanForCitations } from '../lib/citation-links';
@@ -41,7 +42,8 @@ const article = buildDeepDiveArticle({
   title: page.data.title,
   description: page.data.description,
   datePublished: page.data.datePublished ?? '2026-04-23',
-  dateModified: page.data.dateModified ?? LAST_REVIEWED.replace(/\./g, '-'),
+  // The later of the page's own last edit and the site-wide legal review.
+  dateModified: latestDate(page.data.dateModified, LAST_REVIEWED)!,
 });
 
 const breadcrumb = buildBreadcrumb([

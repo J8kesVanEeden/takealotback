@@ -17,6 +17,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[17] (mis-returned-items) angle on courier collecting non-existent items"
   - "src/data/content.ts — CLAUSES[22] (sale-pricing) relisting angle (system error)"
 copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
+updated: "2026-11-23"
 ---
 
 # Knowler: Chelsea Christmas books, system-error cancellation

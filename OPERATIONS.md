@@ -44,7 +44,9 @@ cf. citations/policies/takealot-returns-2026-04-24.md (para "Credit vs refund")
 - **Case law + statutes**: annually, or immediately on SCA / ConCourt / legislative change in scope.
 - **Regulator contact details**: annually.
 - **Third-party commentary**: only re-check when the underlying primary source changes, or when the commentary itself is explicitly cited.
-- **`LAST_REVIEWED`** constant in `src/data/content.ts`: bump it every time any content change lands. This value feeds the footer review-date and the CollectionPage JSON-LD `dateModified`.
+- **`LAST_REVIEWED`** constant in `src/data/content.ts`: bump it when the content is checked against the law and Takealot's live policies. It feeds the footer review date, the FAQ, llms.txt and the JSON-LD dates.
+- **Edit dates**: when you edit a page, move its date with it. `CONTENT_UPDATED` in `src/data/content.ts` for content.ts or a homepage component; `updated:` in a citation's frontmatter; `dateModified:` in a deep-dive page's frontmatter. JSON-LD `dateModified` is the later of these and the review date. `npm run check:machine-readable` (part of `check:all`) fails when an edited file's date did not move.
+- **llms.txt and llms-full.txt** are generated at build time (`src/pages/llms.txt.ts`, `src/pages/llms-full.txt.ts`) from the same data as the pages. Do not hand-edit a copy in `public/`. The same check fails if a homepage section, clause, template, deep-dive page or citation is missing from them, or if any link in them is broken.
 
 ---
 

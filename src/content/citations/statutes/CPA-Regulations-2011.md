@@ -23,6 +23,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T09 (Reg 44(3)(i)), T10 (Reg 44(3)(k)), T15 (Reg 44(3)(b) and (g))"
   - "src/data/content.ts — LAW_SECTIONS CPA s 48 blurb (Regulation 44 lists presumptively unfair terms)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Consumer Protection Act Regulations

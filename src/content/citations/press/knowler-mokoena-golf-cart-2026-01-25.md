@@ -14,6 +14,7 @@ disclosure: "News24 (Media24) and Takealot share Naspers as ultimate parent. Dis
 used_in:
   - "src/data/content.ts — CLAUSES[1] (original-packaging) angle on missing-accessory exclusion vs unrelated defect"
 copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
+updated: "2026-11-23"
 ---
 
 # Knowler: Mokoena golf cart, missing cupholder and s 56

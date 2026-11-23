@@ -30,7 +30,7 @@ const printAllow = args.includes('--print-allow');
 const git = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf-8', maxBuffer: 64 * 1024 * 1024 });
 
 // Public copy lives here.
-const files = git('ls-files', 'src', 'public/llms.txt')
+const files = git('ls-files', 'src')
   .split('\n')
   .filter((f) => /\.(astro|ts|md|mdx|txt)$/.test(f));
 

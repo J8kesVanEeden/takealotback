@@ -17,6 +17,7 @@ used_in:
   - "src/content/pages/limits.md — forum paragraph"
   - "src/components/LawSection.astro — Magistrate's Court card"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legislative or administrative nature)"
+updated: "2026-11-23"
 ---
 
 # Magistrates' Courts monetary jurisdiction (2014 determinations)

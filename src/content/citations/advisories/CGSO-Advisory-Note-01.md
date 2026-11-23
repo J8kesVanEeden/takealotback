@@ -17,6 +17,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T16 (inspection deadline) body"
   - "src/content/pages/onus-of-proof.md — 'The CGSO view' section"
 copyright: "No copyright: published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
+updated: "2026-11-23"
 ---
 
 # CGSO Advisory Note 1: Consumer's Rights Regarding Defective Goods

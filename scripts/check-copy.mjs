@@ -40,7 +40,7 @@ function walk(dir, out = []) {
 }
 const files = explicit.length
   ? explicit.flatMap((p) => (statSync(join(ROOT, p)).isDirectory() ? walk(join(ROOT, p)) : [join(ROOT, p)]))
-  : [...walk(join(ROOT, 'src')), join(ROOT, 'public/llms.txt'), join(ROOT, 'public/og-image.svg')].filter(existsSync);
+  : [...walk(join(ROOT, 'src')), join(ROOT, 'public/og-image.svg')].filter(existsSync);
 
 // ── Banned list ─────────────────────────────────────────────────────────────
 // Each entry: [regex, label]. Word-boundaried, case-insensitive.

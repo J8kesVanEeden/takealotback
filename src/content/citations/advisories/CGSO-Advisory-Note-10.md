@@ -13,6 +13,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[13] (order-cancellation) 'CGSO Advisory Note 10' (pricing errors online) and 'ECT s 46' angles"
   - "src/data/content.ts — TEMPLATES T10 body (applies the Note's 'ought to have realised' price-error test and the election to insist on performance; the letter does not name the Note)"
 copyright: "No copyright: published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
+updated: "2026-11-23"
 ---
 
 # CGSO Advisory Note 10: E-Commerce
