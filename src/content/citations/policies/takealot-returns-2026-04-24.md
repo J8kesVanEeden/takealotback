@@ -18,6 +18,7 @@ used_in:
   - "src/data/content.ts — every CLAUSES[*].takealot paraphrase"
   - "src/data/content.ts — POLICY_SUMMARY.returns"
   - "src/data/content.ts — FAQ (delivery fee on a cancelled order: 'Our returns are free!')"
+  - "src/data/content.ts — TEMPLATES T01, T06, T18, T21 body (returns-policy quotes: free returns, the refund choice, 3-year credit)"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing for criticism / review per s 12(1)(b) Copyright Act 98 of 1978, in support of the commentary at takealotback.com."
 updated: "2026-11-23"
 ---

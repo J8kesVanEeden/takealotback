@@ -158,7 +158,7 @@ These five rules are not editorial. They are load-bearing:
 4. **Do not silently "fix" content in `src/data/content.ts`.** It's been fact-checked. If something looks wrong, flag it (GitHub issue) and follow this OPERATIONS flow. Don't just edit.
 5. **No Takealot branding.** No blue, no logo, visually distinct.
 
-Breaching a non-negotiable (especially #1) may strip legal protection under UDRP 4(c)(iii) and *Laugh It Off v SAB*. It's not just a style rule.
+Breaching a non-negotiable (especially #1) may strip legal protection under UDRP 4(c)(iii). It's not just a style rule.
 
 ---
 

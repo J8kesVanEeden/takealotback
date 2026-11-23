@@ -732,17 +732,17 @@ Regards,
 [Name]
 [Contact]
 Order #[ORDER]` },
-  { code: "T18", title: "Recall refund demand", scenario: "An item bought through Takealot has been recalled (manufacturer recall, NCC recall, or SAHPRA recall) and Takealot is refusing the recall refund, typically on the basis that the manufacturer warranty has expired, or by issuing a short-validity coupon as the \"refund\".",
+  { code: "T18", title: "Recall refund demand", scenario: "An item bought through Takealot has been recalled (manufacturer recall or NCC recall) and Takealot is refusing the recall refund, typically on the basis that the manufacturer warranty has expired, or by issuing a short-validity coupon as the \"refund\".",
     subject: "Recall refund, sections 55 and 56 CPA: Order #[ORDER]",
     body: `Hi,
 
-Order #[ORDER]. On [date] I bought a [item] for R[amount]. The product has since been recalled by [manufacturer / NCC / SAHPRA] on [recall date], reference [recall ID if known].
+Order #[ORDER]. On [date] I bought a [item] for R[amount]. The product has since been recalled by [manufacturer / NCC] on [recall date], reference [recall ID if known].
 
 Takealot's response so far has been to [refuse the refund / issue a coupon valid for (N) days / refer me to the manufacturer]. That is not consistent with the company's obligations.
 
 The legal position:
 
-1. The recall of [item] by [the manufacturer / the National Consumer Commission / SAHPRA] is strong evidence that the goods were not safe, good-quality goods under section 55 of the Consumer Protection Act.
+1. The recall of [item] by [the manufacturer / the National Consumer Commission] is strong evidence that the goods were not safe, good-quality goods under section 55 of the Consumer Protection Act.
 2. The recall notice instructs consumers to [quote the notice, e.g. "return them to a point of purchase for a refund"]. Takealot is my point of purchase.
 3. "The manufacturer's (N-month) warranty has expired" is not a defence. [If the notice provides for a refund at the point of purchase: The recall notice itself provides for that refund.] [If within 6 months of delivery: Section 56(2) independently gives me the election of a refund.] [If more than 6 months after delivery: Section 55(2)(c) requires goods to be usable and durable for a reasonable period, which goods recalled as unsafe were not.]
 4. Section 61 of the Consumer Protection Act imposes strict liability for harm caused by unsafe goods on the producer, importer, distributor and retailer, jointly and severally where more than one is liable. Takealot is a retailer.

@@ -14,6 +14,9 @@ used_in:
   - "src/data/content.ts — QUICK_HITS[6] (credit card chargeback)"
   - "src/data/content.ts — LAW_SECTIONS Chargebacks group (when, window, how)"
   - "src/data/content.ts — ESCALATION[3] (credit card chargeback tier)"
+  - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'Chargeback' angle and escalate line"
+  - "src/data/content.ts — CLAUSES[18] (restocking-redelivery-fees) escalate line"
+  - "src/data/content.ts — CLAUSES[23] (account-suspension) escalate line"
 copyright: "Published by an industry body and a card scheme for public information. Short extracts quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "None of these pages names Takealot. PASA and Visa describe how card disputes work in general; each bank applies its own process, and the time limit can differ by dispute type."
 updated: "2026-11-23"
@@ -90,6 +93,9 @@ Card-absent fraud (10.4):
 - **Quick hit 07 (credit card chargeback):** the bank can reverse the payment for goods not received or defective (PASA; Visa 13.1, 13.3) and for a refund not paid (Visa 13.6). "Most South African consumers don't know this exists" is the site's own comment, not from these sources.
 - **Law map, Chargebacks:** "when" lists the grounds above. "Window" gives PASA's 120 days after the statement date, and its warning that other chargebacks can have different time limits; the 180 days for recurring payments is not repeated. "EFT, RTC, PayShap are irrevocable" rests on PASA's Credit Payments page: credit payments are "final and irrevocable", and RTC and PayShap are credit payments. "How" (in writing, with the order and evidence) follows the PASA answer.
 - **Escalation tier 4:** "~120 days" and "card only".
+- **Clause 06 (credit vs refund):** a chargeback when Takealot keeps to credit rests on Visa 13.6, "a credit or refund they were entitled to was not processed".
+- **Clause 19 (restocking and re-delivery fees):** a chargeback on a fee already debited rests on the same ground, once you have asked for the fee back in writing. That the fee is a refund you are "entitled to" is the site's own reading of the clause.
+- **Clause 24 (account suspension):** a bank chargeback for fraudulent card transactions rests on PASA's "A fraudulent transaction was done, using your card details or actual card." and Visa 10.4.
 - **What is ours:** whether a chargeback can run alongside a CGSO complaint. The CGSO's Code lets it decline a complaint that "could more appropriately be dealt with by the police, a court of law, by any regulatory body or through any other dispute resolution process" (2026 Code, clause 13.3.3.3), so the site says to check with both.
 
 Mastercard's rules are not quoted here; the site no longer names them as its source.

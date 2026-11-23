@@ -16,7 +16,7 @@ copyright: "© Google LLC. Short extracts quoted for criticism and review under 
 
 Google Analytics runs on this site through Cloudflare Zaraz (see the privacy note in About). These are Google's own published terms on where that data can go and what governs the transfer. None of them names South Africa.
 
-Google handles analytics data in two roles. For the data it processes for the site, it is a processor under the Data Processing Terms below. Where it uses the data for its own purposes, it is a controller under separate controller terms, which have no clause on where the data is processed. The privacy note's line on where data goes therefore rests on Google's privacy policy page on data transfers, which covers both.
+Google handles analytics data in two roles. For the data it processes for the site, it is a processor under the Data Processing Terms below. Where it uses the data for its own purposes, it is a controller under separate controller terms, which have no clause on where the data is processed. The privacy note's line on where data goes therefore rests on Google's privacy policy page on data transfers, read with section 10.1 of the processor terms below for the data Google processes on the site's behalf.
 
 ## Data transfer frameworks (effective 23 August 2025)
 

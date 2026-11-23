@@ -21,7 +21,7 @@ Both are preserved alongside the CPA by section 2(10): *"No provision of this Ac
 
 ## Prescription: 3 years
 
-Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the s 56 window closed in November 2024.
+Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d), s 12(1)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the s 56 window closed in November 2024.
 
 Prescription is the outer limit, not the only deadline. To cancel the sale (actio redhibitoria) you must act within a reasonable time after you discover the defect, and be able to return the item (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14).
 
