@@ -41,7 +41,7 @@ function walk(dir, out = []) {
 }
 const files = explicit.length
   ? explicit.map((p) => join(ROOT, p))
-  : [...walk(join(ROOT, 'src')), join(ROOT, 'public/llms.txt')].filter(existsSync);
+  : [...walk(join(ROOT, 'src')), join(ROOT, 'public/llms.txt'), join(ROOT, 'public/og-image.svg')].filter(existsSync);
 
 // ── Banned list (keep in step with COPY-GUIDE.md §3) ───────────────────────
 // Each entry: [regex, label]. Word-boundaried, case-insensitive.
@@ -151,8 +151,8 @@ for (const abs of files) {
   const fileWarn = [];
   lines.forEach((line, i) => {
     if (/copy-ok/.test(rawLines[i])) return;
-    if (line.includes('—')) fileErr.push([i + 1, 'em dash']);
-    if (/\s–\s/.test(line)) fileErr.push([i + 1, 'spaced en dash']);
+    if (/—|&mdash;|&#8212;|\\u2014/.test(line)) fileErr.push([i + 1, 'em dash']);
+    if (/\s(?:–|&ndash;|&#8211;|\\u2013)\s/.test(line)) fileErr.push([i + 1, 'spaced en dash']);
     for (const [re, label] of BANNED) if (re.test(line)) fileErr.push([i + 1, label]);
     for (const [re, label] of WARNS) if (re.test(line)) fileWarn.push([i + 1, label]);
     // Markdown heading in Title Case (3+ capitalised words after the first, ignoring short words)
