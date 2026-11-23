@@ -27,7 +27,7 @@ updated: "2026-11-23"
 
 ## Why the site cites this
 
-The article, published one year after Wales's purchase, establishes the marketplace-seller intermediary problem: a third-party seller on Takealot's platform sold a R23,000 Lenovo laptop, the charger exploded, the seller had not provided an invoice, and the seller went unresponsive when Takealot tried to obtain one. The article quotes the Consumer Goods and Services Ombud's stance: that an e-commerce platform hosting third-party products is an **intermediary** for CPA purposes and so must comply with the record-keeping duties that go with it. This grounds the site's marketplace-sellers angle on **CPA s 27 (intermediary) and ECT s 43**. (Description corrected 2026-11-18: it read as if the charger cost R23,000. The R23,000 is the laptop's price: "the warranty on my R23 000 laptop".)
+The article, published one year after Wales's purchase, establishes the marketplace-seller intermediary problem: a third-party seller on Takealot's platform sold a R23,000 Lenovo laptop, the charger exploded, the seller had not provided an invoice, and Takealot told him the seller was "unresponsive" and that they were "unable to supply him with the required invoice". The article quotes the Consumer Goods and Services Ombud's stance: that an e-commerce platform hosting third-party products is an **intermediary** for CPA purposes and so must comply with the record-keeping duties that go with it. This grounds the site's marketplace-sellers angle on **CPA s 27 (intermediary) and ECT s 43**. (Description corrected 2026-11-18: it read as if the charger cost R23,000. The R23,000 is the laptop's price: "the warranty on my R23 000 laptop".)
 
 ## Extracts (fair dealing for criticism and review)
 

@@ -103,7 +103,7 @@ The following is the operative wording of the Returns Policy as fetched from `te
 
 > The item must be returned "in its original product packaging with all the accessories and parts included, and all seals must be intact (if applicable)."
 
-Tags must remain on; items must not have been worn or used. Verbatim (2026-11-17 capture):
+The page's opening checklist, headed "For a quick and easy return, make sure:", also lists these two lines. Verbatim (2026-11-17 capture):
 
 > "the item is returned in its original product packaging and is unused;"
 >

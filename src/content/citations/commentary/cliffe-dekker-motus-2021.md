@@ -21,7 +21,7 @@ Full content not reproduced (publisher copyright). Short summary:
 
 The article analyses the SCA's decision in *Motus Corporation v Wentzel* [2021] ZASCA 40, focusing on s 56 of the CPA (the statutory warranty) rather than s 69 (enforcement). On s 69, CDH describes the SCA's discussion as "remarks" made without full argument, which is consistent with the site's obiter framing. (Corrected 2026-11-18: the description and this line said CDH "treats" the discussion "as obiter"; CDH does not use that word, as noted below.)
 
-Re-checked against the live page 2026-11-17 (the URL now redirects to the `/en/news/publications/...` path; the page is dated 22 Jun 2021, author Justine Krige). The one passage on s 69 reads, verbatim:
+Re-checked against the live page 2026-11-17 (the URL now redirects to the `/en/news/publications/...` path; the page is dated 22 Jun 2021, author Justine Krige). The one passage on the SCA's s 69 discussion reads, verbatim:
 
 > "On appeal, the SCA briefly considered the special pleas raised by Renault before proceeding to deal with the facts of the matter. In spite of the fact that the SCA did not hear the full argument in relation to the issue of internal remedies, it made a number of remarks about restricting a consumer's right to approach the court, given that this right is specifically entrenched in the Constitution, suggesting that it would likely have found that a failure to exhaust internal remedies does not oust the High Court's jurisdiction."
 
