@@ -13,6 +13,7 @@ reverified_on: "2026-11-17"
 corrected_on: "2026-05-07"
 correction_note: "2026-04-24 audit misread the forum-selection qualifier ('even if the disputed amount would typically be heard by a lower court') as absent from live T&Cs; re-verification confirms it has been continuously present. Clause 13 in src/data/content.ts and POLICY_SUMMARY.terms reverted; original misread commit + correction commit both retained in git history."
 used_in:
+  - "src/data/content.ts — CLAUSES[4] (bundle-return) 'why' (pre-packed Bundle Deal price)"
   - "src/data/content.ts — TEMPLATES T11 body (CGSO named as escalation point)"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes)"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction)"
@@ -190,4 +191,4 @@ Wayback captures of this URL relied on, oldest first: [20260425124023](https://w
 
 ## Status
 
-Dated extracts, quoted for criticism and review (Copyright Act 98 of 1978, s 12(1)(b)), for the clauses the site relies on: registered entity, unilateral changes, High Court forum selection, order cancellation, marketplace sellers and resale, plus (since 2026-11-18) order completion, cart and wish list, delivery, deals, gift vouchers and account suspension; companion Returns Policy at [`takealot-returns-2026-04-24.md`](./takealot-returns-2026-04-24.md). Fair-dealing snapshot retained for research / criticism / review.
+Dated extracts, quoted for criticism and review (Copyright Act 98 of 1978, s 12(1)(b)), for the clauses the site relies on: registered entity, unilateral changes, High Court forum selection, order cancellation, marketplace sellers and resale, plus (since 2026-11-18) order completion, cart and wish list, delivery, deals, gift vouchers and account suspension, and (since 2026-11-23) who may register, governing law, sellers' own prices and pre-packed Bundle Deals; companion Returns Policy at [`takealot-returns-2026-04-24.md`](./takealot-returns-2026-04-24.md). Fair-dealing snapshot retained for research / criticism / review.

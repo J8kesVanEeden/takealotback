@@ -23,7 +23,7 @@ updated: "2026-11-23"
 
 ## Why this case matters
 
-The Appellate Division authority for the **copyright-on-packaging carve-out from trade-mark statutory exhaustion**. Under today's Act, even where TMA s 34(2)(d) would otherwise allow parallel importation of genuine goods bearing a registered trade mark, a *separate SA copyright owner* of the packaging or printed inserts can independently block the imports on copyright grounds.
+The Appellate Division authority for the **copyright-on-packaging carve-out from trade-mark statutory exhaustion**. In our reading, under today's Act, even where TMA s 34(2)(d) would otherwise allow parallel importation of genuine goods bearing a registered trade mark, a *separate SA copyright owner* of the packaging or printed inserts can independently block the imports on copyright grounds.
 
 In other words: a parallel import that escapes trade-mark infringement under s 34(2)(d) **may still infringe copyright** in the get-up / wrapper / printed material, where that copyright has been assigned to a SA distributor.
 
@@ -76,7 +76,7 @@ The order (verbatim):
 
 ## Operative principle
 
-Trade-mark statutory exhaustion under TMA s 34(2)(d) is **not the end of the analysis** for parallel imports. A separate copyright in the goods' packaging / printed material, assigned to a SA distributor, provides an independent enforcement route. Importers and re-sellers must check both regimes.
+In our reading, trade-mark statutory exhaustion under TMA s 34(2)(d) is **not the end of the analysis** for parallel imports. A separate copyright in the goods' packaging / printed material, assigned to a SA distributor, provides an independent enforcement route. Importers and re-sellers must check both regimes.
 
 ## Site reliance
 

@@ -19,10 +19,13 @@ const block = (name) => content.match(new RegExp(`export const ${name}[\\s\\S]*?
 const clauses = (block('CLAUSES').match(/\n\s+n:\s*"\d+"/g) || []).length;
 const templates = (block('TEMPLATES').match(/\n\s+\{\s*code:\s*"T\d+"/g) || []).length;
 const tiers = (block('ESCALATION').match(/\n\s+\{\s*tier:\s*\d+,/g) || []).length;
+// The strapline's month comes from LAST_REVIEWED, as in the Hero (LAST_REVIEWED.slice(0, 7)).
+const reviewed = (content.match(/export const LAST_REVIEWED = "(\d{4}\.\d{2})/) || [])[1];
 let svgText = (await readFile(svgPath, 'utf-8'))
   .replace(/\d+ CLAUSES/, `${clauses} CLAUSES`)
   .replace(/\d+ READY-TO-SEND TEMPLATES/, `${templates} READY-TO-SEND TEMPLATES`)
-  .replace(/\d+-TIER ESCALATION/, `${tiers}-TIER ESCALATION`);
+  .replace(/\d+-TIER ESCALATION/, `${tiers}-TIER ESCALATION`)
+  .replace(/(v0\.1 · )\d{4}\.\d{2}/, (m, p) => (reviewed ? `${p}${reviewed}` : m));
 await writeFile(svgPath, svgText);
 const svg = Buffer.from(svgText);
 

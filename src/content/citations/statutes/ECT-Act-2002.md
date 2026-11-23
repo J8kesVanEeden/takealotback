@@ -131,7 +131,7 @@ updated: "2026-11-23"
 
 ## s 44. Cooling-off period
 
-**Site reliance:** The 7-day no-reason cooling-off for online purchases: the headline of Clause 01.
+**Site reliance:** The 7-day no-reason cooling-off for online purchases: Clause 01's ECT s 44 angle and Quick hit 04.
 
 > (1) A consumer is entitled to cancel without reason and without penalty any transaction and any related credit agreement for the supply—
 >
