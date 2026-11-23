@@ -46,16 +46,17 @@ respective owners:
   section 34(1)(c) of the Trade Marks Act 194 of 1993.
 - Quoted excerpts from statutes and case law, which are in the public domain under
   section 12(8)(a) of the Copyright Act 98 of 1978 ("official texts of a legislative,
-  administrative or legal nature"). Quoted extracts from CGSO advisory notes are used
-  as fair dealing for criticism and review (s 12(1)(b)).
+  administrative or legal nature"). Quoted extracts from CGSO and NCC notes, reports and process
+  pages are used as fair dealing for criticism and review (s 12(1)(b)).
 - Summaries and excerpts of Takealot's published returns policy and terms, used under
   section 16 of the Constitution for consumer education, commentary, and criticism,
   and retained as dated snapshots in [`src/content/citations/policies/`](./src/content/citations/policies/)
   under fair dealing for criticism and review (s 12(1)(b) Copyright Act 98 of 1978).
 - Third-party legal commentary and news articles referenced in
   [`src/content/citations/commentary/`](./src/content/citations/commentary/) and
-  [`src/content/citations/press/`](./src/content/citations/press/): link + short excerpt only,
-  never full reproduction. Fair dealing for citation purposes.
+  [`src/content/citations/press/`](./src/content/citations/press/), and service-provider terms in
+  [`src/content/citations/providers/`](./src/content/citations/providers/): link + short excerpt only,
+  never full reproduction. Fair dealing for criticism and review (s 12(1)(b)).
 
 Our own compilation, organisation, and annotation of these materials in
 [`src/content/citations/`](./src/content/citations/) is licensed CC BY 4.0. The underlying third-party
