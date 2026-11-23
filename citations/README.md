@@ -28,7 +28,9 @@ src/content/citations/                    (single source of truth — Astro cont
 ├── advisories/                           (CGSO Advisory Notes)
 ├── policies/                             (Takealot's own published policies — snapshots)
 ├── regulators/                           (CGSO / NCC / IR / ARB / SCC contact + threshold snapshots)
-└── commentary/                           (third-party legal commentary — metadata + short excerpt only)
+├── commentary/                           (third-party legal commentary — metadata + short excerpt only)
+├── press/                                (news reports — metadata + short excerpt only)
+└── providers/                            (service-provider terms, e.g. Google, Cloudflare — short excerpt only)
 
 src/pages/citations/                      (Astro pages that render the collection)
 ├── index.astro                           (auto-generated index — visit /citations)
@@ -71,7 +73,8 @@ South African copyright law (Copyright Act 98 of 1978) determines what we can an
 | `advisories/` | CGSO Advisory Notes | Fair dealing, s 12(1)(b): the CGSO is a private non-profit company, so the s 12(8)(a) official-text exclusion may not cover its notes | **Quoted extracts** with the source named, CGSO / SAFLII URL + `retrieved` date |
 | `policies/` | Takealot's published policies | **Yes (Takealot copyright)** | Snapshot under fair dealing for criticism or review, Copyright Act s 12(1)(b) (research and private study is s 12(1)(a)). Retained to support the site's criticism of the same policy. Full text OK. |
 | `regulators/` | Contact details, monetary thresholds, URLs | None (facts, not expression) | Compiled facts OK |
-| `commentary/` | Third-party legal commentary, news, press | **Yes (publisher copyright)** | **Link + short excerpt only** (never full reproduction). Our quotations are justified by fair dealing for criticism or review, s 12(1)(b) (source and author named, as the proviso requires). |
+| `commentary/`, `press/` | Third-party legal commentary, news, press | **Yes (publisher copyright)** | **Link + short excerpt only** (never full reproduction). Our quotations are justified by fair dealing for criticism or review, s 12(1)(b) (source and author named, as the proviso requires). |
+| `providers/` | Service-provider terms (Google, Cloudflare) | **Yes (provider copyright)** | **Short extracts only**, fair dealing for criticism or review, s 12(1)(b). |
 
 Nothing in this folder is licensed CC BY 4.0 — the content-licence in `CONTENT-LICENSE.md` applies to our own original writing only. Third-party material in `citations/` sits under its own licence; we retain it on the basis described above. Our compilation / organisation of these citations is CC BY 4.0.
 
