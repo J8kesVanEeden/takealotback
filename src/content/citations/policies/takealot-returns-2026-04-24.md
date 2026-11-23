@@ -12,7 +12,7 @@ retrieved: "2026-11-10"
 reverified_on: "2026-11-17"
 corrected_on: "2026-11-10"
 correction_note: "2026-11-10: two transcription errors in this snapshot corrected (coupon-reissue quote; non-returnable list omitted digital items). Neither was a Takealot change, since the 2026-04-25 Wayback capture carries the corrected wording, and neither affected a site claim. Earlier, 2026-05-07: companion T&Cs snapshot's forum-selection note corrected; this file's parallel mention updated to match. See takealot-tcs-2026-04-24.md."
-retrieved_by: "TakealotBack's own audit of the Takealot policy, 2026-04-24; see commit 6f29a2e and ce0357f"
+retrieved_by: "TakealotBack's own audit of the Takealot policy, 2026-04-24; see commits cd2f26c and c60d4ef"
 used_in:
   - "src/data/content.ts — every CLAUSES[*].takealot paraphrase"
   - "src/data/content.ts — POLICY_SUMMARY.returns"
