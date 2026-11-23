@@ -63,7 +63,7 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 
 ## s 22: Notification of security compromises (Condition 7)
 
-**Site reliance:** Clause 24 (account suspension, closure and takeover): if there are reasonable grounds to believe someone unauthorised got into a customer's personal information, Takealot must tell the Information Regulator and the customer, in writing, with enough detail for the customer to protect themselves. (Added 2026-11-18. Verbatim from the gazette text, GG 37067; matches the SAFLII consolidated capture of 2026-11-10, which notes "S 22 commencement: 1 July 2020".)
+**Site reliance:** Clause 24 (account suspension, closure and takeover): if there are reasonable grounds to believe someone unauthorised got into a customer's personal information, Takealot must tell the Information Regulator, and tell the customer in writing, with enough detail for the customer to protect themselves (s 22(1), (4) and (5)). (Added 2026-11-18. Verbatim from the gazette text, GG 37067; matches the SAFLII consolidated capture of 2026-11-10, which notes "S 22 commencement: 1 July 2020".)
 
 > **22.** (1) Where there are reasonable grounds to believe that the personal information of a data subject has been accessed or acquired by any unauthorised person, the responsible party must notify—
 > (a) the Regulator; and

@@ -62,4 +62,4 @@ The aedilitian remedies (actio redhibitoria, actio quanti minoris) are contractu
 
 Prescription is the outer limit only. To cancel with the actio redhibitoria the buyer must also act within a reasonable time after discovering the defect (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14; see [`../cases/Van-Niekerk-FirstRand-ZASCA-187-2025.md`](../cases/Van-Niekerk-FirstRand-ZASCA-187-2025.md)).
 
-This is the basis for the deep-dive's framing of a 3-year window once the CPA runs out. See [`citations/cases/Phame-Paizes-1973.md`](../cases/Phame-Paizes-1973.md), [`Dibley-Furter-1951.md`](../cases/Dibley-Furter-1951.md), and [`Glaston-House-Inag-1977.md`](../cases/Glaston-House-Inag-1977.md) for the substantive aedilitian rules.
+This is the basis for the deep-dive's framing of a 3-year window once the s 56 window closes. See [`citations/cases/Phame-Paizes-1973.md`](../cases/Phame-Paizes-1973.md), [`Dibley-Furter-1951.md`](../cases/Dibley-Furter-1951.md), and [`Glaston-House-Inag-1977.md`](../cases/Glaston-House-Inag-1977.md) for the substantive aedilitian rules.

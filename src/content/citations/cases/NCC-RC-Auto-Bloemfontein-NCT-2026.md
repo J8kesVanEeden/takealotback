@@ -28,7 +28,19 @@ On a defective-goods return under CPA s 56(2) the supplier pays for and carries 
 
 > [19] "… in Edan Traders (Pty) Ltd v National Consumer Tribunal and Others, the court stated that the consumer bears the onus of demonstrating that there were problems, not of showing the cause of the problems."
 
-Order (para 30): contravention of s 56(2)(b) read with s 55(2)(a)–(c) declared prohibited conduct; refund of R244,000; administrative penalty of R100,000; no order as to costs.
+> [5] "… The complainant alleged that on 30 June 2022, she entered into a sales agreement with the respondent to purchase a 2013 VW Amarok for R249 000.00. …"
+
+> [7] "… Instead, the respondent asked the complainant to return the vehicle to its premises in Bloemfontein and informed her that she would have to pay for her own fuel. …"
+
+> [8] "… The respondent, however, declined to cancel the transaction and refused to refund the complainant the purchase price. …"
+
+Order (para 30), which also declares the contravention prohibited conduct (30.2) and makes no order as to costs (30.5):
+
+> [30.1] "The respondent contravened section 56(2)(b) read with section 55(2)(a) to (c) of the CPA."
+
+> [30.3] "The respondent must refund the complainant an amount of R244 000.00, being the amount she paid for the vehicle."
+
+> [30.4] "The respondent must pay an administrative penalty in the amount of R100 000.00 (One Hundred Thousand Rands) within 60 business days from the date of the issuance of this order …"
 
 ## Scope and limits
 

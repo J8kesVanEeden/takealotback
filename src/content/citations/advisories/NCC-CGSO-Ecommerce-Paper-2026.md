@@ -17,7 +17,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[20] (item-substitution) s 20 read with s 19: refuse goods that don't match the order"
   - "src/data/content.ts — LAW_SECTIONS CPA s 19 blurb (inspection right read with s 20)"
 copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
-disclosure: "Takealot is named in the paper only as a market-share statistic (Statista survey), not as a wrongdoer. The paper's own disclaimer: 'The content of this paper should not be construed as findings for or against any e-commerce platform or related providers.'"
+disclosure: "Takealot is named in the paper only in its introduction, as a market-share statistic from a Statista survey (quoted below), not as a wrongdoer. The paper's own disclaimer: 'The content of this paper should not be construed as findings for or against any e-commerce platform or related providers.'"
 updated: "2026-11-23"
 ---
 
@@ -61,6 +61,12 @@ The site therefore presents platform responsibility as the regulators' stated vi
 ### Disclaimer
 
 > "The content of this paper should not be construed as findings for or against any e-commerce platform or related providers."
+
+### Where Takealot is named (Introduction, §1)
+
+The only passage naming Takealot (text of the same NCC-hosted PDF, re-downloaded and searched 2026-11-23):
+
+> "According to Statista’s Global Consumer Survey, Takealot.com and SHEIN were the most popular online stores in South Africa as of September 2024, and in this regard around 62% of the consumers indicated that they bought something from Takealot.com, and 48% did so from SHEIN."
 
 ## Site reliance
 

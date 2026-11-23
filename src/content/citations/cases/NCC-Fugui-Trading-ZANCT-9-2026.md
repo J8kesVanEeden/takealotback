@@ -27,9 +27,15 @@ A displayed return policy of exchange only, not money back, is itself an unfair 
 
 ## Verbatim extracts (SAFLII, opened 2026-11-10)
 
+> [7] "This is an unopposed application in terms of section 73(2)(b) in which the applicant alleges that the respondent has contravened certain provisions of the CPA and, in doing so, has engaged in prohibited conduct."
+
 > [34] "… The evidence before the Tribunal indicate a sign displayed on the respondent's premises stating 'NO MONEY BACK' and 'ATTENTION ALL CUSTOMERS - You are allowed to return a item for another item not for money - Thank you'."
 
 > [36] "Section 48(1)(a)(ii) states that a supplier must not offer to supply, supply or enter into an agreement to supply any goods or services on terms that are unfair, unreasonable or unjust. In this case, no particular transaction is required to prove the respondent's contravention, as the applicant has persuaded the Tribunal that by displaying the notices on its premises, the respondent was offering to supply its goods to consumers on terms that are unfair, unreasonable and unjust. In doing so, the respondent has contravened section 48(1)(a)(ii)."
+
+> [35] "At the hearing, the applicant conceded that it was not able to provide the Tribunal with a particular transaction or instance where the respondent failed to issue a refund or accept the return of any item or defective product to prove its allegations of contraventions of sections 20, 51 and 56. … Therefore, the Tribunal finds that the applicant has failed to prove contraventions of these broad sections."
+
+> [46.4] "The respondent must, within sixty business days of this judgment being issued, pay an administrative fine of R100 000.00 (one hundred thousand rand) into the National Revenue Fund …"
 
 ## Scope and limits
 

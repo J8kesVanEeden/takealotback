@@ -29,11 +29,17 @@ Under CPA s 56(2) **the consumer chooses** the remedy (repair, replace or refund
 
 > [15] "After a technical analysis, the respondent stated that it was a BIOS software problem and offered to run an update on the software in-store. The applicant insisted on a refund, which the respondent refused."
 
-> [28] "… The problem, whether software or hardware-related, rendered the laptop unusable and unfit for purpose. This imperfection is a defect contemplated in section 53(1)."
+> [17] "… A notice of set-down was issued on 21 February 2024 for the matter to be heard unopposed on 8 April 2024,"
+
+> [28] "… The laptop crashed just after three days of purchase. As the laptop was brand new, the applicant expected it to be in good working order and for a durable period, which was different. The problem, whether software or hardware-related, rendered the laptop unusable and unfit for purpose. This imperfection is a defect contemplated in section 53(1)."
 
 > [29] "The respondent failed to adhere to the standards set in section 55(2)(a)-(c), which entitled the applicant to a repair, replacement, or refund under section 56(2). In such cases, the CPA requires the respondent to act according to the consumer's direction. The applicant chose a purchase price refund. The respondent abused its power by dictating the remedy for the applicant. …"
 
-Order: contraventions of ss 55(2)(a)–(c) and 56(2)(b); refund of the purchase price, R21,999, within ten business days.
+Order (para 33): contraventions of ss 55(2)(a)–(c) and 56(2)(b); refund of the purchase price, R21,999, within ten business days.
+
+> [33.1] "The respondent contravened sections 55(2)(a)-(c) and 56(2)(b) amounting to prohibited conduct;"
+
+> [33.2] "The respondent must refund the applicant the purchase price paid for the laptop, namely R21,999.00, within ten business days after the issuing of this ruling; and"
 
 ## Scope and limits
 

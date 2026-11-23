@@ -1,6 +1,7 @@
 ---
 title: "Small Claims Court: monetary jurisdiction and representation rules"
-citation: "Small Claims Courts Act 61 of 1984, ss 15–16 + Ministerial Determination GG 55038 (GoN 7717, 20 July 2026)"
+citation: "Small Claims Courts Act 61 of 1984, s 7 and ss 15–16 + Ministerial Determination GG 55038 (GoN 7717, 20 July 2026)"
+act_url: "https://www.justice.gov.za/legislation/acts/1984-061.pdf"
 court_or_publisher: "Department of Justice and Constitutional Development, RSA"
 date: "2026-07-20"
 primary_url: "https://www.justice.gov.za/scc/docs/20260720-gg55038gon7717-SCC-Amount-Increase-R30000.pdf"
@@ -46,7 +47,17 @@ If your claim is above R30,000, the DoJ page says you can "institute a claim for
 
 ## Representation rule
 
-**No legal representation permitted.** Consumers (and suppliers) represent themselves.
+**No legal representation permitted.** Consumers represent themselves. A company being sued is represented by one of its own directors or officers, not by an attorney.
+
+Small Claims Courts Act 61 of 1984, s 7 (DoJ consolidated text, `justice.gov.za/legislation/acts/1984-061.pdf`, read 2026-11-23):
+
+> "7 Parties who may appear in court
+> (1) Only a natural person may institute an action in a court and, subject to the provisions of section 14 (2), a juristic person may become a party to an action in a court only as defendant.
+> (2) A party to an action shall appear in person before the court and, subject to the provisions of subsection (4), shall not be represented by any person during the proceedings.
+> …
+> (4) A juristic person shall be represented in a court by its duly nominated director or other officer."
+
+The DoJ Small Claims page (fetched 2026-11-23): "You do not need a lawyer to represent you at a Small Claims Court."
 
 ## Filing costs
 

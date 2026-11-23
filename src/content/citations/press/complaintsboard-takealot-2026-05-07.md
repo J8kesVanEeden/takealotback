@@ -43,8 +43,8 @@ ComplaintsBoard is a publicly indexed aggregate of Takealot consumer complaints 
 
 ## Sample of substitution / wrong-item complaints (illustrative; not adopted)
 
-- *Ordered an iPhone 13, got cosmetics* (March 2024): driver collected return twice; second replacement also cosmetics.
-- *Stanley charger* (December 2025): warranty condition: "return all items or no warranty check."
+- *Ordered an iPhone 13, got cosmetics* (March 2024): return collected; the replacement was also cosmetics and was handed back ("I found gentle magic cosmetics I gave it back to the driver").
+- *Stanley charger* (December 2025): warranty condition: "The said i have to return all the items before they even check for the problem."
 - *Lenovo laptop* (April 2024): repaired for OS issue, RAM burnt out the same day on receipt back; warranty denial on RAM.
 
 These narratives are **not** independently verified by the site. They are reproduced here only to show that the substitution / warranty-stuck patterns documented in named-case journalism are also present in self-reported aggregate data.
@@ -54,5 +54,3 @@ These narratives are **not** independently verified by the site. They are reprod
 - **Self-selection bias.** ComplaintsBoard is a grievance-collection platform; satisfied consumers don't post.
 - **No verification.** Posts are not independently verified by the platform or by this site.
 - **Resolution rate.** "1% resolved" reflects the platform's own status flag, which depends on the consumer marking a complaint resolved. Many real-world resolutions never get marked.
-
-Kept only as background **pattern evidence**; it never stands in for the named-case journalism that grounds the legal arguments.

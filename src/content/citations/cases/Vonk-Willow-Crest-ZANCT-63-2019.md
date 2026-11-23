@@ -33,12 +33,28 @@ Quoted on the site (verbatim from para 44.1 of the judgment, SAFLII [2019] ZANCT
 
 ## Facts
 
-The Applicant (Theodorus Vonk) purchased a vehicle from the Respondent (Willow Crest Motors CC) which had a serious gearbox problem. The sales agreement had contained a voetstoots clause, which the Applicant removed before signing by adding the words "CPA shall prevail" (paras 6, 31 and 44.1). The Applicant lodged a complaint first with the Motor Industry Ombudsman of South Africa (MIOSA) under CPA s 72(1)(a), then with the National Consumer Commission, before referring the matter to the Tribunal.
+The Applicant (Theodorus Vonk) purchased a 2008 Nissan X Trail from the Respondent (Willow Crest Motors CC). He says that within an hour of delivery he noticed oil leaking from the gearbox (paras 5 and 9). The sales agreement had contained a voetstoots clause, which the Applicant removed before signing by adding the words "CPA shall prevail" (paras 6, 31 and 44.1). The Applicant lodged a complaint first with the Motor Industry Ombudsman of South Africa (MIOSA) under CPA s 72(1)(a), then with the National Consumer Commission, before referring the matter to the Tribunal.
+
+Verbatim (SAFLII [2019] ZANCT 63, captured 2026-11-17):
+
+> [1] "The Applicant is Theodorus Vonk (hereinafter referred to as “the Applicant”), a consumer who lodged a complaint with the Motor Industry Ombudsman of South Africa (“the MIOSA”) and the National Consumer Commission (“the NCC”), in terms of Section 72(1) (a) of the Consumer Protection Act, 2008 (the CPA or the Act) …"
+
+> [5] "Applicant purchased a 2008 Nissan X Trail motor vehicle (the vehicle) from the Respondent for R139 000. 00 in terms of an offer to purchase dated 19 January 2016 …"
+
+> [6] "The original sale agreement under special conditions of offer included a term that is commonly referred to as a voetstoots clause or a clause in terms of which the vehicle is sold “as is”. The Applicant removed this clause from the sale agreement by adding the words “CPA shall prevail”."
+
+> [9] "Mrs Vonk took delivery of the vehicle on 23 January 2016. Within an hour of Mrs Vonk arriving home the Applicant alleges that he noticed that oil was leaking from the gearbox …"
+
+> [19] "The Respondent did not respond to the MIOSA's findings and the Applicant then referred the complaint to the NCC. …"
 
 ## Held (operative)
 
 - The Tribunal found that the Respondent engaged in prohibited conduct (para 44) by: trying to use the voetstoots clause when selling cars to consumers, as a way of circumventing the Act, even though the Applicant removed the clause before signing (44.1); totally ignoring the consumer's correspondence about the gearbox problems (44.2); and choosing not to repair the gearbox when asked (44.3).
 - Ordered (para 45): refund R46,489.20 for the gearbox repairs and up to R35,000 in other reasonable direct costs, both within 90 days; an administrative fine of R150,000, payable if the Respondent did not pay those amounts in time and suspended for five years provided they were paid; no order as to costs.
+
+> [44] "The Respondent did engage in prohibited conduct, and in breach of the Act, in: 44.1 Trying to illegally use the “voetstoots” clause when selling cars to consumers, as a way of circumventing the provisions of the Act. … 44.2 Acting with total disregard of the consumer's rights when he totally ignored the Applicant's correspondence when the Applicant reported the gearbox problems; and 44.3 Choosing not to attend to and repair the gearbox when asked to do so."
+
+> [45] "Accordingly, the Tribunal makes the following order: 45.1 The Respondent has engaged in prohibited conduct; 45.2 The Respondent is liable, within 90 days of the date of this judgment, to refund the Applicant R46 489.20 for the total costs of gearbox repairs incurred at Mayfair Gearbox in June 2016; 45.3 The Respondent is further liable, within 90 days of the date of this judgment, to refund the Applicant for any other additional reasonable direct costs, to the value of R35 000, … 45.4 If the Respondent fails to comply with the monetary sanctions listed above within 90 days of the date of this judgment, the Respondent is to pay an administrative fine of R150 000.00 (one hundred and Fifty Thousand Rand) … 45.5 The payment of an administrative fine of R150 000 will be suspended for five years, from the date of this judgement, provided that the Applicant pays both stipulated amounts of money within the stipulated time frames; and 45.6 No order is made as to costs."
 
 **Correction (2026-11-18).** An earlier version of this section gave as findings that the voetstoots clause was "a clear breach of CPA s 51" and that the sale breached CPA s 55, and said the Respondent was "ordered to make remedial undertakings". The s 51 and s 55 points are what "The Applicant believed" (para 40.2 and 40.3), not findings, and the order was a refund plus a suspended fine (para 45), not undertakings. Checked against the judgment text (SAFLII [2019] ZANCT 63, captured 2026-11-17).
 

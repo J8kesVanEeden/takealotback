@@ -50,7 +50,19 @@ Where the proprietor has not made out the "substantial economic detriment" case,
 
 ## Facts
 
-Laugh It Off Promotions printed T-shirts that parodied SAB's BLACK LABEL beer trade mark, swapping the brand-related text for political commentary on labour conditions. SAB obtained a High Court interdict on s 34(1)(c) anti-dilution grounds. The SCA upheld the interdict. The Constitutional Court reversed.
+Laugh It Off Promotions printed T-shirts that copied the look of SAB's CARLING BLACK LABEL beer trade marks and changed the words: "Black Label" became "Black Labour" and "Carling Beer" became "White Guilt". SAB obtained a High Court interdict on s 34(1)(c) anti-dilution grounds. The SCA upheld the interdict. The Constitutional Court reversed.
+
+Verbatim (same SAFLII capture; paragraph numbers not given because the capture's text drops SAFLII's list numbering):
+
+> "… The words “Black Label” on the respondent's registered trade marks were replaced, on the T-shirt, with “Black Labour”; the respondent's “Carling Beer” was substituted with “White Guilt”; and where written “America's lusty lively beer” and “enjoyed by men around the world”, the applicant had printed “Africa's lusty lively exploitation since 1652” and “No regard given worldwide”, respectively."
+
+> "The respondent approached the High Court for an interdict on the ground that the unauthorised use of its registered trade marks by the applicant in the course of trade offended the anti-dilution provisions of section 34(1)(c). …"
+
+> "The High Court upheld the respondent's claim and granted with costs the restraint order sought. …"
+
+> "The SCA dismissed the appeal on several grounds. …"
+
+> Order: "The appeal against the judgment and order of the Supreme Court of Appeal succeeds. The order of the Supreme Court of Appeal is set aside. The order of the High Court is set aside and replaced by the following order: “Application dismissed”. …"
 
 ## Cross-references
 

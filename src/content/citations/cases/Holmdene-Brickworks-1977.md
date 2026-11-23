@@ -7,7 +7,7 @@ case_number: "173/75"
 lawlibrary_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/1977/61/eng@1977-05-27"
 wayback_url: "https://web.archive.org/web/*/https://lawlibrary.org.za/akn/za/judgment/zasca/1977/61/eng@1977-05-27"
 wikipedia_url: "https://en.wikipedia.org/wiki/Holmdene_Brickworks_v_Roberts_Construction"
-metaDescription: "Appellate Division 1977: leading authority on the merchant-seller test for consequential damages under the actio empti in sales of defective goods."
+metaDescription: "Appellate Division 1977: commonly cited (in secondary sources) for the merchant-seller test for consequential damages under the actio empti in sales of defective goods."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — actio empti consequential-damages test"
@@ -21,7 +21,7 @@ updated: "2026-11-23"
 
 ## Why this case matters
 
-The leading SA Appellate Division authority on the **merchant/manufacturer-seller test** for consequential damages in sale-of-goods disputes. Where a buyer wants more than aedilitian relief (refund / price reduction), i.e. **consequential losses** flowing from the defective goods, the *actio empti* is the route, and it requires either:
+An Appellate Division decision commonly cited (in secondary sources) for the **merchant/manufacturer-seller test** for consequential damages in sale-of-goods disputes. Where a buyer wants more than aedilitian relief (refund / price reduction), i.e. **consequential losses** flowing from the defective goods, the *actio empti* is the route, and it requires either:
 - an **express warranty** by the seller; or
 - **fraud** by the seller; or
 - a **merchant/manufacturer seller** who publicly professes skill in the production or sale of goods of the kind sold.
@@ -59,7 +59,7 @@ To recover consequential damages from a seller of defective goods (beyond aedili
 
 `src/content/pages/aedilitian-remedies.md` cites Holmdene as the authority for the consequential-damages constraint:
 
-> "Consequential damages (costs you incurred because the item failed) require the separate *actio empti*, which needs an express warranty, fraud, or a 'merchant/manufacturer seller' who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A))."
+> "Consequential damages (costs you incurred because the item failed) require the separate *actio empti*, which needs an express warranty, fraud, or a "merchant/manufacturer seller" who publicly professes skill (the rule usually traced to *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A))."
 
 Note that under the CPA, **strict product liability for harm caused by unsafe goods** sits in s 61: broader and easier to invoke than the common-law *actio empti*. The Holmdene route is the common-law fallback for buyers outside or beyond the s 61 frame.
 

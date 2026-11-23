@@ -17,15 +17,17 @@ updated: "2026-11-23"
 # Ntoatsabone v Hisense SA Sales Holdings (Pty) Ltd and Another
 ## [2026] ZANCT 21 | National Consumer Tribunal | 31 March 2026
 
-A consumer bought a 70-inch smart TV from a retailer on 30 November 2021, was sent to the manufacturer when it failed, and applied to the Tribunal on 25 April 2025.
+A consumer bought a 70-inch smart TV from a retailer on 30 November 2021, was sent to the manufacturer when apps stopped working, and applied to the Tribunal on 25 April 2025.
 
 ## Proposition cited on the site
 
 The three-year limit in CPA s 116(1) is enforced: a complaint brought too late will not be heard on its merits.
 
-## Verbatim extract (SAFLII, opened 2026-11-10)
+## Verbatim extracts (SAFLII, opened 2026-11-10)
 
-> [12] "… Since the applicant filed his application with the Tribunal on 25 April 2025, the Tribunal is prevented from considering the merits of the matter, as the matter was referred more than three years after the conduct that gave rise to the complaint. On this ground, the application is time-barred in terms of section 116(1)(a)."
+> [7] "On 30 November 2021, the appellant purchased a 70-inch Smart TV for R14,999.00 from Game in Bloemfontein. … In early 2023, after a long struggle to understand the television's functionality, he noticed he could not download certain applications, and that the Showmax application had stopped working. … He complained to Game but submits that he was told to raise his query with the first respondent instead. …"
+
+> [12] "The appellant submits that he purchased the television on 30 November 2021 mainly because of the product's features. It stands to reason that the features, were part of the representation made at the time of the sale at Game. Since the applicant filed his application with the Tribunal on 25 April 2025, the Tribunal is prevented from considering the merits of the matter, as the matter was referred more than three years after the conduct that gave rise to the complaint. On this ground, the application is time-barred in terms of section 116(1)(a)."
 
 ## Scope and limits
 
