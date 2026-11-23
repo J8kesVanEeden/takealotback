@@ -39,16 +39,19 @@ From Wendy Knowler, "When Takealot humans try to box clever with customers", Bus
 
 ### Arnold's argument as quoted by Knowler
 
-> "It's not possible to look at the quality of the item without opening the bag. I dispute the fact that with online purchases one is expected to satisfy oneself as the quality of a product from the photograph alone, without looking at the actual item, which one would be able to do when purchasing in a physical shop."
+> "It's not possible to look at the quality of the item without opening the bag," she told me. "I dispute the fact that with online purchases one is expected to satisfy oneself as the quality of a product from the photograph alone, without looking at the actual item, which one would be able to do when purchasing in a physical shop."
 
 ### Takealot's admission
 
-> "We apologise for the inconvenience caused; both customers have since been refunded. Unfortunately, both [rejected returns] were due to human error. The employees involved have received fresh training on this specific matter, to minimise future incidents of this kind."
+> "We apologise for the inconvenience caused; both customers have since been refunded," a Takealot spokesperson told me.
+>
+> "Unfortunately, both [rejected returns] were due to human error. The employees involved have received fresh training on this specific matter, to minimise future incidents of this kind.
 >
 > **"Takealot does not expect shoppers to return products in the original, undamaged or altered Takealot box."**
 
 ## Site reliance
 
+- Triage, Takealot box option: "Takealot has publicly said it doesn't expect that back" (no `used_in` line: the resolver has no destination for the triage modal).
 - **Clause 02 (original packaging) primary anchor.** The Takealot admission is Takealot's own statement on the point. When a Takealot agent rejects a return for "writing on box" or "opened cellophane", the consumer can quote Takealot to itself.
 - Refused, then put right after Knowler's query, with one "human error" admission covering both.
 

@@ -9,6 +9,7 @@ retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
   - "src/components/PoliciesSection.astro — 'Registered entity' line (Naspers controlling stake August 2017; effective 96% from December 2017)"
+  - "src/components/Footer.astro — disclaimer naming Naspers as Takealot's parent"
 copyright: "Moneyweb. Short excerpt / summary only: fair dealing for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 updated: "2026-11-23"
 ---

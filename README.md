@@ -68,8 +68,9 @@ verification pass left statute citations and case references embedded that aren'
 easy to reconstruct. If something looks wrong, open an issue. Don't silently
 "fix" it.
 
-For small corrections (a typo, a phone number), edit `src/data/content.ts` directly
-in the GitHub web UI and commit. Cloudflare redeploys in about a minute.
+For a typo, edit `src/data/content.ts` directly in the GitHub web UI and commit.
+Cloudflare redeploys in about a minute. For a phone number or any other fact, follow
+OPERATIONS.md first: refresh the citation, then update every place that shows it.
 
 ## Licences
 

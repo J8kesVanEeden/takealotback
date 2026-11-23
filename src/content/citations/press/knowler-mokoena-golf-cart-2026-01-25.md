@@ -54,6 +54,7 @@ From Wendy Knowler, Consumer Lookout, News24, 25 January 2026. Quoted under s 12
 
 ## Site reliance
 
+- Triage, missing components option: "Takealot has told the press missing components must be reported immediately on receipt" (no `used_in` line: the resolver has no destination for the triage modal).
 - **Clause 02 (original packaging) anchor angle.** A missing component unrelated to the defect does not, in law, defeat the s 56 claim. Knowler's framing is direct.
 - Report missing components on delivery even if you don't want them: it closes the procedural-rejection door before it opens.
 - **Pattern (third case for Clause 02):** Shapshak (brown box), Arnold (cellophane bag) and Mokoena (missing cupholder): three named cases of Takealot using packaging/component grounds to refuse returns, all reversed on escalation.

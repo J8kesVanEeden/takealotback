@@ -92,6 +92,7 @@ In the article this reply follows the power-bank cases:
 
 ## Site reliance
 
+- Triage, recalled-item options: "return them to a point of purchase for a refund", from the NCC notice extract (no `used_in` line: the resolver has no destination for the triage modal).
 Rewritten 2026-11-10 after the attribution audit (an internal review of every source attribution on the site). The earlier version leaned on CPA s 19, s 58, "Chapter 3" and an "after investigation / unreasonable risk of harm" reading of s 60; none of those survive a check against the Act.
 
 - **The recall notice**: the NCC notice quoted above tells consumers to "return them to a point of purchase for a refund". That instruction is the consumer's main route once s 56's six months have passed. The NCC's own ESR notice (thencc.org.za/product-safety-recall-esr-halolock-wireless-power-banks/, dated 8 April 2026, read by us on 2026-11-10) describes the recall as notified by the supplier, not as an NCC order under s 60(2).

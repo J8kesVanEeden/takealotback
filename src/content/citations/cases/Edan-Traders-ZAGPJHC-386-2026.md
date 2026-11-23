@@ -50,6 +50,7 @@ In a defective-goods dispute under the CPA, **the consumer has to show that ther
 
 ## Site reliance
 
+- Triage, "Return refused on a technicality" › the "wear and tear" / consumer damage option and the "Not accepted as damaged on delivery" option (no `used_in` line: the resolver has no destination for the triage modal).
 - Clause 03 (damage exclusions), "Edan Traders v NCT" angle: when Takealot rejects a return as consumer damage, a surge or unintended use, it has to prove that; the consumer doesn't have to prove the cause of the fault. (Clause 08 cites *Wingfield*, not Edan; corrected 2026-11-17; angle label corrected from "Onus on supplier" 2026-11-18.)
 - Templates T03 and T16: cited as the Full Court that relied on *Toyota* for the supplier's onus to prove the exclusion it relies on.
 - `/onus-of-proof` deep-dive.

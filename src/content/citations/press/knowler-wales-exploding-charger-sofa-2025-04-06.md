@@ -17,6 +17,7 @@ disclosure: "News24 (Media24) and Takealot (Takealot Group) share Naspers as ult
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) angle on intermediary obligations + invoice availability"
   - "src/data/content.ts — TEMPLATES T11 body (CGSO view: platform as intermediary)"
+  - "src/data/content.ts — LAW_SECTIONS CPA s 27 blurb (CGSO view: platform as intermediary)"
   - "../press/knowler-wales-exploding-charger-followup-2025-04-13.md — companion follow-up"
 copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 updated: "2026-11-23"
@@ -63,6 +64,7 @@ In his own words:
 
 ## Site reliance
 
+- Law map, CPA s 27 blurb: "The CGSO's published interpretation is that an e-commerce platform hosting third-party sellers is an intermediary for CPA purposes" rests on the Soobrathi quote above.
 - The CGSO statement is the central authority for the site's argument that Takealot, *as a hosting platform*, owes the consumer the records the consumer needs to exercise warranty / refund rights, even when the underlying sale is by a third-party seller. The intermediary stance is a regulatory interpretation, not adjudicated case law, but it is the published view of the body Takealot is statutorily required to participate with.
 - The case is followed up in the 13 April 2025 piece (see companion citation), where Takealot reverses position and provides Wales a replacement laptop.
 

@@ -150,10 +150,20 @@ export function resolveUniqueCitations(stats: string[]): CitationLink[] {
  * matches. Used to power the "Sources" footer on deep-dive pages and
  * email templates.
  */
+// A bare "s 44" / "section 23" only means the CPA when the text names no
+// other Act (or names the CPA too). Without this, ECT, POPIA, TMA and
+// Constitution sections pulled in a CPA chip.
+const BARE_SECTION = PATTERNS[PATTERNS.length - 1];
+const NAMES_CPA = /\bCPA\b|Consumer Protection Act/i;
+const NAMES_OTHER_ACT = /\bECT\b|Electronic Communications and Transactions|\bPOPIA\b|Protection of Personal Information|\bTMA\b|Trade Marks|Constitution|National Credit Act|\bNCA\b|Prescription Act/i;
+
 export function scanForCitations(text: string): CitationLink[] {
   const seen = new Set<string>();
   const out: CitationLink[] = [];
-  for (const { test, link } of PATTERNS) {
+  const skipBare = NAMES_OTHER_ACT.test(text) && !NAMES_CPA.test(text);
+  for (const entry of PATTERNS) {
+    const { test, link } = entry;
+    if (entry === BARE_SECTION && skipBare) continue;
     if (test.test(text) && !seen.has(link.url)) {
       seen.add(link.url);
       out.push(link);

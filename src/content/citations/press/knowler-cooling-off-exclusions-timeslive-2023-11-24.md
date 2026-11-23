@@ -62,6 +62,7 @@ Takealot told Nikki her non-returnable books had **no warranty at all**, when in
 
 ## Site reliance
 
+- "South Africa's biggest online retailer" in the site's JSON-LD (`src/lib/schema.ts`), llms.txt and llms-full.txt rests on "the country's largest e-tailer" above (no `used_in` line for those machine-readable files).
 - **Clause 10 (non-returnable items):** In our reading, and Knowler's, Takealot's *"No warranty at all"* framing on books is wrong. ECT s 42(2) only disapplies s 44 cooling-off; CPA s 56 still runs. A book that is defective (binding faulty, pages missing, wrong content) is still defective goods.
 - **Plain-language examples of ECT s 42(2) exclusions**: useful when explaining what *is* legitimately non-coolable. Knowler's list is partial; use the statute for the full list.
 - **Risk-of-loss-in-transit:** retailer and third-party courier carry the risk until delivery; consumer not stuck with a "deal with the courier" deflection.
