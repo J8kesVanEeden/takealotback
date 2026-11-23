@@ -11,7 +11,7 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) 'Pure Silk v Martin' angle"
   - "src/data/content.ts — LAW_SECTIONS CPA s 69 'Enforcement routes' blurb"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Pure Silk Invest 2 (Pty) Ltd t/a Group 1 Nissan Kuils River v Martin

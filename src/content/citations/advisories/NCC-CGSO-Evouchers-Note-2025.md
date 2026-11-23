@@ -1,5 +1,5 @@
 ---
-title: "NCC and CGSO explanatory note — e-commerce platforms and e-vouchers (13 July 2025)"
+title: "NCC and CGSO explanatory note: e-commerce platforms and e-vouchers (13 July 2025)"
 citation: "National Consumer Commission and Consumer Goods and Services Ombud, 'Explanatory Note: Understanding your options when transacting with e-commerce platforms and e-vouchers', 13 July 2025"
 court_or_publisher: "National Consumer Commission (NCC) and Consumer Goods and Services Ombud (CGSO)"
 date: "2025-07-13"

@@ -1,5 +1,5 @@
 ---
-title: "ENSafrica — Straight shot to the courts for consumers litigating under the CPA?"
+title: "ENSafrica: Straight shot to the courts for consumers litigating under the CPA?"
 publication: "ENSafrica"
 date: "2022-07-13"
 date_note: "The ENS page carries no date; 13 July 2022 is the date on the Legal 500 republication of the same article (alternate_url), checked 2026-11-17."
@@ -12,10 +12,10 @@ retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
   - "Provenance — supports post-Motus s 69 commentary picked up in CLAUSES[12] angle"
-copyright: "ENSafrica. Short excerpt / summary only — fair dealing."
+copyright: "ENSafrica. Short excerpt / summary only: fair dealing."
 ---
 
-# ENSafrica — Straight shot to the courts for consumers
+# ENSafrica: Straight shot to the courts for consumers
 
 Short summary: commentary on post-Motus s 69 litigation, including the Steynberg / Tammy Taylor Nails preliminary jurisdictional ruling. Useful secondary source for the post-Motus trajectory, though the site no longer cites Steynberg directly.
 

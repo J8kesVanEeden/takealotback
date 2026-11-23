@@ -19,7 +19,7 @@ const CITATION_GROUP_LABEL: Record<string, string> = {
 //
 //   1. The 3 long-form deep-dive pages (onus-of-proof, aedilitian-remedies,
 //      limits) — primary content updates.
-//   2. The citations evidence vault  — every
+//   2. The citations evidence vault — every
 //      statute / judgment / advisory / regulator detail / Takealot policy
 //      snapshot / third-party commentary the site relies on.
 //
@@ -74,7 +74,7 @@ export async function GET(context: APIContext) {
         (retrieved ? ` on ${retrieved}` : '') +
         ' for the TakealotBack.com evidence vault.';
       return {
-        title: `${entry.data.title}${citation ? ` — ${citation}` : ''}`,
+        title: `${entry.data.title}${citation ? `: ${citation}` : ''}`,
         description,
         pubDate: asDate(retrieved) ?? asDate(date) ?? reviewed,
         categories: [groupLabel],
@@ -87,12 +87,12 @@ export async function GET(context: APIContext) {
   const items = [...deepDiveItems, ...citationItems];
 
   return rss({
-    title: 'TakealotBack.com — deep dives & citations',
+    title: 'TakealotBack.com: deep dives & citations',
     description:
-      "Long-form South African consumer-law explainers and the underlying citations vault — every statute, judgment, advisory, regulator detail, Takealot policy snapshot, and third-party commentary the site relies on. Non-commercial, CC BY 4.0.",
+      "Long-form South African consumer-law explainers and the underlying citations vault: every statute, judgment, advisory, regulator detail, Takealot policy snapshot, press report and third-party commentary the site relies on. Non-commercial, CC BY 4.0.",
     site,
     items,
-    customData: `<language>en-ZA</language><copyright>CC BY 4.0 — Milk Moon Studio</copyright>`,
+    customData: `<language>en-ZA</language><copyright>CC BY 4.0, Milk Moon Studio</copyright>`,
     xmlns: { atom: 'http://www.w3.org/2005/Atom' },
     trailingSlash: false,
   });

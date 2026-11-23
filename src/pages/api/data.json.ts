@@ -41,7 +41,7 @@ export const GET: APIRoute = () => {
       escalation_tiers: ESCALATION.length,
       faq: FAQ.length,
       warranty_angles: WARRANTY_ANGLES.length,
-      playbook: PLAYBOOK.length,
+      playbook: PLAYBOOK.length, // copy-ok: public API key, not prose
     },
     clauses: CLAUSES,
     templates: TEMPLATES,
@@ -50,7 +50,7 @@ export const GET: APIRoute = () => {
     escalation: ESCALATION,
     faq: FAQ,
     warranty_angles: WARRANTY_ANGLES,
-    playbook: PLAYBOOK,
+    playbook: PLAYBOOK, // copy-ok: public API key, not prose
     policy_summary: POLICY_SUMMARY,
   };
 

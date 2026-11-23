@@ -36,3 +36,4 @@ pnpm-debug.log*
 # listed in .git/info/exclude on the maintainer's machine.
 /internal
 .playwright-mcp/
+

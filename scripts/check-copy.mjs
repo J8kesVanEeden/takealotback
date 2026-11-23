@@ -39,7 +39,7 @@ function walk(dir, out = []) {
   return out;
 }
 const files = explicit.length
-  ? explicit.map((p) => join(ROOT, p))
+  ? explicit.flatMap((p) => (statSync(join(ROOT, p)).isDirectory() ? walk(join(ROOT, p)) : [join(ROOT, p)]))
   : [...walk(join(ROOT, 'src')), join(ROOT, 'public/llms.txt'), join(ROOT, 'public/og-image.svg')].filter(existsSync);
 
 // ── Banned list ─────────────────────────────────────────────────────────────
@@ -78,14 +78,12 @@ const BANNED = [
   [/\bnuanced?\b/i, 'nuance'],
   [/\bholistic\b/i, 'holistic'],
   [/\bstreamlin(?:e|ed|ing)\b/i, 'streamline'],
-  [/\bweaponi[sz](?:e|ed|es|ing)\b/i, 'weaponised'],
   [/\barsenal\b/i, 'arsenal'],
-  [/\bplaybook\b/, 'playbook (as metaphor)'],
   // Transitions / signposting
   [/(?:^|[.!?]\s+|["'`>]\s*)(?:Moreover|Furthermore|Additionally|Notably|Importantly|Ultimately|Crucially|Indeed),/, 'sentence-opening transition'],
   [/\bit(?:'s| is) worth (?:noting|mentioning|remembering)\b/i, "it's worth noting"],
   [/\bit(?:'s| is) important to (?:note|remember|understand)\b/i, "it's important to note"],
-  [/\bin (?:conclusion|summary|short|essence)\b/i, 'summary signpost'],
+  [/(?:^|[.!?]\s+|["'`>]\s*)In (?:conclusion|summary|short|essence),/, 'summary signpost'],
   [/\bat the end of the day\b/i, 'at the end of the day'],
   [/\bhere(?:'s| is) the (?:thing|kicker|catch|deal)\b/i, "here's the thing"],
   [/\blet(?:'s| us) (?:dive|unpack|break (?:it|this) down)\b/i, "let's dive in"],
@@ -123,14 +121,30 @@ const WARNS = [
 const blank = (s) => s.replace(/[^\n]/g, ' ');
 function strip(text, file) {
   let t = text;
-  const isCode = /\.(ts|astro|mjs)$/.test(file);
+  const isCode = /\.(ts|astro|mjs|svg)$/.test(file);
   // HTML comments and block comments
   t = t.replace(/<!--[\s\S]*?-->/g, blank).replace(/\/\*[\s\S]*?\*\//g, blank);
   // Line comments (not URLs)
   t = t.replace(/(^|[\s;{}(),])\/\/[^\n]*/g, (m, p) => p + blank(m.slice(p.length)));
   // Quotes: in code only escaped \"…\" and curly quotes; in markdown straight quotes too
   if (isCode) t = t.replace(/\\"(?:(?!\\")[^\n])*\\"/g, blank).replace(/“[^”\n]*”/g, blank);
-  else t = t.replace(/"[^"\n]*"/g, blank).replace(/“[^”\n]*”/g, blank);
+  else {
+    // Markdown front matter: `key: "value"` is YAML, not a quote. Lint the value, but blank
+    // escaped quotes inside it. `used_in:` list items are provenance paths (the page renders
+    // them with the dash swapped out), so they're skipped.
+    const fm = t.match(/^---\n[\s\S]*?\n---\n/);
+    let head = '';
+    let body = t;
+    if (fm) {
+      head = fm[0]
+        .replace(/^\s+-\s+".*$/gm, blank)
+        .replace(/\\"(?:(?!\\")[^\n])*\\"/g, blank)
+        .replace(/“[^”\n]*”/g, blank);
+      body = t.slice(fm[0].length);
+    }
+    body = body.replace(/"[^"\n]*"/g, blank).replace(/“[^”\n]*”/g, blank);
+    t = head + body;
+  }
   // Markdown blockquotes
   t = t.replace(/^\s*>.*$/gm, blank);
   // Front-matter keys that hold URLs/paths, not prose

@@ -1,5 +1,5 @@
 ---
-title: "Knowler — non-refundable T-shirt is still refundable (Dewey)"
+title: "Knowler: non-refundable T-shirt is still refundable (Dewey)"
 citation: "News24, Consumer Lookout, 02 November 2025"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-11-02"
@@ -21,13 +21,13 @@ copyright: "© Media24 / News24. Quoted under fair dealing for criticism and rev
 
 ## Why the site cites this
 
-The article confirms — with named consumer, named retailer, dated transaction, and Takealot's own admission — that a Takealot listing tag of "non-refundable" applied to an item that did not fall within any statutory carve-out (a R450 T-shirt). The site's clause on non-returnable items relies on the article to ground the angle that **a supplier listing tag cannot expand the carve-outs in s 42(2) of the ECT Act or override the s 44 cooling-off right**.
+The article confirms (with named consumer, named retailer, dated transaction, and Takealot's own admission) that a Takealot listing tag of "non-refundable" was applied to an item that did not fall within any statutory carve-out (a R450 T-shirt). The site's clause on non-returnable items relies on the article to ground the angle that **a supplier listing tag cannot expand the carve-outs in s 42(2) of the ECT Act or override the s 44 cooling-off right**.
 
 ## Verbatim extracts (fair-dealing quotations)
 
 ### The transaction
 
-Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot in different sizes — the listed item was tagged "non-refundable."
+Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot in different sizes. The listed item was tagged "non-refundable."
 
 ### The refusal
 
@@ -56,7 +56,7 @@ Tracey Dewey purchased two R450 *"Rock Ts The Offspring"* T-shirts on Takealot i
 ## Site reliance
 
 - ECT s 42(2) carves out specific categories from the s 44 cooling-off right (already covered in the site's Clause 10). The article shows the carve-outs cannot be extended by a listing tag.
-- Takealot's statement is significant: it called the refusal "the result of a human error during the return process" and acknowledged "the listing error". The tag was not presented as policy. That matters when consumers are asking the supplier to reverse a refusal.
+- Takealot called the refusal "the result of a human error during the return process" and acknowledged "the listing error". The tag was not presented as policy. That matters when consumers are asking the supplier to reverse a refusal.
 - Clause 10's angle points readers to the credit-vs-refund election (Clause 06). Knowler's note that within the cooling-off period "you are entitled to insist on a refund" supports that pointer; Clause 06 itself does not cite this article.
 
 (Corrected 2026-11-18: the description called it a "wrong-size" return, which is not in the extracts above (they say only that she bought two T-shirts in different sizes); `used_in` listed `POLICY_SUMMARY.returns`, which does not mention the article or listing tags; and this section said the article supports Clause 06 directly. Takealot's statement is now quoted as it reads: the human error was "during the return process", and the listing error was acknowledged separately.)

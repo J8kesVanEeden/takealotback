@@ -1,7 +1,8 @@
 ---
-title: "Cliffe Dekker Hofmeyr — Motus v Wentzel commentary"
+title: "Cliffe Dekker Hofmeyr: Motus v Wentzel commentary"
 publication: "Cliffe Dekker Hofmeyr (Corporate & Commercial Alert)"
-date: "2021-06-23"
+date: "2021-06-22"
+date_note: "Alert titled 23 June 2021; page dated 22 Jun 2021."
 primary_url: "https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
 wayback_url: "https://web.archive.org/web/*/https://www.cliffedekkerhofmeyr.com/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
 wayback_url_dated: "https://web.archive.org/web/20261117210830/https://www.cliffedekkerhofmeyr.com/en/news/publications/2021/Corporate/Corporate-and-Commercial-Alert-23-June-2021-Not-every-faulty-Bluetooth-should-have-its-day-in-court-a-discussion-of-consumer-protection-in-Motus-Corporation-Pty-Ltd-and-another-v-Wentzel.html"
@@ -10,10 +11,10 @@ retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus angle — supports the obiter characterisation of s 69(d) reading"
-copyright: "Cliffe Dekker Hofmeyr. Short excerpt / summary only — fair dealing for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
+copyright: "Cliffe Dekker Hofmeyr. Short excerpt / summary only: fair dealing for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 ---
 
-# Cliffe Dekker Hofmeyr — Motus v Wentzel commentary
+# Cliffe Dekker Hofmeyr: Motus v Wentzel commentary
 
 Full content not reproduced (publisher copyright). Short summary:
 

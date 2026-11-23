@@ -1,5 +1,5 @@
 ---
-title: "CGSO Advisory Note 1 — Implied Warranty of Quality / Consumer's Rights Regarding Defective Goods"
+title: "CGSO Advisory Note 1: Implied Warranty of Quality / Consumer's Rights Regarding Defective Goods"
 citation: "[2021] ZACGSO 1 (1 March 2021)"
 court_or_publisher: "Consumer Goods and Services Ombud"
 date: "2021-03-01"
@@ -11,15 +11,15 @@ cgso_index: "https://www.cgso.org.za/advisory-notes/"
 metaDescription: "CGSO Advisory Note 1 (2021; withdrawn from the CGSO site pending review, still on SAFLII): refund rights apply whatever the store policy; inspection only for a genuine reason, item back within 7–10 days if sent away."
 retrieved: "2026-11-10"
 corrected_on: "2026-11-10"
-correction_note: "Until 2026-11-10 the site cited this Note as confirming that the onus is on the supplier within the 6-month s 56 window. The Note does not say that: para 9.2 records that the CPA does not presume a defect manifesting within 6 months existed at sale. The onus point is now cited to Edan Traders v NCT [2026] ZAGPJHC 386 (Full Court) and related judgments; this Note is cited only for what it says (paras 9.3 and 13.1). The cgso.org.za PDF link (now 404) was removed: the CGSO withdrew its Advisory Notes from its website pending review."
+correction_note: "Until 2026-11-10 the site cited this Note as confirming that the onus is on the supplier within the 6-month s 56 window. The Note does not say that: para 9.2 records that the CPA does not presume a defect manifesting within 6 months existed at sale. The onus point is now cited to Edan Traders v NCT [2026] ZAGPJHC 386 (Full Court) and related judgments; this Note is cited only for what it says (paras 9.2, 9.3 and 13.1). The cgso.org.za PDF link (now 404) was removed: the CGSO withdrew its Advisory Notes from its website pending review."
 used_in:
   - "src/data/content.ts — CLAUSES[19] (inspection-assessment-delay) 'CGSO Advisory Note 1' angle"
   - "src/data/content.ts — TEMPLATES T16 (inspection deadline) body"
   - "src/content/pages/onus-of-proof.md — 'The CGSO view' section"
-copyright: "No copyright — published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
+copyright: "No copyright: published by an accredited Ombud established under CPA s 82; functions as a regulatory text"
 ---
 
-# CGSO Advisory Note 1 — Consumer's Rights Regarding Defective Goods
+# CGSO Advisory Note 1: Consumer's Rights Regarding Defective Goods
 ## [2021] ZACGSO 1 | 1 March 2021
 
 ## Status of the Note
@@ -63,7 +63,7 @@ The Note also does not deal with store credit vs refund.
 
 ## Cross-references
 
-- CPA s 56 — see [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md)
-- CGSO compulsory participation — see [`citations/cases/CGSO-Voltex-ZAGPPHC-309-2021.md`](../cases/CGSO-Voltex-ZAGPPHC-309-2021.md)
-- CGSO contact details — see [`citations/regulators/cgso-contacts-2026-04-24.md`](../regulators/cgso-contacts-2026-04-24.md)
-- Companion Advisory Note 11 (voetstoots) — see [`./CGSO-Advisory-Note-11.md`](./CGSO-Advisory-Note-11.md)
+- CPA s 56: see [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md)
+- CGSO compulsory participation: see [`citations/cases/CGSO-Voltex-ZAGPPHC-309-2021.md`](../cases/CGSO-Voltex-ZAGPPHC-309-2021.md)
+- CGSO contact details: see [`citations/regulators/cgso-contacts-2026-04-24.md`](../regulators/cgso-contacts-2026-04-24.md)
+- Companion Advisory Note 11 (voetstoots): see [`./CGSO-Advisory-Note-11.md`](./CGSO-Advisory-Note-11.md)

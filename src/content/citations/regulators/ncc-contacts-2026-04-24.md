@@ -1,5 +1,5 @@
 ---
-title: "NCC — current contact details"
+title: "NCC: current contact details"
 citation: "thencc.org.za"
 court_or_publisher: "National Consumer Commission of South Africa"
 date: "2026-04-24"
@@ -11,10 +11,10 @@ retrieved_by: "Direct WebFetch of the NCC homepage, 2026-04-24; re-checked 2026-
 used_in:
   - "src/data/content.ts — ESCALATION[4] (NCC tier)"
   - "src/components/LawSection.astro — Bodies card"
-copyright: "Facts (contact details) — not copyrightable."
+copyright: "Facts (contact details), not copyrightable."
 ---
 
-# NCC — current contact details (verified 2026-04-24; re-verified 2026-11-10)
+# NCC: current contact details (verified 2026-04-24; re-verified 2026-11-10)
 
 ## Official name
 
@@ -25,7 +25,7 @@ National Consumer Commission of South Africa
 | Channel | Value |
 |---|---|
 | Website (current) | `thencc.org.za` |
-| Website (old/dead) | `thencc.gov.za` — does not resolve |
+| Website (old/dead) | `thencc.gov.za` (does not resolve) |
 | Phone | `012 065 1940` |
 | Email | `enquiries@thencc.org.za` |
 | eService portal | `eservice.thencc.org.za` |

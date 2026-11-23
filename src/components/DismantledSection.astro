@@ -56,7 +56,7 @@ function hay(c: typeof CLAUSES[number]) {
           )}
         </span>
         <span class:list={["mono tb-dm__tpl", c.template ? 'tb-dm__tpl--has' : 'tb-dm__tpl--none']}>
-          {c.template ?? '—'}
+          {c.template ?? 'None'}
         </span>
         <span class="mono tb-dm__action" data-action-label>Expand ↘</span>
       </button>
@@ -390,7 +390,7 @@ function hay(c: typeof CLAUSES[number]) {
       }
       // Prefer the Web Share API on mobile if available — natural UX
       if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
-        navigator.share({ url: url, title: 'TakealotBack — clause' }).then(done).catch(function () {
+        navigator.share({ url: url, title: 'TakealotBack: clause' }).then(done).catch(function () {
           if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(url).then(done).catch(function () { fallback(); done(); });
           } else { fallback(); done(); }

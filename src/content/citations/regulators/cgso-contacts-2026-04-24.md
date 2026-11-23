@@ -1,5 +1,5 @@
 ---
-title: "CGSO — current contact details"
+title: "CGSO: current contact details"
 citation: "cgso.org.za"
 court_or_publisher: "Consumer Goods and Services Ombud NPC"
 date: "2026-04-24"
@@ -11,10 +11,10 @@ retrieved_by: "Direct WebFetch of the CGSO homepage, 2026-04-24; re-checked 2026
 used_in:
   - "src/data/content.ts — ESCALATION[2] (CGSO tier)"
   - "src/components/LawSection.astro — Bodies card"
-copyright: "Facts (contact details) — not copyrightable. Published contact details are compiled for reference under fair use."
+copyright: "Facts (contact details), not copyrightable."
 ---
 
-# CGSO — current contact details (verified 2026-04-24; re-verified 2026-11-10)
+# CGSO: current contact details (verified 2026-04-24; re-verified 2026-11-10)
 
 ## Official name
 
@@ -39,7 +39,7 @@ Consumer Goods and Services Ombud NPC (CGSO)
 
 ## Nature of scheme
 
-The CGSO describes itself as *"the consumer goods and services industry's compulsory Ombud scheme, set up in line with the Consumer Protection Act."* Participation is mandatory for suppliers in the sector under the Consumer Goods and Services Industry Code of Conduct prescribed under CPA s 82. The 2015 Code (GG 38637, gazetted by the Minister of Trade and Industry in March 2015) applies until 30 November 2026. From 1 December 2026 the 2026 Code (GG 55719, GN 4264, gazetted 11 November 2026) applies; its clause 4.2 makes it mandatory for participants "to register with the CGSO". The compulsory-participation nature was upheld in *CGSO NPC v Voltex (Pty) Ltd* [2021] ZAGPPHC 309 — see [../cases/CGSO-Voltex-ZAGPPHC-309-2021.md](../cases/CGSO-Voltex-ZAGPPHC-309-2021.md).
+The CGSO describes itself as *"the consumer goods and services industry's compulsory Ombud scheme, set up in line with the Consumer Protection Act."* Participation is mandatory for suppliers in the sector under the Consumer Goods and Services Industry Code of Conduct prescribed under CPA s 82. The 2015 Code (GG 38637, gazetted by the Minister of Trade and Industry in March 2015) applies until 30 November 2026. From 1 December 2026 the 2026 Code (GG 55719, GN 4264, gazetted 11 November 2026) applies; its clause 4.2 makes it mandatory for participants "to register with the CGSO". The compulsory-participation nature was upheld in *CGSO NPC v Voltex (Pty) Ltd* [2021] ZAGPPHC 309. See [../cases/CGSO-Voltex-ZAGPPHC-309-2021.md](../cases/CGSO-Voltex-ZAGPPHC-309-2021.md).
 
 ## Changes from previous audits
 

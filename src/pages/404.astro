@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
-import { CLAUSES, TEMPLATES } from '../data/content';
+import { CLAUSES, TEMPLATES, ESCALATION, QUICK_HITS } from '../data/content';
 
-const title = '404 — Not on this site';
-const description = "The page you asked for isn't on TakealotBack.com. Either it moved, you mistyped, or it was never here. Either way — the law didn't go anywhere.";
+const title = '404: Not on this site | TakealotBack';
+const description = "The page you asked for isn't on TakealotBack.com. Either it moved, you mistyped, or it was never here. Either way, the law didn't go anywhere.";
 ---
 <Layout title={title} description={description} canonicalPath="/404">
   <Section id="notfound" label="404 / not found" tag="section">
@@ -21,19 +21,19 @@ const description = "The page you asked for isn't on TakealotBack.com. Either it
         <div>
           <div class="mono slash-label tb-404__blocklabel">Where to next</div>
           <ul class="tb-404__links">
-            <li><a href="/#home" class="link-u">Back to the homepage</a> &mdash; mission, 7 quick hits, how to use the site.</li>
-            <li><a href="/#dismantled" class="link-u">All {CLAUSES.length} clauses dismantled</a> &mdash; Takealot's policy vs the CPA, clause by clause.</li>
-            <li><a href="/#templates" class="link-u">{TEMPLATES.length} ready-to-send email templates</a> &mdash; copy, paste, send.</li>
-            <li><a href="/#escalate" class="link-u">The 10-tier escalation ladder</a> &mdash; CGSO, chargeback, NCC, Small Claims, and up.</li>
-            <li><a href="/#faq" class="link-u">FAQ</a> &mdash; the questions we hear most.</li>
+            <li><a href="/#home" class="link-u">Back to the homepage</a>: mission, {QUICK_HITS.length} quick hits, how to use the site.</li>
+            <li><a href="/#dismantled" class="link-u">All {CLAUSES.length} clauses dismantled</a>: Takealot's policy vs the CPA, clause by clause.</li>
+            <li><a href="/#templates" class="link-u">{TEMPLATES.length} ready-to-send email templates</a>: copy, paste, send.</li>
+            <li><a href="/#escalate" class="link-u">The {ESCALATION.length}-tier escalation ladder</a>: CGSO, chargeback, NCC, Small Claims, and up.</li>
+            <li><a href="/#faq" class="link-u">FAQ</a>: the questions we hear most.</li>
           </ul>
         </div>
         <div>
           <div class="mono slash-label tb-404__blocklabel">Deep dives</div>
           <ul class="tb-404__links">
-            <li><a href="/onus-of-proof" class="link-u">Who has to prove what</a> &mdash; the CPA s56 onus, in one page.</li>
-            <li><a href="/aedilitian-remedies" class="link-u">Your claim doesn't die at 6 months</a> &mdash; common-law latent-defect remedies.</li>
-            <li><a href="/limits" class="link-u">Where your rights stop</a> &mdash; the honest limits of the CPA.</li>
+            <li><a href="/onus-of-proof" class="link-u">Who has to prove what</a>: the CPA s56 onus, in one page.</li>
+            <li><a href="/aedilitian-remedies" class="link-u">Your claim doesn't die at 6 months</a>: common-law latent-defect remedies.</li>
+            <li><a href="/limits" class="link-u">Where your rights stop</a>: the honest limits of the CPA.</li>
           </ul>
         </div>
       </div>
@@ -44,7 +44,7 @@ const description = "The page you asked for isn't on TakealotBack.com. Either it
       </div>
 
       <p class="tb-404__hint mono">
-        Looking for Takealot itself? That's at <a href="https://takealot.com" class="link-u">takealot.com</a> &mdash; this site is not affiliated.
+        Looking for Takealot itself? That's at <a href="https://takealot.com" class="link-u">takealot.com</a>. This site is not affiliated.
       </p>
     </div>
   </Section>
