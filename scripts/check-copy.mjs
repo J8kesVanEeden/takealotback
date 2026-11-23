@@ -1,14 +1,13 @@
 #!/usr/bin/env node
-// check-copy — lint public copy for the mechanical signs of formulaic text.
+// check-copy — lint public copy against the site's house style.
 //
-// Why this exists: a widely read review of the site (Nov 2026) drew comments calling
-// it "AI filler". style notes is the rulebook; this script enforces the parts of it a
-// machine can check, so a rewrite can't quietly drift back. Judgment calls (tone,
-// logic, rhythm) are left to human/agent review; they print as WARN, never fail.
+// Enforces the parts of the house style a machine can check, so copy can't quietly
+// drift. Judgment calls (tone, logic, rhythm) are left to review; they print as WARN,
+// never fail.
 //
 // ERROR (fails the build):
 //   - em dash (—) anywhere in our own prose; spaced en dash ( – ) used as a dash
-//   - words and phrases on the banned list in style notes §3
+//   - words and phrases on the banned list below
 // WARN (printed for review, does not fail):
 //   - "not X, it's Y" / "not just / not only" contrast frames
 //   - three or more very short sentences in a row (fragment stacks)
@@ -43,7 +42,7 @@ const files = explicit.length
   ? explicit.map((p) => join(ROOT, p))
   : [...walk(join(ROOT, 'src')), join(ROOT, 'public/llms.txt')].filter(existsSync);
 
-// ── Banned list (keep in step with style notes §3) ───────────────────────
+// ── Banned list ─────────────────────────────────────────────────────────────
 // Each entry: [regex, label]. Word-boundaried, case-insensitive.
 const BANNED = [
   // formulaic (overused vocabulary)
@@ -189,6 +188,6 @@ for (const [rel, e, w] of perFile) {
 }
 console.log(`\ncheck-copy: ${errors} error(s), ${warns} warning(s) across ${files.length} files.`);
 if (errors) {
-  console.log('See style notes. Quoted source text is exempt; mark a deliberate exception with a `copy-ok` comment.');
+  console.log('See the banned list in scripts/check-copy.mjs. Quoted source text is exempt; mark a deliberate exception with a `copy-ok` comment.');
   process.exit(1);
 }
