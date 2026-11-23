@@ -35,8 +35,8 @@ for (const g of groups) {
 }
 
 const total = all.length;
-const title = `Citations & sources · TakealotBack.com`;
-const description = `Every statute, judgment, regulator detail, advisory note, Takealot policy clause, press report and third-party commentary the site relies on — dated, attributed, and indexed. ${total} sources, last refresh ${LAST_REVIEWED}.`;
+const title = `Citations & sources | TakealotBack`;
+const description = `Every statute, judgment, regulator detail, advisory note, Takealot policy clause, press report and third-party commentary the site relies on: dated, attributed, and indexed. ${total} sources, last refresh ${LAST_REVIEWED}.`;
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}/citations`;
@@ -58,7 +58,7 @@ const breadcrumb = buildBreadcrumb([
         Citations &amp; sources
       </h1>
       <p class="lede tb-cite-idx__lede">
-        Every claim on this site traces to a source. {total} sources mirrored here, dated and attributed, so you can verify everything. Last refresh: <strong>{LAST_REVIEWED}</strong>.
+        Every legal claim on this site traces to a source. {total} sources mirrored here, dated and attributed, so you can verify everything. Last refresh: <strong>{LAST_REVIEWED}</strong>.
       </p>
       <p class="tb-cite-idx__meta mono">
         / Live mirror of the citations folder on <a href={`${GITHUB_REPO_URL}/tree/main/src/content/citations`} class="link-u" target="_blank" rel="noopener noreferrer">GitHub</a> · CC BY 4.0 for our compilation · Underlying material under its own copyright (see notes per file)
@@ -91,7 +91,7 @@ const breadcrumb = buildBreadcrumb([
 
       <div class="tb-cite-idx__foot">
         <p class="tb-cite-idx__footnote">
-          Source-of-truth flow: every factual or legal claim on the site links to a citation file here, which links to a primary URL and (where saved) a Wayback Machine snapshot. The maintenance protocol is in <a href={`${GITHUB_REPO_URL}/blob/main/OPERATIONS.md`} class="link-u" target="_blank" rel="noopener noreferrer">OPERATIONS.md</a>.
+          Every statute, case and regulator detail the site relies on links to a citation file here, which links to a primary URL and (where saved) a Wayback Machine snapshot. The maintenance protocol is in <a href={`${GITHUB_REPO_URL}/blob/main/OPERATIONS.md`} class="link-u" target="_blank" rel="noopener noreferrer">OPERATIONS.md</a>.
         </p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 ---
-title: "Shapshak — brown box marked, return refused (Stuff SA)"
+title: "Shapshak: brown box marked, return refused (Stuff SA)"
 citation: "Stuff South Africa, 26 January 2024"
 court_or_publisher: "Toby Shapshak (Editor-in-Chief, Stuff South Africa)"
 date: "2024-01-26"
@@ -20,12 +20,12 @@ used_in:
 copyright: "© Stuff South Africa. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
-# Shapshak — brown box marked, return refused
+# Shapshak: brown box marked, return refused
 ## Stuff South Africa, 26 January 2024 · Toby Shapshak
 
 ## Why the site cites this
 
-The Shapshak case is the cleanest documented example of Takealot conflating the **brown delivery box** with **original product packaging**, and rejecting a return on that basis. It also documents the *shifting T&Cs* pattern: the rules cited in the rejection email were not the same as those cited in the original return-acceptance email. Public-figure-named (Stuff SA Editor-in-Chief, Forbes senior contributor) and independent of Naspers.
+Takealot refused Shapshak's return because it conflated the **brown delivery box** with **original product packaging**. The case also documents the *shifting T&Cs* pattern: the rules cited in the rejection email were not the same as those cited in the original return-acceptance email. Public-figure-named (Stuff SA Editor-in-Chief, Forbes senior contributor) and independent of Naspers.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -43,17 +43,15 @@ The Shapshak case is the cleanest documented example of Takealot conflating the 
 
 > "The original email approving the return – which was duly picked up that day – had one line of Ts&Cs: 'Please do not mark the original product packaging, and include all parts and accessories (e.g. TV remote, laptop charger, cables, etc.).'"
 
-The rejection email contained a longer, different list of T&Cs which had not appeared in the original — the shifting-rules pattern within a single transaction.
+The rejection email contained a longer, different list of T&Cs which had not appeared in the original: the shifting-rules pattern within a single transaction.
 
 ### The definitional confusion
 
 > "is Takealot saying that the random brown box that was sent to me to protect the actual product is 'the original product packing'? You can't be serious. But it turns out Takealot can't differentiate between 'original product packing' and the brown cardboard box they put the 'original product packing' into for delivery."
 
-### The undelivered "they were serious" bit
+### The box comes back
 
 > "Then, on Wednesday, the box — so badly disfigured by my koki — arrived back at my house. Clearly, the writing did not impede Takealot's ability to deliver it, because there it was: delivered to my house with the usual delivery sticker stuck over the writing."
-
-(The marker writing did not prevent re-delivery — proof that the writing wasn't substantively a barrier to anything.)
 
 ### The escalation pattern
 
@@ -67,8 +65,8 @@ The rejection email contained a longer, different list of T&Cs which had not app
 
 ## Site reliance
 
-- **Clause 02 (Original Packaging):** "original product packaging" means the manufacturer's product packaging (the Lego box), not the supplier's delivery container (the brown Takealot cardboard box). A return rejection on the basis of marks on the delivery box has no contractual or statutory basis.
-- **Clause 12 (Unilateral Term Changes):** the T&Cs cited in the rejection were not those cited in the original acceptance. A supplier introducing new conditions *after* a return has been logged is the within-a-transaction analogue of the policy-version mismatch.
+- **Clause 02 (original packaging):** "original product packaging" means the manufacturer's product packaging (the Lego box), not the supplier's delivery container (the brown Takealot cardboard box). A return rejection on the basis of marks on the delivery box has no contractual or statutory basis.
+- **Clause 12 (unilateral term changes):** the T&Cs cited in the rejection were not those cited in the original acceptance. A supplier introducing new conditions *after* a return has been logged is the within-a-transaction analogue of the policy-version mismatch.
 
 ## Wayback / archive status
 

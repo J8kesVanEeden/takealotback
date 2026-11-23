@@ -7,20 +7,20 @@ case_number: "173/75"
 lawlibrary_url: "https://lawlibrary.org.za/akn/za/judgment/zasca/1977/61/eng@1977-05-27"
 wayback_url: "https://web.archive.org/web/*/https://lawlibrary.org.za/akn/za/judgment/zasca/1977/61/eng@1977-05-27"
 wikipedia_url: "https://en.wikipedia.org/wiki/Holmdene_Brickworks_v_Roberts_Construction"
-metaDescription: "Appellate Division 1977: leading authority on the merchant-seller test for consequential damages under the actio empti in defective sale-of-goods."
+metaDescription: "Appellate Division 1977: leading authority on the merchant-seller test for consequential damages under the actio empti in sales of defective goods."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — actio empti consequential-damages test"
   - "src/content/pages/aedilitian-remedies.md — latent-defect test (683H–684A, via Van Niekerk para 16)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Holmdene Brickworks (Pty) Ltd v Roberts Construction Co Ltd
-## 1977 (3) SA 670 (A) | (173/75) [1977] ZASCA 61 | Appellate Division | 27 May 1977
+## 1977 (3) SA 670 (A) | (173/75) [1977] ZASCA 61 (unverified) | Appellate Division | 27 May 1977
 
 ## Why this case matters
 
-The leading SA Appellate Division authority on the **merchant/manufacturer-seller test** for consequential damages in sale-of-goods disputes. Where a buyer wants more than aedilitian relief (refund / price reduction) — i.e. **consequential losses** flowing from the defective goods — the *actio empti* is the route, and it requires either:
+The leading SA Appellate Division authority on the **merchant/manufacturer-seller test** for consequential damages in sale-of-goods disputes. Where a buyer wants more than aedilitian relief (refund / price reduction), i.e. **consequential losses** flowing from the defective goods, the *actio empti* is the route, and it requires either:
 - an **express warranty** by the seller; or
 - **fraud** by the seller; or
 - a **merchant/manufacturer seller** who publicly professes skill in the production or sale of goods of the kind sold.
@@ -38,7 +38,7 @@ The SCA added: "In Odendaal v Ferraris, this Court referred to the test for late
 ## Facts (secondary sources; not verified against the judgment)
 
 
-Roberts Construction (the respondent), a building and engineering company, contracted with Holmdene Brickworks (the appellant) for a supply of bricks to be used in walls of a building under construction. The bricks supplied contained an excessive quantity of magnesium sulphate, which caused them to crumble and decompose ("efflorescence"). The condition threatened the stability of the entire structure. The affected walls had to be demolished.
+Roberts Construction (the respondent), a building and engineering company, contracted with Holmdene Brickworks (the appellant) for a supply of bricks to be used in walls of a building under construction. The bricks supplied contained an excessive quantity of magnesium sulphate, and they began to crumble and decompose, a condition the case summaries call "efflorescence". The condition threatened the stability of the entire structure. The affected walls had to be demolished.
 
 ## Held (secondary sources; not verified against the judgment)
 
@@ -47,29 +47,29 @@ Roberts Construction (the respondent), a building and engineering company, contr
 - Roberts had acted reasonably in carrying out the demolition.
 - Consequential damages were recoverable through the *actio empti* against Holmdene because Holmdene was a manufacturer/merchant seller who publicly professed skill in the supply of bricks.
 
-## Operative test (still good law in 2026)
+## Operative test (from secondary commentary)
 
 To recover consequential damages from a seller of defective goods (beyond aedilitian refund or price reduction), one of:
 - (i) the seller gave an **express warranty** that the goods were free of the defect;
 - (ii) the seller was guilty of *dolus* (fraud);
-- (iii) the seller was a **manufacturer or merchant who publicly professes skill** in the manufacture or sale of goods of that kind. (The "Holmdene merchant-seller" route — most relevant in modern retail.)
+- (iii) the seller was a **manufacturer or merchant who publicly professes skill** in the manufacture or sale of goods of that kind. (The "Holmdene merchant-seller" route: most relevant in modern retail.)
 
 ## Site reliance
 
 `src/content/pages/aedilitian-remedies.md` cites Holmdene as the authority for the consequential-damages constraint:
 
-> "Consequential damages — costs you incurred because the item failed — require the separate *actio empti*, which needs an express warranty, fraud, or a 'merchant/manufacturer seller' who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A))."
+> "Consequential damages (costs you incurred because the item failed) require the separate *actio empti*, which needs an express warranty, fraud, or a 'merchant/manufacturer seller' who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A))."
 
-Note that under the CPA, **strict product liability for harm caused by unsafe goods** sits in s 61 — broader and easier to invoke than the common-law *actio empti*. The Holmdene route is the common-law fallback for buyers outside or beyond the s 61 frame.
+Note that under the CPA, **strict product liability for harm caused by unsafe goods** sits in s 61: broader and easier to invoke than the common-law *actio empti*. The Holmdene route is the common-law fallback for buyers outside or beyond the s 61 frame.
 
 ## Cross-references
 
-- [Phame-Paizes-1973.md](./Phame-Paizes-1973.md) — dicta et promissa
-- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md) — duty to disclose (see also)
-- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md) — broad view of what counts as a defect
+- [Phame-Paizes-1973.md](./Phame-Paizes-1973.md): dicta et promissa
+- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md): duty to disclose (see also)
+- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md): broad view of what counts as a defect
+- [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md): s 61 strict product liability
 
 (Cross-reference labels corrected 2026-11-18: *Dibley* and *Glaston House* were labelled as the source of the three-part test. The SCA calls the test the *Holmdene Brickworks* test, *Van Niekerk* para 16.)
-- [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md) — s 61 strict product liability
 
 ## Status
 

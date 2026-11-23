@@ -15,7 +15,7 @@ used_in:
   - "src/data/content.ts — FAQ[0] ('Is using the name Takealot in the domain legal?')"
   - "src/components/AboutSection.astro — Legal grounding (names and links the case for the s 34(1)(c) substantial-economic-detriment threshold)"
   - "citations/statutes/TMA-1993.md — discussion of s 34(1)(c) anti-dilution and the *Laugh It Off* threshold"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Laugh It Off Promotions CC v South African Breweries International (Finance) BV t/a SAB Mark International
@@ -31,7 +31,7 @@ The court did **not** hold that any expressive use defeats trade-mark rights. It
 
 ## The substantial-economic-detriment test (Moseneke J)
 
-In summary (our paraphrase, not a quotation): a proprietor invoking the anti-dilution provision in s 34(1)(c) against expressive use must prove the likelihood of substantial economic detriment to the mark. Offence to the proprietor or unauthorised use is not enough, and the onus is on the proprietor.
+Our paraphrase, not a quotation: a proprietor invoking the anti-dilution provision in s 34(1)(c) against expressive use must prove the likelihood of substantial economic detriment to the mark. Offence to the proprietor or unauthorised use is not enough, and the onus is on the proprietor.
 
 The court's own words (verbatim, SAFLII text re-checked 2026-11-17):
 
@@ -43,22 +43,22 @@ The court's own words (verbatim, SAFLII text re-checked 2026-11-17):
 
 (Paragraph numbers from SAFLII's numbered list. An earlier version of this file set the paraphrase out as a blockquote, which read as a quotation. Corrected 2026-11-17: the paraphrase is now plain text and the court's words are quoted separately.)
 
-Where the use is constitutionally protected speech under s 16 of the Constitution — including parody, criticism, commentary, and similar expressive use — the court must conduct a constitutional balancing exercise: the proprietor's commercial interest in the integrity of its mark on the one side; the speaker's right to engage in expressive use on the other.
+Where the use is constitutionally protected speech under s 16 of the Constitution (including parody, criticism, commentary, and similar expressive use) the court must conduct a constitutional balancing exercise: the proprietor's commercial interest in the integrity of its mark on the one side; the speaker's right to engage in expressive use on the other.
 
 Where the proprietor has not made out the "substantial economic detriment" case, the expressive use is protected.
 
-## Facts in summary
+## Facts
 
 Laugh It Off Promotions printed T-shirts that parodied SAB's BLACK LABEL beer trade mark, swapping the brand-related text for political commentary on labour conditions. SAB obtained a High Court interdict on s 34(1)(c) anti-dilution grounds. The SCA upheld the interdict. The Constitutional Court reversed.
 
 ## Cross-references
 
-- TMA s 34(1)(c) and s 34(2) — see [`citations/statutes/TMA-1993.md`](../statutes/TMA-1993.md)
-- Constitution s 16 — see [`citations/statutes/Constitution-s16.md`](../statutes/Constitution-s16.md)
+- TMA s 34(1)(c) and s 34(2): see [`citations/statutes/TMA-1993.md`](../statutes/TMA-1993.md)
+- Constitution s 16: see [`citations/statutes/Constitution-s16.md`](../statutes/Constitution-s16.md)
 
 ## Site reliance
 
-The About section's "Legal grounding" list names and links the case for the s 34(1)(c) threshold, and the FAQ on using the name Takealot in the domain names it directly. Both rely on it for one proposition: a proprietor invoking the anti-dilution provision, s 34(1)(c), against expressive use must prove a likelihood of substantial economic detriment to the mark (paras 50 and 56 quoted above), and that claim is weighed against the constitutional right to expression (para 49: a court "will have to weigh carefully the competing interests of the owner of the mark against the claim of free expression"). The FAQ adds that mere offence is not enough. The holding is limited to claims under s 34(1)(c) (para 56).
+The About section's "Legal grounding" list names and links the case for the s 34(1)(c) threshold, and the FAQ on using "Takealot" in the domain name names it directly. Both rely on it for one proposition: a proprietor invoking the anti-dilution provision, s 34(1)(c), against expressive use must prove a likelihood of substantial economic detriment to the mark (paras 50 and 56 quoted above), and that claim is weighed against the constitutional right to expression (para 49: a court "will have to weigh carefully the competing interests of the owner of the mark against the claim of free expression"). The FAQ adds that mere offence is not enough. The holding is limited to claims under s 34(1)(c) (para 56).
 
 (Updated 2026-11-18: this section said the About section relied on the case "without naming *Laugh It Off*"; it now names and links it.)
 

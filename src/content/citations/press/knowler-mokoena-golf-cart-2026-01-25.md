@@ -1,5 +1,5 @@
 ---
-title: "Knowler — Mokoena golf cart, missing cupholder + s 56 (News24)"
+title: "Knowler: Mokoena golf cart, missing cupholder and s 56 (News24)"
 citation: "News24, Consumer Lookout, 25 January 2026"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2026-01-25"
@@ -16,12 +16,12 @@ used_in:
 copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
-# Knowler — Mokoena golf cart, missing cupholder + s 56
+# Knowler: Mokoena golf cart, missing cupholder and s 56
 ## News24, 25 January 2026 · Wendy Knowler
 
 ## Why the site cites this
 
-The Mokoena case is the cleanest documented example of Takealot rejecting a **section 56 defective-goods claim** on a procedural ground (a missing cosmetic accessory) **unrelated to the defect** (battery failure within the 6-month CPA window). Knowler explicitly states the legal position: an unrelated missing component does not legally void the claim. Takealot reversed after Knowler's intervention.
+Takealot rejected Mokoena's **section 56 defective-goods claim** on a procedural ground (a missing cosmetic accessory) **unrelated to the defect** (battery failure within the 6-month CPA window). Knowler explicitly states the legal position: an unrelated missing component does not legally void the claim. Takealot reversed after Knowler's intervention.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -67,9 +67,9 @@ The Mokoena case is the cleanest documented example of Takealot rejecting a **se
 
 ## Site reliance
 
-- **Clause 02 (Original Packaging) anchor angle.** A missing component unrelated to the defect does not, in law, defeat the s 56 claim. Knowler's framing is direct.
-- **Practical advice:** report missing components on delivery even if you don't want them — closes the procedural-rejection door before it opens.
-- **Pattern (third case for Clause 02):** Shapshak (brown box) + Arnold (cellophane bag) + Mokoena (missing cupholder) — three named cases of Takealot using packaging/component grounds to refuse returns, all reversed on escalation.
+- **Clause 02 (original packaging) anchor angle.** A missing component unrelated to the defect does not, in law, defeat the s 56 claim. Knowler's framing is direct.
+- Report missing components on delivery even if you don't want them: it closes the procedural-rejection door before it opens.
+- **Pattern (third case for Clause 02):** Shapshak (brown box), Arnold (cellophane bag) and Mokoena (missing cupholder): three named cases of Takealot using packaging/component grounds to refuse returns, all reversed on escalation.
 
 ## Wayback / archive status
 

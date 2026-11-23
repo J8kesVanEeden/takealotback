@@ -1,6 +1,6 @@
 ---
-title: "CPA juristic-person threshold — R2 million (GN 294, GG 34181, 2011)"
-citation: "Government Notice 294, Government Gazette 34181, 1 April 2011 — Determination of threshold in terms of the Consumer Protection Act, 2008"
+title: "CPA juristic-person threshold: R2 million (GN 294, GG 34181, 2011)"
+citation: "Government Notice 294, Government Gazette 34181, 1 April 2011: Determination of threshold in terms of the Consumer Protection Act, 2008"
 court_or_publisher: "Minister of Trade and Industry (CPA s 6(1))"
 date: "2011-04-01"
 primary_url: "https://www.gov.za/sites/default/files/gcis_document/201409/34181gon294.pdf"
@@ -11,7 +11,7 @@ retrieved: "2026-11-18"
 used_in:
   - "src/content/pages/limits.md — juristic-person threshold paragraph"
   - "../advisories/CGSO-Advisory-Note-11.md (para 5.1(ii) 'R2 million')"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legislative or administrative nature)"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legislative or administrative nature)"
 ---
 
 # CPA juristic-person threshold: R2 million

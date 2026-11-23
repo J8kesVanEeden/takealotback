@@ -1,5 +1,5 @@
 ---
-title: "Knowler — Knight late delivery (News24)"
+title: "Knowler: Knight late delivery (News24)"
 citation: "News24, Consumer Lookout, 27 September 2024"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2024-09-27"
@@ -17,15 +17,15 @@ used_in:
 copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
-# Knowler — Knight late delivery
+# Knowler: Knight late delivery
 ## News24, 27 September 2024 · Wendy Knowler
 
 ## Why the site cites this
 
 Two threads:
 
-1. **Late delivery + ECT s 46** (Clause 14). Knight's order was promised by 30 August, undelivered by 16 September (more than two weeks past); calls and emails were ignored. After Knowler's media query, delivered the next day.
-2. **Courier-claims-delivered-without-evidence** (Clause 18). An earlier case in Knowler's column documents Takealot's framing of GPS coordinates as "delivery proof" with no signature.
+1. **Late delivery and ECT s 46** (Clause 14). Knight's order was promised by 30 August, undelivered by 16 September (more than two weeks past); calls and emails were ignored. After Knowler's media query, delivered the next day.
+2. **Courier-claims-delivered-without-evidence** (Clause 18). An earlier case in Knowler's column documents Takealot claiming delivery on GPS coordinates and a signature it could not produce.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -59,8 +59,8 @@ Two threads:
 
 ## Site reliance
 
-- **Clause 14 (Order Cancellation):** ECT s 46 gives the consumer a 7-day-notice cancellation right after a missed delivery deadline (s 46(1) sets 30 days; s 46(2) the cancellation right; s 46(3) the 30-day refund window after notification of unavailability). Knight's case demonstrates the pattern: 17 days past promised date, ignored contacts, only resolved on third-party intervention.
-- **Clause 18 (Mis-Returned Items) / general delivery-deflection angle:** "GPS coordinates matched" is not equivalent to "consumer received the goods." A signed proof-of-delivery (or a clear no-signature delivery confirmation acknowledged by the consumer) is the relevant evidence. The earlier whisky case is documented as an analogue.
+- **Clause 14 (order cancellation):** ECT s 46 gives the consumer a 7-day-notice cancellation right after a missed delivery deadline (s 46(1) sets 30 days; s 46(2) the cancellation right; s 46(3) the 30-day refund window after notification of unavailability). Knight's case demonstrates the pattern: 17 days past promised date, ignored contacts, only resolved on third-party intervention.
+- **Clause 18 (mis-returned items) / general delivery-deflection angle:** "GPS coordinates matched" is not equivalent to "consumer received the goods." A signed proof-of-delivery (or a clear no-signature delivery confirmation acknowledged by the consumer) is the relevant evidence. The earlier whisky case is documented as an analogue.
 - **Third-party courier deflection:** Takealot framing the delay as the third-party courier's communication failure does not relieve the platform of its delivery obligations to the consumer (the contract is with Takealot).
 
 ## Wayback / archive status

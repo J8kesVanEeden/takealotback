@@ -28,7 +28,7 @@ const { Content } = await page.render();
 // bottom of the page.
 const sources = scanForCitations(page.body);
 
-const title = page.data.metaTitle ?? `${page.data.title} · TakealotBack.com`;
+const title = page.data.metaTitle ?? `${page.data.title} | TakealotBack`;
 const canonicalPath = `/${page.slug}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://takealotback.com';
 const canonical = `${siteUrl}${canonicalPath}`;

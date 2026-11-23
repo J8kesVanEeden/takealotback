@@ -14,7 +14,7 @@ retrieved: "2026-11-17"
 reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) Frank & Hirsch angle"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Frank & Hirsch (Pty) Ltd v A Roopanand Brothers (Pty) Ltd
@@ -31,8 +31,8 @@ The case itself predates the 1993 Act (see Facts); it decided the copyright poin
 ## Facts
 
 - Frank & Hirsch was the SA exclusive distributor of TDK blank audio cassette tapes since 1974.
-- Roopanand Brothers imported TDK tapes into SA — parallel imports / "grey goods". In the judgment's words, it "obtains its supplies of TDK tapes from Dialdas and Co of Singapore, which in turn acquires them from Hock Cheong and Co, also of Singapore and the authorized dealer appointed by TDK Electronics in Singapore."
-- The TDK tapes carried TDK's registered trade marks. Frank & Hirsch's earlier trade-mark action against the parallel imports (under the then Trade Marks Act 62 of 1963, with an alternative Merchandise Marks Act claim) had been dismissed: *Frank & Hirsch (Pty) Ltd v Roopanand Brothers* 1987 (3) SA 165 (D & CLD). (The 1993 Act and its s 34(2)(d) did not yet exist; the case is cited on the site as the copyright analogue of today's s 34(2)(d) exhaustion position.) Correction 2026-11-10: an earlier version said TMA s 34(2)(d) "appeared to permit" the imports.
+- Roopanand Brothers imported TDK tapes into SA: parallel imports / "grey goods". In the judgment's words, it "obtains its supplies of TDK tapes from Dialdas and Co of Singapore, which in turn acquires them from Hock Cheong and Co, also of Singapore and the authorized dealer appointed by TDK Electronics in Singapore."
+- The TDK tapes carried TDK's registered trade marks. Frank & Hirsch's earlier trade-mark action against the parallel imports (under the then Trade Marks Act 62 of 1963, with an alternative Merchandise Marks Act claim) had been dismissed: *Frank & Hirsch (Pty) Ltd v Roopanand Brothers* 1987 (3) SA 165 (D & CLD). (The 1993 Act and its s 34(2)(d) did not yet exist; the case is cited on the site as the copyright carve-out from today's s 34(2)(d) exhaustion position.) Correction 2026-11-10: an earlier version said TMA s 34(2)(d) "appeared to permit" the imports.
 - However, on 4 June 1987, TDK Electronics had assigned to Frank & Hirsch *the copyright* in the literary and artistic works comprised in the get-up and trade dress of TDK tapes (the wrappers and printed inserts) by deed of assignment in Japan.
 
 ## Held (Appellate Division, Corbett CJ, unanimous)
@@ -51,20 +51,20 @@ The order (verbatim):
 
 ## Operative principle
 
-Trade-mark statutory exhaustion under TMA s 34(2)(d) is **not the end of the analysis** for parallel imports. A separate copyright in the goods' packaging / printed material — assigned to a SA distributor — provides an independent enforcement route. Importers and re-sellers must check both regimes.
+Trade-mark statutory exhaustion under TMA s 34(2)(d) is **not the end of the analysis** for parallel imports. A separate copyright in the goods' packaging / printed material, assigned to a SA distributor, provides an independent enforcement route. Importers and re-sellers must check both regimes.
 
 ## Site reliance
 
 `src/data/content.ts` Clause 17 (resale-prohibition) cites Frank & Hirsch as a carve-out from the s 34(2)(d) exhaustion principle:
 
-> "Frank & Hirsch v Roopanand Brothers 1993 (4) SA 279 (A) — where a separate SA copyright owner controls the packaging/get-up, parallel imports can still be blocked on copyright grounds."
+> "Frank & Hirsch v Roopanand Brothers 1993 (4) SA 279 (A): where a separate SA copyright owner controls the packaging/get-up, parallel imports can still be blocked on copyright grounds."
 
-The angle is structurally important: even in a "you can sell your own property" exhaustion frame (the consumer's basic position when Takealot tries to enforce a resale-prohibition clause), copyright in packaging gives manufacturers an *independent* lever. The site notes the carve-out without suggesting it changes the consumer's primary defence under exhaustion + the CPA.
+Even in a "you can sell your own property" exhaustion frame (the consumer's basic position when Takealot tries to enforce a resale-prohibition clause), copyright in packaging gives the manufacturer, or its SA assignee, an *independent* lever. The site notes the carve-out without suggesting it changes the consumer's primary defence under exhaustion and the CPA.
 
 ## Cross-references
 
-- [TRC-Sony-1987.md](./TRC-Sony-1987.md) — material-alteration carve-out from exhaustion
-- [`citations/statutes/TMA-1993.md`](../statutes/TMA-1993.md) — s 34(2)(d) statutory exhaustion
+- [TRC-Sony-1987.md](./TRC-Sony-1987.md): material-alteration carve-out from exhaustion
+- [`citations/statutes/TMA-1993.md`](../statutes/TMA-1993.md): s 34(2)(d) statutory exhaustion
 
 ## Status
 

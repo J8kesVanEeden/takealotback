@@ -1,5 +1,5 @@
 ---
-title: "NCC and CGSO joint paper — Consumer Protection in E-Commerce"
+title: "NCC and CGSO joint paper: Consumer Protection in E-Commerce"
 citation: "National Consumer Commission and Consumer Goods and Services Ombud, Joint Paper, March 2026"
 court_or_publisher: "National Consumer Commission (NCC) and Consumer Goods and Services Ombud (CGSO)"
 date: "2026-03-01"
@@ -20,7 +20,7 @@ copyright: "Published by a statutory regulator and an accredited ombud for publi
 disclosure: "Takealot is named in the paper only as a market-share statistic (Statista survey), not as a wrongdoer. The paper's own disclaimer: 'The content of this paper should not be construed as findings for or against any e-commerce platform or related providers.'"
 ---
 
-# Consumer Protection in E-Commerce — NCC + CGSO Joint Paper
+# Consumer Protection in E-Commerce: NCC + CGSO joint paper
 ## March 2026 · National Consumer Commission and Consumer Goods and Services Ombud
 
 The cover reads "Joint Paper MARCH 2026 … Compiled by The National Consumer Commission and Consumer Goods and Services Ombud of South Africa". Text extracted from the NCC-hosted PDF on 2026-11-10.
@@ -70,4 +70,4 @@ The site therefore presents platform responsibility as the regulators' stated vi
 
 (Updated 2026-11-18: the description said "E-vouchers last 3 years", which is not in the paper's text quoted here (the three-year floor is CPA s 63 itself); and Clauses 01, 02 and 21 and the Law section's s 19 blurb, which all rely on the s 20 inspection reading, were missing from this list.)
 
-The July 2025 explanatory note the paper refers to ("Transacting with E-commerce Platforms and E-vouchers") was not reachable at its CGSO URL on 2026-11-10 (404), so the site cites this joint paper, which restates its position.
+The July 2025 explanatory note the paper refers to ("Transacting with E-commerce Platforms and E-vouchers") returned 404 at its old CGSO URL on 2026-11-10. It opened at a different CGSO download URL on 2026-11-17 and has its own file: [NCC-CGSO-Evouchers-Note-2025.md](./NCC-CGSO-Evouchers-Note-2025.md). The site cites both.

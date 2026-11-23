@@ -27,7 +27,7 @@ export const GET: APIRoute = async () => {
   );
 
   const lines: string[] = [];
-  lines.push('# TakealotBack.com — full content dump');
+  lines.push('# TakealotBack.com: full content dump');
   lines.push('');
   lines.push('> Plain-markdown dump of the site for LLM consumption. The canonical site is at https://takealotback.com/. Content CC BY 4.0. Last reviewed ' + LAST_REVIEWED + ' against Takealot policy ' + TAKEALOT_POLICY_REVIEWED_AGAINST + '. Source of truth: ' + GITHUB_REPO_URL + '.');
   lines.push('');
@@ -35,10 +35,10 @@ export const GET: APIRoute = async () => {
   lines.push('');
 
   // Quick hits
-  lines.push('## The short version — 7 quick hits');
+  lines.push(`## The short version: ${QUICK_HITS.length} quick hits`);
   lines.push('');
   for (const q of QUICK_HITS) {
-    lines.push(`### QH.${q.n}${q.featured ? ' (featured)' : ''} — ${q.head}`);
+    lines.push(`### QH.${q.n}${q.featured ? ' (featured)' : ''}: ${q.head}`);
     lines.push('');
     lines.push(`Ref: ${q.ref}`);
     lines.push('');
@@ -47,10 +47,10 @@ export const GET: APIRoute = async () => {
   }
 
   // Clauses
-  lines.push(`## Dismantled — ${CLAUSES.length} clauses of Takealot's returns policy and terms`);
+  lines.push(`## Dismantled: ${CLAUSES.length} clauses of Takealot's returns policy and terms`);
   lines.push('');
   for (const c of CLAUSES) {
-    lines.push(`### Clause ${c.n} — ${c.title}`);
+    lines.push(`### Clause ${c.n}: ${c.title}`);
     lines.push('');
     lines.push(`URL: https://takealotback.com/#clause-${c.slug}`);
     if (c.template) lines.push(`Template: ${c.template}`);
@@ -69,10 +69,10 @@ export const GET: APIRoute = async () => {
   }
 
   // Templates
-  lines.push(`## Email templates — ${TEMPLATES.length} ready-to-send`);
+  lines.push(`## Email templates: ${TEMPLATES.length} ready-to-send`);
   lines.push('');
   for (const t of TEMPLATES) {
-    lines.push(`### ${t.code} — ${t.title}`);
+    lines.push(`### ${t.code}: ${t.title}`);
     lines.push('');
     lines.push(`URL: https://takealotback.com/#template-${t.code}`);
     lines.push(`Scenario: ${t.scenario}`);
@@ -86,39 +86,39 @@ export const GET: APIRoute = async () => {
   }
 
   // Law
-  lines.push('## The Law — full reference');
+  lines.push('## The law: full reference');
   lines.push('');
   for (const group of LAW_SECTIONS) {
     lines.push(`### ${group.group}`);
     lines.push('');
     for (const it of group.items) {
-      lines.push(`- **${group.group} ${it.id} — ${it.title}**: ${it.blurb}`);
+      lines.push(`- **${group.group} ${it.id} (${it.title})**: ${it.blurb}`);
     }
     lines.push('');
   }
 
   // Warranties
-  lines.push('## Warranties — manufacturer vs CPA (8 angles)');
+  lines.push(`## Warranties: manufacturer vs CPA (${WARRANTY_ANGLES.length} angles)`);
   lines.push('');
   for (const a of WARRANTY_ANGLES) {
-    lines.push(`### Angle ${String(a.n).padStart(2, '0')} — ${a.title}`);
+    lines.push(`### Angle ${String(a.n).padStart(2, '0')}: ${a.title}`);
     lines.push('');
     lines.push(a.body);
     lines.push('');
   }
 
-  lines.push('## Warranty playbook — A/B/C/D');
+  lines.push('## Warranty playbook: A/B/C/D');
   lines.push('');
   for (const p of PLAYBOOK) {
-    lines.push(`- **${p.letter} · ${p.when}** — ${p.play}`);
+    lines.push(`- **${p.letter} · ${p.when}**: ${p.play}`);
   }
   lines.push('');
 
   // Escalation
-  lines.push('## Escalation — 10-tier ladder');
+  lines.push(`## Escalation: ${ESCALATION.length}-tier ladder`);
   lines.push('');
   for (const t of ESCALATION) {
-    lines.push(`### Tier ${String(t.tier).padStart(2, '0')} — ${t.title}`);
+    lines.push(`### Tier ${String(t.tier).padStart(2, '0')}: ${t.title}`);
     lines.push('');
     lines.push(`Window: ${t.window}`);
     lines.push(`Contact: ${t.contact}`);
@@ -128,13 +128,13 @@ export const GET: APIRoute = async () => {
   }
 
   // Policy summary
-  lines.push("## Takealot's published policy — plain-English summary");
+  lines.push("## Takealot's published policy: plain-English summary");
   lines.push('');
-  lines.push('### Returns policy — key clauses');
+  lines.push('### Returns policy: key clauses');
   lines.push('');
   for (const item of POLICY_SUMMARY.returns) lines.push(`- ${item}`);
   lines.push('');
-  lines.push('### Terms & conditions — key clauses');
+  lines.push('### Terms & conditions: key clauses');
   lines.push('');
   for (const item of POLICY_SUMMARY.terms) lines.push(`- ${item}`);
   lines.push('');
@@ -170,7 +170,7 @@ export const GET: APIRoute = async () => {
   // Footer
   lines.push('---');
   lines.push('');
-  lines.push('Not legal advice. Not affiliated with Takealot Online (RF) (Pty) Ltd. Content CC BY 4.0 — attribution and a link back to https://takealotback.com/ appreciated. Corrections via issues at ' + GITHUB_REPO_URL + '.');
+  lines.push('Not legal advice. Not affiliated with Takealot Online (RF) (Pty) Ltd. Content CC BY 4.0. Attribution and a link back to https://takealotback.com/ appreciated. Corrections via issues at ' + GITHUB_REPO_URL + '.');
 
   return new Response(lines.join('\n'), {
     headers: {

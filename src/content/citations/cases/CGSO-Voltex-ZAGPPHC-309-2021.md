@@ -17,7 +17,7 @@ used_in:
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory)"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) CGSO angle"
   - "src/data/content.ts — ESCALATION[2] (CGSO tier) body"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Consumer Goods and Services Ombud NPC v Voltex (Pty) Ltd
@@ -33,7 +33,7 @@ The site cites Voltex for the proposition that **participation in the CGSO is co
 - Voltex (first respondent) counter-applied "for repayment of the levies thus far paid to the Ombud in terms of the Code" (para 2.1); one issue was "whether or not the first respondent is entitled to repayment of the R285 000.00 fee already paid by it to the first applicant" (para 12). Astral Operations (fourth respondent) counter-applied to have the Code struck down (para 2.2).
 - The Code: "Publication of the final version of the Consumer Goods Services Industry Code in the Government Gazette 38637 by way of Notice No GNR 271 on 30 March 2015" (para 3.3); "The Code came into operation on the 29 April 2015" (para 3.4); the Minister published it under s 82 of the CPA (para 3.5).
 
-## Held — paras 72 and 75 (verbatim)
+## Held: paras 72 and 75 (verbatim)
 
 > 72. In conclusion I am of the view that a proper case has been made out by the applicants for a declaratory order based on the following primary findings;
 > 72.1 The jurisdictional prerequisites are established on the evidence before me;
@@ -58,11 +58,11 @@ Voltex is about the 2015 Code (GNR 271, GG 38637). The Minister has published a 
 
 ## Why we cite it
 
-Voltex is the case that converts "CGSO is an Ombud" into "CGSO is a **compulsory** Ombud scheme." It's the authority for the plain-English line the site uses: *Takealot is required to engage — it's not a goodwill gesture.*
+Voltex is the case that converts "CGSO is an Ombud" into "CGSO is a **compulsory** Ombud scheme." It's the authority for the plain-English line the site uses: *Takealot is required to engage. It's not a goodwill gesture.*
 
 ## Commentary corroboration
 
-- Daily Maverick, 7 April 2021: "Legal victory: Consumer Goods and Services Ombudsman wins membership fee battle" — [daily-maverick-voltex-2021.md](../commentary/daily-maverick-voltex-2021.md)
+- Daily Maverick, 7 April 2021: "Legal victory: Consumer Goods and Services Ombudsman wins membership fee battle" ([daily-maverick-voltex-2021.md](../commentary/daily-maverick-voltex-2021.md))
 - Juta Journals note: "The legitimacy of the South African Consumer Goods and Services Ombud's Code of Conduct"
 
 ## Full judgment text

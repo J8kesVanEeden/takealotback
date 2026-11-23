@@ -14,7 +14,7 @@ reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Motus v Wentzel angle"
   - "src/data/content.ts — LAW_SECTIONS[0].items s69 blurb"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legal nature)"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official texts of a legal nature)"
 ---
 
 # Motus Corporation (Pty) Ltd and Another v Wentzel
@@ -26,7 +26,7 @@ Site uses it **only** for the SCA's obiter guidance on section 69(d) of the Cons
 
 (An earlier version of this summary said the obiter means "consumers may approach a court directly". That overstates paras 26–27, which only say s 69(d) should not lightly be read as excluding court access, and leave the point open. Corrected 2026-11-17; quotes re-checked against the SAFLII text, Wayback capture 20261110162447.)
 
-## The critical paragraphs — paras 26 and 27 (verbatim, checked against SAFLII 2026-11-10)
+## The critical paragraphs: paras 26 and 27 (verbatim, checked against SAFLII 2026-11-10)
 
 Para 26:
 
@@ -42,18 +42,18 @@ This makes the SCA's reasoning about s 69(d) **obiter dicta**, not ratio. The co
 
 ## Other holdings in the case
 
-The SCA disposed of the appeal on section 56(3) grounds — finding that Ms Wentzel had not satisfied the s 56(3) requirements for a refund. The High Court's refund order was set aside.
+The SCA disposed of the appeal on section 56(3) grounds, finding that Ms Wentzel had not satisfied the s 56(3) requirements for a refund. The High Court's refund order was set aside.
 
 ## Why we still cite it
 
-Even as obiter, the guidance is from the SCA and has been followed by:
+Even as obiter, the guidance is from the SCA and has been discussed in commentary:
 
-- Cliffe Dekker Hofmeyr commentary (23 June 2021) — treated as obiter
-- Financial Institutions Legal Snapshot (15 August 2022) — treated as obiter
-- ENSafrica — discussed in the "Straight shot to the courts" note
-- IR Global — same obiter framing
+- Cliffe Dekker Hofmeyr commentary (22 June 2021): calls the s 69 discussion "remarks" made without full argument (it does not use the word "obiter"; see [cliffe-dekker-motus-2021.md](../commentary/cliffe-dekker-motus-2021.md))
+- Financial Institutions Legal Snapshot (15 August 2022): treated as obiter (no copy held in this repo; not re-checked)
+- ENSafrica: discussed in the "Straight shot to the courts" note, which reports that the court in *Steynberg* "cited the obiter remarks" (see [ens-straight-shot-cpa.md](../commentary/ens-straight-shot-cpa.md))
+- IR Global: same obiter framing (no copy held in this repo; not re-checked)
 
-The argument for citing Motus on the site is: *this is SCA direction, not SCA holding, but it's still the highest-court signal on the s 69(d) question and the reasoning has been accepted in the commentary stream.*
+The argument for citing Motus on the site is: *this is SCA direction, not SCA holding, but it's still the highest-court signal on the s 69(d) question and the commentary reads it the same way.*
 
 ## Full judgment text
 

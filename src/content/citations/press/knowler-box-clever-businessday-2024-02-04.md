@@ -1,12 +1,12 @@
 ---
-title: "Knowler — when Takealot tries to box clever (Business Day)"
+title: "Knowler: when Takealot tries to box clever (Business Day)"
 citation: "Business Day (BusinessLIVE), 04 February 2024"
 court_or_publisher: "Wendy Knowler (Business Day column)"
 date: "2024-02-04"
 primary_url: "https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/"
 wayback_url_dated: "https://web.archive.org/web/20261117210434/https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/"
 wayback_url_earlier: "https://web.archive.org/web/20260507205643/https://www.businessday.co.za/bt/opinion/2024-02-04-wendy-knowler-when-takealot-humans-try-to-box-clever-with-customers/"
-metaDescription: "Knowler reports the Shapshak Lego case + Arnold cellophane-bag cutlery case; Takealot's spokesperson admits 'human error' on both, and confirms 'Takealot does not expect shoppers to return products in the original, undamaged or altered Takealot box.'"
+metaDescription: "Knowler reports the Shapshak Lego case and Arnold cellophane-bag cutlery case; Takealot's spokesperson admits 'human error' on both, and confirms 'Takealot does not expect shoppers to return products in the original, undamaged or altered Takealot box.'"
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
@@ -17,12 +17,12 @@ used_in:
 copyright: "© Arena Holdings (Business Day). Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
-# Knowler — when Takealot tries to box clever
+# Knowler: when Takealot tries to box clever
 ## Business Day (BusinessLIVE), 04 February 2024 · Wendy Knowler
 
 ## Why the site cites this
 
-This is the legal-frame piece for Clause 02 (Original Packaging). Knowler took the Shapshak case to Takealot directly, surfaced a second case (Arnold's cellophane-bagged cutlery), and obtained the supplier's explicit admission: *"Takealot does not expect shoppers to return products in the original, undamaged or altered Takealot box."* That admission is the single most useful sentence on the site for the original-packaging angle.
+This is the legal-frame piece for Clause 02 (original packaging). Knowler took the Shapshak case to Takealot directly, surfaced a second case (Arnold's cellophane-bagged cutlery), and obtained the supplier's explicit admission: *"Takealot does not expect shoppers to return products in the original, undamaged or altered Takealot box."* Clause 02 leans on that sentence more than on any other source.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -40,7 +40,7 @@ This is the legal-frame piece for Clause 02 (Original Packaging). Knowler took t
 
 > "Common sense dictates that 'the original product packing' is the actual Lego box. When did it start including the random brown box that Takealot sends it in?"
 
-### The Arnold case — second example
+### The Arnold case: second example
 
 > "Robyn Arnold's case was similar. She returned four different portable cutlery sets to a Takealot centre where a staffer examined and accepted them. But later she was told her return was rejected on the grounds that the barcoded cellophane bag in which each item had been delivered to her had been opened."
 
@@ -64,9 +64,8 @@ This is the legal-frame piece for Clause 02 (Original Packaging). Knowler took t
 
 ## Site reliance
 
-- **Clause 02 (Original Packaging) primary anchor.** The Takealot admission is the single most directly useful supplier statement for the clause. When a Takealot agent rejects a return for "writing on box" or "opened cellophane", the consumer can quote Takealot to itself.
-- **Pattern of refusal-then-reverse-on-Knowler-intervention** — useful for the broader site framing on escalation paths.
-- **Coastal pattern verification:** Both cases follow the same shape — first refusal → escalate via journalist → "human error" admission. Two cases, same year, same admission language, same Knowler intervention. The pattern is not isolated.
+- **Clause 02 (original packaging) primary anchor.** The Takealot admission is Takealot's own statement on the point. When a Takealot agent rejects a return for "writing on box" or "opened cellophane", the consumer can quote Takealot to itself.
+- Refused, then put right after Knowler's query, with one "human error" admission covering both.
 
 ## Wayback / archive status
 

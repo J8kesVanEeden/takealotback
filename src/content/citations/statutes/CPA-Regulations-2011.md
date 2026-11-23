@@ -22,7 +22,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[23] (account-suspension) Reg 44(3)(l) and Reg 44(3)(g) angles"
   - "src/data/content.ts — TEMPLATES T09 (Reg 44(3)(i)), T10 (Reg 44(3)(k)), T15 (Reg 44(3)(b) and (g))"
   - "src/data/content.ts — LAW_SECTIONS CPA s 48 blurb (Regulation 44 lists presumptively unfair terms)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Consumer Protection Act Regulations
@@ -30,17 +30,17 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 ## Summary
 
-The Regulations made under the CPA cover franchise agreements (Regs 2–3), the ombud scheme framework, the Commission's enforcement structures, and — most relevant to this site — the **grey list** of presumptively unfair contract terms in **Regulation 44**.
+The Regulations made under the CPA cover franchise agreements (Regs 2–3), the ombud scheme framework, the Commission's enforcement structures, and (most relevant to this site) the **grey list** of presumptively unfair contract terms in **Regulation 44**.
 
 **Heading ambiguity:** the printed Table of Contents in the gazette reads "45. List of contract terms which are presumed not to be fair and reasonable" but the body of the gazette numbers the regulation **44**. The body numbering is authoritative. The site cites this as **Regulation 44**.
 
 ---
 
-## Regulation 44 — full text of the grey list (verified 2026-04-24; re-checked word for word against the NCC-hosted gazette PDF 2026-11-17, no differences)
+## Regulation 44: full text of the grey list (verified 2026-04-24; re-checked word for word against the NCC-hosted gazette PDF 2026-11-17, no differences)
 
 ### 44(1)
 
-For purposes of section 120(d) of the Act, a term of a consumer agreement between a supplier operating on a for-profit basis and acting wholly or mainly for purposes related to his or her business or profession and an individual consumer or individual consumers who entered into it for purposes wholly or mainly unrelated to his or her business or profession is presumed to be unfair if it —
+For purposes of section 120(d) of the Act, a term of a consumer agreement between a supplier operating on a for-profit basis and acting wholly or mainly for purposes related to his or her business or profession and an individual consumer or individual consumers who entered into it for purposes wholly or mainly unrelated to his or her business or profession is presumed to be unfair if it — <!-- copy-ok: verbatim regulation text -->
 
 (a) has the purpose or effect of a term listed in subregulation (3), and
 (b) does not fall within the ambit of subregulation (4).
@@ -52,9 +52,9 @@ For purposes of section 120(d) of the Act, a term of a consumer agreement betwee
 (c) A term which falls within the ambit of subregulation (4) remains subject to sections 48 to 52 of the Act.
 (d) This regulation does not derogate from provisions in the Act or other law in terms of or in respect of which a term of an agreement is prohibited.
 
-### 44(3) — the grey list
+### 44(3): the grey list
 
-A term of a consumer agreement subject to the provisions of subregulation (1) is presumed to be unfair if it has the purpose or effect of —
+A term of a consumer agreement subject to the provisions of subregulation (1) is presumed to be unfair if it has the purpose or effect of — <!-- copy-ok: verbatim regulation text -->
 
 **(a)** excluding or limiting the liability of the supplier for death or personal injury caused to the consumer through an act or omission of that supplier subject to section 61(1) of the Act;
 
@@ -98,7 +98,7 @@ A term of a consumer agreement subject to the provisions of subregulation (1) is
 
 **(u)** restricting the consumer's right to re-sell the goods by limiting the transferability of any commercial guarantee provided by the supplier;
 
-**(v)** providing that the consumer must be deemed to have made or not made a statement or acknowledgment to his or her detriment, unless —
+**(v)** providing that the consumer must be deemed to have made or not made a statement or acknowledgment to his or her detriment, unless — <!-- copy-ok: verbatim regulation text -->
   (i) a suitable period of time is granted to him or her for the making of an express declaration in respect thereof; and
   (ii) at the commencement of the period the supplier draws the attention of the consumer to the meaning that will be attached to his or her conduct;
 
@@ -114,22 +114,22 @@ A term of a consumer agreement subject to the provisions of subregulation (1) is
 
 **(bb)** providing that a law other than that of the Republic applies to a consumer agreement concluded and implemented in the Republic, where the consumer was residing in the Republic at the time when the agreement was concluded.
 
-### 44(4) — carve-outs
+### 44(4): carve-outs
 
 (a) Paragraph (k) of subregulation (3) does not apply to a term in terms of which a supplier of financial services reserves the right to unilaterally terminate an open-ended agreement without notice, but the supplier is required to immediately inform the consumer thereof.
 
-(b) Paragraph (h) of subregulation (3) does not apply to —
+(b) Paragraph (h) of subregulation (3) does not apply to — <!-- copy-ok: verbatim regulation text -->
   (i) a transaction in transferable securities, financial instruments and other products or services where the price is linked to fluctuations in a stock exchange quotation or index or a financial market rate that the trader does not control;
   (ii) an agreement for the purchase or sale of foreign currency, traveller's cheques or international money orders denominated in foreign currency;
   (iii) a price-indexation clause, where lawful, but the method by which prices vary must be explicitly described.
 
 (c) Paragraph (i) of subregulation (3) does not apply to:
-  (i) a term under which a supplier of financial services reserves the right to alter the rate of interest payable by the consumer or due to the latter, or the amount of other charges for financial services without notice where there is a valid reason, but —
+  (i) a term under which a supplier of financial services reserves the right to alter the rate of interest payable by the consumer or due to the latter, or the amount of other charges for financial services without notice where there is a valid reason, but — <!-- copy-ok: verbatim regulation text -->
       (aa) the supplier must immediately inform the consumer thereof; and
       (bb) the consumer is free to dissolve the agreement at the earliest opportunity;
   (ii) a transaction in transferable securities, financial instruments and other products or services where the price is linked to fluctuations in a stock exchange quotation or index or a financial market rate that the trader does not control;
   (iii) an agreement for the purchase or sale of foreign currency, traveller's cheques or international money orders denominated in foreign currency;
-  (iv) a term under which the supplier reserves the right to unilaterally alter the conditions of an open-ended agreement, but —
+  (iv) a term under which the supplier reserves the right to unilaterally alter the conditions of an open-ended agreement, but — <!-- copy-ok: verbatim regulation text -->
       (aa) the supplier must forthwith inform the consumer thereof; and
       (bb) the consumer is free to dissolve the agreement immediately.
 
@@ -143,17 +143,24 @@ Reg 44(1) limits the presumption to agreements between a supplier acting for bus
 
 | Subsection | What it catches | Used on site |
 |---|---|---|
-| **44(3)(b)** | Excluding / restricting consumer's remedies against supplier's breach | Clause 18 (mis-returned items); Clause 19 (restocking / re-delivery fees) — shifting s 56(2) costs onto the consumer; Template T15 |
-| **44(3)(g)** | Modifying risk distribution to consumer's detriment | Clause 19 — packaging-condition fee on a defective return reallocates s 56(2)'s "supplier's risk and expense"; Template T15; Clause 24 (account suspension) — fraud risk put on the account holder |
+| **44(3)(b)** | Excluding / restricting consumer's remedies against supplier's breach | Clause 18 (mis-returned items); Clause 19 (restocking / re-delivery fees), shifting s 56(2) costs onto the consumer; Template T15 |
+| **44(3)(g)** | Modifying risk distribution to consumer's detriment | Clause 19: packaging-condition fee on a defective return reallocates s 56(2)'s "supplier's risk and expense"; Template T15; Clause 24 (account suspension): fraud risk put on the account holder |
 | **44(3)(i)** | Supplier unilaterally altering terms | Clause 11 (coupons), Clause 12 (unilateral changes), Template T09. Reg 44(4)(c)(iv) takes a term out of (i) where the supplier reserves the right to alter the conditions of an **open-ended** agreement, but only if the supplier "must forthwith inform the consumer thereof" and "the consumer is free to dissolve the agreement immediately". Clause 12's "CPA Reg 44" angle reasons through this carve-out: Takealot's clause allows changes "without giving you notice" (it says only that it will publish them on its platform), so the carve-out's conditions aren't met and the presumption stands. |
-| **44(3)(j)** | Supplier deciding whether goods conform to the agreement | Clause 20 (inspection and assessment) — Takealot's own inspection is evidence, not the final word |
-| **44(3)(k)** | Supplier terminating at will where the consumer has no same right | Clause 14 (order cancellation) — "for any reason" cancellation of a confirmed order; Clause 23 (sale pricing), relisting angle; Template T10 |
+| **44(3)(j)** | Supplier deciding whether goods conform to the agreement | Clause 20 (inspection and assessment): Takealot's own inspection is evidence, not the final word |
+| **44(3)(k)** | Supplier terminating at will where the consumer has no same right | Clause 14 (order cancellation): "for any reason" cancellation of a confirmed order; Clause 23 (sale pricing), relisting angle; Template T10 |
 | **44(3)(l)** | Supplier terminating an open-ended agreement without reasonable notice, except for the consumer's material breach | Clause 24 (account suspension and closure) |
 | **44(3)(q)** | Supplier keeping a consumer's payment where the **consumer** fails to conclude or perform, with no matching right for the consumer | Clause 06 cites it by analogy only; the credit-expiry argument is made under s 48 and Reg 44(2)(b) (list non-exhaustive) |
 
 Clause 13 (High Court jurisdiction) and the Law section's s 48 blurb refer to Regulation 44 generally, without a specific letter.
 
-(Table corrected 2026-11-18. It had no rows for (j), (k) and (l), left Clauses 18, 23 and 24 and Templates T10 and T15 out of the (b), (g) and (k) uses, described (q) as if it applied whenever a supplier keeps a payment (its trigger is the **consumer's** failure to conclude or perform), and gave the (i) row without the Reg 44(4)(c)(iv) open-ended-agreement carve-out quoted above. The description also said the grey list "bind[s] every retailer"; Reg 44(1) limits it to agreements with individual consumers, and the presumption is rebuttable.)
+Table corrected 2026-11-18. Before that it:
+
+- had no rows for (j), (k) and (l);
+- left Clauses 18, 23 and 24 and Templates T10 and T15 out of the (b), (g) and (k) uses;
+- described (q) as if it applied whenever a supplier keeps a payment (its trigger is the **consumer's** failure to conclude or perform);
+- gave the (i) row without the Reg 44(4)(c)(iv) open-ended-agreement carve-out quoted above.
+
+The description also said the grey list "bind[s] every retailer". Reg 44(1) limits it to agreements with individual consumers, and the presumption is rebuttable.
 
 ## Other regulations (not yet mirrored)
 

@@ -1,5 +1,5 @@
 ---
-title: "Takealot Terms & Conditions — snapshot 2026-04-24"
+title: "Takealot Terms & Conditions: snapshot 2026-04-24"
 citation: "terms-and-policies.takealot.com/terms-conditions"
 court_or_publisher: "Takealot Online (RF) (Pty) Ltd"
 date: "2026-04-24"
@@ -7,7 +7,7 @@ primary_url: "https://terms-and-policies.takealot.com/terms-conditions/"
 wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/terms-conditions/"
 wayback_url_dated: "https://web.archive.org/web/20261117203437/https://terms-and-policies.takealot.com/terms-conditions/"
 wayback_url_earlier: "https://web.archive.org/web/20261110140857/https://terms-and-policies.takealot.com/terms-conditions/"
-metaDescription: "Verbatim snapshot of Takealot's terms & conditions (April 2026). Entity, unilateral-change, forum-selection, marketplace, and resale clauses."
+metaDescription: "Verbatim snapshot of Takealot's terms & conditions (April 2026): entity, unilateral change, forum, cancellation, sellers, resale, vouchers, delivery, accounts."
 retrieved: "2026-11-10"
 reverified_on: "2026-11-17"
 corrected_on: "2026-05-07"
@@ -19,16 +19,17 @@ used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers)"
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition)"
   - "src/data/content.ts — POLICY_SUMMARY.terms"
-  - "src/data/content.ts — CLAUSES[22] (sale-pricing) takealot text and 'Cart ≠ contract' angle"
+  - "src/data/content.ts — CLAUSES[22] (sale-pricing) takealot text and 'Cart is not a contract' angle"
   - "src/data/content.ts — CLAUSES[23] (account-suspension) takealot text"
   - "src/data/content.ts — TEMPLATES T23 body (order 'considered delivered')"
   - "src/data/content.ts — CLAUSES[23] (account-suspension) 'Your credit is still yours' angle (gift voucher not exchangeable for cash)"
   - "src/data/content.ts — FAQ (Black Friday at Takealot)"
+  - "src/data/content.ts — TEMPLATES T21 body (gift voucher not exchangeable for cash)"
   - "src/components/PoliciesSection.astro — Registered entity block"
-copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 — criticism / review."
+copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
 ---
 
-# Takealot Terms & Conditions — snapshot 2026-04-24
+# Takealot Terms & Conditions: snapshot 2026-04-24
 
 See the companion [takealot-returns-2026-04-24.md](./takealot-returns-2026-04-24.md) for methodology and copyright basis.
 
@@ -57,7 +58,7 @@ The site's Clause 12 (unilateral-changes) answers the "without giving you notice
 
 > "You and we agree that the High Court of South Africa (Western Cape Division, Cape Town) will have jurisdiction to hear any legal matters between us. This applies even if the disputed amount would typically be heard by a lower court. This is to help ensure consistency in how cases are handled."
 
-**Correction (2026-05-07):** the 2026-04-24 audit pass originally claimed the "even if the disputed amount would typically be heard by a lower court" qualifier was no longer in the live text, and Clause 13 (`high-court-jurisdiction`) was edited to treat it as a historical-version note. That was wrong. Re-verification on 2026-05-07 — direct curl of the live page + four Wayback Machine snapshots spanning 2026-02-08 to 2026-04-25, plus Yoast `dateModified` of 2026-02-05 confirming no republication — shows the qualifier has been continuously present. Clause 13 was reverted on 2026-05-07 to treat the qualifier as present-tense operative wording. POLICY_SUMMARY.terms was also corrected in the same pass ("Other sellers" → "Sellers", matching the Clause 14 correction that originally landed on 2026-04-24 but missed the summary array). Original misread commit and the correction commit both remain in `git log` — no history rewriting.
+**Correction (2026-05-07):** the 2026-04-24 audit pass originally claimed the "even if the disputed amount would typically be heard by a lower court" qualifier was no longer in the live text, and Clause 13 (`high-court-jurisdiction`) was edited to treat it as a historical-version note. That was wrong. Re-verification on 2026-05-07 shows the qualifier has been continuously present. It used a direct curl of the live page, four Wayback Machine snapshots spanning 2026-02-08 to 2026-04-25, and Yoast `dateModified` of 2026-02-05 confirming no republication. Clause 13 was reverted on 2026-05-07 to treat the qualifier as present-tense operative wording. POLICY_SUMMARY.terms was also corrected in the same pass ("Other sellers" changed to "Sellers", matching the Clause 15 correction that originally landed on 2026-04-24 but missed the summary array). Original misread commit and the correction commit both remain in `git log`. No history rewriting.
 
 ### Order cancellation grounds (paraphrased)
 
@@ -75,7 +76,7 @@ The site's Clause 14 (order-cancellation) answers these with the contract formed
 
 > "Sellers are responsible for the items they sell on our platform. This includes providing an invoice, making sure the item is in stock, keeping the product information accurate, and getting the item to our warehouse."
 
-The site's Clause 15 (marketplace-sellers) currently uses "Sellers are responsible for the items they sell on our platform" — verbatim accurate. (Earlier site copy used "Other sellers"; corrected on 2026-04-24 following the Takealot policy audit. Clause number corrected from "Clause 14" on 2026-11-18.)
+The site's Clause 15 (marketplace-sellers) currently uses "Sellers are responsible for the items they sell on our platform" (verbatim accurate). (Earlier site copy used "Other sellers"; corrected on 2026-04-24 following the Takealot policy audit. Clause number corrected from "Clause 14" on 2026-11-18.)
 
 ### Resale prohibition (verbatim)
 
@@ -103,7 +104,7 @@ These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captur
 > You may cancel an order if there is a ‘cancel’ button on the order details page of your Takealot account. Once you have initiated a cancellation, you cannot stop the process.
 > If an order or item is cancelled, we will refund you the amount paid for that cancelled order or item."
 
-**Delivery estimates** (added 2026-11-18, raw line 286; Clause 14's "CPA s 54 — paid delivery missed" angle refers to Takealot's terms calling delivery dates "estimates")
+**Delivery estimates** (added 2026-11-18, raw line 286; Clause 14's "CPA s 54: paid delivery missed" angle refers to Takealot's terms calling delivery dates "estimates")
 
 > "Delivery times may vary and are determined by the items you order, the payment method, and the location you choose for delivery or collection, as explained in our Help Centre. We provide our delivery estimates on the product description page to help you shop, but always check your order’s estimated delivery date at checkout for the most accurate delivery information."
 
@@ -148,7 +149,7 @@ Takealot does not surface a "Last updated" date on either the Returns Policy pag
 
 ## Re-verification log
 
-**2026-07-01 (Q3 2026 quarterly refresh):** Live T&Cs re-fetched from `terms-and-policies.takealot.com/terms-conditions/` (full JS-rendered DOM incl. collapsed accordions) and diffed against the verbatim quotes above. **No material change.** All five relied-on clauses match verbatim: the unilateral-change clause (*"…at any time without giving you notice, we will publish those changes on our platform"*), the WC High Court forum-selection clause **including** the *"even if the disputed amount would typically be heard by a lower court"* qualifier (re-confirming the 2026-05-07 correction — the qualifier is present-tense operative wording), all four order-cancellation grounds + refund line, the "Sellers are responsible for the items they sell" wording (not "Other sellers"), and the resale prohibition. Registered entity unchanged (reg. 2010/020248/07; legal@takealot.com; 12th Floor, 10 Rua Vasco Da Gama Plain). CGSO escalation still `info@cgso.org.za` / 0860 000 272.
+**2026-07-01 (Q3 2026 quarterly refresh):** Live T&Cs re-fetched from `terms-and-policies.takealot.com/terms-conditions/` (full JS-rendered DOM incl. collapsed accordions) and diffed against the verbatim quotes above. **No material change.** All five relied-on clauses match verbatim: the unilateral-change clause (*"…at any time without giving you notice, we will publish those changes on our platform"*), the WC High Court forum-selection clause **including** the *"even if the disputed amount would typically be heard by a lower court"* qualifier (re-confirming the 2026-05-07 correction: the qualifier is present-tense operative wording), all four order-cancellation grounds + refund line, the "Sellers are responsible for the items they sell" wording (not "Other sellers"), and the resale prohibition. Registered entity unchanged (reg. 2010/020248/07; legal@takealot.com; 12th Floor, 10 Rua Vasco Da Gama Plain). CGSO escalation still `info@cgso.org.za` / 0860 000 272.
 
 Non-material additions observed but **deliberately not incorporated**: the live T&Cs now also surface office-bearer names, a liquor-licence number (WCP/040408), and a PAIA-manual link. Per non-negotiable #3 (keep Takealot's entity footprint minimal) these are left out of the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
 
@@ -168,4 +169,4 @@ Wayback captures of this URL relied on, oldest first: [20260425124023](https://w
 
 ## Status
 
-Policy text mirrored verbatim for the five operative clauses the site relies on; companion Returns Policy at [`takealot-returns-2026-04-24.md`](./takealot-returns-2026-04-24.md). Fair-dealing snapshot retained for research / criticism / review.
+Policy text mirrored verbatim for the clauses the site relies on: registered entity, unilateral changes, High Court forum selection, order cancellation, marketplace sellers and resale, plus (since 2026-11-18) order completion, cart and wish list, delivery, deals, gift vouchers and account suspension; companion Returns Policy at [`takealot-returns-2026-04-24.md`](./takealot-returns-2026-04-24.md). Fair-dealing snapshot retained for research / criticism / review.

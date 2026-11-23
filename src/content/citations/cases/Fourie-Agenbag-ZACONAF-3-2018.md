@@ -17,7 +17,7 @@ retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section (attributed to NW Consumer Affairs Court, not NCT)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Fourie v Agenbag Motor Group
@@ -25,15 +25,15 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 ## Summary of what this case is relied on for
 
-A dealer's voetstoots (as-is) clause was of no force or effect because no defects had been disclosed to the buyer (CPA s 55(6)), and the dealer had to refund the full price. The court's reasoning is **narrower** than a flat "voetstoots never applies" rule — see the verbatim extracts below.
+A dealer's voetstoots (as-is) clause was of no force or effect because no defects had been disclosed to the buyer (CPA s 55(6)), and the dealer had to refund the full price. The court's reasoning is **narrower** than a flat "voetstoots never applies" rule (see the verbatim extracts below).
 
 **Provenance note:** `ZACONAF` is the SAFLII neutral-citation code for the **Consumer Affairs Courts** (provincial bodies established under CPA s 73). `ZANCT` is the code for the **National Consumer Tribunal**. These are two different bodies. The site previously cited Fourie under an NCT-attribution sentence, which was wrong; it was corrected on 2026-04-24 in the April 2026 accuracy review.
 
 ## Facts
 
 - Fourie purchased a 2005 Chevrolet Spark from Agenbag for R35,000 (original R40,000 reduced).
-- On taking delivery, the vehicle had an engine problem, a noisy gearbox, and a non-functioning air conditioner.
-- The dealership sought to rely on a voetstoots clause, including a R5,000 discount framed as trade-off for the consumer accepting responsibility for defects.
+- When Fourie took delivery, the vehicle had an engine problem, a noisy gearbox, and a non-functioning air conditioner.
+- The dealership sought to rely on a voetstoots clause, including a R5,000 discount framed as a trade-off for the consumer accepting responsibility for defects.
 
 ## Held
 

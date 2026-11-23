@@ -26,7 +26,7 @@ Downloaded from the CGSO website on 2026-11-10 (PDF; document creation date 27 J
 
 > "Of the top 10 contributing sectors, online transactions remained the largest source of complaints at 26%, ahead of appliance manufacturers and retailers (19%), furniture retail (14%), and satellite and telecommunications (13%). These findings should not be interpreted solely as indicators of non-compliance."
 
-### Case study — a handling fee on a returned online purchase
+### Case study: a handling fee on a returned online purchase
 
 An online buyer asked to exchange a bed shortly after delivery; the supplier's own delivery driver had removed the packaging. The supplier then demanded a 15% handling fee because the bed "was no longer in its original packaging".
 
@@ -36,7 +36,7 @@ An online buyer asked to exchange a bed shortly after delivery; the supplier's o
 
 ## Scope and limits
 
-The case study is a CGSO recommendation in a cooling-off (ECT s 44) return, accepted by the supplier — not a court ruling. It is direct support for the point that a packaging-based fee can't be added on top of what s 44 allows.
+The case study is a CGSO recommendation in a cooling-off (ECT s 44) return, accepted by the supplier, not a court ruling. It is direct support for the point that a packaging-based fee can't be added on top of what s 44 allows.
 
 ## Site reliance
 

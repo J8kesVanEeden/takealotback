@@ -1,18 +1,18 @@
 ---
 title: "Who has to prove what"
 slug: onus-of-proof
-description: "In a CPA defective-goods dispute where problems show up soon after delivery, courts in 2024–2026 have held that you have to show the item has problems, not what caused them, and the supplier has to prove misuse. The single most useful fact in a Takealot dispute."
-metaTitle: "Who has to prove what — the CPA onus explained"
+description: "In a CPA defective-goods dispute where problems show up soon after delivery, courts in 2024–2026 have held that you have to show the item has problems, not what caused them, and the supplier has to prove misuse."
+metaTitle: "Who has to prove what: the CPA onus explained"
 datePublished: "2026-04-23"
 ---
 
 # Who has to prove what
 
-This is probably the most useful single page on the site. Get this right and every Takealot refusal looks different.
+Get this right and every Takealot refusal looks different.
 
 ## Inside the first 6 months (CPA s56 window)
 
-In our reading of section 56(2), supported by the cases below where problems show up soon after delivery: when you return goods under section 56 of the Consumer Protection Act within 6 months of delivery, you do not have to prove the goods were defective from the moment they left the warehouse. You only have to show that they fail the section 55 quality standard *now*, while still inside the window.
+In our reading of section 56(2), backed by the cases below (where problems show up soon after delivery), when you return goods under section 56 of the Consumer Protection Act within 6 months of delivery, you do not have to prove the goods were defective from the moment they left the warehouse. You only have to show that they fail the section 55 quality standard *now*, while still inside the window.
 
 The practical burden then sits with the supplier to rebut. They have to show that the defect did not exist at delivery, or that the fault came from your misuse or from an alteration made contrary to the instructions or after the goods left the supply chain's control (s 56(1)). Takealot's own exclusion list (normal wear and tear, electrical surge, consumer damage, sea-air corrosion, consumer modification, unintended use) is a list of things it has to prove, not a defence it can simply assert.
 
@@ -20,23 +20,23 @@ The courts have now said this, at least where problems show up soon after delive
 
 All three were vehicle cases. The reasoning, that a consumer can't be expected to have the technical knowledge to prove why something failed, applies with more force to a phone, laptop or appliance returned to an online retailer.
 
-This is the most powerful fact in a section 56 dispute. When a Takealot agent says "we've assessed it and it's normal wear and tear", the follow-up is:
+When a Takealot agent says "we've assessed it and it's normal wear and tear", the follow-up is:
 
 > Please send me the assessment. Please identify the specific exclusion you're relying on, and the evidence for it. I only have to show that the item has problems, not what caused them; the onus to prove an exclusion is on the supplier (*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591, relied on in *Edan Traders v National Consumer Tribunal* [2026] ZAGPJHC 386), and a conclusion without evidence does not discharge it.
 
 ## After 6 months
 
-Once the section 56 window closes, the s 56(2) return-and-refund election is gone, although the s 55 right to goods that stay usable and durable for a reasonable period is not (s 55(2)(c) has no six-month limit). If you're claiming a defect that manifested at 8 months, 18 months, or two years, the cases above help you less: they turn on problems that showed up soon after delivery. To claim under the common-law aedilitian remedies (see [the 3-year window after the CPA runs out](/aedilitian-remedies)) you have to prove a *latent* defect — one that existed at the time of sale, was hidden from reasonable inspection, and renders the goods substantially less fit for purpose. The evidence burden is harder.
+Once the section 56 window closes, the s 56(2) return-and-refund election is gone, although the s 55 right to goods that stay usable and durable for a reasonable period is not (s 55(2)(c) has no six-month limit). If you're claiming a defect that manifested at 8 months, 18 months, or two years, the cases above help you less: they turn on problems that showed up soon after delivery. To claim under the common-law aedilitian remedies (see [the 3-year window after the CPA runs out](/aedilitian-remedies)) you have to prove a *latent* defect: one that existed at the time of sale, was hidden from reasonable inspection, and renders the goods substantially less fit for purpose. The evidence burden is harder.
 
 Technical evidence matters. A written assessment from an independent service centre identifying the fault as a manufacturing defect (as opposed to wear or misuse) is the kind of evidence that carries weight in this window.
 
-## Why this matters for timing
+## Timing
 
 Speed matters. If your item fails, log the return inside the 6-month window even if you're on day 178. The legal weight swings dramatically on the day you cross that threshold.
 
 ## What "onus" doesn't mean
 
-The onus point does not mean Takealot is automatically wrong. Some return claims genuinely fail on the facts — wear and tear on a product used hard for five months, a cracked screen from a drop, a PSU blown by a verifiable surge. The onus only means Takealot must *show their working*. "We decided it's wear and tear" is a conclusion, not evidence. "Our technician identified scoring on the drive consistent with physical impact, photographs attached" is evidence.
+The onus point does not mean Takealot is automatically wrong. Some return claims genuinely fail on the facts: wear and tear on a product used hard for five months, a cracked screen from a drop, a PSU blown by a verifiable surge. The onus only means Takealot must *show their working*. "We decided it's wear and tear" is a conclusion, not evidence. "Our technician identified scoring on the drive consistent with physical impact, photographs attached" is evidence.
 
 ## The CGSO view
 

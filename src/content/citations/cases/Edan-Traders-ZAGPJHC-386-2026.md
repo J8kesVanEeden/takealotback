@@ -8,7 +8,7 @@ primary_url: "https://www.saflii.org/za/cases/ZAGPJHC/2026/386.html"
 wayback_url: "https://web.archive.org/web/*/https://www.saflii.org/za/cases/ZAGPJHC/2026/386.html"
 wayback_url_dated: "https://web.archive.org/web/20261110161901/https://www.saflii.org/za/cases/ZAGPJHC/2026/386.html"
 wayback_url_earlier: "https://web.archive.org/web/20260430164052/https://www.saflii.org/za/cases/ZAGPJHC/2026/386.html"
-metaDescription: "Full Court, Johannesburg, 2026: relied on Toyota Randburg v Ndlovu for the rule that the consumer must show there were problems, not what caused them, and the supplier must rebut the defect. Voetstoots and one-month warranties can't dodge s 56."
+metaDescription: "Full Court, Johannesburg, 2026: relied on Toyota Randburg v Ndlovu for the rule that the consumer must show there were problems, not what caused them, and the supplier must disprove the defect. Voetstoots and one-month warranties can't dodge s 56."
 retrieved: "2026-11-10"
 reverified_on: "2026-11-17"
 corrected_on: "2026-11-17"
@@ -19,7 +19,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T16 body (rejection must identify the exclusion and the evidence for it)"
   - "src/content/pages/onus-of-proof.md — 'Inside the first 6 months' section"
   - "src/content/pages/aedilitian-remedies.md — 'Practical limits' section (onus within 6 months)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Edan Traders (Pty) Ltd v National Consumer Tribunal and Others
@@ -43,12 +43,12 @@ In a defective-goods dispute under the CPA, **the consumer has to show that ther
 
 - The goods were a vehicle and the forum was the National Consumer Tribunal. The onus reasoning is general: it turns on the consumer not having the technical knowledge to prove the cause of a fault, which applies with more force to a consumer returning electronics to an online retailer.
 - It is a Full Court decision of the Gauteng Division (Johannesburg), marked reportable. On the onus point it applies *Toyota* rather than laying down a new rule, so treat *Toyota* as the source and Edan as a Full Court that relied on it. Whether the onus passage is binding ratio in the Johannesburg Division is arguable; the site does not claim it is.
+- It adopts and applies [*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591](./Toyota-Randburg-Ndlovu-ZAGPPHC-591-2024.md). See also [*Wingfield Motors v NCT* [2025] ZAWCHC 385](./Wingfield-Motors-ZAWCHC-385-2025.md) for the same approach in the Western Cape.
 
 (An earlier version of this file said Edan "binds courts in that Division" on the onus point and presented the para 36 sentence as the court's own holding. Corrected 2026-11-17 after re-reading para 36 and footnotes 7–8 in the SAFLII text, Wayback capture 20261110161901.)
-- It adopts and applies [*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591](./Toyota-Randburg-Ndlovu-ZAGPPHC-591-2024.md). See also [*Wingfield Motors v NCT* [2025] ZAWCHC 385](./Wingfield-Motors-ZAWCHC-385-2025.md) for the same approach in the Western Cape.
 
 ## Site reliance
 
-- Clause 03 (damage exclusions), "Edan Traders v NCT" angle (Clause 08 cites *Wingfield*, not Edan; corrected 2026-11-17; angle label corrected from "Onus on supplier" 2026-11-18): when Takealot rejects a return as wear and tear, consumer damage or a surge, it has to prove that; the consumer doesn't have to prove the cause of the fault.
+- Clause 03 (damage exclusions), "Edan Traders v NCT" angle: when Takealot rejects a return as wear and tear, consumer damage or a surge, it has to prove that; the consumer doesn't have to prove the cause of the fault. (Clause 08 cites *Wingfield*, not Edan; corrected 2026-11-17; angle label corrected from "Onus on supplier" 2026-11-18.)
 - Templates T03 and T16: cited as the Full Court that relied on *Toyota* for the supplier's onus to prove the exclusion it relies on.
 - `/onus-of-proof` deep-dive.

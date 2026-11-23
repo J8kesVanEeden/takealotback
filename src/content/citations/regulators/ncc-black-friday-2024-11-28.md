@@ -14,7 +14,7 @@ copyright: "Published by a statutory regulator for public information. Quoted fo
 disclosure: "The statement does not name Takealot. It is a general warning to suppliers and consumers before Black Friday 2024."
 ---
 
-# NCC media statement — Black Friday 2024
+# NCC media statement: Black Friday 2024
 ## 28 November 2024 · National Consumer Commission
 
 The NCC's newest Black Friday statement found on thencc.org.za as of 17 November 2026. No 2025 or 2026 Black Friday statement was found (searched 2026-11-17). If the NCC issues one before 27 November 2026, it replaces this one on the site.

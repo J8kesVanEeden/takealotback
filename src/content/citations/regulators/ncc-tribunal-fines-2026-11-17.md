@@ -41,7 +41,7 @@ The NCC reports four National Consumer Tribunal outcomes "handed down between Oc
 
 ## Site reliance
 
-- **Clause 08 (defective exclusions):** a supplier was fined partly for sale-agreement clauses "attempting to waive the six-month implied warranty of quality". The site states only that, plus the sections the release names (including CPA s 51(1)). It is a used-car dealer, not Takealot, and the site says so.
+- **Clause 08 (defective exclusions):** a supplier was fined partly for sale-agreement clauses "attempting to waive the six-month implied warranty of quality". The site states only that, plus the sections the release names (including CPA s 51(1)). The supplier is a used-car dealer, not Takealot, and the site says so.
 - **Escalation tier 5 (NCC):** ignoring an NCC compliance notice drew a R200,000 fine. The Tribunal made no finding on the battery dispute itself.
 
 Raw captures of the release and of the Affordable Power judgment are kept on file.

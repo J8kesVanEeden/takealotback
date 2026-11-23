@@ -10,7 +10,7 @@ metaDescription: "National Consumer Tribunal, March 2026: a TV-buyer's complaint
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — FAQ (complaint deadline)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Ntoatsabone v Hisense SA Sales Holdings (Pty) Ltd and Another

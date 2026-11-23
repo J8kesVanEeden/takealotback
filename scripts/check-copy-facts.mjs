@@ -24,6 +24,8 @@ const ROOT = join(fileURLToPath(import.meta.url), '..', '..');
 const args = process.argv.slice(2);
 const base = args.includes('--base') ? args[args.indexOf('--base') + 1] : 'main';
 const verbose = args.includes('--verbose');
+// --print-allow: print each lost token as a ready-to-paste facts-allow.txt line (review before pasting).
+const printAllow = args.includes('--print-allow');
 
 const git = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf-8', maxBuffer: 64 * 1024 * 1024 });
 
@@ -50,7 +52,7 @@ function tokens(text, isCode) {
     add('ref', m[0].replace(/^(sections?)\s?/i, 's ').replace(/^(\w+)\s?/, (x, w) => w.toLowerCase() + ' '));
   }
   // Rand amounts
-  for (const m of t.matchAll(/R\s?\d[\d,\s]*(?:\.\d+)?(?:\s?(?:million|bn|billion|m)\b)?/g)) add('rand', m[0].replace(/\s/g, ''));
+  for (const m of t.matchAll(/R\s?\d[\d,\s]*(?:\.\d+)?(?:\s?(?:million|bn|billion|m)\b)?/g)) add('rand', m[0].replace(/[\s,]/g, '').replace(/\.+$/, ''));
   // Percentages
   for (const m of t.matchAll(/\b\d+(?:\.\d+)?\s?%/g)) add('pct', m[0].replace(/\s/g, ''));
   // ISO and written dates, and years
@@ -61,10 +63,22 @@ function tokens(text, isCode) {
   for (const m of t.matchAll(/\[\d{4}\] Z[A-Z]+ \d+/g)) add('cite', m[0]);
   // Quotes of 4+ words (verbatim source text must survive untouched)
   // In .ts/.astro every string literal is "…", so only escaped \"…\" and curly quotes count there.
-  const qre = isCode ? /\\"((?:(?!\\").){20,}?)\\"|“([^”]{20,}?)”/g : /"([^"\n]{20,}?)"|“([^”]{20,}?)”/g;
-  for (const m of text.matchAll(qre)) {
+  // Match every quote, short ones too, so a short quote's closing mark is never taken as the
+  // next quote's opener; length is filtered after.
+  const qre = isCode ? /\\"((?:(?!\\").)+?)\\"|“([^”]+?)”/g : /"([^"\n]+?)"|“([^”]+?)”/g;
+  // Markdown front matter `key: "value"` wrappers are YAML, not quotes: only escaped
+  // quotes inside them count.
+  let qtext = text;
+  if (!isCode) {
+    const fm = text.match(/^---\n[\s\S]*?\n---\n/);
+    if (fm) {
+      const inner = [...fm[0].matchAll(/\\"((?:(?!\\").)+?)\\"/g)].map((m) => `"${m[1]}"`).join('\n');
+      qtext = inner + '\n' + text.slice(fm[0].length);
+    }
+  }
+  for (const m of qtext.matchAll(qre)) {
     const q = norm(m[1] ?? m[2]);
-    if (q.split(' ').length >= 4) add('quote', q);
+    if (q.length >= 20 && q.split(' ').length >= 4) add('quote', q);
   }
   // Markdown blockquote lines
   for (const line of text.split('\n')) if (/^\s*>\s?\S/.test(line)) add('blockquote', norm(line.replace(/^\s*>\s?/, '')));
@@ -86,7 +100,7 @@ for (const f of files) {
   if (lost.length) {
     failures += lost.length;
     console.log(`\n✗ ${f} — ${lost.length} fact token(s) lost:`);
-    for (const x of lost) console.log(`    ${x.length > 160 ? x.slice(0, 157) + '…' : x}`);
+    for (const x of lost) console.log(printAllow ? `${f}|${x}` : `    ${x.length > 160 ? x.slice(0, 157) + '…' : x}`);
   } else if (verbose) console.log(`✓ ${f}`);
 }
 

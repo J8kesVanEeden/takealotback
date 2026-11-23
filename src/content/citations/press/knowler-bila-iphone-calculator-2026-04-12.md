@@ -1,5 +1,5 @@
 ---
-title: "Knowler — calculator isn't an iPhone (Bila R14,000)"
+title: "Knowler: calculator isn't an iPhone (Bila R14,000)"
 citation: "News24, Consumer Lookout, 12 April 2026"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2026-04-12"
@@ -23,7 +23,7 @@ copyright: "© Media24 / News24. Quoted under fair dealing for criticism and rev
 
 ## Why the site cites this
 
-The article documents a substitution case — consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). It is the spine of the site's clause on **item substitution / wrong goods delivered**. The case demonstrates the practical pattern: refusal-on-procedural-grounds → escalation-via-journalist → reversal.
+The article documents a substitution case: consumer paid R14,000 for an iPhone 15 on Takealot, received a Casio calculator (street price under R400). It is the spine of the site's clause on **item substitution / wrong goods delivered**. The case demonstrates the practical pattern: refusal-on-procedural-grounds, then escalation-via-journalist, then reversal.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -35,7 +35,7 @@ The article documents a substitution case — consumer paid R14,000 for an iPhon
 
 > "Unfortunately, we cannot accept your return request as the return item is missing its accessories. Our returns policy states that a return can only be accepted if you return all the parts of the item you received."
 
-(Takealot's response framed the return as deficient because the calculator had been opened and was missing accessories — without addressing that the consumer had ordered and paid R14,000 for an iPhone, not a calculator.)
+(Takealot's response framed the return as deficient because the calculator was missing its accessories (Bila says she never opened or used it), without addressing that the consumer had ordered and paid R14,000 for an iPhone, not a calculator.)
 
 ### The repeated re-delivery attempt
 
@@ -59,9 +59,9 @@ The article documents a substitution case — consumer paid R14,000 for an iPhon
 
 ### Other substitution cases referenced in the article
 
-- Birgit Westermann-Winter (Cape Town, late 2024): Makro office chair → box of biscuits.
-- Precious (TikTok, 2026): R14,000 PS5 + controller → metal sock hangers.
-- Knowler's partner: Bluetooth transmitter/receiver → pack of teeth-whitening strips.
+- Birgit Westermann-Winter (Cape Town, late 2024): ordered an office chair from Makro, got a box of biscuits.
+- Precious (TikTok, 2026): paid R14,000 for a PS5 and a controller, got metal sock hangers.
+- Knowler's partner: ordered a Bluetooth transmitter/receiver, got a pack of teeth-whitening strips.
 
 ## Wayback / archive status
 

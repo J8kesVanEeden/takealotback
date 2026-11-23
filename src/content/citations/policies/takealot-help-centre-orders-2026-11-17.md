@@ -1,5 +1,5 @@
 ---
-title: "Takealot Help Centre — order cancellation, refunds and missing items (snapshot 2026-11-17)"
+title: "Takealot Help Centre: order cancellation, refunds and missing items (snapshot 2026-11-17)"
 citation: "help.takealot.com articles: 'Why was my order cancelled?', 'How do I cancel my order?', 'Why is my refund taking so long?', 'What happens if a product is missing from my shipment/delivery?'"
 court_or_publisher: "Takealot Online (RF) (Pty) Ltd"
 date: "2026-11-17"
@@ -15,10 +15,10 @@ used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'Takealot's own missing-item page' angle"
   - "src/data/content.ts — TEMPLATES T20 body"
   - "src/data/content.ts — FAQ (Black Friday at Takealot; buy-now-pay-later; delivery fee on a cancelled order)"
-copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 — criticism / review."
+copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
 ---
 
-# Takealot Help Centre — order cancellation, refunds and missing items
+# Takealot Help Centre: order cancellation, refunds and missing items
 ## Snapshot 2026-11-17
 
 Takealot edits these articles often: six customer articles were updated between 6 and 17 November 2026. Each quote below carries the article's own `updated_at` time from Takealot's Help Centre. The site quotes Takealot's own words; where they differ from its terms and conditions, or from the law, the site says so.
