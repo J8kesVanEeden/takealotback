@@ -7,7 +7,7 @@ primary_url: "https://nfosa.co.za/"
 wayback_url: "https://web.archive.org/web/*/https://nfosa.co.za/"
 press_release: "https://nfosa.co.za/consumers-come-out-tops-with-formation-of-new-one-stop-ombud-scheme/"
 metaDescription: "National Financial Ombud (NFO, 2024): one-stop ombud combining banking, credit, long-term insurance, and short-term insurance schemes."
-retrieved: "2026-11-10"
+retrieved: "2026-11-23"
 used_in:
   - "src/data/content.ts — LAW_SECTIONS nfo item ('If the bank gets it wrong')"
   - "src/data/content.ts — FAQ (buy-now-pay-later: credit disputes)"
@@ -25,6 +25,24 @@ The Law section's "If the bank gets it wrong" item (`LAW_SECTIONS`, id `nfo`) re
 The buy-now-pay-later FAQ relies on this file for one point: if a dispute about the plan itself is not resolved and the provider is a credit provider, "the National Financial Ombud handles credit complaints (it took over from the Credit Ombud in 2024)".
 
 (Updated 2026-11-18: this section quoted older site wording, "banking division … (OBSSA amalgamated into NFO on 1 March 2024.)", and did not mention the FAQ.)
+
+## Verbatim extracts (read 2026-11-23)
+
+From the NFO's press release dated 1 March 2024 (nfosa.co.za/consumers-come-out-tops-with-formation-of-new-one-stop-ombud-scheme/; plain HTTP fetch, tags stripped):
+
+> "1 March 2024, Johannesburg, South Africa – The newly-formed National Financial Ombud Scheme (NFO) today announced the beginning of operations as a single, one-stop, all-in-one dispute resolution service made up of the four (4) former existing services – the Ombudsman for Banking Services (OBS); the Credit Ombud (CO); the Ombudsman for Long-Term Insurance (OLTI); and the Ombudsman for Short-Term Insurance (OSTI)."
+
+> "The Ombud Council, granted the NFO recognition (under section 194 of the Financial Sector Regulation Act, 9 of 2017 (FSR Act), as an industry ombud scheme on 23 February 2024. Complaints will be accepted from 1 March 2024."
+
+From the NFO's Contact Us page (nfosa.co.za/contact-us/), the phone number as published:
+
+> "0860-800-900"
+
+(The site header on every nfosa.co.za page shows it as "0860 800 900".)
+
+From the NFO's "Other Ombuds & Industry Bodies" page (nfosa.co.za/other-ombuds-industry-bodies/), under "Other Ombuds and Regulators", which is where the site's "FAIS Ombud remains separate" comes from:
+
+> "The Office of the Ombud for Financial Services Providers (FAIS Ombud) https://www.faisombud.co.za/"
 
 ## Operative facts (verified 2026-04-25)
 
@@ -66,4 +84,4 @@ The earlier "OBSSA-only" framing was widened on the 2026-04-25 audit pass. The s
 
 ## Status
 
-Operative facts verified against multiple sources (NFO press release, Moonstone, Citywire, FAnews) on 2026-04-25. NFO homepage didn't surface the full amalgamation scope at the time of the original 2026-04-24 fetch. Secondary sources fill the gap. Verbatim text fillable from the NFO press release on next refresh. **No verbatim primary extract is held in this file or in the raw captures as of 2026-11-18**, although the buy-now-pay-later FAQ now relies on it for the Credit Ombud amalgamation; capture the NFO press release (1 March 2024) on the next refresh.
+Operative facts verified against multiple sources (NFO press release, Moonstone, Citywire, FAnews) on 2026-04-25. NFO homepage didn't surface the full amalgamation scope at the time of the original 2026-04-24 fetch. Secondary sources fill the gap. Until 2026-11-23 this file held no verbatim primary extract; the NFO press release, contact page and "Other Ombuds" page were read on 2026-11-23 and quoted above. The release names the banking scheme "OBS"; the site's "OBSSA" is the same scheme.

@@ -73,6 +73,8 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   { test: /Small Claims Court|\bSCC\b|R\s?[23]0[, ]?000/i, link: { url: '/citations/regulators/scc-threshold-2026-04-24', label: 'Small Claims Court' } },
   { test: /National Financial Ombud|\bNFO\b|nfosa/i, link: { url: '/citations/regulators/nfo-amalgamation-2026-04-24', label: 'NFO scope' } },
 
+  { test: /\bUDRP\b/, link: { url: '/citations/statutes/udrp-policy', label: 'UDRP' } },
+
   // Statutes — Reg 44 (CPA Regulations) before "CPA" so it doesn't collide
   { test: /\bReg\s*44|Regulation\s*44|CPA\s*Reg/i, link: { url: '/citations/statutes/cpa-regulations-2011', label: 'CPA Regulations (Reg 44 grey list)' } },
 

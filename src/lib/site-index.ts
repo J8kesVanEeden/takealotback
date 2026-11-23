@@ -12,6 +12,7 @@ export const CITATION_GROUPS = [
   { name: 'regulators', label: 'Regulators & courts' },
   { name: 'commentary', label: 'Commentary (link + short excerpt)' },
   { name: 'press', label: 'Press reports' },
+  { name: 'providers', label: 'Service provider terms' },
 ] as const;
 
 // Reading order for the deep-dive pages (src/content/pages/<slug>.md).

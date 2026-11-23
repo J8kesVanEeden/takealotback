@@ -29,8 +29,8 @@ Policy text is Takealot's copyrighted material. This file is a **dated reference
 
 Our audit on this date (ours, not Takealot's) verified the following clauses against the live policy at terms-and-policies.takealot.com:
 
-- **Time Limits**: 30 days for wrong / damaged / missing / change-of-mind; 6 months for defective
-- **Original Packaging**: required per "Prepare Your Return"
+- **Time limits**: 30 days for wrong / damaged / missing / change-of-mind; 6 months for defective
+- **Original packaging**: required per "Prepare your return"
 - **Damage-on-delivery exclusions**: consumer damage / electrical surges / unintended purpose (sea-air is on the defective-item list only, not damage-on-delivery)
 - **Unlock codes**, verbatim (live policy, re-read 2026-11-17): *"If you return an item that stores data, you will have to give us your unlock codes or passwords – we just want to assess your return. If you decide not to provide us with access, we can refuse your return because it’s the only way we can assess your device."* Handing over the codes is stated as a requirement; refusing the return if you don't is "can refuse".
 - **Pre-packed Bundle return**: whole-bundle return requirement verified verbatim
@@ -69,7 +69,7 @@ Takealot does not surface a "Last updated" date on either the Returns Policy pag
 
 ## Re-verification log
 
-**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day extended-warranty (supplier) trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line. Neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
+**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day extended-warranty (supplier) trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line. Neither was relied on by the site at the time. (Corrected 2026-11-23: POLICY_SUMMARY.returns now relies on both; they are quoted under "Exchanges" and "Credit and refunds" below.) `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
 
 **2026-11-10 (Q4 2026 quarterly refresh, run late; due 2026-10-01):** Live Returns Policy rendered in headless Chrome (whole DOM walked, collapsed sections included) and diffed against this snapshot. The same extractor was run on the Wayback captures of 2026-04-25 and 2026-07-01: **the policy body text is identical across all three dates.** **No material change.** Every relied-on clause matches verbatim (programmatic check of every quoted string in this file and in CLAUSES: all found except the coupon quote, a transcription error in this file, now corrected above, along with the non-returnable list's missing digital-items entry). Takealot's page metadata shows a re-save on 2026-05-22 (Yoast `dateModified`) with no wording change; nothing since. Note for the record: the "Exchanges" blurb and donation line called new in the Q3 entry were already present in the 2026-04-25 capture. Raw extracted text is kept with the maintainer's working notes (not published; it reproduces the full pages). The dated Wayback captures listed below are the public record. `retrieved` bumped to 2026-11-10.
 
@@ -91,28 +91,36 @@ Wayback captures of this URL relied on, oldest first: [20260425123950](https://w
 
 The following is the operative wording of the Returns Policy as fetched from `terms-and-policies.takealot.com` on 2026-04-25. Direct quotations are flagged with quotation marks; everything else is faithful paraphrase. Fair-dealing snapshot under Copyright Act s 12(1)(b) (criticism and review).
 
-### Time Limits
+### Time limits
 
 > "Different items have different return windows. Here are the 2 simple rules."
 
 - Returns for **wrong items, damage on delivery, missing parts, or changed mind**: 30 days.
 - **Defective items**: 6 months from delivery.
 
-### Prepare Your Return
+### Prepare your return
 
 > The item must be returned "in its original product packaging with all the accessories and parts included, and all seals must be intact (if applicable)."
 
 Tags must remain on; items must not have been worn or used.
 
-### Damaged on Delivery / Wrong Item / Missing Parts
+### Wrong item, damaged on delivery, or missing parts
 
-For damaged, wrong, or incomplete deliveries within 30 days, Takealot offers replacement, account credit, or refund at the customer's choice. Items are not considered "damaged on delivery" if the damage was caused by the consumer, electrical surges, or use for an unintended purpose.
+For damaged, wrong, or incomplete deliveries within 30 days, the choice is the customer's, but only while Takealot has replacement stock (verbatim, 2026-11-17 capture; added 2026-11-23 because the earlier paraphrase dropped the stock condition):
 
-### Defective Items
+> "We can replace the item, credit your Takealot account with the purchase price, or refund you – it’s your choice. However, if we do not have replacement stock available, we’ll rather credit your Takealot account."
+
+Items are not considered "damaged on delivery" if the damage was caused by the consumer, electrical surges, or use for an unintended purpose.
+
+### Defective items
 
 Defective returns within 6 months may be repaired, replaced, credited, or refunded **after Takealot's inspection**. The choice is the customer's:
 
 > "If we accept the return, you must choose whether we should repair or replace the item, credit your Takealot account with the purchase price, or refund you."
+
+The same paragraph continues (verbatim, 2026-11-17 capture; added 2026-11-23):
+
+> "Keep in mind that not all defects can be repaired, and we may not always have replacement stock available."
 
 Excluded: normal wear and tear, consumer damage, electrical surges, sea-air corrosion, consumer modification, or unintended use.
 
@@ -123,6 +131,8 @@ The inspection step is built in to the workflow: *"when we receive the item, we'
 Under "Extended warranties", for a defect that shows up more than 6 months after delivery:
 
 > "You must log your return with us as soon as possible if an item becomes defective more than 6 months after delivery."
+
+> "The supplier will then inspect the item and decide whether to accept the return. They may charge you an evaluation fee." (Added 2026-11-23, 2026-11-17 capture.)
 
 > "If the supplier accepts the return and offers to repair or replace the item and this takes longer than 21 days from when the item is received at the supplier’s returns evaluation facility, we’ll offer you credit or a refund directly from Takealot."
 
@@ -136,27 +146,39 @@ Items with a manufacturer ("direct") warranty are different: the manufacturer ha
 
 Customers may return a whole Bundle Deal **or any of the individual items** in the bundle, with the credited / refunded amount reflecting the discounts applied at purchase.
 
-### Non-Returnable Items (change-of-mind)
+### Digital items and items that store data
+
+Verbatim, 2026-11-17 capture (added 2026-11-23):
+
+> "We will investigate the problem and, if you qualify for a return, you can choose if you want a replacement or a refund."
+
+> "When assessing your return, we might need to perform a factory reset which means that you could lose the data on your device. Please ensure that you’ve made backups."
+
+### Non-returnable items (change of mind)
+
+> "Items you cannot return are marked as non-returnable on the product description page. There are exceptions, such as if we delivered the wrong item, if the item arrives damaged on delivery, or if it is defective." (Verbatim, 2026-11-17 capture; added 2026-11-23.)
 
 Non-returnable categories include: intimate items, underwear, swimwear, jewellery, foodstuffs and everyday-consumption items, unsealed audio / video / software, books and periodicals, personalised items, made-to-specification items, and "digital items, such as electronic vouchers, gaming codes or other digital downloads" *(digital-items entry added 2026-11-10; it was live on 2026-04-25 but omitted from this transcription)*.
 
-### Vouchers and Coupons
+### Vouchers and coupons
 
 Voucher value loads as **non-refundable** Takealot account credit (Takealot's own wording is quoted under "Lines added 2026-11-18" above); any remaining cash amount may be credited or refunded.
 
 Coupons return as new coupons: "that coupon will have its own terms and conditions that may differ from the terms and conditions of your original coupon." *(Quote corrected 2026-11-10; the earlier version of this file misquoted it as "which may have…".)*
 
-### Wrong Item Returned (consumer error)
+### Wrong item returned (consumer error)
 
-If the consumer returns the wrong item, contact Takealot immediately. *"We cannot guarantee that we will find your item."* Mis-returned items may be disposed of without compensation.
+Verbatim, 2026-11-17 capture (the full passage added 2026-11-23):
 
-### Rejected Returns / Disposal
+> "You must return the correct item. Please contact us immediately if you have returned the wrong item because we dispose of incorrect returns. We cannot guarantee that we will find your item and unfortunately, we will not pay for lost items. If we find it, you will have to collect it."
+
+### Rejected returns and disposal
 
 If a return is rejected, Takealot returns the item to the consumer.
 
 > "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it."
 
-### Collection or Delivery / Re-Delivery Fees
+### Collection or delivery, and re-delivery fees
 
 Consumers choose collection or pickup-point drop-off within **7 days** of logging the return. Large items and alcohol are collection-only.
 
@@ -164,12 +186,19 @@ Consumers choose collection or pickup-point drop-off within **7 days** of loggin
 
 (This is the textual hook for the site's Clause 19.)
 
-### Credit and Refunds
+### Exchanges
+
+> "Got the size or colour wrong? You can exchange clothing, sportswear, and shoes for a different size or colour." (Verbatim, 2026-11-17 capture; added 2026-11-23.)
+
+### Credit and refunds
+
+> "When you log your return, you can choose whether we must credit your Takealot account, refund you the same way you paid, or replace the item." (Verbatim, 2026-11-17 capture; added 2026-11-23.)
 
 - Account credit loads within **2 business days**.
 - Account credit is valid for **3 years**: *"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit."*
 - Refunds process in **3–5 business days** to the original payment method.
 - Where the original payment method is unavailable: *"we will ask you for your bank details which we will have to verify before we can refund you. This could take a little longer than 5 days."*
+- Donations, verbatim (2026-11-17 capture; added 2026-11-23): *"If you made a donation with your purchase, we’ll subtract that amount from your refund or credit amount."*
 
 ---
 

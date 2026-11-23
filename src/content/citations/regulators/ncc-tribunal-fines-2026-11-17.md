@@ -28,15 +28,21 @@ The NCC reports four National Consumer Tribunal outcomes "handed down between Oc
 
 As the NCC's release reports it. The Tribunal's reasons were not found and have not been seen.
 
-> "Bryanston Executive Cars CC (Bryanston Executive Cars) was ordered to pay an administrative fine of R500 000 (five hundred thousand Rand) within 30 business days. … Bryanston Executive falsely advertised the vehicle as having a navigation system, misrepresented its overall condition, and included prohibited clauses in its sale agreement, attempting to waive the six-month implied warranty of quality."
+> "Bryanston Executive Cars CC (Bryanston Executive Cars) was ordered to pay an administrative fine of R500 000 (five hundred thousand Rand) within 30 business days. … The investigation revealed that the consumer purchased a used 2012 Mercedes-Benz C350 for R228 935.00 (two hundred and twenty-eight thousand, nine hundred and thirty-five Rand) on 10 August 2024.  Bryanston Executive falsely advertised the vehicle as having a navigation system, misrepresented its overall condition, and included prohibited clauses in its sale agreement, attempting to waive the six-month implied warranty of quality."
 
 > "Bryanston Executive Cars was found to have contravened sections 29(a), 41(1)(a) and(c) read with section 55(2)(a)-(c); and section 51(1) (a(i)(ii) and 51(1)(b)(i)-(ii) of the CPA. The Tribunal declared its conduct prohibited. In imposing an administrative penalty, the Tribunal noted that the dealership had previously been fined in June 2024 for violating the CPA."
 
 ### Affordable Power Solutions (Pty) Ltd
 
+From the release's opening summary:
+
+> "In another matter, the Tribunal imposed an administrative penalty on a solar company that failed to comply with a compliance notice issued by the NCC."
+
 > "The Tribunal addressed Affordable Power Solutions’ failure to comply with a statutory compliance notice issued by the NCC on 15 May 2026. … The Tribunal ordered the supplier to pay an administrative fine of R200 000 (two hundred thousand Rand) within 30 business days."
 
-(The release also gives the NCC's account of the underlying battery dispute. The Tribunal made no finding on that dispute (judgment para 17), so it is not repeated here.)
+The release's own account of the underlying dispute (added 2026-11-23, because escalation tier 5 repeats it as the NCC's report). This is the NCC's version only: the Tribunal made no finding on the battery dispute (judgment para 17).
+
+> "The dispute involved a defective solar lithium battery supplied on 22 March 2024. … The consumer paid R43 875,00 (forty-three thousand eight hundred and seventy-five Rand) for the additional lithium battery, which failed within six months. The supplier refused to honour the warranty or provide a refund, alleging water damage. When the NCC issued a compliance notice instructing the supplier to engage with the consumer and propose a remedy, the supplier completely ignored the compliance notice."
 
 ### Acting Commissioner
 
@@ -47,6 +53,6 @@ As the NCC's release reports it. The Tribunal's reasons were not found and have 
 ## Site reliance
 
 - **Clause 08 (defective exclusions):** according to the NCC's release, a supplier was fined partly for sale-agreement clauses "attempting to waive the six-month implied warranty of quality". The site states only that, plus the sections the release names (including CPA s 51(1)). The supplier is a used-car dealer, not Takealot, and the site says so.
-- **Escalation tier 5 (NCC):** ignoring an NCC compliance notice drew a R200,000 fine. The Tribunal made no finding on the battery dispute itself.
+- **Escalation tier 5 (NCC):** ignoring an NCC compliance notice drew a R200,000 fine. The site gives the battery and the notice to propose a remedy as the NCC's report, from the release extract above, and says the Tribunal ruled only on the ignored notice.
 
 Raw captures of the release and of the Affordable Power judgment are kept on file.

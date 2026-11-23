@@ -25,6 +25,12 @@ Until 2026-11-10 the site listed `help@takealot.com` as Takealot's support addre
 
 The page points customers to the Help Centre rather than a phone number. You search for the topic closest to your query. If the topic doesn't resolve it, you select the 'Contact Us' button at the bottom of the topic and complete the 'Get in Touch' form, and a customer service agent replies. (Paraphrased 2026-11-23; the page's own wording is at the primary URL.)
 
+## Verbatim extract (rendered page; same wording in the 2026-11-10 and 2026-11-17 captures)
+
+Escalation tier 1 quotes this line, so it is kept word for word (restored 2026-11-23):
+
+> "Need to speak with one of our customer service agents? Looking for our contact number? The best way to reach us is through our Help Centre."
+
 ## Companion text in Takealot's T&Cs (see takealot-tcs-2026-04-24.md; raw capture 2026-11-10)
 
 > "If something goes wrong, please start by contacting our Customer Support team via the Help Centre; most problems can be easily resolved this way."

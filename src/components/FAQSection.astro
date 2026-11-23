@@ -12,6 +12,7 @@ function pad(n: number) {
   <h2 class="display h2 tb-faq__head">Frequently asked questions.</h2>
   <div class="tb-faq__list">
     {FAQ.map((f, i) => {
+      // "\n\n" in an answer string starts a new paragraph.
       const sources = scanForCitations(`${f.q}\n${f.a}`);
       return (
         <details class="tb-faq__item">
@@ -21,7 +22,7 @@ function pad(n: number) {
             <span class="mono tb-faq__toggle" aria-hidden="true"></span>
           </summary>
           <div class="tb-faq__a">
-            <p class="tb-faq__body">{f.a}</p>
+            {f.a.split(/\n\n+/).map((para) => <p class="tb-faq__body">{para}</p>)}
             <SourceChips label="Sources for this answer" sources={sources} />
           </div>
         </details>

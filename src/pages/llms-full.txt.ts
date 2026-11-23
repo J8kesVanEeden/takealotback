@@ -176,7 +176,7 @@ export const GET: APIRoute = async () => {
   const citations = await getCollection('citations');
   lines.push(`## Citations & sources (${citations.length})`);
   lines.push('');
-  lines.push('Every source the site relies on. Each page carries the primary URL, a Wayback Machine link and the date it was retrieved.');
+  lines.push('Every source the site relies on. Each page carries the date it was retrieved, and the primary URL and a Wayback Machine link where available.');
   lines.push('');
   for (const g of CITATION_GROUPS) {
     const entries = citations

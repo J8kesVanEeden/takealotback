@@ -20,6 +20,14 @@ Day-to-day rules for keeping the site factually current and defensible. Short do
    Capture the resulting `web/<timestamp>/<url>` path from the script's output and add to the citation file's frontmatter as `wayback_url_dated`. Don't remove existing dated entries: they document what we relied on at a specific date. Wayback may be slow (5–30 s) and rate-limit on bulk saves; the script paces requests at 6 s.
 5. **In your commit message**, reference the citation file path so the reviewer can trace the source without leaving the repo.
 
+   Example:
+
+   ```
+   Update Clause 06 to mention the inventory fallback
+
+   cf. src/content/citations/policies/takealot-returns-2026-04-24.md (para "Credit vs refund")
+   ```
+
 ## Post-deploy archival
 
 After every substantive content change is live on `takealotback.com`:
@@ -28,13 +36,7 @@ After every substantive content change is live on `takealotback.com`:
 2. For a full-site backup (every indexable page), run `npm run archive -- --all`. Takes ~4–5 min plus retries for any that SPN throttles.
 3. Update any citation file whose primary source you re-archived: paste the new `web/<timestamp>/<url>` into `wayback_url_dated` (or rename the previous one to `wayback_url_earlier` to keep both). Commit.
 
-The Wayback Machine is genuine third-party version-insurance, independent of GitHub, Cloudflare, our own infrastructure. If the live site disappears for any reason, content remains recoverable from web.archive.org under the snapshots we forced. Example:
-
-```
-Update Clause 06 to mention the inventory fallback
-
-cf. src/content/citations/policies/takealot-returns-2026-04-24.md (para "Credit vs refund")
-```
+The Wayback Machine is genuine third-party version-insurance, independent of GitHub, Cloudflare, our own infrastructure. If the live site disappears for any reason, content remains recoverable from web.archive.org under the snapshots we forced.
 
 ---
 
