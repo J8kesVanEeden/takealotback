@@ -10,6 +10,7 @@ retrieved: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[18] (restocking-redelivery-fees) 'NCC v RC Auto' angle"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # National Consumer Commission v RC Auto Bloemfontein (Pty) Ltd

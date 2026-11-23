@@ -14,6 +14,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) 'NCC + CGSO e-commerce note (2025)' angle"
 copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "The note does not name Takealot. It is the two regulators' stated view, not a ruling or a binding rule; it carries its own disclaimer ('provided for informational purposes only and is not legal advice')."
+updated: "2026-11-23"
 ---
 
 # NCC + CGSO explanatory note: e-commerce platforms and e-vouchers

@@ -24,6 +24,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[23] (account-suspension) 'POPIA s 19 + s 22' angle"
   - "src/data/content.ts — TEMPLATES T22 body (s 23 access request)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Protection of Personal Information Act 4 of 2013

@@ -13,6 +13,7 @@ reverified_on: "2026-11-17"
 used_in:
   - "Provenance — supports post-Motus s 69 commentary picked up in CLAUSES[12] angle"
 copyright: "ENSafrica. Short excerpt / summary only: fair dealing."
+updated: "2026-11-23"
 ---
 
 # ENSafrica: Straight shot to the courts for consumers

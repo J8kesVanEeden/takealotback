@@ -11,7 +11,8 @@
 // All builders return plain objects suitable for passing to JsonLd.astro,
 // which handles the safe `<script type="application/ld+json">` wrapping.
 
-import { GITHUB_REPO_URL, LAST_REVIEWED } from '../data/content';
+import { GITHUB_REPO_URL, LAST_REVIEWED, CONTENT_UPDATED } from '../data/content';
+import { latestDate, isoDate } from './site-index';
 import type { Template } from '../data/content';
 
 // ── Stable IDs ──────────────────────────────────────────────────────────
@@ -122,7 +123,7 @@ export function buildWebSite() {
     name: 'TakealotBack.com',
     alternateName: 'TakealotBack',
     description:
-      "A non-commercial, plain-English South African consumer-rights reference for disputes with Takealot. Maps their returns policy against the CPA, ECT Act, POPIA, and common law.",
+      "A non-commercial, plain-English South African consumer-rights reference built around Takealot, the country's biggest online retailer. It maps Takealot's returns policy against the CPA, ECT Act, POPIA and common law. The same rights apply at most South African retailers.",
     inLanguage: 'en-ZA',
     publisher: { '@id': ORG_ID },
     license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
@@ -192,7 +193,9 @@ export function buildHomeCollectionPage(args: {
   templates: TemplateLite[];
 }) {
   const { clauses, templates } = args;
-  const isoReviewed = LAST_REVIEWED.replace(/\./g, '-');
+  // The homepage changes when content.ts or a homepage component changes
+  // (CONTENT_UPDATED) as well as at each legal review (LAST_REVIEWED).
+  const homeModified = latestDate(LAST_REVIEWED, CONTENT_UPDATED);
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -203,7 +206,7 @@ export function buildHomeCollectionPage(args: {
       "A single-page reference to South African consumer rights when Takealot's returns policy oversteps the CPA, ECT Act, or POPIA.",
     inLanguage: 'en-ZA',
     isPartOf: { '@id': WEBSITE_ID },
-    dateModified: isoReviewed,
+    dateModified: homeModified,
     datePublished: '2026-04-23',
     license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,
     isAccessibleForFree: true,
@@ -384,9 +387,10 @@ export function buildCitationArticle(args: {
     publisher: { '@id': ORG_ID },
     author: { '@id': ORG_ID },
     image: { '@id': OG_IMAGE_ID },
+    // `retrieved` is when the source was fetched; `updated` is when this
+    // page was last edited. The page changed at whichever is later.
     dateModified:
-      (data.retrieved as string)?.replace(/\./g, '-') ??
-      LAST_REVIEWED.replace(/\./g, '-'),
+      latestDate(data.retrieved as string, data.updated as string) ?? isoDate(LAST_REVIEWED),
     about: data.citation ? [...topics, {
       '@type': 'Thing',
       name: data.citation,

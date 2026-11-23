@@ -16,6 +16,7 @@ used_in:
   - "src/components/WarrantiesSection.astro — aedilitian link note (reasonable time to cancel)"
   - "src/data/content.ts — FAQ (buy-now-pay-later, credit or eBucks: same rights?)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # Van Niekerk v FirstRand Bank Limited

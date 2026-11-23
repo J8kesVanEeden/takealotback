@@ -15,6 +15,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) angle on stolen-goods + flip-flop refund pattern"
   - "../press/knowler-scholle-stolen-laptop-timeslive-2022-11-06.md — corroborating second source on the same case"
 copyright: "© MyBroadband. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
+updated: "2026-11-23"
 ---
 
 # Scholle: stolen laptop, refund flip-flop

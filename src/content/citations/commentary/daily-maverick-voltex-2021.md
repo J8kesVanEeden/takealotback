@@ -11,6 +11,7 @@ reverified_on: "2026-11-17"
 used_in:
   - "Corroborating source for CGSO v Voltex compulsory-participation holding — see ../cases/CGSO-Voltex-ZAGPPHC-309-2021.md"
 copyright: "Daily Maverick. Short excerpt / summary only: fair dealing."
+updated: "2026-11-23"
 ---
 
 # Daily Maverick: CGSO wins membership fee battle

@@ -16,6 +16,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T16 body"
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory) resolution target"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official text of a legislative nature)"
+updated: "2026-11-23"
 ---
 
 # Consumer Goods and Services Industry Code of Conduct, 2026

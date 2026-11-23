@@ -18,6 +18,7 @@ used_in:
   - "src/data/content.ts — ESCALATION[5] (Information Regulator tier)"
   - "src/data/content.ts — LAW_SECTIONS[2].items.reg (Information Regulator entry)"
 copyright: "Facts, not copyrightable."
+updated: "2026-11-23"
 ---
 
 # Information Regulator: POPIA complaint channels (verified 2026-11-10)

@@ -11,6 +11,7 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'NCC v Fugui Trading' angle"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
+updated: "2026-11-23"
 ---
 
 # National Consumer Commission v Fugui Trading (Pty) Ltd
