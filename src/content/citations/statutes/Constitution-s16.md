@@ -1,5 +1,5 @@
 ---
-title: "Constitution of the Republic of South Africa, 1996 — s 16 (freedom of expression)"
+title: "Constitution of the Republic of South Africa, 1996, s 16 (freedom of expression)"
 citation: "Constitution of the Republic of South Africa, 1996"
 court_or_publisher: "Parliament of the Republic of South Africa"
 date: "1996-12-18"
@@ -14,10 +14,10 @@ used_in:
   - "src/components/AboutSection.astro — legal grounding block"
   - "src/components/Footer.astro — copyright row rationale for criticism/commentary"
   - "src/data/content.ts — FAQ[0] (domain-name-use-legal question)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
-# Constitution of the RSA, 1996 — s 16
+# Constitution of the RSA, 1996: s 16
 
 ## Verbatim text (re-checked 2026-11-17 against the gov.za Chapter 2 text; unchanged)
 

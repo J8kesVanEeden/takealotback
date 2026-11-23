@@ -1,12 +1,12 @@
 ---
-title: "Knowler — exploding charger, marketplace seller no-invoice (Wales)"
+title: "Knowler: exploding charger, marketplace seller no-invoice (Wales)"
 citation: "News24, Consumer Lookout, 06 April 2025"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-04-06"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
 wayback_url_dated: "https://web.archive.org/web/20261117210406/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
 wayback_url_earlier: "https://web.archive.org/web/20260507165447/https://www.news24.com/business/consumer-lookout/wendy-knowler-exploding-charger-dirty-new-sofa-when-e-commerce-giants-deliver-a-dud-20250406"
-metaDescription: "Knowler reports the Wales/Lenovo case: Takealot third-party seller wouldn't issue an invoice for a R23,000 laptop whose charger exploded, blocking the warranty claim. CGSO Lee Soobrathi quoted on intermediary obligations under the CPA + ECTA."
+metaDescription: "Knowler reports the Wales/Lenovo case: Takealot third-party seller wouldn't issue an invoice for a R23,000 laptop whose charger exploded, blocking the warranty claim. CGSO Lee Soobrathi quoted on intermediary obligations under the CPA and ECTA."
 retrieved: "2026-05-07"
 corrected_on: "2026-11-17"
 correction_note: "Three passages were set out as direct Takealot quotations but are partly or wholly Knowler's reported speech. Restored to the article's wording, with only Takealot's own words in quotation marks, 2026-11-17."
@@ -25,7 +25,7 @@ copyright: "© Media24 / News24. Quoted under fair dealing for criticism and rev
 
 ## Why the site cites this
 
-The article — published one year after Wales's purchase — establishes the marketplace-seller intermediary problem: a third-party seller on Takealot's platform sold a R23,000 Lenovo laptop, the charger exploded, the seller had not provided an invoice, and the seller went unresponsive when Takealot tried to obtain one. The article quotes the Consumer Goods and Services Ombud's stance — that an e-commerce platform hosting third-party products is an **intermediary** for CPA purposes and inherits the corresponding records-keeping and consumer-protection obligations. This grounds the site's marketplace-sellers angle on **CPA s 27 (intermediary) + ECT s 43**. (Description corrected 2026-11-18: it read as if the charger cost R23,000. The R23,000 is the laptop's price: "the warranty on my R23 000 laptop".)
+The article, published one year after Wales's purchase, establishes the marketplace-seller intermediary problem: a third-party seller on Takealot's platform sold a R23,000 Lenovo laptop, the charger exploded, the seller had not provided an invoice, and the seller went unresponsive when Takealot tried to obtain one. The article quotes the Consumer Goods and Services Ombud's stance: that an e-commerce platform hosting third-party products is an **intermediary** for CPA purposes and inherits the corresponding records-keeping and consumer-protection obligations. This grounds the site's marketplace-sellers angle on **CPA s 27 (intermediary) and ECT s 43**. (Description corrected 2026-11-18: it read as if the charger cost R23,000. The R23,000 is the laptop's price: "the warranty on my R23 000 laptop".)
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -69,7 +69,7 @@ The article — published one year after Wales's purchase — establishes the ma
 
 ## Site reliance
 
-- The CGSO statement is the central authority for the site's argument that Takealot, *as a hosting platform*, owes the consumer the records the consumer needs to exercise warranty / refund rights — even when the underlying sale is by a third-party seller. The intermediary stance is a regulatory interpretation, not adjudicated case law, but it is the published view of the body Takealot is statutorily required to participate with.
+- The CGSO statement is the central authority for the site's argument that Takealot, *as a hosting platform*, owes the consumer the records the consumer needs to exercise warranty / refund rights, even when the underlying sale is by a third-party seller. The intermediary stance is a regulatory interpretation, not adjudicated case law, but it is the published view of the body Takealot is statutorily required to participate with.
 - The case is followed up in the 13 April 2025 piece (see companion citation), where Takealot reverses position and provides Wales a replacement laptop.
 
 ## Wayback / archive status

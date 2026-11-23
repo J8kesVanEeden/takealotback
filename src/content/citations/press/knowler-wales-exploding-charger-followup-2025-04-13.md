@@ -1,11 +1,11 @@
 ---
-title: "Knowler — Takealot steps in after supplier ghosts (Wales follow-up)"
+title: "Knowler: Takealot steps in after supplier ghosts (Wales follow-up)"
 citation: "News24, Consumer Lookout, 13 April 2025"
 court_or_publisher: "Wendy Knowler, News24 Consumer Lookout"
 date: "2025-04-13"
 primary_url: "https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-exploding-charger-takealot-steps-in-after-supplier-ghosts-20250413"
 wayback_url_dated: "https://web.archive.org/web/20260507161118/https://www.news24.com/business/consumer-lookout/wendy-knowler-win-of-the-week-exploding-charger-takealot-steps-in-after-supplier-ghosts-20250413"
-metaDescription: "Follow-up to the Wales/Lenovo case: after News24 published, Takealot suspended the third-party seller and gave Wales a new replacement laptop. CGSO Soobrathi reiterates the intermediary stance."
+metaDescription: "Follow-up to the Wales/Lenovo case: within an hour of publication Takealot contacted Wales and gave him a new replacement laptop. CGSO Soobrathi reiterates the intermediary stance."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-10"
 retrieved_by: "Source captured directly from authenticated News24 subscription on 2026-05-07."
@@ -48,7 +48,7 @@ The follow-up piece confirms the resolution pattern in the Wales / Lenovo case: 
 
 ## Site reliance
 
-The follow-up cements the framing: the intermediary stance is not academic. It is the lever that produces remedies in practice. The site cites both pieces together where the marketplace-sellers angle is in play.
+The follow-up shows what happened once the story ran with the CGSO's view on record: Takealot contacted Wales within the hour and replaced his laptop. The site cites both pieces together where the marketplace-sellers angle is in play.
 
 ## Wayback / archive status
 

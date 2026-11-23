@@ -14,7 +14,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T03 body (onus on the supplier to prove the exclusion)"
   - "src/data/content.ts — FAQ (why templates mention case names)"
   - "src/content/pages/onus-of-proof.md — 'Inside the first 6 months' section"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Wingfield Motors (Pty) Ltd t/a Best Price For My Car v National Consumer Tribunal and Others

@@ -63,7 +63,7 @@ function buildTitle(rawTitle: string, citation: string | undefined): string {
   const t = String(rawTitle);
   if (t.length >= 30) return truncateTitle(t);
   if (!citation) return t;
-  const suffixed = `${t} — ${citation}`;
+  const suffixed = `${t}: ${citation}`;
   return truncateTitle(suffixed);
 }
 const title = buildTitle(data.title as string, data.citation as string | undefined);
@@ -177,7 +177,7 @@ const usedIn = (data.used_in as string[] | undefined) ?? [];
               const link = usedInLink(u);
               return (
                 <li class="mono">
-                  <span class="tb-cite__usedin-line">{u}</span>
+                  <span class="tb-cite__usedin-line">{u.replace(/\s+—\s+/g, ': ') /* copy-ok: swaps the dash out of used_in provenance lines */}</span>
                   {link && (
                     <a href={link.href} class="tb-cite__usedin-jump">{link.label}</a>
                   )}

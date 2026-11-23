@@ -18,7 +18,7 @@ used_in:
   - "src/data/content.ts — FAQ (Black Friday; buy-now-pay-later s 44(1); delivery fee on a cancelled order s 44)"
   - "src/data/content.ts — TEMPLATES T20 and T23 (s 46)"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes) 'CPA s 51 / ECT s 48' angle and TEMPLATES T09 body (s 48 non-exclusion)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Electronic Communications and Transactions Act 25 of 2002
@@ -29,7 +29,7 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 ## s 42. Scope of application
 
-**Site reliance:** Chapter VII applies to electronic transactions. The s 42(2) list excludes certain transactions from the **s 44 cooling-off right only** — not from s 43, s 46 or the CPA's s 56 defective-goods return. The site's Clause 10 uses (f) (personalised / made to specification / can't be returned / deteriorates rapidly) and (g) (unsealed audio, video or software). Until 2026-11-10 this file dropped item (e) and shifted every later letter by one; corrected.
+**Site reliance:** Chapter VII applies to electronic transactions. The s 42(2) list excludes certain transactions from the **s 44 cooling-off right only**, not from s 43, s 46 or the CPA's s 56 defective-goods return. The site's Clause 10 uses (f) (personalised / made to specification / can't be returned / deteriorates rapidly) and (g) (unsealed audio, video or software). Until 2026-11-10 this file dropped item (e) and shifted every later letter by one; corrected.
 
 > (1) This Chapter applies only to electronic transactions.
 >
@@ -129,7 +129,7 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 ## s 44. Cooling-off period
 
-**Site reliance:** The 7-day no-reason cooling-off for online purchases — the headline of Clause 01.
+**Site reliance:** The 7-day no-reason cooling-off for online purchases: the headline of Clause 01.
 
 > (1) A consumer is entitled to cancel without reason and without penalty any transaction and any related credit agreement for the supply—
 >

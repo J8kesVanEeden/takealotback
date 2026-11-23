@@ -8,49 +8,49 @@ datePublished: "2026-04-23"
 
 # Your claim doesn't die at 6 months
 
-The Consumer Protection Act's section 56 return-and-refund right runs for six months. Plenty of things fail later — a TV at 14 months, a washing machine at 20 months, a laptop at 19 months. South African common law carries on where section 56 stops.
+The Consumer Protection Act's section 56 return-and-refund right runs for six months. Plenty of things fail later: a TV at 14 months, a washing machine at 20 months, a laptop at 19 months. South African common law carries on where section 56 stops.
 
 ## Two remedies from Roman-Dutch law
 
 Both are preserved alongside the CPA by section 2(10): *"No provision of this Act must be interpreted so as to preclude a consumer from exercising any rights afforded in terms of the common law."*
 
-**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect — hidden from reasonable inspection, existing (at least in embryonic form) at the time of sale, and serious enough that a reasonable buyer would not have bought at all.
+**Actio redhibitoria.** Cancellation plus full refund. Available where the goods have a *latent* defect: hidden from reasonable inspection, existing (at least in embryonic form) at the time of sale, and serious enough that a reasonable buyer would not have bought at all.
 
-**Actio quanti minoris.** A price reduction — a partial refund — for a latent defect that would have reduced the price rather than killed the deal. Typically proxied in modern disputes by the reasonable cost of repair.
+**Actio quanti minoris.** A price reduction (a partial refund) for a latent defect that would have reduced the price rather than killed the deal.
 
-## Prescription — 3 years
+## Prescription: 3 years
 
 Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the CPA window closed in November 2024.
 
-Prescription is the outer limit, not the deadline. To cancel the sale (actio redhibitoria) you must act within a reasonable time after you discover the defect, and be able to return the item (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14).
+Prescription is the outer limit, not the only deadline. To cancel the sale (actio redhibitoria) you must act within a reasonable time after you discover the defect, and be able to return the item (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14).
 
 ## What "latent defect" actually means
 
 The test is the one Corbett JA set out for the Appellate Division in *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A) at 683H–684A; the Supreme Court of Appeal calls it the *Holmdene Brickworks* test. *Glaston House (Pty) Ltd v Inag (Pty) Ltd* 1977 (2) SA 846 (A) took a broad view of what counts as a defect, and *Phame (Pty) Ltd v Paizes* 1973 (3) SA 397 (A) extends the same remedies to *dicta et promissa* (see also *Dibley v Furter* 1951 (4) SA 73 (C)). Putting the *Holmdene Brickworks* definition together with the requirements the SCA lists in *Van Niekerk* (para 14), the defect must be:
 
-1. **Hidden** — not discoverable on reasonable inspection by an ordinary non-expert buyer.
-2. **Present at sale** — existing at the time of sale, at least in embryonic form, even if it only manifested later.
-3. **Material** — serious enough to render the goods unfit or substantially less fit for purpose.
+1. **Hidden**: not discoverable on reasonable inspection by an ordinary non-expert buyer.
+2. **Present at sale**: existing at the time of sale, at least in embryonic form, even if it only manifested later.
+3. **Material**: serious enough to render the goods unfit or substantially less fit for purpose.
 
-A hairline manufacturing crack in a casting, a bad solder joint on a motherboard, a firmware flaw that only triggers after a specific operating condition — these are typical examples of defects that were present at sale but only surfaced with use.
+A hairline manufacturing crack in a casting, a bad solder joint on a motherboard, a firmware flaw that only triggers after a specific operating condition: these are typical examples of defects that were present at sale but only surfaced with use.
 
 The Supreme Court of Appeal reaffirmed the test on 10 December 2025 in *Van Niekerk v FirstRand Bank Ltd* [2025] ZASCA 187; 2026 (2) SA 516 (SCA): *"It is now settled that any material imperfection preventing or hindering the ordinary or common use of the res vendita (the thing sold) is an aedilitian defect."* (para 16). The same judgment held that taking the item back after a failed repair did not waive the buyer's right to cancel (para 19), and that goods bought on credit stay inside the CPA even though the credit agreement itself falls under the National Credit Act (s 5(2)(d), para 19).
 
-## Practical limits — and why CPA s55/s56 is usually better
+## Practical limits, and why CPA s55/s56 is usually better
 
-The aedilitian remedies work against the seller: Takealot for items Takealot sold itself, or the Marketplace seller where you bought from one (check your order details or invoice), not against a non-contracting manufacturer. And the relief is limited: cancellation and refund, or a pro-rata price reduction. Consequential damages — costs you incurred because the item failed — require the separate *actio empti*, which needs an express warranty, fraud, or a "merchant/manufacturer seller" who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A)).
+The aedilitian remedies work against the seller: Takealot for items Takealot sold itself, or the Marketplace seller where you bought from one (check your order details or invoice), not against a non-contracting manufacturer. And the relief is limited: cancellation and refund, or a pro-rata price reduction. Consequential damages (costs you incurred because the item failed) require the separate *actio empti*, which needs an express warranty, fraud, or a "merchant/manufacturer seller" who publicly professes skill (per *Holmdene Brickworks v Roberts Construction* 1977 (3) SA 670 (A)).
 
-In practice, the better first-line route for defective goods is CPA s56 within the 6-month window: especially where the fault shows up soon after delivery, the courts put the onus on the supplier to prove misuse (*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591, relied on in *Edan Traders v NCT* [2026] ZAGPJHC 386), and consequential loss can flow through s61 (strict product liability) where harm is caused. The aedilitian remedies come into play when:
+In practice, the better first-line route for defective goods is CPA s56 within the 6-month window: where the fault shows up soon after delivery, the courts put the onus on the supplier to prove misuse (*Toyota Randburg v Ndlovu* [2024] ZAGPPHC 591, relied on in *Edan Traders v NCT* [2026] ZAGPJHC 386), and consequential loss can flow through s61 (strict product liability) where harm is caused. The aedilitian remedies come into play when:
 
 - you're outside the 6-month s56 window;
 - the defect is genuinely latent (not wear and tear);
-- you want rescission (full cancel + refund) or a price reduction; and
+- you want rescission (cancellation and full refund) or a price reduction; and
 - you're prepared to produce technical evidence of the latent defect.
 
 Past six months the CPA doesn't drop out entirely. The s55(2)(c) right to goods that stay usable and durable for a reasonable period has no six-month limit, so it runs alongside the common law (see [Warranties](/#warranties)).
 
 ## Voetstoots is dead against consumers
 
-Any attempt by a retailer to sell "as-is" to a consumer under the CPA is void. Section 51 read with section 56 prohibits waiver of the quality warranty, and the CGSO took the same line in its published Advisory Note 11 ("Supply of Voetstoots Goods", [2021] ZACGSO 11; since taken off the CGSO's website pending review, still on SAFLII). The National Consumer Tribunal has reached the same conclusion. In *National Consumer Commission v Western Car Sales* [2017] ZANCT 102 it held that "the concept of a 'voetstoots' sale … is therefore not applicable to any transactions falling under the CPA" (para 35, quoted in Advisory Note 11 para 4.1); and in *Vonk v Willow Crest Motors* [2019] ZANCT 63 that "The use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act …" (para 44.1). The North West Consumer Affairs Court reached the same result on narrower grounds in *Fourie v Agenbag Motor Group* [2018] ZACONAF 3: because no defects had been disclosed (s55(6)), the dealer's voetstoots clause was of no force or effect, and it had to refund the full R35,000.
+Any attempt by a retailer to sell "as-is" to a consumer under the CPA is void, apart from the narrow exceptions below. Section 51 read with section 56 prohibits waiver of the quality warranty, and the CGSO took the same line in its published Advisory Note 11 ("Supply of Voetstoots Goods", [2021] ZACGSO 11; since taken off the CGSO's website pending review, still on SAFLII). The National Consumer Tribunal has reached the same conclusion. In *National Consumer Commission v Western Car Sales* [2017] ZANCT 102 it held that "the concept of a 'voetstoots' sale … is therefore not applicable to any transactions falling under the CPA" (para 35, quoted in Advisory Note 11 para 4.1); and in *Vonk v Willow Crest Motors* [2019] ZANCT 63 that "The use of a voetstoots clause by a supplier in a contract of sale constitutes prohibited conduct under the Act …" (para 44.1). The North West Consumer Affairs Court reached the same result on narrower grounds in *Fourie v Agenbag Motor Group* [2018] ZACONAF 3: because no defects had been disclosed (s55(6)), the dealer's voetstoots clause was of no force or effect, and it had to refund the full R35,000.
 
-Voetstoots survives only in (a) auction sales (CPA s55(1), read with s45), (b) goods altered after they left the retailer's control, (c) the s55(6) scenario where a specific condition was expressly disclosed and expressly accepted (or the buyer knowingly acted in a way consistent with accepting it), and (d) transactions outside CPA scope (e.g. a juristic-person buyer whose asset value or turnover equals or exceeds the s5(2)(b) threshold, private once-off sales).
+Voetstoots survives only in (a) auction sales (CPA s55(1), read with s45), (b) goods altered after they left the retailer's control, (c) the s55(6) scenario where a specific condition was expressly disclosed and expressly accepted (or the buyer knowingly acted in a way consistent with accepting it), and (d) transactions outside CPA scope (e.g. a juristic-person buyer whose asset value or turnover equals or exceeds the s5(2)(b) threshold, private once-off sales). Even in (c), only s55(2)(a) and (b) fall away, not durability.

@@ -12,7 +12,7 @@ retrieved: "2026-04-25"
 reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) TRC v Sony angle"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Television Radio Centre (Pty) Ltd v Sony Kabushiki Kaisha
@@ -22,7 +22,7 @@ copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
 
 The Appellate Division authority for the **material-alteration limit** on a reseller's freedom to sell trade-marked goods. Selling genuine goods marked by the proprietor is not infringement; but goods altered enough after marking are no longer the "genuine goods" the proprietor marked, and selling them under the mark infringes.
 
-**Statute.** The case was decided under the **Trade Marks Act 62 of 1963, s 44(1)(a)** — six years before the Trade Marks Act 194 of 1993 and its s 34(2)(d) existed. The site cites it for the principle, which sits naturally alongside today's s 34(2)(d) ("goods to which the trade mark has been applied by or with the consent of the proprietor thereof"), not as a decision on s 34(2)(d) itself.
+**Statute.** The case was decided under the **Trade Marks Act 62 of 1963, s 44(1)(a)**, six years before the Trade Marks Act 194 of 1993 and its s 34(2)(d) existed. The site cites it for the principle, which sits naturally alongside today's s 34(2)(d) ("goods to which the trade mark has been applied by or with the consent of the proprietor thereof"), not as a decision on s 34(2)(d) itself.
 
 ## Facts
 
@@ -44,11 +44,11 @@ On the outcome:
 
 > "In the result the appeal is dismissed with costs"
 
-(The SAFLII text has scanning artefacts. Words split by a hyphen — "mat-ter", "re-corders" — are joined in the extracts above; "44(l)" is left as SAFLII prints it, for "44(1)".)
+(The SAFLII text has scanning artefacts. Words split by a hyphen ("mat-ter", "re-corders") are joined in the extracts above; "44(l)" is left as SAFLII prints it, for "44(1)".)
 
 ## Operative principle
 
-Resale protection covers genuine goods as the proprietor marked them. Material alteration after marking — a change of specification, a conversion of the underlying product — can take the goods outside that protection, and whether the change is enough "becomes a matter of degree".
+Resale protection covers genuine goods as the proprietor marked them. Material alteration after marking (a change of specification, a conversion of the underlying product) can take the goods outside that protection, and whether the change is enough "becomes a matter of degree".
 
 ## Citation note
 
@@ -58,11 +58,11 @@ Television Radio Centre was the **appellant** and Sony the **respondent**; the a
 
 `src/data/content.ts` Clause 17 (resale-prohibition), angle "TRC v Sony":
 
-> "Television Radio Centre v Sony Kabushiki Kaisha 1987 (2) SA 994 (A), [1987] ZASCA 32 — decided under the old 1963 Trade Marks Act: video recorders converted after Sony marked them were no longer the "genuine goods" Sony had marked, so selling them under the SONY mark infringed. Resale protection covers genuine goods as marked, not materially altered ones."
+> "Television Radio Centre v Sony Kabushiki Kaisha 1987 (2) SA 994 (A), [1987] ZASCA 32, decided under the old 1963 Trade Marks Act: video recorders converted after Sony marked them were no longer the "genuine goods" Sony had marked, so selling them under the SONY mark infringed. Resale protection covers genuine goods as marked, not materially altered ones."
 
 **Correction (2026-11-10).** An earlier version of this file said the case applied TMA 1993 s 34(2)(d) and s 34(1)(a), named Sony as the appellant, and said the judgment was not on SAFLII. It is on SAFLII as [1987] ZASCA 32; it applied s 44(1)(a) of the 1963 Act; and Television Radio Centre was the appellant.
 
 ## Cross-references
 
-- [Frank-Hirsch-Roopanand-1993.md](./Frank-Hirsch-Roopanand-1993.md) — copyright-on-packaging carve-out
-- [`citations/statutes/TMA-1993.md`](../statutes/TMA-1993.md) — s 34(2)(d) statutory exhaustion (current Act)
+- [Frank-Hirsch-Roopanand-1993.md](./Frank-Hirsch-Roopanand-1993.md): copyright-on-packaging carve-out
+- [`citations/statutes/TMA-1993.md`](../statutes/TMA-1993.md): s 34(2)(d) statutory exhaustion (current Act)

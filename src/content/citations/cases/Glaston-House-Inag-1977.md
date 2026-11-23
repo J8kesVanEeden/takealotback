@@ -7,7 +7,7 @@ metaDescription: "Appellate Division 1977: took a broad view of what counts as a
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — latent-defect test section (broad view of what counts as a defect)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Glaston House (Pty) Ltd v Inag (Pty) Ltd
@@ -21,11 +21,11 @@ What we can verify in a primary source is how the SCA describes it. In *Van Niek
 
 The same paragraph names the definition of a latent defect the *Holmdene Brickworks* test (1977 (3) SA 670 (A) at 683H–684A). See [Van-Niekerk-FirstRand-ZASCA-187-2025.md](./Van-Niekerk-FirstRand-ZASCA-187-2025.md) and [Holmdene-Brickworks-1977.md](./Holmdene-Brickworks-1977.md).
 
-## Facts — not verified
+## Facts (not verified)
 
 We have not read the judgment, and the secondary summaries we relied on earlier were inconsistent. An earlier version of this file said the AD extended the test to "undisclosed servitudes" and, in the same breath, that "the dilapidated state of a building that was partly a national monument" was the defect. Those are two different fact patterns and we cannot confirm either from a primary source, so they have been removed. (Corrected 2026-11-17.)
 
-## Three-part test — our summary, not a quotation
+## Three-part test: our summary, not a quotation
 
 The site's three-part framing (hidden; present at sale; material) is our synthesis of the aedilitian cases. In the SCA's own words the requirements are in *Van Niekerk* para 14 and the definition is the *Holmdene* passage quoted in para 16.
 
@@ -39,9 +39,9 @@ The site's three-part framing (hidden; present at sale; material) is our synthes
 
 ## Cross-references
 
-- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md) — duty to disclose (not cited by the SCA in *Van Niekerk*)
-- [Phame-Paizes-1973.md](./Phame-Paizes-1973.md) — dicta et promissa extension
-- [Holmdene-Brickworks-1977.md](./Holmdene-Brickworks-1977.md) — *actio empti* for consequential damages
+- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md): duty to disclose (not cited by the SCA in *Van Niekerk*)
+- [Phame-Paizes-1973.md](./Phame-Paizes-1973.md): dicta et promissa extension
+- [Holmdene-Brickworks-1977.md](./Holmdene-Brickworks-1977.md): *actio empti* for consequential damages
 
 ## Status
 

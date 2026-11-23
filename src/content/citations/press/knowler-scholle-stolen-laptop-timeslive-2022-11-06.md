@@ -1,12 +1,12 @@
 ---
-title: "Knowler — Scholle stolen laptop (TimesLive, Sunday Times)"
+title: "Knowler: Scholle stolen laptop (TimesLive, Sunday Times)"
 citation: "TimesLive (Sunday Times Daily), 06 November 2022"
 court_or_publisher: "Wendy Knowler (TimesLive / Sunday Times Daily column)"
 date: "2022-11-06"
 primary_url: "https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
 wayback_url_dated: "https://web.archive.org/web/20261117210609/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
 wayback_url_earlier: "https://web.archive.org/web/20260507165451/https://www.timeslive.co.za/sunday-times-daily/opinion-and-analysis/2022-11-06-wendy-knowler--how-committed-to-customer-relations-are-retailers/"
-metaDescription: "Knowler's column on the Scholle/Nanotec stolen-laptop case — paired with the MyBroadband article. Adds verbatim Stephanie Scholle quotes on the principled-grievance-vs-procedural-refusal framing."
+metaDescription: "Knowler's column on the Scholle/Nanotec stolen-laptop case, paired with the MyBroadband article. Adds verbatim Stephanie Scholle quotes on the principled-grievance-vs-procedural-refusal framing."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
@@ -18,12 +18,12 @@ used_in:
 copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
-# Knowler — Scholle stolen laptop (TimesLive)
+# Knowler: Scholle stolen laptop (TimesLive)
 ## TimesLive (Sunday Times Daily), 06 November 2022 · Wendy Knowler
 
 ## Why the site cites this
 
-This is Knowler's own writing on the Scholle case — companion to the MyBroadband article. Adds verbatim Stephanie Scholle (Axel's wife) framing on the principled-grievance-vs-procedural-refusal tension, and Knowler's own concluding observation. Different publication, same facts: the corroboration matters.
+This is Knowler's own writing on the Scholle case, companion to the MyBroadband article. Adds verbatim Stephanie Scholle (Axel's wife) framing on the principled-grievance-vs-procedural-refusal tension, and Knowler's own concluding observation. Different publication, same facts: the corroboration matters.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -31,7 +31,7 @@ This is Knowler's own writing on the Scholle case — companion to the MyBroadba
 
 > "Husband Azel bought a Hewlett Packard laptop on the platform in November 2019, paying R14,400. Last month, without warning, while working on it, a message appeared on the screen stating the laptop had been stolen from the department of agriculture."
 
-(Note: MyBroadband reported R14,000 and "Axel"; Knowler reports R14,400 and "Azel" — the underlying case is the same.)
+(Note: MyBroadband reported R14,000 and "Axel"; Knowler reports R14,400 and "Azel". The underlying case is the same.)
 
 ### Stephanie Scholle's question
 
@@ -65,8 +65,8 @@ This is Knowler's own writing on the Scholle case — companion to the MyBroadba
 
 ## Site reliance
 
-- **Clause 15 (Marketplace Sellers) corroborating angle:** confirms the MyBroadband narrative. The two sources together — independent SA tech outlet + columnist on Arena Holdings — strengthen the citation.
-- **Stephanie Scholle's "stolen unit sold to us as new" framing** is the cleanest articulation of the consumer-side grievance: the supplier's vetting failure is the *primary* fault, and the procedural-refusal-on-tampering is downstream noise.
+- **Clause 15 (marketplace sellers) corroborating angle:** confirms the MyBroadband narrative. The two sources together (independent SA tech outlet and columnist on Arena Holdings) strengthen the citation.
+- **Stephanie Scholle calls it "a stolen unit that was sold to us as new".** That is the consumer-side grievance in her own words: the supplier's vetting failure is the *primary* fault, and the procedural-refusal-on-tampering is downstream noise.
 
 ## Wayback / archive status
 

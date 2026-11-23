@@ -15,7 +15,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T14 body"
   - "src/data/content.ts — TEMPLATES T16 body"
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory) resolution target"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978 (official text of a legislative nature)"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official text of a legislative nature)"
 ---
 
 # Consumer Goods and Services Industry Code of Conduct, 2026
@@ -41,7 +41,7 @@ Clause 4.2:
 
 > It is mandatory for all Participants above to comply with the provisions of this Code, to register with the CGSO in accordance with the procedures provided on the CGSO website from time-to-time and contribute towards the funding of the CGSO in accordance with the funding model as set out in clause 6.2.
 
-Clause 15.2.5.1 — the CGSO shall:
+Clause 15.2.5.1 says the CGSO shall:
 
 > make every effort to resolve all Complaints within 60 (sixty) days from commencement of an investigation in terms of clause 15.4 failing which the CGSO shall close the complaint and refer the complaint to the NCC;
 

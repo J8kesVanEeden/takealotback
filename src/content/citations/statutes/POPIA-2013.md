@@ -11,7 +11,7 @@ wayback_url: "https://web.archive.org/web/*/https://www.gov.za/sites/default/fil
 wayback_url_dated: "https://web.archive.org/web/20261117205942/https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf"
 saflii_url: "https://www.saflii.org/za/legis/consol_act/popoa2013376/"
 popia_co_za: "https://popia.co.za/section-19-security-measures-on-integrity-and-confidentiality-of-personal-information/"
-metaDescription: "Protection of Personal Information Act 4 of 2013: SA's data-protection statute. Required for handling consumer data, including device IDs and proof of identity."
+metaDescription: "Protection of Personal Information Act 4 of 2013, ss 10, 19, 22 and 23 verbatim: minimality, security safeguards, breach notice and your right to see your own records."
 retrieved: "2026-11-17"
 reverified_on: "2026-11-17"
 corrected_on: "2026-11-17"
@@ -23,28 +23,28 @@ used_in:
   - "src/data/content.ts — TEMPLATES.T04 body"
   - "src/data/content.ts — CLAUSES[23] (account-suspension) 'POPIA s 19 + s 22' angle"
   - "src/data/content.ts — TEMPLATES T22 body (s 23 access request)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Protection of Personal Information Act 4 of 2013
 
-**Status of this file:** ss 10 and 19 verbatim from the Act as published in Government Gazette 37067 (26 November 2013), read 2026-11-17 from the gov.za PDF (raw capture kept on file). This is the as-enacted text; the consolidated text on SAFLII and LawLibrary could not be opened from this machine (Cloudflare challenge), so amendments after 2013 were not checked here.
+**Status of this file:** ss 10, 19, 22 and 23 verbatim from the Act as published in Government Gazette 37067 (26 November 2013), read 2026-11-17 from the gov.za PDF (raw capture kept on file). All four match the SAFLII consolidated capture of 2026-11-10: ss 22 and 23 were compared with it on 2026-11-17, ss 10 and 19 on 2026-11-23.
 
 **Commencement (corrected 2026-11-18).** The `commenced` field said "2021-07-01 (substantive provisions; some sections earlier)". SAFLII's consolidated text (captured 2026-11-10) gives: ss 1, Chapter 5 Part A (ss 39–54), 112 and 113 from 11 April 2014; ss 2–38, 55–109, 111 and 114(1)–(3) from 1 July 2020; ss 110 and 114(4) from 30 June 2021. The sections the site relies on (ss 10, 19, 22 and 23) commenced on 1 July 2020.
 
-POPIA's eight Conditions for Lawful Processing of Personal Information are in Chapter 3, sections 8–25. The site relies on Condition 2 (s 10, Minimality) and Condition 7 (s 19, Security Safeguards).
+POPIA's eight Conditions for Lawful Processing of Personal Information are in Chapter 3, sections 8–25. The site relies on Condition 2 (s 10, Minimality), Condition 7 (s 19, Security Safeguards, and s 22, Notification of security compromises) and Condition 8 (s 23, Access to personal information).
 
-## s 10 — Minimality (Condition 2)
+## s 10: Minimality (Condition 2)
 
 > **10.** Personal information may only be processed if, given the purpose for which it is processed, it is adequate, relevant and not excessive.
 
 (Verbatim; re-checked 2026-11-17.)
 
-**Operative effect:** any processing of personal information must be limited to what is necessary for the stated purpose. Excessive collection, retention, or use is unlawful — even with consent.
+**Operative effect:** any processing of personal information must be adequate, relevant and not excessive for the purpose. Excessive collection, retention, or use breaches the condition, and s 10 contains no exception for consent.
 
-**Site reliance:** Clause 04 (unlock codes) — Takealot's policy demand for live unlock codes/passwords on data-storage devices is "excessive" given the legitimate purpose (technical assessment), which can be performed on a factory-reset device. Live credentials exceed the minimality threshold.
+**Site reliance:** Clause 04 (unlock codes): Takealot's policy demand for live unlock codes/passwords on data-storage devices is "excessive" given the legitimate purpose (technical assessment), which can be performed on a factory-reset device.
 
-## s 19 — Security safeguards (Condition 7)
+## s 19: Security safeguards (Condition 7)
 
 > **19.** (1) A responsible party must secure the integrity and confidentiality of personal information in its possession or under its control by taking appropriate, reasonable technical and organisational measures to prevent—
 > (a) loss of, damage to or unauthorised destruction of personal information; and
@@ -58,9 +58,9 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 >
 > (3) The responsible party must have due regard to generally accepted information security practices and procedures which may apply to it generally or be required in terms of specific industry or professional rules and regulations.
 
-**Site reliance:** Clause 04 (unlock codes) — accepting live credentials *is itself* a security risk. Holding multiple consumers' active passwords creates a target. Forcing a consumer to compromise their device security as a condition of return is incompatible with s 19's "appropriate, reasonable technical and organisational measures" obligation.
+**Site reliance:** Clause 04 (unlock codes): accepting live credentials *is itself* a security risk. Holding multiple consumers' active passwords creates a target. Forcing a consumer to compromise their device security as a condition of return is incompatible with s 19's "appropriate, reasonable technical and organisational measures" obligation.
 
-## s 22 — Notification of security compromises (Condition 7)
+## s 22: Notification of security compromises (Condition 7)
 
 **Site reliance:** Clause 24 (account suspension, closure and takeover): if there are reasonable grounds to believe someone unauthorised got into a customer's personal information, Takealot must tell the Information Regulator and the customer, in writing, with enough detail for the customer to protect themselves. (Added 2026-11-18. Verbatim from the gazette text, GG 37067; matches the SAFLII consolidated capture of 2026-11-10, which notes "S 22 commencement: 1 July 2020".)
 
@@ -87,7 +87,7 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 >
 > (6) The Regulator may direct a responsible party to publicise, in any manner specified, the fact of any compromise to the integrity or confidentiality of personal information, if the Regulator has reasonable grounds to believe that such publicity would protect a data subject who may be affected by the compromise.
 
-## s 23 — Access to personal information (Condition 8)
+## s 23: Access to personal information (Condition 8)
 
 **Site reliance:** template T22 (ask for your own records): a customer can ask Takealot to confirm, free of charge, whether it holds personal information about them, and ask for the record or a description of it, including which third parties had access. Whether a particular record (a courier's proof-of-delivery photo or GPS log, a call recording) counts as personal information "about" the customer is the site's reading, not a decided point. (Added 2026-11-18. Verbatim from the gazette text, GG 37067; matches the SAFLII consolidated capture of 2026-11-10, which notes "S 23 commencement: 1 July 2020".)
 
@@ -112,9 +112,9 @@ POPIA's eight Conditions for Lawful Processing of Personal Information are in Ch
 
 Takealot's own route for these requests is in [takealot-privacy-paia-2026-11-17.md](../policies/takealot-privacy-paia-2026-11-17.md).
 
-## Information Regulator (s 40+)
+## Information Regulator (s 39 onwards)
 
-The Information Regulator is the independent body established under POPIA Chapter 5 (s 39 onwards). Its current operational details — including the eServices Portal (register, then submit) and the POPIAComplaints@ address listed on its contact page — are in [`citations/regulators/info-regulator-2026-04-24.md`](../regulators/info-regulator-2026-04-24.md).
+The Information Regulator is the independent body established under POPIA Chapter 5 (s 39 onwards). Its current operational details, including the eServices Portal (register, then submit) and the POPIAComplaints@ address listed on its contact page, are in [`citations/regulators/info-regulator-2026-04-24.md`](../regulators/info-regulator-2026-04-24.md).
 
 The Regulator's enforcement tools are the information notice (s 90) and the enforcement notice (s 95). Section 99 gives civil remedies: "A data subject or, at the request of the data subject, the Regulator, may institute a civil action for damages in a court having jurisdiction against a responsible party for breach of any provision of this Act as referred to in section 73, whether or not there is intent or negligence on the part of the responsible party" (s 99(1)). Penalties on conviction are in s 107.
 

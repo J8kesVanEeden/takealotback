@@ -15,13 +15,13 @@ used_in:
   - "src/content/pages/limits.md — 'And where the CPA stops' section (reasonable time to cancel)"
   - "src/components/WarrantiesSection.astro — aedilitian link note (reasonable time to cancel)"
   - "src/data/content.ts — FAQ (buy-now-pay-later, credit or eBucks: same rights?)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Van Niekerk v FirstRand Bank Limited
 ## [2025] ZASCA 187; 2026 (2) SA 516 (SCA) | Supreme Court of Appeal | 10 December 2025
 
-Unanimous five-judge bench (judgment by Steyn AJA). The buyer of a second-hand vehicle financed by the bank discovered latent defects, cancelled, and was sued by the bank. The SCA upheld her appeal: the cancellation was confirmed and the bank ordered to pay her R170 023.23 plus interest.
+Unanimous five-judge bench (judgment by Steyn AJA). The buyer of a second-hand vehicle financed by the bank discovered latent defects, cancelled, and was sued by the bank. The SCA upheld her appeal: the cancellation was confirmed and the bank ordered to pay her R170,023.23 plus interest.
 
 ## Propositions cited on the site
 

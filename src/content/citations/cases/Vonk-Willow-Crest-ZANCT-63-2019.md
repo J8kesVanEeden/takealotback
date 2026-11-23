@@ -1,6 +1,6 @@
 ---
 title: "Theodorus Vonk v Willow Crest Motors CC"
-citation: "[2019] ZANCT 63 (also cited as [2019] ZANCT 68 — SAFLII duplicate)"
+citation: "[2019] ZANCT 63 (also cited as [2019] ZANCT 68, a SAFLII duplicate)"
 court_or_publisher: "National Consumer Tribunal"
 date: "2019-04-06"
 case_number: "NCT/115078/2018/75(1)(b)"
@@ -14,7 +14,7 @@ retrieved: "2026-04-25"
 reverified_on: "2026-11-17"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — voetstoots section"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Theodorus Vonk v Willow Crest Motors CC
@@ -36,7 +36,7 @@ The Applicant (Theodorus Vonk) purchased a vehicle from the Respondent (Willow C
 
 ## Held (operative)
 
-- The Tribunal found that the Respondent engaged in prohibited conduct in (para 44): trying to use the voetstoots clause when selling cars to consumers, as a way of circumventing the Act, even though the Applicant removed the clause before signing (44.1); totally ignoring the consumer's correspondence about the gearbox problems (44.2); and choosing not to repair the gearbox when asked (44.3).
+- The Tribunal found that the Respondent engaged in prohibited conduct (para 44) by: trying to use the voetstoots clause when selling cars to consumers, as a way of circumventing the Act, even though the Applicant removed the clause before signing (44.1); totally ignoring the consumer's correspondence about the gearbox problems (44.2); and choosing not to repair the gearbox when asked (44.3).
 - Ordered (para 45): refund R46,489.20 for the gearbox repairs and up to R35,000 in other reasonable direct costs, both within 90 days; an administrative fine of R150,000, payable if the Respondent did not pay those amounts in time and suspended for five years provided they were paid; no order as to costs.
 
 **Correction (2026-11-18).** An earlier version of this section gave as findings that the voetstoots clause was "a clear breach of CPA s 51" and that the sale breached CPA s 55, and said the Respondent was "ordered to make remedial undertakings". The s 51 and s 55 points are what "The Applicant believed" (para 40.2 and 40.3), not findings, and the order was a refund plus a suspended fine (para 45), not undertakings. Checked against the judgment text (SAFLII [2019] ZANCT 63, captured 2026-11-17).
@@ -51,10 +51,10 @@ See [Fourie-Agenbag-ZACONAF-3-2018.md](./Fourie-Agenbag-ZACONAF-3-2018.md) for t
 
 ## Cross-references
 
-- CPA s 51 (prohibited terms — waiver of CPA rights void) — see [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md)
-- CPA s 55 (right to safe, good-quality goods) — same file
-- CPA s 56 (implied warranty of quality) — same file
-- CGSO Advisory Note 11 (voetstoots and the CPA) — see [`citations/advisories/CGSO-Advisory-Note-11.md`](../advisories/CGSO-Advisory-Note-11.md)
+- CPA s 51 (prohibited terms: waiver of CPA rights void): see [`citations/statutes/CPA-2008.md`](../statutes/CPA-2008.md)
+- CPA s 55 (right to safe, good-quality goods): same file
+- CPA s 56 (implied warranty of quality): same file
+- CGSO Advisory Note 11 (voetstoots and the CPA): see [`citations/advisories/CGSO-Advisory-Note-11.md`](../advisories/CGSO-Advisory-Note-11.md)
 
 ## Status
 

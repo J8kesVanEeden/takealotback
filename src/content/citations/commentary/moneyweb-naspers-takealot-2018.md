@@ -1,5 +1,5 @@
 ---
-title: "Moneyweb — Naspers bags all of Takealot"
+title: "Moneyweb: Naspers bags all of Takealot"
 publication: "Moneyweb"
 date: "2018-06-25"
 primary_url: "https://www.moneyweb.co.za/news/companies-and-deals/naspers-bags-all-of-takealot/"
@@ -9,10 +9,10 @@ retrieved: "2026-04-24"
 reverified_on: "2026-11-17"
 used_in:
   - "src/components/PoliciesSection.astro — 'Registered entity' line (Naspers controlling stake August 2017; effective 96% from December 2017)"
-copyright: "Moneyweb. Short excerpt / summary only — fair dealing for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
+copyright: "Moneyweb. Short excerpt / summary only: fair dealing for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 ---
 
-# Moneyweb — Naspers bags all of Takealot
+# Moneyweb: Naspers bags all of Takealot
 
 Short summary (not full reproduction): article (Hilton Tarrant, 25 June 2018) describes Naspers reaching effective 96% ownership of Takealot after acquiring Tiger Global's stake in a transaction completed in December 2017. Verbatim (re-checked against the live article 2026-11-17):
 

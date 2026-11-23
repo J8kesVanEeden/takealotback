@@ -1,5 +1,5 @@
 ---
-title: "Small Claims Court — monetary jurisdiction and representation rules"
+title: "Small Claims Court: monetary jurisdiction and representation rules"
 citation: "Small Claims Courts Act 61 of 1984, ss 15–16 + Ministerial Determination GG 55038 (GoN 7717, 20 July 2026)"
 court_or_publisher: "Department of Justice and Constitutional Development, RSA"
 date: "2026-07-20"
@@ -8,7 +8,7 @@ secondary_url: "https://www.justice.gov.za/scc/scc.htm"
 wayback_url: "https://web.archive.org/web/*/https://www.justice.gov.za/scc/scc.htm"
 wayback_url_dated: "https://web.archive.org/web/20261110141954/https://www.justice.gov.za/scc/docs/20260720-gg55038gon7717-SCC-Amount-Increase-R30000.pdf"
 wayback_url_earlier: "https://web.archive.org/web/20261110142010/https://www.justice.gov.za/scc/scc.htm"
-metaDescription: "Small Claims Court (SA): up to R30,000 from 1 August 2026 (GG 55038, GoN 7717), no attorneys, no court filing fee. Fastest path for consumer disputes against Takealot."
+metaDescription: "Small Claims Court (SA): up to R30,000 from 1 August 2026 (GG 55038, GoN 7717), no attorneys, no court filing fee. A quicker, low-cost path for consumer disputes against Takealot."
 retrieved: "2026-11-10"
 corrected_on: "2026-11-10"
 correction_note: "The limit rose from R20,000 to R30,000 with effect from 1 August 2026 (GG 55038). The site carried R20,000 until the 2026-11-10 refresh; every figure on the site was updated that day. The earlier R50,000 consultation figure was never implemented."
@@ -18,10 +18,10 @@ used_in:
   - "src/data/content.ts — TEMPLATES.T14 body (R30,000 reference)"
   - "src/components/LawSection.astro — Bodies card"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Small Claims Court angle"
-copyright: "Facts + regulatory thresholds — not copyrightable. Government Gazette text quoted verbatim."
+copyright: "Facts + regulatory thresholds, not copyrightable. Government Gazette text quoted verbatim."
 ---
 
-# Small Claims Court — monetary jurisdiction (verified 2026-11-10)
+# Small Claims Court: monetary jurisdiction (verified 2026-11-10)
 
 ## Current threshold
 
@@ -39,15 +39,17 @@ Corroboration, Department of Justice Small Claims page (`justice.gov.za/scc/scc.
 
 > "An amount not exceeding R 30 000. (This amount is determined by the Minister in the Government Gazette, GG 55038, GoN 7717, 20 July 2026), which comes into effect on 01 Aug 2026."
 
+The same page: "Small Claims Courts offer a quicker and easier way of resolving certain civil disputes that involve amounts up to R30 000." (Wayback capture 20261110142010.)
+
 If your claim is above R30,000, the DoJ page says you can "institute a claim for a lesser amount to pursue your case in the Small Claims Court" (i.e. abandon the excess).
 
 ## Representation rule
 
-**No legal representation permitted.** Consumers (and suppliers) represent themselves. Commissioners (typically admitted attorneys or advocates) sit in their personal capacity without remuneration.
+**No legal representation permitted.** Consumers (and suppliers) represent themselves.
 
 ## Filing costs
 
-**No court fee to issue a summons.** The Small Claims Court Rules (GN R2573 of 2022) list only one court fee — a photocopy charge — in Annexure 2 Part I. As amended by GoN R6755 (GG 53572, 24 October 2025; in force 28 November 2025):
+**No court fee to issue a summons.** The Small Claims Court Rules (GN R2573 of 2022) list only one court fee (a photocopy charge) in Annexure 2 Part I. As amended by GoN R6755 (GG 53572, 24 October 2025; in force 28 November 2025):
 
 > "PART I — Court fees — For a copy of a record made by the clerk of the court— for every photocopy of an A4 size page or part thereof: [R2,00] R3,00."
 
@@ -65,7 +67,7 @@ Source: https://www.justice.gov.za/legislation/notices/2025/20251024-gg53572rg11
 
 ## Languages
 
-All eleven official languages may be used in a Small Claims Court.
+Any official language may be used. The DoJ Small Claims page: "All official languages may be used in a Small Claims Court."
 
 ## History of this citation
 

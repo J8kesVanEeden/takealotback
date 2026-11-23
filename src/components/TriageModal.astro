@@ -26,7 +26,11 @@ const slugMapJson = JSON.stringify(slugMap)
 </dialog>
 <script type="application/json" id="tb-clause-slugs" set:html={slugMapJson} />
 
-<style>
+<!-- is:global, not scoped: the body is built client-side with innerHTML, and
+     those nodes never get Astro's data-astro-cid attribute, so scoped rules
+     (gaps, option rows, result label) silently never matched them. Every
+     selector here is .tb-triage-prefixed, so nothing leaks. -->
+<style is:global>
   .tb-triage {
     /* Base <dialog> reset; keep native modal semantics but restyle */
     border: 0;
@@ -178,7 +182,7 @@ const slugMapJson = JSON.stringify(slugMap)
       substitution: {
         q: "What did you receive?",
         opts: [
-          { label: "A materially different product (e.g. premium phone → calculator)", result: { clause: "21", tpl: "T17", note: "Non-performance of the sale (and ECT s 46). This is restitution, not a return — don't accept procedural refusals on accessories or packaging." } },
+          { label: "A materially different product (e.g. you ordered a phone and got a calculator)", result: { clause: "21", tpl: "T17", note: "Non-performance of the sale (and ECT s 46). This is restitution, not a return: don't accept procedural refusals on accessories or packaging." } },
           { label: "Right product, wrong variant (size/colour)", result: { clause: "01", tpl: "T01", note: "If Takealot sent the wrong size or colour, that's a wrong-item delivery, not a change of mind: log it as 'Not What I Ordered' within Takealot's 30 days, and refuse it at the door if you can. If you ordered the wrong size yourself, ECT s 44 gives you 7 days from receiving it, and Takealot's own change-of-mind window is 30 days (unused, in original packaging)." } },
         ],
       },
@@ -193,7 +197,7 @@ const slugMapJson = JSON.stringify(slugMap)
       recall: {
         q: "What's Takealot's response?",
         opts: [
-          { label: "Refund refused — \"warranty has expired\"", result: { clause: "22", tpl: "T18", note: "The recall notice is your refund route (e.g. 'return them to a point of purchase for a refund'). Within 6 months of delivery s 56(2) adds the refund election. Warranty expiry answers neither." } },
+          { label: "Refund refused: \"warranty has expired\"", result: { clause: "22", tpl: "T18", note: "The recall notice is your refund route (e.g. 'return them to a point of purchase for a refund'). Within 6 months of delivery s 56(2) adds the refund election. Warranty expiry answers neither." } },
           { label: "Short-validity coupon issued instead of a refund", result: { clause: "22", tpl: "T18", note: "A two-day coupon isn't a refund. Ask for the money back to the way you paid. If you originally paid with a coupon, ask for a money-equivalent credit valid for Takealot's standard 3 years: a reasonable ask rather than a statutory right, but a two-day coupon is no refund at all." } },
           { label: "Punted to the manufacturer", result: { clause: "22", tpl: "T18", note: "Recall notices usually send you back to where you bought it, and that's Takealot (e.g. 'return them to a point of purchase for a refund'). s 56(1) makes the retailer a warrantor alongside the manufacturer, and within 6 months of delivery s 56(2) also lets you return it for a refund. If the product caused harm, s 61 liability is joint and several." } },
           { label: "I haven't asked yet, or Takealot hasn't answered", result: { clause: "22", tpl: "T18", note: "Ask Takealot in writing for the refund the recall notice provides for, quoting the notice (e.g. 'return them to a point of purchase for a refund'). T18 works as a first letter: leave out the paragraph about Takealot's response. Within 6 months of delivery s 56(2) also lets you return it for a refund." } },
@@ -235,9 +239,9 @@ const slugMapJson = JSON.stringify(slugMap)
         q: "On what basis?",
         opts: [
           { label: "No original packaging", result: { clause: "02", tpl: "T02", note: "If the item is defective, s 56 doesn't require original packaging, and s 51(3) voids a term that waives that right (T02). On any return, the 'original packaging' is the product's box, not Takealot's brown delivery box: Takealot has publicly said it doesn't expect that back." } },
-          { label: "Defective item refused for “wear and tear” / consumer damage / surge / sea air / misuse", result: { clause: "08", tpl: "T03", note: "Takealot has to prove the exclusion it relies on (Toyota Randburg 2024, relied on in Edan Traders 2026; Wingfield 2025). Demand the technical report." } },
+          { label: "Defective item refused for \"wear and tear\" / consumer damage / surge / sea air / misuse", result: { clause: "08", tpl: "T03", note: "Takealot has to prove the exclusion it relies on (Toyota Randburg 2024, relied on in Edan Traders 2026; Wingfield 2025). Demand the technical report." } },
           { label: "Not accepted as damaged on delivery (\"you damaged it\" / surge / misuse)", result: { clause: "03", tpl: "T03", note: "Takealot has to prove the damage was your doing (Toyota Randburg 2024, relied on in Edan Traders 2026). Demand the technical report. If the item arrived damaged or doesn't work, CPA s 56 still runs for 6 months from delivery." } },
-          { label: "Marked “non-returnable”", result: { clause: "10", tpl: "T01", note: "The s 42(2) carve-outs only remove the 7-day cooling-off. A defective item is still a s 56 return, and a “non-refundable” tag on an item outside s 42(2) doesn't remove the 7 days either." } },
+          { label: "Marked \"non-returnable\"", result: { clause: "10", tpl: "T01", note: "The s 42(2) carve-outs only remove the 7-day cooling-off. A defective item is still a s 56 return, and a \"non-refundable\" tag on an item outside s 42(2) doesn't remove the 7 days either." } },
           { label: "Deflected to manufacturer", result: { clause: "07", tpl: "T07", note: "s 56(1) makes the retailer a warrantor alongside the manufacturer, so Takealot can't hand you off. T07 is for the first 6 months after delivery; after that, use T13." } },
           { label: "\"You bought it to resell\"", result: { clause: "17", note: "Why you bought an item isn't a ground for refusing a CPA s 56 defective return. If Takealot cites its resale clause to refuse one, push back in writing and refer to s 56." } },
           { label: "Marketplace seller's fault", result: { clause: "15", tpl: "T11", note: "The NCC and CGSO say the platform must resolve the dispute and make sure its sellers comply with the CPA and ECT Act. The CGSO takes complaints against Takealot for other-seller items." } },
@@ -249,7 +253,7 @@ const slugMapJson = JSON.stringify(slugMap)
         q: "What category?",
         opts: [
           { label: "Digital item doesn't work", result: { clause: "16", tpl: "T12", note: "Defective digital items are still defective goods: CPA s 56 applies for 6 months from delivery. Never delivered at all? T12 has a paragraph for that." } },
-          { label: "Policy changed after my order", result: { clause: "12", tpl: "T09", note: "Applicable version = version at order time." } },
+          { label: "Policy changed after my order", result: { clause: "12", tpl: "T09", note: "The applicable version is the version at order time." } },
           { label: "Disposal threat", result: { clause: "09", tpl: "T08", note: "Dispute the rejection in writing before day 30 and file with the CGSO. Either ask Takealot to keep the item and confirm that in writing, or accept re-delivery under protest: the policy treats a refused re-delivery as abandonment." } },
           { label: "High Court clause", result: { clause: "13", tpl: "T14", note: "s 48 / Reg 44 / s 51(3) attack the forum clause. You keep your Small Claims option." } },
           { label: "Inspection / assessment delay", result: { clause: "20", tpl: "T16", note: "Demand a written outcome within 7 business days, and escalate to the CGSO if there's no answer by then. T16 is for a return within 6 months of delivery; for an extended-warranty evaluation after that, see Clause 07." } },

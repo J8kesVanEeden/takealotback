@@ -12,7 +12,7 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) 'Gareeb v Incredible Connections' angle"
   - "src/data/content.ts — TEMPLATES T06 body"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Gareeb v JD Consumer Electronics and Appliances (Pty) Ltd t/a Incredible Connections

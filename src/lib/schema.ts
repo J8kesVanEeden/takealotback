@@ -79,7 +79,7 @@ export function buildLogo() {
     contentUrl: `${SITE_URL}/logo.png`,
     width: 512,
     height: 512,
-    caption: 'TakealotBack.com — South African consumer rights, dismantled',
+    caption: 'TakealotBack.com: South African consumer rights, dismantled',
   };
 }
 
@@ -92,7 +92,7 @@ export function buildOgImage() {
     contentUrl: `${SITE_URL}/og-image.png`,
     width: 1200,
     height: 630,
-    caption: 'TakealotBack.com — TAKE A LOT BACK. South African consumer rights, dismantled.',
+    caption: 'TakealotBack.com: TAKE A LOT BACK. South African consumer rights, dismantled.',
   };
 }
 
@@ -223,13 +223,13 @@ export function buildHomeCollectionPage(args: {
           '@type': 'ListItem',
           position: i + 1,
           url: `${SITE_URL}/#clause-${c.slug}`,
-          name: `Clause ${c.n} — ${c.title}`,
+          name: `Clause ${c.n}: ${c.title}`,
         })),
         ...templates.map((t, i) => ({
           '@type': 'ListItem',
           position: clauses.length + i + 1,
           url: `${SITE_URL}/#template-${t.code}`,
-          name: `Template ${t.code} — ${t.title}`,
+          name: `Template ${t.code}: ${t.title}`,
         })),
       ],
     },
@@ -259,7 +259,7 @@ export function buildCitationsCollectionPage(args: {
     '@type': 'CollectionPage',
     '@id': CITATIONS_PAGE_ID,
     url: `${SITE_URL}/citations`,
-    name: 'Citations & sources — TakealotBack.com evidence vault',
+    name: 'Citations & sources: TakealotBack.com evidence vault',
     description,
     isPartOf: { '@id': WEBSITE_ID },
     inLanguage: 'en-ZA',

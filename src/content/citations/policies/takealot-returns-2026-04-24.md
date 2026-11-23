@@ -1,5 +1,5 @@
 ---
-title: "Takealot Returns Policy — snapshot 2026-04-24"
+title: "Takealot Returns Policy: snapshot 2026-04-24"
 citation: "terms-and-policies.takealot.com (Returns Policy)"
 court_or_publisher: "Takealot Online (RF) (Pty) Ltd"
 date: "2026-04-24"
@@ -7,7 +7,7 @@ primary_url: "https://terms-and-policies.takealot.com/"
 wayback_url: "https://web.archive.org/web/*/https://terms-and-policies.takealot.com/"
 wayback_url_dated: "https://web.archive.org/web/20261117211925/https://terms-and-policies.takealot.com/"
 wayback_url_earlier: "https://web.archive.org/web/20261110140832/https://terms-and-policies.takealot.com/"
-metaDescription: "Verbatim snapshot of Takealot's returns policy (April 2026). Source-of-truth for every clause-by-clause comparison the site makes."
+metaDescription: "Dated snapshot of Takealot's returns policy (April 2026), quoted where it matters. Source-of-truth for every clause-by-clause comparison the site makes."
 retrieved: "2026-11-10"
 reverified_on: "2026-11-17"
 corrected_on: "2026-11-10"
@@ -20,7 +20,7 @@ used_in:
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing for criticism / review per s 12(1)(b) Copyright Act 98 of 1978, in support of the commentary at takealotback.com."
 ---
 
-# Takealot Returns Policy — snapshot 2026-04-24
+# Takealot Returns Policy: snapshot 2026-04-24
 
 Policy text is Takealot's copyrighted material. This file is a **dated reference snapshot** retained to support our commentary on the policy at takealotback.com. Use is fair dealing under Copyright Act s 12(1)(b) for criticism and review.
 
@@ -28,22 +28,22 @@ Policy text is Takealot's copyrighted material. This file is a **dated reference
 
 Our audit on this date (ours, not Takealot's) verified the following clauses against the live policy at terms-and-policies.takealot.com:
 
-- **Time Limits** — 30 days for wrong / damaged / missing / change-of-mind; 6 months for defective
-- **Original Packaging** — required per "Prepare Your Return"
-- **Damage-on-delivery exclusions** — consumer damage / electrical surges / unintended purpose (sea-air is on the defective-item list only, not damage-on-delivery)
-- **Unlock codes** — policy says supplier *can* refuse return without access (discretionary wording, not absolute)
-- **Pre-packed Bundle return** — whole-bundle return requirement verified verbatim
-- **Credit vs refund** — policy concedes consumer election on defective returns ("you must choose...")
-- **Credit expiry** — verbatim: *"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit"*
-- **Manufacturer deflection + 21-day trigger** — runs from receipt at supplier's returns evaluation facility
-- **Defective-item exclusions** — wear, consumer damage, surge, sea-air, modification, unintended use
-- **Rejected-return disposal** — "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it"
-- **Non-returnable items** — intimate / underwear / swimwear / jewellery / foodstuffs / unsealed AV+software / books / personalised
-- **Vouchers and coupons** — verbatim distinction confirmed
-- **Digital items** — "only returnable if defective"
-- **Mis-returned items** — disposed, no compensation
-- **Collection / re-delivery fees on re-logged returns** — verbatim: *"we may charge you a fee for collecting the item from you and, where applicable, a fee for delivering the same or a replacement item back to you"* — this is the textual hook for the site's Clause 19
-- **Inspection step** — verbatim: *"when we receive the item, we'll inspect it"* — with no SLA; the textual hook for the site's Clause 20
+- **Time Limits**: 30 days for wrong / damaged / missing / change-of-mind; 6 months for defective
+- **Original Packaging**: required per "Prepare Your Return"
+- **Damage-on-delivery exclusions**: consumer damage / electrical surges / unintended purpose (sea-air is on the defective-item list only, not damage-on-delivery)
+- **Unlock codes**: policy says supplier *can* refuse return without access (discretionary wording, not absolute)
+- **Pre-packed Bundle return**: whole-bundle return requirement verified verbatim
+- **Credit vs refund**: policy concedes consumer election on defective returns ("you must choose...")
+- **Credit expiry**, verbatim: *"if you don't use your credit within 3 years or ask us for a refund during this time, you will lose that credit"*
+- **Manufacturer deflection + 21-day trigger**: runs from receipt at supplier's returns evaluation facility
+- **Defective-item exclusions**: wear, consumer damage, surge, sea-air, modification, unintended use
+- **Rejected-return disposal**: "If we can't deliver the item to you within 30 days of its return having been rejected, for example because you are unavailable or you refuse delivery, we will consider the item abandoned and may dispose of it"
+- **Non-returnable items**: intimate / underwear / swimwear / jewellery / foodstuffs / unsealed AV+software / books / personalised
+- **Vouchers and coupons**: verbatim distinction confirmed
+- **Digital items**: returnable only if defective (the policy: "You can only return digital items … if they are defective")
+- **Mis-returned items**: disposed, no compensation
+- **Collection / re-delivery fees on re-logged returns**, verbatim: *"we may charge you a fee for collecting the item from you and, where applicable, a fee for delivering the same or a replacement item back to you"*. This is the textual hook for the site's Clause 19
+- **Inspection step**, verbatim: *"when we receive the item, we'll inspect it"*, with no SLA; the textual hook for the site's Clause 20
 
 ## Lines added 2026-11-18 (verbatim, from the 2026-11-17 capture)
 
@@ -56,10 +56,10 @@ Quoted because the site now relies on them (delivery-fee FAQ; Clause 11 e-vouche
 ## Clauses in the Terms & Conditions
 
 - Unilateral-change clause verbatim: *"may change any provision of our agreement at any time without giving you notice"*
-- Order cancellation for stock / payment / listing error / account-abuse — all four grounds present
+- Order cancellation for stock / payment / listing error / account-abuse: all four grounds present
 - Marketplace seller responsibility: *"Sellers are responsible for the items they sell on our platform"* (note: "Sellers", not "Other sellers")
 - Resale prohibition clause: verbatim present
-- High Court forum selection: current live text reads *"the High Court of South Africa (Western Cape Division, Cape Town) will have jurisdiction to hear any legal matters between us. This applies even if the disputed amount would typically be heard by a lower court."* (See companion T&Cs snapshot — the 2026-04-24 audit originally misread this qualifier as absent; corrected 2026-05-07.)
+- High Court forum selection: current live text reads *"the High Court of South Africa (Western Cape Division, Cape Town) will have jurisdiction to hear any legal matters between us. This applies even if the disputed amount would typically be heard by a lower court."* (See companion T&Cs snapshot. The 2026-04-24 audit originally misread this qualifier as absent; corrected 2026-05-07.)
 - CGSO named as escalation point: verified
 
 ## Policy version / last-updated
@@ -68,7 +68,7 @@ Takealot does not surface a "Last updated" date on either the Returns Policy pag
 
 ## Re-verification log
 
-**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day manufacturer-deflection trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line — neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
+**2026-07-01 (Q3 2026 quarterly refresh):** Live Returns Policy re-fetched from `terms-and-policies.takealot.com` (full JS-rendered DOM incl. collapsed accordions) and diffed clause-by-clause against this snapshot. **No material change.** Every relied-on clause matches: 30-day / 6-month windows, original-packaging + intact-seals condition, damage-on-delivery vs defective exclusion lists (sea-air correctly on the defective list only), *"when we receive the item, we'll inspect it"*, 21-day manufacturer-deflection trigger, 2-business-day credit load, 3-year credit expiry (verbatim), 3–5 business-day refunds, rejected-return abandonment/disposal, the Clause-19 re-delivery-fee hook, 7-day pickup-point window, non-returnable categories, and the voucher/coupon distinction. Only non-material additions observed: an "Exchanges" (size/colour) blurb and a donation-subtraction line. Neither is relied on by the site. `retrieved` bumped to 2026-07-01; fresh Wayback capture recorded in `wayback_url_dated` (prior dated capture moved to `wayback_url_earlier`).
 
 **2026-11-10 (Q4 2026 quarterly refresh, run late; due 2026-10-01):** Live Returns Policy rendered in headless Chrome (whole DOM walked, collapsed sections included) and diffed against this snapshot. The same extractor was run on the Wayback captures of 2026-04-25 and 2026-07-01: **the policy body text is identical across all three dates.** **No material change.** Every relied-on clause matches verbatim (programmatic check of every quoted string in this file and in CLAUSES: all found except the coupon quote, a transcription error in this file, now corrected above, along with the non-returnable list's missing digital-items entry). Takealot's page metadata shows a re-save on 2026-05-22 (Yoast `dateModified`) with no wording change; nothing since. Note for the record: the "Exchanges" blurb and donation line called new in the Q3 entry were already present in the 2026-04-25 capture. Raw extracted text is kept with the maintainer's working notes (not published; it reproduces the full pages). The dated Wayback captures listed below are the public record. `retrieved` bumped to 2026-11-10.
 
@@ -111,7 +111,7 @@ For damaged, wrong, or incomplete deliveries within 30 days, Takealot offers rep
 
 Defective returns within 6 months may be repaired, replaced, credited, or refunded **after Takealot's inspection**. Excluded: normal wear and tear, consumer damage, electrical surges, sea-air corrosion, consumer modification, or unintended use.
 
-The inspection step is built in to the workflow: *"when we receive the item, we'll inspect it"* — with no published SLA. (This is the textual hook for the site's Clause 20.)
+The inspection step is built in to the workflow: *"when we receive the item, we'll inspect it"*, with no published SLA. (This is the textual hook for the site's Clause 20.)
 
 ### Pre-packed Bundles
 
@@ -127,8 +127,9 @@ Non-returnable categories include: intimate items, underwear, swimwear, jeweller
 
 ### Vouchers and Coupons
 
-> Voucher value loads as **non-refundable** Takealot account credit; any remaining cash amount may be credited or refunded.
-> Coupons return as new coupons: "that coupon will have its own terms and conditions that may differ from the terms and conditions of your original coupon." *(Quote corrected 2026-11-10; the earlier version of this file misquoted it as "which may have…".)*
+Voucher value loads as **non-refundable** Takealot account credit (Takealot's own wording is quoted under "Lines added 2026-11-18" above); any remaining cash amount may be credited or refunded.
+
+Coupons return as new coupons: "that coupon will have its own terms and conditions that may differ from the terms and conditions of your original coupon." *(Quote corrected 2026-11-10; the earlier version of this file misquoted it as "which may have…".)*
 
 ### Wrong Item Returned (consumer error)
 
@@ -159,7 +160,7 @@ Consumers choose collection or pickup-point drop-off within **7 days** of loggin
 
 ## Companion file
 
-[`./takealot-tcs-2026-04-24.md`](./takealot-tcs-2026-04-24.md) — Terms & Conditions snapshot.
+[`./takealot-tcs-2026-04-24.md`](./takealot-tcs-2026-04-24.md): Terms & Conditions snapshot.
 
 ## Status
 

@@ -1,6 +1,6 @@
 ---
 title: "National Consumer Commission and Another v National Consumer Tribunal and Another (Car Care Clinic Wilrogate)"
-citation: "Case no. A2024-092517 (Gauteng Division, Johannesburg, 15 May 2026) — neutral citation not yet published on SAFLII"
+citation: "Case no. A2024-092517 (Gauteng Division, Johannesburg, 15 May 2026); neutral citation not yet published on SAFLII"
 court_or_publisher: "High Court of South Africa, Gauteng Division, Johannesburg (Ben-Zeev AJ, Du Plessis J concurring)"
 date: "2026-05-15"
 case_number: "A2024-092517"
@@ -10,7 +10,7 @@ metaDescription: "Gauteng High Court, May 2026: on a services complaint (s 54), 
 retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — FAQ (complaint deadline)"
-copyright: "No copyright — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # NCC and Another v National Consumer Tribunal and Another (Car Care Clinic Wilrogate)

@@ -1,28 +1,28 @@
 ---
-title: "Scholle — stolen laptop, refund flip-flop (MyBroadband)"
+title: "Scholle: stolen laptop, refund flip-flop (MyBroadband)"
 citation: "MyBroadband, December 2022"
 court_or_publisher: "MyBroadband (independent SA tech publication)"
-date: "2022-12-15"
+date: "2022-12-09"
 primary_url: "https://mybroadband.co.za/news/it-services/473403-takealot-merchant-sold-stolen-laptop.html"
 wayback_url_dated: "https://web.archive.org/web/20260507170622/https://mybroadband.co.za/news/it-services/473403-takealot-merchant-sold-stolen-laptop.html"
-metaDescription: "Axel Scholle bought an HP laptop on Takealot in 2019; in 2022 it was remotely locked as Department of Agriculture stolen property. Takealot suspended the seller (Nanotec Digital) two months earlier. Refund flip-flopped repeatedly — credit, then reversed for 'tampering' (he had upgraded RAM/HDD then removed), then re-credited."
+metaDescription: "Axel Scholle bought an HP laptop on Takealot in 2019; in 2022 it was remotely locked as Department of Agriculture stolen property. Takealot suspended the seller (Nanotec Digital) two months earlier. Refund flip-flopped repeatedly: credit, then reversed for 'tampering' (a shop had upgraded the RAM and hard drive; the parts were removed before the return), then re-credited."
 retrieved: "2026-05-07"
 reverified_on: "2026-11-17"
 retrieved_by: "Source captured from the user's authenticated download bundle on 2026-05-07."
 wayback_status: "Wayback capture 20260507170622 holds the full article text (checked 2026-11-10)."
-disclosure: "MyBroadband is independent of Takealot's parent. The article is companion to Knowler's TimesLive piece (06 November 2022) on the same case — see knowler-scholle-stolen-laptop-timeslive-2022-11-06.md for the corroborating second source."
+disclosure: "MyBroadband is independent of Takealot's parent. The article is companion to Knowler's TimesLive piece (06 November 2022) on the same case; see knowler-scholle-stolen-laptop-timeslive-2022-11-06.md for the corroborating second source."
 used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) angle on stolen-goods + flip-flop refund pattern"
   - "../press/knowler-scholle-stolen-laptop-timeslive-2022-11-06.md — corroborating second source on the same case"
 copyright: "© MyBroadband. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
-# Scholle — stolen laptop, refund flip-flop
+# Scholle: stolen laptop, refund flip-flop
 ## MyBroadband, December 2022
 
 ## Why the site cites this
 
-The Scholle / Nanotec Digital case is the strongest documented example of Takealot's marketplace-vetting failure intersecting with the platform's tendency to flip-flop on refunds. The MyBroadband article is paired with Knowler's TimesLive column (Nov 2022) on the same case — the two sources together provide an unusually well-documented record. Both highlight that even **after** Takealot had suspended the third-party seller for stolen-goods sale (in August 2022), Takealot still tried to refuse Scholle's refund on a "tampering" pretext.
+The Scholle / Nanotec Digital case shows Takealot's marketplace-vetting failure meeting a refund that flip-flopped repeatedly. The MyBroadband article is paired with Knowler's TimesLive column (Nov 2022) on the same case: the two sources together provide an unusually well-documented record. Both show that even **after** Takealot had suspended the third-party seller for stolen-goods sale (in August 2022), Takealot still tried to refuse Scholle's refund on a "tampering" pretext.
 
 ## Verbatim extracts (fair-dealing quotations)
 
@@ -68,8 +68,8 @@ The Scholle / Nanotec Digital case is the strongest documented example of Takeal
 
 ## Site reliance
 
-- **Clause 15 (Marketplace Sellers):** the case demonstrates that a Takealot-vetted seller sold genuinely stolen goods; that Takealot's seller-vetting can fail; and that even after suspension, Takealot's first-line response on the consumer side was to refuse refund on a procedural pretext. The flip-flop pattern (refund → reverse → refund → reverse → refund) is documented.
-- **Practical lesson:** when the consumer is in a dispute that has already flipped once, ask for the refund **to bank account, not store credit** — Scholle's own request, made "to avoid the retailer potentially flip-flopping again". The article reports the request; it does not say whether it worked. (2026-11-10: earlier wording called it "the only thing that prevented further reversals", which the article does not support.)
+- **Clause 15 (marketplace sellers):** the case demonstrates that a Takealot-vetted seller sold genuinely stolen goods; that Takealot's seller-vetting can fail; and that even after suspension, Takealot's first-line response on the consumer side was to refuse refund on a procedural pretext. The flip-flop pattern (refunded, reversed, refunded, reversed, refunded) is documented.
+- When the consumer is in a dispute that has already flipped once, ask for the refund **to bank account, not store credit**. That was Scholle's own request, made "to avoid the retailer potentially flip-flopping again". The article reports the request; it does not say whether it worked. (2026-11-10: earlier wording called it "the only thing that prevented further reversals", which the article does not support.)
 - **Pairs with:** TimesLive Knowler article (06 Nov 2022) for second-source corroboration.
 
 ## Wayback / archive status

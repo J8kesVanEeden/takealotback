@@ -1,5 +1,5 @@
 ---
-title: "Competition Commission — Online Intermediation Platforms Market Inquiry: Summary of Final Report Findings and Remedial Actions"
+title: "Competition Commission: Online Intermediation Platforms Market Inquiry, Summary of Final Report Findings and Remedial Actions"
 citation: "Competition Commission of South Africa, OIPMI Summary of Final Report Findings and Remedial Actions, July 2023"
 court_or_publisher: "Competition Commission of South Africa (Inquiry panel: James Hodge (Chair), Doris Tshepe)"
 date: "2023-07-31"
@@ -13,7 +13,7 @@ used_in:
 copyright: "© Competition Commission of South Africa. Short extracts quoted under fair dealing for criticism and review, Copyright Act 98 of 1978 s 12(1)(b)."
 ---
 
-# Competition Commission — Online Intermediation Platforms Market Inquiry (OIPMI)
+# Competition Commission: Online Intermediation Platforms Market Inquiry (OIPMI)
 ## Summary of Final Report Findings and Remedial Actions | July 2023
 
 A market inquiry under the Competition Act into online platforms (eCommerce, travel, food delivery, app stores, classifieds and Google Search). The summary is filed here, under commentary, because it is a regulator's report rather than a court ruling (the regulators/ folder is the natural home and it can move there later). Its remedies are competition remedies, not consumer law.
@@ -34,7 +34,7 @@ Takealot both runs the marketplace and competes on it through Takealot Retail. T
 
 `src/data/content.ts` Clause 15 (marketplace-sellers), angle "Competition Commission finding":
 
-> "In July 2023 the Competition Commission's Online Intermediation Platforms Market Inquiry found that Takealot trading through its own Retail division on its marketplace "creates a conflict of interest", and said "Takealot is required to segregate its Retail division from its Marketplace operations". It is a competition remedy aimed at sellers, not a consumer-law ruling — but it undercuts any "the seller is solely responsible" deflection."
+> "In July 2023 the Competition Commission's Online Intermediation Platforms Market Inquiry found that Takealot trading through its own Retail division on its marketplace "creates a conflict of interest", and said "Takealot is required to segregate its Retail division from its Marketplace operations". It is a competition remedy aimed at sellers, not a consumer-law ruling, but it undercuts any "the seller is solely responsible" deflection."
 
 **Correction (2026-11-10).** Earlier site copy dated the finding to August 2023 and said the Inquiry was "recommending the marketplace be operated as a separate business". The summary is dated July 2023, and its wording is that Takealot "is required to segregate" Retail from Marketplace.
 

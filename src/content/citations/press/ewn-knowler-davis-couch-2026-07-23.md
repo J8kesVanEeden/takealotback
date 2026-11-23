@@ -31,7 +31,7 @@ A 2026, on-record example of Takealot applying its **30-day** damage-reporting w
 
 > "When she tried to return it, Takealot refused because it fell outside the company's 30-day damage reporting window."
 
-> "Section 56 of the Consumer Protection Act gives consumers 6 months, not 30 days, to return goods that are defective – and at the supplier's risk and expense," — Knowler
+> "Section 56 of the Consumer Protection Act gives consumers 6 months, not 30 days, to return goods that are defective – and at the supplier's risk and expense," (Knowler)
 
 > "After Knowler approached Takealot, the retailer apologised to Davis and refunded her in full."
 

@@ -3,13 +3,13 @@ title: "Phame (Pty) Ltd v Paizes"
 citation: "1973 (3) SA 397 (A)"
 court_or_publisher: "Appellate Division of the Supreme Court of South Africa"
 date: "1973"
-note_on_url: "Pre-digital judgment — not on SAFLII or LawLibrary. The verbatim text is in the SALR physical reports (1973 (3) SA 397 (A))."
+note_on_url: "Pre-digital judgment, not on SAFLII or LawLibrary. The verbatim text is in the SALR physical reports (1973 (3) SA 397 (A))."
 secondary_url: "https://www.studocu.com/row/document/university-of-botswana/business-law/phame-pty-ltd-v-paizes/76856902"
-metaDescription: "Appellate Division 1973: leading SA authority on dicta et promissa — extends aedilitian relief to seller statements that turn out to be unfounded."
+metaDescription: "Appellate Division 1973: leading SA authority on dicta et promissa, which extends aedilitian relief to seller statements that turn out to be unfounded."
 retrieved: "2026-04-25"
 used_in:
   - "src/content/pages/aedilitian-remedies.md — aedilitian family reference, dicta et promissa"
-copyright: "No copyright in the judgment text — s 12(8)(a) Copyright Act 98 of 1978"
+copyright: "No copyright in the judgment text: s 12(8)(a) Copyright Act 98 of 1978"
 ---
 
 # Phame (Pty) Ltd v Paizes
@@ -17,19 +17,19 @@ copyright: "No copyright in the judgment text — s 12(8)(a) Copyright Act 98 of
 
 ## Why this case matters
 
-*Phame v Paizes* is the leading SA Appellate Division authority on **dicta et promissa** — the doctrine that extends aedilitian relief beyond pure latent-defect cases to material statements made by the seller during negotiations that turn out to be unfounded. It is **not** the source of the latent-defect test. The SCA calls that the *Holmdene Brickworks* test (*Van Niekerk* para 16), and the site's three-part list is its own synthesis of *Holmdene* and *Van Niekerk* para 14. (Corrected 2026-11-18: this sentence and the two-classes list below said the three-part test "is in *Dibley v Furter* and *Glaston House v Inag*".)
+*Phame v Paizes* is the leading SA Appellate Division authority on **dicta et promissa**: the doctrine that extends aedilitian relief beyond pure latent-defect cases to material statements made by the seller during negotiations that turn out to be unfounded. It is **not** the source of the latent-defect test. The SCA calls that the *Holmdene Brickworks* test (*Van Niekerk* para 16), and the site's three-part list is its own synthesis of *Holmdene* and *Van Niekerk* para 14. (Corrected 2026-11-18: this sentence and the two-classes list below said the three-part test "is in *Dibley v Furter* and *Glaston House v Inag*".)
 
 ## Operative effect
 
 A *dictum et promissum* is "a material statement made by the seller to the buyer during the negotiations, bearing on the quality of the *res vendita* (thing sold) and going beyond mere praise and commendation."
 
 If such a statement turns out to be unfounded, the purchaser has at his disposal the ancient aedilitian remedies:
-- the **actio redhibitoria** — cancel the contract and recover the purchase price; or
-- the **actio quanti minoris** — sue for a reduction in the purchase price (a partial refund equivalent to the diminution in value).
+- the **actio redhibitoria**: cancel the contract and recover the purchase price; or
+- the **actio quanti minoris**: sue for a reduction in the purchase price (a partial refund equivalent to the diminution in value).
 
 The aedilitian remedies are therefore available in **two broad classes** of case:
-1. **Latent-defect cases** — the *res vendita* had a hidden defect at the time of sale. The site's three-part list (hidden / present at sale / material) is its own synthesis of the *Holmdene Brickworks* definition (*Van Niekerk* para 16) and the requirements in *Van Niekerk* para 14.
-2. **Dicta et promissa cases** — *Phame v Paizes*. The seller made a material affirmative statement during negotiations on the faith of which the buyer entered the contract or agreed to the price; the statement turned out to be unfounded.
+1. **Latent-defect cases**: the *res vendita* had a hidden defect at the time of sale. The site's three-part list (hidden / present at sale / material) is its own synthesis of the *Holmdene Brickworks* definition (*Van Niekerk* para 16) and the requirements in *Van Niekerk* para 14.
+2. **Dicta et promissa cases**: *Phame v Paizes*. The seller made a material affirmative statement during negotiations on the faith of which the buyer entered the contract or agreed to the price; the statement turned out to be unfounded.
 
 ## Verified through the SCA (2026-11-17)
 
@@ -39,7 +39,7 @@ The aedilitian remedies are therefore available in **two broad classes** of case
 
 So *Phame* is authority for both classes: latent defects (i) and *dicta et promissa* (ii). See [Van-Niekerk-FirstRand-ZASCA-187-2025.md](./Van-Niekerk-FirstRand-ZASCA-187-2025.md).
 
-## Facts in summary (secondary source; not verified against the judgment)
+## Facts (secondary source; not verified against the judgment)
 
 The plaintiff negotiated with the defendant in October 1970 to purchase the defendant's shareholding in, and certain claims against, a company. The principal asset of the company was an immovable property which was rent-producing. To the defendant's knowledge, the plaintiff was interested in the purchase because of the income derived from the property. Statements were made about that income during the negotiations.
 
@@ -55,9 +55,9 @@ Earlier site copy attributed the three-part test directly to *Phame*; that was a
 
 ## Cross-references
 
-- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md) — duty to disclose (see also)
-- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md) — broad view of what counts as a defect
-- [Holmdene-Brickworks-1977.md](./Holmdene-Brickworks-1977.md) — the latent-defect test (*Holmdene Brickworks* test) and the *actio empti* for consequential damages
+- [Dibley-Furter-1951.md](./Dibley-Furter-1951.md): duty to disclose (see also)
+- [Glaston-House-Inag-1977.md](./Glaston-House-Inag-1977.md): broad view of what counts as a defect
+- [Holmdene-Brickworks-1977.md](./Holmdene-Brickworks-1977.md): the latent-defect test (*Holmdene Brickworks* test) and the *actio empti* for consequential damages
 
 ## Status
 
