@@ -68,15 +68,15 @@ South African copyright law (Copyright Act 98 of 1978) determines what we can an
 
 | Subfolder | Source type | Copyright? | Our reproduction rule |
 |---|---|---|---|
-| `statutes/` | Acts, Regulations, Constitution | **None** — s 12(8)(a) excludes "official texts of a legislative, administrative or legal nature" | **Full verbatim** with attribution + `retrieved` date |
+| `statutes/` | Acts, Regulations, Constitution | **None** — s 12(8)(a) excludes "official texts of a legislative, administrative or legal nature" | **Full verbatim** with attribution + `retrieved` date. Exception: `UDRP-Policy.md` is ICANN's copyright; short extracts only, fair dealing s 12(1)(b). |
 | `cases/` | Court / Tribunal / CAC judgments | **None** — s 12(8)(a) | **Full verbatim** with SAFLII / court URL + `retrieved` date |
 | `advisories/` | CGSO Advisory Notes | Fair dealing, s 12(1)(b): the CGSO is a private non-profit company, so the s 12(8)(a) official-text exclusion may not cover its notes | **Quoted extracts** with the source named, CGSO / SAFLII URL + `retrieved` date |
-| `policies/` | Takealot's published policies | **Yes (Takealot copyright)** | Snapshot under fair dealing for criticism or review, Copyright Act s 12(1)(b) (research and private study is s 12(1)(a)). Retained to support the site's criticism of the same policy. Full text OK. |
-| `regulators/` | Contact details, monetary thresholds, URLs | None (facts, not expression) | Compiled facts OK |
+| `policies/` | Takealot's published policies | **Yes (Takealot copyright)** | Snapshot under fair dealing for criticism or review, Copyright Act s 12(1)(b) (research and private study is s 12(1)(a)). Retained to support the site's criticism of the same policy. Extracts only (the snapshots were trimmed to the passages the site relies on on 2026-11-23). |
+| `regulators/` | Contact details, monetary thresholds, URLs; quoted NCC, CGSO, PASA and Visa pages | Facts: none. Quoted pages: **yes (owner's copyright)** | Compiled facts OK. Quoted pages: **short extracts only**, fair dealing s 12(1)(b). |
 | `commentary/`, `press/` | Third-party legal commentary, news, press | **Yes (publisher copyright)** | **Link + short excerpt only** (never full reproduction). Our quotations are justified by fair dealing for criticism or review, s 12(1)(b) (source and author named, as the proviso requires). |
 | `providers/` | Service-provider terms (Google, Cloudflare) | **Yes (provider copyright)** | **Short extracts only**, fair dealing for criticism or review, s 12(1)(b). |
 
-Nothing in this folder is licensed CC BY 4.0 — the content-licence in `CONTENT-LICENSE.md` applies to our own original writing only. Third-party material in `citations/` sits under its own licence; we retain it on the basis described above. Our compilation / organisation of these citations is CC BY 4.0.
+Nothing in this folder is licensed CC BY 4.0. The content-licence in `CONTENT-LICENSE.md` applies to our own original writing only. Third-party material in `citations/` sits under its own licence; we retain it on the basis described above. Our compilation / organisation of these citations is CC BY 4.0.
 
 ---
 
