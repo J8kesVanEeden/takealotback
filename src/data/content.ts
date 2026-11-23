@@ -849,7 +849,7 @@ export const QUICK_HITS: QuickHit[] = [
     body: "The actual words from CPA s 56(2). A returns policy cannot override it: s 51(3) voids any contractual term that tries.", ref: "CPA s 56(2) + s 51(3)" },
   { n: "02", head: "You pick the remedy",
     body: "Repair, replace, or refund. The consumer elects under section 56(2). Never the supplier.", ref: "CPA s 56(2)" },
-  { n: "03", head: "One defective part doesn't make the whole set defective",
+  { n: "03", head: "One defective part doesn't make the working parts defective",
     body: "The CPA's defect test looks at the goods you were sold. If one independently replaceable part fails and the rest works as sold, only that part is defective. So argue for sending back only that part for repair or replacement. For a refund, expect to return the whole bundle (Clause 05).", ref: "CPA s 53(1)(a)" },
   { n: "04", head: "7 days for any reason, by law",
     body: "ECT Act section 44 gives you a 7-day no-fault return right on most online purchases (s 42(2) lists the exceptions). Takealot's 30-day window sits on top of that floor.", ref: "ECT Act s 44" },
