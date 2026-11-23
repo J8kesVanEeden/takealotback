@@ -13,6 +13,7 @@ reverified_on: "2026-11-17"
 corrected_on: "2026-05-07"
 correction_note: "2026-04-24 audit misread the forum-selection qualifier ('even if the disputed amount would typically be heard by a lower court') as absent from live T&Cs; re-verification confirms it has been continuously present. Clause 13 in src/data/content.ts and POLICY_SUMMARY.terms reverted; original misread commit + correction commit both retained in git history."
 used_in:
+  - "src/data/content.ts — TEMPLATES T11 body (CGSO named as escalation point)"
   - "src/data/content.ts — CLAUSES[11] (unilateral-changes)"
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction)"
   - "src/data/content.ts — CLAUSES[13] (order-cancellation)"
