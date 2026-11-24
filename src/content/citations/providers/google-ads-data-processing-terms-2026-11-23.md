@@ -6,7 +6,7 @@ date: "2024-05-30"
 primary_url: "https://business.safety.google/adsprocessorterms/"
 metaDescription: "Google's own terms for Google Analytics data: it may be processed on servers outside the country where you live, with standard contractual clauses or adequacy frameworks where the law requires them."
 retrieved: "2026-11-23"
-updated: "2026-11-23"
+updated: "2026-11-24"
 used_in:
   - "src/components/AboutSection.astro — Privacy note (where analytics data is processed)"
 copyright: "© Google LLC. Short extracts quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
@@ -16,7 +16,7 @@ copyright: "© Google LLC. Short extracts quoted for criticism and review under 
 
 Google Analytics runs on this site through Cloudflare Zaraz (see the privacy note in About). These are Google's own published terms on where that data can go and what governs the transfer. None of them names South Africa.
 
-Google handles analytics data in two roles. For the data it processes for the site, it is a processor under the Data Processing Terms below. Where it uses the data for its own purposes, it is a controller under separate controller terms, which have no clause on where the data is processed. The privacy note's line on where data goes therefore rests on Google's privacy policy page on data transfers, read with section 10.1 of the processor terms below for the data Google processes on the site's behalf.
+Google handles analytics data in two roles. For the data it processes for the site, it is a processor under the Data Processing Terms below. Where it uses the data for its own purposes, it is a controller under separate controller terms (the Google Measurement Controller-Controller Data Protection Terms), whose transfer clauses ("4. Data Transfers") are written for data under European and UK law (read 2026-11-24). The privacy note's line on where data goes therefore rests on Google's privacy policy page on data transfers, read with section 10.1 of the processor terms below for the data Google processes on the site's behalf.
 
 ## Data transfer frameworks (effective 23 August 2025)
 

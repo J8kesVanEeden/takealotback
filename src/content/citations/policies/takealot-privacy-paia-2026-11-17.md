@@ -13,7 +13,7 @@ retrieved: "2026-11-17"
 used_in:
   - "src/data/content.ts — TEMPLATES T22 body (where to send a POPIA s 23 request)"
 copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Takealot privacy policy and PAIA manual: how a customer asks for their own records
@@ -28,8 +28,11 @@ Template T22 asks Takealot for the records it holds about a customer's own order
 Source: https://terms-and-policies.takealot.com/privacy-policy/, fetched 2026-11-17 (static HTML, tags stripped). Raw capture kept on file.
 
 > "You can:
+>
 > request a record or description of your personal information. We might have reasons to say no to some information but you can ask for reasons why;
+>
 > ask and receive information about the third-parties who have had access to your personal information;
+>
 > ask that we correct inaccurate information. …"
 
 > "we might charge an administrative fee for complex requests."

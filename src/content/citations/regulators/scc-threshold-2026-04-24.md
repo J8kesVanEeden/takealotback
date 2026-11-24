@@ -22,7 +22,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) Small Claims Court angle"
   - "src/data/content.ts — CLAUSES[0] (time-limits) escalate (up to R30,000)"
 copyright: "Facts + regulatory thresholds, not copyrightable. Government Gazette text quoted verbatim."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Small Claims Court: monetary jurisdiction (verified 2026-11-10)
@@ -54,9 +54,13 @@ If your claim is above R30,000, the DoJ page says you can "institute a claim for
 Small Claims Courts Act 61 of 1984, s 7 (DoJ consolidated text, `justice.gov.za/legislation/acts/1984-061.pdf`, read 2026-11-23):
 
 > "7 Parties who may appear in court
+>
 > (1) Only a natural person may institute an action in a court and, subject to the provisions of section 14 (2), a juristic person may become a party to an action in a court only as defendant.
+>
 > (2) A party to an action shall appear in person before the court and, subject to the provisions of subsection (4), shall not be represented by any person during the proceedings.
+>
 > …
+>
 > (4) A juristic person shall be represented in a court by its duly nominated director or other officer."
 
 The DoJ Small Claims page (fetched 2026-11-23): "You do not need a lawyer to represent you at a Small Claims Court."

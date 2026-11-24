@@ -11,7 +11,7 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — ESCALATION[0] (Takealot customer support tier)"
 copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Takealot Help Centre: how to contact us
@@ -31,6 +31,12 @@ Escalation tier 1 quotes this line, so it is kept word for word (restored 2026-1
 
 > "Need to speak with one of our customer service agents? Looking for our contact number? The best way to reach us is through our Help Centre."
 
+Escalation tier 1 and the template instructions name the 'Contact Us' button and the 'Get in Touch' form from these steps (2026-11-17 capture):
+
+> "If the content of the topic does not resolve your issue, select the ‘Contact Us’ button at the bottom of the topic"
+>
+> "Complete and submit the ‘Get in Touch’ contact form"
+
 ## Companion text in Takealot's T&Cs (see takealot-tcs-2026-04-24.md; raw capture 2026-11-10)
 
 > "If something goes wrong, please start by contacting our Customer Support team via the Help Centre; most problems can be easily resolved this way."
@@ -42,4 +48,4 @@ Escalation tier 1 quotes this line, so it is kept word for word (restored 2026-1
 ## Site reliance
 
 - ESCALATION tier 1 (Takealot customer support): the Help Centre "Contact Us" form and 087 362 8000.
-- Template instructions (schema.ts HowTo step 4): send through the Help Centre form; formal notices to legal@takealot.com.
+- Template instructions (schema.ts HowTo step 4): send through the Help Centre form; formal notices to legal@takealot.com (no `used_in` line: the resolver has no destination for the JSON-LD).

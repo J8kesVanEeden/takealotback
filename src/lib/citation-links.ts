@@ -68,7 +68,9 @@ const PATTERNS: Array<{ test: RegExp; link: CitationLink }> = [
   // are evaluated in order.
   { test: /Consumer Goods (?:and|&) Services Ombud|cgso\.org\.za/i, link: { url: '/citations/regulators/cgso-contacts-2026-04-24', label: 'CGSO contact details' } },
   { test: /Competition Commission|CompCom|Online Intermediation Platforms/i, link: { url: '/citations/commentary/compcom-oipmi-takealot-2023', label: 'Competition Commission OIPMI (2023)' } },
-  { test: /National Consumer Commission|\bNCC\b|thencc\.org\.za/i, link: { url: '/citations/regulators/ncc-contacts-2026-04-24', label: 'NCC contact details' } },
+  // A case name ("NCC v NCT", "National Consumer Commission v Western Car Sales")
+  // names the NCC as a litigant, not as a contact, so it adds no contacts chip.
+  { test: /National Consumer Commission(?! v\b)|\bNCC\b(?! v\b)|thencc\.org\.za/i, link: { url: '/citations/regulators/ncc-contacts-2026-04-24', label: 'NCC contact details' } },
   { test: /Advertising Regulatory Board|\bARB\b|arb\.org\.za/i, link: { url: '/citations/regulators/arb-2026-04-24', label: 'ARB contact details' } },
   { test: /Small Claims Court|\bSCC\b|R\s?[23]0[, ]?000/i, link: { url: '/citations/regulators/scc-threshold-2026-04-24', label: 'Small Claims Court' } },
   { test: /National Financial Ombud|\bNFO\b|nfosa/i, link: { url: '/citations/regulators/nfo-amalgamation-2026-04-24', label: 'NFO scope' } },

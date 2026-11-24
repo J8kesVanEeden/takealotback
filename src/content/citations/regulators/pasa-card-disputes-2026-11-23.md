@@ -22,7 +22,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T15 body (contest a debited fee with the card issuer)"
 copyright: "Published by an industry body and a card scheme for public information. Short extracts quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "None of these pages names Takealot. PASA and Visa describe how card disputes work in general; each bank applies its own process, and the time limit can differ by dispute type."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Card disputes and chargebacks
@@ -43,6 +43,7 @@ PASA is the banks' payments association: its FAQ says "PASA membership is curren
 > "Yes, it is possible to dispute transactions on the grounds that a service was not rendered, goods were not received, or goods were incorrectly delivered or were damaged. Your first recourse should be directly to the merchant that had sold you the goods and/ or rendered services. If you are unable to reach the merchant concerned, or unable to resolve the matter directly, you may approach the bank that issued the credit card to you for assistance. The issuing bank will request you to send the dispute in writing, giving your motivation and as much detail as possible of all the pertinent facts of the case. The bank may then institute a charge-back process, which means that it would reverse the transaction from your account and send it back to the bank that submitted the transaction (acquiring bank) on behalf of the Merchant."
 
 > "Is there a timeline fixed to dispute a transaction?
+>
 > The time period for cardholder related disputes is 120 days after the statement date. Other charge backs could have different time frames."
 
 On recurring card payments that carry on after you cancel, the same FAQ says you can "Dispute the credit card transaction by requesting a CHARGE-BACK from the card issuer or card provider", and:

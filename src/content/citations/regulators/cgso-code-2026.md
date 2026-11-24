@@ -17,7 +17,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T16 body"
   - "src/data/content.ts — QUICK_HITS[5] (CGSO compulsory) resolution target"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978 (official text of a legislative nature)"
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Consumer Goods and Services Industry Code of Conduct, 2026
@@ -37,6 +37,7 @@ Wayback captures (2026-11-17): the Gazette PDF [20261117211817](https://web.arch
 Notice (p. 3):
 
 > In line with section 82(2)(b), read with section 82(5)(c) of the Act, the previously prescribed Code as published in Gazette No.38637, Notice 271 of 30 March 2015 is hereby withdrawn in its entirety upon publication of this Notice.
+>
 > This Notice will come into effect on 1 December 2026.
 
 Clause 4.2:

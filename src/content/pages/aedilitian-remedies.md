@@ -4,7 +4,7 @@ slug: aedilitian-remedies
 description: "Your rights don't end at the 6-month CPA window. South African common law gives you actio redhibitoria and actio quanti minoris for latent defects, with a 3-year prescription period."
 metaTitle: "When section 56 runs out: common-law aedilitian remedies"
 datePublished: "2026-04-23"
-dateModified: "2026-11-23"
+dateModified: "2026-11-24"
 ---
 
 # Your claim doesn't die at 6 months
@@ -21,7 +21,7 @@ Both are preserved alongside the CPA by section 2(10): *"No provision of this Ac
 
 ## Prescription: 3 years
 
-Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d), s 12(1)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 that develops a latent defect in February 2026 is still inside the common-law window even though the s 56 window closed in November 2024.
+Under the Prescription Act 68 of 1969, ordinary debts and contractual claims prescribe in three years from when the debt is due (s 11(d), s 12(1)), and a debt is not due until you know, or could with reasonable care have known, who the debtor is and the facts it arises from (s 12(3)). So an item bought in May 2024 whose latent defect shows up in February 2026 is still inside the common-law window even though the s 56 window closed in November 2024.
 
 Prescription is the outer limit, not the only deadline. To cancel the sale (actio redhibitoria) you must act within a reasonable time after you discover the defect, and be able to return the item (*Van Niekerk v FirstRand* [2025] ZASCA 187 para 14).
 

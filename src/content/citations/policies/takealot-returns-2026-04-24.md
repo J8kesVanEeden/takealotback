@@ -28,7 +28,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[16] (resale-prohibition) 'Credit on a closed account' angle ('for a refund')"
   - "src/data/content.ts — CLAUSES[23] (account-suspension) 'Your credit is still yours' angle ('for a refund')"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing for criticism / review per s 12(1)(b) Copyright Act 98 of 1978, in support of the commentary at takealotback.com."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Takealot Returns Policy: snapshot 2026-04-24
@@ -138,7 +138,7 @@ The same paragraph continues (verbatim, 2026-11-17 capture; added 2026-11-23):
 
 Excluded: normal wear and tear, consumer damage, electrical surges, sea-air corrosion, consumer modification, or unintended use.
 
-The inspection step is built in to the workflow: *"when we receive the item, we'll inspect it"*, with no published SLA. (This is the textual hook for the site's Clause 20.)
+The inspection step is built into the workflow: *"when we receive the item, we'll inspect it"*, with no published SLA. (This is the textual hook for the site's Clause 20.)
 
 ### Warranty items
 

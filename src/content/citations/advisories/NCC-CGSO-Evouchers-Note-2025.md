@@ -14,7 +14,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[14] (marketplace-sellers) 'NCC + CGSO e-commerce note (2025)' angle"
 copyright: "Published by a statutory regulator and an accredited ombud for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "The note does not name Takealot. It is the two regulators' stated view, not a ruling or a binding rule; it carries its own disclaimer ('provided for informational purposes only and is not legal advice')."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # NCC + CGSO explanatory note: e-commerce platforms and e-vouchers
@@ -38,9 +38,13 @@ A 4-page note issued jointly by the NCC and the CGSO, dated 13 July 2025 (PDF cr
 ### Vouchers ("Your Voucher Rights Under the CPA")
 
 > "• Validity: Vouchers must be valid for at least 3 years from the date of issue, unless fully redeemed earlier.
+>
 > • Ownership: The value of a voucher remains the property of the holder until redeemed.
+>
 > • Usage: Suppliers must honour the voucher until full value is used, or expiry occurs after 3 years.
+>
 > • Allocation: The value of a voucher is to be redeemed against the goods or services chosen by the consumer at the time of purchase.
+>
 > • Unavailability of Goods or Services: Should an item be unavailable, the full value of the voucher must be applied to the remainder of the goods that form part of the collective purchase at the time. The Supplier does not have the discretion to suspend the use of the voucher for a future date."
 
 ### Disclaimer

@@ -11,13 +11,13 @@ retrieved: "2026-11-10"
 used_in:
   - "src/data/content.ts — FAQ (complaint deadline)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Ntoatsabone v Hisense SA Sales Holdings (Pty) Ltd and Another
 ## [2026] ZANCT 21 | National Consumer Tribunal | 31 March 2026
 
-A consumer bought a 70-inch smart TV from a retailer on 30 November 2021, was sent to the manufacturer when apps stopped working, and applied to the Tribunal on 25 April 2025.
+A consumer bought a 70-inch smart TV from a retailer on 30 November 2021. When apps stopped working he complained to the retailer and, he says, "was told to raise his query with" Hisense. He applied to the Tribunal on 25 April 2025.
 
 ## Proposition cited on the site
 
