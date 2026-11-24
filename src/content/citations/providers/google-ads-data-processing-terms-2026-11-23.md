@@ -16,7 +16,7 @@ copyright: "© Google LLC. Short extracts quoted for criticism and review under 
 
 Google Analytics runs on this site through Cloudflare Zaraz (see the privacy note in About). These are Google's own published terms on where that data can go and what governs the transfer. None of them names South Africa.
 
-Google handles analytics data in two roles. For the data it processes for the site, it is a processor under the Data Processing Terms below. Where it uses the data for its own purposes, it is a controller under separate controller terms (the Google Measurement Controller-Controller Data Protection Terms), whose transfer clauses ("4. Data Transfers") are written for data under European and UK law (read 2026-11-24). The privacy note's line on where data goes therefore rests on Google's privacy policy page on data transfers, read with section 10.1 of the processor terms below for the data Google processes on the site's behalf.
+Google handles analytics data in two roles. For the data it processes for the site, it is a processor under the Data Processing Terms below. Where it uses the data for its own purposes, it is a controller under separate controller terms (the Google Measurement Controller-Controller Data Protection Terms), whose transfer clauses (Appendix 1, Part A, "4. Data Transfers") are written for data under European and UK law (read 2026-11-24). The privacy note's line on where data goes therefore rests on Google's privacy policy page on data transfers, read with section 10.1 of the processor terms below for the data Google processes on the site's behalf.
 
 ## Data transfer frameworks (effective 23 August 2025)
 
@@ -37,6 +37,10 @@ Definitions, "Data Sharing Setting":
 Section 4.1, Independent Controllers:
 
 > "each: (a) is an independent controller of Controller Personal Data; (b) will individually determine the purposes and means of its processing of Controller Personal Data"
+
+The transfer clauses sit in "Appendix 1: Additional Terms for Applicable Data Protection Legislation", under "PART A - ADDITIONAL TERMS FOR EUROPEAN DATA PROTECTION LEGISLATION", whose introduction limits them (read 2026-11-24):
+
+> "This Appendix 1A will only apply to the extent that the European Data Protection Legislation applies …"
 
 ## Google Ads Data Processing Terms (Version 8.0, 30 May 2024)
 

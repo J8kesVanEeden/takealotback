@@ -18,7 +18,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[12] (high-court-jurisdiction) CGSO angle"
   - "src/data/content.ts — ESCALATION[2] (CGSO tier) body"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Consumer Goods and Services Ombud NPC v Voltex (Pty) Ltd
@@ -37,16 +37,25 @@ The site cites Voltex for the proposition that **participation in the CGSO is co
 ## Held: paras 72 and 75 (verbatim)
 
 > 72. In conclusion I am of the view that a proper case has been made out by the applicants for a declaratory order based on the following primary findings;
+>
 > 72.1 The jurisdictional prerequisites are established on the evidence before me;
+>
 > 72.2 The code is not irrational or unreasonable;
+>
 > 72.3 The power to levy a fee is not ultra vires the Ministers' powers under the CPA·
+>
 > 72.4 The decision is not vitiated by irrelevant considerations;
+>
 > 72.5 The power to levy a fee is necessary and incidental;
+>
 > 72.6 The code is mandatory for all suppliers belonging to the industry;
 
 > 75. In the result, the following order is made:
+>
 > 75.1 A declaratory order is granted with prayers 1,2,3,4,5,6 and 7.1, 7.2 and 8 of the amended notice of motion.
+>
 > 75.2 The counter-application of the first respondent is dismissed with costs.
+>
 > 75.3 The counter-application of the fourth respondent is dismissed with costs.
 
 Source: SAFLII text read through the Wayback capture of 10 November 2026 (raw capture kept on file); SAFLII itself returns a Cloudflare challenge to automated clients.
