@@ -15,7 +15,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[21] (recall-noncompliance) takealot summary + angles"
   - "src/data/content.ts — TEMPLATES T18 (recall) scenario reference"
 copyright: "© Media24 / News24. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Wendy Knowler | Exploding power banks, risky antacids, and a shrug from Takealot
@@ -92,9 +92,9 @@ In the article this reply follows the power-bank cases:
 
 ## Site reliance
 
-- Triage, recalled-item options: "return them to a point of purchase for a refund", from the NCC notice extract (no `used_in` line: the resolver has no destination for the triage modal).
 Rewritten 2026-11-10 after the attribution audit (an internal review of every source attribution on the site). The earlier version leaned on CPA s 19, s 58, "Chapter 3" and an "after investigation / unreasonable risk of harm" reading of s 60; none of those survive a check against the Act.
 
+- Triage, recalled-item options: "return them to a point of purchase for a refund", from the NCC notice extract (no `used_in` line: the resolver has no destination for the triage modal).
 - **The recall notice**: the NCC notice quoted above tells consumers to "return them to a point of purchase for a refund". That instruction is the consumer's main route once s 56's six months have passed. The NCC's own ESR notice (thencc.org.za/product-safety-recall-esr-halolock-wireless-power-banks/, dated 8 April 2026, read by us on 2026-11-10) describes the recall as notified by the supplier, not as an NCC order under s 60(2).
 - **CPA s 60(2)**: the NCC can, if it has "reasonable grounds to believe that any goods may be unsafe" and the producer or importer "has not taken any steps required by an applicable code", by written notice "require that producer to" investigate or "carry out a recall programme on any terms required by the Commission".
 - **CPA s 55 and s 56**: a recall is strong evidence the goods were not safe, good-quality goods (s 55). The s 56 election runs only "within six months after the delivery".
