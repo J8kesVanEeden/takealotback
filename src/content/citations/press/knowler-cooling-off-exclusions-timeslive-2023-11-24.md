@@ -16,7 +16,7 @@ used_in:
   - "src/components/AboutSection.astro — 'Why Takealot?' paragraph (\"biggest online retailer\"; Knowler: \"the country's largest e-tailer\")"
   - "src/data/content.ts — CLAUSES[9] (non-returnable) angle on Takealot's 'no warranty at all' framing being legally wrong"
 copyright: "© Arena Holdings / TimesLive. Quoted under fair dealing for criticism and review per Copyright Act 98 of 1978 s 12(1)(b)."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Knowler: cooling-off exclusions
@@ -62,7 +62,7 @@ Takealot told Nikki her non-returnable books had **no warranty at all**, when in
 
 ## Site reliance
 
-- "South Africa's biggest online retailer" in the site's JSON-LD (`src/lib/schema.ts`), llms.txt and llms-full.txt rests on "the country's largest e-tailer" above (no `used_in` line for those machine-readable files).
+- "Biggest online retailer" in the site's JSON-LD ("the country's biggest online retailer", `src/lib/schema.ts`), llms.txt and llms-full.txt ("South Africa's biggest online retailer") rests on "the country's largest e-tailer" above (no `used_in` line for those machine-readable files).
 - **Clause 10 (non-returnable items):** In our reading, and Knowler's, Takealot's *"No warranty at all"* framing on books is wrong. ECT s 42(2) only disapplies s 44 cooling-off; CPA s 56 still runs. A book that is defective (binding faulty, pages missing, wrong content) is still defective goods.
 - **Plain-language examples of ECT s 42(2) exclusions**: useful when explaining what *is* legitimately non-coolable. Knowler's list is partial; use the statute for the full list.
 - **Risk-of-loss-in-transit:** retailer and third-party courier carry the risk until delivery; consumer not stuck with a "deal with the courier" deflection.
