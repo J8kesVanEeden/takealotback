@@ -32,7 +32,7 @@ used_in:
   - "src/data/content.ts — CLAUSES[5] (credit-vs-refund) takealot text (gift-voucher validity) and 'Cancellation context' angle"
   - "src/data/content.ts — ESCALATION[1] (formal written notice: legal@takealot.com and Head Office address)"
 copyright: "Takealot Online (RF) (Pty) Ltd. Retained under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Takealot Terms & Conditions: snapshot 2026-04-24
@@ -107,7 +107,9 @@ These lines were in the live T&Cs on 2026-11-10 and 2026-11-17 (whole-DOM captur
 > - you don’t pay for the item according to the terms of the payment method you selected;
 > - we discover an error in the listing information of an item, including its pricing; or
 > - you are being investigated for, or found guilty of, criminal activity or abuse of your Takealot account.
+>
 > You may cancel an order if there is a ‘cancel’ button on the order details page of your Takealot account. Once you have initiated a cancellation, you cannot stop the process.
+>
 > If an order or item is cancelled, we will refund you the amount paid for that cancelled order or item."
 
 **Delivery estimates** (added 2026-11-18, raw line 286; Clause 14's "CPA s 54: paid delivery missed" angle refers to Takealot's terms calling delivery dates "estimates")

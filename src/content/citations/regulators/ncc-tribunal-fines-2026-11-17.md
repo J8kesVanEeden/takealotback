@@ -20,7 +20,7 @@ updated: "2026-11-24"
 
 The NCC reports four National Consumer Tribunal outcomes "handed down between October 2026 and November 2026". None involves Takealot or online retail. The site uses two of them, and only for what the release itself says.
 
-**Source and status:** the NCC's release (WordPress post, text read 2026-11-17 through the site's REST API, tags stripped). For *Bryanston Executive Cars* this file rests on the release alone: the judgment was not found among the Tribunal's uploads on 2026-11-17. For *Affordable Power Solutions* the judgment was found (Tribunal PDF `Judgment-465107.pdf`); its paras 17 and 19, extracted below, say a fine application under s 100(6)(a) cannot be used to ask the Tribunal to "make a finding of prohibited conduct", and that the supplier's refusal to refund "is based on disputed facts". *RC Auto Bloemfontein* has its own file: [NCC-RC-Auto-Bloemfontein-NCT-2026.md](../cases/NCC-RC-Auto-Bloemfontein-NCT-2026.md).
+**Source and status:** the NCC's release (WordPress post, text read 2026-11-17 through the site's REST API, tags stripped). For *Bryanston Executive Cars* this file rests on the release alone: the judgment was not found among the Tribunal's uploads on 2026-11-17. For *Affordable Power Solutions* the judgment was found (Tribunal PDF `Judgment-465107.pdf`); its paras 17 and 19, extracted below, say a fine application under s 100(6)(a) cannot be used to ask the Tribunal to "make a finding of prohibited conduct", and that the supplier's "explanation for its refusal to refund the consumer is based on disputed facts". *RC Auto Bloemfontein* has its own file: [NCC-RC-Auto-Bloemfontein-NCT-2026.md](../cases/NCC-RC-Auto-Bloemfontein-NCT-2026.md).
 
 ## Verbatim extracts
 
