@@ -14,9 +14,9 @@ reverified_on: "2026-11-17"
 used_in:
   - "src/data/content.ts — FAQ[0] ('Is using the name Takealot in the domain legal?')"
   - "src/components/AboutSection.astro — Legal grounding (names and links the case for the s 34(1)(c) substantial-economic-detriment threshold)"
-  - "citations/statutes/TMA-1993.md — discussion of s 34(1)(c) anti-dilution and the *Laugh It Off* threshold"
+  - "citations/statutes/TMA-1993.md — discussion of s 34(1)(c) anti-dilution and the Laugh It Off threshold"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Laugh It Off Promotions CC v South African Breweries International (Finance) BV t/a SAB Mark International

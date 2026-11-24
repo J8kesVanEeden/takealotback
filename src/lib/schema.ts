@@ -11,7 +11,7 @@
 // All builders return plain objects suitable for passing to JsonLd.astro,
 // which handles the safe `<script type="application/ld+json">` wrapping.
 
-import { GITHUB_REPO_URL, LAST_REVIEWED, CONTENT_UPDATED } from '../data/content';
+import { GITHUB_REPO_URL, LAST_REVIEWED, CONTENT_UPDATED, SCOPE_LAW } from '../data/content';
 import { latestDate, isoDate } from './site-index';
 import type { Template } from '../data/content';
 
@@ -123,7 +123,7 @@ export function buildWebSite() {
     name: 'TakealotBack.com',
     alternateName: 'TakealotBack',
     description:
-      "A non-commercial, plain-English South African consumer-rights reference built around Takealot, the country's biggest online retailer. It maps Takealot's returns policy against the CPA, ECT Act, POPIA and common law. The same rights apply at most South African retailers.",
+      `A non-commercial, plain-English South African consumer-rights reference built around Takealot, the country's biggest online retailer. It maps Takealot's returns policy against the CPA, ECT Act, POPIA and common law. ${SCOPE_LAW}`,
     inLanguage: 'en-ZA',
     publisher: { '@id': ORG_ID },
     license: `${GITHUB_REPO_URL}/blob/main/CONTENT-LICENSE.md`,

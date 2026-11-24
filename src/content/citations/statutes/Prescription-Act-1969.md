@@ -22,7 +22,7 @@ used_in:
   - "src/content/pages/limits.md — aedilitian remedies within the 3-year prescription period"
   - "src/content/pages/aedilitian-remedies.md — 3-year ordinary prescription window for aedilitian claims"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Prescription Act 68 of 1969
@@ -34,23 +34,33 @@ updated: "2026-11-23"
 > **11. Periods of prescription of debts**
 >
 > The periods of prescription of debts shall be the following:
+>
 > (a) thirty years in respect of—
+>
 > (i) any debt secured by mortgage bond;
+>
 > (ii) any judgment debt;
+>
 > (iii) any debt in respect of any taxation imposed or levied by or under any law;
+>
 > (iv) any debt owed to the State in respect of any share of the profits, royalties or any similar consideration payable in respect of the right to mine minerals or other substances;
+>
 > (b) fifteen years in respect of any debt owed to the State and arising out of an advance or loan of money or a sale or lease of land by the State to the debtor, unless a longer period applies in respect of the debt in question in terms of paragraph (a);
+>
 > (c) six years in respect of a debt arising from a bill of exchange or other negotiable instrument or from a notarial contract, unless a longer period applies in respect of the debt in question in terms of paragraph (a) or (b);
+>
 > (d) save where an Act of Parliament provides otherwise, three years in respect of any other debt.
 
 ## s 12: When prescription begins to run (verbatim, subsections (1)–(3))
 
 > (1) Subject to the provisions of subsections (2), (3), and (4), prescription shall commence to run as soon as the debt is due.
+>
 > [subsection (1) substituted by section 68(2) of Act 32 of 2007]
 >
 > (2) If the debtor wilfully prevents the creditor from coming to know of the existence of the debt, prescription shall not commence to run until the creditor becomes aware of the existence of the debt.
 >
 > (3) A debt shall not be deemed to be due until the creditor has knowledge of the identity of the debtor and of the facts from which the debt arises: Provided that a creditor shall be deemed to have such knowledge if he could have acquired it by exercising reasonable care.
+>
 > [subsection (3) substituted by section 1 of Act 11 of 1984]
 
 s 12(4) (sexual offences and trafficking) is not relevant to the site.

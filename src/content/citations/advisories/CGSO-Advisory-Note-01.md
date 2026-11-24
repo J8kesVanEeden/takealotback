@@ -18,7 +18,7 @@ used_in:
   - "src/content/pages/onus-of-proof.md — 'The CGSO view' section"
   - "src/data/content.ts — FAQ (case names and NCT references: notes under CGSO review)"
 copyright: "© Consumer Goods and Services Ombud NPC (a private non-profit company accredited as an ombud under CPA s 82). Quoted, with the source named, under fair dealing for criticism and review, s 12(1)(b) Copyright Act 98 of 1978."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # CGSO Advisory Note 1: Consumer's Rights Regarding Defective Goods
@@ -33,10 +33,15 @@ The CGSO has taken all its Advisory Notes off its own website. Its advisory-note
 ### Inspection of returned goods (para 9.3)
 
 > "9.3 The present practice of suppliers of sending goods for inspection seems a reasonable practical solution to the problem, subject to the provisos that:
+>
 > i. it be resorted to only in appropriate cases, where there is a genuine reason for believing that the suppler may not be liable;
+>
 > ii. the inspection is conducted and the item be returned to the consumer speedily (a maximum of 7-10 days if the item needs to be sent away);
+>
 > iii. the supplier informs the consumer before doing any repair;
+>
 > iv. the letter and spirit of the CPA and good customer relations guide any such dealings.
+>
 > v. the inspection and time taken thereon do not have the effect of depriving consumers of their rights under CPA. To do so would contravene the CPA."
 
 ("suppler" is the Note's own typo; the site quotes it as "[supplier]".)

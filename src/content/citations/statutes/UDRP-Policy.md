@@ -12,7 +12,7 @@ used_in:
   - "src/components/AboutSection.astro — legal grounding block"
   - "src/data/content.ts — FAQ[0] (domain-name-use-legal question)"
 copyright: "© Internet Corporation for Assigned Names and Numbers. Quoted, with the source named, under fair dealing for criticism and review, s 12(1)(b) Copyright Act 98 of 1978."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Uniform Domain Name Dispute Resolution Policy: para 4(c)(iii)
@@ -33,8 +33,11 @@ Para 4(a), what a complainant has to prove:
 Para 4(c), the registrant's answer to element (ii):
 
 > "c. How to Demonstrate Your Rights to and Legitimate Interests in the Domain Name in Responding to a Complaint. When you receive a complaint, you should refer to Paragraph 5 of the Rules of Procedure in determining how your response should be prepared. Any of the following circumstances, in particular but without limitation, if found by the Panel to be proved based on its evaluation of all evidence presented, shall demonstrate your rights or legitimate interests to the domain name for purposes of Paragraph 4(a)(ii):
+>
 > (i) before any notice to you of the dispute, your use of, or demonstrable preparations to use, the domain name or a name corresponding to the domain name in connection with a bona fide offering of goods or services; or
+>
 > (ii) you (as an individual, business, or other organization) have been commonly known by the domain name, even if you have acquired no trademark or service mark rights; or
+>
 > (iii) you are making a legitimate noncommercial or fair use of the domain name, without intent for commercial gain to misleadingly divert consumers or to tarnish the trademark or service mark at issue."
 
 ## Site reliance

@@ -16,7 +16,7 @@ used_in:
   - "src/data/content.ts — TEMPLATES T20 body"
   - "src/data/content.ts — FAQ (Black Friday at Takealot; buy-now-pay-later; delivery fee on a cancelled order)"
 copyright: "Takealot Online (RF) (Pty) Ltd. Quoted under fair dealing per s 12(1)(b) Copyright Act 98 of 1978 (criticism / review)."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Takealot Help Centre: order cancellation, refunds and missing items
@@ -43,6 +43,7 @@ URL: https://help.takealot.com/hc/en-us/articles/360019253774-How-do-I-cancel-my
 > "If your item is in stock, it is already in the process of being fulfilled. Please allow up to 4 working days for your cancellation request to be processed and your credit or refund applied."
 
 > "Note:
+>
 > Delivery fees and TakealotMORE benefits will not be reimbursed as the order is already in the process of being fulfilled."
 
 > "If your order is already with the delivery driver or is being delivered by a courier other than our Takealot Delivery Team, here's what you can do next:
@@ -55,7 +56,9 @@ URL: https://help.takealot.com/hc/en-us/articles/360019253774-How-do-I-cancel-my
 URL: https://help.takealot.com/hc/en-us/articles/360019253594-Why-is-my-refund-taking-so-long
 
 > "Buy Now, Pay Later Methods (PayJustNow, Payflex): Up to 24 hours
+>
 > Loyalty Points (eBucks, Discovery Miles): Up to 24 hours
+>
 > Takealot Account Credit & Vouchers: Immediate when processed"
 
 > "Remember: We can only refund the amount you actually paid (excluding coupons/vouchers), and refunds go back to your original payment method whenever possible."
@@ -67,16 +70,23 @@ URL: https://help.takealot.com/hc/en-us/articles/360019415653-What-happens-if-a-
 > "Please contact us within 30 days of delivery/collection."
 
 > "Your Choice:
+>
 > We'll ask how you'd prefer to be resolved while we investigate:
+>
 > Account Credit
+>
 > Refund
+>
 > Replacement Item (provided that we have stock available)"
 
 > "If you did not take receipt of the item, please confirm who received order e.g. reception"
 
 > "We will confirm the action, within 24 hours of receiving your request, with one of the following outcomes below:
+>
 > Locate the missing items and will schedule delivery to you as soon as possible
+>
 > Replace the missing items, by creating a new order
+>
 > Credit your takealot.com account with the amount for missing items, if we no longer have stock available"
 
 > "Tell us your preference - credit, refund, or replacement"

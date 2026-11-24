@@ -12,7 +12,7 @@ used_in:
   - "src/data/content.ts — ESCALATION[4] (NCC tier)"
 copyright: "Published by a statutory regulator for public information. Quoted for criticism and review under s 12(1)(b) Copyright Act 98 of 1978."
 disclosure: "The release does not name Takealot. The site relies on the NCC's own summary; the Bryanston Executive Cars judgment itself was not found among the Tribunal's uploads (checked 2026-11-17)."
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # NCC: Tribunal fines four suppliers R1.15 million
@@ -20,7 +20,7 @@ updated: "2026-11-23"
 
 The NCC reports four National Consumer Tribunal outcomes "handed down between October 2026 and November 2026". None involves Takealot or online retail. The site uses two of them, and only for what the release itself says.
 
-**Source and status:** the NCC's release (WordPress post, text read 2026-11-17 through the site's REST API, tags stripped). For *Bryanston Executive Cars* this file rests on the release alone: the judgment was not found among the Tribunal's uploads on 2026-11-17. For *Affordable Power Solutions* the judgment was found (Tribunal PDF `Judgment-465107.pdf`); its para 17 says the Tribunal made no finding on the merits of the battery dispute, only on the failure to comply with the NCC's notice. *RC Auto Bloemfontein* has its own file: [NCC-RC-Auto-Bloemfontein-NCT-2026.md](../cases/NCC-RC-Auto-Bloemfontein-NCT-2026.md).
+**Source and status:** the NCC's release (WordPress post, text read 2026-11-17 through the site's REST API, tags stripped). For *Bryanston Executive Cars* this file rests on the release alone: the judgment was not found among the Tribunal's uploads on 2026-11-17. For *Affordable Power Solutions* the judgment was found (Tribunal PDF `Judgment-465107.pdf`); its paras 17 and 19, extracted below, say a fine application under s 100(6)(a) cannot be used to ask the Tribunal to "make a finding of prohibited conduct", and that the supplier's refusal to refund "is based on disputed facts". *RC Auto Bloemfontein* has its own file: [NCC-RC-Auto-Bloemfontein-NCT-2026.md](../cases/NCC-RC-Auto-Bloemfontein-NCT-2026.md).
 
 ## Verbatim extracts
 
@@ -40,9 +40,15 @@ From the release's opening summary:
 
 > "The Tribunal addressed Affordable Power Solutions’ failure to comply with a statutory compliance notice issued by the NCC on 15 May 2026. … The Tribunal ordered the supplier to pay an administrative fine of R200 000 (two hundred thousand Rand) within 30 business days."
 
-The release's own account of the underlying dispute (added 2026-11-23, because escalation tier 5 repeats it as the NCC's report). This is the NCC's version only: the Tribunal made no finding on the battery dispute (judgment para 17).
+The release's own account of the underlying dispute (added 2026-11-23, because escalation tier 5 repeats it as the NCC's report). This is the NCC's version only: the Tribunal made no finding on the battery dispute (judgment paras 17 and 19, below).
 
 > "The dispute involved a defective solar lithium battery supplied on 22 March 2024. … The consumer paid R43 875,00 (forty-three thousand eight hundred and seventy-five Rand) for the additional lithium battery, which failed within six months. The supplier refused to honour the warranty or provide a refund, alleging water damage. When the NCC issued a compliance notice instructing the supplier to engage with the consumer and propose a remedy, the supplier completely ignored the compliance notice."
+
+### Affordable Power Solutions: the Tribunal's judgment (Judgment-465107.pdf)
+
+> [17] "The papers filed in this matter and consequent arguments during the hearing seem to suggest that the parties, incorrectly, assumed that the application for a fine under section 100(6)(a) can be utilised to request the Tribunal to consider and make a finding of prohibited conduct. The Tribunal wishes to clarify that such an assumption is incorrect. …"
+
+> [19] "… Accordingly, the Tribunal finds that the applicant acted within its statutory authority in issuing the compliance notice under section 100(1). The respondent’s explanation for its refusal to refund the consumer is based on disputed facts, such as whether the goods were altered after leaving the respondent's control. …"
 
 ### Acting Commissioner
 

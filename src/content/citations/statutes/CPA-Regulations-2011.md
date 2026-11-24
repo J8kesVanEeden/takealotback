@@ -25,7 +25,7 @@ used_in:
   - "src/data/content.ts — LAW_SECTIONS CPA s 48 blurb (Regulation 44 lists presumptively unfair terms)"
   - "src/content/pages/limits.md — what the CPA gives you (Regulation 44 grey list)"
 copyright: "No copyright: s 12(8)(a) Copyright Act 98 of 1978"
-updated: "2026-11-23"
+updated: "2026-11-24"
 ---
 
 # Consumer Protection Act Regulations
@@ -46,13 +46,17 @@ The Regulations made under the CPA cover, among other things, franchise agreemen
 For purposes of section 120(d) of the Act, a term of a consumer agreement between a supplier operating on a for-profit basis and acting wholly or mainly for purposes related to his or her business or profession and an individual consumer or individual consumers who entered into it for purposes wholly or mainly unrelated to his or her business or profession is presumed to be unfair if it — <!-- copy-ok: verbatim regulation text -->
 
 (a) has the purpose or effect of a term listed in subregulation (3), and
+
 (b) does not fall within the ambit of subregulation (4).
 
 ### 44(2)
 
 (a) The list in subregulation (3) is indicative only, so that a term listed therein may be fair in view of the particular circumstances of the case.
+
 (b) The list in subregulation (3) is non-exhaustive, so that other terms may also be unfair for purposes of section 48 of the Act.
+
 (c) A term which falls within the ambit of subregulation (4) remains subject to sections 48 to 52 of the Act.
+
 (d) This regulation does not derogate from provisions in the Act or other law in terms of or in respect of which a term of an agreement is prohibited.
 
 ### 44(3): the grey list
@@ -102,8 +106,10 @@ A term of a consumer agreement subject to the provisions of subregulation (1) is
 **(u)** restricting the consumer's right to re-sell the goods by limiting the transferability of any commercial guarantee provided by the supplier;
 
 **(v)** providing that the consumer must be deemed to have made or not made a statement or acknowledgment to his or her detriment, unless — <!-- copy-ok: verbatim regulation text -->
-  (i) a suitable period of time is granted to him or her for the making of an express declaration in respect thereof; and
-  (ii) at the commencement of the period the supplier draws the attention of the consumer to the meaning that will be attached to his or her conduct;
+
+(i) a suitable period of time is granted to him or her for the making of an express declaration in respect thereof; and
+
+(ii) at the commencement of the period the supplier draws the attention of the consumer to the meaning that will be attached to his or her conduct;
 
 **(w)** providing that a statement made by the supplier which is of particular interest to the consumer is deemed to have reached the consumer, unless such statement has been sent by prepaid registered post to the chosen address of the consumer;
 
@@ -122,19 +128,30 @@ A term of a consumer agreement subject to the provisions of subregulation (1) is
 (a) Paragraph (k) of subregulation (3) does not apply to a term in terms of which a supplier of financial services reserves the right to unilaterally terminate an open-ended agreement without notice, but the supplier is required to immediately inform the consumer thereof.
 
 (b) Paragraph (h) of subregulation (3) does not apply to — <!-- copy-ok: verbatim regulation text -->
-  (i) a transaction in transferable securities, financial instruments and other products or services where the price is linked to fluctuations in a stock exchange quotation or index or a financial market rate that the trader does not control;
-  (ii) an agreement for the purchase or sale of foreign currency, traveller's cheques or international money orders denominated in foreign currency;
-  (iii) a price-indexation clause, where lawful, but the method by which prices vary must be explicitly described.
+
+(i) a transaction in transferable securities, financial instruments and other products or services where the price is linked to fluctuations in a stock exchange quotation or index or a financial market rate that the trader does not control;
+
+(ii) an agreement for the purchase or sale of foreign currency, traveller's cheques or international money orders denominated in foreign currency;
+
+(iii) a price-indexation clause, where lawful, but the method by which prices vary must be explicitly described.
 
 (c) Paragraph (i) of subregulation (3) does not apply to:
-  (i) a term under which a supplier of financial services reserves the right to alter the rate of interest payable by the consumer or due to the latter, or the amount of other charges for financial services without notice where there is a valid reason, but — <!-- copy-ok: verbatim regulation text -->
-      (aa) the supplier must immediately inform the consumer thereof; and
-      (bb) the consumer is free to dissolve the agreement at the earliest opportunity;
-  (ii) a transaction in transferable securities, financial instruments and other products or services where the price is linked to fluctuations in a stock exchange quotation or index or a financial market rate that the trader does not control;
-  (iii) an agreement for the purchase or sale of foreign currency, traveller's cheques or international money orders denominated in foreign currency;
-  (iv) a term under which the supplier reserves the right to unilaterally alter the conditions of an open-ended agreement, but — <!-- copy-ok: verbatim regulation text -->
-      (aa) the supplier must forthwith inform the consumer thereof; and
-      (bb) the consumer is free to dissolve the agreement immediately.
+
+(i) a term under which a supplier of financial services reserves the right to alter the rate of interest payable by the consumer or due to the latter, or the amount of other charges for financial services without notice where there is a valid reason, but — <!-- copy-ok: verbatim regulation text -->
+
+(aa) the supplier must immediately inform the consumer thereof; and
+
+(bb) the consumer is free to dissolve the agreement at the earliest opportunity;
+
+(ii) a transaction in transferable securities, financial instruments and other products or services where the price is linked to fluctuations in a stock exchange quotation or index or a financial market rate that the trader does not control;
+
+(iii) an agreement for the purchase or sale of foreign currency, traveller's cheques or international money orders denominated in foreign currency;
+
+(iv) a term under which the supplier reserves the right to unilaterally alter the conditions of an open-ended agreement, but — <!-- copy-ok: verbatim regulation text -->
+
+(aa) the supplier must forthwith inform the consumer thereof; and
+
+(bb) the consumer is free to dissolve the agreement immediately.
 
 (d) Paragraphs (r) and (s) of subregulation (3) do not apply to any penalty, fee or compensation which the supplier is entitled to charge under the provisions of this Act or any other law.
 

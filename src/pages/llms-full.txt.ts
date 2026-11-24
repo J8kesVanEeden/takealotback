@@ -188,7 +188,7 @@ export const GET: APIRoute = async () => {
     lines.push(`### ${g.label}`);
     lines.push('');
     for (const e of entries) {
-      lines.push(`- ${e.data.title}${e.data.citation ? ` (${e.data.citation})` : ''}: https://takealotback.com/citations/${e.slug}`);
+      lines.push(`- ${e.data.title}${e.data.citation && !String(e.data.title).includes(e.data.citation.replace(/^Act /, '')) ? ` (${e.data.citation})` : ''}: https://takealotback.com/citations/${e.slug}`);
     }
     lines.push('');
   }
